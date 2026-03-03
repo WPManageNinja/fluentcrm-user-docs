@@ -1,0 +1,49 @@
+---
+title: "Abandon Cart Automation"
+slug: "abandon-cart-automation"
+category: "automation-funnels"
+order: 0
+---
+
+# Abandon Cart Automation
+With FluentCRM, you can automate abandoned cart recovery for WooCommerce, segment your customers by adding tags and lists, and run email campaigns for users. This article will guide you through starting automation for abandoned carts.
+
+## Abandon Cart Automation 
+
+Go to your FluentCRM and select **[Automation](/docs/introduction-to-fluentcrm-automation)** from the Navbar then click on the **New Automation** button. 
+
+![automation funnels fluentcrm abandon 1](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-1-scaled.webp)
+
+Here, FluentCRM provides several free automation funnel templates, including a built-in automation funnel template specifically for **Abandoned Carts**. You can choose this template or click on **Create from Scratch** to design your own.
+
+For the purposes of this article, we will select **Create from Scratch**.
+
+![automation funnels fluentcrm abandon 2](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-2-scaled.webp)
+
+First, give your automation funnel a name, then select **WooCommerce** from the sidebar in the popup. Next, choose the **Cart Abandoned** Trigger and click the **Continue** button.
+
+![automation funnels fluentcrm abandon 3](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-3-scaled.webp)
+
+A side pop-up will appear from the right, displaying the settings for this automation funnel. Choose the priority for the abandoned cart automation if you have multiple automations. Note that a higher priority means it will be matched earlier.
+
+**Run the Automation Action Even if Contact Status is Not in Subscribed Status** means that the automation will execute its actions regardless of whether the contact is on the subscribed list or not. 
+
+If you enable this then it ensures that the automation triggers and performs its actions for all relevant contacts, even if they are not currently marked as subscribed.
+
+You can enable the **Condition** for this automation. Click on the **Add** button to set the conditions. 
+
+Enabling **Skip this Automation if the Contact is Already in Active State** will prevent the automation from running multiple times for the same contact if they are already active within this automation.
+
+If you enable **Only Run this Automation for Subscribed Contact** then it will run this automation for subscribed contacts. 
+
+![automation funnels fluentcrm abandon 4](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-4-scaled.webp)
+
+#### Condition Options 
+
+With the default condition options, you will also see a specific condition option for the Abandoned Cart called **Cart Data**. This option allows you to specify more detailed criteria for when the automation should run.
+
+![automation funnels fluentcrm abandon 5](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-5-scaled.webp)
+
+Finally, click the **Save Settings** button to save your automation settings then design your automation funnel as desired.
+
+If you have any further questions about abandoned cart automation, please feel free to [contact us.](https://wpmanageninja.com/support-tickets/)

@@ -1,0 +1,19 @@
+{
+  "name": "fluentcrm-user-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "FluentCRM user documentation",
+  "devDependencies": {
+    "fast-xml-parser": "^5.4.1",
+    "turndown": "^7.2.2",
+    "vitepress": "^1.6.4"
+  }
+}

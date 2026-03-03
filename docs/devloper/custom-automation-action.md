@@ -1,0 +1,153 @@
+---
+title: "Custom Automation Action"
+slug: "custom-automation-action"
+category: "devloper"
+order: 0
+---
+
+# Custom Automation Action
+Automation is magic and FluentCRM is the magician. But anyone can be part of this. Following some steps, anyone can be part of this magic. In this article, we will show you, how you are able to add a custom action in automation.
+
+**Action**
+
+Actions are essential for initiating email marketing automation. There are a lot of actions that can start or initiate automation in FluentCRM such as Update Contact Property, Outgoing webhook, Split (A/B Testing), and many more. Using action you can track various activities in your WordPress ecosystem. Isn't cool. Let's dive into deep to learn, how to create a custom trigger in FluentCRM.
+
+To make an automation action, we need to use two filters and one action hook.
+
+Type
+
+Hook
+
+Description
+
+Filter
+
+fluentcrm\_funnel\_blocks
+
+This is a filter hook and this hook will add your custom action to the automation action list.
+
+Filter
+
+fluentcrm\_funnel\_block\_fields
+
+This is a filter hook and this hook will generate your custom action setting block.
+
+Action
+
+fluentcrm\_funnel\_sequence\_handle\_{action\_name}
+
+This is an action hook and this action will be called automatically depending on the automation action setting. You can do further using this action hook. For the following trigger source code, the **{action\_name}** is custom\_action\_name.
+
+To add a custom action in automation, I am going to tell you step by step. This example will be using composer, you can do without composer too.
+
+**Step 1**
+
+First of all, I created a class named Custom Action which will contain the full source code of this automation action.
+
+&lt;?php
+
+namespace Custom\\Actions;
+
+class CustomAction
+{
+    public function \_\_construct()
+    {
+        $this->actionName = 'custom\_action\_name';
+        $this->priority = 99;
+        add\_filter('fluentcrm\_funnel\_blocks', array($this, 'pushBlock'), $this->priority, 2);
+        add\_filter('fluentcrm\_funnel\_block\_fields', array($this, 'pushBlockFields'), $this->priority, 2);
+        add\_action('fluentcrm\_funnel\_sequence\_handle\_' . $this->actionName, array($this, 'handle'), 10, 4);
+    }
+
+    public function pushBlock($blocks, $funnel)
+    {
+        $this->funnel = $funnel;
+
+        $block = $this->getBlock();
+        if($block) {
+            $block\['type'\] = 'action';
+            $blocks\[$this->actionName\] = $block;
+        }
+
+        return $blocks;
+    }
+
+    public function pushBlockFields($fields, $funnel)
+    {
+        $this->funnel = $funnel;
+
+        $fields\[$this->actionName\] = $this->getBlockFields();
+        return $fields;
+    }
+
+    public function getBlock()
+    {
+        return \[
+            'category'    => 'My-plugin',
+            'title'       => 'Add My-plugin note',
+            'description' => 'Add Note to My-plugin',
+            'icon'        => 'fc-icon-writing',
+            'settings'    => \[
+                'note'      => '',
+                'note\_type' => 'private'
+            \]
+        \];
+    }
+
+    public function getBlockFields()
+    {
+        $formattedOptions = \[
+            \[
+                'id'    => 'private',
+                'title' => 'Private Note'
+            \],
+            \[
+                'id'    => 'customer',
+                'title' => 'Note to Customer'
+            \]
+        \];
+
+        return \[
+            'title'     => 'Add My-plugin Note',
+            'sub\_title' => 'Add Note to My-plugin Order',
+            'fields'    => \[
+                'note'      => \[
+                    'type'       => 'input-text-popper',
+                    'field\_type' => 'textarea',
+                    'label'      => 'My-plugin Note',
+                    'help'       => 'Type the note that you want to add to the reference order. You can also use smart tags'
+                \],
+                'note\_type' => \[
+                    'type'    => 'radio',
+                    'label'   => 'New Order Status',
+                    'help'    => 'Select Note Type for the reference Order.',
+                    'options' => $formattedOptions
+                \]
+            \]
+        \];
+    }
+
+    public function handle($subscriber, $sequence, $funnelSubscriberId, $funnelMetric)
+    {
+        error\_log(print\_r(\[$subscriber, $sequence, $funnelSubscriberId, $funnelMetric\], 1));
+    }
+
+}
+
+In the above example, you see, there is a method called **pushBlockFields**. This method returns an object and the object contains several fields. This object is the structure of this action’s setting page design. Let’s see the preview of this action’s setting block and discuss it.
+
+![screenshot 2022 09 07 at 10.46.23 am](/devloper/custom-automation-action/Screenshot-2022-09-07-at-10.46.23-AM-1024x453.png)
+
+In the above sourcecode, Target Products block is generated by **getBlockFields**. You see there is **fields** property in this method return array. There are so many field type in FluentCRM, you can find those [here](/docs/form-field-code-structure).
+
+In the above example, you see, there is a method called **handle**. This method is called when this action is triggered. By this method you can do, what you want.
+
+**Step 2**
+
+Using the following code, You can able to add this custom action code in FluentCRM.
+
+add\_action('plugins\_loaded', function () {
+   if (defined('FLUENTCAMPAIGN\_DIR\_FILE')) {
+      new \\Custom\\Actions\\CustomAction();
+   }
+});
