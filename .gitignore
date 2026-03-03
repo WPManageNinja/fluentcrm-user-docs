@@ -1,3 +1,4 @@
 /.vitepress/cache
 /node_modules
 /dist
+docs/public/brand/.DS_Store
