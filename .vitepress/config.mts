@@ -1,5 +1,33 @@
 import { defineConfig } from 'vitepress'
 
+// Treat standalone YouTube links as embedded videos in docs
+const YOUTUBE_URL_RE =
+  /^\s*(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)(?:[?&][^\s]*)?\s*$/
+
+function extractYouTubeId(line: string): string | null {
+  const m = line.match(YOUTUBE_URL_RE)
+  return m ? m[1]! : null
+}
+
+function youtubeBlockRule(state: any, startLine: number, endLine: number, silent: boolean) {
+  const pos = state.bMarks[startLine] + state.tShift[startLine]
+  const max = state.eMarks[startLine]
+
+  const line = state.src.slice(pos, max)
+  const videoId = extractYouTubeId(line)
+  if (!videoId) return false
+
+  if (silent) return true
+
+  const token = state.push('youtube_embed', 'div', 0)
+  token.block = true
+  token.content = videoId
+  token.map = [startLine, startLine + 1]
+
+  state.line = startLine + 1
+  return true
+}
+
 export default defineConfig({
   title: 'FluentCRM Documentation',
   description: 'Marketing Automation for WordPress – FluentCRM user guides and documentation',
@@ -11,6 +39,17 @@ export default defineConfig({
   // Serve docs/category/slug.md at /docs/slug (hide category from URL)
   rewrites: {
     'docs/:category/:slug.md': 'docs/:slug.md',
+  },
+  markdown: {
+    config: (md) => {
+      // Convert a bare YouTube URL line into an embedded player
+      md.block.ruler.before('paragraph', 'youtube_embed', youtubeBlockRule)
+      md.renderer.rules.youtube_embed = (tokens: any[], idx: number) => {
+        const videoId = tokens[idx].content
+        const embedUrl = `https://www.youtube.com/embed/${videoId}`
+        return `<figure class="vp-doc-video-wrapper"><div class="vp-doc-video-inner"><iframe src="${embedUrl}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></figure>\n`
+      }
+    },
   },
   vite: {
     plugins: [],

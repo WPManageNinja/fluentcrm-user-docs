@@ -85,3 +85,26 @@
   max-width: 100%;
   height: auto;
 }
+
+/* YouTube videos: match standard VitePress image width and framing */
+.vp-doc .vp-doc-video-wrapper {
+  display: block;
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+
+.vp-doc .vp-doc-video-inner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.vp-doc .vp-doc-video-inner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
