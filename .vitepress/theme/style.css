@@ -1,0 +1,15 @@
+/**
+ * FluentCRM brand color: #431d99
+ * Applied across the entire VitePress theme.
+ */
+:root {
+  --vp-c-brand-1: #431d99;
+  --vp-c-brand-2: #5a28b3;
+  --vp-c-brand-3: #6b3dbb;
+}
+
+.dark {
+  --vp-c-brand-1: #5a28b3;
+  --vp-c-brand-2: #6b3dbb;
+  --vp-c-brand-3: #7c4ec9;
+}
