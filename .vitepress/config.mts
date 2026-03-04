@@ -3,6 +3,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'FluentCRM Documentation',
   description: 'Marketing Automation for WordPress – FluentCRM user guides and documentation',
+  head: [
+    ['link', { rel: 'icon', href: '/brand/s-logo-1.png' }],
+  ],
   ignoreDeadLinks: true,
   cleanUrls: true,
   // Serve docs/category/slug.md at /docs/slug (hide category from URL)
@@ -14,9 +17,13 @@ export default defineConfig({
     publicDir: 'docs/public',
   },
   themeConfig: {
+    logo: { src: '/brand/fluentCRM-logo-color.svg', alt: 'FluentCRM' },
+    siteTitle: false,
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Docs', link: '/docs/' },
+      { text: 'User Docs', link: '/docs/' },
+      { text: 'Dev Docs', link: 'https://developers.fluentcrm.com/', target: '_blank', rel: 'noopener noreferrer' },
+      { text: 'Changelog', link: '/docs/change-log' },
+      { text: 'Website', link: 'https://fluentcrm.com', target: '_blank', rel: 'noopener noreferrer' },
     ],
     sidebar: {
       '/docs/': [
