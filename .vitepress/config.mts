@@ -20,7 +20,7 @@ export default defineConfig({
     logo: { src: '/brand/fluentCRM-logo-color.svg', alt: 'FluentCRM' },
     siteTitle: false,
     nav: [
-      { text: 'User Docs', link: '/docs/' },
+      { text: 'User Docs', link: '/docs/dashboard-introduction' },
       { text: 'Dev Docs', link: 'https://developers.fluentcrm.com/', target: '_blank', rel: 'noopener noreferrer' },
       { text: 'Changelog', link: '/docs/change-log' },
       { text: 'Website', link: 'https://fluentcrm.com', target: '_blank', rel: 'noopener noreferrer' },
@@ -350,9 +350,9 @@ export default defineConfig({
         },
       ],
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/fluentcrm' },
-    ],
+    search: {
+      provider: 'local',
+    },
     footer: {
       message: 'FluentCRM – Marketing Automation for WordPress',
       copyright: '© WPManageNinja. Need help? Get support at wpmanageninja.com',

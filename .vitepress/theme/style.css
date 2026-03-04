@@ -13,3 +13,75 @@
   --vp-c-brand-2: #6b3dbb;
   --vp-c-brand-3: #7c4ec9;
 }
+
+/* Documentation section: responsive layout */
+@media (max-width: 960px) {
+  .VPDoc .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .VPDoc .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+/* Doc content: prevent horizontal overflow */
+.vp-doc {
+  overflow-x: auto;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.vp-doc p,
+.vp-doc li,
+.vp-doc td,
+.vp-doc th {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Tables: scroll horizontally on small screens */
+.vp-doc .table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vp-doc table {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .vp-doc table {
+    display: block;
+    width: max-content;
+    min-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Code blocks: scroll instead of overflow */
+.vp-doc div[class*='language-'],
+.vp-doc pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vp-doc pre code {
+  word-break: normal;
+  white-space: pre;
+}
+
+/* Ensure custom blocks and content don't overflow */
+.vp-doc .custom-block,
+.vp-doc blockquote,
+.vp-doc img {
+  max-width: 100%;
+  height: auto;
+}

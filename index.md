@@ -6,15 +6,12 @@ hero:
   name: FluentCRM
   text: WordPress CRM for Email & Automation
   tagline: Guides for installing, configuring, sending campaigns, automations, and integrations.
-  image:
-    src: /logo-1.png
-    alt: FluentCRM
   actions:
     - text: Get Started
       link: /docs/how-to-install-upgrade-and-activate-license
       theme: brand
     - text: Dev Docs
-      link: /https://developers.fluentcrm.com/
+      link: https://developers.fluentcrm.com/
       theme: alt
 features:
   - icon: 🚀
@@ -58,6 +55,3 @@ features:
     link: /docs/frequently-asked-questions
     linkText: Get answers 
 ---
-
-**Latest Version:** See the [Changelog](/docs/change-log).  
-**Need Help?** [Open a support ticket](https://wpmanageninja.com/support-tickets/).
