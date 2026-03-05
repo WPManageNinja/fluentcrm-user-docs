@@ -6,6 +6,7 @@ order: 0
 ---
 
 # General Settings
+
 ## **Auto Sync User Data and Contact Data**
 
 The option **Enable Sync between WP User Data and Fluent CRM Contact Data** lets you Automatically sync your FluentCRM and WordPress users along with supported data bi-directionally.
