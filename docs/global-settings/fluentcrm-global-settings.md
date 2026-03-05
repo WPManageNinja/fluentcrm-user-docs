@@ -6,11 +6,22 @@ order: 0
 ---
 
 # FluentCRM Global Settings
-The FluentCRM Global Settings panel within the WordPress admin area is where you can set a variety of global options. To navigate to the global settings panel, click on “FluentCRM” in your WordPress admin sidebar, and choose “Global Settings”. If you do not have a FluentCRM panel in the sidebar of the dashboard, then you will need to install FluentCRM first and make sure it has been activated.
+
+The **Global Settings** panel is where you manage the main settings of your FluentCRM. Here, you can add your business information, set up how emails are sent, connect integrations, and adjust advanced options. Configuring these settings helps FluentCRM work properly and ensures your emails and automation run smoothly.
+
+## Accessing Global Settings
+
+To find these settings, log in to your WordPress Admin Dashboard and navigate to:
+**FluentCRM ➜ Settings**
+
+>[!Note]
+>If you do not see the FluentCRM menu in your sidebar, please ensure that the FluentCRM plugin is installed and activated on your site.
 
 https://www.youtube.com/watch?v=WTjaTvojyOQ
 
-**Settings**:
+### Available Settings Categories
+
+The Global Settings are divided into several key sections to help you manage your marketing automation efficiently:
 
 1.  [Business Settings](/docs/global-business-settings)
 2.  [Email Settings](/docs/global-email-settings)
