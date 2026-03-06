@@ -6,11 +6,12 @@ order: 0
 ---
 
 # Bounce Handling with Brevo
+
 When an email bounces, it means it wasn’t delivered to the recipient due to issues like an invalid email address or technical problems. Managing bounces helps maintain a clean email list, improving deliverability and engagement.
 
 From FluentCRM you can enable Bounce Handling for the Brevo Mailer system to identify bounced contacts efficiently. This guide will walk you through the process of enabling this feature.
 
-## **FluentCRM Settings Configuring** 
+## FluentCRM Settings Configuring
 
 First, go to your FluentCRM and then click on **Settings** from the navbar. Now select the **SMTP/Email Service Settings** from the left sidebar. 
 
@@ -20,7 +21,7 @@ Now you will get the **Brevo Bounce Handler Webhook URL** copy this Webhook URL 
 
 ![fluent crm brevo settings](/bounce-handlers/bounce-handling-with-brevo/Fluent-CRM-Brevo-Settings-scaled.webp)
 
-## **Configuring Brevo** 
+## Configuring Brevo
 
 You can configure the Bounce Handling webhook in Brevo in two ways. Below, we’ll show you both methods.
 
@@ -51,7 +52,7 @@ You will now see the webhook you created along with the triggers you applied. Yo
 
 ![brevo bounce handling 4](/bounce-handlers/bounce-handling-with-brevo/Brevo-Bounce-Handling-4-scaled.webp)
 
-#### **Method 2: From the Transactional Section**
+#### Method 2: From the Transactional Section
 
 You can also set this webhook from the **Transactional** section, where you'll find additional trigger options for your webhook.
 
@@ -77,7 +78,7 @@ Click the **Save** button to save your changes. You will then be able to see the
 
 ![brevo bounce handling 7](/bounce-handlers/bounce-handling-with-brevo/Brevo-Bounce-Handling-7-scaled.webp)
 
-## **Viewing Bounced Contacts**
+## Viewing Bounced Contacts
 
 To view bounced contacts in your **FluentCRM**, go to **Contacts**. Then, click on **Filter by Statuses** and check the **Bounced** checkbox.
 
