@@ -13,7 +13,7 @@ From FluentCRM you can enable Bounce Handling for the Brevo Mailer system to ide
 
 ## FluentCRM Settings Configuring
 
-First, go to your FluentCRM and then click on **Settings** from the navbar. Now select the **SMTP/Email Service Settings** from the left sidebar. 
+First, go to your FluentCRM and then click on **Settings** from the navbar. Now select the **Email Service** from the left sidebar. 
 
 Here from **Bounce Handling Settings** select the **Brevo** as your **Email Service Provider** from the dropdown menu. 
 

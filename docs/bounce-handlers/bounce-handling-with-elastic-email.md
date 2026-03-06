@@ -6,15 +6,16 @@ order: 0
 ---
 
 # Bounce Handling with Elastic Email
+
 If you use [ElasticEmail](https://elasticemail.com/) email service then use this documentation to set up Bounce handling with FluentCRM.
 
-First copy the Webhook URL at FluentCRM -> Settings -> SMTP/Email Sending Service Settings and Select Elastic from the dropdown and copy the webhook URL.
+First copy the Webhook URL at **FluentCRM -> Settings -> Email Service** and Select **Elastic Email** from the dropdown and copy the webhook URL.
 
-![image](/bounce-handlers/bounce-handling-with-elastic-email/image-1024x569.png)
+![Elastic Email](/bounce-handlers/bounce-handling-with-elastic-email/image-1024x569.webp)
 
-Then Login to your ElasticEmail account then navigate to Settings > Manage Webhooks and click on Create Webhook Button.
+Then Login to your **ElasticEmail** account then navigate to **Settings > Manage Webhooks** and click on **Create Webhook** Button.
 
-![image 1](/bounce-handlers/bounce-handling-with-elastic-email/image-1-997x1024.png)
+![Elastic Email 1](/bounce-handlers/bounce-handling-with-elastic-email/image-1-997x1024.webp)
 
 Provide the webhook URL copied from FluentCRM and then only select "Unsubscribed", "Complaints" and "Bounce/Error" Events.
 
