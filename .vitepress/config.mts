@@ -54,9 +54,6 @@ export default defineConfig({
   vite: {
     plugins: [],
     publicDir: 'docs/public',
-    build: {
-      chunkSizeWarningLimit: 1000,
-    },
   },
   themeConfig: {
     logo: { src: '/brand/fluentCRM-logo-color.svg', alt: 'FluentCRM' },
