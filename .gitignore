@@ -1,4 +1,8 @@
 /.vitepress/cache
+/.vitepress/dist
 /node_modules
 /dist
-docs/public/brand/.DS_Store
+
+# macOS
+.DS_Store
+**/.DS_Store
