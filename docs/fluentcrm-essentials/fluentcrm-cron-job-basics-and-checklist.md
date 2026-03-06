@@ -6,6 +6,7 @@ order: 0
 ---
 
 # Cron Job: Basics & Checklist
+
 [FluentCRM](https://fluentcrm.com/) is a plugin that works continuously in the background to complete and process the tasks that are scheduled every minute like any other Email Marketing Application. This article will guide you through the **Primary Requirements** of **WordPress Cron Job Handover** to either [**Server-side**](/docs/replace-wordpress-cron-with-a-real-cron-job) or **Alternative Methods.**
 
 ## What Cron Jobs Do?
@@ -14,9 +15,9 @@ order: 0
 
 ## FluentCRM Cron Job Status
 
-**FluentCRM** has a few scheduled events and jobs that run frequently at various intervals. To know where you can find the regular and healthy **Cron Job Status,** follow the steps with screenshots below –
+**FluentCRM** has a few scheduled events and jobs that run frequently at various intervals. 
 
-First, go to **Settings** from the **Fluent CRM Navbar**, click the **Tools** settings option from the left sidebar, and you will find all the **CRON JOB Status** of **Fluent CRM.**
+Go to **Settings** from the top navigation bar. Then, from the left sidebar, open the **System Admin Tools** section. Click on **Cron Job Monitor** to see the current status of FluentCRM cron jobs.
 
 ##### **Recommended (We recommend) Intervals for Cron Job Status should be as below**:
 
