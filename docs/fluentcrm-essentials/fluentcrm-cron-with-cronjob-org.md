@@ -6,14 +6,14 @@ order: 0
 ---
 
 # Cron Job: FluentCRM Cron with Cron-job.org
+
 In this article, we will be exploring how to configure the cron job in other ways, in case we do not have permission, feature, or authorization to configure the cron job the recommended way as in the [Replace WordPress Cron with a Real Cron Job](/docs/replace-wordpress-cron-with-a-real-cron-job) guide with PHP Application Binary.
 
 There are a few online services that provide remote service to call a specific script available and public on the web. The recommended setup is to invoke the cron script with PHP Binary itself. We have dedicated documentation regarding the differences between remote and local cron job configurations here: **Cron Job: Differences and Troubleshooting**. In addition, a few key points are listed below:
 
 ## Cron-Job Dashboard
 
-To get started with [cron-job.org](http://cronjob.org) please go to their homepage: [Free cronjobs - from minutely to once a year | cron-job.org](https://cron-job.org/en/)  
-Finish the user registration, and verification and go to the dashboard.
+To get started with [cron-job.org](http://cronjob.org) please go to their homepage: [Free cronjobs - from minutely to once a year | cron-job.org](https://cron-job.org/en/). Finish the user registration, and verification and go to the dashboard.
 
 ![crm cronjoborg site](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-site.png)
 
@@ -50,6 +50,6 @@ Once you confirm the test result shows success, create and save the cron job and
 
 ![crm cronjoborg success history](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-success-history.png)
 
-If everything is okay with the configuration and the test runs successfully, after some time when the cron schedule passes some schedules you will see the cron job history showing success for the next schedules it ran. If the history shows any error you should investigate and troubleshoot the issue.
+If the configuration is correct and the test runs successfully, you will start to see **successful entries in the Cron Job History** after the scheduled cron times pass. This indicates that the cron jobs are running properly. If you notice any errors in the history, you should investigate and troubleshoot the issue.
 
-Once again, Running FluentCRM requires a proper and timely running Cron Job. These types of remote cron jobs may not always work or have problems for higher processing websites.
+Keep in mind that **FluentCRM requires a properly configured and regularly running cron job to work correctly**. Remote cron jobs may not always run reliably, especially on high-traffic or resource-intensive websites, so it’s important to monitor them regularly.
