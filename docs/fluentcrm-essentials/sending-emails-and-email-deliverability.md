@@ -6,6 +6,7 @@ order: 0
 ---
 
 # Email Delivery of FluentCRM
+
 FluentCRM is an Email Marketing & Automation tool. It helps you launch Email Campaigns, Email sequences, and Email Automation to automate your marketing emails.
 
 Using your hosting space for email isn't a good idea. And using the hosting for sending PHP emails would most likely deplete the hosting resources. Thus, we suggest that you use a separate email service.
@@ -18,9 +19,11 @@ In order to use an email service, you need to use an SMTP plugin. There are plen
 
 ### FluentSMTP to Handle All Email Delivery
 
-That's why we've created a free-for-lifetime SMTP plugin called FluentSMTP. In fact, it is the only SMTP plugin that allows multiple SMTP connections at the same time described here: **[Multiple SMTP Connections & Auto Routing](https://fluentsmtp.com/docs/using-multiple-smtp-drivers-with-fluent-smtp/).** This means, if you install FluentSMTP, you can use multiple email-sending services to cut down your email-sending costs. Some email services can be a bit costly. So if you have FluentSMTP, you can use the expensive email service for your marketing emails and the less expensive email service for not-so-important WordPress emails.
+That's why we've created a free-for-lifetime SMTP plugin called FluentSMTP. In fact, it is the only SMTP plugin that allows multiple SMTP connections at the same time described here: **[Multiple SMTP Connections & Auto Routing](https://fluentsmtp.com/docs/using-multiple-smtp-drivers-with-fluent-smtp/).** This means, if you install FluentSMTP, you can use multiple email-sending services to cut down your email-sending costs. Some email services can be a bit costly. 
 
-![fluent smtp wordpress](/fluentcrm-essentials/sending-emails-and-email-deliverability/fluent-smtp-wordpress.png)
+So if you have FluentSMTP, you can use the expensive email service for your marketing emails and the less expensive email service for not-so-important WordPress emails.
+
+![fluent smtp wordpress](/fluentcrm-essentials/sending-emails-and-email-deliverability/fluent-smtp-wordpress.webp)
 
 For more about FluentSMTP, Configurations, and features please check the relevant documentation: [**Install and Activate FluentSMTP**](https://fluentsmtp.com/docs/installing-fluent-smtp/), [**Configurable Email Delivery Providers**](https://fluentsmtp.com/docs/configurable-email-delivery-providers/), and [**Introduction to FluentSMTP Dashboard**](https://fluentsmtp.com/docs/introduction-to-fluent-smtp-dashboard/)
 
@@ -48,7 +51,7 @@ There a lot of different Email Delivery Providers can be configured natively via
 
 Below is an example screenshot of multiple Email Delivery Connections based on various Delivery Providers:
 
-![fluent smtp multiple connections](/fluentcrm-essentials/sending-emails-and-email-deliverability/fluent-smtp-multiple-connections.png)
+![fluent smtp multiple connections](/fluentcrm-essentials/sending-emails-and-email-deliverability/fluent-smtp-multiple-connections.webp)
 
 ## FluentCRM Email Processing
 
@@ -60,13 +63,13 @@ There are different places from where Emails can be sent such as **Test Emails**
 
 **Schedule emails within a specified date-time range:** Your emails will start processing between your specified time-date range.
 
-![schedule the emails](/fluentcrm-essentials/sending-emails-and-email-deliverability/Schedule-the-emails.png)
+![schedule the emails](/fluentcrm-essentials/sending-emails-and-email-deliverability/Schedule-the-emails.webp)
 
 The next step is to deliver the emails. It can be delivered through wp\_mail() directly or if you have a plugin like FluentSMTP. FluentSMTP takes emails from FluentCRM and then relays them to the Email Delivery Provider you configure in settings and used from FluentCRM.
 
 Below is a screenshot of an Email campaign while sending a campaign. Please check the above links for specific features.
 
-![flunetcrm email processing](/fluentcrm-essentials/sending-emails-and-email-deliverability/flunetcrm-email-processing.png)
+![flunetcrm email processing](/fluentcrm-essentials/sending-emails-and-email-deliverability/flunetcrm-email-processing.webp)
 
 ## FluentCRM Email Scheduling
 
@@ -76,7 +79,7 @@ The emails can be scheduled or waited until a period of time from different plac
 
 Below is an example screenshot of Automation Emails waiting for 1 Day. For more about this please check: [**Wait X Days/Hours**](/docs/primary-automation-actions/#wait-x-days-hours)
 
-![crm automation wait](/fluentcrm-essentials/sending-emails-and-email-deliverability/crm-automation-wait.png)
+![crm automation wait](/fluentcrm-essentials/sending-emails-and-email-deliverability/crm-automation-wait.webp)
 
 ## Compare Cron Status
 
