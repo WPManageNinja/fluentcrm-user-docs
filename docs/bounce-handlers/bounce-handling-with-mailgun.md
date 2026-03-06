@@ -27,6 +27,6 @@ If you set up these two webhook correctly, so whenever an email mark as a compla
 
 ### Viewing Bounced Contacts
 
-If you want to view bounced contacts, go to FluentCRM **Contacts**. Then click **Filter By Statuses** and enable the **Bounced** checkbox.
+If you want to view bounced contacts, go to FluentCRM **Contacts**. Then, enable to the **Advanced Filter** option. Click the **Add Property > Contact Segment > Status** and select the **Bounce** option.
 
 ![view bounced contacts in fluentcrm](/bounce-handlers/bounce-handling-with-mailgun/bounce-filter.webp)
