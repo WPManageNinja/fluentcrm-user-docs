@@ -6,6 +6,7 @@ order: 0
 ---
 
 # Transfer License from one Domain to another
+
 You may already know [How to Install, Upgrade and Activate FluentCRM Licenses](/docs/how-to-install-upgrade-and-activate-license) but sometimes it could be necessary to transfer your existing FluentCRM license from one domain to another. And this article will show you how to easily do so.
 
 First, you need to deactivate your existing license. This can be done in the following ways.
@@ -14,19 +15,19 @@ First, you need to deactivate your existing license. This can be done in the fol
 
 The first way is to go to your FluentCRM dashboard's **Settings** tab. Then click the **License Management** tab and deactivate your license by clicking the deactivation link.
 
-![](/getting-started-with-audience/transfer-license-from-one-domain-to-another/Screenshot_2-1.png)
+![](/getting-started-with-audience/transfer-license-from-one-domain-to-another/license-management-1.webp)
 
 ## Deactivate FluentCRM License from WPManageninja
 
 Now deactivate your license to log in to your WPManageNinja dashboard. Then go to the **License Key** tab and click **Manage Sites**.
 
-![screenshot at aug 26 14 54 16 png 1196×445 1](/getting-started-with-audience/transfer-license-from-one-domain-to-another/Screenshot-at-Aug-26-14-54-16-png-1196-C3-97445-1.png)
+![screenshot at aug 26 14 54 16 png 1196×445 1](/getting-started-with-audience/transfer-license-from-one-domain-to-another/license-management-2.webp)
 
 ### Listing all Active Domains
 
 You'll see all your activated licenses. Click on the **Deactivate Site** to deactivate a license.
 
-![screenshot at aug 26 14 59 33 png 1176×698 1](/getting-started-with-audience/transfer-license-from-one-domain-to-another/Screenshot-at-Aug-26-14-59-33-png-1176-C3-97698-1.png)
+![screenshot at aug 26 14 59 33 png 1176×698 1](/getting-started-with-audience/transfer-license-from-one-domain-to-another/license-management-3.webp)
 
 ## Activate License on New Domain
 
