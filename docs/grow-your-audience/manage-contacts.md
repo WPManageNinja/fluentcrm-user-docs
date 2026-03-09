@@ -6,13 +6,12 @@ order: 0
 ---
 
 # Add and Manage All Contacts
+
 [FluentCRM](https://fluentcrm.com/) provides an excellent [Contacts Dashboard](/docs/contacts-dashboard/#Contacts-Dashboard) that represents all the necessary summaries of the activities. This article will guide you through the process of **Adding a new contact man**ually and **Managing contacts in bulk** in detail.
 
 ## Adding New Contacts
 
-To learn how to add a new contact manually, follow the steps with the screenshots below –
-
-First, go to **All Contacts** from the **Contacts** section of **Fleunt CRM Navbar**.
+First, go to **All Contacts** from the **Contacts** section of **Fluent CRM Navbar**.
 
 ![All contacts option from contacts section](/grow-your-audience/manage-contacts/All-contacts-option-from-Contacts-section-scaled.webp)
 
@@ -58,4 +57,4 @@ First, **select** the **desired contact/s** you want to manage, a **Select Actio
 
 ![select bulk action dropdown field](/grow-your-audience/manage-contacts/Select-Bulk-Action-dropdown-field-scaled.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
