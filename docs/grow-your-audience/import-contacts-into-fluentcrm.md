@@ -6,6 +6,7 @@ order: 0
 ---
 
 # Import Contacts into FluentCRM
+
 FluentCRM offers its users to import contacts from numerous sources and ways to import them. There are 3 types of contact importing processes in FluentCRM which are from the CSV file, WordPress users list from the core and other plugins, and 3rd party or Other CRM services.
 
 https://www.youtube.com/watch?v=rcusBlnZ-WI&t=26s

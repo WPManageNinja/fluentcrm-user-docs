@@ -6,13 +6,14 @@ order: 0
 ---
 
 # Contact Overview
+
 FluentCRM is a Customer Relationship Management and Email Marketing & Automation tool that manages customer contacts, and markets through email and also runs automation based on conditions & activities. In this documentation, we will see and learn how FluentCRM organizes contact data and some actions that are possible from the contact details page.
 
 https://www.youtube.com/watch?v=tKrGDW6L62Y
 
 ## Individual Contact Overview
 
-![arabi ahamed contact fluentcrm 1](/grow-your-audience/contact-overview/Arabi-Ahamed-Contact-FluentCRM-1.png)
+![arabi ahamed contact fluentcrm 1](/grow-your-audience/contact-overview/tajul-islam-Contact-FluentCRM-1.png)
 
 ### At a glance
 
