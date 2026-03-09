@@ -10,7 +10,7 @@ order: 0
 If you use the [Postmark](https://postmarkapp.com) email service then use this documentation to set up Bounce handling with FluentCRM.
 
 
-First, copy the **Webhook URL** at **FluentCRM -> Settings -> Email Service** and select **Postmark** from the dropdown and copy the Webhook URL.
+First, copy the **Webhook URL** at **FluentCRM -> Settings -> Email Service** and select **Postmark** from the dropdown and copy the **Webhook URL**.
 
 ![Select Postmark](/bounce-handlers/bounce-handling-with-postmark/select-postmark.webp)
 
@@ -26,6 +26,6 @@ If you set up these two webhooks correctly, so whenever an email is marked as a 
 
 ### Viewing Bounced Contacts
 
-If you want to view bounced contacts, go to FluentCRM **Contacts**. Then click **Filter By Statuses** and enable the **Bounced** checkbox.
+If you want to view bounced contacts, go to **FluentCRM → Contacts**. Then enable the **Advanced Filter** option. Click **Add Property → Contact Segment → Status**, and select **Bounce**.
 
 ![view bounced contacts in fluentcrm](/bounce-handlers/bounce-handling-with-postmark/bounce-filter.webp)
