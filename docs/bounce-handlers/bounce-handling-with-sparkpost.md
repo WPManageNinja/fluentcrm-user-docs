@@ -6,15 +6,16 @@ order: 0
 ---
 
 # Bounce Handling with Sparkpost
+
 If you use [SparkPost](https://sparkpost.com) email service then use this documentation to set up Bounce handling with FluentCRM.
 
-First copy the Webhook URL at FluentCRM -> Settings -> SMTP/Email Sending Service Settings and Select SparkPost from the dropdown and copy the webhook URL.
+First copy the Webhook URL at **FluentCRM -> Settings -> Email Service** and Select **SparkPost** from the dropdown and copy the **webhook URL**.
 
-![](/bounce-handlers/bounce-handling-with-sparkpost/Screenshot-2021-07-20-at-1.10.55-PM-1024x739.png)
+![Select Sparkpost](/bounce-handlers/bounce-handling-with-sparkpost/select-sparkpost.webp)
 
 Then Login to your SparkPost account then navigate to Webhooks and click on Event Webhook.
 
-![](/bounce-handlers/bounce-handling-with-sparkpost/Screenshot-2021-07-20-at-1.13.00-PM-1024x591.png)
+![Eventy Webhook](/bounce-handlers/bounce-handling-with-sparkpost/Screenshot-2021-07-20-at-1.13.00-PM-1024x591.webp)
 
 Then use the following data to setup the webhook
 
@@ -23,7 +24,7 @@ Then use the following data to setup the webhook
 -   **Events:** Select Individual Events and then check only **Link Unsubscribe**, **Bouce** and **Spam Complaint**
 -   **Authentication:** None
 
-![](/bounce-handlers/bounce-handling-with-sparkpost/Screenshot-2021-07-20-at-1.18.37-PM-1024x786.png)
+![Setup webhook](/bounce-handlers/bounce-handling-with-sparkpost/Screenshot-2021-07-20-at-1.18.37-PM-1024x786.webp)
 
 Then Click "Create Webhook" button
 
@@ -31,6 +32,6 @@ If you set up these two webhook correctly, so whenever an email mark as a compla
 
 ### Viewing Bounced Contacts
 
-If you want to view bounced contacts, go to FluentCRM **Contacts**. Then click **Filter By Statuses** and enable the **Bounced** checkbox.
+If you want to view bounced contacts, go to **FluentCRM → Contacts**. Then enable the **Advanced Filter** option. Click **Add Property → Contact Segment → Status**, and select **Bounce**.
 
-![view bounced contacts in fluentcrm](/bounce-handlers/bounce-handling-with-sparkpost/Screenshot-2023-08-12-at-3.31.52-PM-1024x529.png)
+![view bounced contacts in fluentcrm](/bounce-handlers/bounce-handling-with-sparkpost/Bounce-contact-scaled.webp)
