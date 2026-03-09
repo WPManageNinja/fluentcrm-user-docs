@@ -6,13 +6,14 @@ order: 0
 ---
 
 # Contacts Dashboard
+
 ## Contacts Dashboard
 
 https://www.youtube.com/watch?v=tKrGDW6L62Y
 
 FluentCRM provides an excellent contacts dashboard that represents all the necessary summaries of the activities. Total Contacts Paginated, Filter by Tags & Lists & Status, Advanced Filter with numerous data, Searchbox, Import & Export of the contacts, Bulk Actions on Contact Selection, and many more on the front page or the Contacts Dashboard.
 
-![contacts fluentcrm](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM.png)
+![contacts fluentcrm](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM.webp)
 
 The key points are discussed below:
 
@@ -52,7 +53,7 @@ A search box where you will be able to search for contacts by email address or n
 
 Contacts have numerous data fields and you can customize the view according to your needs by selecting the suitable fields as columns beside the contacts to get an overview quickly.
 
-![contacts fluentcrm 1](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-1.png)
+![contacts fluentcrm 1](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-1.webp)
 
 ## Basic Filters & Pagination
 
@@ -68,13 +69,13 @@ You can also filter by any or multiple contact statuses. To know more about stat
 
 All the above 3 types of filters work as **AND** conditions in conjunction.
 
-![contacts fluentcrm 2](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-2.png)
+![contacts fluentcrm 2](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-2.webp)
 
 ### Pagination
 
 And contacts listed can be paginated per 10, 20, 50, 80, 100, 120, 150, 200, 250, 300, 400, and 600 contacts per page from the bottom dropdown option as shown in the below screenshot.
 
-![contacts fluentcrm 3](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-3.png)
+![contacts fluentcrm 3](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-3.webp)
 
 ### Data Columns
 
@@ -92,7 +93,7 @@ By default, the contacts dashboard shows the contact images coming from Gravatar
 8.  Last Changed Date
 9.  Last Activity
 
-![contacts fluentcrm 4](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-4.png)
+![contacts fluentcrm 4](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-4.webp)
 
 #### Integrations & Custom Fields
 
