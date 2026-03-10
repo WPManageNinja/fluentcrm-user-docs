@@ -28,23 +28,23 @@ The CSV import tool will help you add contacts to FluentCRM. You can easily uplo
 
 Go to the **FluentCRM Dashboard** ➜ **All Contacts** and then click on the **Import** button from the top right corner.
 
-![crm contacts options](/grow-your-audience/import-contacts-into-fluentcrm/crm_contacts_options.png)
+![crm contacts options](/grow-your-audience/import-contacts-into-fluentcrm/crm_contacts_options.webp)
 
 This will open a modal and you will see a few options and select the **CSV file** from the available options.
 
-![contacts fluentcrm 14](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-14.png)
+![contacts fluentcrm 14](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-14.webp)
 
 On the next screen, you will be asked to select the **Separator Operator** of the **CSV file**. The most common format is **Comma Separated** and we strongly recommend this format.
 
-![contacts fluentcrm 1 4](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-1-4.png)
+![contacts fluentcrm 1 4](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-1-4.webp)
 
-Now click to upload or Drag a CSV file that you want to use to import your contacts.
+Now **choose a file or drag and drop it here** that you want to use to import contacts.
 
-![contacts fluentcrm 2 3](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-2-3.png)
+![contacts fluentcrm 2 3](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-2-3.webp)
 
 On the next screen, you will be asked to map the CSV fields into FluentCRM fields. Please check and select the fields accordingly.
 
-![contacts fluentcrm 3 3](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-3-3.png)
+![contacts fluentcrm 3 3](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-3-3.webp)
 
 **The available general fields as of now are:**
 
@@ -80,11 +80,11 @@ The Other Options are:
 
 Same as the **CSV Method** selection to import WordPress users this time select **WordPress Users**. This will provide a modal to select the available User Roles to be imported. You can either select **All User Roles** or **Select Specific User Roles** by checking them.
 
-![contacts fluentcrm 4 2](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-4-2.png)
+![contacts fluentcrm 4 2](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-4-2.webp)
 
 On the next screen, a few of the users will be listed as per your selection in the previous screen.
 
-![contacts fluentcrm 5 2](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-5-2.png)
+![contacts fluentcrm 5 2](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-5-2.webp)
 
 The options available here to be selected are:
 
@@ -110,7 +110,7 @@ FluentCRM allows you to import users from other WordPress plugins into FluentCRM
 
 ## Importing Contacts from Other CRM
 
-![contacts fluentcrm 6 1](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-6-1.png)
+![contacts fluentcrm 6 1](/grow-your-audience/import-contacts-into-fluentcrm/Contacts-FluentCRM-6-1.webp)
 
 FluentCRM also provides an easy way to import Contacts from Other CRM Services like Mailchimp, ConvertKit, Mailerlite, Drip, and ActiveCampaign.
 
