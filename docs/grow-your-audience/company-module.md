@@ -6,32 +6,14 @@ order: 0
 ---
 
 # Company Module
+
 In [FluentCRM](https://fluentcrm.com/), the Company Module feature organizes contacts to one or more company records. In this company record, you can see company information and the contacts you have added under the company. This article will guide you through the process of using this feature. 
 
 > **One of the notable features of the Company Module is organizing one or more contacts under a single entity. Additionally, it automatically retrieves company logos from their website using the website URL only.**
 
-## Activate/Enable Company Module
+### Enable Company Module 
 
-You can enable the **Company Module** feature using **Two** different options. These are:
-
-1.  **Addons**
-2.  **Advanced Features Config**
-
-To learn how you can enable this feature using the options mentioned above, follow the steps with the screenshots below –  
-
-### Enable Company Module Using Addons 
-
-First, go to the **Addons** section in your **Fluent CRM Sidebar** and you will find the **Company** **Module** option under the **Advanced Modules**.
-
-Now click the **Settings** button and a popup will appear where you need to **check the boxes**.
-
-Then, click the **Save Settings** button to unlock the **Company Module** features and fetch the company logo automatically through its website URL. 
-
-![enabling company module from addons](/grow-your-audience/company-module/Enabling-Company-Module-from-Addons-scaled.webp)
-
-### Enable Company Module Using Advanced Features Config
-
-First, go to **Settings** from the top right corner of the **Fluent CRM Navbar**, click the **Advanced Feature Config** settings page, scroll down and you will find the **Company Module** option.
+First, go to **Settings** from the top right corner of the **Fluent CRM Navbar**, click the **Advanced Feature** settings page, scroll down and you will find the **Company Module** option.
 
 Here, you will find two settings options. These are
 
@@ -42,8 +24,6 @@ Here, you will find two settings options. These are
 
 ## Adding Companies
 
-To learn how you can **Add** your desired **Companies** in the **Contacts** section, follow the steps with the screenshots below –
-
 After enabling the Company Module feature, go to **Companies** from the **Contacts** section dropdown.
 
 > Remember, you will not get this "**Companies**" option inside the **Contacts** section if you do not activate/enable the company module.
@@ -52,12 +32,12 @@ After enabling the Company Module feature, go to **Companies** from the **Contac
 
 To add company details, simply click the **\+ Add Company** button and a pop-up will appear where you can enter the company details. 
 
-You can also import company details from a CSV file by clicking the **Import** button.  
-Or, conveniently export company details to a CSV file by clicking the **Export** button.
+You can also import company details from a CSV file by clicking the **More Actions > Import** button.  
+Or, conveniently export company details to a CSV file by clicking the **More Actions > Export** button.
 
 ![add company, import, and export button](/grow-your-audience/company-module/Add-company-Import-and-Export-button-scaled.webp)
 
-After providing all the necessary information, click the **Create Company** button**.**
+After providing all the necessary information, click the **Create Company** button.
 
 ![create company popup page](/grow-your-audience/company-module/Create-company-popup-page.webp)
 
@@ -77,7 +57,7 @@ Click the **+** **Contacts** button, and a pop-up will appear. 
 
 ![+ contacts button](/grow-your-audience/company-module/Contacts-button-scaled.webp)
 
-Here, you can add existing contacts or create new ones for the company from the pop-up window.
+Here, you can **Add Existing contacts** or **Create new** ones for the company from the pop-up window.
 
 ![add existing or create new button](/grow-your-audience/company-module/Add-Existing-or-Create-New-button-scaled.webp)
 
@@ -87,7 +67,7 @@ You can also add notes and activities for the company using the “**Notes & Act
 
 > The data for the **Notes & Activities under Companies** are **independent from** the **Individual Contacts' Notes & Activities** data.
 
-Click on the **Add New** button to add notes for the company and a pop-up will appear. 
+Click on the **Add Notes** button to add notes for the company and a pop-up will appear. 
 
 ![add new button under notes & activities](/grow-your-audience/company-module/Add-New-button-under-Notes-Activities-scaled.webp)
 
@@ -103,7 +83,7 @@ Fluent CRM doesn’t have any designated field for adding additional data to you
 
 **To learn how to add Custom Fields in Companies, follow the steps with screenshots below –**
 
-From the left sidebar, click the **Custom Fields** button, and a pop-up page will appear on the right-hand side.
+From the left sidebar, click the **Add Custom Fields** button, and a pop-up page will appear on the right-hand side.
 
 ![custom field button](/grow-your-audience/company-module/Custom-Field-button-scaled.webp)
 
@@ -143,4 +123,4 @@ Once you are done, click the **Add** button and your custom field will be added.
 
 ![final popup page for adding custom field](/grow-your-audience/company-module/Final-popup-page-for-adding-custom-field.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
