@@ -6,6 +6,7 @@ order: 0
 ---
 
 # Import from Other Plugins & Integrations
+
 The import tool will help you add contacts to FluentCRM from various third-party plugins. During the import process, you can also auto-update the properties of already existing contact at once.
 
 https://www.youtube.com/watch?v=RuAb-51Z4zs
@@ -16,39 +17,39 @@ https://www.youtube.com/watch?v=RuAb-51Z4zs
 
 **First Step**
 
-Go to the FluentCRM dashboard and choose the Contacts tab from the top and then click the Import button from the top-right.
+Go to the FluentCRM dashboard and choose the **Contacts** tab from the top and then click the **Import** button from the top-right.
 
-![contacts fluentcrm 15](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Contacts-FluentCRM-15.png)
+![contacts fluentcrm 15](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Contacts-FluentCRM-15.webp)
 
 ## Import contacts from WooCommerce
 
 After clicking the import button a popup will appear where you need to select the WooCommerce option as the contact source and then click next.
 
-![contacts fluentcrm 1 5](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Contacts-FluentCRM-1-5.png)
+![contacts fluentcrm 1 5](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Contacts-FluentCRM-1-5.webp)
 
 In the second step, you can select the WooCommerce Product based on which the contacts will be segmented. You can also set a FluentCRM Tag to apply while importing the contacts.
 
-![contacts fluentcrm 2 4](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Contacts-FluentCRM-2-4.png)
+![contacts fluentcrm 2 4](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Contacts-FluentCRM-2-4.webp)
 
 ## Import contacts from Easy Digital Downloads (EDD)
 
 After clicking the import button a popup will appear where you need to select the Easy Digital Downloads option as the contact source and then click next.
 
-![edd import (1)](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/edd_import-1.png)
+![edd import (1)](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/edd_import-1.webp)
 
 In the second step, you can select the Easy Digital Downloads Product based on which the contacts will be segmented. You can also set a FluentCRM Tag to apply while importing the contacts.
 
-![edd import page 2 (1)](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Edd-import-page-2-1.png)
+![edd import page 2 (1)](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Edd-import-page-2-1.webp)
 
 ## Import contacts from Learndash
 
 After clicking the import button a popup will appear where you need to select the Learndash option as the contact source and then click next.
 
-![learndash integration page 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Learndash-integration-page-1.png)
+![learndash integration page 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Learndash-integration-page-1.webp)
 
 In the second step, you can select if you want to **Import By Courses** or **Import By Member Groups**. Based on the selected option, you can set which FluentCRM Tag to apply while importing the contacts.
 
-![learndash integration page 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Learndash-integration-page-2.png)
+![learndash integration page 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Learndash-integration-page-2.webp)
 
 In the third step, you will see some sample data that will be imported. You can select the List for the imported contacts. You can also Update a subscriber with new data from Learndash if the contact already exists in FluentCRM and set the new subscriber status.
 
@@ -56,11 +57,11 @@ In the third step, you will see some sample data that will be imported. You can 
 
 After clicking the import button a popup will appear where you need to select the LifterLMS option as the contact source and then click next.
 
-![lifterlms import crm](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/LifterLMS-import-crm.png)
+![lifterlms import crm](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/LifterLMS-import-crm.webp)
 
 In the second step, you can select if you want to **Import By Courses** or **Import By Memberships**. Based on the selected option, you can set which FluentCRM Tag to apply while importing the contacts.
 
-![lifterlms import crm 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/LifterLMS-import-crm-2.png)
+![lifterlms import crm 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/LifterLMS-import-crm-2.webp)
 
 In the third step, you will see some sample data that will be imported. You can select the List for the imported contacts. You can also Update a subscriber with new data from LifterLMS if the contact already exists in FluentCRM and set the new subscriber status.
 
@@ -80,11 +81,11 @@ In the third step, you will see some sample data that will be imported. You can 
 
 After clicking the import button a popup will appear where you need to select the Learnpress option as the contact source and then click next.
 
-![learnpress import page 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Learnpress-import-page-1.png)
+![learnpress import page 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Learnpress-import-page-1.webp)
 
 In the second step, you can select **Import By Courses** and map your courses with FluentCRM Tags that will be applied while importing the contacts.
 
-![learnpress import page 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Learnpress-import-page-2.png)
+![learnpress import page 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Learnpress-import-page-2.webp)
 
 In the third step, you will see some sample data that will be imported. You can select the List for the imported contacts. You can also Update a subscriber with new data from Learnpress if the contact already exists in FluentCRM and set the new subscriber status.
 
@@ -92,11 +93,11 @@ In the third step, you will see some sample data that will be imported. You can 
 
 A popup will appear where you need to select the option - paid Memberships Pro, as the contact source and then click next.
 
-![pmp import crm 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/PMP-import-CRM-2.png)
+![pmp import crm 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/PMP-import-CRM-2.webp)
 
 In the second step, you can select **Import By Membership Level** and map the Membership levels with FluentCRM Tags that will be applied while importing the contacts.
 
-![pmp import crm 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/PMP-import-CRM-1.png)
+![pmp import crm 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/PMP-import-CRM-1.webp)
 
 In the third step, you will see some sample data that will be imported. You can select the List for the imported contacts. You can also Update a subscriber with new data from Paid Memberships Pro if the contact already exists in FluentCRM and set the new subscriber status.
 
@@ -104,11 +105,11 @@ In the third step, you will see some sample data that will be imported. You can 
 
 A popup will appear where you need to select the option - MemberPress, as the contact source and then click next.
 
-![memberpress import 1 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Memberpress_import-1-1.png)
+![memberpress import 1 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/Memberpress_import-1-1.webp)
 
 In the second step, you can select **Import By Membership Level** and map the Membership levels with FluentCRM Tags that will be applied while importing the contacts.
 
-![membership import 2 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/membership_import_2-1.png)
+![membership import 2 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/membership_import_2-1.webp)
 
 In the third step, you will see some sample data that will be imported. You can select the List for the imported contacts. You can also Update a subscriber with new data from MemberPress if the contact already exists in FluentCRM and set the new subscriber status.
 
@@ -116,10 +117,10 @@ In the third step, you will see some sample data that will be imported. You can 
 
 After clicking the import button a popup will appear where you need to select the Restrict Content Pro option as the contact source and then click next.
 
-![rcp import crm 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/RCP-import-CRM-1.png)
+![rcp import crm 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/RCP-import-CRM-1.webp)
 
 In the second step, you can select **Import By Membership Level** and map the Restrict Content Pro Membership livels with FluentCRM Tags that will be applied while importing the contacts.
 
-![rcp import crm 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/RCP-import-CRM-2.png)
+![rcp import crm 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/RCP-import-CRM-2.webp)
 
 In the third step, you will see some sample data that will be imported. You can select the List for the imported contacts. You can also Update a subscriber with new data from Restrict Content Pro if the contact already exists in FluentCRM and set the new subscriber status.
