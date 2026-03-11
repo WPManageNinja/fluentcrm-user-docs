@@ -18,7 +18,7 @@ No matter what CRM or email marketing service you are currently in, it will allo
 
 For example, for MailChimp, you can go to the **Audience** and the **All Contacts**. From there you can export all contacts as CSV.
 
-![migrating to fluentcrm from mailchimp](/getting-started-with-audience/migrating-into-fluentcrm/migrating-to-fluentcrm-from-mailchimp.png)
+![migrating to fluentcrm from mailchimp](/getting-started-with-audience/migrating-into-fluentcrm/mailchimp-export.webp)
 
 If you have multiple lists and tags, prepare a CSV for each of the lists and tags so you can export the contacts and maintain the segmentations.
 
@@ -26,27 +26,27 @@ If you have multiple lists and tags, prepare a CSV for each of the lists and tag
 
 Before importing the CSV files into FluentCRM, go ahead and create the necessary lists and tags for your contacts. To create a list hover over **Contacts** and choose List from the dropdown. Now click on the **Create List** button and name your list.
 
-![create list fluentcrm](/getting-started-with-audience/migrating-into-fluentcrm/create-list-fluentcrm.png)
+![create list fluentcrm](/getting-started-with-audience/migrating-into-fluentcrm/fluentcrm-list-2.webp)
 
 Creating a tag is almost identical to creating a list. hover over Contacts and choose Tags from the dropdown. Now click on the Create Tag button and name your tag.
 
-![create a tag fluentcrm](/getting-started-with-audience/migrating-into-fluentcrm/create-a-tag-fluentcrm.png)
+![create a tag fluentcrm](/getting-started-with-audience/migrating-into-fluentcrm/fluentcrm-tag-3.webp)
 
 Go to the FluentCRM dashboard and choose the Contacts tab from the top and then click on Import from the top-right.
 
-![](/getting-started-with-audience/migrating-into-fluentcrm/import-aud-1536x490.png)
+![](/getting-started-with-audience/migrating-into-fluentcrm/fluentcrm-contact-1.webp)
 
 A popup will appear where you need to select the CSV as the contact source and then click next.
 
-![](/getting-started-with-audience/migrating-into-fluentcrm/import-aud2-1-1536x419.png)
+![](/getting-started-with-audience/migrating-into-fluentcrm/fluentcrm-import-contacts-4.webp)
 
 In the second step, you will be asked to Select Your CSV Delimiter, by default CSV delimiter is commas, but if you used semicolon you need to select it in the delimiter. Here I used Comma Separated. Now upload your CSV and again click next.
 
-![](/getting-started-with-audience/migrating-into-fluentcrm/import-aud3-1536x790.png)
+![](/getting-started-with-audience/migrating-into-fluentcrm/fluentcrm-map-contacts-5.webp)
 
 In the third step, you will need to configure the field mapping from your CSV file with Fluent CRM fields. My example CSV file has three simple fields which are Firstname, Lastname, and Email. Your CSV might have more. Map the fields accordingly. The left column has your CSV data and the right column is the FluentCRM fields.
 
-![](/getting-started-with-audience/migrating-into-fluentcrm/import-aud4-1536x964.png)
+![](/getting-started-with-audience/migrating-into-fluentcrm/fluentcrm-map-csvfeed-contacts-6.webp)
 
 Select the List & Tags for the imported contacts(Create the lists and tags first). You can also Update a Subscriber with new data from CSV if the contact is already existing. The email is a unique field and based on email FluentCRM determines if a contact is already existing. Lastly, you need to give the subscribers a status. You can select “subscribed” as the status but make sure that you have permission to send them marketing.
 
@@ -67,11 +67,9 @@ Locate the vertical three-dots menu **icon (⋮)** on the right side of the page
 
 **To Export:** Choose **Export All Lists**. This will download a CSV file containing all your existing contact lists to your computer.
 
-![export contact list](/getting-started-with-audience/migrating-into-fluentcrm/222-scaled.webp)
-
 **To Import:** Click the **Import** button. A pop-up will appear, allowing you to upload your contact list CSV file. FluentCRM will then automatically recreate your contact list structure.
 
-![import contact list](/getting-started-with-audience/migrating-into-fluentcrm/33.webp)
+![export contact list](/getting-started-with-audience/migrating-into-fluentcrm/list.webp)
 
 ## Migrate via API
 
