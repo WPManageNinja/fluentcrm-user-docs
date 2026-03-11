@@ -22,7 +22,7 @@ This section covers the migration of your individual contacts and company profil
 
 **Importing Contacts:** To import, go to the same **Contacts** section and click the **Import** button. You will then be prompted to provide the CSV file with your contact data or select a specific platform from which you wish to import your contacts.
 
-![contacts export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/Contacts-export-import-scaled.webp)
+![contacts export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/all-contacts-1.webp)
 
 ##### **Companies**
 
@@ -30,7 +30,7 @@ This section covers the migration of your individual contacts and company profil
 
 **Importing Companies:** To import Compaines informtion, go to **Contacts > Companies** and click the **Import** button. A popup will appear prompting you to upload your CSV file. This popup also contains a **Map Field** button, which allows you to match the columns from your CSV file to the corresponding company fields in FluentCRM.
 
-![companies export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/companies-export-import-scaled.webp)
+![companies export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/company-2.webp)
 
 ##### **Dynamic Segments**
 
@@ -38,7 +38,7 @@ This section covers the migration of your individual contacts and company profil
 
 **Importing Dynamic Segment Contacts:** On your new site, go to the **Dynamic Segments** page and click the **Import** button to upload the JSON file.
 
-![dynamic segemnt export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/dynamic-segemnt-export-import-scaled.webp)
+![dynamic segemnt export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/segment-3.webp)
 
 #### **Emails and Campaigns**
 
@@ -50,7 +50,7 @@ This section explains how to migrate your various email assets. Note that most o
 
 **Importing a Campaign:** On the new site, go to the same **Email Campaigns** page, click the main **Import** button, and then select the JSON file you just downloaded.
 
-![email campaign export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/email-campaign-export-import-scaled.webp)
+![email campaign export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/email-campaings-4.webp)
 
 ##### **Email Sequences**
 
@@ -58,7 +58,7 @@ This section explains how to migrate your various email assets. Note that most o
 
 **Importing a Sequence:** On the new site, go to the **Email Sequences** page and click the **Import** button located in the top-right section to upload your exported sequence files.
 
-![email sequence export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/email-sequence-export-import-scaled.webp)
+![email sequence export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/email-sequences-5.webp)
 
 ##### **Recurring Email Campaigns**
 
@@ -66,7 +66,7 @@ This section explains how to migrate your various email assets. Note that most o
 
 **Importing a Recurring Campaign:** On the new site, use the main **Import** button on the **Recurring Email Campaigns** page to upload the file you exported.
 
-![recurring email campaigns export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/Recurring-Email-Campaigns-export-import-scaled.webp)
+![recurring email campaigns export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/recurring-campaigns-6.webp)
 
 ##### **Email Templates**
 
@@ -74,7 +74,7 @@ This section explains how to migrate your various email assets. Note that most o
 
 **Importing a Template:** On the new site, click the **Import** button on the **Email Templates** page to upload the template file you exported.
 
-![email templates export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/Email-Templates-export-import-scaled.webp)
+![email templates export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/email-templates-7.webp)
 
 #### **Automation Funnels**
 
@@ -84,7 +84,7 @@ Your marketing automations can also be migrated one at a time.
 
 **Importing an Automation:** On your new site, go to the **Automation Funnels** page, click the main **Import** button, and then choose the exported automation JSON file you wish to upload.
 
-![automations funnel export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/Automations-funnel-export-import-scaled.webp)
+![automations funnel export import](/migrating-from-other-platforms/migrate-fluentcrm-to-a-new-site/automations-8.webp)
 
 ### **Full Site Migration (For Advanced Users Only)**
 
