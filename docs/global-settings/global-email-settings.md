@@ -6,35 +6,22 @@ order: 0
 ---
 
 # Email Settings
+
 The Email Settings define the default Mail From email address and Names that will be visible to the recipients of the Fluent CRM communication emails sent. Available options are discussed below:
 
 ## Default Settings
 
+ * **From Name:** The Name that is visible to the recipient as Sender Name. When you send marketing emails to your subscribers, the “From Name” (also known as the email Sender name) tells the recipients who sent them the email. It is very important and a determining factor for the email you will send whether your email will be opened, or get ignored by the recipients. Often it is the company name, or perhaps the product name or service name people have signed up to learn about.
+
+ * **From Email Address:** The Name that is visible to the recipient is Sender's Email Address. This is limited to the number of available configured connections in SMTP Plugins if installed like FluentSMTP. This is the email address the user will see when they open the email. There are a number of things to follow when choosing the "From Email" address. Always avoid using free webmail addresses, and also avoid the no-reply address. Use a valid email address that also matches your SMTP email address or this will cause an email delivery issue.
+
+ * **Reply to Name:** The Name that identifies the Name of the entity that will receive the reply to the sent email.
+
+ * **Reply to Email:** The email that will receive the reply of the sent email.
+
 ![crm email settings default](/global-settings/global-email-settings/crm_email_settings_default.png)
 
-**Option Name**
-
-**Description**
-
-**From Name**
-
-The Name that is visible to the recipient as Sender Name. When you send marketing emails to your subscribers, the “From Name” (also known as the email Sender name) tells the recipients who sent them the email. It is very important and a determining factor for the email you will send whether your email will be opened, or get ignored by the recipients. Often it is the company name, or perhaps the product name or service name people have signed up to learn about.
-
-**From Email Address**
-
-The Name that is visible to the recipient is Sender's Email Address. This is limited to the number of available configured connections in SMTP Plugins if installed like FluentSMTP. This is the email address the user will see when they open the email. There are a number of things to follow when choosing the "From Email" address. Always avoid using free webmail addresses, and also avoid the no-reply address. Use a valid email address that also matches your SMTP email address or this will cause an email delivery issue.
-
-**Reply to Name**
-
-The Name that identifies the Name of the entity that will receive the reply to the sent email.
-
-**Reply to Email**
-
-The email that will receive the reply of the sent email.
-
-**Maximum Email Limit Per Second**
-
-The maximum number of emails attempted per second. It can be lower due to a lot of factors like site performance, security or firewall limits, rules, the number of connections allowed from the remote mail server that delivers the emails, or by default WordPress hosting if no SMTP plugin is installed and configured.
+ * **Maximum Email Limit Per Second:** The maximum number of emails attempted per second. It can be lower due to a lot of factors like site performance, security or firewall limits, rules, the number of connections allowed from the remote mail server that delivers the emails, or by default WordPress hosting if no SMTP plugin is installed and configured.
 
 The above settings will only apply if there is no SMTP Plugin installed and uses the default mailing system. If an SMTP plugin is installed like FluentSMTP and that does not force the Sender Name and Email Address as below then the above settings will be in effect.
 
@@ -133,9 +120,11 @@ Date of Birth
 
 #### Custom Fields
 
+Custom Fields are dependent on the FLuentCRM Settings. You can add as many Custom Fields as you want and then they will be available here. 
+
 ![crm email settigns smartcodes customfields](/global-settings/global-email-settings/crm_email_settigns_SmartCodes_customFields.png)
 
-Custom Fields are dependent on the FLuentCRM Settings. You can add as many Custom Fields as you want and then they will be available here. The generic **Data Field Name** will be as you set in the **Label** while creation and **SmartCode** will recognize the **slug** value of the custom field as below:
+The generic **Data Field Name** will be as you set in the **Label** while creation and **SmartCode** will recognize the **slug** value of the custom field as below:
 
 ![custom fields fluentcrm datetime 1](/global-settings/global-email-settings/Custom-Fields-FluentCRM__DateTime-1.png)
 
@@ -190,6 +179,28 @@ Manage Subscription
 Hyperlink HTML
 
 &#123;&#123;crm.manage\_subscription\_html|Manage Preference&#125;&#125;
+
+#### WP User
+
+The available data properties and their smart codes are:
+
+User's Display Name
+{{wp_user.display_name}}
+
+User Login (username)
+{{wp_user.user_login}}
+
+Password Reset URL (on button / link)
+##wp_user.password_reset_url##
+
+Password Reset URL (as plain text)
+{{wp_user.password_reset_url}}
+
+User Meta Data
+{{wp_user.meta.META_KEY}}
+
+![crm email settigns smartcodes general](/global-settings/global-email-settings/wp-user-shortcode.png)
+
 
 ## Email Preference Settings
 
