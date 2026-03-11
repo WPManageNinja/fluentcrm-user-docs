@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=tKrGDW6L62Y
 
 ## Individual Contact Overview
 
-![arabi ahamed contact fluentcrm 1](/grow-your-audience/contact-overview/tajul-islam-Contact-FluentCRM-1.png)
+![arabi ahamed contact fluentcrm 1](/grow-your-audience/contact-overview/Arabi-Ahamed-Contact-FluentCRM-1.png)
 
 ### At a glance
 
