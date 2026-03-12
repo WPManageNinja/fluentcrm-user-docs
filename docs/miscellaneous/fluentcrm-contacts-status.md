@@ -6,16 +6,49 @@ order: 0
 ---
 
 # FluentCRM Contacts Status
-There are **5 types** of **Contact Status** in FluentCRM. The status will be changed automatically based on the audience’s response, also you can change them manually.
 
-**Subscribed:** Someone who has opted in from your lead sources and also confirmed the double opt-in email you sent. This can also be set manually on importing new contacts or individually.
+In FluentCRM, every contact is assigned a specific "Status." This status acts as a label that tells the system exactly what kind of emails this person is legally allowed to receive (if any).
 
-**Pending:** Someone who has interacted with your lead source, but hasn’t opted in to receive your email or note confirmed the subscription yet. This is the default status of an audience coming into FluentCRM. All pending audiences will get a double opt-in email to confirm their subscription unless otherwise defined. This is required by GDPR policy and is very useful to avoid spammers and helps in list hygiene.
+Statuses update automatically based on how your audience interacts with your emails, but you can also manage them manually or filter your list by these statuses. 
 
-**Unsubscribed:** Someone who opted in to receive your email marketing campaign but currently opted out to not receive your communication emails.
+Based on the latest FluentCRM interface, there are 7 distinct contact statuses. Here is exactly what each one means:
 
-**Bounced:** An email is marked as bounced if an email has not been received by the recipient’s mail server and reached the recipient. A bounced email means that your mail has not been delivered. This happens in various incidents like the mailbox quota for the recipient is full, temporary DNS error, Mailserver is unreachable, the email existed before but now is deleted or does not exist anymore, the email actually does not exist, etc.
+## 1. Subscribed
+This is the golden status! These are your active, engaged contacts.
 
-**Complained:** If a user provides feedback to the email as complaints, spam, phishing, or even to the sender's network owner these are categorized as Complaint Reports and the most harmful and sensitive for an email marketer or a business. To avoid such situations please use cleaned lists, opt-in confirmations, and other best practices, especially with the contents of the email.
+* **What it means:** This person has fully opted in to receive your marketing emails. If you use Double Opt-in, it means they clicked the confirmation link in their email.
+* **Who gets it:** People who fill out your forms, purchase a product and check the "subscribe" box, or contacts you manually import and assign this status to.
 
-![crm contacts filter by status](/miscellaneous/fluentcrm-contacts-status/crm_contacts_filter_by_status.png)
+## 2. Pending
+Think of this as the "waiting room."
+
+* **What it means:** The user interacted with your lead source (like filling out a form), but they haven't confirmed their subscription yet.
+* **Why it matters:** By default, new contacts enter as "Pending" and are sent a Double Opt-in email. Until they click the confirmation link in that email, they will not receive your marketing broadcasts. This protects you from spam bots and keeps your list clean!
+
+## 3. Unsubscribed
+
+* **What it means:** This contact previously agreed to receive your emails but has now clicked the "Unsubscribe" link at the bottom of a campaign.
+* **Rule of thumb:** FluentCRM will automatically prevent marketing emails from going to these users. Respecting this status is legally required.
+
+## 4. Transactional
+This is a critical status for e-commerce sites (like WooCommerce) or membership platforms.
+
+* **What it means:** This person is a customer or user on your site, but they did not opt in to your marketing newsletter.
+* **What they receive:** They will only receive essential, non-marketing emails triggered by their actions—like order receipts, password resets, or course enrollment confirmations. They will automatically be excluded from your promotional broadcasts.
+
+## 5. Bounced
+
+* **What it means:** You tried to send this person an email, but their email server rejected it.
+* **Why it happens:** This occurs if the email address doesn't exist anymore (a fake address or a deleted account), their inbox is completely full, or their server is temporarily down. High bounce rates hurt your sender reputation, so FluentCRM stops sending to these addresses.
+
+## 6. Complained
+
+* **What it means:** This is a severe status. It means the user actively reported your email to their service provider (or network owner) as a violation.
+* **Why it matters:** Complaints are highly damaging to your sender reputation. To avoid this, always ensure your lists are clean, you have explicit permission to email them, and your content provides value.
+
+## 7. Spammed
+
+* **What it means:** The contact explicitly clicked the "Mark as Spam" or "Junk" button in their email client (like Gmail or Outlook) when reading your email.
+* **What happens:** FluentCRM flags them immediately to protect your domain reputation. You should not attempt to send marketing emails to these contacts again.
+
+![Contact Status](/docs/public/miscellaneous/fluentcrm-contacts-status/status.webp)
