@@ -6,35 +6,62 @@ order: 0
 ---
 
 # Cloudflare or Security Plugin Compatibility
-FluentCRM is built on top of WordPress REST API and depends on CRON jobs and REST API endpoints. Please read the docs carefully and implement associate actions if your FluentCRM is not sending emails or getting errors in different FluentCRM actions.
 
-### FluentCRM URL Structures:
+FluentCRM is built on top of the WordPress REST API and relies heavily on background CRON jobs to function smoothly. Because FluentCRM processes real-time data (like sending emails, tracking link clicks, and running automations), caching plugins and security firewalls (like Cloudflare or Wordfence) can sometimes block these vital processes. 
 
-**FluentCRM REST API URL Base:** https://your-site.com/wp-json/fluent-crm/v2/
+If your emails are not sending, or you are seeing unexpected errors while performing actions in FluentCRM, your security or caching settings are likely the cause. Follow this guide to exclude FluentCRM's important URLs from your caching and security plugins so everything runs seamlessly.
 
-FluentCRM also uses a few internal AJAX calls to run long-process jobs. These ajax calls are mostly POST requests, and it will always contain **fluentcrm** as a body action value.
+## 1. URLs and Actions to Exclude
 
-**List of Ajax Action Names:**
+To prevent conflicts, you need to tell your caching and security plugins to ignore or bypass the following URL structures and AJAX actions.
 
--   fluentcrm-post-campaigns-emails-processing
--   fluentcrm\_callback\_for\_background
--   fluentcrm-post-campaigns-send-now
+### REST API Base URL
+Your security plugin must allow requests to this path:
+* `https://yoursite.com/wp-json/fluent-crm/v2/*` 
 
-FluentCRM also has few frontend-based URLs to process different actions like redirecting Email URLs, and handling Smart URLs.
+> **Note:** Replace `yoursite.com` with your actual domain name.
 
-**Frontend URL Patterns:**
+### Frontend URL Patterns (Link Tracking)
+FluentCRM uses these patterns to track email opens, redirect links, and handle Smart URLs. These must **never** be cached:
+* `https://yoursite.com/?fluentcrm=1&route=*`
+* `https://yoursite.com/?ns_url=*&mid=*`
 
--   https://youtsite.com/?fluentcrm=1&route=\*\*\*\*\*
--   https://youriste.com/?ns\_url=\*\*\*\*&mid=\*\*\*
+### AJAX Actions
+FluentCRM uses specific background (POST) requests for long-running tasks. Ensure your security firewall does not block requests containing `fluentcrm` as the body action value. Specifically:
+* `fluentcrm-post-campaigns-emails-processing`
+* `fluentcrm_callback_for_background`
+* `fluentcrm-post-campaigns-send-now`
 
-You may disable caching for these URL patterns in your cloudflare settings or caching Plugins.
+---
 
-### Recommended Cloudflare Page Rules
+## 2. How to Configure Cloudflare
 
-You may configure your Cloudflare page rule like the screenshot. If you are using CloudFlare pro plan then you can set the rules individually for each endpoint pattern.
+If you are using Cloudflare, you need to create Page Rules to bypass the cache for FluentCRM's background processes.
 
-![image 1](/miscellaneous/cloudflare-or-security-plugin-compatibility/image-1-1024x856.png)
+1.  Log in to your Cloudflare dashboard and go to **Rules → Page Rules**.
+2.  Create a new rule for your REST API and Frontend URL patterns (listed above).
+3.  Set the setting to **Cache Level: Bypass**.
 
-### For Caching Plugins
+> **💡 Pro Tip:** If you are on a Cloudflare Pro plan, you can set up individual firewall rules for each endpoint pattern. This ensures maximum compatibility with FluentCRM without sacrificing your overall site security.
 
-You may exclude these URL patterns if you use a caching plugin or Security Plugin like WordFence. For WordFence, active the Learning Mode for a week and then you may activate the full protection mode.
+---
+
+## 3. How to Configure Caching Plugins (WP Rocket, LiteSpeed, etc.)
+
+Most WordPress caching plugins have an "Advanced" or "Exclusions" settings tab.
+
+1.  Navigate to your caching plugin's exclusion settings (often labeled "Never Cache URL(s)", "Exclude URLs", or "Bypass Cache").
+2.  Paste the **Frontend URL Patterns** and the **REST API Base URL** into the exclusion box.
+3.  Save your settings and completely purge/clear your existing cache.
+
+---
+
+## 4. How to Configure Wordfence (or other Firewalls)
+
+Strict security plugins like Wordfence can sometimes mistake FluentCRM's automated email-sending actions for malicious bot activity and block them.
+
+**The Easiest Fix for Wordfence:**
+1.  In your WordPress dashboard, go to **Wordfence → Firewall**.
+2.  Change your Web Application Firewall (WAF) status to **Learning Mode**.
+3.  Leave it in Learning Mode for about one week while you use FluentCRM normally (e.g., send a test campaign, let your automations run, and add subscribers).
+4.  Wordfence will safely "learn" that FluentCRM's actions are normal site behavior. After a week, you can safely switch the firewall back to **Enabled and Protecting**.
