@@ -6,15 +6,16 @@ order: 0
 ---
 
 # SMTP/Email & Bounce Handlers
+
 FluentCRM uses the wp\_mail() function to broadcast all the emails that are PHP-based mailers. There are various ways to deliver emails from WordPress. The SMTP Protocol, API-based 3rd party delivery providers, and direct PHP-based sending require SMTP Port 25 to be opened from the WordPress hosting server. Below is a screenshot of when no SMTP plugins are used on the website.
 
-![crm smtp initial](/global-settings/smtp-bounce-handlers-settings/crm_smtp_initial.png)
+![crm smtp initial](/global-settings/smtp-bounce-handlers-settings/crm_smtp_initial.webp)
 
 SMTP Plugins like **FluentSMTP** improves your WordPress mail by intercepting the wp\_mail and then connecting with your email service providers to ensure deliverability. It allows sending emails directly via SMTP. API-based providers like Google Workplace, Office365, Sendgrid, AWS SES, etc. When you install the FluentSMTP plugin on your website and configure email delivery connections you will see them listed in the FluentCRM SMTP Dashboard like the below screenshot.
 
 ## FluentSMTP Settings
 
-![crm smtp](/global-settings/smtp-bounce-handlers-settings/crm_smtp.png)
+![crm smtp](/global-settings/smtp-bounce-handlers-settings/crm_smtp.webp)
 
 ## Bounce Handlers
 
@@ -33,5 +34,8 @@ To configure Bounce Handlers for available services please check each relevant d
 9.  [Postal Server](/docs/bounce-handling-with-postal-server)
 10.  [SMTP2Go](/docs/bounce-handling-with-smtp2go)
 11.  [Brevo (ex Sendinblue)](/docs/bounce-handling-with-brevo)
+
+>[!Note]
+>We are constantly working to expand this list. If your provider isn't listed, keep an eye out for future updates.
 
 For now, we only have these services integrated with our bounce handling system. More will be added in the future.
