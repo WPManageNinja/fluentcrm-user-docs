@@ -6,29 +6,52 @@ order: 0
 ---
 
 # Migrating into FluentCRM from Drip
-From your contact dashboard, click **Import**.
 
-![click on import](/migrating-from-other-platforms/migrating-into-fluentcrm-from-drip/Click-on-import-1024x492.png)
+Moving your contacts from Drip to FluentCRM is incredibly simple thanks to a direct API connection. This method allows the two systems to sync directly, so you don’t have to worry about manual downloads or messy CSV spreadsheets.
 
-Then, choose **Import from Other Platforms** and select **Drip** from the list of providers.
+Follow this friendly, step-by-step guide to bring your audience over in just a few clicks.
 
-![import from other providers](/migrating-from-other-platforms/migrating-into-fluentcrm-from-drip/Import-From-Other-Providers-1024x485.png)
-![select drip](/migrating-from-other-platforms/migrating-into-fluentcrm-from-drip/Select-Drip-1024x379.png)
+## Step 1: Get Your Connection Credentials from Drip
 
-On the next screen, you will be asked to give Drip API Key, you can acquire the API key by going to **Drip Profile -> User Info -> API Token**
+First, you need to grab two pieces of information from your Drip account so FluentCRM has permission to securely access your contacts.
 
-For Drip Account ID, go to **Account ID Settings -> General Info -> Account ID**
+1.  Log in to your **Drip** account.
+2.  Click the **Settings** (gear icon) in the bottom-left corner of your dashboard and select **User settings**.
+3.  On this page, you will see your **Account ID**. Copy this down.
+4.  Next, scroll down to find your **API Token**. Copy this token as well. Keep both of these handy for the next step!
 
-Now Give your API key and ID and hit Next.
+## Step 2: Initiate the Import in FluentCRM
 
-![give api creds drip](/migrating-from-other-platforms/migrating-into-fluentcrm-from-drip/Give-API-creds-Drip-1024x463.png)
+Now, let's head over to your WordPress dashboard to start the migration.
 
-Now, simply map all the data(lists, tags, information) you need to import in FluentCRM and click continue.
+1.  Go to **FluentCRM → Contacts** and click the **Import** button at the top right.
+2.  A window will pop up. Select the **Import From Other Providers** option and click **Next**.
+3.  Click on the **Drip** logo from the list of available marketing software and hit **Next (Connect)**.
 
-![map your data drip](/migrating-from-other-platforms/migrating-into-fluentcrm-from-drip/Map-your-Data-Drip-1024x790.png)
+## Step 3: Connect the Two Systems
 
-Finally, review and Confirm!
+It's time to bridge the connection using the credentials you just copied from Drip.
 
-![review and confirm](/migrating-from-other-platforms/migrating-into-fluentcrm-from-drip/Review-and-Confirm-1024x253.png)
+1.  Paste your **API Token** into the first box.
+2.  Paste your **Account ID** into the second box.
+3.  Click **Continue [Map Data]**. FluentCRM will now securely connect and pull in your Drip data.
 
-Your all contacts with all their selected properties will be imported.
+## Step 4: Organize Your Data (Mapping)
+
+This is where you tell FluentCRM how to correctly organize the information coming from Drip.
+
+* **Mapping Tags:** You will see a list of your Drip tags. You can select an existing FluentCRM tag to match it with, or simply toggle the **Auto Create Tag?** switch to have the system recreate them for you.
+* **Mapping Fields:** Match your custom Drip fields (like `User_ID`) to your FluentCRM custom fields. If there is a field you don't need anymore, just toggle the **Skip** switch next to it. *(Note: Email Address and First Name are mapped automatically for you).*
+* **Global Assignments (Optional):** You can pick a specific Assigned List or a Default Tag ID to apply to every single contact being imported. This is a great way to tag everyone with a label like "Migrated from Drip" to keep things organized.
+
+> **💡 Pro Tip:** We highly recommend checking the box labeled *"Import only active subscribers from Drip"*. This ensures you only bring over engaged users and leaves bounced or unsubscribed contacts behind!
+
+When you are ready, click **Continue [Review and Import]**.
+
+## Step 5: Final Review and Finish
+
+The final step is to verify your selections before the data transfer officially begins.
+
+1.  FluentCRM will display a quick summary of what is about to happen (e.g., "Based on your selections 112 contacts will be imported").
+2.  If everything looks correct, click the **Confirm Import** button.
+3.  The system will process your data. Once finished, your Drip audience will be safely settled into their new home in FluentCRM!
