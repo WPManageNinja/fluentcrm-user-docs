@@ -6,9 +6,72 @@ order: 0
 ---
 
 # Form Field Code Structure
-Fluent CRM has a cool structural format for generating form fields. Using this structural format anyone can make a form without writing any HTML or JavaScript. The form fields will depend on the structural format.
 
-There are several types of form fields in Fluent CRM and all those have almost the same structural format. There are 26 types of form fields in fluent CRM. There are also some common and optional fields in every form block. Let's look at first the common/optional fields
+FluentCRM uses a **declarative PHP array structure** to describe all settings and form UIs in the automation builder. Instead of writing HTML and JavaScript manually, you define fields as arrays and FluentCRM renders the UI for you.
+
+This page is organized in two parts:
+
+- **Concepts and common options** – how field definitions are structured and which properties are shared.
+- **Per–field‑type examples** – real code snippets you can copy and adapt.
+
+---
+
+## Common field properties
+
+Almost every field definition supports the following keys:
+
+| Key            | Description                                                                                     |
+| ------------- | ----------------------------------------------------------------------------------------------- |
+| `label`       | The visible label for the field.                                                                |
+| `inline_help` | Short help text shown under the input.                                                          |
+| `placeholder` | Placeholder text for text or select inputs.                                                     |
+| `help`        | Longer description or tooltip text for the field.                                              |
+| `wrapper_class` | Optional CSS class to control layout (columns, spacing, etc.) in the builder UI.             |
+| `readonly`    | When `true`, the field is rendered but cannot be edited.                                       |
+| `dependency`  | Optional rule controlling when the field is shown, based on the value of another field.        |
+
+Each field **must** declare a `type` (for example `input-text`, `multi-select`, `radio`), which tells FluentCRM which Vue component to use.
+
+---
+
+## Field types overview
+
+FluentCRM ships with many field types. The most commonly used are:
+
+- [Option selectors](#option-selectors)
+- [Single or multi-select](#single-or-multi-select)
+- [Radio](#radio)
+- [Number input](#number-input)
+- [Text input](#text-input)
+- [Text input popper](#text-input-popper)
+- [Yes & no check](#yes-and-no-check)
+- [Grouped select](#grouped-select)
+- [Multi text options](#multi-text-options)
+- [Email campaign composer](#email-campaign-composer)
+- [Reload field selection](#reload-field-selection)
+- [Form group mapper](#form-group-mapper)
+- [Form many dropdown mappers](#form-many-dropdown-mappers)
+- [HTML](#html)
+- [URL selector](#url-selector)
+- Date & time related fields
+- Condition/segment builders
+- [Input values pair](#input-values-pair-properties)
+- [Text values multi](#text-value-multi-properties)
+- [HTML editor](#html-editor)
+- [REST selector](#rest-selector)
+- [Condition block groups](#condition-block-groups)
+- [Custom sender config](#custom-sender-config)
+- [Radio buttons](#radio-buttons)
+- [Checkboxes](#checkboxes)
+- [Time selector](#time-selector)
+
+The following sections give practical examples for each type.
+
+---
+
+## Detailed examples (legacy format)
+
+The rest of this page contains the original, detailed examples for every field type. You can use the snippets directly in your own integrations.
 
 Key
 
@@ -67,7 +130,7 @@ dependency
 -   [Checkboxes](#checkboxes)
 -   [Time Selector](#time-selector)
 
-**Option selectors**
+### Option selectors
 
 ```
 'subscription_status' => [
@@ -79,127 +142,50 @@ dependency
 ]
 ```
 
-This is a simple **option\_selectors** type field component, you can find this structure in every integration. The **option\_key** is used to get the correct options from WordPress. The **is\_multiple** defines whether the option selector is multiple or not.
+This is a simple **option_selectors** type field component. You will see this structure across many integrations.
 
-Key
+| **Key**       | **Description**                                                                                           |
+| ------------- | --------------------------------------------------------------------------------------------------------- |
+| `creatable`   | Whether users can create a new tag/list from the selector.                                               |
+| `size`        | (Optional) Visual size of the field.                                                                     |
+| `option_key`  | Tells FluentCRM which dynamic dataset to load (see the option key reference below).                      |
+| `is_multiple` | Whether multiple values can be selected.                                                                 |
 
-Description
+**Option key reference**
 
-creatable
+These are the most common values you will use for the `option_key` property when working with `option_selectors`.  
+FluentCRM will automatically resolve each key into the right dataset.
 
-Can the user create a new tag/list
-
-size
-
-(Optional) Size of the field
-
-option\_key
-
-Dynamic Data Sets: Possible Values - [See bellow](#see-bellow-option_key)
-
-is\_multiple
-
-If the selector is multiple or not
-
-**Option Key possible sets**.
-
-Key
-
-Description
-
-tags
-
-Tags are like Lists but more ways to filter your contacts inside a list.
-
-lists
-
-List are categories of your contacts.
-
-editable\_statuses
-
-All editable statuses of a user
-
-woo\_products
-
-All woo-commerce products
-
-email\_sequences
-
-All sequences of Fluent-CRM
-
-campaigns
-
-All campaigns of Fluent-CRM
-
-product\_selector\_tutorlms
-
-All courses of TutorLMS
-
-edd\_coupons
-
-All coupons of Easy Digital Download
-
-product\_selector\_learndash
-
-All options of Learndash courses
-
-product\_selector\_learndash\_groups
-
-All options of Learndash groups
-
-product\_selector\_lifterlms
-
-All options of LifterLMS courses
-
-product\_selector\_lifterlms\_groups
-
-All options of LifterLMS memberships
-
-product\_selector\_pmpro
-
-All memberships of Paid Membership Pro
-
-product\_selector\_rcp
-
-All memberships of Restrict Content Pro
-
-product\_selector\_wishlist
-
-All memberships of Wishlist Member
-
-woo\_coupons
-
-All Woo-commerce coupons
-
-woo\_order\_statuses
-
-All Woo-commerce order statuses
-
-woo\_categories
-
-All Woo-commerce categories
-
-product\_selector\_woo
-
-All Woo-commerce products
-
-product\_selector\_woo\_order
-
-All Woo-commerce products
-
-edd\_products
-
-All Easy Digital Download products
-
-product\_selector\_edd
-
-All Easy Digital Download products
+| **option_key**                       | **What it returns**                                                                 |
+| ------------------------------------ | ----------------------------------------------------------------------------------- |
+| `tags`                               | All tags (used to segment contacts inside a list).                                 |
+| `lists`                              | All lists (high‑level categories for contacts).                                    |
+| `editable_statuses`                  | All editable contact statuses.                                                      |
+| `woo_products`                       | All WooCommerce products.                                                           |
+| `email_sequences`                    | All email sequences in FluentCRM.                                                  |
+| `campaigns`                          | All email campaigns in FluentCRM.                                                  |
+| `product_selector_tutorlms`          | All TutorLMS courses.                                                               |
+| `edd_coupons`                        | All Easy Digital Downloads coupons.                                                |
+| `product_selector_learndash`         | All LearnDash courses.                                                              |
+| `product_selector_learndash_groups`  | All LearnDash groups.                                                               |
+| `product_selector_lifterlms`         | All LifterLMS courses.                                                              |
+| `product_selector_lifterlms_groups`  | All LifterLMS memberships.                                                          |
+| `product_selector_pmpro`             | All Paid Memberships Pro memberships.                                              |
+| `product_selector_rcp`               | All Restrict Content Pro memberships.                                              |
+| `product_selector_wishlist`         | All Wishlist Member memberships.                                                   |
+| `woo_coupons`                        | All WooCommerce coupons.                                                            |
+| `woo_order_statuses`                 | All WooCommerce order statuses.                                                     |
+| `woo_categories`                     | All WooCommerce product categories.                                                |
+| `product_selector_woo`               | All WooCommerce products.                                                           |
+| `product_selector_woo_order`         | All WooCommerce products (for order selectors).                                     |
+| `edd_products`                       | All Easy Digital Downloads products.                                               |
+| `product_selector_edd`               | All Easy Digital Downloads products.                                               |
 
 **The preview of the example block.**
 
 ![screenshot 2022 09 01 at 11.57.47 am](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-11.57.47-AM.png)
 
-**Single or multi-select**
+### Single or multi-select
 
 ```
 'product_ids'     => [
@@ -222,21 +208,16 @@ This is an example **multi-select** type field component, you can find this stru
 
 ![screenshot 2022 09 01 at 2.47.57 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-2.47.57-PM.png)
 
-Options possible sets:
+**Option structure**
 
-Key
+Each option inside the `options` array has this shape:
 
-Description
+| Key    | Description        |
+| ------ | ------------------ |
+| `id`   | Unique identifier. |
+| `title`| Human‑readable label shown in the UI. |
 
-id
-
-set selector id
-
-title
-
-set selector title
-
-**Radio**
+### Radio
 
 ```
 'purchase_type'      => [
@@ -255,25 +236,20 @@ set selector title
 
 This is an example **radio** type field component, you can find this structure in every integration. The **options** property contains the values of the radio fields. Every option has two properties, **id** & **title**.
 
-**Options Key possible sets**:
+**Option structure**
 
-Key
+Radio `options` use the same structure as select options:
 
-Description
-
-id
-
-Set selector id
-
-title
-
-Set selector title
+| Key    | Description        |
+| ------ | ------------------ |
+| `id`   | Value stored/sent. |
+| `title`| Label shown next to the radio button. |
 
 **The preview of the example block.**
 
 ![screenshot 2022 09 01 at 3.10.51 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.10.51-PM.png)
 
-**Number input**
+### Number input
 
 ```
 'wait_time_amount' => [
@@ -289,7 +265,7 @@ This is an example **input-number** type field component, you can find this stru
 
 ![screenshot 2022 09 01 at 3.22.58 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.22.58-PM.png)
 
-**Text input**
+### Text input
 
 ```
 'send_email_custom'  => [
@@ -307,7 +283,7 @@ This is an example **input-text** type field component, you can find this struct
 
 ![screenshot 2022 09 01 at 3.30.03 pm 1](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.30.03-PM-1.png)
 
-**Text input popper**
+### Text input popper
 
 ```
 'note'      => [
@@ -324,7 +300,7 @@ This is an example **input-text-popper** type field component, you can find this
 
 ![screenshot 2022 09 01 at 3.50.01 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.50.01-PM.png)
 
-**Yes & no check**
+### Yes & no check
 
 ```
 'run_multiple'       => [
@@ -341,7 +317,7 @@ This is an example **yes\_no\_check** type field component, you can find this st
 
 ![screenshot 2022 09 01 at 3.54.18 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.54.18-PM.png)
 
-**Grouped select**
+### Grouped select
 
 ```
 'lesson_ids'      => [
@@ -367,43 +343,28 @@ This is an example **yes\_no\_check** type field component, you can find this st
 
 This is an example **grouped-select** type field component, you can find this structure in every integration. The **options** property contains a list. Every option has three properties **title**, **slug** & **[options](#grouped-select-options)**(Every [options](#grouped-select-options-inside-options) of this property contains two fields named **id** & **title**).
 
-**Options possible sets**:
+**Group structure**
 
-key
+Top‑level groups inside `options`:
 
-Description
+| Key       | Description                                                |
+| --------- | ---------------------------------------------------------- |
+| `title`   | Course/group title shown in the dropdown.                  |
+| `slug`    | Unique slug for the course/group.                          |
+| `options` | Array of child options (lessons, items) for this group.    |
 
-title
+Child options inside each group:
 
-set course title
-
-slug
-
-set course slug
-
-options
-
-Dynamic Data sets: Possible Values - [See below](#grouped-select-options-inside-options)
-
-**Options -> Options possible sets:**
-
-Key
-
-Description
-
-id
-
-set selector id
-
-title
-
-set selector title
+| Key    | Description        |
+| ------ | ------------------ |
+| `id`   | Unique identifier. |
+| `title`| Label shown in the UI. |
 
 **The preview of the example block.**
 
 ![screenshot 2022 09 01 at 4.33.13 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-4.33.13-PM.png)
 
-**Multi text options**
+### Multi text options
 
 ```
 'target_lesson' => [
@@ -422,7 +383,7 @@ This is an example **multi\_text\_options** type field component, you can find t
 
 ![screenshot 2022 09 02 at 12.34.30 pm](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-12.34.30-PM.png)
 
-**Email campaign composer**
+### Email campaign composer
 
 ```
 'campaign'  => [
@@ -437,7 +398,7 @@ This is an example **email\_campaign\_composer** type field component, you can f
 
 ![screenshot 2022 09 02 at 9.27.07 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-9.27.07-AM.png)
 
-**Reload field selection**
+### Reload field selection
 
 ```
 'course_id'       => [
@@ -554,7 +515,7 @@ There is also a property named **fields** which contains a list of input fields.
 
 ![screenshot 2022 09 02 at 3.20.53 pm](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-3.20.53-PM.png)
 
-**Html**
+### Html
 
 ```
 'subscription_status_info' => [
@@ -565,7 +526,7 @@ There is also a property named **fields** which contains a list of input fields.
 
 This is an example **html** type field component, you can find this structure in every integration. The **info** property is required.
 
-**Url selector**
+### Url selector
 
 ```
 'redirect_to' => [
@@ -583,7 +544,7 @@ This is an example **url\_selector** type field component, you can find this str
 
 ![screenshot 2022 09 02 at 10.03.21 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-10.03.21-AM.png)
 
-**Input value pair properties**
+### Input value pair properties
 
 ```
 'contact_properties'     => [
@@ -610,47 +571,29 @@ This is an example **url\_selector** type field component, you can find this str
 
 This is an example **input\_value\_pair\_properties** type field component, you can find this structure in every integration. The **property\_options** property contains a list of other different types of field components.
 
-**property\_options possible sets**:
+**`property_options` structure**
 
-key
+Top‑level `property_options` entries use:
 
-Description
+| Key      | Description                                   |
+| -------- | --------------------------------------------- |
+| `label`  | Label shown for the property selector.        |
+| `type`   | Field type used to select the property value. |
+| `options`| Option list for that inner field.             |
 
-label
+Inner `options` items use:
 
-set selector label
-
-type
-
-set selector type
-
-options
-
-Dynamic Data Sets: Possible Values – [See below](#property_options_into_options)
-
-**property\_options -> options possible sets:**
-
-key
-
-Description
-
-id
-
-set selector id
-
-slug
-
-set selector slug
-
-title
-
-set selector title
+| Key    | Description                |
+| ------ | -------------------------- |
+| `id`   | Internal identifier.       |
+| `slug` | Optional machine‑readable key. |
+| `title`| Text shown in the dropdown. |
 
 **The preview of the example block.**
 
 ![screenshot 2022 09 02 at 10.48.35 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-10.48.35-AM.png)
 
-**Text value multi properties**
+### Text value multi properties
 
 ```
 'meta_properties'            => [
@@ -669,7 +612,7 @@ This is an example **text-value-multi-properties** type field component, you can
 
 ![screenshot 2022 09 02 at 11.07.51 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-11.07.51-AM.png)
 
-**Html editor**
+### Html editor
 
 ```
 'description' => [
@@ -684,7 +627,7 @@ This is an example **html\_editor** type field component, you can find this stru
 
 ![screenshot 2022 09 02 at 11.18.21 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-11.18.21-AM.png)
 
-**Rest selector**
+### Rest selector
 
 ```
 'course_id' => [
@@ -701,7 +644,7 @@ This is an example **rest\_selector** type field component, you can find this st
 
 ![screenshot 2022 09 02 at 11.31.02 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-11.31.02-AM.png)
 
-**Condition block groups**
+### Condition block groups
 
 ```
 'conditions' => [
@@ -732,7 +675,7 @@ This is an example **rest\_selector** type field component, you can find this st
 ]
 ```
 
-This is an example **cond****ition\_block\_groups** type field component, you can find this structure in every integration. The **labels** are a required property. The **groups** field contains the condition groups of a specific **cond****ition\_block\_groups** type field component.
+This is an example **condition_block_groups** type field component. The `labels` array is required. The `groups` field defines the available condition groups and their children for this condition builder.
 
 **The preview of this condition block groups**
 
@@ -740,7 +683,7 @@ This is an example **cond****ition\_block\_groups** type field component, you ca
 
 ![screenshot 2022 09 01 at 10.50.34 am](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-10.50.34-AM.png)
 
-**Custom sender config**
+### Custom sender config
 
 ```
 'mailer_settings' => [
@@ -755,7 +698,7 @@ This is an example **custom\_sender\_config** type field component, you can find
 
 ![screenshot 2022 09 01 at 11.10.55 am](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-11.10.55-AM.png)
 
-**Radio buttons**
+### Radio buttons
 
 ```
 'wait_type'        => [
@@ -798,7 +741,7 @@ set selector title
 
 ![screenshot 2022 09 02 at 12.08.55 pm](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-12.08.55-PM.png)
 
-**Checkboxes**
+### Checkboxes
 
 ```
 'to_day'            => [
