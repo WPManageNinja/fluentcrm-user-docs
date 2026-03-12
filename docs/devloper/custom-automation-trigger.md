@@ -6,205 +6,314 @@ order: 0
 ---
 
 # Custom Automation Trigger
-Automation is magic and FluentCRM is the magician. But anyone can be part of this. Following some steps, anyone can be part of this magic. In this article, we will show you, how you are able to add a custom trigger in automation.
 
-**Trigger**
+This guide shows you how to register a **custom automation trigger** in FluentCRM so that your own plugin or custom code can start funnels based on events in your site (for example, a custom registration or purchase flow).
 
- A funnel trigger or automation trigger will let you start an automation funnel based on your user's behavior. Triggers are essential for initiating email marketing automation. There are a lot of triggers that can start or initiate automation in FluentCRM such as [Primary Automation Triggers](/docs/fluentcrm-automation-triggers), [Ecommerce Triggers](/docs/fluentcrm-ecommerce-triggers), [Membership Triggers](/docs/fluentcrm-membership-triggers), [LMS Triggers](/docs/fluentcrm-lms-triggers), and many more. Using trigger you can track various activities in your WordPress ecosystem. Isn't cool. Let's dive into deep to learn, how to create a custom trigger in FluentCRM.
+---
 
-To make an automation trigger, we need to use two filters and one action hook.
+## What is an automation trigger?
 
-Type
+An automation (or funnel) trigger defines **when** a funnel should start. Triggers are based on user behavior or system events. FluentCRM ships with many built‑in triggers, such as:
 
-Hook
+- [Primary Automation Triggers](/docs/fluentcrm-automation-triggers)
+- [Ecommerce Triggers](/docs/fluentcrm-ecommerce-triggers)
+- [Membership Triggers](/docs/fluentcrm-membership-triggers)
+- [LMS Triggers](/docs/fluentcrm-lms-triggers)
 
-Description
+Sometimes, you need to start a funnel from **your own plugin logic**. In that case, you can register a custom trigger and fire it whenever your event happens.
 
-Filter
+---
 
-fluentcrm\_funnel\_triggers
+## Hooks used for a custom trigger
 
-This is a filter hook and this hook will add your custom trigger to the automation trigger list.
+To implement a custom trigger you will typically use **two filters** and **one action**:
 
-Filter
+| Type   | Hook name                                        | Purpose |
+| ------ | ------------------------------------------------ | ------- |
+| Filter | `fluentcrm_funnel_triggers`                      | Register your trigger in the global trigger list so it appears in the funnel builder. |
+| Filter | `fluentcrm_funnel_editor_details_{trigger_name}` | Provide the settings and conditions schema for the trigger configuration UI. Replace `{trigger_name}` with your own trigger slug. |
+| Action | `fluentcrm_funnel_start_{trigger_name}`          | Fired automatically when FluentCRM decides the trigger should run, based on your settings and conditions. Your business logic goes here. |
 
-fluentcrm\_funnel\_editor\_details\_{trigger\_name}
+In the example below, the **trigger name** is:
 
-This is a filter hook and this hook will generate your custom trigger setting block. For the following trigger source code, the **{trigger\_name}** is my\_plugin\_registration.
+```text
+my_plugin_registration
+```
 
-Action
+So the concrete hooks will be:
 
-fluentcrm\_funnel\_start\_{trigger\_name}
+- `fluentcrm_funnel_editor_details_my_plugin_registration`
+- `fluentcrm_funnel_start_my_plugin_registration`
 
-This is an action hook and this action will be called automatically depending on the trigger setting. You can do further using this action hook.
+---
 
-To add a custom trigger in automation, I am going to tell you to step by step. This example will be using composer, you can do without composer too.
+## Step 1 – Create the trigger class
 
-**Step 1**
+Create a PHP class, for example `Custom\Triggers\CustomTrigger`, that encapsulates the trigger definition, editor fields and handler logic.
 
-First of all, I created a class named CustomTrigger which will contain the full source code of this automation trigger.
+```php
+<?php
 
-&lt;?php
-
-namespace Custom\\Triggers;
+namespace Custom\Triggers;
 
 class CustomTrigger
 {
-    public function \_\_construct()
+    protected $triggerName;
+    protected $priority;
+    protected $actionArgNum;
+
+    public function __construct()
     {
-        $this->triggerName = 'my\_plugin\_registration';
-        $this->priority = 20;
-        $this->actionArgNum = 2;
-        add\_filter('fluentcrm\_funnel\_triggers', array($this, 'addTrigger'), $this->priority, 1);
-        add\_filter('fluentcrm\_funnel\_editor\_details\_'.$this->triggerName, array($this, 'prepareEditorDetails'), 10, 1);
-        add\_action('fluentcrm\_funnel\_start\_' . $this->triggerName, array($this, 'handle'), 10, 2);
+        $this->triggerName   = 'my_plugin_registration';
+        $this->priority      = 20;
+        $this->actionArgNum  = 2;
+
+        // 1) Register the trigger in the trigger list
+        add_filter(
+            'fluentcrm_funnel_triggers',
+            [$this, 'addTrigger'],
+            $this->priority,
+            1
+        );
+
+        // 2) Provide editor configuration for this trigger
+        add_filter(
+            'fluentcrm_funnel_editor_details_' . $this->triggerName,
+            [$this, 'prepareEditorDetails'],
+            10,
+            1
+        );
+
+        // 3) Handle the trigger when it fires
+        add_action(
+            'fluentcrm_funnel_start_' . $this->triggerName,
+            [$this, 'handle'],
+            10,
+            2
+        );
     }
 
+    /**
+     * Basic trigger metadata used in the trigger list.
+     */
     public function getTrigger()
     {
-        return \[
-            'category'    => \_\_('My-plugin'),
-            'label'       => \_\_('My-plugin'),
-            'description' => \_\_('This Funnel will be initiated when a My-plugin registration completed'),
-            'icon'        => 'fc-icon-wp\_new\_user\_signup',
-        \];
+        return [
+            'category'    => __('My-plugin'),
+            'label'       => __('My-plugin'),
+            'description' => __(
+                'This funnel will be initiated when a My-plugin registration is completed'
+            ),
+            'icon'        => 'fc-icon-wp_new_user_signup',
+        ];
     }
 
+    /**
+     * Attach this trigger definition to FluentCRM's trigger registry.
+     */
     public function addTrigger($triggers)
     {
-        $triggers\[$this->triggerName\] = $this->getTrigger();
+        $triggers[$this->triggerName] = $this->getTrigger();
+
         return $triggers;
     }
 
+    /**
+     * Configuration fields for the trigger settings panel.
+     */
     public function getSettingsFields($funnel)
     {
-        return \[
-            'title'     => \_\_('My-plugin Registration'),
-            'sub\_title' => \_\_('This Funnel will be initiated when a My-plugin registration completed'),
-            'fields'    => \[
-                'message' => \[
+        return [
+            'title'      => __('My-plugin Registration'),
+            'sub_title'  => __(
+                'This funnel will be initiated when a My-plugin registration is completed'
+            ),
+            'fields'     => [
+                'message'     => [
                     'type'        => 'input-text',
-                    'label'       => \_\_('Message Title'),
-                    'placeholder' => \_\_('Type Message Title')
-                \],
-                'description' => \[
-                    'type' => 'html',
+                    'label'       => __('Message Title'),
+                    'placeholder' => __('Type Message Title'),
+                ],
+                'description' => [
+                    'type'  => 'html',
                     'label' => 'Description',
-                    'info' => '<b>'.\_\_('This message will add to user but need to set title').'</b>'
-                \]
-            \]
-        \];
+                    'info'  => '<b>' . __(
+                        'This message will be added to the user but needs a title'
+                    ) . '</b>',
+                ],
+            ],
+        ];
     }
 
+    /**
+     * Build the full editor details object that FluentCRM expects.
+     */
     public function prepareEditorDetails($funnel)
     {
-        $funnel->settings = wp\_parse\_args($funnel->settings, $this->getFunnelSettingsDefaults());
-        $funnel->settingsFields = $this->getSettingsFields($funnel);
-        $funnel->conditions = wp\_parse\_args($funnel->conditions, $this->getFunnelConditionDefaults($funnel));
+        $funnel->settings        = wp_parse_args(
+            $funnel->settings,
+            $this->getFunnelSettingsDefaults()
+        );
+        $funnel->settingsFields  = $this->getSettingsFields($funnel);
+        $funnel->conditions      = wp_parse_args(
+            $funnel->conditions,
+            $this->getFunnelConditionDefaults($funnel)
+        );
         $funnel->conditionFields = $this->getConditionFields($funnel);
+
         return $funnel;
     }
 
+    /**
+     * Default values for the "Settings" section.
+     */
     public function getFunnelSettingsDefaults()
     {
-        return \[
-            'subscription\_status' => 'subscribed'
-        \];
+        return [
+            'subscription_status' => 'subscribed',
+        ];
     }
 
+    /**
+     * Definition of the "Conditions" fields for this trigger.
+     */
     public function getConditionFields($funnel)
     {
-        return \[
-            'update\_type'  => \[
+        return [
+            'update_type' => [
                 'type'    => 'radio',
-                'label'   => \_\_('If Contact Already Exist?', 'fluent-crm'),
-                'help'    => \_\_('Please specify what will happen if the subscriber already exist in the database', 'fluent-crm'),
-                'options' => $this->getUpdateOptions()
-            \],
-            'user\_roles'   => \[
-                'type'        => 'multi-select',
-                'is\_multiple' => true,
-                'label'       => \_\_('Targeted User Roles', 'fluent-crm'),
-                'help'        => \_\_('Select which roles registration will run this automation Funnel', 'fluent-crm'),
-                'placeholder' => \_\_('Select Roles', 'fluent-crm'),
-                'options'     => $this->getUserRoles(),
-                'inline\_help' => \_\_('Leave blank to run for all user roles', 'fluent-crm')
-            \],
-            'run\_multiple'       => \[
-                'type'        => 'yes\_no\_check',
+                'label'   => __('If Contact Already Exists?', 'fluent-crm'),
+                'help'    => __(
+                    'Specify what will happen if the subscriber already exists in the database',
+                    'fluent-crm'
+                ),
+                'options' => $this->getUpdateOptions(),
+            ],
+            'user_roles'  => [
+                'type'         => 'multi-select',
+                'is_multiple'  => true,
+                'label'        => __('Targeted User Roles', 'fluent-crm'),
+                'help'         => __(
+                    'Select which roles’ registration will run this automation funnel',
+                    'fluent-crm'
+                ),
+                'placeholder'  => __('Select Roles', 'fluent-crm'),
+                'options'      => $this->getUserRoles(),
+                'inline_help'  => __(
+                    'Leave blank to run for all user roles',
+                    'fluent-crm'
+                ),
+            ],
+            'run_multiple' => [
+                'type'        => 'yes_no_check',
                 'label'       => '',
-                'check\_label' => \_\_('Restart the Automation Multiple times for a contact for this event. (Only enable if you want to restart automation for the same contact)'),
-                'inline\_help' => \_\_('If you enable, then it will restart the automation for a contact if the contact already in the automation. Otherwise, It will just skip if already exist')
-            \]
-        \];
+                'check_label' => __(
+                    'Restart the automation multiple times for a contact for this event (only enable if you want to restart automation for the same contact)'
+                ),
+                'inline_help' => __(
+                    'If enabled, the automation will restart for a contact even if they are already in the automation. Otherwise, it will be skipped.',
+                    'fluent-crm'
+                ),
+            ],
+        ];
     }
 
+    /**
+     * Default values for the condition fields.
+     */
     public function getFunnelConditionDefaults($funnel)
     {
-        return \[
-            'update\_type'  => 'update', // skip\_all\_actions, skip\_update\_if\_exist
-            'user\_roles'   => $this->getUserRoles(),
-            'run\_multiple'       => 'yes'
-        \];
+        return [
+            'update_type'  => 'update', // other options: skip_all_if_exist, skip_update_if_exist
+            'user_roles'   => $this->getUserRoles(),
+            'run_multiple' => 'yes',
+        ];
     }
 
+    /**
+     * Options for the "update_type" radio field.
+     */
     public function getUpdateOptions()
     {
-        return \[
-            \[
+        return [
+            [
                 'id'    => 'update',
-                'title' => \_\_('Update if Exist', 'fluent-crm')
-            \],
-            \[
-                'id'    => 'skip\_all\_if\_exist',
-                'title' => \_\_('Skip this automation if contact already exist', 'fluent-crm')
-            \]
-        \];
+                'title' => __('Update if Exist', 'fluent-crm'),
+            ],
+            [
+                'id'    => 'skip_all_if_exist',
+                'title' => __(
+                    'Skip this automation if contact already exists',
+                    'fluent-crm'
+                ),
+            ],
+        ];
     }
 
+    /**
+     * Get all editable WordPress roles in the format expected by FluentCRM.
+     */
     public function getUserRoles($keyed = false)
     {
-        if (!function\_exists('get\_editable\_roles')) {
-            require\_once(_ABSPATH_ . '/wp-admin/includes/user.php');
+        if (!function_exists('get_editable_roles')) {
+            require_once ABSPATH . 'wp-admin/includes/user.php';
         }
 
-        $roles = \\get\_editable\_roles();
-        $formattedRoles = \[\];
+        $roles          = get_editable_roles();
+        $formattedRoles = [];
+
         foreach ($roles as $roleKey => $role) {
-
             if ($keyed) {
-                $formattedRoles\[$roleKey\] = $role\['name'\];
+                $formattedRoles[$roleKey] = $role['name'];
             } else {
-                $formattedRoles\[\] = \[
+                $formattedRoles[] = [
                     'id'    => $roleKey,
-                    'title' => $role\['name'\]
-                \];
+                    'title' => $role['name'],
+                ];
             }
-
         }
+
         return $formattedRoles;
     }
 
+    /**
+     * Main handler that runs when the trigger fires.
+     *
+     * @param \FluentCrm\App\Models\Funnel $funnel
+     * @param array                        $originalArgs Event arguments passed when firing the trigger.
+     */
     public function handle($funnel, $originalArgs)
     {
-        error\_log(print\_r(\[$funnel, $originalArgs\], 1));
+        // Replace this with your own logic.
+        error_log(print_r([$funnel, $originalArgs], true));
     }
 }
+```
 
-In the above example, you see, there is a method called **prepareEditorDetails**. This method returns an object and the object contains several fields. This object is the structure of this trigger's setting page design. Let's see the preview of this trigger's setting block and discuss it.
+The `prepareEditorDetails()` method is responsible for returning an object that FluentCRM uses to render the **settings** and **conditions** panels for this trigger in the automation editor.
 
-![screenshot 2022 09 07 at 9.31.23 am](/devloper/custom-automation-trigger/Screenshot-2022-09-07-at-9.31.23-AM-1024x740.png)
+The trigger configuration panel will look similar to this:
 
-In the above source code, the Target Products block is generated by **getSettingsFields**. You see there is a fields property in this method return array. There is so many field type in FluentCRM, you can find those [here](/docs/form-field-code-structure).
+![Custom automation trigger settings](/devloper/custom-automation-trigger/Screenshot-2022-09-07-at-9.31.23-AM-1024x740.png)
 
-In the above example, you see, there is a method called **handle**. This method is called when this trigger is triggered. With this method you can do, what you want.
+> The "Target Products" (or similar) area in your UI is generated from the `getSettingsFields()` definition. For more field types and structures, see the [form field code structure](/docs/form-field-code-structure) reference.
 
-**Step 2**
+---
 
-Using the following code, You can able to add this custom trigger code in FluentCRM.
+## Step 2 – Register the trigger class
 
-add\_action('plugins\_loaded', function () {
-   if (defined('FLUENTCAMPAIGN\_DIR\_FILE')) {
-      new \\Custom\\Triggers\\CustomTrigger();
-   }
+Finally, you need to instantiate your trigger class when FluentCRM (FluentCampaign) is available. A common place to do this is on the `plugins_loaded` action:
+
+```php
+add_action('plugins_loaded', function () {
+    if (defined('FLUENTCAMPAIGN_DIR_FILE')) {
+        new \Custom\Triggers\CustomTrigger();
+    }
 });
+```
+
+Once this code is in place:
+
+1. The **My-plugin** trigger will appear in the **Automation Trigger** list in FluentCRM.
+2. You can configure its settings and conditions in the funnel editor.
+3. When your custom event fires (and you call the appropriate FluentCRM APIs), FluentCRM will run the `fluentcrm_funnel_start_my_plugin_registration` action and execute your `handle()` method, allowing you to start and control the automation flow.
