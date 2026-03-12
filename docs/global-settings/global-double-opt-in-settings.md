@@ -23,10 +23,10 @@ Customize how the confirmation email appears in your subscriber's inbox:
 
 ## Email Body & Design
 
- * **Email Body:** Write the email body for the double opt-in email. There will be a default one. You can customize it as you want. Use the SmartCode from the dropdown to create a customized one. But using the SmartCode #activate_link# for a Plain Text Email or &#123;&#123;crm.activate_button|Confirm Subscription&#125;&#125; for HTML Email with a button to click for the subscription is mandatory because it contains the activation URL.
+ * **Email Body:** Write the email body for the double opt-in email. You can customize the default text using the SmartCode dropdown to create a personalized experience.
  * **Activation Link (Mandatory):** You must include the activation trigger so users can confirm.
     * For Plain Text Email, use: #activate_link#
-    * For HTML Email with a button, use: {{crm.activate_button|Confirm Subscription}}
+    * For HTML Email with a button, use: &#123;&#123;crm.activate_button|Confirm Subscription&#125;&#125;
 
  * **Design Template:** Select the email **Design Template**. You can choose from four different options: Simple Blue, Classic, Plain Texture, or Basic.
 
