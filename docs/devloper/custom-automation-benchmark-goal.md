@@ -6,172 +6,234 @@ order: 0
 ---
 
 # Custom Automation Benchmark/Goal
-Automation is magic and FluentCRM is the magician. But anyone can be part of this. Following some steps, anyone can be part of this magic. In this article, we will show you, how you are able to add a custom benchmark/goal in automation.
 
-**Benchmark/Goal**
+This guide shows you how to register a **custom automation benchmark/goal** in FluentCRM so you can track important events (like a specific product purchase or custom success criteria) and move contacts forward in a funnel when those goals are achieved.
 
-Benchmarks are essential for initiating email marketing automation. There are a lot of benchmarks that can start or initiate automation in FluentCRM such as New Order Success, List Applied, Tag Applied, and many more. Using benchmark/goal you can track various activities in your WordPress ecosystem. Isn't cool. Let's dive into deep to learn, how to create a custom benchmark/goal in FluentCRM.
+---
 
-To make an automation benchmark/goal, we need to use two filters and one action hook.
+## What is a benchmark/goal?
 
-Type
+Benchmarks (goals) are special funnel steps that are **triggered when a condition becomes true**. Common examples include:
 
-Hook
+- New order completed.
+- List applied.
+- Tag applied.
 
-Description
+When a benchmark is hit, FluentCRM can jump the contact forward to that step, skip intermediate actions, or continue according to your configuration. With a custom benchmark, you can plug in **your own event source** (for example, from a custom plugin).
 
-Filter
+---
 
-fluentcrm\_funnel\_blocks
+## Hooks used for a custom benchmark/goal
 
-This is a filter hook and this hook will add your custom benchmark/goal to the automation benchmark/goal list.
+To implement a custom benchmark you will use **two filters** and **one action hook**:
 
-Filter
+| Type   | Hook name                                         | Purpose |
+| ------ | ------------------------------------------------- | ------- |
+| Filter | `fluentcrm_funnel_blocks`                         | Register your custom benchmark block in the funnel builder. |
+| Filter | `fluentcrm_funnel_block_fields`                   | Define the settings fields for configuring the benchmark. |
+| Action | `fluentcrm_funnel_benchmark_start_{benchmark_name}` | Execute your benchmark logic when the goal is hit. Replace `{benchmark_name}` with your benchmark slug. |
 
-fluentcrm\_funnel\_block\_fields
+In the example below, the **benchmark name** is:
 
-This is a filter hook and this hook will generate your custom benchmark/goal setting block.
+```text
+custom_benchmark
+```
 
-Action
+So the runtime hook will be:
 
-fluentcrm\_funnel\_benchmark\_start\_{benchmark\_name}
+- `fluentcrm_funnel_benchmark_start_custom_benchmark`
 
-This is an action hook and this benchmark/goal will be called automatically depending on the automation benchmark/goal setting. You can do further using this action hook. For the following trigger source code, the **{benchmark\_name}** is custom\_benchmark.
+---
 
-To add a custom benchmark/goal in automation, I am going to tell you to step by step. This example will be using composer, you can do without composer too.
+## Step 1 – Create the benchmark class
 
-**Step 1**
+Create a PHP class, for example `Custom\Goals\CustomBenchmark`, that:
 
-First of all, I created a class named CustomBenchmark which will contain the full source code of this automation benchmark/goal.
+- Registers the benchmark block.
+- Defines the configuration fields.
+- Handles the event when the benchmark is triggered.
 
-&lt;?php
+```php
+<?php
 
-namespace Custom\\Goals;
+namespace Custom\Goals;
 
-use FluentCrm\\App\\Services\\Funnel\\BaseBenchMark;
-use FluentCrm\\App\\Services\\Funnel\\FunnelHelper;
-use FluentCrm\\App\\Services\\Funnel\\FunnelProcessor;
-use FluentCrm\\Framework\\Support\\Arr;
+use FluentCrm\App\Services\Funnel\BaseBenchMark;
+use FluentCrm\App\Services\Funnel\FunnelHelper;
+use FluentCrm\App\Services\Funnel\FunnelProcessor;
+use FluentCrm\Framework\Support\Arr;
 
 class CustomBenchmark
 {
-    public function \_\_construct()
-    {
-        $this->triggerName = 'custom\_benchmark';
-        $this->actionArgNum = 3;
-        $this->priority = 20;
+    protected $triggerName;
+    protected $actionArgNum;
+    protected $priority;
 
-        add\_filter('fluentcrm\_funnel\_blocks', array($this, 'addBenchmark'), $this->priority, 1);
-        add\_filter('fluentcrm\_funnel\_block\_fields', array($this, 'pushBlockFields'), $this->priority, 2);
-        add\_action('fluentcrm\_funnel\_benchmark\_start\_' . $this->triggerName, array($this, 'handle'), $this->priority, 2);
+    public function __construct()
+    {
+        $this->triggerName  = 'custom_benchmark';
+        $this->actionArgNum = 3;
+        $this->priority     = 20;
+
+        // 1) Add the benchmark block to the funnel builder
+        add_filter(
+            'fluentcrm_funnel_blocks',
+            [$this, 'addBenchmark'],
+            $this->priority,
+            1
+        );
+
+        // 2) Register the settings fields for this benchmark
+        add_filter(
+            'fluentcrm_funnel_block_fields',
+            [$this, 'pushBlockFields'],
+            $this->priority,
+            2
+        );
+
+        // 3) Handle the benchmark when it starts
+        add_action(
+            'fluentcrm_funnel_benchmark_start_' . $this->triggerName,
+            [$this, 'handle'],
+            $this->priority,
+            2
+        );
     }
 
-    public function addBenchmark($benchMarks)
+    /**
+     * Register the benchmark block in the funnel builder.
+     */
+    public function addBenchmark($benchmarks)
     {
-        $benchMark = $this->getBlock();
-        if($benchMark) {
-            $benchMark\['type'\] = 'benchmark';
-            $benchMarks\[$this->triggerName\] = $benchMark;
+        $benchmark = $this->getBlock();
+        if ($benchmark) {
+            $benchmark['type']                  = 'benchmark';
+            $benchmarks[$this->triggerName]     = $benchmark;
         }
 
-        return $benchMarks;
+        return $benchmarks;
     }
 
+    /**
+     * Attach configuration fields to this benchmark.
+     */
     public function pushBlockFields($fields, $funnel)
     {
-        $fields\[$this->triggerName\] = $this->getBlockFields($funnel);
+        $fields[$this->triggerName] = $this->getBlockFields($funnel);
+
         return $fields;
     }
 
-    public function getConditionFields($benchMark)
-    {
-        return \[\];
-    }
-
+    /**
+     * Example helper that could be used to define benchmark type options.
+     */
     public function benchmarkTypeField()
     {
-        return \[
+        return [
             'label'       => 'Benchmark type',
             'type'        => 'radio',
-            'options'     => \[
-                \[
+            'options'     => [
+                [
                     'id'    => 'optional',
-                    'title' => '\[Optional Point\] This is an optional trigger point',
-                \],
-                \[
+                    'title' => '[Optional Point] This is an optional trigger point',
+                ],
+                [
                     'id'    => 'required',
-                    'title' => '\[Essential Point\] Select IF this step is required for processing further actions',
-                \]
-            \],
-            'inline\_help' => 'If you select \[Optional Point\] it will work as an Optional Trigger otherwise, it will wait for full-fill this action',
-        \];
+                    'title' => '[Essential Point] This step is required before processing further actions',
+                ],
+            ],
+            'inline_help' => 'If you select [Optional Point] it will work as an optional trigger; otherwise it will wait until this action is fulfilled.',
+        ];
     }
 
+    /**
+     * Basic block metadata and default settings.
+     */
     public function getBlock()
     {
-        return \[
-            'title'       => 'Custom benchmark',
-            'description' => 'This will run once new order will be placed as completed in CB',
-            'icon' => 'fc-icon-edd',
-            'settings'    => \[
-                'product\_ids'        => \[\],
-                'product\_categories' => \[\],
-                'purchase\_type'      => 'all',
-                'type'               => 'required'
-            \]
-        \];
+        return [
+            'title'       => 'Custom Benchmark',
+            'description' => 'Runs when a specific order is completed in your system',
+            'icon'        => 'fc-icon-edd',
+            'settings'    => $this->getDefaultSettings(),
+        ];
     }
 
+    /**
+     * Default settings for the benchmark.
+     */
     public function getDefaultSettings()
     {
-        return \[
-            'product\_ids'        => \[\],
-            'product\_categories' => \[\],
-            'purchase\_type'      => 'all',
-            'type'               => 'required'
-        \];
+        return [
+            'product_ids'        => [],
+            'product_categories' => [],
+            'purchase_type'      => 'all',
+            'type'               => 'required',
+        ];
     }
 
+    /**
+     * Settings fields displayed in the benchmark configuration panel.
+     */
     public function getBlockFields($funnel)
     {
-        return \[
-            'title'     => 'New Order Success in EDD',
-            'sub\_title' => 'This will run once new order will be placed as completed in EDD',
-            'fields'    => \[
-                'product\_ids'        => \[
+        return [
+            'title'      => 'New Order Success in EDD',
+            'sub_title'  => 'This benchmark runs when a new order is completed in EDD',
+            'fields'     => [
+                'product_ids' => [
                     'type'        => 'multi-select',
                     'label'       => 'Target Products',
-                    'help'        => 'Select for which products this goal will run',
-                    'options'     => \[
-                        \['id' => 123, 'title' => 'Demo product one'\],
-                        \['id' => 124, 'title' => 'Demo product two'\],
-                    \],
-                    'inline\_help' => 'Keep it blank to run to any product purchase',
-                \]
-            \]
-        \];
+                    'help'        => 'Select which products will satisfy this goal.',
+                    'options'     => [
+                        ['id' => 123, 'title' => 'Demo product one'],
+                        ['id' => 124, 'title' => 'Demo product two'],
+                    ],
+                    'inline_help' => 'Leave blank to match any product purchase.',
+                ],
+                // You can add more fields here (categories, purchase type, benchmark type, etc.)
+            ],
+        ];
     }
 
-    public function handle($benchMark, $originalArgs)
+    /**
+     * Main handler that runs when the benchmark is started.
+     *
+     * @param object $benchmark     Current benchmark step configuration.
+     * @param array  $originalArgs  Event arguments passed when the goal is triggered.
+     */
+    public function handle($benchmark, $originalArgs)
     {
-        error\_log(print\_r(\[$benchMark, $originalArgs\], 1));
+        // Replace this with your own logic for when the goal is reached.
+        error_log(print_r([$benchmark, $originalArgs], true));
     }
 }
+```
 
-In the above example, you see, there is a method called **pushBlockFields**. This method returns an object and the object contains several fields. This object is the structure of this benchmark's setting page design. Let’s see the preview of this benchmark's setting block and discuss it.
+The `pushBlockFields()` method returns the configuration schema used to render the benchmark’s settings panel in the funnel editor, and `handle()` is called when the benchmark is triggered so you can implement your own goal‑handling logic.
 
-![screenshot 2022 09 07 at 10.56.15 am](/devloper/custom-automation-benchmark-goal/Screenshot-2022-09-07-at-10.56.15-AM-1024x380.png)
+The benchmark configuration UI will look similar to this:
 
-In the above sourcecode, Target Products block is generated by **getBlockFields**. You see there is **fields** property in this method return array. There are so many field type in FluentCRM, you can find those [here](/docs/form-field-code-structure).
+![Custom automation benchmark settings](/devloper/custom-automation-benchmark-goal/Screenshot-2022-09-07-at-10.56.15-AM-1024x380.png)
 
-In the above example, you see, there is a method called **handle**. This method is called when this benchmark is start. By this method you can do, what you want.
+> The “Target Products” area is generated from the `getBlockFields()` configuration. For more field types and options, see the [form field code structure](/docs/form-field-code-structure) reference.
 
-**Step 2**
+---
 
-Using the following code, You can able to add this custom benchmark/goal code in FluentCRM.
+## Step 2 – Register the benchmark class
 
-add\_action('plugins\_loaded', function () {
-   if (defined('FLUENTCAMPAIGN\_DIR\_FILE')) {
-      new \\Custom\\Goal\\CustomBenchmark();
-   }
+Finally, instantiate your benchmark class when FluentCRM (FluentCampaign) is available. A common place is the `plugins_loaded` hook:
+
+```php
+add_action('plugins_loaded', function () {
+    if (defined('FLUENTCAMPAIGN_DIR_FILE')) {
+        new \Custom\Goals\CustomBenchmark();
+    }
 });
+```
+
+After this:
+
+1. Your **Custom Benchmark** block will appear in the benchmark/goal list in the automation builder.
+2. You can configure target products and other options in the block settings.
+3. When your custom event fires and the benchmark is hit, FluentCRM will call your `handle()` method via `fluentcrm_funnel_benchmark_start_custom_benchmark`, allowing you to move contacts through your funnel based on your own goal criteria.***
