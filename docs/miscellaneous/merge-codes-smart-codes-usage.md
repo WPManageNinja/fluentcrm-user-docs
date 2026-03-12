@@ -5,235 +5,215 @@ category: "miscellaneous"
 order: 0
 ---
 
-# Merge Codes / Smart Codes usage
-FluentCRM offers lots of dynamic merge codes for your email subject, the body that you can use to personalize your emails.
+# Merge Codes (Smart Codes) in FluentCRM
 
-### Basic Structure:
+Personalizing your emails is one of the best ways to increase engagement. FluentCRM makes this easy by using Merge Codes (also known as Smart Codes). These codes act as placeholders in your email subject lines or body text and automatically swap themselves out for real data—like your subscriber's actual first name—when the email is sent.
 
-Merge codes are structured as &#123;&#123;DataGroup.Property|FallbackValue|Transformer&#125;&#125;
+Here is a simple breakdown of how they work and how you can use them.
 
--   **DataGroup**: FluentCRM has different types of data group. Examples: contact, contact.custom, wp etc.
--   **Property**: Each data groups offer many data values, and you can call that the property. For example: first\_name, last\_name, email
--   **Fallback Value (Optional)**: This is an optional parameter. If the defined property is empty, the fallback value will be returned.
--   **Transformer (optional):** Fluent Forms offers utility functions to transform the dynamic return value. For example: &#123;&#123;contact.first\_name|Hi|ucfirst&#125;&#125; will make this first letter of the first as uppercase.
+## How a Merge Code is Built
 
-### Usage:
+At first glance, a code like <code v-pre>{{contact.first_name|Friend|ucfirst}}</code> might look complicated, but it is actually built using a very simple, 4-part structure:
 
-Using merge is very easy. From your email composer, just type @ and then type the name or title of the merge code and you can see all of them.
+<code v-pre>{{DataGroup.Property|FallbackValue|Transformer}}</code>
 
-![image](/miscellaneous/merge-codes-smart-codes-usage/image-1024x747.png)
+Here is what each part means:
 
-You can see all the merge codes by clicking the &#123;&#123; &#125;&#125; icon in your email composer's top bar.
+- **DataGroup:** This tells FluentCRM where to look for the information (e.g., `contact`, `wp`).
+- **Property:** This is the specific piece of information you want to pull (e.g., `first_name`, `email`).
+- **Fallback Value (Optional):** This is your "backup text." If FluentCRM doesn't have the contact's first name, it will display this word instead (e.g., showing "Friend" instead of a blank space).
+- **Transformer (Optional):** This applies a formatting rule to the text, like making sure the first letter is capitalized (`ucfirst`).
 
-![image 1](/miscellaneous/merge-codes-smart-codes-usage/image-1-1024x250.png)
+## How to Add Codes to Your Emails
 
-This will show a pop-up and you can copy any SmartCode you want and use it in your email body or subject.
+You don't need to memorize these codes! FluentCRM gives you two incredibly easy ways to insert them while you are writing an email:
 
-![image 2](/miscellaneous/merge-codes-smart-codes-usage/image-2-1024x724.png)
-*Merge code Lists*
+* **The "@" Shortcut:** Simply type the `@` symbol directly into your email composer, and start typing what you are looking for (like "name"). A list of codes will pop up for you to select.
 
-### Contact's Default Merge Codes
+![](/docs/public/miscellaneous/merge-codes-smart-codes-usage/shortcode-1.webp)
 
-Code
+* **The Menu Button:** Click the `{ }` icon located in the top bar of your email editor. This opens a pop-up window where you can browse and copy any SmartCode you need.
 
-Description
+![](/docs/public/miscellaneous/merge-codes-smart-codes-usage/shortcode-2.webp)
 
-&#123;&#123;contact.full\_name&#125;&#125;
+---
 
-Full name of the contact
+## Commonly Used Merge Codes
 
-&#123;&#123;contact.prefix&#125;&#125;
+Here are some of the most helpful codes you can use to personalize your messages.
 
-Name Prefix of the contact
+### Contact Details
 
-&#123;&#123;contact.first\_name&#125;&#125;
+These codes pull information directly from your subscriber's profile.
 
-First Name of the contact
+- **Full name**
 
-&#123;&#123;contact.last\_name&#125;&#125;
+```text
+{{contact.full_name}}
+```
 
-Last Name of the contact
+Displays the contact's full name.
 
-&#123;&#123;contact.email&#125;&#125;
+- **First name**
 
-Email address
+```text
+{{contact.first_name}}
+```
 
-&#123;&#123;contact.id&#125;&#125;
+Displays the contact's first name.
 
-Contact's unique ID (Numeric)
+- **Email**
 
-&#123;&#123;contact.user\_id&#125;&#125;
+```text
+{{contact.email}}
+```
 
-Connected User ID of the contact
+Displays the contact's email address.
 
-&#123;&#123;contact.address\_line\_1&#125;&#125;
+- **Phone**
 
-Address Line 1
+```text
+{{contact.phone}}
+```
 
-&#123;&#123;contact.address\_line\_2&#125;&#125;
+Displays the contact's phone number.
 
-Address Line 2
+- **City**
 
-&#123;&#123;contact.city&#125;&#125;
+```text
+{{contact.city}}
+```
 
-Address City
+Displays the city listed in their address.
 
-&#123;&#123;contact.state&#125;&#125;
+- **Custom field**
 
-Address State
+```text
+{{contact.custom.CUSTOM_FIELD_SLUG}}
+```
 
-&#123;&#123;contact.postal\_code&#125;&#125;
+Displays a custom field you've created (replace `CUSTOM_FIELD_SLUG` with your actual field name).
 
-Address Postal Code
+### General & Business Links
 
-&#123;&#123;contact.country&#125;&#125;
+These codes are great for adding mandatory links and business details to your email footers.
 
-Address Country
+- **Business name**
 
-&#123;&#123;contact.phone&#125;&#125;
+```text
+{{crm.business_name}}
+```
 
-Phone Number
+Displays your business name, as defined in your FluentCRM settings.
 
-&#123;&#123;contact.status&#125;&#125;
+- **Website URL**
 
-Contact's Status
+```text
+{{wp.url}}
+```
 
-&#123;&#123;contact.date\_of\_birth&#125;&#125;
+Displays your website's URL.
 
-Date of Birth
+- **Unsubscribe URL (raw link)**
 
-&#123;&#123;contact.custom.CUSTOM\_FIELD\_SLUG&#125;&#125;
+```text
+##crm.unsubscribe_url##
+```
 
-Custom Field value of the contact. Please replace CUSTOM\_FIELD\_SLUG with your defined slug of the field
+Displays the unsubscribe URL as a plain link.
 
-### Other General Codes
+- **Unsubscribe HTML link**
 
-Code
+```text
+{{crm.unsubscribe_html|Unsubscribe}}
+```
 
-Description
+Displays a clickable HTML unsubscribe link with the text "Unsubscribe".
 
-**&#123;&#123;crm.business\_name&#125;&#125;**
+- **Manage subscription HTML link**
 
-Business Name defined in FluentCRM Settings
+```text
+{{crm.manage_subscription_html|Manage Preference}}
+```
 
-**&#123;&#123;crm.business\_address&#125;&#125;**
+Displays a clickable HTML link with the text "Manage Preference".
 
-Business Address defined in FluentCRM Settings
+### WordPress User Codes
 
-**&#123;&#123;wp.admin\_email&#125;&#125;**
+If your contacts are also registered users on your WordPress site (like students or customers), you can use these.
 
-Email Address defined in WordPress settings
+- **Any WordPress user property**
 
-**&#123;&#123;wp.url&#125;&#125;**
+```text
+{{user.ANY_USER_PROPERY}}
+```
 
-Your Website URL
+Displays any standard WordPress user property (e.g., `user_login`).
 
-&#123;&#123;other.date.+2 days&#125;&#125;
+- **Password reset link**
 
-Dynamic Date Field. You can replace **+2 days** with your own date strings. it will return the date (WP Date Format) when parsing the data.
+```text
+{{user.password_reset_direct_link}}
+```
 
-&#123;&#123;other.date\_format.Y-m-d&#125;&#125;
+Displays a direct link for the user to reset their WordPress password.
 
-Current date field as your own date format. Support Y-m-d date formate.
+### Data Transformers (Formatting Rules)
 
-##crm.unsubscribe\_url##
+Transformers are optional tools that ensure your text looks grammatically correct, even if the user typed their information in messily.
 
-Unsubscribe URL of the contact
+- **trim**
 
-##crm.manage\_subscription\_url##
+```text
+{{contact.first_name|There|trim}}
+```
 
-Manage Subscription page URL of the contact
+Removes accidental empty spaces before or after the value.
 
-##web\_preview\_url##
+- **ucfirst**
 
-Web preview Url of an email
+```text
+{{contact.first_name||ucfirst}}
+```
 
-&#123;&#123;crm.unsubscribe\_html|Unsubscribe&#125;&#125;
+Capitalizes the first letter of the word (e.g., changes "john" to "John").
 
-This will return an unsubscribe link with HTML code and link text will be **Unsubscribe.**
+- **ucwords**
 
-'&#123;&#123;crm.manage\_subscription\_html|Manage Preference&#125;&#125;
+```text
+{{contact.full_name||ucwords}}
+```
 
-Manage Subscription Hyperlink HTML with link text "Manage Preference"
+Capitalizes the first letter of every word (e.g., changes "john doe" to "John Doe").
 
-### WP User Codes
+- **strtolower**
 
-If the contact is also your WordPress user then you can use the following merge codes in your email
+```text
+{{contact.first_name||strtolower}}
+```
 
-Code
+Forces all letters to be lowercase.
 
-Description
+- **strtoupper**
 
-&#123;&#123;user.ANY\_USER\_PROPERY&#125;&#125;
+```text
+{{contact.first_name||strtoupper}}
+```
 
-example: get any user property from WP\_User Class. Example: user\_login, user\_first\_name etc.
+Forces all letters to be UPPERCASE.
 
-&#123;&#123;user.meta.USER\_META\_KEY&#125;&#125;
+- **concat_first**
 
-access meta value of a user
+```text
+{{contact.first_name||concat_first|Hello}}
+```
 
-&#123;&#123;user.password\_reset\_direct\_link&#125;&#125;
+Attaches a word before the value. If the name is John, it prints "Hello John".
 
-Direct Password Reset link of a user
+- **concat_last**
 
-### Data Transformers
+```text
+{{contact.first_name||concat_last|**,**}}
+```
 
-Using Data Transformers you can transform / Format a dynamic value easily. Here is the list of available transformers
-
-Transformer
-
-Usage
-
-Description
-
-**trim**
-
-&#123;&#123;contact.first\_name|There|trim&#125;&#125;
-
-if the **contact.first\_name** returns value and have space at first or after it will trim that.
-
-**ucfirst**
-
-&#123;&#123;contact.first\_name|There|ucfirst&#125;&#125; /  
-&#123;&#123;contact.first\_name||ucfirst&#125;&#125;
-
-If the contact.first\_name returns the first letter lowercase, it will make it uppercase of the first letter
-
-**strtolower**
-
-&#123;&#123;contact.first\_name|There|strtolower&#125;&#125; /  
-&#123;&#123;contact.first\_name||strtolower&#125;&#125;
-
-It will make the all the letters as lowercase
-
-**strtoupper**
-
-&#123;&#123;contact.first\_name|There|strtoupper&#125;&#125; /  
-&#123;&#123;contact.first\_name||strtoupper&#125;&#125;
-
-It will make the all the letters as uppercase
-
-**ucwords**
-
-&#123;&#123;contact.full\_name|There|ucwords&#125;&#125; /  
-&#123;&#123;contact.full\_name||ucwords&#125;&#125;
-
-This will make the first letter of each word uppercase.
-
-**concat\_first**
-
-&#123;&#123;contact.first\_name||concat\_first|Hello&#125;&#125;
-
-if a contact's first name is **John** then it will return as "Hello **John**"
-
-**concat\_last**
-
-&#123;&#123;contact.first\_last||concat\_last|**,**&#125;&#125;
-
-Sometimes you need to add "," after the first name if the name exists. This example will return **"John,"** if the first name exists . If first name does not exist then nothing will return.
-
-**show\_if**
-
-&#123;&#123;contact.full\_name||show\_if|First name exist&#125;&#125;
-
-If contact's full name exist then it will return "First name exist"
+Adds a character after the value. Great for adding a comma only if the name exists (e.g., "John,").
