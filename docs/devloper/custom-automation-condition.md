@@ -6,91 +6,141 @@ order: 0
 ---
 
 # Custom Automation Condition
-Automation is magic and FluentCRM is the magician. But anyone can be part of this. Following some steps, anyone can be part of this magic. In this article, we will show you, how you are able to add a custom condition in automation.
 
-**Condition**
+This guide shows you how to register a **custom automation condition** in FluentCRM so you can segment contacts and control whether an automation step should run based on your own logic (for example, “purchased specific products” defined by your plugin).
 
-Conditions are essential for initiating email marketing automation. There are a lot of conditions that can start or initiate automation in FluentCRM. Using conditions you can track various activities in your WordPress ecosystem. Isn't cool. Let's dive deep to learn, how to create a custom condition in FluentCRM.
+---
 
-To make an automation condition, we need to use two filter hooks.
+## What is an automation condition?
 
-Type
+Conditions are checked when an automation is running. They decide:
 
-Hook
+- **Which contacts will continue** through a funnel step.
+- **Which contacts will be filtered out** based on your rules.
 
-Description
+FluentCRM ships with many built‑in conditions, but you can also expose conditions from your own plugin and implement the matching logic yourself.
 
-Filter
+---
 
-fluentcrm\_automation\_condition\_groups
+## Hooks used for a custom condition
 
-This is a filter hook and this hook will add your custom condition to the automation condition list.
+To implement a custom condition group you will use **two filter hooks**:
 
-Filter
+| Type   | Hook name                                        | Purpose |
+| ------ | ------------------------------------------------ | ------- |
+| Filter | `fluentcrm_automation_condition_groups`          | Add your condition group and condition items to the condition builder UI. |
+| Filter | `fluentcrm_automation_conditions_assess_custom`  | Evaluate your custom conditions for a given subscriber and return the result. |
 
-fluentcrm\_automation\_conditions\_assess\_custom
+In the example below we will expose a **“Purchased Products”** condition under a **Custom** group.
 
-This is a filter hook and this hook will filter records according to your custom condition logic.
+---
 
-To add a custom condition in automation, I am going to tell you step by step. This example will be using composer, you can do without composer too.
+## Step 1 – Create the condition class
 
-**Step 1**
+Create a PHP class, for example `Custom\Conditions\CustomCondition`, that registers the conditions and assesses them.
 
-First of all, I created a class named CustomCondition which will contain the full source code of this automation condition.
+```php
+<?php
 
-&lt;?php
-namespace Custom\\Conditions;
+namespace Custom\Conditions;
 
 class CustomCondition
 {
-    public function \_\_construct()
+    public function __construct()
     {
-        add\_filter('fluentcrm\_automation\_condition\_groups', array($this, 'addAutomationConditions'), 10, 2);
-        add\_filter('fluentcrm\_automation\_conditions\_assess\_custom', array($this, 'assessAutomationConditions'), 10, 3);
+        // 1) Register condition group/items in the UI
+        add_filter(
+            'fluentcrm_automation_condition_groups',
+            [$this, 'addAutomationConditions'],
+            10,
+            2
+        );
+
+        // 2) Provide the assessment logic for custom conditions
+        add_filter(
+            'fluentcrm_automation_conditions_assess_custom',
+            [$this, 'assessAutomationConditions'],
+            10,
+            3
+        );
     }
 
+    /**
+     * Add a "Custom" group with a "Purchased Products" condition.
+     */
     public function addAutomationConditions($groups, $funnel)
     {
-        $customerItems = \[
-            \[
-                'value'             => 'purchased\_items',
+        $customerItems = [
+            [
+                'value'             => 'purchased_items',
                 'label'             => 'Purchased Products',
                 'type'              => 'selections',
-                'component'         => 'product\_selector',
-                'is\_singular\_value' => true,
-                'is\_multiple'       => true,
-                'disabled'          => false
-            \]
-        \];
+                'component'         => 'product_selector',
+                'is_singular_value' => true,
+                'is_multiple'       => true,
+                'disabled'          => false,
+            ],
+        ];
 
-        $groups\['custom'\] = \[
+        $groups['custom'] = [
             'label'    => 'Custom',
             'value'    => 'custom',
             'children' => $customerItems,
-        \];
+        ];
 
         return $groups;
     }
 
+    /**
+     * Assess your custom conditions for the given subscriber.
+     *
+     * @param bool                                      $result     Existing result (from other conditions).
+     * @param \FluentCrm\Framework\Support\Arryable[]   $conditions Array of condition definitions.
+     * @param \FluentCrm\App\Models\Subscriber          $subscriber Current subscriber.
+     *
+     * @return bool
+     */
     public function assessAutomationConditions($result, $conditions, $subscriber)
     {
-
-        // do something here
+        // Example skeleton: loop conditions and apply your own logic.
+        foreach ($conditions as $condition) {
+            if ($condition['value'] === 'purchased_items') {
+                // TODO: Replace with your own purchase-check logic.
+                // If subscriber matches the rule, keep $result = true,
+                // otherwise you may set $result = false and break.
+            }
+        }
 
         return $result;
     }
 }
+```
 
-In the above example, you see, there is a method called **addAutomationConditions**. This method will filter records according to this condition logic. Let’s see the preview of this condition's block and discuss it.
+When this class is loaded, FluentCRM will:
 
-![screenshot 2022 09 07 at 12.02.07 pm](/devloper/custom-automation-condition/Screenshot-2022-09-07-at-12.02.07-PM-1024x467.png)
+- Show a **Custom → Purchased Products** condition in the automation condition builder.
+- Call `assessAutomationConditions()` whenever that condition is used, passing the condition data and the current subscriber so you can decide whether it matches.
 
-**Step 2**
+The condition UI will look similar to this:
 
-Using the following code, You can able to add this custom action code in FluentCRM.
+![Custom automation condition settings](/devloper/custom-automation-condition/Screenshot-2022-09-07-at-12.02.07-PM-1024x467.png)
 
-add\_action('plugins\_loaded', function () {
-   if (defined('FLUENTCAMPAIGN\_DIR\_FILE')) {
-      new \\Custom\\Conditions\\CustomCondition();
-   }
+---
+
+## Step 2 – Register the condition class
+
+Finally, instantiate your condition class once FluentCRM (FluentCampaign) is available. A common place is the `plugins_loaded` hook:
+
+```php
+add_action('plugins_loaded', function () {
+    if (defined('FLUENTCAMPAIGN_DIR_FILE')) {
+        new \Custom\Conditions\CustomCondition();
+    }
 });
+```
+
+After this:
+
+1. Your **Custom → Purchased Products** condition will be available in the automation condition builder.
+2. FluentCRM will call your `assessAutomationConditions()` method whenever that condition is evaluated.
+3. You can extend the same pattern to add more custom conditions and implement more complex segmentation logic.***
