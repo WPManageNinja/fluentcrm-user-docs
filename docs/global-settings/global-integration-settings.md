@@ -6,9 +6,10 @@ order: 0
 ---
 
 # Integration Settings
+
 Using the deep integration settings for **Woocommerce**, **Easy Digital Downloads**, **LifterLMS**, and **LearnDash**, you can sync the data from these plugins into FluentCRM. While syncing the data, you can also assign certain List and Tag to the contacts.
 
-![crm integrations](/global-settings/global-integration-settings/crm_integrations.png)
+![crm integrations](/global-settings/global-integration-settings/crm_integrations.webp)
 
 The relevant Product/Plugin Specific Integration Settings are documented below:
 
