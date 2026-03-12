@@ -5,7 +5,7 @@ category: "migrating-from-other-platforms"
 order: 0
 ---
 
-# Migrating into FluentCRM from ActiveCampaign
+# Migrating from ActiveCampaign to FluentCRM
 
 Moving your marketing operations from ActiveCampaign to FluentCRM is made simple with our direct API integration. This allows you to securely transfer your contacts, lists, and tags without the need for manual CSV exports.
 
