@@ -6,52 +6,50 @@ order: 0
 ---
 
 # Smart Links
-If you ever used any affiliate link tracking or URL redirect then you are already familiar with this feature. Smart Links allow you to redirect your users or traffic to your target URL and in the process of redirecting FluentCRM will be able to apply Tag & List actions against your subscribers when they click on the FluentCRM Smart Link from an email, direct, on your site or from anywhere!
+
+If you have ever used affiliate link tracking or URL redirects, you are already familiar with how this works. Smart Links allow you to redirect users to a target URL while simultaneously triggering FluentCRM actions. When a subscriber clicks a **Smart Link**, whether it's in an email, on your site, or shared directly—FluentCRM can automatically apply or remove tags and lists in the background.
 
 https://www.youtube.com/watch?v=kFwbBS1Fzos&t
 
 ## Configuration
 
-To get started on a fresh FluentCRM installation you will see the dashboard as in the screenshot below and click on **Start Using SmartLinks** or on the regular option **Add New Smart Link.**
+On a fresh FluentCRM installation, you can get started by navigating to the **Smart Links** dashboard and clicking **Start Using SmartLinks** or the **+ Add New Smart Link** button.
 
-![](/global-settings/global-smartlinks-settings/Smart-Links.png)
+![SmartLinks](/global-settings/global-smartlinks-settings/Smart-Links.webp)
 
-Clicking on the Start Using Smart Links button will open a popup.
+A popup will appear with several configuration options:
 
-The available options for Smart Link are described below:
+ * **Link Title:**	An internal name so you can easily identify the link later.
+ * **Target Full URL:**	The destination where users will be redirected.
+ * **Apply Tags/Lists:** Tags or Lists that will be added to the contact upon clicking.
+ * **Remove Tags/Lists:** (Optional) Tags or Lists that will be removed from the contact upon clicking.
+ * **Auto Login:** Enables automatic WordPress login for users clicking from emails.
+ * **Note:** (Optional) Any internal notes regarding the purpose of this link.
 
--   **Link Title:** Your link title so you do not forget it.
--   **Target Full URL:** Insert a valid URL that this link will direct to. Simply the redirect URL.
--   **Apply Tags when clicked:** These tags will be applied to the contact whenever this link is clicked.
--   **Apply Lists when clicked (optional):** These Lists will be applied to a contact whenever this link is clicked.
--   **Remove Tags when clicked(optional)**: With this, you can remove tags on click.
--   **Remove Lists when clicked(optional)**: These lists will be removed whenever this link is clicked.
--   **Auto Login:** Enable auto login for Smart Links in emails, allowing automatic WordPress user login and redirection to specified URLs upon link click.
--   **Note (Optional):** Feel free to add a note regarding this URL.
-
-Now click on the **Create Smart Link** button and it will show a link.
+Once configured, click **Create Smart Link**. FluentCRM will generate a unique URL for you to use.
 
 ![smart links fluentcrm 1](/global-settings/global-smartlinks-settings/Smart-Links-FluentCRM-1.webp)
 
-Now use or place that Smart Link anywhere you want and when a user clicks a link in an email, on your site, or anywhere and your user will be applied with the tags and lists actions.
+## Managing & Tracking Smart Links
 
-![smart links fluent 1](/global-settings/global-smartlinks-settings/Smart-Links-Fluent-1.webp)
+You can revisit the Smart Links Dashboard at any time to manage your links. From here, you can:
 
-If you create a Smart Link and forget to copy the link you can anytime come back to the Smart Links Dashboard and click on the copy button to copy the FluentCRM-generated Smart Link. You can also Edit the existing Smart Link or Delete it using the Edit and Delete buttons.
+ * **Copy the URL:** Use the copy button to grab the generated link for use in your campaigns.
+ * **Edit or Delete:** Modify the redirect target or actions, or remove the link entirely.
+ * **View Statistics:** Click the arrow on the right side of a Link Title to expand the stats.
+
+Subscriber Clicks indicate clicks from identified/logged-in users, while Public User Clicks count anonymous or non-logged-in traffic.
 
 ![settings fluentcrm link copy 1](/global-settings/global-smartlinks-settings/Settings-FluentCRM-link-copy-1.webp)
 
-Expanding the Smartlink clicking the arrow right side of the Title of the Smartlink will show you some statistics. The **Subscriber Clicks** indicate the click came from the logged-in user and the **Public User Click** will count all the clicks for non-logged-in user clicks or anonymous clicks.
-
-![settings fluentcrm stat 1](/global-settings/global-smartlinks-settings/Settings-FluentCRM-stat-1.webp)
-
 ## Auto Login with Smart Links
 
-Enable this feature for any smart links in emails. When a smart link is clicked, it logs in to the WordPress user and directs them to the target URL. This ensures security and privacy:
+The **Auto Login** feature is a powerful way to streamline the user experience. When enabled, clicking a **Smart Link** from an email will automatically log the user into their WordPress account before redirecting them. To ensure security and privacy, please note:
 
--   Higher level users (with publish\_post Permission) will not be auto login. 
--   Smart links need to be clicked from the email campaign as each link is signed and unique for each contact.
+ * **Permissions:** Users with high-level permissions (those with publish_posts capabilities, like Admins or Editors) will not be auto-logged in.
+ * **Email Specific:** For auto-login to work, the link must be clicked from a FluentCRM email campaign, as each link is uniquely signed for that specific contact.
 
 ![settings fluentcrm auto login](/global-settings/global-smartlinks-settings/Settings-FluentCRM-Auto-Login.webp)
 
-That's all about configuring a Smart Link. You can now place this link anywhere to get the benefits of this Smart Feature of the FluentCRM.
+
+That’s all you need to get started with Smart Links! You can now place these URLs anywhere to start automating your contact segmentation based on user behavior.
