@@ -19,12 +19,14 @@ https://www.youtube.com/watch?v=RuAb-51Z4zs
 
 1.  Woocommerce
 2.  Easy Digital Downloads
+3.  FluentCart
 
 **Learning Management Systems:**
 
 1.  LifterLMS
 2.  LearnDash
 3.  TutorLMS
+4.  FluentCommunity
 
 **Membership Integrations:**
 
