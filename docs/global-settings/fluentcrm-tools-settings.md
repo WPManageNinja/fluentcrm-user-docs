@@ -56,4 +56,4 @@ Select the Logs you want to delete, click on the **Preview Log Summary** button.
 ![crm tools data cleanup min 7days](/global-settings/fluentcrm-tools-settings/crm_tools_data_cleanup_min_7days.webp)
 
 
-Review the summary and click on the **Yes, I want to delete the Old Logs** button only if you know what you are doing. If you still want to keep the logs you leave the page or click on the **Never Mind, I changed my mind** button.
+Review the summary and click on the **Yes, I want to delete the Old Logs** button only if you know what you are doing. 
