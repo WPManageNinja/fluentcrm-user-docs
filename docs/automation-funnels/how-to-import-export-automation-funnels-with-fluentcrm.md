@@ -6,47 +6,54 @@ order: 0
 ---
 
 # Export-Import Automations
-[FluentCRM](http://fluentcrm.com) allows you to **Export** and **Import** any specific **Automation** in **JSON** format. This article will guide you through exporting and importing your Automations in FluentCRM. 
 
-## Exporting Automations
+Want to move a high-converting automation from a staging site to your live site? Or maybe you want to share a brilliant funnel with a friend? FluentCRM makes this incredibly easy!
 
-First, go to the **Automations** section from the **FluentCRM** **Navbar**, click the **Three-dot-icon** of your desired automation, and press the **Export** button.
+You can seamlessly Export and Import any automation funnel using a simple JSON file. This saves you from having to rebuild complex workflows from scratch. Here is how to do it step-by-step.
 
-And, your chosen Automation will be exported in JSON format to your device.
+## How to Export an Automation
 
-![Export button from three dot icon under automations section](/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/1.-Export-button-from-Three-dot-icon-under-Automations-section-scaled.webp)
+Exporting takes just two clicks. It will package your entire funnel structure into a small file downloaded to your computer.
 
-## Importing Automations
+1. Go to **FluentCRM → Automations** from your WordPress dashboard.
+2. Find the automation funnel you want to export in your list.
+3. On the far right side of that funnel, click the **Three-Dot Menu (⋮)**.
+4. Click **Export**.
 
-First, go to the **Automations** section from the **FluentCRM** **Navbar** and click the **Import** button in the top right corner.
+![Export Automation](/docs/public/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/automation-export-import-6.webp)
 
-![Import button under automations](/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/2.-Import-button-under-Automations-scaled.webp)
+A JSON file containing your automation will instantly download to your device!
 
-Now, import your desired automation by clicking the **Click to Upload** button or using the **Drag & Drop** feature.
+## How to Import an Automation
 
-![Drag & drop or click to upload button](/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/3.-Drag-Drop-or-Click-to-upload-button-scaled.webp)
+Importing is just as easy. FluentCRM provides a handy setup wizard to make sure all your tags, lists, and emails are mapped correctly to your current site.
 
-Here, you can see a page with all available information from your exported automation funnel.
+### Step 1: Upload Your File
+1. Go to the **Automations** dashboard.
+2. Look at the top right corner of the screen and click the **More Action** button here you will get the **Import** click on it.
 
-Now, check, edit, and map the necessary data according to your requirements, and once you are done keep clicking the **Next** button.
+![Import Automation](/docs/public/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/automation-export-import-1.webp)
 
-![Next button](/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/4.-Next-button.webp)
+3. A pop-up window will appear. You can either drag and drop your saved JSON file into the box or click **Click to Upload** to select it from your computer.
 
-After completing the setup of your full Automation Funnel, click the **Complete Import** button.  
-Also, if you want to edit anything on the previous page, click the **Go Back** button.
+![Import Automation](/docs/public/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/automation-export-import-2.webp)
 
-![Complete import or go back button](/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/6.-Complete-Import-or-Go-Back-button.webp)
+### Step 2: Follow the Setup Wizard
 
-Once you click the **Complete Import** button, your chosen **Automation** will be Imported into your **FluentCRM**  
-Now, you can edit the funnel as you wish and once you are done click the **Publish** button to make the automation functional.
+Once you upload the file, FluentCRM will guide you through a quick 3-step wizard to organize your imported funnel:
 
-> To learn more about how to edit automations, read this [Documentation](/docs/automation-editor/#automation-editor).
+* **Step 1 - Information:** Here, you can rename your funnel (Internal Name) and add a quick description (System Label) so you easily recognize it later. Click **Next**.
+* **Step 2 - Map Data:** This is a crucial step! FluentCRM will ask you to match the data from the imported file to your current website. For example, you can set the default Subscription Status or map an imported Email Sequence to an existing sequence on your site. Click **Next**.
+* **Step 3 - Setup Actions:** FluentCRM will show you a summary of the custom emails or specific actions included in this funnel. Review them, and then click the blue **Complete Import** button.
 
-![Imported automation funnel published toggle](/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/7.-Imported-automation-funnel-Published-toggle-scaled.webp)
+> **Note:** If you make a mistake during the setup, you can always click the **Go Back** button at the bottom!
 
-You can see all the imported automations under this **Automations** section of **FluentCRM**.
+![Import Automation](/docs/public/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/automation-export-import-3.webp)
 
-![Automation is added in the list under automations section](/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/8.-Automation-is-added-in-the-list-under-Automations-section-scaled.webp)
+## You're Done! (Next Steps)
 
-This way you can Export-Import as many Automations as you need in JSON format!  
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+Once you click **Complete Import**, you will be redirected straight to the Automation Editor with your newly imported funnel ready to go.
+
+> **⚠️ Important:** All imported automations are brought in as a **Draft** to keep your site safe. Before going live, we highly recommend clicking through your action blocks just to ensure everything is set up perfectly. Once you are happy, toggle the switch in the top right corner to **Published**!
+
+![Import Automation](/docs/public/automation-funnels/how-to-import-export-automation-funnels-with-fluentcrm/automation-export-import-5.webp)
