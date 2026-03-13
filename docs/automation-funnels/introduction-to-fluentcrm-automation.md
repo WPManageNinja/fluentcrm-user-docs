@@ -28,6 +28,8 @@ FluentCRM features a clean, modern command center for all your workflows. To acc
 
 At the top of the screen, you will see three main tabs: Funnels, Activities, and Manage Labels.
 
+![Automation Dashboard](/docs/public/automation-funnels/introduction-to-fluentcrm-automation/automation-1.webp)
+
 ### 1. The "Funnels" Tab (Your Main Workspace)
 
 This is your default view. It lists every automation funnel you have created.
@@ -71,13 +73,13 @@ Our team prepared a few videos showcasing how automations work inside FluentCRM.
 
 https://youtu.be/XfhtNmXh7Bs?si=uMlI5jvUiNHZzmvs
 
-https://youtu.be/AS9os42uozk?si=D3\_yynSbNZgrUz2n
+https://youtu.be/AS9os42uozk?si=D3_yynSbNZgrUz2n
 
 https://youtu.be/wPFdx5vXfSA?si=tRZ-V0zmpDHQyHVl
 
 https://youtu.be/Q35Yzm-bMpA?si=wtBAAFwNl4Uijhkp
 
-https://youtu.be/n\_efMvc2e08?si=jXAkA2df7VIgWFTi
+https://youtu.be/n_efMvc2e08?si=jXAkA2df7VIgWFTi
 
 That’s all as an introduction or overview of FluentCRM automation. Please review the relevant elements to learn and start working with FluentCRM automation to build your own funnel in the WordPress website.
 
