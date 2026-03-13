@@ -6,6 +6,7 @@ order: 0
 ---
 
 # FluentCart Integration with FluentCRM
+
 FluentCart integrates seamlessly with FluentCRM, connecting your e-commerce data directly with your marketing automation platform. This powerful combination allows you to trigger automations based on customer purchase behavior, manage post-purchase follow-ups, and segment your contacts based on their order history for highly targeted campaigns.
 
 In this article, you’ll learn how the **FluentCRM** and **FluentCart** integration works and what features are available.
@@ -16,9 +17,10 @@ In this article, you’ll learn how the **FluentCRM** and **FluentCart** integra
 
 FluentCRM provides a wide range of automation triggers for FluentCart, enabling you to launch automated workflows for key e-commerce events. When you create a new automation in FluentCRM, you’ll find a dedicated section for FluentCart triggers.
 
-Go to **FluentCRM → Automations** and click the **\+ New Automation** button. Select an **Automation Trigger** from the available **FluentAffiliate** options, then click the **Continue** button to build your automation funnel as needed.
+Go to **FluentCRM → Automations** and click the **\+ New Automation** button. Select an **Automation Trigger** from the available **FluentCart** options, then click the **Continue** button to build your automation funnel as needed.
 
-If you want to know more about how to create a complete automation, check out our [documentation](/docs/automation-editor) for detailed steps.
+>[!Note]
+>If you want to know more about how to create a complete automation, check out our [documentation](/docs/automation-editor) for detailed steps.
 
 ![new automation 01](/integrations/fluentcart-integration-with-fluentcrm/New-Automation-01-scaled.webp)
 
