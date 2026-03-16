@@ -6,6 +6,7 @@ order: 0
 ---
 
 # SureCart Automation With FluentCRM
+
 SureCart Plugin makes e-commerce easy for businesses. It is feature-rich and has a user-friendly interface, allowing retailers to develop gorgeous online storefronts, manage inventory efficiently, and provide secure checkout experiences.
 
 FluentCRM automatically integrates with Surecart. It lets you automate some marketing automation [triggers](/docs/fluentcrm-automation-triggers). Follow these steps to learn how to use marketing automation with SureCart.
