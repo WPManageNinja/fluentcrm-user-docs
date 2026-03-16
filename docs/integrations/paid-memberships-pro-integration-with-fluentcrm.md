@@ -17,15 +17,13 @@ Go to the FluentCRM dashboard and select **Automation** from the navbar then cre
 
 ![New Automation](/integrations/paid-memberships-pro-integration-with-fluentcrm/image-8-1.webp)
 
-A popup will appear here. Now set an **Internal Label** name and choose **Paid Membership Pro** from the left sidebar. 
+A popup will appear here. Now, choose **Paid Membership Pro** from the left sidebar. 
 
 Now select the Trigger for this Automation. Here you’ll see available triggers. These are:
 
-**Memberships Enrolled:** This funnel runs when a member is added to a membership level.
-
-**Memberships Level Expired:** This funnel runs when a membership expires.
-
-**Membership Level Cancelled:** This funnel runs when a membership level is canceled.
+ **Memberships Enrolled:** This funnel runs when a member is added to a membership level.
+ **Memberships Level Expired:** This funnel runs when a membership expires.
+ **Membership Level Cancelled:** This funnel runs when a membership level is canceled.
 
 After selecting an Automation Trigger click on the **Continue** button.
 
