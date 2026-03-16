@@ -19,11 +19,11 @@ FluentCRM automatically integrates with WooCommerce and lets you automate variou
 
 Whenever a user places an order from WooCommerce, they can be imported automatically as a subscriber in FluentCRM. But in order to remain compliant with email marketing rules and regulations, you might want to get consent from your users. For that, you can add **WooCommerce Checkout Subscription Field** to the WooCommerce checkout form.
 
-![woocommerce checkout page ](/integrations/woocommerce-automation-with-fluentcrm/WooCommerce-Checkout-page-.png)
+![woocommerce checkout page ](/integrations/woocommerce-automation-with-fluentcrm/WooCommerce-Checkout-page-.webp)
 
 To add WooCommerce checkout subscription field, go to **Settings**\>**General Settings** and choose to **Enable Subscriber Checkout to WooCommerce Checkout Page**.
 
-![general settings fluentcrm 1](/integrations/woocommerce-automation-with-fluentcrm/General-Settings-FluentCRM-1.png)
+![general settings fluentcrm 1](/integrations/woocommerce-automation-with-fluentcrm/General-Settings-FluentCRM-1.webp)
 
 Here are the details for the other settings:
 
@@ -40,7 +40,7 @@ FluentCRM also lets you add or remove tags to contacts based on **Product Purcha
 
 In order to apply [tags](/docs/segment-your-audience#1-toc-title) to contacts, open WooCommerce product editor and click **FluentCRM** from the product data section. Next, select which tags you want to add or remove when someone purchases your product. You can also do the same when refunds actions happen for the same contact.
 
-![product tags in woocommerce](/integrations/woocommerce-automation-with-fluentcrm/Product-TAgs-in-WooCommerce.png)
+![product tags in woocommerce](/integrations/woocommerce-automation-with-fluentcrm/Product-TAgs-in-WooCommerce.webp)
 
 ### WooCommerce Marketing Automation
 
@@ -61,11 +61,11 @@ FluentCRM’s email marketing automation includes four major elements. These are
 
 At first, from your FluentCRM dashboard & go to the **Automations** option. Then click on the **+ New Automation** button to add an automation funnel.
 
-![automations fluentcrm](/integrations/woocommerce-automation-with-fluentcrm/Automations-FluentCRM.png)
+![automations fluentcrm](/integrations/woocommerce-automation-with-fluentcrm/Automations-FluentCRM.webp)
 
 You will notice a pop-up window appear. And then select **WooCommerce** from the **Category** option.
 
-![automations triggers woocommerce fluentcrm](/integrations/woocommerce-automation-with-fluentcrm/Automations-Triggers-WooCommerce-FluentCRM.png)
+![automations triggers woocommerce fluentcrm](/integrations/woocommerce-automation-with-fluentcrm/Automations-Triggers-WooCommerce-FluentCRM.webp)
 
 From here, you can select one of four available triggers. Currently, available [WooCommmerce Triggers](/docs/fluentcrm-automation-triggers#2-toc-title) are
 
@@ -76,7 +76,7 @@ From here, you can select one of four available triggers. Currently, available [
 
 For demonstration purposes, we are using the **New Order(Processing)** trigger. So, this funnel will start once a new order is added as processing. Click on the **Continue** button.
 
-![automations fluentcrm 1](/integrations/woocommerce-automation-with-fluentcrm/Automations-FluentCRM-1.png)
+![automations fluentcrm 1](/integrations/woocommerce-automation-with-fluentcrm/Automations-FluentCRM-1.webp)
 
 Next, a pop-up box will appear with some options to set up the funnel automation. Add a **Automation Name** & choose the **Subscription Status,** you can choose from **Subscribed, Pending & Unsubscribed.** If you choose the **Pending** option, the contacts will join as pending contacts and FluentCRM will automatically send an opt-in email.
 
@@ -84,13 +84,13 @@ In the **Conditions** section, choose for which products this automation will ru
 
 Choose the **Purchase Type** for what type of purchase you want to run this funnel. There are three options; **Any type of purchase, Only for first purchase & From 2nd Purchase.** Click the **Save Settings** button when you're satisfied with the trigger configuration.
 
-![triggers condition ](/integrations/woocommerce-automation-with-fluentcrm/Triggers-Condition-.png)
+![triggers condition ](/integrations/woocommerce-automation-with-fluentcrm/Triggers-Condition-.webp)
 
 **Action Block**
 
 [Actions blocks](/docs/primary-automation-actions) are tasks that you wish to trigger from your side. Click on the plus icon on the Automation Funnel page. Then you will notice a pop-up appear with a set of action blocks to choose from.
 
-![woocommerce action for triggers ](/integrations/woocommerce-automation-with-fluentcrm/WooCommerce-Action-for-Triggers-.png)
+![woocommerce action for triggers ](/integrations/woocommerce-automation-with-fluentcrm/WooCommerce-Action-for-Triggers-.webp)
 
 From here, you can choose any type of action block. FluentCRM offers 15 action blocks and two specific action Blocks for WooCommerce marketing automation.
 
@@ -98,15 +98,15 @@ The specific action blocks for WooCommerce include:
 
 **Change Order Status(WooCommmerce Only)**: This action lets you change the order status in WooCommerce for the contacts within the automation funnel.
 
-![Change Order status](/integrations/woocommerce-automation-with-fluentcrm/image-19.png)
+![Change Order status](/integrations/woocommerce-automation-with-fluentcrm/image-19.webp)
 
 **Add Order Note(WooCommmerce Only)**: This action lets you add a **Private Note** or **Notes to Customer** in WooCommerce for the contacts within the automation funnel.
 
-![Add Order Note](/integrations/woocommerce-automation-with-fluentcrm/image-20.png)
+![Add Order Note](/integrations/woocommerce-automation-with-fluentcrm/image-20.webp)
 
 **Create Coupon:** The **Create Coupon** action lets you automatically generate a WooCommerce coupon code for contacts inside your automation. You can either configure a new coupon from scratch or use an existing WooCommerce coupon as a template. Once configured, the dynamic coupon can be used later in emails or other automation steps.
 
-![Coupon ](/integrations/woocommerce-automation-with-fluentcrm/coupon-code.png)
+![Coupon ](/integrations/woocommerce-automation-with-fluentcrm/coupon-code.webp)
 
 **Goals/Trigger Block(Benchmark)**
 
@@ -114,11 +114,11 @@ The specific action blocks for WooCommerce include:
 
 Click on the plus icon(+) to open the pop-up for selecting the **Goals**. For WooCommerce, you can choose **Order Received in WooCommerce** goal. This trigger block will run once a new order is placed as processing.
 
-![goal action in woocommerce funnel](/integrations/woocommerce-automation-with-fluentcrm/Goal-Action-in-WooCommerce-funnel.png)
+![goal action in woocommerce funnel](/integrations/woocommerce-automation-with-fluentcrm/Goal-Action-in-WooCommerce-funnel.webp)
 
 In this block, you can add an internal label, choose target products, target product categories & Benchmark Type. 
 
-![Product category](/integrations/woocommerce-automation-with-fluentcrm/Edit-Funnel-Fl-6.png)
+![Product category](/integrations/woocommerce-automation-with-fluentcrm/Edit-Funnel-Fl-6.webp)
 
 Please check our [documentation](/docs/goals-or-benchmark-actions) if you want to use other goals or benchmarks.
 
@@ -126,7 +126,7 @@ Please check our [documentation](/docs/goals-or-benchmark-actions) if you want t
 
 If you want to automate different activities based on If/Else conditions, you can choose a condition. For WooCommerce, FluentCRM allows you to automate different activities based on Conditions.
 
-![conditions for woocommerce 1](/integrations/woocommerce-automation-with-fluentcrm/Conditions-for-woocommerce-1.png)
+![conditions for woocommerce 1](/integrations/woocommerce-automation-with-fluentcrm/Conditions-for-woocommerce-1.webp)
 
 If you want to use other conditionals please check out [this documentation](/docs/conditional-automation-actions).
 
@@ -134,13 +134,13 @@ If you want to use other conditionals please check out [this documentation](/doc
 
 FluentCRM also allows you to add products to your email templates with ease. If you’re using WooCommerce, you’ll notice two **Product Blocks** are arrive. This blocks allows you automatically fetch WooCommerce products within your email template with a purchase button.
 
-![Product Block](/integrations/woocommerce-automation-with-fluentcrm/image-9.png)
+![Product Block](/integrations/woocommerce-automation-with-fluentcrm/image-9.webp)
 
 To add a product block for selling your products on WooCommerce, select any product block that your needs. Next, you’ll be asked to select your product. Choose the product you want to add and hit **Done**.
 
 Once you have added the product, you can show or hide the product description, price, and colors of your content, content background, etc.
 
-![Product](/integrations/woocommerce-automation-with-fluentcrm/image-11.png)
+![Product](/integrations/woocommerce-automation-with-fluentcrm/image-11.webp)
 
 So that's it for WooCommerce Marketing automation. If you want to get started right away, don't forget to check out our WooCommerce tutorial below:
 
