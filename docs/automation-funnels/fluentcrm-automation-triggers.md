@@ -6,7 +6,8 @@ order: 0
 ---
 
 # Primary Automation Triggers
-[FluentCRM](https://fluentcrm.com/) offers several **Primary Triggers** that let you start an automation funnel based on your user’s behavior. Besides primary triggers, there are plenty of other **Triggers** available in **FluentCRM** that you can use to create automation funnels for automating your workflows according to your requirements. 
+
+FluentCRM offers several **Primary Triggers** that let you start an automation funnel based on your user’s behavior. Besides primary triggers, there are plenty of other **Triggers** available in **FluentCRM** that you can use to create automation funnels for automating your workflows according to your requirements. 
 
 This article will provide detailed information about all **Primary** **Triggers** of **FluentCRM Automation**.
 
@@ -22,15 +23,9 @@ First, go to the **Automation** section from the **Fluent CRM Navbar**, and clic
 
 > To learn the detailed process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
 
-![New Automation button](/automation-funnels/fluentcrm-automation-triggers/1.-New-Automation-button-scaled.webp)
+![New Automation button](/docs/public/automation-funnels/fluentcrm-automation-triggers/automation-trigger-1.webp)
 
-Now, a pop-up page will appear with all the Popular Pre-built Funnel Templates for creating automation.
-
-You just need to click on the desired templates and it will redirect you to the [Automation Editor](/docs/automation-editor) where the full funnel diagram will be ready automatically. 
-
-Alternatively, if you want to create your automation funnel from scratch, simply click on the **Create from Scratch** tab.
-
-![Create from Scratch](/automation-funnels/fluentcrm-automation-triggers/2.-Create-from-Scratch.webp)
+Now, a pop-up page will appear with all the triggers and Pre-built Funnel Templates for creating automation. If you want to create your automation funnel then simply click on the **trigger** you want to start with.
 
 All the **Primary Triggers** for creating an automation funnel are divided into two major categories **in** the left sidebar. These are: 
 
@@ -41,7 +36,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name.
 
-![CRM triggers](/automation-funnels/fluentcrm-automation-triggers/3.-CRM-Triggers.webp)
+![CRM triggers](/docs/public/automation-funnels/fluentcrm-automation-triggers/automation-trigger-2.webp)
 
 ## 1\. CRM Trigger
 
@@ -68,8 +63,6 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![List applied](/automation-funnels/fluentcrm-automation-triggers/4.-List-Applied.webp)
-
 ### List Removed
 
 This automation funnel will start once the selected lists have been removed from a contact.  
@@ -79,7 +72,6 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![List removed](/automation-funnels/fluentcrm-automation-triggers/5.-List-Removed.webp)
 
 ### Tag Applied
 
@@ -94,8 +86,6 @@ Here, are the Settings of Tag Applied Trigger
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Tag applied](/automation-funnels/fluentcrm-automation-triggers/6.-Tag-Applied.webp)
-
 ### Tag Removed
 
 This automation funnel will start once the selected Tags have been removed from a contact.  
@@ -105,7 +95,6 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Tag removed](/automation-funnels/fluentcrm-automation-triggers/7.-Tag-Removed.webp)
 
 ### Contact’s Birthday
 
@@ -117,8 +106,6 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![8. contact's birthday](/automation-funnels/fluentcrm-automation-triggers/8.-Contacts-Birthday.webp)
-
 ### Contact Created
 
 This automation funnel will start once a new contact will be added. To learn the detailed process of adding contacts, read this [Documentation](/docs/manage-contacts/#Add-New-Contact). 
@@ -128,8 +115,6 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 > To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
-
-![Contact created](/automation-funnels/fluentcrm-automation-triggers/9.-Contact-Created.webp)
 
 ### New Form Submission (Fluent Forms)
 
@@ -158,8 +143,6 @@ Here are the Settings of the New Form Submission trigger
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![New form submission (fluent forms)](/automation-funnels/fluentcrm-automation-triggers/10.-New-Form-Submission-Fluent-Forms.webp)
-
 ### Company Applied
 
 This automation funnel will start once the selected companies have been applied to a contact.  
@@ -175,7 +158,6 @@ Here, are the Settings of the Company Applied Trigger
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Company applied](/automation-funnels/fluentcrm-automation-triggers/11.-Company-Applied.webp)
 
 ### Company Removed
 
@@ -185,8 +167,6 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 > To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
-
-![Company removed](/automation-funnels/fluentcrm-automation-triggers/12.-Company-Removed.webp)
 
 ## 2\. WordPress Trigger
 
@@ -199,7 +179,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name.
 
-![Wordpress triggers](/automation-funnels/fluentcrm-automation-triggers/13.-WordPress-Triggers.webp)
+![Wordpress triggers](/docs/public/automation-funnels/fluentcrm-automation-triggers/automation-trigger-3.webp)
 
 **A detailed explanation of the WordPress Triggers mentioned above is given below –**
 
@@ -220,8 +200,6 @@ Here, are the Settings of the New User Sign-Up Trigger
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![New user sign up](/automation-funnels/fluentcrm-automation-triggers/14.-New-User-Sign-Up.webp)
-
 ### User Login
 
 This automation funnel will start once a user logs into your WordPress Site.  
@@ -231,6 +209,5 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![User login](https://fluentcrm.com/wp-content/uploads/2022/08/15.-User-Login.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
