@@ -6,6 +6,7 @@ order: 0
 ---
 
 # LifterLMS Integration with FluentCRM
+
 LifterLMS is one of the most popular LMS plugins for WordPress. If you have created an eLearning course platform on WordPress using LifterLMS, FluentCRM can help you automate your course marketing with activity monitoring, contact segmentation, email marketing, and many more. Follow this simple guide to learn how to automate these tasks with FluentCRM!
 
 ### Lead generation and segmentation
@@ -14,7 +15,7 @@ FluentCRM lets you capture your LifterLMS students as leads and tag contacts bas
 
 In order to capture and apply tags based on course enrollment and course completion, go to edit your LifterLMS course and jump to the **Course Options**. Then, from **Course Options**, you’ll need to select the **FluentCRM** tab. And finally, select the tags you want to apply when course enrollments and course completions happen.
 
-![](/integrations/lifterlms-integration-with-fluentcrm/image-39.png)
+![Lead Generation](/integrations/lifterlms-integration-with-fluentcrm/image-39-1.webp)
 
 ### Marketing Automation
 
@@ -28,18 +29,18 @@ FluentCRM’s email marketing automation includes four major elements. These are
 4.  [**Goals**](/docs/goals-or-benchmark-actions): Generally FluentCRM automation starts with a single and specific trigger. What if you want to run the same automation triggering based on another trigger? This way you could also benchmark the automation. To know more about this please visit [Goals or BenchMark Actions](/docs/goals-or-benchmark-actions).
 5.  **[Conditionals](/docs/conditional-automation-actions)**: One of the most useful features of FluentCRM is that you have advanced and more control over what you want to do or customize your target more with the flexibility of the FluentCRM data. Please visit [Conditional Automation Actions](/docs/conditional-automation-actions) to learn more about such flexibility in using data-based conditions in automation.
 
-At first, from your FluentCRM dashboard & go to the **Automations** option. Then click on the **Create a New Automation** button to add an automation funnel.
+At first, from your FluentCRM dashboard & go to the **Automations** option. Then click on the **New Automation** button to add an automation funnel.
 
-![](/integrations/lifterlms-integration-with-fluentcrm/Automation-Funne-1024x327.png)
+![New Automation](/integrations/lifterlms-integration-with-fluentcrm/Automation-2.webp)
 
 You will notice a pop-up window appear, where you have to add a suitable **Internal Label** and choose the trigger that will initiate an automation funnel. You can choose one from four available LifterLMS Triggers.
 
-1.  **Enrollment in a Course**: This will let you trigger an automation funnel when someone enrolls in a LifterLMS course.
-2.  **Enrollment in a membership**: This will let you trigger an automation funnel when someone joins as a member in LifterLMS.
-3.  **Student Completes a Lesson**: This will let you trigger an automation funnel when a student completes a lesson in LifterLMS.
-4.  **Student Completes a Course**: This will let you trigger an automation funnel when your LifterLMS student completes a course.
+1.  **Course Enrolled**: This will let you trigger an automation funnel when someone enrolls in a LifterLMS course.
+2.  **Joined membership**: This will let you trigger an automation funnel when someone joins as a member in LifterLMS.
+3.  **Lesson Completed**: This will let you trigger an automation funnel when a student completes a lesson in LifterLMS.
+4.  **Course Completed**: This will let you trigger an automation funnel when your LifterLMS student completes a course.
 
-![](/integrations/lifterlms-integration-with-fluentcrm/image-40-1024x752.png)
+![LifterLMS Trigger](/integrations/lifterlms-integration-with-fluentcrm/lifterlms-trigger-3.webp)
 
 Apart from these triggers, FluentCRM also comes with lots of other triggers. To see the full list of triggers and learn how to configure them, please check [this documentation](/docs/fluentcrm-automation-triggers).
 
@@ -49,7 +50,7 @@ When you select a trigger and click **Continue**, a pop-up box will appear with 
 
 [Actions blocks](/docs/primary-automation-actions) are tasks that you wish to trigger from your side. Click on the plus icon on the Automation Funnel page. Then you will notice a pop-up appear with a set of action blocks to choose from.
 
-![](/integrations/lifterlms-integration-with-fluentcrm/image-27.png)
+![Action Block](/integrations/lifterlms-integration-with-fluentcrm/action-block-4.webp)
 
 From here, you can choose any type of action block. FluentCRM offers 15 action blocks for LifterLMS marketing automation. Please check our [funnel action blocks](/docs/primary-automation-actions) documentation to find out how to use action blocks.
 
@@ -57,10 +58,10 @@ From here, you can choose any type of action block. FluentCRM offers 15 action b
 
 [Goals/Trigger blocks](/docs/goals-or-benchmark-actions) are goal or trigger items that your user might do. They let you measure these steps and automate the funnel based on goal completion.
 
-Click on the plus icon(+) to open the pop-up for selecting the **Goals**. For LifterLMS, you can choose **List Applied** goal**.** This trigger block will run once a list is applied to a contact within the automation funnel. In this block, you can add an internal label, specify the list for which the goal applies, and Benchmark Type. 
+Click on the plus icon(+) to open the pop-up for selecting the **Goals**. For LifterLMS, you can choose **List Applied** goal. This trigger block will run once a list is applied to a contact within the automation funnel. In this block, you can add an internal label, specify the list for which the goal applies, and Benchmark Type. 
 
-![](/integrations/lifterlms-integration-with-fluentcrm/image-28-1024x681.png)
-![](/integrations/lifterlms-integration-with-fluentcrm/image-36-1024x586.png)
+![Goals Trigger](/integrations/lifterlms-integration-with-fluentcrm/goals-trigger-5.webp)
+![List Applied](/integrations/lifterlms-integration-with-fluentcrm/list-applied-6.webp)
 
 Click **Save Settings** when you’re done.
 
@@ -68,19 +69,19 @@ If you want to use other goals or benchmarks, please check our [goal/benchmark 
 
 **Conditionals**
 
-Conditionals are conditional logic. If you want to automate different activities based on If/Else conditions, you can choose a conditional. For LifterLMS, FluentCRM allows you to automate different activities based on two conditionals.
+Conditionals are conditional logic. If you want to automate different activities based on If/Else conditions, you can choose a conditional. For LifterLMS, FluentCRM allows you to automate different activities based on conditionals.
 
-**\[LifterLMS\] Check if the Contact Enrolled or Completed a Course:** With this conditional block, you can conditionally check if your contact enrolled or completed a course in LifterLMS. If any of the courses have been enrolled by the contact it will result as YES, otherwise, it will be a NO.
+**Check Condition:**
 
-![](/integrations/lifterlms-integration-with-fluentcrm/image-45-1024x653.png)
+The **Check Condition** block allows you to segment contacts in your automation based on LifterLMS data. This helps you create different paths depending on a contact’s course enrollment or progress.
 
-You can also set the condition to check whether your student has completed the course or not. Once you configure things and hit **Save Settings**, there will be two branches for both “Yes” & “No”. Here, you can add different action blocks based on your preference.
+![Conditional](/integrations/lifterlms-integration-with-fluentcrm/conditional-7.webp)
 
-![](/integrations/lifterlms-integration-with-fluentcrm/image-46-1024x577.png)
+To configure this, click **Add Property** and select **LifterLMS** from the dropdown. You can then define conditions using properties such as **Enrollment Courses**, **Course Completed**, **Enrollment Memberships**, **Last Enrollment Date**, and **First Enrollment Date**.
 
-**\[LifterLMS\] Check if the Contact has a Membership**: With this conditional block, you can conditionally check if your contact has a membership in LifterLMS. If any of the contacts has a membership level, it will result as YES, otherwise, it will be a NO. So, there will be two branches for both “Yes” & “No”. Here, you can add different action blocks based on your preference. Then make sure to click the **Save Settings** button.
+Once the conditions are set, contacts will proceed through different paths in the automation based on whether they meet the defined criteria.
 
-![](/integrations/lifterlms-integration-with-fluentcrm/image-48-1024x655.png)
-![](/integrations/lifterlms-integration-with-fluentcrm/image-49-1024x453.png)
+
+![Settings](/integrations/lifterlms-integration-with-fluentcrm/condiotional-8.webp)
 
 If you want to use other conditionals please check out [this documentation](/docs/conditional-automation-actions).
