@@ -6,6 +6,7 @@ order: 0
 ---
 
 # FluentAffiliate Integration with FluentCRM
+
 FluentAffiliate integrates with FluentCRM to bring your affiliate management data directly into your marketing automation hub. This powerful combination allows you to segment contacts based on their affiliate status and activities, and run targeted automations to engage, reward, and manage your affiliates effectively.
 
 In this article, you’ll learn how the FluentCRM and FluentAffiliate integration works and what features are available.
@@ -26,13 +27,10 @@ If you want to know more about how to create a complete automation, check out ou
 
 Below are the triggers available for the FluentAffiliate integration. Each one can be used to start a unique automation funnel.
 
-**Affiliate Account Approved:** This automation is initiated when an affiliate's status is set to "Approved". It's perfect for sending a welcome email series, adding specific tags, or providing new affiliates with their essential resources.
-
-**Affiliate Registered as Pending:** This automation starts when a new user registers as an affiliate and their account is set to "Pending" status. You can use this to automatically send an email confirming their application has been received and explaining the next steps.
-
-**Successful Referral Created:** This automation is initiated when an affiliate's referral leads to a successful, paid order. It is ideal for sending real-time notifications or congratulatory emails to your affiliates for each conversion they make.
-
-**Affiliate Payout Sent:** This automation runs when a payout transaction for an affiliate is marked as "paid". You can use this to send a payment confirmation email, add a tag indicating a recent payout, or thank them for their partnership.
+ * **Affiliate Account Approved:** This automation is initiated when an affiliate's status is set to "Approved". It's perfect for sending a welcome email series, adding specific tags, or providing new affiliates with their essential resources.
+ * **Affiliate Registered as Pending:** This automation starts when a new user registers as an affiliate and their account is set to "Pending" status. You can use this to automatically send an email confirming their application has been received and explaining the next steps.
+ * **Successful Referral Created:** This automation is initiated when an affiliate's referral leads to a successful, paid order. It is ideal for sending real-time notifications or congratulatory emails to your affiliates for each conversion they make.
+ * **Affiliate Payout Sent:** This automation runs when a payout transaction for an affiliate is marked as "paid". You can use this to send a payment confirmation email, add a tag indicating a recent payout, or thank them for their partnership.
 
 ![automation trigger 03](/integrations/fluentaffiliate-integration-with-fluentcrm/Automation-Trigger-03-scaled.webp)
 
