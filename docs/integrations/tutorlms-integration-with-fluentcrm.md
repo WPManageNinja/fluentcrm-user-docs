@@ -6,6 +6,7 @@ order: 0
 ---
 
 # TutorLMS Integration with FluentCRM
+
 TutorLMS is one of the most popular LMS plugins for WordPress. If you have created an eLearning course platform on WordPress using TutorLMS, FluentCRM can help you automate your course marketing with activity monitoring contact segmentation, email marketing, and more. Follow these simple steps to integrate FluentCRM with TutorLMS.
 
 ## Integration Settings
@@ -14,7 +15,7 @@ To enable the integration and sync TutorLMS with FluentCRM, go to **Settings** a
 
 Click on the **Sync TutorLMS Students** button to update the existing student data and automatically segment future students based on the selected tag, list, and contact status.
 
-![image](/integrations/tutorlms-integration-with-fluentcrm/image-66.png)
+![Integration Settings](/integrations/tutorlms-integration-with-fluentcrm/sync-tutorlms-1.png)
 
 ## Course Tag settings in TutorLMS
 

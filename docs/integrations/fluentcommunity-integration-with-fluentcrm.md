@@ -6,6 +6,7 @@ order: 0
 ---
 
 # FluentCommunity integration with FluentCRM
+
 **FluentCommunity** connects directly with **FluentCRM**, allowing your community data to be used inside your marketing automation workflows. You can trigger automations based on course enrollments, group members by their Space participation, and send targeted email campaigns to engage your community.
 
 In this article, you’ll learn how the FluentCommunity and FluentCRM integration works and what features it offers.
@@ -74,7 +75,7 @@ Then, open the **Select Action** dropdown and choose the FluentCommunity action 
 
 After selecting the desired action, select the desired **Space/Course** where you want to **Add/Remove** the contacts using the Dropdown list.
 
-Finally, click the **Add to Selected Space** or **Add to Selected Course** button.
+Finally, click the **Confirm** button to add to selected space.
 
 ![add to selected space 7](/integrations/fluentcommunity-integration-with-fluentcrm/add-to-selected-space-7-scaled.webp)
 
@@ -82,7 +83,7 @@ Finally, click the **Add to Selected Space** or **Add to Selected Course** butto
 
 The integration allows you to filter and segment your recipients in **Email Campaigns** based on their community engagement.
 
-First, go to **All Campaigns** under the **Emails** section from the **FluentCRM Navbar**, and click the **\+ Create New Campaign** button.
+First, go to **Campaigns** under the **Emails** section from the **FluentCRM Navbar**, and click the **\+ Add Campaign** button.
 
 To learn the detailed process of creating a new Email Campaign, read this [Documentation](/docs/setting-up-campaign/#create-a-new-campaign).
 
