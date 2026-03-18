@@ -15,7 +15,7 @@ Incoming webhooks allow you to automatically collect and add contacts to FluentC
 
 ### 1. Create a New Webhook
 
-Navigate to **Settings** from the top menu of FluentCRM. On the left sidebar, select **Webhook Settings ** and click the **Create Webhook** button.
+Navigate to **Settings** from the top menu of FluentCRM. On the left sidebar, select **Webhook Settings** and click the **Create Webhook** button.
 
 ![Incoming Webhook](/integrations/webhook-integration/Webhook-Settings-1.webp)
 
