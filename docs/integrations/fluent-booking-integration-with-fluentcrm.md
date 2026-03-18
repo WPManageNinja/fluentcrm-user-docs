@@ -6,6 +6,7 @@ order: 0
 ---
 
 # Fluent Booking Integration with FluentCRM
+
 FluentCRM integrates with FluentBooking to simplify automation and contact management. It enables you to add FluentBooking attendees to your leads and run automation based on booking events like creation, completion, cancellation, and rescheduling. This integration ensures smoother contact management and more efficient workflow automation. Let's dive into the step-by-step guide to configuring Fluent booking with FluentCRM.
 
 To integrate FluentCRM with Fluent Booking, you have to start the process through the Fluent Booking Plugin on your website.
@@ -56,12 +57,12 @@ After that, you’ll find some dynamic checkbox options here to customize your i
 
 Go to the FluentCRM dashboard and click the **Automation** section from the navbar to create a **New Automation**.
 
-A popup will appear. Set the **Internal Label Name** and select Booking from the sidebar. Choose a trigger from the list to run your automation. Here are some Triggers you will see.
+A popup will appear. Now, choose a trigger from the list to run your automation. Here are some Triggers you will see.
 
 -   **New Booking:** This trigger will be initiated when a new booking has been confirmed.
 -   **Booking Cancelled:** This funnel will start when a booking is canceled.
 -   **Booking Complete:** This funnel will start when a booking is completed manually or automatically.
--   **Booking Rescheduled:** This trigger will start when the original booking is changed to a new date or time**.**
+-   **Booking Rescheduled:** This trigger will start when the original booking is changed to a new date or time.
 
 Now click on the **Continue** button to start the Funnel.
 
@@ -69,17 +70,13 @@ Now click on the **Continue** button to start the Funnel.
 
 Now a popup will appear and here give the necessary information about the funnel.
 
-**Automation Name:** You’ll see the automation name here. You can also edit it.
+ * **Automation Name:** You’ll see the automation name here. You can also edit it.
+ * **Internal Description:** Place the automation Internal Description.
+ * **Booking Calendar:** Here you’ll select the booking Calendar name that you created before.
+ * **Subscription Status:** Now select your Contact Status any of those you want to run your automation. Here shows three statuses: Subscribed, Unsubscribed, and Pending.
+ * **Conditions:** If Tick the Checking box then run this automation only once per contact. If left unchecked, it allows new data or configurations to take the place of the current ones in the flow.
 
-**Internal Description:** Place the automation Internal Description.
-
-**Booking Calendar:** Here you’ll select the booking Calendar name that you created before.
-
-**Subscription Status:** Now select your Contact Status any of those you want to run your automation. Here shows three statuses: Subscribed, Unsubscribed, and Pending.
-
-**Conditions:** If Tick the Checking box then run this automation only once per contact. If left unchecked, it allows new data or configurations to take the place of the current ones in the flow.
-
-![image](/integrations/fluent-booking-integration-with-fluentcrm/image-1.png)
+![image](/integrations/fluent-booking-integration-with-fluentcrm/image-1.webp)
 
 To see the Booking Contact list in FluentCRM, go to **FluentCRM Contact** then click on the List that you applied before **Booking** In **FluentCRM list** or **Contact Tag**.
 
