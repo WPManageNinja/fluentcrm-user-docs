@@ -33,11 +33,9 @@ A pop-up will appear. Now click the **Add your first condition** button to set t
 
 After that, you can choose the FluentCRM Conditions from the **Choose Condition** dropdown field. Scroll down and you’ll see three Conditions based on FluentCRM contact segmentation.
 
-**Contact Tag:** This condition of **Contact Tag** works based on the tags that exist or don’t exist on your CRM contacts.
-
-**Contact Status:** This condition is based on the contact status in FluentCRM. Here are three contact statuses: **Subscriber**, **Unsubscriber**, and **Pending**.
-
-**Contact Exists:** This condition is based on whether the contact exists on your FluentCRM contact list or not. 
+ * **Contact Tag:** This condition of **Contact Tag** works based on the tags that exist or don’t exist on your CRM contacts.
+ * **Contact Status:** This condition is based on the contact status in FluentCRM. Here are three contact statuses: **Subscriber**, **Unsubscriber**, and **Pending**.
+ * **Contact Exists:** This condition is based on whether the contact exists on your FluentCRM contact list or not. 
 
 ![choose condition](/integrations/oxygen-builder-integration-with-fluentcrm/Choose-condition.webp)
 

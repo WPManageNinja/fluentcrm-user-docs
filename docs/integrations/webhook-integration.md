@@ -6,17 +6,35 @@ order: 0
 ---
 
 # Webhook Integration
-Webhooks let you send or receive data from any third-party service without writing code or running servers. FluentCRM comes with both incoming and outgoing webhooks.
 
-### Incoming webhook
+Webhooks allow you to send or receive data between FluentCRM and third-party services without the need for custom coding or server management. FluentCRM supports both Incoming and Outgoing webhooks to help you automate your data flow.
 
-Incoming webhooks let you collect contacts automatically from an external platform or server. To create an incoming webhook, go to **Settings**, select WebHook Settings from the left sidebar, and click on **Create Webhook.**
+## Incoming webhook
 
-![](/integrations/webhook-integration/Webhook-Settings-1024x583.png)
+Incoming webhooks allow you to automatically collect and add contacts to FluentCRM from an external platform or server. Follow these steps to set up an incoming webhook:
 
-A pop up will appear and you will need to provide the required details. Give the Hook a name at first, Choose lists and tags (optional) for the user who will subscribe through the webhook, and finally give a subscription status to the user. Mostly you want to give the Subscribed status.
+### 1. Create a New Webhook
 
-![](/integrations/webhook-integration/Screenshot-2020-12-01-at-11.22.01-AM-1024x879.png)
+Navigate to **Settings** from the top menu of FluentCRM. On the left sidebar, select **Webhook Settings ** and click the **Create Webhook** button.
+
+![Incoming Webhook](/integrations/webhook-integration/Webhook-Settings-1.webp)
+
+### 2. Configure Webhook Details
+
+A popup will appear where you need to provide the following information:
+
+ * **Name:** Give your webhook a descriptive name so you can identify the data source.
+ * **Lists:** Select the specific list(s) where the new contacts should be added.
+ * **Tags:** Choose the tag(s) that should be applied to the contacts arriving via this hook.
+ * **Contact Status:** Set the subscription status for these contacts. In most cases, you should choose **Subscribed**.
+
+![Incoming Webhook 1](/integrations/webhook-integration/create-webhook-2.webp)
+
+###3. Map Your Data and Save
+
+After filling in the details, click the **Create** button. FluentCRM will then generate a unique **Webhook URL**. You can copy this URL and paste it into your external application to begin sending contact data directly into FluentCRM. Also, you can **edit** and **delete** by clciking the **three-dot** option.
+
+![Incoming Webhook 1](/integrations/webhook-integration/copy-url-3.webp)
 
 #### Additional Data
 
@@ -50,20 +68,19 @@ string ex: subscribed | pending | unsubscribed
 
 Here is the example post request via postman
 
-![](/integrations/webhook-integration/Screenshot-2020-12-01-at-11.31.31-AM-1024x695.png)
+![Additional Data](/integrations/webhook-integration/additional-data-4.webp)
 
-* * *
 
 ### Outgoing Webhook
 
 Outgoing webhooks let you send your subscriber data within the automation to external servers and platforms. To send data to external servers and platforms, go to **Automations**, create or open an automation funnel, and click the plus(+) button to see available actions. Then select **Outgoing Webhooks** from the available **Actions**.
 
-![](/integrations/webhook-integration/image-31-1024x700.png)
+![Outgoing Webhook](/integrations/webhook-integration/outgoing-webhook-5.webp)
 
 Next, select your **Data Send Method**, you can choose both **Get** and Post methods. Provide your **Webhook URL** and Select **Request Format**(you can do both **JSON** and **Form**).
 
 Choose what data you want to send(you can send **Full Subscriber Data** or **Custom Data**) and select whether you want to **Request Header** or not.
 
-![](/integrations/webhook-integration/image-14-1024x767.png)
+If you have a lot of tasks running, you may want to enable the option to **Send Webhook Data as Background Process** as well. Once you're done click the **Save Settings** button.
 
-If you have a lot of tasks running, you may want to enable the option to **Send Webhook Data as Background Process** as well. Click **Save Settings** once you're done!
+![Outgoing Webhook 1](/integrations/webhook-integration/outgoing-webhook-6.webp)
