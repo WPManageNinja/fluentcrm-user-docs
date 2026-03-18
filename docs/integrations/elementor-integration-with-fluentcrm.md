@@ -6,34 +6,49 @@ order: 0
 ---
 
 # Elementor Integration with FluentCRM
+
 **FluentCRM** is a Self Hosted Email Marketing Automation Plugin for WordPress. This plugin provides easy solutions to make your email marketing & customer relationship smooth. Now you can integrate the Elementor page builder native forms with Fluent CRM.
 
 Just follow this simple guide to learn how to integrate Elementor with Fluent CRM.
 
-**Step-1:** At first, go to your dashboard & click on **Pages.** Then click on **Add New Pages** to create your Page. 
+### **Step 1: Create or Edit Your Page** 
 
-![](/integrations/elementor-integration-with-fluentcrm/Pages-E2-80-B9-Ninja-Sandbox-E2-80-94-WordPress-1024x611.png)
+Start by navigating to your WordPress dashboard and selecting **Pages**. You can either click **Add New** to create a fresh page or select an existing one. For this guide, we will use a page titled "Sample Page." Click the **Edit with Elementor** button to launch the editor. 
 
-**Step-2:** In this example, the post is named as ‘Sample Page’. Then you have to click the **Edit with Elementor** button. Which will take you to the Elementor page editor.
+![Create or Edit Your Page](/integrations/elementor-integration-with-fluentcrm/create-or-edit-your-page.webp)
 
-![](/integrations/elementor-integration-with-fluentcrm/Edit-Page-E2-80-B9-Ninja-Sandbox-E2-80-94-WordPress-1024x520.png)
+### **Step 2: Add the Form Widget:** 
 
-**Step-3:** Now, let’s create a simple form using Elementor’s **Form** widget. For demonstration purposes, the form used in this tutorial has a **First Name, Last Name & Email** field. 
+In this example, the post is named as ‘Sample Page’. Then you have to click the **Edit with Elementor** button. Which will take you to the Elementor page editor.
 
-![](/integrations/elementor-integration-with-fluentcrm/Elementor-Sample-Page-1024x745.png)
+![Add the Form Widget](/integrations/elementor-integration-with-fluentcrm/add-the-form-widget-2.webp)
 
-**Step-4:** Then, scroll down to the **Actions after Submit** option and click on it. Here you will find an option to **Add Actions.** You can add actions that will be performed after a user submits a form. After clicking this, select the Fluent CRM option from the dropdown menu.
+### **Step 3: Configure Actions After Submit:** 
 
-![](/integrations/elementor-integration-with-fluentcrm/Elementor-Sample-Page-1-1024x495.png)
+Once your form is designed, look at the settings panel on the left.
 
-**Step-5:** After that, you will find a **Fluent CRM** option below Actions After Submit. This is where you can map the CRM fields according to your form fields. Here First Name, Last Name, and Email fields will be mapped into the form.
+Locate the **Actions After Submit** section. Click on the **Add Action field** (the '+' icon). Select **FluentCRM** from the dropdown menu. This tells Elementor to send the form data to your CRM.
 
-![](/integrations/elementor-integration-with-fluentcrm/Elementor-Sample-Page-2.png)
+![configure Actions](/integrations/elementor-integration-with-fluentcrm/configure-actions-3.webp)
 
-**Step-6:** You can also turn on the **Add Only** option when you want to only add new contacts. And don’t need to update your existing contacts.
+**Step 4: Map Your CRM Fields:** 
 
-**Step-7:** Turn on the **Double Opt-in** option if you want to send double opt-in emails for new or pending contacts. If you don’t enable this, then the contact will be added as a subscribed state. Lastly, just click the **Update** button to save your settings.
+After adding the action, a new section titled FluentCRM will appear below "Actions After Submit." Click it to configure the data mapping:
 
-![](/integrations/elementor-integration-with-fluentcrm/Elementor-Sample-Page-3.png)
+ * **Fields Mapping:** Match your Elementor form fields to your FluentCRM fields (e.g., map the 'Email' form field to the 'Email' CRM field).
+ * **Select List/Tags:** You can also choose which specific Lists or Tags the contact should be assigned to upon submission.
 
-\***Tutorial:** [How to Connect Any WordPress Forms with FluentCRM](https://fluentcrm.com/connect-wp-forms-ninja-forms-gravity-forms-or-any-forms-with-fluentcrm/)
+![Map Your CRM Fields](/integrations/elementor-integration-with-fluentcrm/map-crm-field-4.webp)
+
+### **Step 5: Configure Advanced Options (Optional):** 
+
+FluentCRM provides additional controls to manage your contact data:
+
+ * **Add Only:** Enable this toggle if you only want to create new contacts and prevent the form from updating existing contact information.
+ * **Double Opt-in:** Turn this on if you want to send a confirmation email to new or pending contacts. If disabled, new contacts will be added directly with a "Subscribed" status.
+
+![Configure Advanced Options](/integrations/elementor-integration-with-fluentcrm/configure-advanced-option-5.webp)
+
+Once you have mapped the fields and configured your preferences, click the **Update (or Publish)** button at the bottom of the Elementor panel to save your settings.
+
+\**Tutorial:** [How to Connect Any WordPress Forms with FluentCRM](https://fluentcrm.com/connect-wp-forms-ninja-forms-gravity-forms-or-any-forms-with-fluentcrm/)
