@@ -20,9 +20,7 @@ The report data shows the **Total Revenue**, **Total Orders**, **Total Customers
 ## Gross Volume
 
 ![woo report gross volume](/advanced-reports/woocommerce-advanced-reports/woo_report_gross_volume.webp)
-*Gross Volume*
 
 ## Customer Growth
 
 ![woo report customer growth](/advanced-reports/woocommerce-advanced-reports/woo_report_customer_growth.webp)
-*Customer Growth*
