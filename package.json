@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev",
+    "docs:Dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },

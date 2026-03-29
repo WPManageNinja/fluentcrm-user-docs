@@ -26,15 +26,15 @@ In order to connect FluentCRM to Zapier, you need to create a webhook URL on Flu
 
 Go to your FluentCRM Dashboard, navigate to **Settings**, and select **Incoming Webhooks**. Click **Create Webhook** button.
 
-![fluentcrm incoming webhooks](/integrations/webhook-integration/incoming-webhook-1.webp)
+![fluentcrm incoming webhooks](/integrations/zapier-integration-with-fluentcrm/incoming-webhook-1.webp)
 
 Here, a popup will appear. Now, choose a **Webhook Type** from the dropdown. Add a **Name** and **Status** to your webhook. You can also add a **List** and **Tag**. Set those and hit the **Create** button.
 
-![creating an incoming webhook in fluentcrm](/integrations/webhook-integration/create-webhook-2.webp)
+![creating an incoming webhook in fluentcrm](/integrations/zapier-integration-with-fluentcrm/create-webhook-2.webp)
 
 A **URL** will be generated. We are going to use this URL to connect Zapier. You can **Edit** or **Delete** webhook by clicking **three-dot** option.
 
-![incoming webhook in fluentcrm](/integrations/webhook-integration/webhook-url-3.webp)
+![incoming webhook in fluentcrm](/integrations/zapier-integration-with-fluentcrm/webhook-url-3.webp)
 
 ### Configure Trigger in Zapier
 
@@ -44,30 +44,30 @@ To do this, you’ll need to start by creating a Zap. Go to the [Zapier Dashboar
 
 1.  Click **Create > Zaps** from the Zapier account dashboard. 
 
-![zapier dashboard](/integrations/webhook-integration/create-4.webp)
+![zapier dashboard](/integrations/zapier-integration-with-fluentcrm/create-4.webp)
 
 2.  You will be redirected to the Trigger page. To set the trigger, choose your data source. In our case, we’re choosing **Google Sheets**.
 
-![google sheets trigger in zapier](/integrations/webhook-integration/trigger-google-sheet-5.webp)
+![google sheets trigger in zapier](/integrations/zapier-integration-with-fluentcrm/trigger-google-sheet-5.webp)
 
 3.  After selecting this trigger, you have to define the **Event**. As the trigger, we will set **New or Updated Spreadsheet Row**. At this point, You have to choose an **account** and click **continue**.  
 
 >[!Note]
 >You may need to allow permission to view and edit Google Sheets if you haven’t done it already.
 
-![configuring google sheets trigger in zapier](/integrations/webhook-integration/trigger-google-sheet-6.webp)
+![configuring google sheets trigger in zapier](/integrations/zapier-integration-with-fluentcrm/trigger-google-sheet-6.webp)
 
 4.  After selecting the account, you have to select the spreadsheet you want to import to FluentCRM. Select the field, choose a worksheet you’ve already created and click **continue.**
 
-![configuring google sheets trigger in zapier](/integrations/webhook-integration/setup-trigger-7.webp)
+![configuring google sheets trigger in zapier](/integrations/zapier-integration-with-fluentcrm/setup-trigger-7.webp)
 
 5.  **Test Trigger** before moving on to the next step. If you created any rows, the data should show up here. 
 
-![Test Trigger](/integrations/webhook-integration/test-trigger-8.webp)  
+![Test Trigger](/integrations/zapier-integration-with-fluentcrm/test-trigger-8.webp)  
 
 A success message means that you’ve successfully configured the trigger.
 
-![Test Trigger](/integrations/webhook-integration/Test-trigger-9.webp)  
+![Test Trigger](/integrations/zapier-integration-with-fluentcrm/Test-trigger-9.webp)  
 
 ### Configure Action in Zapier
 
@@ -75,11 +75,11 @@ After successfully configuring the trigger, you need to configure the action so 
 
 1.  Click action and choose **Webhook**.
 
-![webhook action in zapier](/integrations/webhook-integration/action-zaper-10.webp)
+![webhook action in zapier](/integrations/zapier-integration-with-fluentcrm/action-zaper-10.webp)
 
 2.  Set the action event to **Post** and click continue.
 
-![configuring action webhook in zapier](/integrations/webhook-integration/post-11.webp)
+![configuring action webhook in zapier](/integrations/zapier-integration-with-fluentcrm/post-11.webp)
 
 3.  Now you’ll be asked to enter the necessary details such as URL and Payload type. You’ll also need to map the data.
 
@@ -89,15 +89,15 @@ After successfully configuring the trigger, you need to configure the action so 
 
 You can keep the rest of the fields as they are and click continue.
 
-![configuring action webhook in zapier](/integrations/webhook-integration/configure-actiion-12.webp)
+![configuring action webhook in zapier](/integrations/zapier-integration-with-fluentcrm/configure-actiion-12.webp)
 
 4.  Finally, click **Test and continue** to proceed. If it shows a success message, the data will be sent to FluentCRM
 
-![test action webhook in zapier](/integrations/webhook-integration/test-action-13.webp)
+![test action webhook in zapier](/integrations/zapier-integration-with-fluentcrm/test-action-13.webp)
 
 5.  If everything is working fine, it means that the data will be automatically added to FluentCRM whenever a Google Sheet row is added. Click **Publish** to start automating contact importing!
 
-![publishing a zap in zapier](/integrations/webhook-integration/publish-14.webp)
+![publishing a zap in zapier](/integrations/zapier-integration-with-fluentcrm/publish-14.webp)
 
 
 
@@ -111,56 +111,60 @@ To send FluentCRM data to other platforms, you’ll need to use an automation yo
 
 At first, you need to set up an incoming webhook in Zapier. To get the incoming webhook URL:
 
-1.  Go to Zapier and click **Create Zap.** Then select **Webhook** as the trigger. 
+1.  Go to Zapier and click **Create > Zaps.** Then select **Webhook** as the trigger. 
 
-![creating a webhook trigger in zapier](/integrations/zapier-integration-with-fluentcrm/05lj_0J0ZpOjCDeDs_8IZihvwXQsLP1ni8qIYOvUlQ4qfb-cEnFRPdxLtM4fA5YkODQSzQVmZHu-oTqWVEIcI7CGPj8ZO9i4mWWzf6BNRKqhzBeZ7mf87NvA5uTvE8F-a4blDplitaHrsRd49A.png)
+![creating a webhook trigger in zapier](/integrations/zapier-integration-with-fluentcrm/new-zap-15.webp)
 
-2.  For **Action Event,** choose **Catch Hook.**
+2.  For **Action Event,** choose **Catch Hook** and click on the **Continue** button.
 
-![configuring a webhook trigger in zapier](/integrations/zapier-integration-with-fluentcrm/NSPp6bGa73eTtJD3ZebEnAMestBJaDtx-KyoPxB-UFP0q0S3KdzYFjd3kNILwOo2GALh7pGyEl7aBPAAuDyjzIEq3CWrg8b238-aiAsM6z7hURnzJqlmae-kFsNgxDw-BMH-ETrnITMRHASQw.png)
+![configuring a webhook trigger in zapier](/integrations/zapier-integration-with-fluentcrm/catch-hook-16.webp)
 
-3.  In the next step, you’ll be asked to pick off a **Child Key**. Since this is optional, you can keep it blank and click **Continue**, you’ll be presented with a webhook URL. ![](/integrations/zapier-integration-with-fluentcrm/woAICUg5_w-JKdxrvGHpgtrHjyWTCaNzf7lKhMxgTdhnBIXdNdzQumiwZzuIurIF3c91mNLFbESbpgRJRSnW9LapGgL-qRl1hMQwzns2GAxFP8LeIiFkLsIRPPRfgEHhsdq5n6pAD2x9b7QfCA.png)
+3.  In the next step, you’ll be asked to pick off a **Child Key**. Since this is optional, you can keep it blank and click **Continue**, you’ll be presented with a webhook URL. Now, **Copy** this **Webhook URL** for future use.
+
+
+![Child Key](/integrations/zapier-integration-with-fluentcrm/copy-webhook-url-17.webp)
 
 ### Create Automation and Outgoing Webhook
 
 As we mentioned, you can only send contacts and data if you have an existing automation. We’ll start by creating one.
 
-1.  Go to FluentCRM > **Automations** and click **Create a New Automation.**
+1.  Go to FluentCRM > **Automations** and click **+New Automation.**
 
-![creating an automation in fluentcrm](/integrations/zapier-integration-with-fluentcrm/gQerR4RLbNamDh1Fgczg-IszR7TnDvg6TlOVAyumFPWESDCku5GMyjpdtjYgluErxVvCVG1DoiHpsmTdTIvOrXdZXOxBuQ3YI0QsXIZX6zFaz9bhvpZj8q0UpbFL8b607p4utFaB0JabRHRH0Q.png)
+![creating an automation in fluentcrm](/integrations/zapier-integration-with-fluentcrm/new-automation-18.webp)
 
 2.  Let’s set a trigger. We selected the list applied for this tutorial, named it, and selected the list. Click **Save setting**.
 
-![creating an automation in fluentcrm](/integrations/zapier-integration-with-fluentcrm/W903SX_hVd5aUt6_XQSCxdadNVDsp4ZT7vtuaFCb7fppG4v5-go8zOnQvQprHxQyzSZpfYJepxQP18UDw1I2qAl1oO60d5IUivxt2n0f_VVeW9DU2B-jJd6i3X-G7xqOAJ51lUSZEN-n_mgNQA.png)
+![creating an automation in fluentcrm](/integrations/zapier-integration-with-fluentcrm/list-appiled-19.webp)
 
 3.  Now, when the automation window is open, click (**+**) and choose **Outgoing Webhook** from the **Action Blocks**.
 
-![fluentcrm actions](/integrations/zapier-integration-with-fluentcrm/s4nco8XhVrAJFejnDWunH2cOymx_Il0Fwwk-G7TcQSIGVDNnM5C66oodDaRZQ9DJONOkN_Wehdp1_8cVmnINELuPJtR7TtpO3Q3VI3Y6-SNPB4klN0jVpKPVuSaSaSjLzBlqY54_YjqBm0hx7Q.png)
+![fluentcrm actions](/integrations/zapier-integration-with-fluentcrm/outgoing-webhook-20.webp)
 
 4.  The outgoing webhooks action needs to be configured properly before it can send your data to other platforms. You should configure it like the following:
 
-**Data Send Method**: Post Method  
-**Remote URL**: The URL you’ve generated in Step 1.  
-**Request Format**: Send as JSON Format
+ * **Data Send Method**: Post Method  
+ * **Remote URL**: The URL you’ve copied before.  
+ * **Request Format**: Send as JSON Format
+ * **Request Body:** you can choose to load the **Full subscriber's data.** If you don’t want all your data transferred, select **Custom data**.  
+ * **Request Header**: No Header
 
-**Request Body:** you can choose to load the **Full subscriber's data.** If you don’t want all your data transferred, select **Custom data**.  
-**Request Header**: No Header
+You can send additional data with the Request Header since it’s an optional field; we will skip this for now. To finish off, click on the **Save settings** button.
 
-You can send additional data with the Request Header since it’s an optional field; we will skip this for now. To finish off, **Save your settings**.
-
-![configuring outgoing webhook in. fluentcrm](/integrations/zapier-integration-with-fluentcrm/0QYe6ldTY4ysoEE6CPjaly9BIfru9TTkrNj3u6aArcwLd4G9RhEZN8rQwF0y31Xfvj9VH-o9akDs2N7XhATsoAeBY2JcFGZnZBBrd41YjH96Dc0E_5FtaoiUcG7t7W29vfMZYnK915oVJhQhPA.png)
+![configuring outgoing webhook in. fluentcrm](/integrations/zapier-integration-with-fluentcrm/remote-url-21.webp)
 
 5.  Publish the automation to put it into effect.
 
-![publish automation in fluentcrm](/integrations/zapier-integration-with-fluentcrm/3OqkTd2nWEElfG-aThfg31fMQTVxeF43tIki0X9dL3QSt0o7KS2EVRkCaTPsRbq5WwJLW3dFROvPhlHmmJ8NjaCi3tEWfY6m-DKLUGYzicOgb2wIlHnNNI-5jpBo2tLloLXQC0JXnNWgYmiH9w.png)
+![publish automation in fluentcrm](/integrations/zapier-integration-with-fluentcrm/publish-automation-22.webp)
 
-**Note(Skip if you’re testing with existing automation)**: The automation is live. However, it doesn’t have any data to test our Zapier integration. So we’ll have to manually add a contact to the automation. To do so, go to **FluentCRM**\>**Contacts** and select a contact. On the top of the screen, choose **Add to Automation** and choose the automation funnel you’ve created earlier. Finally, click **Add to Automation** to proceed to the next step.
+**Note(Skip if you’re testing with existing automation)**: The automation is live. However, it doesn’t have any data to test our Zapier integration. So we’ll have to manually add a contact to the automation. 
 
-![manually add contacts to fluentcrm automation](/integrations/zapier-integration-with-fluentcrm/mdZEs26O4jGNiIgjtXJSwStfuQj6eKe5x7mvDOCht5BYMIjurEFCnsQlbC1B9Kfb-A26cgb-Me2Z8Y2J5yDo31strG6JXo9CBX5wMzaUqEPGzgdSNhL-IsQg4Opo5H5W8F2cBpBCq0QxKzUQDg.png)
+To do so, go to **FluentCRM**\>**Contacts** and select a contact. On the top of the screen, choose **Add to Automation** and choose the automation funnel you’ve created earlier. Finally, click **Add to Automation** to proceed to the next step.
+
+![manually add contacts to fluentcrm automation](/integrations/zapier-integration-with-fluentcrm/add-to-automation-23.webp)
 
 6.  Go back to Zapier and click **Test Trigger** now. If it returns with information, the trigger is configured successfully. Click **Continue** to save the automation.
 
-![webhook test in zapier](/integrations/zapier-integration-with-fluentcrm/CvY4gWKni9q0eD5ebx966MV6mHmfevFhRWwAbGkpEI8-P4QA3HsAIinpMzBlmjq1ngEUxxBj2feYPyDy8dwE1knDojuqbLWBHvH2wJuHqgcHqvLa_FuNJydSzgEOU6Mk8AQVrPxKFgL3Uv_qEQ.png)
+![webhook test in zapier](/integrations/zapier-integration-with-fluentcrm/test-trigger-24.webp)
 
 ### Configure Zapier Action
 
@@ -168,20 +172,19 @@ We can now move on to Action.
 
 1.  From the **Action** menu, select whatever works for you. We want to export our FluentCRM data to Google Sheets, so we’ll select that.
 
-![select google sheets action in zapier](/integrations/zapier-integration-with-fluentcrm/TNMngmVr16jJQoNVhz1lySmdr0H4AnNeJYMMakF1VtaA6ExBAxBizCPY23LvD5FLWHkZXxD1n2zzx4UoTS1vV4R_mIuvqTHtQH7u3c28Lmr06N5duhz_1yoBw-Xldsa2rGsneaknrgfAc0Acuw.png)
+![select google sheets action in zapier](/integrations/zapier-integration-with-fluentcrm/action-25.webp)
 
-2.  Now select an Action that meets your need. We want to export our FluentCRM data in a demo sheet.  So we’ll select **Create Spreadsheet Column** and click **Continue**.
+2.  Now, select an Action that meets your need. We want to export our FluentCRM data in a demo sheet.  So we’ll select **Create Spreadsheet Column**. Now choose the account from which you want to select your spreadsheet and click **Continue**.
 
-![configuring google sheets action in zapier](/integrations/zapier-integration-with-fluentcrm/uKJX5OuAfPkZ6PEOUxpbtLoN2GM5KcmaXBK9Yjk3XLnm4gL9ZEu_SJDRNop4MVZdDGZ5tgIIvolZNs_RXOsg9P-ssapEcrXSO244H-PRkCh_stCwA9Pn7ilymyuVrf6dDJbt4usMjgjBLGJ7oA.png)
+![configuring google sheets action in zapier](/integrations/zapier-integration-with-fluentcrm/create-spreedsheet-column-25.webp)
 
-3.  Now choose the account from which you want to select your spreadsheet and click Continue.
-4.  Next, select your Drive, Spreadsheet, Worksheet, and Column Name. and click **Continue**. If you don’t have a sheet for this purpose, you’ll have to create it.
+3.  Next, select your **Drive, Spreadsheet, Worksheet, and Column Name**. and click **Continue**. If you don’t have a sheet for this purpose, you’ll have to create it.
 
-![configuring google sheets action in zapier](/integrations/zapier-integration-with-fluentcrm/kQcWasqKPGLc8u21hoI0WW6yfVmp52qdeaZTFmSDIBaH0f6flbGSbRnWAKgMvSOX-TGYi4k6RlGQ7FyRxXHYUaZBNF9Zvgk8-j7yAcEFRfiUj2_8f17TZ6XsOJgbDJFyTRKr0uJs2m_bRZUogQ.png)
+![configuring google sheets action in zapier](/integrations/zapier-integration-with-fluentcrm/configure-26.webp)
 
-5.  Finally, click test and continue, If you get a success message like shown below, the integration is successful. Click **Publish Zap** to publish the automation.
+4.  Finally, click test and continue, If you get a success message like shown below, the integration is successful. Click **Publish Zap** to publish the automation.
 
-![testing google sheets action in zapier](/integrations/zapier-integration-with-fluentcrm/37RCVqln1W7FU5Q2KQ6l1TISl6uHmyOf7Fo1xE32DLEZ8DAb3Gf_NH-kezy9lTxrzQQOEOFI9_kUx98YYnA7vDLQV1x2T4r8LlzqBU2Dm7o65XU8NNr889A83yFss2NLqVAqyY8fk7NL4mgJ1Q.png)
+![testing google sheets action in zapier](/integrations/zapier-integration-with-fluentcrm/action-27.webp)
 
 So that completes our Zapier integration tutorial. If you get stuck or have any questions about the tutorial, feel free to comment below!
 
