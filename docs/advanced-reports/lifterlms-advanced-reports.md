@@ -6,8 +6,17 @@ order: 0
 ---
 
 # LifterLMS - Advanced Reports
-From the Reports option in FluentCRM, if you navigate to LifterLMS then you can see an advanced report of the LifterLMS data on your site.
 
-The report shows the **Total Students**, **Total Course Enrollments**, **Total Group Enrollments**, and the **Top Selling Products**. You can also see a graphical report of the **Enrollments** and **Student Growth** over a certain period.
+By navigating to **Reports** and selecting **LifterLMS**, you can access a comprehensive overview of your LMS performance. This advanced reporting dashboard helps you monitor student engagement and enrollment trends at a glance.
 
-![lifterlms reports](/advanced-reports/lifterlms-advanced-reports/LifterLMS_reports-1024x612.png)
+**Key Performance Metrics:** At the top of the page, you can see three critical data points:
+
+ * **Total Students:** The total number of unique students in your system.
+ * **Total Course Enrollments:** The total number of times students have enrolled in courses.
+ * **Top Selling Courses:** A list of your most popular courses by enrollment volume.
+
+**Interactive Growth Charts:** The report features a visual graph that tracks **Enrollments** and **Student Growth** over time. You can hover over any point on the line graph to see the specific enrollment numbers for that date.
+
+**Date Range Filtering:** Use the **Date Filter** at the top right to customize your view. You can choose from presets like Last 30 Days, This Month, or set a Custom Range to analyze specific periods of your business growth.
+
+![lifterlms reports](/advanced-reports/lifterlms-advanced-reports/LifterLMS_reports.webp)
