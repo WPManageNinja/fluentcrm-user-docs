@@ -30,7 +30,7 @@ A popup will appear where you need to provide the following information:
 
 ![Incoming Webhook 1](/integrations/webhook-integration/create-webhook-2.webp)
 
-###3. Map Your Data and Save
+### 3. Map Your Data and Save
 
 After filling in the details, click the **Create** button. FluentCRM will then generate a unique **Webhook URL**. You can copy this URL and paste it into your external application to begin sending contact data directly into FluentCRM. Also, you can **edit** and **delete** by clciking the **three-dot** option.
 
