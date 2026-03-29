@@ -86,6 +86,23 @@
   height: auto;
 }
 
+/*
+ * Balanced doc media: fills the content column up to the asset’s native width,
+ * then stays centered — avoids upscaling past source pixels (keeps GIFs/screenshots sharp).
+ */
+.vp-doc .doc-figure-balanced {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.vp-doc .doc-figure-balanced img {
+  width: 100%;
+  max-width: 800px; /* contact-growth.gif intrinsic width */
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* YouTube videos: match standard VitePress image width and framing */
 .vp-doc .vp-doc-video-wrapper {
   display: block;
