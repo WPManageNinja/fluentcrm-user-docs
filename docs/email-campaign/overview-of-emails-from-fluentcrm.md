@@ -6,40 +6,64 @@ order: 0
 ---
 
 # Overview of Emails from FluentCRM
+
 FluentCRM is an Email Marketing and Automation Tool that integrates with the WordPress email delivery system which can be extended by additional SMTP plugins like FluentSMTP and processes the automation emails, email campaigns, email sequences, and test emails.
 
-Once you are done with configuring the [**settings of the FluentCRM**](/docs/fluentcrm-global-settings), [**importing contacts into FluentCRM**](/docs/import-contacts-into-fluentcrm), and [**segmenting your contact**](/docs/segment-your-audience), you are ready to send an [**Email Campaign**](/docs/setting-up-campaign), **[Email Sequence](/docs/email-sequence)**, and **[Automation Emails](/docs/introduction-to-fluentcrm-automation)**. You can run email campaigns to send your marketing messages to the subscribers who opted for your marketing messages. In FluentCRM, an email campaign is a bulk email marketing campaign that is sent to many contacts at once instantly or in a scheduled time defined by you. This is as easy as adding a template, adding the content, designing the template, selecting your audience group, and then sending it off to your subscribers.
+Once you are done with configuring the [**settings of the FluentCRM**](/docs/fluentcrm-global-settings), [**importing contacts into FluentCRM**](/docs/import-contacts-into-fluentcrm), and [**segmenting your contact**](/docs/segment-your-audience), you are ready to send an [**Email Campaign**](/docs/setting-up-campaign), **[Email Sequence](/docs/email-sequence)**, and **[Automation Emails](/docs/introduction-to-fluentcrm-automation)**. You can run email campaigns to send your marketing messages to the subscribers who opted for your marketing messages. 
 
-## Emails Sent from FluentCRM
+In FluentCRM, an email campaign is a bulk email marketing campaign that is sent to many contacts at once instantly or in a scheduled time defined by you. This is as easy as adding a template, adding the content, designing the template, selecting your audience group, and then sending it off to your subscribers.
 
-There are a few places where Emails can be composed. Below you will find some screenshots of such places. The Email Editing guide is discussed in detail after discussing related settings in the Email Editor section.
+## Emails Creation Hub
 
-### Email Templates
+FluentCRM offers several ways to compose and send emails depending on your marketing goals. To access these, navigate to the **Emails** menu in your dashboard.
 
-From **Emails ➜ Email Templates** you can create a template that can be used later around the FluentCRM. More about templates are discussed in [**Email Templates**](/docs/email-templates).
+### 1. Email Campaigns
 
-![crm email compose template](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_template.png)
-*Composing Emails in Email Template*
+Campaigns are bulk marketing messages sent to a large group of contacts at once.
 
-### Email Campaigns
+ * **Flexible Editors:** When creating a campaign, you can choose from multiple editors: **Default (Gutenberg)** for a block-based experience, **Classic Editor** for simple text, **Raw HTML** for full control, or the **Visual Builder** for a drag-and-drop experience.
+ * **Scheduling:** You can send campaigns immediately or schedule them for a specific date and time in the future. More about templates are discussed in [**Email Campaigns**](/docs/setting-up-campaign).
 
-From **Emails ➜ All Campaigns**, you can create an email campaign. More about templates are discussed in [**Email Campaigns**](/docs/setting-up-campaign).
+![crm email compose campaign](/email-campaign/overview-of-emails-from-fluentcrm/email-campaign-1.webp)
 
-![crm email compose campaign](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_campaign.png)
-*Composing Emails in Email Campaign*
+### 2. Email Sequences
 
-### Email Sequences
+Sequences are a series of "drip" emails sent automatically over a period of time (e.g., a 7-day welcome series).
 
-From **Emails ➜ Email Sequences**, you can create an email sequence. More about sequences are discussed in [**Email Sequence**](/docs/email-sequence).
+ * **Smart Delays:** You can set a specific Delay (in days or hours) between each email in the sequence.
+ * **Time Windows:** Use the Sending Time Range to ensure emails only arrive during business hours, or enable Specific Days Only to avoid sending on weekends. More about sequences are discussed in [**Email Sequence**](/docs/email-sequence).
 
-![crm email compose sequence](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_sequence.png)
-*Composing Emails in Email Sequence*
+![crm email compose sequence](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_sequence-2.webp)
 
-### Automation Custom Email
+### 3. Recurring Campaigns
 
-From Any Automation, you can add a **Send Custom Email** action that will let you compose an email to be sent from the automation.
+If you send regular updates, like a "Weekly Post Update," Recurring Campaigns automate this process.
 
-![crm email compose automation](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_automation.png)
-*Composing Emails in Automation as Send Custom Email*
+ * **Dynamic Scheduling:** Set your emails to go out Daily, Weekly, or Monthly.
+ * **Automatic Dispatch:** You can enable the system to send emails automatically at your scheduled time or keep them as drafts for a final manual review before they go out.
 
-Please read the following next chapters to learn more about emails from FluentCRM.
+![Recurring Email Campaign](/email-campaign/overview-of-emails-from-fluentcrm/Recurring-Email-Campaigns-FluentCRM-3.webp)
+
+### 4. Email Templates
+
+Found under **Emails ➜ Email Templates**, this feature allows you to create and save "master designs" that can be reused across different campaigns and automations.
+
+Save time by building a layout with your brand's logo, colors, and footer, then simply select it whenever you start a new email. More about templates are discussed in [**Email Templates**](/docs/email-templates).
+
+![Composing Emails in Email Template](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_template-4.webp)
+
+### 5. Send Custom Email (Automation Action)
+
+Within any **Automation Funnel**, you can add a **Send Custom Email** action. This is perfect for sending specific, automated messages triggered by a user's behavior (like a "Thank You" email after a purchase).
+
+When configuring this action, you will see the following options:
+
+ * **Internal Label & Description:** These are for your own organization. They help you identify the specific purpose of this email within your automation workflow.
+ * **Send Email to:** You can choose to send the email directly to the **Contact** who triggered the automation, or specify a **Custom Email Address** (useful for internal notifications to your team).
+ * **Email Subject & Pre-Header:** Just like a regular campaign, you can set a catchy subject line and a preview "hook" text. Use the **SmartCodes** icon {} to personalize the subject line with the contact's details.
+ * **Content Editor:** Use the block-based editor to write your message. You can add images, buttons, and text blocks to make the email engaging.
+
+Once you have finished your design, click the **Save Settings** button to add this automated email to your funnel.
+
+![crm email compose automation](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_automation-5.webp)
+
