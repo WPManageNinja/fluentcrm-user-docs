@@ -6,13 +6,27 @@ order: 0
 ---
 
 # Conditional Sections in Email Editor
-**FluentCRM** now comes with another amazing feature! Where you can implement Conditional Content Blocks in order to personalize Emails. When you need to send some specific details to a certain group of customers, conditional content blocks can be used. Only one email with information relevant to each of your customers needs to be designed.
+
+FluentCRM’s **Conditional Section** block is a powerful tool for advanced personalization. Instead of creating multiple separate emails for different audiences, you can design a single email that "shifts" its content based on who is reading it. This ensures that every subscriber only sees the information that is relevant to them.
 
 https://youtu.be/zYIXoMgLlxM
 
-Similar to Other Content Blocks Conditional Section is also another block that lets you put contents in sections and apply conditions to them and this will generate emails while sending based on the conditions. This block works with Tags to apply conditions. To know more about Tags please check the [**Segmentation Guide.**](/docs/segment-your-audience/#Tags)
+## Add a Conditional Section
 
-To apply this feature, Add a **Conditional Section** to the email content. You will then be able to set the condition to either **Show IF in Selected Tag** or **Show IF NOT in Selected Tag** see something similar to the below screenshot where 3 sections are used and set to show for 3 different tags. This email will generate content in such a way that only the Tag AAA users will see the 1st conditional section. The same applies to the rest of the 2 conditional sections.
+In the **Email Editor**, click the **+ (Plus)** icon or type "/conditional" to find and insert the **Conditional Section** block.
+
+Once the block is added, you will see a highlighted area (yellow in the editor) where you can **Type / to choose a block**. You can place any standard block like text, images, or buttons inside this section.
+
+## Configuring Visibility Settings
+
+When the Conditional Section is selected, the **Block** settings sidebar on the right will show the **Conditional Visibility** options:
+
+**Enable conditional visibility:** **Toggle** this switch to On to start applying rules to the section.
+**Condition Type:** Choose how you want the tags to trigger the content:
+  * **Show if in selected tags:** The content will only be visible to subscribers who have the tags you specify.
+  * **Show if not in selected tags:** The content will be hidden from anyone who has the selected tags but shown to everyone else.
+  
+**Tags:** Select one or multiple tags from your database. For example, you might select an "Affiliate" tag to show a special bonus offer only to your partners. To know more about Tags please check the [**Segmentation Guide.**](/docs/segment-your-audience/#Tags)
 
 ![crm email editor conditional block](/email-campaign/conditional-sections-in-fluentcrm-email-editor/crm_email_editor_conditional_block.png)
 
