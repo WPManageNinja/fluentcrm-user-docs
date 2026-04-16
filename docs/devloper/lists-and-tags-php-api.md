@@ -5,54 +5,62 @@ category: "devloper"
 order: 0
 ---
 
-# Lists and Tags PHP API
-### Accessing lists
+Use FluentCRM's Lists and Tags PHP API to access contact segments and evaluate tag membership.
 
-&lt;?php
+## Access Lists
 
-   /\*
-    \* List is a contact segment.
-    \*/
-    $listApi = FluentCrmApi('lists');
+In FluentCRM, a list is a contact segment.
 
-    // Get all the lists
-    $allLists = $listApi->all(); // array of all the lists and each list is an object
+```php
+<?php
 
-    // get a single list
-    $list = $listApi->find(1); // finding the list id 1
+$listApi = FluentCrmApi('lists');
 
-    // accessing a list
-    $listId = $list->id;
-    $listTitle = $list->title;
-    $listSlug = $list->slug;
+// Get all lists (array of list objects)
+$allLists = $listApi->all();
 
-### [](https://github.com/FluentCRM/fluent-crm/wiki/PHP-API#accessing-tags)Accessing Tags
+// Get a single list by ID
+$list = $listApi->find(1);
 
-&lt;?php
-    /\*
-    \* Tag is a contact segment. You can easily access those
-    \*/
+// Access list properties
+$listId = $list->id;
+$listTitle = $list->title;
+$listSlug = $list->slug;
+```
 
-    $tagApi = FluentCrmApi('tags');
+## Access Tags
 
-    // Get all the tags
-    $allTags = $tagApi->all(); // array of all the lists and each list is an object
+In FluentCRM, a tag is also a contact segment.
 
-    // get a single tag
-    $tag = $tagApi->find(1); // finding the list id 1
+```php
+<?php
 
-    // accessing a tag
-    $tagId = $tag->id;
-    $tagTitle = $tag->title;
-    $tagSlug = $tag->slug;
+$tagApi = FluentCrmApi('tags');
 
-## [](https://github.com/FluentCRM/fluent-crm/wiki/PHP-API#filtering-contacts)
+// Get all tags (array of tag objects)
+$allTags = $tagApi->all();
 
-### Check if a contact is in any provided tags
+// Get a single tag by ID
+$tag = $tagApi->find(1);
 
-    $contactApi = FluentCrmApi('contacts');
-    // get current logged in contact
-    $contact = $contactApi->getCurrentContact();
-     
-    $targetTagIds = \[1,2,3\];
-    $isInTags = ($contact && $contact->hasAnyTagId($targetTagIds));
+// Access tag properties
+$tagId = $tag->id;
+$tagTitle = $tag->title;
+$tagSlug = $tag->slug;
+```
+
+## Check Contact Tag Membership
+
+### Check if a Contact Has Any Tag from a Given Set
+
+```php
+<?php
+
+$contactApi = FluentCrmApi('contacts');
+
+// Get current logged-in contact
+$contact = $contactApi->getCurrentContact();
+
+$targetTagIds = [1, 2, 3];
+$isInTags = ($contact && $contact->hasAnyTagId($targetTagIds));
+```

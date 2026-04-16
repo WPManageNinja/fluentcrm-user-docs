@@ -5,129 +5,193 @@ category: "devloper"
 order: 0
 ---
 
-# Contact PHP API
-FluentCRM has the following PHP api functions so you can easily add/modify contacts.
+Use FluentCRM's Contact PHP API to find, update, create, and filter contacts.
 
-&lt;?php
+## Initialize the Contact API
 
-    $contactApi = FluentCrmApi('contacts');
-    /\*
-    \* Find a contact by Email or Contact ID
-    \* You can find a contact by email or contact id (ContactId is not the user ID).
-    \* @return: false or Contact Model Object
-    \*/
-    $contact = $contactApi->getContact($emailOrContactId);
+```php
+<?php
 
-    /\*
-    \* Find a contact by contact id or email address
-    \* You can find a contact by contact id
-    \*/
-    $contact = $contactApi->getContact($contactId);
+$contactApi = FluentCrmApi('contacts');
+```
 
-    // or find by email address
-    $contact = $contactApi->getContact($emailAddress);
+## Retrieve Contacts
 
-    // Find contact by user id
-    $contact = $contactApi->getContactByUserRef($userId);
+### Get by Email or Contact ID
 
-    /\*
-    \* get current logged in user's contact profile
-    \*
-    \*/
-    $contact = $contactApi->getCurrentContact();
+`getContact()` accepts either email or contact ID (contact ID is not WordPress user ID).
 
-### Accessing Contact Properties
+```php
+<?php
 
-&lt;?php
-    /\*
-    \* Accessing contact properties
-    \*/
+$contact = $contactApi->getContact($emailOrContactId);
+```
 
-    $contact->first\_name;
-    $contact->last\_name;
-    $contact->email;
-    $tags = $contact->tags()->get();   // Tags array that are assigned to the contact 
-    $lists = $contact->lists()->get(); // Lists array that are assigned to the contact
+### Get by Contact ID
 
-### [](https://github.com/FluentCRM/fluent-crm/wiki/PHP-API#updating-contact-properies)Updating Contact Properties
+```php
+<?php
 
-&lt;?php
+$contact = $contactApi->getContact($contactId);
+```
 
-    /\*
-    \* Updating contact properties
-    \*/
-    $contact->first\_name = 'New First Name';
-    $contact->last\_name = 'Last Name';
-    $contact->save();
+### Get by Email
 
-    /\*
-    \* Adding tags to a contact
-    \*/
-    $tagIds = \[1,2,3\];
-    $contact->attachTags($tagIds);
+```php
+<?php
 
-    /\*
-    \* Adding Lists to a contact
-    \*/
-    $listIds = \[2,3\];
-    $contact->attachLists($listIds);
+$contact = $contactApi->getContact($emailAddress);
+```
 
-    /\*
-    \* Removing tags from a contact
-    \*/
-    $tagIds = \[1,2,3\];
-    $contact->detachTags($tagIds);
+### Get by WordPress User ID
 
-    /\*
-    \* Adding Lists to a contact
-    \*/
-    $listIds = \[2,3\];
-    $contact->detachLists($listIds);
+```php
+<?php
 
-### [](https://github.com/FluentCRM/fluent-crm/wiki/PHP-API#creating-or-updating-a-new-contact)Creating or Updating a new contact
+$contact = $contactApi->getContactByUserRef($userId);
+```
 
-&lt;?php
+### Get Current Logged-In User's Contact
 
-   $contactApi = FluentCrmApi('contacts');
+```php
+<?php
 
-    /\*
-    \* Update/Insert a contact
-    \* You can create or update a contact in a single call
-    \*/
+$contact = $contactApi->getCurrentContact();
+```
 
-    $data = \[
-        'first\_name' => 'Jhon',
-        'last\_name' => 'Doe',
-        'email' => 'jhon@doe.com', // requied
-        'status' => 'pending',
-        'tags' => \[1,2,3\], // tag ids as an array
-        'lists' => \[4\] // list ids as an array
-    \];
+## Access Contact Properties
 
-    $contact = $contactApi->createOrUpdate($data);
+```php
+<?php
 
-    // send a double opt-in email if the status is pending
-    if($contact->status == 'pending') {
-        $contact->sendDoubleOptinEmail();
-    }
+$firstName = $contact->first_name;
+$lastName = $contact->last_name;
+$email = $contact->email;
 
-### Filtering Contacts
+$tags = $contact->tags()->get();   // Tags assigned to the contact
+$lists = $contact->lists()->get(); // Lists assigned to the contact
+```
 
-    $contactApi = FluentCrmApi('contacts');
+## Update Contact Data
 
-    // get Subscribed Contacts
-    $subscribedContacts = $contactApi->getInstance()->where('status', 'subscribed')->get(); // you can also use paginate() instead of get();
+### Update Basic Fields
 
-    // Get both pending and upsubscribed contacts
-    $contacts = $contactApi->getInstance()->whereIn('status', \['unsubscribed', 'pending'\])->get();
+```php
+<?php
 
-    // Get contacts by tag ids
-    $tagIds = \[1,2\];
-    $tagOneTwoContacts = $contactApi->getInstance()->filterByTags($tagIds)->get();
+$contact->first_name = 'New First Name';
+$contact->last_name = 'Last Name';
+$contact->save();
+```
 
-    // Get contacts by list ids
-    $listIds = \[1,2\];
-    $ListOneTwoContacts = $contactApi->getInstance()->filterByLists($listIds)->get();
+### Attach Tags
 
-    // search contacts
-    $searchResult = $contactApi->getInstance()->searchBy('search\_string')->get();
+```php
+<?php
+
+$tagIds = [1, 2, 3];
+$contact->attachTags($tagIds);
+```
+
+### Attach Lists
+
+```php
+<?php
+
+$listIds = [2, 3];
+$contact->attachLists($listIds);
+```
+
+### Detach Tags
+
+```php
+<?php
+
+$tagIds = [1, 2, 3];
+$contact->detachTags($tagIds);
+```
+
+### Detach Lists
+
+```php
+<?php
+
+$listIds = [2, 3];
+$contact->detachLists($listIds);
+```
+
+## Create or Update a Contact
+
+`createOrUpdate()` can create a new contact or update an existing one in a single call.
+
+```php
+<?php
+
+$contactApi = FluentCrmApi('contacts');
+
+$data = [
+    'first_name' => 'John',
+    'last_name'  => 'Doe',
+    'email'      => 'john@doe.com', // required
+    'status'     => 'pending',
+    'tags'       => [1, 2, 3],      // tag IDs
+    'lists'      => [4]             // list IDs
+];
+
+$contact = $contactApi->createOrUpdate($data);
+
+// Send double opt-in email when contact is pending
+if ($contact->status === 'pending') {
+    $contact->sendDoubleOptinEmail();
+}
+```
+
+## Filter Contacts
+
+### Get Subscribed Contacts
+
+```php
+<?php
+
+$subscribedContacts = $contactApi
+    ->getInstance()
+    ->where('status', 'subscribed')
+    ->get(); // You can also use paginate()
+```
+
+### Get Pending and Unsubscribed Contacts
+
+```php
+<?php
+
+$contacts = $contactApi
+    ->getInstance()
+    ->whereIn('status', ['unsubscribed', 'pending'])
+    ->get();
+```
+
+### Get Contacts by Tag IDs
+
+```php
+<?php
+
+$tagIds = [1, 2];
+$tagContacts = $contactApi->getInstance()->filterByTags($tagIds)->get();
+```
+
+### Get Contacts by List IDs
+
+```php
+<?php
+
+$listIds = [1, 2];
+$listContacts = $contactApi->getInstance()->filterByLists($listIds)->get();
+```
+
+### Search Contacts
+
+```php
+<?php
+
+$searchResult = $contactApi->getInstance()->searchBy('search_string')->get();
+```

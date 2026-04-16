@@ -5,31 +5,46 @@ category: "devloper"
 order: 0
 ---
 
-# WP Cli Commands
-FluentCRM has few useful WP CLI commands to make it easier to manage your contacts
+FluentCRM provides useful WP-CLI commands to manage contacts, licensing, and customer sync tasks.
 
-### wp fluent\_crm activate\_license
+## Available Commands
 
-Using this command you can activate the license key from WP CLI.
+### Activate License
 
-Full command: _wp fluent\_crm activate\_license --key=YOUR\_LICENSE\_KEY_
+Activate your FluentCRM license key from WP-CLI.
 
-### wp fluent\_crm stats
+```bash
+wp fluent_crm activate_license --key=YOUR_LICENSE_KEY
+```
 
-Using **wp fluent\_crm stats** command you can see basic information and stats of your contacts, campaign, automation and emails.
+### View Stats
 
-### wp fluent\_crm sync\_edd\_customers
+Show basic statistics for contacts, campaigns, automations, and emails.
 
-With this command, you can easily sync your Easy Digital Downloads customers and purchase data
+```bash
+wp fluent_crm stats
+```
 
-Full command:
+### Sync Easy Digital Downloads Customers
 
-`wp fluent_crm sync_edd_customers --tags=TAG_ID_1,TAG_ID_2 --lists=LIST_ID_1,LIST_ID_2 --contact_status=subscribed`
+Sync Easy Digital Downloads customers and purchase data into FluentCRM.
 
-### wp fluent\_crm sync\_woo\_customers
+```bash
+wp fluent_crm sync_edd_customers --tags=TAG_ID_1,TAG_ID_2 --lists=LIST_ID_1,LIST_ID_2 --contact_status=subscribed
+```
 
-With this command, you can easily sync WooCommerce customers and purchase data
+### Sync WooCommerce Customers
 
-Full command:
+Sync WooCommerce customers and purchase data into FluentCRM.
 
-`wp fluent_crm sync_woo_customers --tags=TAG_ID_1,TAG_ID_2 --lists=LIST_ID_1,LIST_ID_2 --contact_status=subscribed`
+```bash
+wp fluent_crm sync_woo_customers --tags=TAG_ID_1,TAG_ID_2 --lists=LIST_ID_1,LIST_ID_2 --contact_status=subscribed
+```
+
+## Optional Arguments
+
+The following options are supported by customer sync commands:
+
+- `--tags`: Comma-separated tag IDs to assign to imported contacts.
+- `--lists`: Comma-separated list IDs to assign to imported contacts.
+- `--contact_status`: Contact status to assign (for example, `subscribed`).
