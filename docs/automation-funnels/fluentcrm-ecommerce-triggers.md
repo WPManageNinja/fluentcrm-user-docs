@@ -6,7 +6,7 @@ order: 0
 ---
 
 # Ecommerce Triggers
-[FluentCRM](https://fluentcrm.com/) provides triggers for **E-commerce Platforms** like **WooCommerce**, **SureCart**, **Easy Digital Downloads**, and **AffiliateWP**, allowing you to start an automation funnel based on user behavior. This article will provide detailed information about all **E-commerce Triggers** of **FluentCRM Automation**. 
+FluentCRM provides triggers for **E-commerce Platforms** like **WooCommerce**, **SureCart**, **Easy Digital Downloads**, and **AffiliateWP**, allowing you to start an automation funnel based on user behavior. This article will provide detailed information about all **E-commerce Triggers** of **FluentCRM Automation**. 
 
 > **Remember**, to use the **Trigger** you must install and activate all the **E-commerce Plugins** in your website. Plus, learn the detailed integration process of [WooCommerce](/docs/woocommerce-automation-with-fluentcrm), [SureCart](/docs/surecart-automation-with-fluentcrm), and [Easy Digital Downloads](/docs/easy-digital-downloads-integration-with-fluentcrm), with [FluentCRM](https://fluentcrm.com/).
 
