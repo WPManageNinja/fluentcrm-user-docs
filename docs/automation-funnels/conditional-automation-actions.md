@@ -24,11 +24,11 @@ First, go to the **Automation** section from the **FluentCRM Navbar**, and open 
 
 For example, I opened the **List Applied** automation funnel to explain all the **Primary Conditionals** 
 
-![Open a desired automation or create new one](/automation-funnels/conditional-automation-actions/1.-Open-a-desired-Automation-or-create-New-one-scaled.webp)
+![Open a desired automation or create new one](/automation-funnels/conditional-automation-actions/automation-condition-1.webp)
 
 Now, click the **Plus Icon** or hover over it and click the **Conditional Action** option to view all the **Primary Conditionals**.
 
-![Click the plus icon or conditional action option](/automation-funnels/conditional-automation-actions/2.-click-the-Plus-icon-or-Conditional-Action-option-scaled.webp)
+![Click the plus icon or conditional action option](/automation-funnels/conditional-automation-actions/automation-condition-2.webp)
 
 Then, a **Check Condition** page will appear in the left Sidebar for adding conditions.  
 The explanation of the following settings is given below:
@@ -44,7 +44,7 @@ The explanation of the following settings is given below:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Check condition page with settings options](/automation-funnels/conditional-automation-actions/3.-Check-Condition-page-with-Settings-Options-4.08.39-PM.webp)
+![Check condition page with settings options](/automation-funnels/conditional-automation-actions/automation-condition-3.webp)
 
 Once you click the **\+ Add** button, you will get **Four Types** of **Primary Properties** to set the **Parameter** based on the selected property. These are:
 
@@ -52,8 +52,6 @@ Once you click the **\+ Add** button, you will get **Four Types** of **Primary P
 2.  Contact Segment
 3.  Contact Activities
 4.  Custom Fields
-
-![All primary properties](/automation-funnels/conditional-automation-actions/4.-All-Primary-Properties-.webp)
 
 **A detailed explanation of the Properties mentioned above is given below –** 
 
@@ -78,8 +76,6 @@ Here you will get a wide range of **Options** based on the **Contact** property 
 -   Last Activity
 -   Created At
 
-![All contact elements](/automation-funnels/conditional-automation-actions/5.-All-Contact-elements.webp)
-
 #### 2\. Contact Segment
 
 Here you will get the **Options** based on the **Contact Segment** property to set the desired **Parameter** for your condition. These are
@@ -88,8 +84,6 @@ Here you will get the **Options** based on the **Contact Segment** property to s
 -   Lists
 -   WP User Role
 
-![All contact segment elements](/automation-funnels/conditional-automation-actions/6.-All-Contact-Segment-elements.webp)
-
 #### 3\. Contact Activities
 
 Here you will get the **Options** based on the **Contact Activities** property to set the desired **Parameter** for your condition. These are
@@ -97,8 +91,6 @@ Here you will get the **Options** based on the **Contact Activities** property t
 -   Last Email Sent
 -   Last Email Clicked
 -   Last Email Open (approximately)
-
-![All contact activities elements](/automation-funnels/conditional-automation-actions/7.-All-Contact-Activities-elements.webp)
 
 #### 4\. Custom Fields
 
@@ -113,7 +105,7 @@ Such as I had the following custom fields added to my FluentCRM:
 -   Login Date
 -   Logout Date
 
-![All custom fields elements](/automation-funnels/conditional-automation-actions/8.-All-Custom-Fields-elements.webp)
+![Check condition options](/automation-funnels/conditional-automation-actions/automation-condition-4.webp)
 
 ## Setting Condition/s
 
@@ -121,11 +113,11 @@ Once you select your desired **Parameter** (First Field), you will get the **Opt
 
 > Remember, the selected parameter will trigger the action only if the condition is met.
 
-**For example**, I chose “**Country**” from the **Contact** property as a **Parameter**, the **“includes in”** as an **Operator**, and entered the “**US**”, “**UK**”, and “**Bangladesh**” as the respective **Values**. **As a result**, only subscribers from the US, UK, or Bangladesh will trigger the conditional actions.
+**For example**, I chose “**First Name**” from the **Contact** property as a **Parameter**, the **“includes in”** as an **Operator**, and entered the “**Mr X**” as the respective **Values**. As a result, only subscriber named 'Mr X' will trigger the conditional actions.
 
 Do not forget to click the **Save Settings** button after setting the Condtiion/s.
 
-![Set condition save conditionals](/automation-funnels/conditional-automation-actions/9.-Set-Condition-Save-Conditionals.webp)
+![Published](/automation-funnels/conditional-automation-actions/automation-condition-5.webp)
 
 ## Setting Conditional Actions
 
@@ -140,12 +132,12 @@ In a condition, you can add as many actions as you need by clicking the **\+ Add
 
 > Read this documentation to learn how to add [Primary](/docs/primary-automation-actions), [Email](/docs/automation-email-actions), [Goals/Benchmark](/docs/goals-or-benchmark-actions), [WordPress](/docs/wordpress-automation-actions), [LMS](/docs/lms-automation-actions), [WooCommerce](/docs/woocommerce-automation-actions), [Abandoned Cart](/docs/abandon-cart-automation), and [Miscellaneous](/docs/miscellaneous-automation-actions) actions. Additionally, read this [Documentation](/docs/fluentcrm-automation-triggers) to learn more about triggers
 
-![Add actions](/automation-funnels/conditional-automation-actions/10.-add-actions-scaled.webp)
-
 Finally, when you are done, enable the **Publish** toggle to make the full automation funnel functional. Otherwise, it will remain as a draft.
+
+![Published](/automation-funnels/conditional-automation-actions/automation-condition-6.webp)
 
 Also, to add more conditions or actions, always click the **Plus** icon.
 
-![Added the conditional action](/automation-funnels/conditional-automation-actions/11.-Added-the-conditional-action-scaled.webp)
+
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
