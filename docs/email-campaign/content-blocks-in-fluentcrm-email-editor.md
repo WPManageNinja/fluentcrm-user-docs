@@ -6,166 +6,77 @@ order: 0
 ---
 
 # Content Blocks in Email Editor
+
+The FluentCRM Email Editor provides a versatile set of blocks to help you design professional and engaging emails. These blocks are categorized into **Text**, **Media**, **Design**, and **Integrational** sections to streamline your creation process.
+
+---
+
 ## Text Content Blocks
 
-![crm email editor blocks](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_blocks-1.png)
+Text blocks allow you to structure your written content with familiar formatting options:
 
-### Paragraph
+* **Paragraph:** Used for standard body text.
+* **Heading:** Organizes your email with clear titles.
+* **List:** Creates bulleted or numbered points for better readability.
+* **Table:** Displays data in a structured row and column format.
+* **Verse and Classic:** Specialized blocks for specific text formatting needs.
 
-Below is an example of a Paragraph Element:
-
-**_Lorem Ipsum is simply dummied text of the printing and typesetting industry._**
-
-### Heading
-
-Below is an example of a Heading Element:
-
-**What is Lorem Ipsum?**
-
-### List
-
--   What is Lorem Ipsum?
--   Why do we use it?
--   Where does it come from?
-
-### Classic
-
-![crm editor classic](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_editor_classic.png)
-
-### Table
-
-**No.**
-
-**Subject**
-
-1
-
-Email Marketing
-
-2
-
-Automation
-
-### Verse
-
-Email Marketing Automation dedicated to WordPress, and you! FluentCRM is a Self Hosted Email Marketing Automation Plugin for WordPress. 
+![Text Content Blocks](/docs/public/email-campaign/content-block/text-content-block-1.webp)
 
 ## Media Content Blocks
 
-In the Media content block, Image Block is available to be used in the email editor.
+Visual elements are essential for high-converting emails. The **Image** block is the primary media tool:
 
-### Image
+* **Upload:** Directly upload an image from your computer.
+* **Media Library:** Select images already existing in your WordPress library.
+* **Insert from URL:** Link an image from a remote web address.
 
-![crm email editor blocks media](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_blocks_media.png)
-
-Adding an Image Block will let you Upload and Add Images from your Computer or Remote URL.
-
-![crm email editor content media](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_content_media.png)
-
-There are 3 options to choose from:
-
-1.  **Upload:** You can directly upload an image to your website and add it to the email.
-2.  **Media Library:** You can select already uploaded images from your WordPress website.
-3.  **Insert from URL:** You can insert any image from a remote URL. This may cause if the remote domain and hosting as Hotlinking Protection Enabled.
+![Image Blocks](/docs/public/email-campaign/content-block/image-block-2.webp)
 
 ## Design Content Blocks
 
-![crm email editor blocks design](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_blocks_design.png)
+These blocks help you manage the layout and interactive elements of your email:
 
-There are a few design content blocks available. They are demonstrated below:
+![Design Content Block](/docs/public/email-campaign/content-block/design-content-block-3.webp)
 
-### Buttons
+* **Buttons:** Add clear Call to Action (CTA) elements.
 
-![crm email editor button](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_button.png)
+![Button Block](/docs/public/email-campaign/content-block/button-4.webp)
 
-.
+* **Columns:** Nest multiple content elements side by side for complex layouts.
 
-You can add a button in the email as a Call to Action element.
+![Colums](/docs/public/email-campaign/content-block/colums-5.webp)
 
-### Columns
+* **Group and Row:** Organize multiple blocks into a single container or a full-width row.
 
-![crm email editor column](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_column.png)
+* **Spacer and Separator:** Use these to add breathing room or visible lines between sections.
 
-In some cases, multiple content elements need to be nested or shown side by side using a Column Content Block.
+![Spacer](/docs/public/email-campaign/content-block/separate.webp)
 
-![crm email editor column 2](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_column_2.png)
 
-The above screenshot is an example of 2 Columns added to the email editor.
+## Conditional Content Blocks
 
-### Group
+The **Conditional Section** allows you to show specific content only to selected subscribers. For more detail, see [Conditional Sections in the Email Editor](/docs/conditional-sections-in-fluentcrm-email-editor).
 
-This block helps to Group multiple content blocks.
+* **Condition Type:** You can choose to “Show if in selected tags” or “Show if not in selected tags”.
+* **Tag Selection:** Select the specific tags that will trigger the visibility of this block.
 
-### Row
+## Integrational & Widget Content Blocks
 
-![crm email editor row](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_row.png)
+Depending on your active plugins, you may see specialized blocks:
 
-You can also add a column-based element that will wrap the entire Row.
+* **Latest Posts Block:** Automatically displays recent website posts. You can customize the number of posts and the layout.
 
-### Stack
+![Latest Post Blocks](/docs/public/email-campaign/content-block/latest-post-block-7.webp)
 
-![crm email editor stack](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_stack.png)
+* **WooCommerce Product Block:** Search and insert products directly from your store into the email.
+* **Custom HTML:** Insert custom code for unique design requirements not met by standard blocks.
+* **RSS:** Fetch and display feeds from an external RSS source, with options to show the author, date, and excerpt.
 
-Stack block helps to add Content Blocks to stack items over items.
+---
 
-### Spacer
+![Widget Content Blocks](/docs/public/email-campaign/content-block/widget-8.webp)
 
-![crm email editor spacer](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_spacer.png)
+## Example Email and Preview
 
-This helps to give space between content blocks.
-
-### Conditional Block
-
-More on the conditional block is discussed here: [Conditional Sections in Email Editor](/docs/conditional-sections-in-fluentcrm-email-editor)
-
-### Latest Posts Block
-
-![latest posts 2 (1)](/email-campaign/content-blocks-in-fluentcrm-email-editor/latest_posts_2-1-1024x611.png)
-
-Adding the latest posts block will show all the posts that were added within the last specific days. You can set the number of posts to show and the layout of the posts that are displayed on the email.
-
-## Integrational Content Blocks
-
-Depending on the plugins activated on the website there will be a few limited blocks available in the email editor.
-
-### Product Block (WooCommerce)
-
-![crm email editor product](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_product.png)
-
-Adding a Product Block will let you choose or search for a product from Woocommerce.
-
-![crm email editor product added](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_product_added.png)
-
-Once you select a product and add you will see a preview like the above screenshot.
-
-## Widgets Content Blocks
-
-![crm email editor blocks widgets](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_blocks_widgets.png)
-
-This section lets you add 2 more advanced content blocks.
-
-### Custom HTML
-
-![crm email editor html](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_html.png)
-
-This is very helpful when no available block is able to add some content according to the requirement. This will be handy with custom HTML-coded elements.
-
-### RSS
-
-![crm email editor rss](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_rss.png)
-
-Another advanced block with RSS feed to be included in the email.
-
-![crm email editor rss added](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_rss_added.png)
-
-There are a few options to select the number of Feeds to be fetched and include in the email. Author, Date, and Excerpt to shown or not.
-
-## Example Email
-
-![crm email editor example](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_example.png)
-
-This is an example email composed in the FluentCRM Email Editor using various elements.
-
-![crm email editor example view](/email-campaign/content-blocks-in-fluentcrm-email-editor/crm_email_editor_example_view.png)
-
-And the above screenshot is an example preview sent from FluentCRM to Gmail Email Client.
+You can use a combination of these elements to create a comprehensive email. Before sending, use the **Preview** tool to see how your design will appear in various email clients, such as Gmail.
