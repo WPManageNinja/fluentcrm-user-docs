@@ -6,201 +6,89 @@ order: 0
 ---
 
 # Ecommerce Triggers
-FluentCRM provides triggers for **E-commerce Platforms** like **WooCommerce**, **SureCart**, **Easy Digital Downloads**, and **AffiliateWP**, allowing you to start an automation funnel based on user behavior. This article will provide detailed information about all **E-commerce Triggers** of **FluentCRM Automation**. 
 
-> **Remember**, to use the **Trigger** you must install and activate all the **E-commerce Plugins** in your website. Plus, learn the detailed integration process of [WooCommerce](/docs/woocommerce-automation-with-fluentcrm), [SureCart](/docs/surecart-automation-with-fluentcrm), and [Easy Digital Downloads](/docs/easy-digital-downloads-integration-with-fluentcrm), with [FluentCRM](https://fluentcrm.com/).
+FluentCRM provides powerful automation triggers for leading E-commerce Platforms like **WooCommerce**, **SureCart**, and **Easy Digital Downloads (EDD)**. These triggers allow you to start dynamic marketing funnels based entirely on your customers' shopping behavior and purchase history.
 
-## E-Commerce Triggers of FluentCRM 
+> **Note:** To use these triggers, you must have the respective E-commerce plugin installed and activated on your website, along with **FluentCRM Pro**. 
 
-To learn how you can use all the **E-commerce** **Triggers** of your **FluentCRM**, follow the steps with screenshots below – 
+Here is everything you need to know to automate your e-commerce workflows!
 
-First, go to the **Automation** section from the **Fluent CRM Navbar**, and click **\+ New Automation.** 
+## Access Ecommerce Triggers
 
-> To learn the detailed process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
+Finding and selecting your e-commerce triggers is simple and fast. 
 
-![New automation button](/automation-funnels/fluentcrm-ecommerce-triggers/1.-New-Automation-button-1-scaled.webp)
+1. Go to **FluentCRM → Automations** from your WordPress dashboard.
+2. Click the blue **+ Create Automation** button in the top right corner.
+3. A window titled **Automation Templates** will pop up. 
+4. On the left sidebar, look for the e-commerce platform you are using (WooCommerce, SureCart, Easy Digital Downloads, or AffiliateWP). Clicking any of these will display the available starting triggers for that platform!
 
-Now, a pop-up page will appear with all the Popular Pre-built Funnel Templates for creating automation.
+![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-1.webp)
 
-You just need to click on the desired templates, which will redirect you to the [Automation Editor](/docs/automation-editor) where the full funnel diagram will automatically be ready. 
+### 1. WooCommerce Triggers
 
-Alternatively, if you want to create your automation funnel from scratch, simply click on the **Create from Scratch** tab. 
+WooCommerce is deeply integrated with FluentCRM. Clicking the WooCommerce tab reveals **6 distinct triggers** to kick off your marketing funnels:
 
-![Create from scratch tab](/automation-funnels/fluentcrm-ecommerce-triggers/2.-Create-from-Scratch-tab.webp)
+* **New Order:** This funnel starts the moment any new order is placed in your store.
+* **Order Processing:** This starts when a customer's order status changes to "Processing" (typically right after a successful payment). Perfect for sending order confirmation or "what to expect next" emails.
+* **Order Completed:** This funnel starts when an order is officially marked as "Completed." Ideal for sending product onboarding guides or requesting a review.
+* **Order Refunded:** This starts if an order is refunded. You can use this to automatically add a "Refunded" tag and remove the customer from promotional sequences.
+* **Order Status Changed:** This funnel allows you to trigger an action when an order moves from *any* specific status to another (e.g., from *Processing* to *Completed*).
+* **Cart Abandoned:** This powerful trigger starts when a user leaves items in their cart without checking out. Use this to send automated cart recovery emails to boost your sales!
 
-All the **E-commerce Triggers** for creating an automation funnel are organized under plugin categories **in** the left sidebar. These are: 
+![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-3.webp)
 
-1.  WooCommerce
-2.  SureCart
-3.  Easy Digital Downloads
-4.  AffiliateWP
+### 2. FluentCart Triggers
 
-## 1\. WooCommerce Triggers
+FluentCart includes dedicated order and subscription triggers so you can automate post-purchase and lifecycle communication from one place.
 
-A detailed explanation of the following Triggers is given below – 
+Available FluentCart triggers include:
 
--   New Order (Processing)
--   Order Completed
--   Order Refunded
--   Order Status Changed
+* **Order Paid (Payment/Subscription):** Runs when a successful order is created.
+* **Order Shipped:** Runs when an order is marked as shipped.
+* **Order Delivered:** Runs when an order is marked as delivered.
+* **Order Refunded (Full):** Runs when an order is fully refunded.
+* **Order Canceled:** Runs when an order is canceled.
+* **Subscription Expired / End of Access Validity:** Runs when subscription access ends.
+* **Subscription Activated:** Runs when a subscription becomes active.
+* **Subscription Cancelled:** Runs when a subscription is canceled.
+* **Subscription Renewed:** Runs after a successful subscription renewal.
 
-Once you select your desired **Trigger**, click the **Continue** button, and put a **Title** under the **Internal Label** field for this automation funnel so you can easily find it later.
+![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-2.webp)
 
-If you leave it blank, it will automatically titled according to its trigger’s name. 
+### 3. SureCart Triggers
 
-![Woocommerce triggers](/automation-funnels/fluentcrm-ecommerce-triggers/3.-WooCommerce-Triggers.webp)
+If you use SureCart for your checkout flows, FluentCRM provides **3 dedicated triggers**:
 
-### New Order (Processing)
+* **Order Paid (Payment/Subscription):** This funnel initiates when a customer successfully pays for a product or a recurring subscription. Great for welcoming new subscribers!
+* **Order Revoked:** This starts when an order or subscription is revoked or canceled. You can use this to trigger a "win-back" email campaign.
+* **New Customer/Lead:** This starts the moment a new customer or lead is captured via SureCart, allowing you to instantly add them to your general newsletter lists.
 
-This automation funnel will start once a new order is added as a processing.  
-Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
+![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-5.webp)
 
-#### Settings of New Order (Processing) Trigger
+### 4. Easy Digital Downloads (EDD) Triggers
 
--   **Automation Name**: Provide a **Name** for the **Automation** so you can find it later easily.
+For stores selling digital products via EDD, FluentCRM offers a primary purchase trigger:
 
--   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/docs/automation-editor). 
+* **New Order Success:** This automation funnel will start immediately once a new EDD order payment is successful. Use this to automatically email digital files, license keys, or onboarding instructions.
 
--   **Subscription Status**: Change the subscription status using the dropdown list for the contact that submits the form according to [FluentCRM Contacts Status](/docs/fluentcrm-contacts-status).
 
--   **Run the automation actions even contact status is not in subscribed status**: Check this option if you want to run the automation even when the contact's status is not in subscribed status.
+![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-4.webp)
 
--   **Target Products**: Select which **Product** (**Single** or **Multiple**) will trigger this automation Funnel. Leave blank to run for all product purchases.
+### Configuring Your Ecommerce Trigger Settings
 
--   **OR Target Product Categories**: Or, select which **Product Category** (**Single** or **Multiple**) will trigger this automation Funnel. Leave blank to run for all product categories. **Remember**, this trigger will run if a contact matches any one condition in either **Target Products** or **Target Product Categories**.
+Once you click on any of the e-commerce triggers mentioned above, a settings panel will slide out from the right side of your screen. This is where you set the specific rules for your funnel. 
 
--   **Purchase Type**: There are three purchase types available for this action. These are: 
+While options vary slightly depending on the trigger, here are the most important settings you can configure (using the **WooCommerce New Order** trigger as an example):
 
-1.  **Any type of Purchase**: This will include all types of purchases such as first order, second order, or any time the order is placed.
-2.  **Only for First Purchase**: Select this option to apply the benchmark for a first-time buyer. 
-3.  **From 2nd Purchase**: Choose this option for a returning buyer. This option applies to all purchases except the first one made by the contact for the specified product or product category.
+* **Internal Label & Description:** Give your automation a clear name and a brief note so you can easily identify it later.
+* **Subscription Status:** Choose the required contact status (e.g., Subscribed) for the user to be allowed into this funnel.
+* **Conditions (Skip if active):** Check this box if you want to skip this automation for a contact if they are *already* actively running through this specific funnel.
+* **Target Products:** Click the dropdown to select specific products. The funnel will *only* trigger if the customer buys the exact product(s) you select here. Leave it blank to trigger for all store products.
+* **Target Product Categories:** Select specific product categories. The funnel will trigger if a customer buys anything from the selected category.
+* **Purchase Type:** This is a highly powerful setting! Choose who gets this automation:
+    * **Any type of purchase:** Runs for everyone.
+    * **Only for First Purchase:** Runs *only* if this is the customer's very first time buying from you (great for special "First Time Buyer" discounts).
+    * **From 2nd Purchase:** Runs for returning, loyal customers. 
+* **Restart the Automation:** Check this box if you want to allow the customer to go through this exact funnel again if they make another purchase in the future.
 
--   **Restart**: Check this option if you **Restart** the automation multiple times for the same contact that triggers the automation.
-
-Once you are done, click the **Save Settings** button to save all your changes.
-
-![New order (processing)](/automation-funnels/fluentcrm-ecommerce-triggers/4.-New-Order-Processing.webp)
-
-### Order Completed
-
-This automation funnel will start once an order is completed.  
-Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
-
-> The settings options of this **Order Completed** trigger work the same way as the **New Order (Processing)** trigger. To learn how to use all the settings, read this [Section](/docs/fluentcrm-ecommerce-triggers/#settings-of-new-order-processing-trigger).
-
-### Order Refunded
-
-This automation funnel will start once an order is refunded.  
-Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
-
-> The settings options of this **Order Refunded** trigger work the same way as the **New Order (Processing)** trigger. To learn how to use all the settings, read this [Section](/docs/fluentcrm-ecommerce-triggers/#settings-of-new-order-processing-trigger).
-
-### Order Status Changed
-
-This automation funnel will start once an order status changes.  
-Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
-
-Here, are the Settings of the Order Status Changed Trigger
-
--   **From Order Status**: Select the **Current** **Order Status** using the **Dropdown** **Arrow**. And, it will trigger an action when it changes from this status to the “**To Order Status**”.
-
--   **To Order Status**: Select the **Target** **Status** using the **Dropdown** **Arrow**. And, it will trigger an action when the order status changes from the “**From Order Status**” to this status.
-
-For example, I selected **'Processing'** as the “**From order status**” and **'Completed'** as the “**To order status**”. This means that once an order's status changes from **Processing to Completed**, the trigger will activate. 
-
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-ecommerce-triggers/#settings-of-new-order-processing-trigger).
-
-Once you are done, click the **Save Settings** button to save all your changes.
-
-![Order status changed](/automation-funnels/fluentcrm-ecommerce-triggers/5.-Order-Status-Changed.webp)
-
-## 2\. SureCart Triggers 
-
-A detailed explanation of the following Triggers is given below – 
-
--   New Order Success
--   Order Revoked
-
-Once you select your desired **Trigger**, click the **Continue** button, and put a **Title** under the **Internal Label** field for this automation funnel so you can easily find it later.
-
-If you leave it blank, it will automatically titled according to its trigger’s name. 
-
-![Sure cart triggers](/automation-funnels/fluentcrm-ecommerce-triggers/6.-Sure-Cart-Triggers.webp)
-
-### New Order Success
-
-This automation funnel will start once a new order payment is successful.  
-Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
-
-Here, are the Settings of the New Order Success Trigger
-
--   **If Contact Exist?:** Specify what will happen if the subscriber already exists in the database. You can either update if the contact is already present in the FluentCRM Contacts which means recurring triggering for the automation or Skip the automation for this contact.
-
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-ecommerce-triggers/#settings-of-new-order-processing-trigger).
-
-Once you are done, click the **Save Settings** button to save all your changes.
-
-![New order success in surecart](/automation-funnels/fluentcrm-ecommerce-triggers/7.-New-Order-Success-in-SureCart.webp)
-
-### Order Revoked
-
-This automation funnel will start once an order will be revoked.   
-Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
-
-> The settings options of this **SureCart - Order Revoked** trigger work the same way as the **WooCoomerce New Order (Processing)** trigger. To learn how to use all the settings, read this [Section](/docs/fluentcrm-ecommerce-triggers/#settings-of-new-order-processing-trigger).
-
-## 3\. Easy Digital Downloads Trigger
-
-A detailed explanation of the following Trigger is given below – 
-
--   Edd - New Order Success
-
-Once you select your desired **Trigger**, click the **Continue** button, and put a **Title** under the **Internal Label** field for this automation funnel to easily find it later.
-
-If you leave it blank, it will automatically titled according to its trigger’s name.
-
-![Easy digital downloads triggers](/automation-funnels/fluentcrm-ecommerce-triggers/8.-Easy-Digital-Downloads-Triggers.webp)
-
-### Edd - New Order Success
-
-This automation funnel will start once a new order payment is successful  
-Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
-
-Here, are the Settings of the Edd - New Order Success Trigger
-
--   **If Contact Exist?:** Specify what will happen if the subscriber already exists in the database. You can either update if the contact is already present in the FluentCRM Contacts which means recurring triggering for the automation or Skip the automation for this contact.
-
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-ecommerce-triggers/#settings-of-new-order-processing-trigger).
-
-Once you are done, click the **Save Settings** button to save all your changes.
-
-![New order success in edd](/automation-funnels/fluentcrm-ecommerce-triggers/9.-New-Order-Success-in-EDD.webp)
-
-## 4\. AffiliateWP Trigger
-
-A detailed explanation of the following Trigger is given below – 
-
--   New Affiliate Joined
-
-Once you select your desired **Trigger**, click the **Continue** button, and put a **Title** under the **Internal Label** field for this automation funnel so you can easily find it later.
-
-If you leave it blank, it will automatically titled according to its trigger’s name.
-
-![AffiliateWp trigger](/automation-funnels/fluentcrm-ecommerce-triggers/10.-AffiliateWP-Trigger.webp)
-
-### New Affiliate Joined 
-
-This automation funnel will start when a new affiliate gets approved/registered directly  
-Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
-
-Here, are the Settings of the New Affiliate Joined Trigger
-
--   **If Contact Exist?:** Specify what will happen if the subscriber already exists in the database. You can either update if the contact is already present in the FluentCRM Contacts which means recurring triggering for the automation or Skip the automation for this contact.
-
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-ecommerce-triggers/#settings-of-new-order-processing-trigger).
-
-Once you are done, click the **Save Settings** button to save all your changes.”
-
-![New affiliate joined in affiliatewp](/automation-funnels/fluentcrm-ecommerce-triggers/11.-New-Affiliate-Joined-in-AffiliateWP.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+Once you are happy with your settings, click the blue **Save Settings** button at the bottom to jump into the visual editor and start building your email sequence!
