@@ -18,14 +18,14 @@ To view your campaign data properties, navigate to the central analytics hub:
  * **Navigate to Emails:** From the main FluentCRM sidebar, click **Emails** in the top navigation bar.
  * **Select Campaigns:** Choose Campaigns from the dropdown menu to load the list of all marketing broadcasts.
 
-![Accessing Email Campaign Dashboard](/email-campaign/campaign-summary-actions/access-the-email-campaing-dashboard-1.webp)
+![Accessing Email Campaign Dashboard](/docs/public/email-campaign/campaign-summary-actions/access-the-email-campaing-dashboard-1.webp)
 
 ## Campaign Performance & Stats Overview
 
 Clicking on a specific campaign opens a detailed report divided into visual summaries and deep-dive tabs.
 
  * **Campaign Performance:** Displays the total count of **Sent Emails**.
- * **Emails Stats:** A progress-bar style breakdown showing the percentage of emails **Sent**, **Opened**, **Clicked**, and Uns**ubscribed.
+ * **Emails Stats:** A progress-bar style breakdown showing the percentage of emails **Sent**, **Opened**, **Clicked**, and **Unsubscribed**.
  * **Link Activity:** Logs unique clicks for every URL included in the email body to identify your most engaging content.
 
 ## Detailed Report Tabs
@@ -42,7 +42,7 @@ This tab provides a summary of the campaign's configuration:
  * **Total Recipients:** The final count of contacts reached.
  * **Sent By:** Identifies the WordPress user who initiated the broadcast.
 
-![Campaign Details](/email-campaign/campaign-summary-actions/email-capaign-2.webp)
+![Campaign Details](/docs/public/email-campaign/campaign-summary-actions/email-capaign-2.webp)
 
 ### 2. Emails (Recipients List)
 
@@ -52,7 +52,7 @@ View every individual recipient and their specific interactions:
  * **Data Fields:** See the contact's Name, Email, number of Actions (clicks), and the delivery Status.
  * **Export:** Use the **Export** button to download the recipient data as a **CSV** file.
 
-![Emails](/email-campaign/campaign-summary-actions/emails-3.webp)
+![Emails](/docs/public/email-campaign/campaign-summary-actions/emails-3.webp)
 
 ### 3. Actions
 
@@ -61,12 +61,12 @@ This feature allows for post-campaign automation based on how users interacted w
  * **Action Type:** Choose to **Add Tags** or **Remove Tags** for specific contacts.
  * **Filtering:** **Apply** these tags to specific segments: subscribers who opened, subscribers who did not open, or subscribers who clicked selected links.
 
-![Actions](/email-campaign/campaign-summary-actions/actions-4.webp)
+![Actions](/docs/public/email-campaign/campaign-summary-actions/actions-4.webp)
 
 ### 4. Contact Selections
 
 Review the original logic used to target this campaign. This tab displays the specific Lists and Tags that were applied to filter the audience before the email was sent.
 
-![Content Selection](/email-campaign/campaign-summary-actions/actions-4.webp)
+![Content Selection](/docs/public/email-campaign/campaign-summary-actions/actions-4.webp)
 
 If you have any further questions regarding campaign reporting or automated actions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).
