@@ -22,11 +22,11 @@ First, go to the **Automation** section from the **FluentCRM Navbar**, and open 
 
 For example, I opened the **List Applied** automation funnel to explain all the **E-commerce Conditionals**.
 
-![Open a desired automation or create new one](/automation-funnels/ecommerce-conditionals/1.-Open-a-desired-Automation-or-create-New-one-1-scaled.webp)
+![Open a desired automation or create new one](/automation-funnels/ecommerce-conditionals/automation-1.webp)
 
 Now, click the **Plus Icon** or hover over it and click the **Conditional Action** option to view all the **E-commerce Conditionals**.
 
-![Click the plus icon or conditional action option](/automation-funnels/ecommerce-conditionals/2.-click-the-Plus-icon-or-Conditional-Action-option-1-scaled.webp)
+![Click the plus icon or conditional action option](/automation-funnels/ecommerce-conditionals/automation-2.webp)
 
 Then, a **Check Condition** page will appear in the left Sidebar for adding conditions.  
 The explanation of the following settings is given below:
@@ -42,7 +42,7 @@ The explanation of the following settings is given below:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Check condition page with settings options 4.08.39 pm](/automation-funnels/ecommerce-conditionals/3.-Check-Condition-page-with-Settings-Options-4.08.39-PM-1.webp)
+![Check condition page with settings options 4.08.39 pm](/automation-funnels/ecommerce-conditionals/automation-7.webp)
 
 Once you click the **\+ Add** button, you will get all the **E-commerce Properties** to set the **Parameter** based on the selected property. These are:
 
@@ -52,8 +52,6 @@ Once you click the **\+ Add** button, you will get all the **E-commerce Properti
 4.  AffiliateWP
 
 > To learn the full process of creating a conditional action, read this full [Documentation](/docs/conditional-automation-actions)
-
-![All e-commerce properties](/automation-funnels/ecommerce-conditionals/4.-All-E-commerce-properties.webp)
 
 **A detailed explanation of the Properties mentioned above is given below –** 
 
@@ -75,7 +73,7 @@ Here you will get a wide range of **Options** based on the **WooCommerce** prope
 -   Specific Product Purchase Times
 -   Is a customer?
 
-![WoCommerce property](/automation-funnels/ecommerce-conditionals/5.-WoCommerce-property.webp)
+![WoCommerce property](/automation-funnels/ecommerce-conditionals/automation-3.webp)
 
 #### 2\. Woo Current Order
 
@@ -91,7 +89,7 @@ Here you will get a wide range of **Options** based on the **Woo Current Order**
 -   Payment Gateway
 -   Order Status
 
-![Woo current order property](/automation-funnels/ecommerce-conditionals/6.-Woo-Current-Order-property.webp)
+![Woo current order property](/automation-funnels/ecommerce-conditionals/automation-4.webp)
 
 #### 3\. EDD (Easy Digital Downloads)
 
@@ -107,21 +105,20 @@ Here you will get a wide range of **Options** based on the **EDD** property to s
 -   Used Coupons
 -   Is a customer?
 
-![Edd property](/automation-funnels/ecommerce-conditionals/7.-EDD-property.webp)
+![Edd property](/automation-funnels/ecommerce-conditionals/automation-5.webp)
 
-#### 4\. AffiliateWP
+#### 4\. FluentCart
 
-Here you will get a wide range of **Options** based on the **AffiliateWP** property to set the desired **Parameter** for your condition. These are: 
+Here you will get a set of **FluentCart** options to define your conditional **Parameter**. These are:
 
--   Is Affiliate
--   Affiliate ID
--   Total Referrals
--   Status
--   Earnings
--   Unpaid Earnings
--   Registration Date
--   Last Payout Date
+- Is a customer?
+- Lifetime Value
+- Average Order Value
+- First Order Date
+- Last Order Date
 
-![AffiliateWP property](/automation-funnels/ecommerce-conditionals/8.-AffiliateWP-Property.webp)
+Use these conditions to segment contacts by purchase status, total spend, average spending behavior, and customer recency.
+
+![FluentCart property](/automation-funnels/ecommerce-conditionals/automation-6.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
