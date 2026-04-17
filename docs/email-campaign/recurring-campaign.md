@@ -6,6 +6,7 @@ order: 0
 ---
 
 # Recurring Campaign
+
 As we have seen in the earlier guides, FluentCRM offers various features to create Email Campaigns with different types of Email templates, Content Blocks, Designs, etc to be sent out to Subscribers.
 
 Another great feature of the FluentCRM is that you can send a recurring email campaign at different intervals like Daily, Weekly, or Monthly to Broadcast or Send your Latest Post, Products, or Posts from Available Post Types with another great feature available called "Latest Post Block".
@@ -18,11 +19,9 @@ https://youtu.be/V1ddf9k0yTk?si=Fjq2FlHDfXioNLtX
 
 Like Email Campaigns, Email Sequences, and Email Templates; **Recurring Campaigns** can be found under **Email Menu** from the top.
 
-![crm recurring campaign](/email-campaign/recurring-campaign/crm-recurring-campaign.png)
+After clicking on the Recurring Campaigns, we can see that no **Recurring Campaigns** are listed since we do not have any yet. From here, please click on the **+ Add Recurring Campaign** button to create one.
 
-After clicking on the Recurring Campaigns, we can see that no Recurring Campaigns are listed since we do not have any yet. From here, please click on the Create New Recurring Campaign button to create one.
-
-![recurring campaign create new](/email-campaign/recurring-campaign/recurring-campaign-create-new.png)
+![crm recurring campaign](/email-campaign/recurring-campaign/add-recurring-campaign-1.webp)
 
 ## Scheduling Interval
 
@@ -36,27 +35,27 @@ Once you click on the Create New Recurring Campaign, A **Start** Section asks to
 
 You can select a day from the dropdown at which day the recurring campaign should be sent including another dropdown to select a Time at 15 minutes Intervals from a dropdown option when the Recurring Campaign will be scheduled.
 
-![recurring campaign start](/email-campaign/recurring-campaign/recurring-campaign-start.png)
+![recurring campaign start](/email-campaign/recurring-campaign/recurring-campaign-weekly-2.webp)
 
 ### Daily
 
 A daily schedule that allows selecting a Time at 15 minutes Intervals from a dropdown option when the Recurring Campaign will be scheduled.
 
-![recurring campaign start daily](/email-campaign/recurring-campaign/recurring-campaign-start-daily.png)
+![recurring campaign start daily](/email-campaign/recurring-campaign/recurring-campaign-start-daily-3.webp)
 
 ### Monthly
 
 You can select the **number of the day** from the dropdown at the number of the day the recurring campaign should be sent including another dropdown to select a **Time at 15 minutes Intervals** from a dropdown option when the Recurring Campaign will be scheduled.
 
-![recurring campaign monthly](/email-campaign/recurring-campaign/recurring-campaign-monthly.png)
+![recurring campaign monthly](/email-campaign/recurring-campaign/recurring-campaign-monthly-4.webp)
 
 ## Conditions
 
-Once the scheduling settings are set, in the next section the event type or trigger should be selected. You select either **Blog Posts** or **Pages** and input the **number of days** when the recurring campaign will run and check for **Posts or Pages** published to run the Recurring Campaign.
+Once the scheduling settings are set, in the next section the event type or trigger should be selected. You select either **Blog Posts**, **Pages**, or **Product** etc. and input the **number of days** when the recurring campaign will run and check for Posts or Pages published to run the **Recurring Campaign**.
 
 You can additionally **set an OR condition** to check for **both Pages and Blog Posts together**.
 
-![recurring campaign conditions](/email-campaign/recurring-campaign/recurring-campaign-conditions.png)
+![recurring campaign conditions](/email-campaign/recurring-campaign/recurring-campaign-conditions-5.webp)
 
 ## Recipients
 
@@ -78,35 +77,35 @@ You can also run the campaign by dynamic segments, for example, Woocomemrce User
 
 You can select custom contacts by using [Advanced Filter](/docs/advanced-filter) and filter the contacts accordingly. This is a wide conditional section based on various Data Properties for Contacts and Activities inside FluentCRM.
 
-![recurring campaign recipients](/email-campaign/recurring-campaign/recurring-campaign-recipients.png)
+![recurring campaign recipients](/email-campaign/recurring-campaign/by-list-&-tag-6.webp)
 
 ## Email Content Settings
 
 Once the Recipients are selected, the Email Content to be sent should be composed. Since this is a Recurring Campaign based on Posts and Pages Published, The Latest Posts Block is a desired and relevant Content Block we can utilize to fetch our Posts or Pages published. To know more in-depth about Latest Posts Block please check out the documentation: [Latest Posts Block](/docs/content-blocks-in-fluentcrm-email-editor#conditional-block)
 
-![recurring campaign latest posts](/email-campaign/recurring-campaign/recurring-campaign-latest-posts.png)
+![recurring campaign latest posts](/email-campaign/recurring-campaign/recurring-campaign-latest-posts-7.webp)
 
 ## Recurring Campaign Settings Summary
 
 Once all the settings are set and the content of the email is composed, Please mark the Recurring Campaign as Active. You can review all the settings, recipients, and conditions from the Settings Tab at the top right corner.
 
-![recurring campaign settings](/email-campaign/recurring-campaign/recurring-campaign-settings.png)
+![recurring campaign settings](/email-campaign/recurring-campaign/settings-8.webp)
 
-## **Import/ Export Recurring Campaigns**
+## Import/ Export Recurring Campaigns
 
 The Recurring Campaign **Import/Export** feature lets you easily move recurring campaigns between websites. Navigate to the **Recurring Campaign** panel under the Emails section.
 
-![recurring email campaign 01](/email-campaign/recurring-campaign/Recurring-Email-Campaign-01-scaled.webp)
+![recurring email campaign 01](/email-campaign/recurring-campaign/Recurring-Email-Campaign-09.webp)
 
-Now click the **Import** option button to upload a Recurring campaign in JSON format.
+Now click the **Import** option button to upload a Recurring campaign in JSON format under the **More Actions**.
 
-![import 02](/email-campaign/recurring-campaign/import-02-scaled.webp)
+![import 02](/email-campaign/recurring-campaign/import-10.webp)
 
 Here you can Drop a **JSON file** or **Upload** it from your device storage.
 
-![upload recurring campaign 03](/email-campaign/recurring-campaign/upload-recurring-campaign-03-scaled.webp)
+![upload recurring campaign 03](/email-campaign/recurring-campaign/upload-json-file-11.webp)
 
-To export, click the **Three dots** next to the campaign, select **Export Campaign**, and download the Recurring Campaign into JSON format.
+To export, click the **Three dots** next to the campaign, select **Export Campaign**, and download the Recurring Campaign into JSON format. You can also **Delete** or **Edit** here you recurring campaign.
 
 ![export recurring campaign](/email-campaign/recurring-campaign/Export-recurring-campaign-scaled.webp)
 
