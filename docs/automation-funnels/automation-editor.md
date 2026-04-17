@@ -16,7 +16,7 @@ To learn how to create new automation in FluentCRM, follow the steps with screen
 
 First, go to the **Automations** section from the **FluentCRM Navbar** and click on **\+ New Automation.**
 
-![automations section from fluentcrm navbar](/docs/public/automation-funnels/automation-editor/automation-funnel-1.webp)
+![automations section from fluentcrm navbar](/automation-funnels/automation-editor/automation-funnel-1.webp)
 
 Once you click the **\+ New** **Automation** button, a pop-up page will appear with **Triggers** to reduce your hassle of creating automation from scratch every time. You can start the automation by selecting the Trigger only. 
 
@@ -24,7 +24,7 @@ Or, you can choose any of the **Pre-built Funnel** **Templates** according to yo
 
 Then click on the **Continue** button. 
 
-![create from scratch option](/docs/public/automation-funnels/automation-editor/automation-funnel-2.webp)
+![create from scratch option](/automation-funnels/automation-editor/automation-funnel-2.webp)
 
 Now a pop-up will come up from where you have to give a **Title** to your Automation in the **Internal Label** field for easy referencing later. But, if you leave it blank, the title will be automatically set based on your chosen trigger.
 
@@ -32,13 +32,13 @@ Now a pop-up will come up from where you have to give a **Title** to your Automa
 
 For example, I’ve selected the **List Applied** trigger under the **CRM** option. As a result, this automation funnel will trigger when the selected list will be applied to any of the **FluentCRM Contacts.**
 
-![choose trigger for automation](/docs/public/automation-funnels/automation-editor/automation-funnel-3.webp)
+![choose trigger for automation](/automation-funnels/automation-editor/automation-funnel-3.webp)
 
 Once you choose the **Trigger**, you will be redirected to the similar screen below from where you can add the [Action](/docs/primary-automation-actions) blocks, [Conditional Automation Actions](/docs/conditional-automation-actions), and [Goals or BenchMark Actions](/docs/goals-or-benchmark-actions) into your Funnel.
 
 To add Actions, click the **Plus Icon** and press on the **Add Action / Goal** or **Conditional Action.** For example, I’ve selected the **Add Action / Goal** option for the automation.
 
-![add action : goal option](/docs/public/automation-funnels/automation-editor/automation-funnel-4.webp)
+![add action : goal option](/automation-funnels/automation-editor/automation-funnel-4.webp)
 
 
 Now, a popup will appear with a set of [Action Blocks](/docs/primary-automation-actions) from where you can choose any type of action block. 
@@ -55,18 +55,18 @@ There are various actions that can be added like –
 
 For example, here, I’ve selected **Apply Tag** as an Automation **Action**. 
 
-![choosing actions](/docs/public/automation-funnels/automation-editor/automation-funnel-5.webp)
+![choosing actions](/automation-funnels/automation-editor/automation-funnel-5.webp)
 
 Once you choose the action, another popup will appear, now fill in all the fields according to your requirements and click **Save Settings** once you are done.
 
 If you don’t want to save click the **Trash Icon** to delete the action. Also, you can create new tags here by clicking the **Plus Icon**.
 
-![applied tag action's pop up page](/docs/public/automation-funnels/automation-editor/automation-funnel-6.webp)
+![applied tag action's pop up page](/automation-funnels/automation-editor/automation-funnel-6.webp)
 
 Once you are done, **enable** the **Toggle** to **Publish** your automation so that your automation activates.   
 For example, when this automation runs, the contacts that are listed in the **Student** list will be tagged as **Enrolled**.
 
-![publish the automation](/docs/public/automation-funnels/automation-editor/automation-funnel-7.webp)
+![publish the automation](/automation-funnels/automation-editor/automation-funnel-7.webp)
 
 ## Automation Editor
 
@@ -79,7 +79,7 @@ For example, here, I’ve selected the **Listed Applied** automation for customi
 
 Once you click the **Title** of your desired automation it will take you to the **Automation Editor** page with all the available options for your edit.
 
-![publish the automation](/docs/public/automation-funnels/automation-editor/automation-funnel-7.webp)
+![publish the automation](/automation-funnels/automation-editor/automation-funnel-7.webp)
 
 **All the edit options mentioned above are briefly explained below:**
 

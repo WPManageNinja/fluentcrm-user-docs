@@ -30,11 +30,11 @@ You don't need to memorize these codes! FluentCRM gives you two incredibly easy 
 
 * **The "@" Shortcut:** Simply type the `@` symbol directly into your email composer, and start typing what you are looking for (like "name"). A list of codes will pop up for you to select.
 
-![](/docs/public/miscellaneous/merge-codes-smart-codes-usage/shortcode-1.webp)
+![](/miscellaneous/merge-codes-smart-codes-usage/shortcode-1.webp)
 
 * **The Menu Button:** Click the `{ }` icon located in the top bar of your email editor. This opens a pop-up window where you can browse and copy any SmartCode you need.
 
-![](/docs/public/miscellaneous/merge-codes-smart-codes-usage/shortcode-2.webp)
+![](/miscellaneous/merge-codes-smart-codes-usage/shortcode-2.webp)
 
 ---
 

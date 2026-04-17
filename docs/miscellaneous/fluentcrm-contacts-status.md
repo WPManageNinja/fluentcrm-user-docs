@@ -51,4 +51,4 @@ This is a critical status for e-commerce sites (like WooCommerce) or membership 
 * **What it means:** The contact explicitly clicked the "Mark as Spam" or "Junk" button in their email client (like Gmail or Outlook) when reading your email.
 * **What happens:** FluentCRM flags them immediately to protect your domain reputation. You should not attempt to send marketing emails to these contacts again.
 
-![Contact Status](/docs/public/miscellaneous/fluentcrm-contacts-status/status.webp)
+![Contact Status](/miscellaneous/fluentcrm-contacts-status/status.webp)

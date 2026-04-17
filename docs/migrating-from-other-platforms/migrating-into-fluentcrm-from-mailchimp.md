@@ -21,17 +21,17 @@ Before starting the process in FluentCRM, you need to generate an API key from y
 4.  On the next screen, click the **Extras** dropdown menu and choose **API keys**.
 5.  Scroll down to the "Your API keys" section and click the **Create A Key** button.
 
-![Mailchimp](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-1.webp)
+![Mailchimp](/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-1.webp)
 
 6.  You will be prompted to give your key a descriptive name (e.g., "FluentCRM"). Enter the name and click **Generate Key**.
 
-![Mailchimp](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-2.webp)
+![Mailchimp](/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-2.webp)
 
 7.  Your new API key will be displayed. Click **Copy To Clipboard**.
 
 > **⚠️ Crucial Note:** Save this key immediately! Mailchimp will only show you the full API key this one time right after you generate it.
 
-![Mailchimp](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-3.webp)
+![Mailchimp](/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-3.webp)
 
 ## Step 2: Start the Import in FluentCRM
 
@@ -40,15 +40,15 @@ With your Mailchimp key copied, head over to your WordPress dashboard.
 1.  Go to **FluentCRM → Contacts**.
 2.  Click the **Import** button located in the top-right corner.
 
-![Mailchimp](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-4.webp)
+![Mailchimp](/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-4.webp)
 
 3.  A pop-up window will appear. Select the **Import From Other Providers** box and click **Next**.
 
-![Mailchimp](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-5.webp)
+![Mailchimp](/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-5.webp)
 
 4.  Choose the **Mailchimp** option from the list of software providers and click **Next (Connect)**.
 
-![Mailchimp](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-6.webp)
+![Mailchimp](/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-6.webp)
 
 ## Step 3: Connect the Two Systems
 
@@ -57,7 +57,7 @@ Now, you'll paste the key you generated in Step 1 to bridge the two systems.
 1.  Paste your copied **Mailchimp API Key** into the provided field.
 2.  Click **Continue [Map Data]**. FluentCRM will connect to Mailchimp and pull in your list information.
 
-![Mailchimp](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-7.webp)
+![Mailchimp](/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-7.webp)
 
 ## Step 4: Organize Your Data (Mapping)
 
@@ -73,7 +73,7 @@ This step tells FluentCRM how to structure the information coming from Mailchimp
 
 Once your lists and tags are configured, click **Continue [Review and Import]**.
 
-![Mailchimp](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-8.webp)
+![Mailchimp](/migrating-from-other-platforms/migrating-into-fluentcrm-from-mailchimp/mail-8.webp)
 
 ## Step 5: Final Review and Finish
 
