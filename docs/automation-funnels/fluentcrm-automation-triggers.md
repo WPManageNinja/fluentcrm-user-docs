@@ -23,7 +23,7 @@ First, go to the **Automation** section from the **Fluent CRM Navbar**, and clic
 
 > To learn the detailed process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
 
-![New Automation button](/docs/public/automation-funnels/fluentcrm-automation-triggers/automation-trigger-1.webp)
+![New Automation button](/automation-funnels/fluentcrm-automation-triggers/automation-trigger-1.webp)
 
 Now, a pop-up page will appear with all the triggers and Pre-built Funnel Templates for creating automation. If you want to create your automation funnel then simply click on the **trigger** you want to start with.
 
@@ -36,7 +36,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name.
 
-![CRM triggers](/docs/public/automation-funnels/fluentcrm-automation-triggers/automation-trigger-2.webp)
+![CRM triggers](/automation-funnels/fluentcrm-automation-triggers/automation-trigger-2.webp)
 
 ## 1\. CRM Trigger
 
@@ -179,7 +179,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name.
 
-![Wordpress triggers](/docs/public/automation-funnels/fluentcrm-automation-triggers/automation-trigger-3.webp)
+![Wordpress triggers](/automation-funnels/fluentcrm-automation-triggers/automation-trigger-3.webp)
 
 **A detailed explanation of the WordPress Triggers mentioned above is given below –**
 

@@ -33,7 +33,7 @@ This section provides a visual breakdown of your email deliverability and engage
 * **Clicked:** Shows the percentage of users taking action on your call-to-action (CTA) buttons or links.
 * **Bounced:** Monitors failed deliveries, helping you maintain a "healthy" sender reputation.
 
-![](/docs/public/getting-started-with-audience/dashboard-introduction/fluentcrm-dashboard.webp)
+![](/getting-started-with-audience/dashboard-introduction/fluentcrm-dashboard.webp)
 
 ## Recent Activity Sections
 

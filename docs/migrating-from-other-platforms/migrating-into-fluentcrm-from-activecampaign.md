@@ -20,7 +20,7 @@ Before starting the process in FluentCRM, you need to grant permission for the t
 3.  Navigate to the **Developer** tab in the sidebar.
 4.  Under API Access, copy both the **API URL** and the **API Key**.
 
-![Active Campaign](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-1.webp)
+![Active Campaign](/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-1.webp)
 
 ## Step 2: Initiate the Connection in FluentCRM
 
@@ -28,19 +28,19 @@ Once you have your keys, head over to your WordPress dashboard to start the impo
 
 1.  Go to **FluentCRM → Contacts** and click the **Import** button at the top right.
 
-![Active Campaign](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-2.webp)
+![Active Campaign](/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-2.webp)
 
 2.  In the pop-up window, select **Import from Other Providers** and click **Next**.
 
-![Active Campaign](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-3.webp)
+![Active Campaign](/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-3.webp)
 
 3.  Choose **ActiveCampaign** from the list of available services and click **Next (Connect)**.
 
-![Active Campaign](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-4.webp)
+![Active Campaign](/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-4.webp)
 
 4.  Paste your **API Access URL** and **API Access Key** into the designated fields.
 
-![Active Campaign](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-5.webp)
+![Active Campaign](/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-5.webp)
 
 5.  **Map Your Lists and Contact Fields**
 
@@ -54,7 +54,7 @@ Now, you need to tell FluentCRM how to organize the data it is pulling from Acti
 
 Now click on the **Continue** button. 
 
-![Active Campaign](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-6.webp)
+![Active Campaign](/migrating-from-other-platforms/migrating-into-fluentcrm-from-activecampaign/active-camp-6.webp)
 
 ## Step 4: Review and Confirm
 

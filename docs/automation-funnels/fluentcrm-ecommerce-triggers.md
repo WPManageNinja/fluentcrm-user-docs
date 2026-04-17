@@ -22,7 +22,7 @@ Finding and selecting your e-commerce triggers is simple and fast.
 3. A window titled **Automation Templates** will pop up. 
 4. On the left sidebar, look for the e-commerce platform you are using (WooCommerce, SureCart, Easy Digital Downloads, or AffiliateWP). Clicking any of these will display the available starting triggers for that platform!
 
-![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-1.webp)
+![Ecommerce Trigger](/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-1.webp)
 
 ### 1. WooCommerce Triggers
 
@@ -35,7 +35,7 @@ WooCommerce is deeply integrated with FluentCRM. Clicking the WooCommerce tab re
 * **Order Status Changed:** This funnel allows you to trigger an action when an order moves from *any* specific status to another (e.g., from *Processing* to *Completed*).
 * **Cart Abandoned:** This powerful trigger starts when a user leaves items in their cart without checking out. Use this to send automated cart recovery emails to boost your sales!
 
-![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-3.webp)
+![Ecommerce Trigger](/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-3.webp)
 
 ### 2. FluentCart Triggers
 
@@ -53,7 +53,7 @@ Available FluentCart triggers include:
 * **Subscription Cancelled:** Runs when a subscription is canceled.
 * **Subscription Renewed:** Runs after a successful subscription renewal.
 
-![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-2.webp)
+![Ecommerce Trigger](/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-2.webp)
 
 ### 3. SureCart Triggers
 
@@ -63,7 +63,7 @@ If you use SureCart for your checkout flows, FluentCRM provides **3 dedicated tr
 * **Order Revoked:** This starts when an order or subscription is revoked or canceled. You can use this to trigger a "win-back" email campaign.
 * **New Customer/Lead:** This starts the moment a new customer or lead is captured via SureCart, allowing you to instantly add them to your general newsletter lists.
 
-![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-5.webp)
+![Ecommerce Trigger](/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-5.webp)
 
 ### 4. Easy Digital Downloads (EDD) Triggers
 
@@ -72,7 +72,7 @@ For stores selling digital products via EDD, FluentCRM offers a primary purchase
 * **New Order Success:** This automation funnel will start immediately once a new EDD order payment is successful. Use this to automatically email digital files, license keys, or onboarding instructions.
 
 
-![Ecommerce Trigger](/docs/public/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-4.webp)
+![Ecommerce Trigger](/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-4.webp)
 
 ### Configuring Your Ecommerce Trigger Settings
 

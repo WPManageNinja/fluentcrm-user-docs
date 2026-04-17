@@ -20,7 +20,7 @@ First, you need to grab two "keys" from your Kit account so FluentCRM has permis
 3.  On the left-hand menu, click on the **Developer** tab.
 4.  You will see a V3 Key section. Copy your **API Key** and click the "Show" button to copy your **API Secret**. Keep these handy for the next step.
 
-![Covertkit](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-1.webp)
+![Covertkit](/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-1.webp)
 
 ## Step 2: Start the Import in FluentCRM
 
@@ -28,15 +28,15 @@ Now, let's head over to your WordPress dashboard to start the migration.
 
 1.  Go to **FluentCRM → Contacts** and click the **Import** button at the top right.
 
-![Covertkit](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-2.webp)
+![Covertkit](/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-2.webp)
 
 2.  A window will pop up. Select **Import From Other Providers** and click **Next**.
 
-![Covertkit](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-3.webp)
+![Covertkit](/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-3.webp)
 
 3.  Select the **Kit (formerly ConvertKit)** logo and click **Next (Connect)**.
 
-![Covertkit](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-4.webp)
+![Covertkit](/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-4.webp)
 
 ## Step 3: Connect the Two Systems
 
@@ -46,7 +46,7 @@ Now, paste the keys you copied from Kit to bridge the connection.
 2.  Paste your **API Secret** into the second box.
 3.  Click **Continue [Map Data]**. FluentCRM will now pull in all your Kit tags and information.
 
-![Covertkit](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-5.webp)
+![Covertkit](/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-5.webp)
 
 
 ## Step 4: Organize Your Data (Mapping)
@@ -59,7 +59,7 @@ This is where you tell FluentCRM how to organize your Kit information.
 
 When you are ready, click **Continue [Review and Import]**.
 
-![Covertkit](/docs/public/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-6.webp)
+![Covertkit](/migrating-from-other-platforms/migrating-into-fluentcrm-from-convertkit/kit-6.webp)
 
 ## Step 5: Final Review and Finish
 

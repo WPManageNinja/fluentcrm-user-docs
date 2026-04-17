@@ -25,17 +25,17 @@ You can install FluentCRM free version like any other WordPress plugin. Follow t
 -   Type in ‘**FluentCRM**’ on the search box, click the **install** button and then **Activate** it.
 -   Another method to download the .zip file and upload this on the Add New page is by using the **Upload Plugin** button, after that click **Install** & **Activate**.
 
-![FluentCRM plugin search result in the WordPress plugin installer](/docs/public/getting-started-with-audience/how-to-install-upgrade-and-activate-license/crm-install-1.webp)
+![FluentCRM plugin search result in the WordPress plugin installer](/getting-started-with-audience/how-to-install-upgrade-and-activate-license/crm-install-1.webp)
 
 ### Installing and Activating FluentCRM Pro
 
 To get FluentCRM Pro, purchase the plugin from [here](https://fluentcrm.com/pricing/), and you’ll be redirected to your WPManageNinja account. After a successful purchase, you can download the **Pro** version and get the **License Key** from your WPManageNinja [Account](https://wpmanageninja.com/account/dashboard/).
 
-![FluentCRM plugin search result in the WordPress plugin installer](/docs/public/getting-started-with-audience/how-to-install-upgrade-and-activate-license/crm-install-2.webp)
+![FluentCRM plugin search result in the WordPress plugin installer](/getting-started-with-audience/how-to-install-upgrade-and-activate-license/crm-install-2.webp)
 
 Go to your WordPress dashboard and navigate to **Plugins > Add New Plugin** from the left sidebar. Click on the **Upload Plugin** button, select the file, and upload it. Then, click **Install Now** and activate the plugin. It’s a simple process!
 
-![FluentCRM plugin search result in the WordPress plugin installer](/docs/public/getting-started-with-audience/how-to-install-upgrade-and-activate-license/crm-install-3.webp)
+![FluentCRM plugin search result in the WordPress plugin installer](/getting-started-with-audience/how-to-install-upgrade-and-activate-license/crm-install-3.webp)
 
 ## Update FluentCRM
 
@@ -49,7 +49,7 @@ FluentCRM Pro comes with a licensing option to activate your license. Follow the
 
 Go to **FluentCRM** and click on the **Settings** option from the sidebar. Then click the **License Management** tab, here you'll find the option for providing the **License Key**. So, after adding the key just click the **Verify License** button. Now you have successfully activated your license!
 
-![FluentCRM plugin search result in the WordPress plugin installer](/docs/public/getting-started-with-audience/how-to-install-upgrade-and-activate-license/crm-install-4.webp)
+![FluentCRM plugin search result in the WordPress plugin installer](/getting-started-with-audience/how-to-install-upgrade-and-activate-license/crm-install-4.webp)
 
 ## Renew FluentCRM License
 

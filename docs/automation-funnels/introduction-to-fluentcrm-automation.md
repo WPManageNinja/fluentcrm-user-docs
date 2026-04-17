@@ -28,7 +28,7 @@ FluentCRM features a clean, modern command center for all your workflows. To acc
 
 At the top of the screen, you will see three main tabs: Funnels, Activities, and Manage Labels.
 
-![Automation Dashboard](/docs/public/automation-funnels/introduction-to-fluentcrm-automation/automation-1.webp)
+![Automation Dashboard](/automation-funnels/introduction-to-fluentcrm-automation/automation-1.webp)
 
 ### 1. The "Funnels" Tab (Your Main Workspace)
 

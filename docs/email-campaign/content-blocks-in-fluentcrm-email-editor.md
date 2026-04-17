@@ -21,7 +21,7 @@ Text blocks allow you to structure your written content with familiar formatting
 * **Table:** Displays data in a structured row and column format.
 * **Verse and Classic:** Specialized blocks for specific text formatting needs.
 
-![Text Content Blocks](/docs/public/email-campaign/content-block/text-content-block-1.webp)
+![Text Content Blocks](/email-campaign/content-block/text-content-block-1.webp)
 
 ## Media Content Blocks
 
@@ -31,27 +31,27 @@ Visual elements are essential for high-converting emails. The **Image** block is
 * **Media Library:** Select images already existing in your WordPress library.
 * **Insert from URL:** Link an image from a remote web address.
 
-![Image Blocks](/docs/public/email-campaign/content-block/image-block-2.webp)
+![Image Blocks](/email-campaign/content-block/image-block-2.webp)
 
 ## Design Content Blocks
 
 These blocks help you manage the layout and interactive elements of your email:
 
-![Design Content Block](/docs/public/email-campaign/content-block/design-content-block-3.webp)
+![Design Content Block](/email-campaign/content-block/design-content-block-3.webp)
 
 * **Buttons:** Add clear Call to Action (CTA) elements.
 
-![Button Block](/docs/public/email-campaign/content-block/button-4.webp)
+![Button Block](/email-campaign/content-block/button-4.webp)
 
 * **Columns:** Nest multiple content elements side by side for complex layouts.
 
-![Colums](/docs/public/email-campaign/content-block/colums-5.webp)
+![Colums](/email-campaign/content-block/colums-5.webp)
 
 * **Group and Row:** Organize multiple blocks into a single container or a full-width row.
 
 * **Spacer and Separator:** Use these to add breathing room or visible lines between sections.
 
-![Spacer](/docs/public/email-campaign/content-block/separate.webp)
+![Spacer](/email-campaign/content-block/separate.webp)
 
 
 ## Conditional Content Blocks
@@ -67,7 +67,7 @@ Depending on your active plugins, you may see specialized blocks:
 
 * **Latest Posts Block:** Automatically displays recent website posts. You can customize the number of posts and the layout.
 
-![Latest Post Blocks](/docs/public/email-campaign/content-block/latest-post-block-7.webp)
+![Latest Post Blocks](/email-campaign/content-block/latest-post-block-7.webp)
 
 * **WooCommerce Product Block:** Search and insert products directly from your store into the email.
 * **Custom HTML:** Insert custom code for unique design requirements not met by standard blocks.
@@ -75,7 +75,7 @@ Depending on your active plugins, you may see specialized blocks:
 
 ---
 
-![Widget Content Blocks](/docs/public/email-campaign/content-block/widget-8.webp)
+![Widget Content Blocks](/email-campaign/content-block/widget-8.webp)
 
 ## Example Email and Preview
 
