@@ -18,15 +18,11 @@ First, go to the **Automation** section from the **Fluent CRM Navbar**, and clic
 
 > To learn the detailed process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
 
-![New automation button](/automation-funnels/fluentcrm-membership-triggers/1.-New-Automation-button-3-scaled.webp)
-
 Now, a pop-up page will appear with all the Popular Pre-built Funnel Templates for creating automation.
 
 You just need to click on the desired templates, which will redirect you to the [Automation Editor](/docs/automation-editor) where the full funnel diagram will automatically be ready. 
 
 Alternatively, if you want to create your automation funnel from scratch, simply click on the **Create from Scratch** tab. 
-
-![Create from scratch](/automation-funnels/fluentcrm-membership-triggers/2.-Create-from-Scratch-2.webp)
 
 All the **Membership Triggers** for creating an automation funnel are organized under plugin categories **in** the left sidebar. These are: 
 
@@ -46,7 +42,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name. 
 
-![Memberpress triggers](/automation-funnels/fluentcrm-membership-triggers/3.-MemberPress-Triggers.webp)
+![Memberpress triggers](/docs/public/automation-funnels/fluentcrm-membership-triggers/membership-triggers-1.webp)
 
 ### Membership Enrolled
 
@@ -69,8 +65,6 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Membership enrolled in MemberPress](/automation-funnels/fluentcrm-membership-triggers/4.-Membership-Enrolled-in-Wishlist-Member.webp)
-
 ### Subscription Expired
 
 This automation funnel will start once a subscription expires.  
@@ -90,7 +84,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name. 
 
-![Paid membership pro triggers](/automation-funnels/fluentcrm-membership-triggers/5.-Paid-Membership-Pro-Triggers.webp)
+![Paid membership pro triggers](/docs/public/automation-funnels/fluentcrm-membership-triggers/membership-triggers-3.webp)
 
 ### Membership Enrolled
 
@@ -104,8 +98,6 @@ Here, are the Settings of the Membership Enrolled Trigger
 > To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-membership-triggers/#settings-of-membership-enrolled-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
-
-![Membership enrolled in paid membership pro](/automation-funnels/fluentcrm-membership-triggers/6.-Membership-Enrolled-in-Paid-Membership-Pro.webp)
 
 ### Membership Level Expired
 
@@ -132,8 +124,6 @@ A detailed explanation of the following Triggers is given below – 
 Once you select your desired **Trigger**, click the **Continue** button, and put a **Title** under the **Internal Label** field for this automation funnel to easily find it later.
 
 If you leave it blank, it will automatically titled according to its trigger’s name.
-
-![Restrict content pro triggers](/automation-funnels/fluentcrm-membership-triggers/7.-Restrict-Content-Pro-Triggers.webp)
 
 ### Membership Enrolled 
 
@@ -166,7 +156,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name.
 
-![Wishlist member trigger](/automation-funnels/fluentcrm-membership-triggers/8.-Wishlist-Member-Trigger.webp)
+![Wishlist member trigger](/docs/public/automation-funnels/fluentcrm-membership-triggers/membership-triggers-2.webp)
 
 ### Membership Enrolled 
 
@@ -175,4 +165,4 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 > The settings options of this **Wishlist Member’s Membership Enrolled** trigger work the same way as the **MemberPress’** **Membership Enrolled** trigger. To learn how to use all the settings, read this [Section](/docs/fluentcrm-membership-triggers/#settings-of-membership-enrolled-trigger).
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/). Thank you.
