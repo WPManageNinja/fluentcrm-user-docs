@@ -21,15 +21,13 @@ Or, create a new one by clicking the **+ New Automation.**
 
 For example, I opened the **Tag Applied** automation funnel to explain all the Primary Actions of FluentCRM.
 
-![Open desired automation or create new one](/automation-funnels/primary-automation-actions/1.-Open-desired-Automation-or-Create-new-one-scaled.webp)
-
 Now, click the **Plus Icon** or hover over it and click the **Add Action / Goal** option to view all the **Primary Actions**.
 
-![Click plus icon to add actions](/automation-funnels/primary-automation-actions/2.-Click-Plus-Icon-to-add-Actions-scaled.webp)
+![Click plus icon to add actions](/automation-funnels/primary-automation-actions/action-1.webp)
 
 Now, a pop-up page will appear with all the primary Action blocks of FluentCRM to choose from. 
 
-![All action blocks for crm](/automation-funnels/primary-automation-actions/3.-All-Action-Blocks-for-CRM.webp)
+![All action blocks for crm](/automation-funnels/primary-automation-actions/action-2.webp)
 
 **A detailed explanation of the Actions mentioned above is given below –** 
 
@@ -53,7 +51,7 @@ Here are the Settings of the Wait X Days/Hours action:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Wait x days/hours action](/automation-funnels/primary-automation-actions/4.-Wait-X-DaysHours-action.webp)
+![Wait x days/hours action](/automation-funnels/primary-automation-actions/action-3.webp)
 
 #### A. Wait by Period
 
@@ -62,7 +60,7 @@ Use this option to set the waiting time between actions based on Days, Hours, or
 -   **Wait Time**: Provide a **Numerical Value** based on how many Days/Hours/Minutes delay you want between actions.
 -   **Wait Time Unit**: Select the **Unit of Waiting Time** as **Days/Hours/Minutes** by clicking the **Dropdown Arrow** according to your needs. 
 
-![Wait by period](/automation-funnels/primary-automation-actions/5.-Wait-by-Period.webp)
+![Wait by period](/automation-funnels/primary-automation-actions/action-4.webp)
 
 #### B. Wait Until Date:
 
@@ -74,7 +72,7 @@ Use this option to set the waiting time between actions based on a specified dat
 
 Once you specify the Date and Time, click the **Ok** button.
 
-![Wait until date](/automation-funnels/primary-automation-actions/6.-Wait-Until-Date.webp)
+![Wait until date](/automation-funnels/primary-automation-actions/action-5.webp)
 
 #### C. Wait by Weekday
 
@@ -83,7 +81,7 @@ Use this option if you want to set the waiting time between actions for a specif
 -   **Wait until the next Day(s) of the week**: Check the box to select the desired **Day/s.**
 -   **Time of the Day**: A time selector to choose the time for the selected **Day/s.**
 
-![Wait by weekday](/automation-funnels/primary-automation-actions/7.-Wait-by-Weekday.webp)
+![Wait by weekday](/automation-funnels/primary-automation-actions/action-6.webp)
 
 #### D. Wait by Custom Field
 
@@ -91,7 +89,7 @@ With this option, you can set wait times between actions based on a **Custom Con
 
 > To learn more about **Custom Contact Fileds**, read this [Documentation](/docs/global-custom-contact-fields).
 
-![Wait by custom field](/automation-funnels/primary-automation-actions/8.-Wait-by-Custom-Field.webp)
+![Wait by custom field](/automation-funnels/primary-automation-actions/action-7.webp)
 
 ### 2\. Apply Company
 
@@ -109,7 +107,7 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Apply company](/automation-funnels/primary-automation-actions/9.-Apply-Company.webp)
+![Apply company](/automation-funnels/primary-automation-actions/action-8.webp)
 
 ### 3\. Apply List
 
@@ -124,7 +122,7 @@ Here are the Settings of the Apply List action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Apply list](/automation-funnels/primary-automation-actions/10.-Apply-List.webp)
+![Apply list](/automation-funnels/primary-automation-actions/action-9.webp)
 
 ### 4\. Apply Tag
 
@@ -139,7 +137,7 @@ Here are the Settings of the Apply Tag action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Apply tag](/automation-funnels/primary-automation-actions/11.-Apply-Tag.webp)
+![Apply tag](/automation-funnels/primary-automation-actions/action-10.webp)
 
 ### 5\. Remove From Company
 
@@ -154,7 +152,7 @@ Here are the Settings of the Remove From Company action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Remove from company](/automation-funnels/primary-automation-actions/12.-Remove-Company.webp)
+![Remove from company](/automation-funnels/primary-automation-actions/action-11.webp)
 
 ### 6\. Remove From List
 
@@ -169,7 +167,7 @@ Here are the Settings of the Remove From List action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Remove list](/automation-funnels/primary-automation-actions/13.-Remove-List.webp)
+![Remove list](/automation-funnels/primary-automation-actions/action-12.webp)
 
 ### 7\. Remove From Tag
 
@@ -184,7 +182,7 @@ Here are the Settings of the Remove From Tags action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Remove from tag](/automation-funnels/primary-automation-actions/14.-Remove-From-Tag.webp)
+![Remove from tag](/automation-funnels/primary-automation-actions/action-13.webp)
 
 ### 8\. Add Notes & Activities
 
@@ -203,7 +201,7 @@ Here are the Settings of the Add Notes & Activities action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Add notes & activities](/automation-funnels/primary-automation-actions/15.-Add-Notes-Activities.webp)
+![Add notes & activities](/automation-funnels/primary-automation-actions/action-14.webp)
 
 ### 9\. Update Contact Property
 
@@ -218,7 +216,7 @@ Here are the Settings of the Update Contact Property action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Update contact property](/automation-funnels/primary-automation-actions/16.-Update-Contact-Property.webp)
+![Update contact property](/automation-funnels/primary-automation-actions/action-15.webp)
 
 ### 10\. Outgoing Webhook
 
@@ -228,7 +226,7 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also test your webhook by clicking the **Send Test Webhook** button.  
 
-![Outgoing WebHook](/automation-funnels/primary-automation-actions/17.-Outgoing-Webhook-1.webp)
+![Outgoing WebHook](/automation-funnels/primary-automation-actions/action-16.webp)
 
 **The Settings of the Outgoing Webhook action mentioned above are explained below:**
 
@@ -255,7 +253,7 @@ An example of these additional headers is shown in the screenshot below:
 
 If you don’t want to add headers, simply check the **No Headers** box.
 
-![Request Header](/automation-funnels/primary-automation-actions/Primary-Actions-FluentCRM-11-03-2024_01_51_PM.webp)
+![Request Header](/automation-funnels/primary-automation-actions/action-17.webp)
 
 -   **Send Data as Background Process**: Check this option if you have a lot of tasks running, you may want to enable the option to Send Webhook Data as Background Process. However, unchecking this option is recommended so that the webhook data is sent immediately.
 
@@ -274,7 +272,7 @@ Here are the Settings of the Split (A/B Testing) action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Split (A/B testing)](/automation-funnels/primary-automation-actions/18.-Split-AB-Testing.webp)
+![Split (A/B testing)](/automation-funnels/primary-automation-actions/action-18.webp)
 
 ### 12\. Cancel Automation
 
@@ -289,7 +287,7 @@ Here are the Settings of the Cancel Automation action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Cancel automations](/automation-funnels/primary-automation-actions/19.-Cancel-Automations.webp)
+![Cancel automations](/automation-funnels/primary-automation-actions/action-19.webp)
 
 ### 13\. End This Funnel Here
 
@@ -303,6 +301,6 @@ Here are the Settings of the End This Funnel Here action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![End this funnel here](/automation-funnels/primary-automation-actions/20.-End-This-Funnel-Here.webp)
+![End this funnel here](/automation-funnels/primary-automation-actions/action-20.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
