@@ -78,7 +78,9 @@ Once a test submission is made, you can verify the data received by the form:
  
 ![Monitoring Entries](/forms/opt-in-forms-fluent-forms-basic-configuration/view-entries-7.webp)
 
-After clicking View Entries, a popup will appear showing all submitted entries. To see more details, click the **action icon** for any entry.
+After clicking View Entries, a popup will appear showing all submitted entries. To see more details, click the **Action icon** for any entry.
+
+![Action Icon](/forms/opt-in-forms-fluent-forms-basic-configuration/action-icon.webp)
 
 You can also click on a specific contact to view detailed submission logs. Additionally, full entry details are available from the **Fluent Forms Dashboard** for that contact.
 

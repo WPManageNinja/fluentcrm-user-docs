@@ -6,123 +6,99 @@ order: 0
 ---
 
 # Fluent Forms Advanced Configuration
-As we have configured our first subscription form with Fluent Forms in the previous [Opt-in Forms (Fluent Forms) Basic Configuration](/docs/opt-in-forms-fluent-forms-basic-configuration) guide, we are already familiar with [Creating Subscription Forms](/docs/opt-in-forms-fluent-forms-basic-configuration/#Create-Subscription-Form), [Mapping List & Tags](/docs/opt-in-forms-fluent-forms-basic-configuration/#Mapping-List-Tags). [Form Actions](/docs/opt-in-forms-fluent-forms-basic-configuration/#Form-Actions), [Embedding Subscription Form](/docs/opt-in-forms-fluent-forms-basic-configuration/#Embedding-Subscription-Form). In this tutorial, we will be extending the form we have created in that guide.
 
-## Fluent Forms
+This guide covers advanced techniques for extending your subscription forms beyond basic setups. You will learn how to add complex fields, manage double opt-in nuances, and utilize advanced mapping and logic within the FluentCRM feed.
 
-Fluent Forms is also a popular WordPress plugin that is highly customizable with respect to features and designs. The full documentation of Fluent Forms is here: [Fluent Forms (wpmanageninja.com)](https://wpmanageninja.com/docs/fluent-form/)
+## Extending Fluent Forms Fields
 
-### Adding New Fields
+While pre-made templates offer a quick start, you can manually add a wide variety of input fields to capture more detailed subscriber data.
 
-From the [basic configuration guide](/docs/opt-in-forms-fluent-forms-basic-configuration), we saw the Edit Form buttons from both of FluentCRM and Fluent Forms. Now we are going to [Edit the Form](/docs/opt-in-forms-fluent-forms-basic-configuration/#Edit-Form) we want.
+* **Adding New Fields:** From the [basic configuration guide](/docs/opt-in-forms-fluent-forms-basic-configuration), we saw the **Edit Form** buttons from both of FluentCRM and Fluent Forms. 
 
-Aside from the pre-made templates, You can also add other input fields in the Opt-in forms and feed them to FluentCRM. A more in-depth guide is on the [How to Add Fields to Fluent Forms](https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/how-to-create-a-form-with-wp-fluent-form-wordpress-plugin/) page. Below we have added a new Custom HTML section to just show a message and an Address Field that contains a few address-related information which we will be storing in FluentCRM contacts as well.
+![Edit Form](/forms/opt-in-forms-advanced-configuration/edit-form-1.webp)
 
-![crm form add new field](/forms/opt-in-forms-advanced-configuration/crm_form_add_new_field.png)
+Access the **Edit Form** interface to drag and drop new components, such as **Address Fields** or **Custom HTML** sections for internal messaging.
 
-### Preview Form
+![Edit Form](/forms/opt-in-forms-advanced-configuration/add-form-field-2.webp)
 
-Now to preview the newly added fields, please click on the **Save button in** the top right corner and then click on the **Preview & Design** button that will redirect us to a new tab previewing the new changes to the subscription form. Our customized form will look like the below screenshot:
+* **Preview & Design:** After adding fields, click **Save** and then use the **Preview & Design** button to see how the customized form appears to users.
 
-![crm form preview](/forms/opt-in-forms-advanced-configuration/crm_form_preview.png)
+![Preview](/forms/opt-in-forms-advanced-configuration/preview-3.webp)
 
-### Form Settings
+## Advanced Form Settings
 
-Now we will be checking the Fluent Forms settings. To enter into the settings of Fluent Forms, please click on the **Settings & Integrations** tab in the top section.
+Navigate to the **Settings & Integrations** tab to configure deep-level form behavior.
 
-To learn more about Fluent Forms settings please visit [Advanced Features & Functionalities in Fluent Forms](https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/). Here we will be reviewing [Double Opt-in emails in Fluent Forms](https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/set-up-double-opt-in-emails-in-wp-fluent-forms-2/) and [Advanced Form Validation in Fluent Forms](https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/advanced-form-validation-in-wp-fluent-forms-wordpress-plugin/).
+* **Double Opt-in Confirmation:** This ensures submissions are from legitimate users rather than bots. Fluent Forms can send a confirmation email; once the user confirms, the FluentCRM feed is processed.
 
-#### Double Opt-in Confirmation
-
-![crm form double opt in](/forms/opt-in-forms-advanced-configuration/crm_form_double_opt_in.png)
-
-If you came here reviewing FluentCRM global settings you already have seen [Double Opt-in Settings](/docs/global-double-opt-in-settings) and know how it works. Fluent Forms also offers a double opt-in confirmation process for form submission that enables the admin to ensure the entries submitted are not done by robots or any automated sources and also protects the configured feeds not being bloated as well. Enabling this option will send a form submission confirmation email to the user.
-
-After the user confirms the submission by confirming the URL in the Email, the form submission will be processed and FluentCRM data will be processed. If you have enabled double opt-in confirmation for users then now the user will get another email asking to confirm the FluentCRM Email Marketing & Newsletter subscription.
+You can choose to **Disable Double Optin for Logged in users** or if the contact is already subscribed in FluentCRM.
 
 You can additionally **Disable Double Optin for Logged in users**, **Disable Double Optin if the contact email is subscribed in FluentCRM** by checking the options, and also customize the Form Subscription Double Opt-in confirmation email.
 
-#### Advanced Validation
+![Double opt-in](/forms/opt-in-forms-advanced-configuration/double-opt-in-4.webp)
 
-![crm form advanced validation](/forms/opt-in-forms-advanced-configuration/crm_form_advanced_validation.png)
+* **Advanced Validation:** Use this to prevent the use of temporary email addresses or to require a specific passcode for form submission. You can set custom failure messages to guide the user.
 
-The conditions can be set either to fail the submissions or to process the submissions.
+![Form Validation](/forms/opt-in-forms-advanced-configuration/advanced-form-validation-5.webp)
 
-As we work with the email addresses of the users in FluentCRM is also very important that we avoid temporary emails. We can achieve something like that in the very first place by enabling Advanced Validation and setting conditions as the above including a Submission Failure Message.
+## Configuring the FluentCRM Integration Feed
 
-That is just a single-use case. This feature is possible to use in various conditions and use-cases like placing a passcode and providing only to known users that passcode to use while submitting the form. Otherwise, the form submission will not even initiate.
+The "Feed" is the bridge between your form and the CRM. To add a **New Feed** hover over **Add New Integration** and click on the **FluentCRM Integration** from the options.
 
-## FluentCRM Feed
+![FluentCRM Integration Feed](/forms/opt-in-forms-advanced-configuration/fluentcrm-integration-feed-6.webp)
 
-Now let's configure the FluentCRM Integration Feed by going to Marketing & CRM Integration from the left side. Since we already created this in the earlier tutorial an existing feed is already there. **But if you create a Fluent Form manually and later want to connect to FluentCRM then please follow the next steps.**
+After selecting the FluentCRM integration, you need to configure the feed settings to connect your form with FluentCRM properly.
 
-To add a **New Feed** please hover over **Add New Integration** and click on the **FluentCRM Integration** from the options.
+* **A. Feed Name:** Enter a name for your integration feed. This is for internal use and helps you identify the feed later.
+* **B. FluentCRM List:** Select the FluentCRM contact list where the submitted contacts will be added. You can change this list anytime if needed.
+* **C. Primary Fields:** Map the required FluentCRM fields with your form fields.
+  * **Email Address** is required.
+  * You can also map **First Name**, **Last Name**, or **Full Name**. Use the dropdown to select form fields or add custom values.
 
-![crm form crm feed](/forms/opt-in-forms-advanced-configuration/crm_form_crm_feed.png)
+* **D. Other Fields:** Here, you can map additional form fields to FluentCRM fields. Click the **Plus (+) icon** to add more field mappings as needed.
+* **E. Contact Tags:** Select one or multiple tags to assign to the contact in FluentCRM.
+  * **Enable Dynamic Tag Selection:** Turn this on if you want to assign tags dynamically based on conditions.
+  * **Skip if contact already exists:** Prevents duplicate contacts in FluentCRM.
+  * **Skip name update if contact has old data:** Keeps existing contact names unchanged even if new data is submitted.
+  * **Enable Double Opt-in:** Sends a confirmation email to new contacts before marking them as subscribed.
+  * **Enable Force Subscribe:** Automatically subscribes existing contacts who are not currently subscribed.
 
-Now we need to configure and map some options between Fluent Form Fields and FluentCRM contact data as below.
+* **F. Conditional Logic:** Enable this option if you want the integration to run only when certain conditions are met based on form submission data.
 
-### Primary Mapping
+  * **Filtering:** You can set conditions to only allow submissions from specific countries or based on other field values.
+  * **Multiple Feeds:** Create separate feeds for different scenarios. For example, if a user selects "List A" from a dropdown, one feed triggers; if they select "List B," a completely different feed processes the data.
 
-The very important or minimum required fields that need to be selected or mapped are the **FluentCRM List** that will be assigned to the form submitted contact and the **Contact Email Address**.
+* **G. Remove Contact Tags:** Select tags that should be removed from the contact when this feed runs.
 
-![crm form crm feed primary](/forms/opt-in-forms-advanced-configuration/crm_form_crm_feed_primary.png)
+* **H. Status:** **Enable** this Feed to activate the integration.
 
-Other Primary Options are:
+Once you have configured all the settings, click the **Save Feed** button to complete your FluentCRM integration setup.
 
-1.  **Feed Name:** Required Name for the Feed as an Identifier.
-2.  **First Name:** First Name of the contact.
-3.  **Last Name:** Last Name of the contact.
-4.  **Full Name:** Full Name of the contact.
+![FluentCRM Integration Feed Configure](/forms/opt-in-forms-advanced-configuration/configure-fluentcrm-feed-7.webp)
 
-### Custom Fields Mapping
+Afetr setup you FluentCRM feed, you can Disable or Enable your feed here. Also, you can Edit or Delete this feed by clicking this **Setting** and **Delete** icon.
 
-All the other FluentCRM fields including the FluentCRM [Custom Contact Fields](/docs/global-custom-contact-fields) will be available for mapping below the basic field mapping. The left side labeling **Field Label** is the FluentCRM contact fields name and the right side labeling Field Value is being submitted from the user through the subscription form.
+![Edit or Delete](/forms/opt-in-forms-advanced-configuration/disable-enable-feed-8.webp)
 
-![crm form crm feed other](/forms/opt-in-forms-advanced-configuration/crm_form_crm_feed_other.png)
+### Verifying the Advanced Setup
 
-Here we have added a few address fields in the form and mapped those fields according to FluentCRM contact data properties.
+Once configured, embed your form and perform a test submission.
 
-### Dynamic Tags
+1.  **Check Entries:** Confirm the data appears in **Fluent Forms ➜ Entries**.
+2.  **Verify Feed Status:** Ensure the log shows a "success" message for the CRM integration.
+3.  **Confirm in CRM:** Search for the contact in **FluentCRM ➜ Contacts** to verify that address data, dynamic tags, and lists have been applied correctly.
 
-If you have multiple tags in the FluentCRM and you have fields that can take various inputs from the user, then you can assign Tags dynamically based on the input. Below we have assigned tags dynamically based on the **Country** from the Address fields.
-
-![crm form crm feed dynamic tags](/forms/opt-in-forms-advanced-configuration/crm_form_crm_feed_dynamic_tags.png)
-
-### Conditional Logic
-
-Another useful advanced feature of Fluent Forms Integration Feed is that you can also apply conditional logic based on input and decide if **All** or **Any** of the configured conditions. Below we have decided that Submissions from the contacts in the United States, United Kingdom, and Bangladesh are allowed.
-
-![crm form crm feed conditional logic](/forms/opt-in-forms-advanced-configuration/crm_form_crm_feed_conditional_logic.png)
-
-#### **Multiple Feeds based on Conditional Logic**
-
-In cases, where you want the user to select the Lists they will subscribe to or any other options that are predefined in the FluentCRM already, you may use this Conditional Logic and create multiple Feeds. For example, you let the user select from 3 Lists from the dropdown, radio input, or checkbox. Then create 3 separate FluentCRM feeds and enable conditional logic and set conditions for each list. This way depending on the list selection from the user either of the 3 feeds will be activated and processed.
-
-### Miscellaneous
-
-Other available options in the Feed Settings will allow you to
-
-1.  **Skip the Feed Submission if the contact already exists in FluentCRM,**
-2.  **Enable Double Opt-in for new contacts,**
-3.  **Enable Force Subscribe if contact is not in subscribed status (Existing contact only),**
-4.  **Remove Contact Tags and**
-5.  **Enable or Disable the Feed.**
-
-## Form Submission
-
-As we have followed instructions in the [Form Submission](/docs/opt-in-forms-fluent-forms-basic-configuration/#Form-Submission) of the [Opt-in Forms (Fluent Forms) Basic Configuration](/docs/opt-in-forms-fluent-forms-basic-configuration) we can now [Embed Subscription Form](/docs/opt-in-forms-fluent-forms-basic-configuration/#Embedding-Subscription-Form), check [Entry in Fluent Forms](/docs/opt-in-forms-fluent-forms-basic-configuration/#Entry-in-Fluent-Forms), check the [Feed Status](/docs/opt-in-forms-fluent-forms-basic-configuration/#Feed-Status), and also check the [Contact in FluentCRM](/docs/opt-in-forms-fluent-forms-basic-configuration/#Contact-in-FluentCRM) as well to confirm that we have followed and configured every step carefully and everything works!
-
-![crm form advanced submission](/forms/opt-in-forms-advanced-configuration/crm_form_advanced_submission.png)
+![Confirm in FluentCRM](/forms/opt-in-forms-advanced-configuration/Contacts-FluentCRM-9.webp)
 
 To test out the conditions we just set in an advanced way, The form is submitted with the Country set to Bangladesh with a logged-in user. So
 
-1.  **The Form is submitted for the contact in Bangladesh,**
-2.  **Double Opt-in for Form Submission processing was not done as the submitter is already logged in to the website,**
-3.  **Data fed to FluentCRM matching conditional logic,**
-4.  **Tag Assigned with Bangladesh,**
-5.  **Address Information that was mapped stored the submitted address information.**
+ - The Form is submitted for the contact in Bangladesh,
+ - Double Opt-in for Form Submission processing was not done as the submitter is already logged in to the website,
+ - Data fed to FluentCRM matching conditional logic,
+ - Tag Assigned with Bangladesh,
+ - Address Information that was mapped stored the submitted address information.
 
-![crm form advanced submission overiview](/forms/opt-in-forms-advanced-configuration/crm_form_advanced_submission_overiview.png)
+![Submitted Contact](/forms/opt-in-forms-advanced-configuration/adress-information-10.webp)
 
 That's all for advanced and extended configuration of Fluent Forms Subscriptions with FluentCRM.
+
