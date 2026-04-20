@@ -5,7 +5,9 @@ category: "automation-funnels"
 order: 0
 ---
 
-[FluentCRM](https://fluentcrm.com/) provides powerful automation triggers for top **Learning Management System (LMS)** platforms. By integrating your LMS plugin, you can start automation funnels based on your students' learning behavior, like enrolling in a course, finishing a lesson, or completing a quiz.
+# LMS Triggers
+
+FluentCRM provides powerful automation triggers for top **Learning Management System (LMS)** platforms. By integrating your LMS plugin, you can start automation funnels based on your students' learning behavior, like enrolling in a course, finishing a lesson, or completing a quiz.
 
 FluentCRM currently supports a wide range of LMS platforms, including **LearnDash**, **LifterLMS**, **TutorLMS**, **LearnPress**, **Academy LMS**, and **FluentCommunity**.
 
