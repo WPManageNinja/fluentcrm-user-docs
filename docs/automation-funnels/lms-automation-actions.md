@@ -6,6 +6,7 @@ order: 0
 ---
 
 # LMS Actions
+
 [FluentCRM](https://fluentcrm.com/) offers various [Actions](/docs/primary-automation-actions), particularly for **LMS** (Learning Management System) platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**, to trigger tasks automatically. Once the automation is triggered, you can automatically add the desired **Action/s** to manage advanced, repetitive, or routine tasks.
 
 This article will provide detailed information about all **LMS Actions** in **FluentCRM Automation**. 
