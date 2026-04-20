@@ -6,121 +6,102 @@ order: 0
 ---
 
 # Opt-in Forms (Fluent Forms) Basic Configuration
-You might wonder if it is possible to integrate with FluentCRM and manage those users and run automation, email campaigns, email sequences, etc. Below you will see 2 examples of subscription forms that can connect with FluentCRM.
 
-https://youtu.be/E\_jbKCBsA6o
+Integrating **Fluent Forms** with **FluentCRM** allows you to automate contact collection and immediately trigger marketing funnels, such as email sequences and automations. As the default form engine for FluentCRM, this native integration provides a seamless way to handle subscriptions and lead generation.
 
-![crm form2](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form2.png)
+### Activating the Forms Module
 
-![crm form3](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form3.png)
+To begin using subscription forms within FluentCRM, you must first enable the integration:
 
-One of the best features of FluentCRM is that it has native integration with [**Fluent Forms**](https://wordpress.org/plugins/fluentform/) which is also a popular Subscriptions and Payment Form Plugin for WordPress. FluentCRM uses this plugin to handle the default subscriptions of Contacts in FluentCRM.
+First, navigate to the **FluentCRM Dashboard** ➜ **Forms**. Click the **Activate Fluent Forms** button.
 
-![form wp](/forms/opt-in-forms-fluent-forms-basic-configuration/form_wp.png)
+Wait for the confirmation message; FluentCRM will automatically install the Fluent Forms plugin in the background.
 
-The good news is you can customize the Subscriptions as you want in Fluent Forms and connect the form with FluentCRM. If you want to add more people to your marketing campaign, you can create a landing page including a form. Your audience can fill up the form and they will get a double opt-in email and register as a contact for your email marketing campaigns.
+![Activate Form](/forms/opt-in-forms-fluent-forms-basic-configuration/activate-fluent-form-1.webp)
 
-## Activating Fluent Forms
+## Creating Your First Subscription Form
 
-To get started with Subscription Forms in FluentCRM, go to the FluentCRM **Dashboard ➜ Forms**, Click on the **Activate Fluent Forms Integration** button, and wait for the confirmation. This will install the Fluent Forms plugin in the background.
+Once activated, you can initiate form creation. Click **Create Your First Form** or **Create a New Form**.
 
-![crm form activate](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_activate.png)
+![Create a Form](/forms/opt-in-forms-fluent-forms-basic-configuration/create-a-new-form-2.webp)
 
-## Create Subscription Form
+A popup will display several ready-to-use **Templates**.
+* **Recommendation:** Template 3 is often used as it includes both **Name** and **Email** fields, which are standard for most subscription needs.
 
-Once the plugin is installed, you will see a success message on the top right corner of the dashboard as shown in the below screenshot.
+![Form Template](/forms/opt-in-forms-fluent-forms-basic-configuration/choose-a-template-3.webp)
 
-![crm form activated new](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_activated_new.png)
+### Mapping Lists and Tags
 
-Now you can create your first subscription form by clicking on the red button saying **Create Your First Form** or the blue **Create a New Form** button. A popup will appear, and you will see a list of templates ready for you, pick any template you wish.
+Mapping ensures that every person who fills out your form is correctly categorized in your CRM.
 
-![crm form select template](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_select_template.png)
+* **Form Title:** Enter a clear name for your form.
+* **List & Tag Selection:** Select the specific **[Lists](/docs/segment-your-audience)** and **[Tags](/docs/segment-your-audience)** you want to apply to contacts who submit this form. 
 
-### Templates
+>[!Note]
+>Tag and List must be created in FluentCRM before setting up the form.
 
-The templates offered while creating the form look like below:
+* **Double Opt-in:** Enable the **[Double Opt-in Confirmation](/docs/global-double-opt-in-settings#double-opt-in-settings)** checkbox to ensure new contacts confirm their subscription via email before being marked as "Subscribed".
 
-![crm form 1](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_1.png)
-*Template 1*
-![crm form 2](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_2.png)
-*Template 2*
-![crm form 3](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_3.png)
-*Template 3*
+You will also see a message saying “This form will be created in Fluent Forms and you can customize it anytime” which means the form is customizable and you can design and configure settings later at any time. We made a dedicated guide on that in [Fluent Forms Advanced Configuration](/docs/opt-in-forms-advanced-configuration).
 
-You might want to use the 3rd template as it is a regular and common use case for subscription forms that include both Name & Email.
+![Maping Tags and List](/forms/opt-in-forms-fluent-forms-basic-configuration/create-a-form-4.webp)
 
-### Mapping List & Tags
+### Managing Form Actions
 
-Now it's time to fill in the Form Title, Select the **[List](/docs/segment-your-audience/#Lists)** and **[Tags](/docs/segment-your-audience/#Tags)** you want to map with FluentCRM. It is required to create the List and tags before creating the form. Check the checkbox **Enable [Double Opt-in Confirmation](/docs/global-double-opt-in-settings)** for new contacts so that FluentCRM will send a double opt-in email to the user as soon as the form is submitted to confirm their subscription. Now click on the **Create Form** button.
+After clicking **Create Form**, several management options become available:
 
-You will also see a message saying "_This form will be created in Fluent Forms and you can customize it_ anytime" which means the form is customizable and you can design and configure settings later at any time. We made a dedicated guide on that in [Fluent Forms Advanced Configuration](/docs/opt-in-forms-advanced-configuration)
+* **Preview the Form:** View how the form looks on the front end.
+* **Edit the Form:** Modify fields or add new field types (e.g., country or address) directly in the Fluent Forms editor.
+* **Edit Connection:** Adjust the "Feed" settings that determine how data is sent to FluentCRM, including mapping contact data like first name, last name, and email.
 
-![crm form create new](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_create_new.png)
+![Managing Action](/forms/opt-in-forms-fluent-forms-basic-configuration/managing-action-5.webp)
 
-The form will be created with an active feed with FluentCRM, all the submitted entries will be added to your assigned [Lists](/docs/segment-your-audience/#Lists) and [Tags](/docs/segment-your-audience/#Tags).
+## Embedding the Form on Your Site
 
-## Form Actions
+To display your form to your audience, you can use two primary methods:
 
-Once the form is created you will a success message on the top right corner of the dashboard. Now you can **Preview the Form**, **Edit the Form** and also **Edit the Connection with FluentCRM** feed by clicking on each link.
+1.  **Gutenberg Block:** In the WordPress editor, add a "Fluent Forms" block and select your form from the dropdown menu.
+2.  **Shortcode:** **Copy** the unique shortcode provided in the form dashboard and **paste** it anywhere on your website.
 
-![crm form created](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_created.png)
+![Embeding your Form](/forms/opt-in-forms-fluent-forms-basic-configuration/shortcode-6.webp)
 
-### Preview
+## Verifying Submissions and Feed Status
 
-When the form is created you will be provided with a shortcode of Fluent Forms to use the form on any Page or Post. To Preview the Form how it looks like click on the **Preview The Form** Button.
+After publishing your form, it is critical to test a submission to ensure the data is flowing correctly into your CRM. You can monitor this process directly from the Forms dashboard in FluentCRM.
 
-### Edit Form
+#### 1. Monitoring Entries
 
-You can also Edit the Form Fields, and add more fields from various types of fields. This will take you to the Fluent Forms Editor directly.
+Once a test submission is made, you can verify the data received by the form:
 
-### Edit Connection
+ * **Accessing Entries:** Navigate to **Forms** in the FluentCRM sidebar to see your list of created forms.
+ * **Viewing Submissions:** Click the **View Entries** button next to your specific form to open a popup window showing all recent submissions, including the contact's email, submission status, and exactly when they signed up.
+ 
+![Monitoring Entries](/forms/opt-in-forms-fluent-forms-basic-configuration/view-entries-7.webp)
 
-This is the FluentCRM Feed Integration settings that connect the Fluent Form with FluentCRM. More about this is discussed in [Fluent Forms Advanced Configuration](/docs/opt-in-forms-advanced-configuration).
+After clicking View Entries, a popup will appear showing all submitted entries. To see more details, click the **action icon** for any entry.
 
-If you close the popup window, you can anytime do these actions from the Forms Dashboard as shown in the below screenshot.
+You can also click on a specific contact to view detailed submission logs. Additionally, full entry details are available from the **Fluent Forms Dashboard** for that contact.
 
-![crm form list](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_list.png)
+![Submission Logs](/forms/opt-in-forms-fluent-forms-basic-configuration/submission-log.webp)
+ 
+#### 2. Feed Status & Integration Settings
 
-### Actions from Fluent Forms
+If a contact is not appearing in FluentCRM as expected, you must verify the connection between the form and the CRM:
 
-The above options are the exact same from the Fluent Forms dashboard as below:
+ * **Integration Logs:** Within the Forms dashboard, click the **three-dot** menu under Actions and select Edit Integration Settings.
+ * **Troubleshooting:** This area allows you to review the "**Feed**" that maps form fields to CRM fields. Checking the **Submission Logs** here is crucial; it will provide a success or error message explaining why a submission may have failed to transfer to the contact list.
 
-![form actions](/forms/opt-in-forms-fluent-forms-basic-configuration/form_actions.png)
+![Feed Status & Integration Settings](/forms/opt-in-forms-fluent-forms-basic-configuration/feed-status-&-integration-settings-8.webp)
 
-## Form Submission
+### 3. Final Contact Verification
 
-Now it is time to add the form to a Page or Post and then test the submission.
+Since a successful feed adds the contact immediately, perform a final check in your database:
 
-### Embedding Subscription Form
+ - Navigate to **Contacts ➜ All Contacts**.
+ - Your test submission should appear in the list with its assigned **Lists**, **Tags**, and current **Subscription Status** (such as Pending or Subscribed).
 
-To use the form we need to use the shortcode or even a Gutenberg Editor Block that will let us select the Fluent Form on any page or post. In this tutorial we will be adding the form on a new page as below:
+For more complex setups, such as dynamic tag selection or conditional logic, please refer to the **[Fluent Forms Advanced Configuration](/docs/opt-in-forms-advanced-configuration)** guide.
 
-![crm form embed (1)](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_embed-1.png)
+![Contact Verification](/forms/opt-in-forms-fluent-forms-basic-configuration/viewing-conatct-9.webp)
 
-After publishing the page with the form only we will see a page similar to the screenshot below:
 
-![crm form on page](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_on_page.png)
-
-We could also create a page and add the form's shortcode to the page in a paragraph or shortcode block, or use the shortcode in the sidebar widget or within a post.
-
-### Entry in Fluent Forms
-
-Now let's test our form by submitting a test name and an email address and then Go to **Fluent Forms >** either **All entries** or the **Form specific Entries** and check the entry that is submitted.
-
-![crm form submitted](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_submitted.png)
-
-After submitting the form with test details check the entry in the Fluent Forms dashboard. You will see the entry details as shown below:
-
-![crm form entry feed](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_entry_feed.png)
-
-#### Feed Status
-
-**Important:** The **Submission Logs** section is very important working with any feeds like FluentCRM in this case. If you ever see any unwanted behavior or the form does not submit the contact to FluentCRM, please check the entry if it is submitted and then this section to check if it shows a _success_ message or not. It will also log the reason if it fails to submit the contact into FluentCRM.
-
-### Contact in FluentCRM
-
-Since the entry shows a success message for the FluentCRM feed, let's check the FluentCRM contacts to see if our test form submission successfully added the contact or not. Go to **FluentCRM  ➜ Contacts** or the [Contacts Dashboard](/docs/contacts-dashboard) and you should see the contact as shown in the below screenshot.
-
-![crm form contact entered](/forms/opt-in-forms-fluent-forms-basic-configuration/crm_form_contact_entered.png)
-
-That's all for the Subscription Form and collecting contact information into FluentCRM. To go beyond please check [Fluent Forms Advanced Configuration](/docs/opt-in-forms-advanced-configuration) for further and advanced configuration.
