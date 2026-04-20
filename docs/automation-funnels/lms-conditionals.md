@@ -6,7 +6,8 @@ order: 0
 ---
 
 # LMS Conditionals
-[FluentCRM](https://fluentcrm.com/) provides several **[Conditionals](/docs/conditional-automation-actions)** for **LMS** (Learning Management System) platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**, allowing you to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions.
+
+FluentCRM provides several **[Conditionals](/docs/conditional-automation-actions)** for **LMS** (Learning Management System) platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**, allowing you to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions.
 
 This article will provide detailed information about all **LMS** **Conditional Actions** of **FluentCRM Automation**. 
 
@@ -18,15 +19,15 @@ To learn how you can use all the **LMS Conditionals** in your FluentCRM, follow 
 
 First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
 
+![Open a desired automation or create new one](/docs/public/automation-funnels/lms-conditionals/lms-condition-1.webp)
+
 > To learn the process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
 
 For example, I opened the **List Applied** automation funnel to explain all the **LMS Conditionals**.
 
-![Open a desired automation or create new one](/automation-funnels/lms-conditionals/1.-Open-a-desired-Automation-or-create-New-one-2-scaled.webp)
-
 Now, click the **Plus Icon** or hover over it and click the **Conditional Action** option to view all the **LMS Conditionals**.
 
-![Click the plus icon or conditional action option](/automation-funnels/lms-conditionals/2.-click-the-Plus-icon-or-Conditional-Action-option-2-scaled.webp)
+![Click the plus icon or conditional action option](/docs/public/automation-funnels/lms-conditionals/lms-condition-2.webp)
 
 Then, a **Check Condition** page will appear in the left Sidebar for adding conditions.  
 The explanation of the following settings is given below:
@@ -42,17 +43,16 @@ The explanation of the following settings is given below:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Check condition page with settings options 4.08.39 pm](/automation-funnels/lms-conditionals/3.-Check-Condition-page-with-Settings-Options-4.08.39-PM-2.webp)
+![Check condition page with settings options 4.08.39 pm](/docs/public/automation-funnels/lms-conditionals/lms-condition-3.webp)
 
-Once you click the **\+ Add** button, you will get all the **LMS Properties** to set the **Parameter** based on the selected property. These are:
+Once you click the **\+ Add** button, you will get all the **LMS Properties** to set the **Parameter** based on the Active LMS Plugins on your site. For example:
 
 1.  LifterLMS
-2.  LearnDash
-3.  TutorLMS 
+2.  TutorLMS 
 
 > To learn the full process of creating a conditional action, read this full [Documentation](/docs/conditional-automation-actions).
 
-![All LMS conditionals](/automation-funnels/lms-conditionals/4-All-LMS-Conditionals.webp)
+![All LMS conditionals](/docs/public/automation-funnels/lms-conditionals/lms-condition-4.webp)
 
 **A detailed explanation of the Properties mentioned above is given below –** 
 
@@ -63,7 +63,7 @@ Once you click the **\+ Add** button, you will get all the **LMS Properties** to
 
 First, go to **Settings** from the **FluentCRM** **Dashboard**, open the **Integration** **Settings**, and click the **Sync LifterLMS Students** button under the **LifterLMS** tab.
 
-![LifterLMS syncing process](/automation-funnels/lms-conditionals/5.-LifterLMS-Syncing-Process-scaled.webp)
+![LifterLMS syncing process](/docs/public/automation-funnels/lms-conditionals/lms-condition-5.webp)
 
 Once you synced, you will get a wide range of **Options** based on the **LIfterLMS** property to set the desired **Parameter** for your condition. These are: 
 
@@ -74,8 +74,6 @@ Once you synced, you will get a wide range of **Options** based on the **LIfterL
 -   First Enrollment Date
 -   Enrollment Categories
 -   Enrollment Tags
-
-![LifterLMS property](/automation-funnels/lms-conditionals/6.-LifterLMS-Property.webp)
 
 #### 2\. LearnDash
 
@@ -89,15 +87,11 @@ Here you will get a wide range of **Options** based on the **LearnDash** propert
 -   Enrollment Categories
 -   Enrollment Tags
 
-![LearnDash property](/automation-funnels/lms-conditionals/7.-LearnDash-Property.webp)
-
 #### 3\. TutorLMS
 
 Here you will get a wide range of **Options** based on the **TutorLMS** property to set the desired **Parameter** for your condition. These are:
 
 -   Course Enrollment
 -   Course Completed
-
-![TutorLMS property](/automation-funnels/lms-conditionals/8.-TutorLMS-Property.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
