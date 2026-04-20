@@ -216,7 +216,7 @@ Here are the Settings of the Update Contact Property action:
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
-![Update contact property](/automation-funnels/primary-automation-actions/action-15.webp)
+![Update contact property](/automation-funnels/primary-automation-actions/action-16.webp)
 
 ### 10\. Outgoing Webhook
 
@@ -226,7 +226,7 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also test your webhook by clicking the **Send Test Webhook** button.  
 
-![Outgoing WebHook](/automation-funnels/primary-automation-actions/action-16.webp)
+![Outgoing WebHook](/automation-funnels/primary-automation-actions/action-outgoing.webp)
 
 **The Settings of the Outgoing Webhook action mentioned above are explained below:**
 
@@ -252,8 +252,6 @@ For instance, authentication can be implemented using Basic OAuth.
 An example of these additional headers is shown in the screenshot below:
 
 If you don’t want to add headers, simply check the **No Headers** box.
-
-![Request Header](/automation-funnels/primary-automation-actions/action-17.webp)
 
 -   **Send Data as Background Process**: Check this option if you have a lot of tasks running, you may want to enable the option to Send Webhook Data as Background Process. However, unchecking this option is recommended so that the webhook data is sent immediately.
 
@@ -303,4 +301,4 @@ Once you are done, click the **Save Settings** button to save all your changes.
 
 ![End this funnel here](/automation-funnels/primary-automation-actions/action-20.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets). Thank you.
