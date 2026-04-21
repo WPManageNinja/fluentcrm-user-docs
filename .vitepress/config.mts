@@ -191,7 +191,15 @@ export default defineConfig({
             },
           ],
         },
-        // 5. Automations & Events
+        // 5. SMS Module
+        {
+          text: 'SMS Module',
+          collapsed: true,
+          items: [
+            { text: 'Configure SMS Module', link: '/docs/configure-sms-module' },
+          ],
+        },
+        // 6. Automations & Events
         {
           text: 'Automations & Events',
           collapsed: true,
@@ -248,7 +256,7 @@ export default defineConfig({
             },
           ],
         },
-        // 6. Integrations
+        // 7. Integrations
         {
           text: 'Integrations',
           collapsed: true,
@@ -305,7 +313,7 @@ export default defineConfig({
             },
           ],
         },
-        // 7. Reports & Analytics
+        // 8. Reports & Analytics
         {
           text: 'Reports & Analytics',
           collapsed: true,
@@ -318,7 +326,7 @@ export default defineConfig({
             { text: 'LifterLMS Advanced Reports', link: '/docs/lifterlms-advanced-reports' },
           ],
         },
-        // 8. Advanced & Developer
+        // 9. Advanced & Developer
         {
           text: 'Advanced & Developer',
           collapsed: true,
@@ -363,7 +371,7 @@ export default defineConfig({
             },
           ],
         },
-        // 9. Migration & Updates
+        // 10. Migration & Updates
         {
           text: 'Migration & Updates',
           collapsed: true,
@@ -381,7 +389,7 @@ export default defineConfig({
             },
           ],
         },
-        // 10. Help & Updates
+        // 11. Help & Updates
         {
           text: 'Help & Updates',
           collapsed: true,
