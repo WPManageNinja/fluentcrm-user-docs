@@ -198,6 +198,7 @@ export default defineConfig({
           items: [
             { text: 'Configure SMS Module', link: '/docs/configure-sms-module' },
             { text: 'Twilio SMS Integration', link: '/docs/twilio-integration' },
+            { text: 'SMS Automation', link: '/docs/sms-automation' },
           ],
         },
         // 6. Automations & Events
