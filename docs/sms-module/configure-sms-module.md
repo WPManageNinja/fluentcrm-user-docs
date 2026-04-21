@@ -31,7 +31,7 @@ Enabling the SMS Module is the essential first step to using this feature for de
 >You must configure either Twilio or Amazon End User Messaging before enabling these SMS settings. Without setting up one of these services, the SMS options will remain disabled.
 
 
-## All SMS Campaigns: creating and managing your SMS
+## SMS Campaigns: Creating and Managing your SMS
 
 The **SMS Campaigns** area is your central hub for creating, scheduling, and managing targeted SMS broadcasts. This feature allows you to reach specific segments of your audience instantly with time-sensitive information, special offers, or critical updates.
 
@@ -39,13 +39,13 @@ The **SMS Campaigns** area is your central hub for creating, scheduling, and man
 
 You can access this feature from the main menu on the FluentCRM top menu bar and selecting the **SMS** dropdown submenu. Here, you will find a dashboard listing all your drafted, scheduled, and completed SMS campaigns.
 
-![Enable SMS Module](/sms-module/configure-sms-module/sms-campaign-2.webp)
+![Creating and Mnaging your SMS](/sms-module/configure-sms-module/sms-campaign-2.webp)
 
 ### Creating a new SMS campaign
 
 To start a new campaign, click the **Create New Campaign** button on the main SMS Campaigns dashboard. The process involves three guided steps: **Start**, **Recipients**, and **Review**.
 
-![Enable SMS Module](/sms-module/configure-sms-module/create-new-campaign-3.webp)
+![Create a new SMS Campaign](/sms-module/configure-sms-module/create-new-campaign-3.webp)
 
 #### Step 1: Start (basic information)
 
@@ -56,7 +56,7 @@ This is where you define the content and identity of your campaign:
 
 Once you have filled in the required details, click **Create & Continue** to go to the next step (**Recipients**).
 
-![Enable SMS Module](/sms-module/configure-sms-module/start-4.webp)
+![Start](/sms-module/configure-sms-module/start-4.webp)
 
 #### Step 2: Recipients (selecting subscribers)
 
@@ -64,15 +64,15 @@ In this step, you define your target audience. You have three methods for select
 
 * **By List & Tag:** Select **Included Contacts** based on specific lists and tags. You can also choose contacts to **exclude**, which removes specific lists or tags from your selection. To add multiple lists and tags, click the **Plus (+)** icon.
 
-![Enable SMS Module](/sms-module/configure-sms-module/by-list-and-tag-5.webp)
+![Recipients](/sms-module/configure-sms-module/by-list-and-tag-5.webp)
 
 * **By Dynamic Segment:** If you have pre-configured dynamic segments in FluentCRM, select one from the dropdown. The system targets all contacts currently matching that segment’s criteria.
 
-![Enable SMS Module](/sms-module/configure-sms-module/by-dynamic-segment-6.webp)
+![Dynamic Segment](/sms-module/configure-sms-module/by-dynamic-segment-6.webp)
 
 * **By Advanced Filter:** Build conditional filters using data from modules like Contact Activities, FluentAffiliate, and FluentCart to target subscribers by actions, purchases, or engagement.
 
-![Enable SMS Module](/sms-module/configure-sms-module/by-advanced-filter-7.webp)
+![Advanced Filter](/sms-module/configure-sms-module/by-advanced-filter-7.webp)
 
 As you define your criteria, the system shows a live count (for example, “109 contacts found”) to validate your selection. When you are satisfied, click **Continue** to go to the next step (**Review**).
 
@@ -90,7 +90,7 @@ When you have chosen your scheduling method and verified recipients and content,
 
 ![Review and broadcast step](/sms-module/configure-sms-module/receipients-8.webp)
 
-### Key features and data columns
+### Key Features and Data Columns
 
 The campaigns dashboard shows each broadcast with:
 
@@ -106,9 +106,9 @@ The campaigns dashboard shows each broadcast with:
 * **Broadcast:** Date and time the campaign was or will be broadcast.
 * **Recipients:** The total count of contacts targeted for the broadcast.
 
-![Review and broadcast step](/sms-module/configure-sms-module/data-colum-9.webp)
+![Feature and Data Columns](/sms-module/configure-sms-module/data-colum-9.webp)
 
-## All SMS activities: monitoring delivery and status
+## SMS Activities: Monitoring Delivery and Status
 
 The **All SMS Activities** section is a centralized log of every SMS sent through your FluentCRM account, including messages from campaigns and automations. Use it to monitor delivery, troubleshoot, and audit your communication history.
 
@@ -119,29 +119,29 @@ SMS Activities acts as a reporting view into every transaction handled by the SM
 ![Review and broadcast step](/sms-module/configure-sms-module/all-sms-10.webp)
 
 
-### Key data points for tracking
+### Key Data Points for Tracking
 
 The activity log includes:
 
 * **Contact:** The subscriber who received the message.
 * **Message:** Full SMS content sent to the contact.
 * **Source:** How the message was triggered (for example, a campaign broadcast or an automation).
-* **Status:** Delivery status (for example, **Delivered**, **Failed**, or **Pending**) as reported by your provider (**Twilio**, **Amazon SNS**, etc.).
+* **Status:** Delivery status (for example, **Delivered**, **Failed**, or **Pending**) as reported by your provider (**[Twilio](/twilio-integration)**, **Amazon End User Messaging**, etc.).
 * **Sending time:** When the message was sent or attempted.
 * **Actions:** Options such as viewing details or troubleshooting.
 
-![Review and broadcast step](/sms-module/configure-sms-module/sms-activities-11.webp)
+![Key Data Point Tracking](/sms-module/configure-sms-module/sms-activities-11.webp)
 
 ## Send SMS from individual contacts
 
 In addition to campaigns and automations, you can send direct, one-to-one messages from a contact’s profile.
 
-### Accessing the direct SMS feature
+### Accessing the Direct SMS Feature
 
 1. Open **Contacts** from the FluentCRM dashboard and select the contact.
 2. On the contact’s details page (emails, lists, tags, etc.), open the **SMS** tab next to **Emails** and **Purchase History** (or similar tabs).
 
-### Using the direct messaging interface
+### Using the Direct Messaging Interface
 
 The SMS tab includes:
 
@@ -154,6 +154,6 @@ Messages sent this way appear in the contact’s activity and count toward **DIR
 
 To build full workflows that include SMS, start with [Introduction to FluentCRM Automation](/docs/introduction-to-fluentcrm-automation).
 
-![Review and broadcast step](/sms-module/configure-sms-module/individualy-sms-send-12.webp)
+![Indivisual SMS Send](/sms-module/configure-sms-module/individualy-sms-send-12.webp)
 
 That covers the core SMS Module setup and usage. If you have any further questions about this article, please contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).
