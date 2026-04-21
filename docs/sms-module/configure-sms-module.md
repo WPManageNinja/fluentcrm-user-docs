@@ -25,7 +25,11 @@ Once you have enabled the module and selected a provider (which will be configur
 
 ![Enable SMS Module](/sms-module/configure-sms-module/enable-sms-module.webp)
 
-Enabling the SMS Module is the essential first step to using this feature for delivering **All SMS Campaigns** to specific subscribers based on tags or lists, and viewing **All SMS Activities** within your dashboard.
+Enabling the SMS Module is the essential first step to using this feature for delivering **SMS Campaigns** to specific subscribers based on tags or lists, and viewing **SMS Activities** within your dashboard.
+
+>[!Note]
+>You must configure either Twilio or Amazon End User Messaging before enabling these SMS settings. Without setting up one of these services, the SMS options will remain disabled.
+
 
 ## All SMS Campaigns: creating and managing your SMS
 
