@@ -14,7 +14,7 @@ This article will guide you through connecting your Twilio account to FluentCRM.
 
 ## Accessing the Twilio SMS Provider
 
-Before you begin, ensure you have enabled the **SMS Module** in your FluentCRM settings. You can do this by navigating to **FluentCRM Pro** $\rightarrow$ **Settings** $\rightarrow$ **SMS Settings** and toggling the **Enable SMS Module** switch to **ON**.
+Before you begin, ensure you have enabled the **SMS Module** in your FluentCRM settings. You can do this by navigating to **FluentCRM Pro** > **Settings** > **SMS Settings** and toggling the **Enable SMS Module** switch to **ON**.
 
 1.  From the **SMS Settings** page, locate the **SMS Provider** section.
 2.  Click the **Choose your SMS provider** dropdown menu and select **Twilio** from the available options.
