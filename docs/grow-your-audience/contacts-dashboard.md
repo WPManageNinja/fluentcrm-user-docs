@@ -79,7 +79,7 @@ All the above 3 types of filters work as **AND** conditions in conjunction.
 
 ### Pagination
 
-And contacts listed can be paginated per 10, 20, 50, 80, 100, 120, 150, 200, 250, 300, 400, and 600 contacts per page from the bottom dropdown option as shown in the below screenshot.
+And contacts listed can be paginated per 10, 20,.. contacts per page from the bottom dropdown option as shown in the below screenshot.
 
 ![contacts fluentcrm 3](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-3.webp)
 
