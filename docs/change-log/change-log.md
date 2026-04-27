@@ -6,6 +6,84 @@ order: 0
 ---
 
 # Changelog
+
+\= 3.0.0-rc.2.1 (Date: April 23, 2026) =
+
+-   Hotfix: Frontend Portal rendering fix for standalone slug pages
+-   Hotfix: AI Writing connection test for selected providers
+-   Improvement: Pro license activation flow polish
+-   Other minor stability fixes
+
+\= 3.0.0-rc.2 (Date: April 23, 2026) =
+
+-   New: Frontend Portal introduced (Pro) – `[fluent_crm]` shortcode and standalone page modes for a logged-in user-facing portal
+-   New: Bulk-action floating bar for Contacts list with refreshed selection UI
+-   Improvement: Contact list pagination supports up to 600 contacts per page
+-   Improvement: Refined Email Patterns library, Patterns can be inserted/saved directly from the Gutenberg block editor
+-   Improvement: AI Writing flow polish (provider switching, error states)
+-   Improvement: Email sending speed and reliability
+-   Fixed: Various v3 RC issues reported during the beta cycle
+
+\= 3.0.0-rc.1 (Date: April 2026) =
+
+-   New: Reports rewritten with new charts, widgets, and improved campaign insights
+-   New: UTM details now visible inside campaign details after sending
+-   New: Twilio incoming webhook support for inbound SMS handling
+-   Improvement: Dashboard widgets for Active Automations, Recommendations, Recent Campaigns, and Sales filter
+-   Improvement: Compliance settings page made first-class with `anonymize_ip`, `email_open_tracking`, `email_click_tracking`, `personal_data_export`, and `one_click_unsubscribe` toggles
+-   Improvement: System Admin Tools area split into Cron Job Monitor, Data Cleanup, and CRM Database Reset routes
+
+\= 3.0.0-beta.10 (Date: April 2026) =
+
+-   New: UTM visibility added to campaign details / link stats post-send
+-   Improvement: Email Patterns import/export
+-   Improvement: Frontend Portal profile dropdown with branding controls (Pro)
+-   Fixed: Edge cases in Dynamic Segments rendering
+
+\= 3.0.0-beta.8 (Date: April 2026) =
+
+-   Improvement: Reports area polish – chart labels, monthly grouping, currency formatting
+-   Improvement: AI Writing settings page (`/settings/ai_settings`) with provider selection (OpenAI, Claude, Gemini)
+-   Improvement: Drag-and-drop reorder for Custom Contact Fields builder
+-   Fixed: Dark Mode persistence per user
+
+\= 3.0.0-beta.5 (Date: March 2026) =
+
+-   New: toSend email service integration and bounce webhook (`fluent-crm/v2/public/bounce_handler/tosend/...`)
+-   New: Dynamic Segments menu item under Contacts (Pro segment types)
+-   Improvement: Global Search powered by `OptionsController::search()` with scopes for subscribers, campaigns, automations, companies, and notes
+-   Improvement: Admin bar global search entry
+
+\= 3.0.0-beta.3 (Date: March 2026) =
+
+-   New: SMS Smartcodes available across SMS campaigns and automations
+-   New: Twilio incoming SMS handling via dedicated webhook
+-   New: Dedicated SMS Settings tab (`/settings/sms_settings`) and SMS section in admin menu (Pro)
+-   Improvement: Amazon End User Messaging (SNS) provider polish
+
+\= 3.0.0-beta.1 (Date: February 2026) =
+
+-   New: FluentCRM 3.0 rebuilt on Vue 3 + Element Plus
+-   New: Gutenberg-native email builder with device preview, media button, and reusable Email Patterns
+-   New: SMS Marketing module (Twilio + Amazon End User Messaging) with campaigns and automation actions
+-   New: AI Writing assistant for email content (Smart Headings, Smart Buttons, Magic Image, content rewrite)
+-   New: FluentCart abandoned cart recovery (core) with dedicated driver and trigger
+-   New: FluentCart Order, Subscription, and Abandon Cart triggers in core
+-   New: Email Patterns library with a dedicated **Emails → Patterns** page
+-   New: Dedicated Email Preference page for subscribers
+-   New: Dark Mode with persistent per-user preference
+-   New: RTL support – `admin_rtl.css` auto-loads for right-to-left languages
+-   New: Global Search across subscribers, campaigns, automations, companies, and notes
+-   New: Contacts → Segments (Dynamic Segments) menu item
+-   New: Drag-and-drop builder for Custom Contact Fields
+-   New: Reorganized Settings, Addons, and System Admin Tools areas
+-   Improvement: "Funnels" relabeled to **Automations** in user-facing copy
+-   Improvement: Improved Docs/Help page in admin
+-   Improvement: Bulk import flow with progress feedback
+-   Improvement: Email sending speed and queue reliability
+-   Compatibility: WordPress 6.7+, PHP 7.4+
+-   Note: This is the first major release in the 3.0 line. Please back up your site before upgrading.
+
 \= 2.9.87 (Date: November 24, 2025) =
 
 -   Hotfix: Automation Custom Email Sending Issue Fixed

@@ -13,6 +13,12 @@ https://www.youtube.com/watch?v=tKrGDW6L62Y
 
 FluentCRM provides an excellent contacts dashboard that represents all the necessary summaries of the activities. Total Contacts Paginated, Filter by Tags & Lists & Status, Advanced Filter with numerous data, Searchbox, Import & Export of the contacts, Bulk Actions on Contact Selection, and many more on the front page or the Contacts Dashboard.
 
+> **New in v3:**
+>
+> -   **Bulk-action floating bar** – When you select one or more contacts, a floating action bar appears at the bottom of the screen with the most-used bulk actions (apply tag/list, change status, send double opt-in, export, delete). It stays in view as you scroll, so you no longer have to scroll back to the top to apply an action.
+> -   **Up to 600 contacts per page** – The pagination dropdown now goes up to **600 / page** for power users managing very large lists.
+> -   **Segments menu item** – **Contacts → Segments** sits alongside Lists, Tags, and Companies for quick access to [Dynamic Segments](/docs/segment-your-audience#dynamic-segments).
+
 ![contacts fluentcrm](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM.webp)
 
 The key points are discussed below:

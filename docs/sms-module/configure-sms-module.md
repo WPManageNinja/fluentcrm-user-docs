@@ -7,21 +7,26 @@ order: 1
 
 # Configure SMS Module
 
-The **SMS Module** is a powerful feature in FluentCRM that allows you to deliver SMS campaigns and automate messages directly to your subscribers or customers. This feature is crucial for time-sensitive or high-priority communications, complementing your existing email marketing efforts.
+The **SMS Module** is a powerful feature in [FluentCRM](https://fluentcrm.com/) Pro that allows you to deliver SMS campaigns and automate messages directly to your subscribers or customers. This feature is crucial for time-sensitive or high-priority communications, complementing your existing email marketing efforts.
 
-In this article, you will learn how to enable the core SMS Module in your FluentCRM installation before configuring your preferred SMS provider.
+In this article, you will learn how to enable the SMS Module in your FluentCRM installation before configuring your preferred SMS provider.
+
+> **Note:** The SMS Module is a **FluentCRM Pro** feature. The free FluentCRM plugin does not include SMS campaigns or SMS automation actions.
 
 ## Enabling the SMS Module
 
 To activate SMS functionality within your CRM, you need to navigate to the plugin settings and enable the module.
 
-First, from your WordPress dashboard, go to **FluentCRM Pro** and click **Settings** in the main navigation sidebar.
+From your WordPress dashboard, go to **FluentCRM → Settings**. The settings URL fragment is `/settings/sms_settings` – click **SMS Setting** in the left-hand sidebar.
 
-Once in the Settings area, click **SMS Settings** from the left-hand menu. On the SMS Settings page, locate the toggle switch for **Enable SMS Module**.
+On the SMS Setting page, locate the toggle switch for **Enable SMS Module**. Enabling this module unlocks the ability to create and send SMS campaigns and use SMS in your automations.
 
-Enabling this module unlocks the ability to create and send SMS campaigns and use SMS in your automations. After enabling the module, you must select an **SMS Provider** from the dropdown menu below. Currently, FluentCRM supports **Twilio** and **Amazon SNS**.
+After enabling the module, you must select an **SMS Provider** from the dropdown menu below. FluentCRM supports two providers out of the box:
 
-Once you have enabled the module and selected a provider (which will be configured in separate steps), be sure to click the **Save Settings** button to apply your changes.
+-   **[Twilio](/docs/twilio-integration)** – Global SMS leader with strong deliverability.
+-   **[Amazon End User Messaging (SNS)](/docs/amazon-end-user-messaging)** – AWS-native SMS service.
+
+Once you have enabled the module and selected a provider (configured in separate steps), be sure to click the **Save Settings** button to apply your changes.
 
 ![Enable SMS Module](/sms-module/configure-sms-module/enable-sms-module.webp)
 
@@ -29,6 +34,14 @@ Enabling the SMS Module is the essential first step to using this feature for de
 
 >[!Note]
 >You must configure either Twilio or Amazon End User Messaging before enabling these SMS settings. Without setting up one of these services, the SMS options will remain disabled.
+
+### Twilio incoming webhook
+
+When you save Twilio credentials, FluentCRM also generates a unique **SMS Incoming Webhook URL** at the bottom of the SMS Setting page. Paste this URL into your Twilio messaging service's **A message comes in** webhook field if you want FluentCRM to receive replies and inbound messages from contacts. See the full walkthrough on the [Twilio SMS Integration](/docs/twilio-integration) page.
+
+### SMS Smart Codes
+
+You can personalise every SMS just like an email. Click the **{ }** smart-code icon next to the message field to insert tokens like `##contact.first_name##`, `##contact.email##`, custom field values, or any other smart code FluentCRM ships with. The full token list is documented at [Merge Codes / Smart Codes Usage](/docs/merge-codes-smart-codes-usage).
 
 
 ## SMS Campaigns: Creating and Managing your SMS

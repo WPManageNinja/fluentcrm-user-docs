@@ -36,6 +36,8 @@ Once you are done providing and selecting all the necessary information, click o
 
 FluentCRM also provides an easy way to apply various actions against single or multiple contacts upon selection. To learn how to **manage a single contact or multiple contacts in bulk**, follow the steps with the screenshots below –
 
+> **New in v3:** When one or more contacts are selected, a **bulk-action floating bar** appears at the bottom of the screen with the most-used actions ready to apply – it stays in view as you scroll, so you don't need to return to the top of the page after picking your contacts. You can also paginate up to **600 contacts per page** from the pagination dropdown for very large lists.
+
 First, **select** the **desired contact/s** you want to manage, a **Select Action** dropdown field will appear click on it and you will get all the **Actions** for managing your contact/s.
 
 **All the available Actions for Managing your Contact/s mentioned below are briefly explained below:**

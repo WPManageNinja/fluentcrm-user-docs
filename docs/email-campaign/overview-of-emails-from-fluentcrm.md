@@ -21,8 +21,9 @@ FluentCRM offers several ways to compose and send emails depending on your marke
 
 Campaigns are bulk marketing messages sent to a large group of contacts at once.
 
- * **Flexible Editors:** When creating a campaign, you can choose from multiple editors: **Default (Gutenberg)** for a block-based experience, **Classic Editor** for simple text, **Raw HTML** for full control, or the **Visual Builder** for a drag-and-drop experience.
- * **Scheduling:** You can send campaigns immediately or schedule them for a specific date and time in the future. More about templates are discussed in [**Email Campaigns**](/docs/setting-up-campaign).
+ * **Gutenberg-native editor:** v3 uses the WordPress block editor as the default email composer, with **Device Preview**, the WordPress media library, [reusable Email Patterns](/docs/email-patterns), and [AI Writing](/docs/ai-writing-settings) built in.
+ * **Switch Editor any time:** Prefer drag-and-drop? The **Visual Builder** is one click away. Coding from scratch? Use **Raw HTML**. There's also the **Classic Editor** if that's how you prefer to work.
+ * **Scheduling:** Send campaigns immediately, schedule them for a specific date and time, or queue them for a sending time-window. More about campaigns is discussed in [**Email Campaigns**](/docs/setting-up-campaign).
 
 ![crm email compose campaign](/email-campaign/overview-of-emails-from-fluentcrm/email-campaign-1.webp)
 
@@ -52,7 +53,13 @@ Save time by building a layout with your brand's logo, colors, and footer, then 
 
 ![Composing Emails in Email Template](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_template-4.webp)
 
-### 5. Send Custom Email (Automation Action)
+### 5. Email Patterns *(new in v3)*
+
+Found under **Emails ➜ Patterns**, this is a library of reusable Gutenberg blocks – think hero headers, featured-product rows, footers, testimonial sections – that you can drop into any campaign or automation email.
+
+Build a section once, save it as a Pattern, and insert it anywhere with one click. The full walkthrough lives on the [**Email Patterns**](/docs/email-patterns) page.
+
+### 6. Send Custom Email (Automation Action)
 
 Within any **Automation Funnel**, you can add a **Send Custom Email** action. This is perfect for sending specific, automated messages triggered by a user's behavior (like a "Thank You" email after a purchase).
 

@@ -1,11 +1,20 @@
 ---
-title: "Tools"
+title: "System Admin Tools"
 slug: "fluentcrm-tools-settings"
 category: "global-settings"
 order: 0
 ---
 
-# Tools
+# System Admin Tools
+
+The **System Admin Tools** area in [FluentCRM](https://fluentcrm.com/) v3 brings together every administrative tool you need to keep your CRM healthy: REST API checks, the Cron Job Monitor, Data Cleanup, and the database reset utility. These were grouped under "Tools" in older versions; v3 splits them into clearly-labelled sub-routes under one **System Admin Tools** menu so you always know where to look.
+
+To open them, go to **FluentCRM → Settings → System Admin Tools** in your WordPress admin. From there, the left-hand sub-navigation exposes:
+
+-   **Cron Job Monitor** – Inspect REST API status and scheduled tasks (this page).
+-   **Data Cleanup** – Trim email logs, click logs, and open logs older than a specified number of days.
+-   **CRM Database Reset** – Wipe FluentCRM tables in development environments (gated behind a `wp-config.php` flag).
+-   **System Logs** *(optional, behind an experimental flag)* – Inspect detailed application logs for debugging.
 
 ## REST API 
 

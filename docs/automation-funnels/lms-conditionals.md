@@ -19,7 +19,7 @@ To learn how you can use all the **LMS Conditionals** in your FluentCRM, follow 
 
 First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
 
-![Open a desired automation or create new one](/docs/public/automation-funnels/lms-conditionals/lms-condition-1.webp)
+![Open a desired automation or create new one](/automation-funnels/lms-conditionals/lms-condition-1.webp)
 
 > To learn the process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
 
@@ -27,7 +27,7 @@ For example, I opened the **List Applied** automation funnel to explain all the 
 
 Now, click the **Plus Icon** or hover over it and click the **Conditional Action** option to view all the **LMS Conditionals**.
 
-![Click the plus icon or conditional action option](/docs/public/automation-funnels/lms-conditionals/lms-condition-2.webp)
+![Click the plus icon or conditional action option](/automation-funnels/lms-conditionals/lms-condition-2.webp)
 
 Then, a **Check Condition** page will appear in the left Sidebar for adding conditions.  
 The explanation of the following settings is given below:
@@ -43,7 +43,7 @@ The explanation of the following settings is given below:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Check condition page with settings options 4.08.39 pm](/docs/public/automation-funnels/lms-conditionals/lms-condition-3.webp)
+![Check condition page with settings options 4.08.39 pm](/automation-funnels/lms-conditionals/lms-condition-3.webp)
 
 Once you click the **\+ Add** button, you will get all the **LMS Properties** to set the **Parameter** based on the Active LMS Plugins on your site. For example:
 
@@ -52,7 +52,7 @@ Once you click the **\+ Add** button, you will get all the **LMS Properties** to
 
 > To learn the full process of creating a conditional action, read this full [Documentation](/docs/conditional-automation-actions).
 
-![All LMS conditionals](/docs/public/automation-funnels/lms-conditionals/lms-condition-4.webp)
+![All LMS conditionals](/automation-funnels/lms-conditionals/lms-condition-4.webp)
 
 **A detailed explanation of the Properties mentioned above is given below –** 
 
@@ -63,7 +63,7 @@ Once you click the **\+ Add** button, you will get all the **LMS Properties** to
 
 First, go to **Settings** from the **FluentCRM** **Dashboard**, open the **Integration** **Settings**, and click the **Sync LifterLMS Students** button under the **LifterLMS** tab.
 
-![LifterLMS syncing process](/docs/public/automation-funnels/lms-conditionals/lms-condition-5.webp)
+![LifterLMS syncing process](/automation-funnels/lms-conditionals/lms-condition-5.webp)
 
 Once you synced, you will get a wide range of **Options** based on the **LIfterLMS** property to set the desired **Parameter** for your condition. These are: 
 

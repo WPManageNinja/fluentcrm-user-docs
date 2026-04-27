@@ -9,7 +9,7 @@ order: 0
 
 FluentCRM and Fluent Forms work seamlessly when installed on the same site, but you may want to collect leads from different websites or domains and centralize them within a single FluentCRM dashboard. By utilizing the **Incoming Webhooks** feature in FluentCRM and the **Webhook Integration** in Fluent Forms, you can capture remote data effortlessly.
 
-For this purpose, we will utilize the feature of [Fluent Forms webhook integration](/docs/connecting-fluent-forms-from-one-domain-with-fluent-crm-to-another-domain/) and Fluent CRM [Incoming Webhooks](/docs/global-incoming-webhooks).
+For this purpose, we will utilise [Fluent Forms' Webhook integration](https://fluentforms.com/docs/webhooks-integration-with-fluent-forms/) on the source site and FluentCRM's [Incoming Webhooks](/docs/global-incoming-webhooks) on the destination site.
 
 ![Webhook](/forms/capturing-leads-through-fluent-forms-webhook/crm_form_webhook_remote-1.webp)
 

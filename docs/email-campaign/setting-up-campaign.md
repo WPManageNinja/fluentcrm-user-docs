@@ -26,10 +26,10 @@ From **Emails ➜ Campaigns**, you can create an email campaign by clicking on t
 
 A popup will appear asking for an **Internal Campaign Title**. This name is for your reference only and will not be seen by subscribers. After entering the title, choose your preferred editor:
 
- * **Default (Gutenberg):** A modern, block-based editor.
+ * **Default (Gutenberg):** The v3 Gutenberg-native editor with device preview, [Email Patterns](/docs/email-patterns), and [AI Writing](/docs/ai-writing-settings).
+ * **Visual Builder:** A drag-and-drop builder for highly designed layouts.
  * **Classic Editor:** A simple, traditional text editor.
  * **Raw HTML:** For advanced users who want to paste custom code.
- * **Visual Builder:** A drag-and-drop builder for highly designed layouts.
 
 Click **Create Campaign** to move to the editor.
 
@@ -77,9 +77,11 @@ This is the "hook" text that appears next to the subject line in an inbox.
 
 #### UTM Parameters
 
-Click the checkbox to Add the required UTM Parameters For URLs: **Campaign Source**, **Medium**, and **Campaign Name** for the UTM parameter. You can also add **Campaign Term** and **Content** for the URL parameter.. This allows you to see exactly which campaign drove traffic in tools like Google Analytics.
+Click the checkbox to add UTM parameters to every URL in the email: **Campaign Source**, **Medium**, and **Campaign Name** are required, while **Campaign Term** and **Content** are optional. This allows you to see exactly which campaign drove traffic in tools like Google Analytics.
 
 ![crm campaign utm](/email-campaign/setting-up-campaign/crm_campaign_UTM-6.webp)
+
+> **New in v3:** Once a campaign is sent, the UTM tags you applied are visible in the campaign's **Details** tab and shown next to each tracked link in the **Link Activity** report. This makes it easy to confirm what was tagged after the fact – see [Campaign Summary & Actions](/docs/campaign-summary-actions) for the full report.
 
 #### Send a Test Email
 

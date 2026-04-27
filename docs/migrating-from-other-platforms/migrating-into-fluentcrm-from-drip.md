@@ -5,7 +5,7 @@ category: "migrating-from-other-platforms"
 order: 0
 ---
 
-# Migrating from Drip to FleuntCRM
+# Migrating from Drip to FluentCRM
 
 Moving your contacts from Drip to FluentCRM is incredibly simple thanks to a direct API connection. This method allows the two systems to sync directly, so you don’t have to worry about manual downloads or messy CSV spreadsheets.
 

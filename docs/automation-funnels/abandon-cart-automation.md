@@ -6,9 +6,12 @@ order: 0
 ---
 
 # Abandon Cart Automation
-With FluentCRM, you can automate abandoned cart recovery for WooCommerce, segment your customers by adding tags and lists, and run email campaigns for users. This article will guide you through starting automation for abandoned carts.
 
-## Abandon Cart Automation 
+With [FluentCRM](https://fluentcrm.com/), you can automate abandoned cart recovery for **WooCommerce**, segment your customers by adding tags and lists, and run email campaigns to bring shoppers back. This article walks you through building the recovery automation for WooCommerce.
+
+> **Looking for FluentCart?** v3 also ships a dedicated FluentCart driver. See [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation) for the step-by-step walkthrough.
+
+## Abandon Cart Automation 
 
 Go to your FluentCRM and select **[Automation](/docs/introduction-to-fluentcrm-automation)** from the Navbar then click on the **New Automation** button. 
 
@@ -45,5 +48,11 @@ With the default condition options, you will also see a specific condition optio
 ![automation funnels fluentcrm abandon 5](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-5-scaled.webp)
 
 Finally, click the **Save Settings** button to save your automation settings then design your automation funnel as desired.
+
+## Related reading
+
+-   [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation)
+-   [Abandoned Cart Settings](/docs/abandoned-cart-settings)
+-   [Abandoned Cart Report](/docs/abandoned-cart-report)
 
 If you have any further questions about abandoned cart automation, please feel free to [contact us.](https://wpmanageninja.com/support-tickets/)

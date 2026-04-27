@@ -20,6 +20,8 @@ In **FluentCRM**, the **Visual Builder** is integrated across all primary email 
 
 Once you are in any of these sections, you can initiate the builder by selecting a **Starter Design** **(such as Blank, Standard, or Sales)** or by using the **Switch Editor** panel to select **Visual Builder**.
 
+> **Tip:** Want to write or rewrite copy with AI? Connect a provider on the [AI Writing Settings](/docs/ai-writing-settings) page and the Smart Headings, Smart Buttons, and Magic Image tools will appear directly in the block toolbar.
+
 ![fluentcrm visual builder 1](/email-campaign/fluentcrm-visual-builder/FluentCRM-Visual-Builder-1.webp)
 
 Here are two default free email templates for your visual email body. Just click on the template to use them or you can start with the **Blank** template.

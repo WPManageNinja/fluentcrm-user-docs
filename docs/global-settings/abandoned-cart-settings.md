@@ -7,7 +7,7 @@ order: 0
 
 # Abandoned Cart Settings
 
-With FluentCRM, you can automate the process of managing WooCommerce product [abandoned carts](https://fluentcrm.com/what-is-abandoned-cart/). This article will guide you through the settings for the Abandoned Cart feature. To use this feature, ensure that WooCommerce is installed on your site.
+With [FluentCRM](https://fluentcrm.com/), you can automate the recovery of [abandoned carts](https://fluentcrm.com/what-is-abandoned-cart/) from both **WooCommerce** and **FluentCart**. This article walks you through every setting on the Abandoned Cart Settings page – timing rules, GDPR consent, audience segmentation, and the per-driver options for WooCommerce and FluentCart. To use the feature, make sure either WooCommerce or FluentCart is installed and activated.
 
 https://youtu.be/w_5CKt1sJv4
 
@@ -19,6 +19,15 @@ To enable the Abandoned Cart feature, check the box labeled **Enable Abandoned C
 
 ![abandon cart settings fluentcrm 1](/global-settings/abandoned-cart-settings/Abandon-Cart-Settings-FluentCRM-1-scaled.webp)
 
+### Drivers (WooCommerce / FluentCart)
+
+In v3, abandoned-cart tracking is driver-based. FluentCRM ships with two drivers out of the box:
+
+-   **WooCommerce driver** – tracks WooCommerce classic cart and block-based checkout.
+-   **FluentCart driver** *(new)* – tracks FluentCart carts. Bundled with FluentCRM core (free).
+
+If both plugins are installed, FluentCRM enables both drivers and you'll see two configuration sections on this page – one per driver. If only one of WooCommerce or FluentCart is active, only that driver's section is shown.
+
 ### WooCommerce Specific Settings
 
 If you Enable Abandoned cart Fetaure for WooCommerce, you have access to these specific recovery and exclusion controls:
@@ -29,7 +38,15 @@ This means that when the status of an order in WooCommerce changes to any of the
 
 ![abandon cart settings for woocommerce](/global-settings/abandoned-cart-settings/Abandon-Cart-Settings-woocommerce.webp)
 
-## **Timing Configuration** 
+### FluentCart Specific Settings
+
+If FluentCart is installed, a parallel section appears for the FluentCart driver. The same idea applies – pick the order statuses that should mark a captured cart as recovered.
+
+The option **Mark Cart as Recovered when FluentCart Order Status Changes to** typically includes _Paid_, _Processing_, and _Completed_. Once a FluentCart order moves into one of the selected statuses, FluentCRM marks the corresponding abandoned cart as recovered, stops any in-flight recovery automations, and (optionally) removes the temporary abandoned-cart lists/tags.
+
+> **Note:** The FluentCart driver lives in FluentCRM core – no additional add-on is required. If you want a step-by-step automation walkthrough specific to FluentCart, see [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation).
+
+## **Timing Configuration** 
 
 In the Abandoned Cart Settings you will get some options for the Abandoned Automation. 
 
@@ -65,6 +82,12 @@ Each option includes a dropdown to select existing lists or tags, and a **plus (
 
 Once all done, click the **Save** button to apply all the changes you’ve made.
 
-> The Abandoned Cart feature works with the **WooCommerce Classic Cart**.
+> **Compatibility:** The WooCommerce driver supports both the **Classic Cart** and the **block-based checkout**. The FluentCart driver supports the standard FluentCart checkout. If you only see one section on this page, confirm both plugins are installed and activated.
+
+## Related reading
+
+-   [Abandon Cart Automation (WooCommerce)](/docs/abandon-cart-automation)
+-   [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation)
+-   [Abandoned Cart Report](/docs/abandoned-cart-report)
 
 If you have any questions about the Abandoned Cart settings, please feel free to [contact us](https://wpmanageninja.com/support-tickets/).

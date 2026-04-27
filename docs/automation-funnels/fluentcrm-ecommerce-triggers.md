@@ -7,9 +7,9 @@ order: 0
 
 # Ecommerce Triggers
 
-FluentCRM provides powerful automation triggers for leading E-commerce Platforms like **WooCommerce**, **SureCart**, and **Easy Digital Downloads (EDD)**. These triggers allow you to start dynamic marketing funnels based entirely on your customers' shopping behavior and purchase history.
+FluentCRM provides powerful automation triggers for leading E-commerce Platforms like **WooCommerce**, **FluentCart**, **SureCart**, and **Easy Digital Downloads (EDD)**. These triggers allow you to start dynamic marketing funnels based entirely on your customers' shopping behavior and purchase history.
 
-> **Note:** To use these triggers, you must have the respective E-commerce plugin installed and activated on your website, along with **FluentCRM Pro**. 
+> **Note:** **FluentCart** triggers ship with **FluentCRM core (free)** – no Pro upgrade required. **WooCommerce**, **SureCart**, **EDD**, and **AffiliateWP** triggers require **FluentCRM Pro**. The respective e-commerce plugin must be installed and activated on your site.
 
 Here is everything you need to know to automate your e-commerce workflows!
 
@@ -37,9 +37,9 @@ WooCommerce is deeply integrated with FluentCRM. Clicking the WooCommerce tab re
 
 ![Ecommerce Trigger](/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-3.webp)
 
-### 2. FluentCart Triggers
+### 2. FluentCart Triggers *(included in FluentCRM core)*
 
-FluentCart includes dedicated order and subscription triggers so you can automate post-purchase and lifecycle communication from one place.
+FluentCart includes dedicated order, subscription, and abandoned-cart triggers so you can automate post-purchase and lifecycle communication from one place. **These triggers ship with the free FluentCRM plugin** – you do not need FluentCRM Pro to use them.
 
 Available FluentCart triggers include:
 
@@ -48,10 +48,12 @@ Available FluentCart triggers include:
 * **Order Delivered:** Runs when an order is marked as delivered.
 * **Order Refunded (Full):** Runs when an order is fully refunded.
 * **Order Canceled:** Runs when an order is canceled.
-* **Subscription Expired / End of Access Validity:** Runs when subscription access ends.
+* **Order Status Changed:** Runs when a FluentCart order moves between statuses.
 * **Subscription Activated:** Runs when a subscription becomes active.
 * **Subscription Cancelled:** Runs when a subscription is canceled.
 * **Subscription Renewed:** Runs after a successful subscription renewal.
+* **Subscription Expired / End of Access Validity:** Runs when subscription access ends.
+* **Cart Abandoned (FluentCart):** Runs when a FluentCart cart is left without checkout. See [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation) for the full walkthrough.
 
 ![Ecommerce Trigger](/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-2.webp)
 

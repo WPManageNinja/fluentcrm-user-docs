@@ -42,7 +42,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name. 
 
-![Memberpress triggers](/docs/public/automation-funnels/fluentcrm-membership-triggers/membership-triggers-1.webp)
+![Memberpress triggers](/automation-funnels/fluentcrm-membership-triggers/membership-triggers-1.webp)
 
 ### Membership Enrolled
 
@@ -84,7 +84,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name. 
 
-![Paid membership pro triggers](/docs/public/automation-funnels/fluentcrm-membership-triggers/membership-triggers-3.webp)
+![Paid membership pro triggers](/automation-funnels/fluentcrm-membership-triggers/membership-triggers-3.webp)
 
 ### Membership Enrolled
 
@@ -156,7 +156,7 @@ Once you select your desired **Trigger**, click the **Continue** button, and put
 
 If you leave it blank, it will automatically titled according to its trigger’s name.
 
-![Wishlist member trigger](/docs/public/automation-funnels/fluentcrm-membership-triggers/membership-triggers-2.webp)
+![Wishlist member trigger](/automation-funnels/fluentcrm-membership-triggers/membership-triggers-2.webp)
 
 ### Membership Enrolled 
 

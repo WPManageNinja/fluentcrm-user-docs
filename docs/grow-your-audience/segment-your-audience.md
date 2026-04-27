@@ -51,9 +51,24 @@ You can filter contacts by their assigned company, allowing you to send targeted
 
 Dynamic Segments are advanced, real-time filters. Unlike Lists, Tags, or Companies, which are static, Dynamic Segments update automatically as soon as a contact meets your specified criteria.
 
+In FluentCRM v3, **Dynamic Segments** has its own dedicated menu item under **Contacts → Segments** alongside Lists, Tags, and Companies, making it easier to find and manage.
+
+### Built-in Dynamic Segment types (Pro)
+
+In addition to **Custom Segments** (which you build with the filter UI), FluentCRM Pro adds purpose-built segment types that update automatically as integration data changes:
+
+-   **WordPress Users** – any WordPress user who matches a role/criteria.
+-   **WooCommerce Customers** – customers based on order history, status, or product.
+-   **WooCommerce Active Subscribers** – members of an active WooCommerce subscription.
+-   **EDD Active Customers** – customers with a current Easy Digital Downloads license/subscription.
+-   **PMPro Members** – members of one or more Paid Memberships Pro levels.
+-   **AffiliateWP Affiliates** – affiliates filtered by status (Active, Pending, etc.).
+
+These types come with sensible defaults so you can spin up a useful audience in seconds.
+
 #### Creating a Dynamic Segment
 
-Go to **Contacts ➜ Dynamic Segments** and click **+ Create Custom Segment**.
+Go to **Contacts ➜ Segments** and click **+ Create Custom Segment** (or pick one of the built-in types above).
 
 ![dynamic segments fluentcrm](/grow-your-audience/segment-your-audience/Dynamic-Segments-FluentCRM.webp)
 

@@ -25,7 +25,7 @@ With the latest FluentCRM interface, finding your LMS trigger is simple:
 
 > To learn the complete process of creating and building an automation funnel, read the [Automation Editor documentation](/docs/automation-editor).
 
-![LMS Triggers](/docs/public/automation-funnels/fluentcrm-lms-triggers/lms-triggers-1.webp)
+![LMS Triggers](/automation-funnels/fluentcrm-lms-triggers/lms-triggers-1.webp)
 
 ## 1. LearnDash Triggers
 
@@ -47,7 +47,7 @@ For LifterLMS, you can use these triggers:
 - **Lesson Completed:** Starts when a student completes a lesson.
 - **Course Completed:** Starts when a student completes a course.
 
-![LMS Triggers](/docs/public/automation-funnels/fluentcrm-lms-triggers/lms-triggers-2.webp)
+![LMS Triggers](/automation-funnels/fluentcrm-lms-triggers/lms-triggers-2.webp)
 
 ## 3. TutorLMS Triggers
 
@@ -57,7 +57,7 @@ TutorLMS includes these core triggers:
 - **Lesson Completed:** Starts when a student completes a lesson in a course.
 - **Course Completed:** Starts when a student completes a course.
 
-![LMS Triggers](/docs/public/automation-funnels/fluentcrm-lms-triggers/lms-triggers-3.webp)
+![LMS Triggers](/automation-funnels/fluentcrm-lms-triggers/lms-triggers-3.webp)
 
 ## 4. LearnPress Triggers
 
@@ -77,7 +77,7 @@ If you are using FluentCommunity, you can use these triggers:
 - **Section/Topic Completed:** Starts when a student completes a section/topic.
 - **Lesson Completed:** Starts when a student completes a lesson.
 
-![LMS Triggers](/docs/public/automation-funnels/fluentcrm-lms-triggers/lms-triggers-4.webp)
+![LMS Triggers](/automation-funnels/fluentcrm-lms-triggers/lms-triggers-4.webp)
 
 ## Configuring Your LMS Trigger Settings
 

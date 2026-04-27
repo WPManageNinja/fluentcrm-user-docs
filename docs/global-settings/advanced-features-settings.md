@@ -21,9 +21,10 @@ You will now get the advanced settings options inside the **Advanced Features Se
 -   Date & Time Format
 -   Navigation
 -   Company Module
--   Disable AI?
 -   Multi-Threading Email Sending
 -   System Log
+
+> **Note:** The old **Disable AI?** toggle has moved to the dedicated [AI Writing Settings](/docs/ai-writing-settings) page in FluentCRM v3.
 
 ![advanced features configuration settings fluentcrm](/global-settings/advanced-features-settings/Advanced-Features-Configuration-Settings-FluentCRM-scaled.webp)
 
@@ -144,17 +145,13 @@ Here is the **Preview** of added **Company module** into the **Contacts** sectio
 
 ![preview of company module](/global-settings/advanced-features-settings/Preview-of-Company-Module-scaled.webp)
 
-### Disable AI?
+### AI Writing
 
-**Fluent CRM** has an **AI** **Prompts** feature inside the **Email Template** option for only **Image Generation**. You will find this option is already enabled which you can **Disable** anytime by clicking the checkbox.
+In FluentCRM v3, **AI Writing** has graduated out of the experimental flags here and now lives in its own dedicated settings page. From there you can connect a provider (OpenAI, Claude, or Gemini), paste an API key, run a connection test, and toggle the assistant on or off site-wide.
 
-Once you are done, click the **Update Settings** button to save the changes you’ve made.
+Head to **FluentCRM → Settings → AI Writing** to configure it. The full walkthrough lives on the [AI Writing Settings](/docs/ai-writing-settings) page.
 
-![disable ai](/global-settings/advanced-features-settings/Disable-AI.webp)
-
-Here is the **Preview** of the Image generating AI option which you can disable by clicking the **Disable AI** checkbox.
-
-![preview of disable ai](/global-settings/advanced-features-settings/Preview-of-Disable-AI-scaled.webp)
+> **Heads up:** The legacy **Disable AI?** checkbox you may remember from v2 has been removed from this page. To turn AI features off, set the **Enable AI Writing** toggle to **Off** on the AI Writing settings page.
 
 ### Multi-Threading Email Sending?
 

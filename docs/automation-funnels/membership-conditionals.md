@@ -24,7 +24,7 @@ For example, I opened the **List Applied** automation funnel to explain all the 
 
 Now, click the **Plus Icon** or hover over it and click the **Conditional Action** option to view all the **Membership Conditionals**.
 
-![Click the plus icon or conditional action option](/docs/public/automation-funnels/membership-conditionals/membership-condition-1.webp)
+![Click the plus icon or conditional action option](/automation-funnels/membership-conditionals/membership-condition-1.webp)
 
 Then, a **Check Condition** page will appear in the left Sidebar for adding conditions.  
 The explanation of the following settings is given below:
@@ -40,7 +40,7 @@ The explanation of the following settings is given below:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Check condition page with settings options ](/docs/public/automation-funnels/membership-conditionals/membership-condition-2.webp)
+![Check condition page with settings options ](/automation-funnels/membership-conditionals/membership-condition-2.webp)
 
 Once you click the **\+ Add** button, you will get all the **Membership Properties** to set the **Parameter** based on the selected property.  
 These are:
@@ -51,7 +51,7 @@ These are:
 
 > To learn the full process of creating a conditional action, read this full [Documentation](/docs/conditional-automation-actions).
 
-![All membership properties](/docs/public/automation-funnels/membership-conditionals/membership-condition-3.webp)
+![All membership properties](/automation-funnels/membership-conditionals/membership-condition-3.webp)
 
 **A detailed explanation of the Properties mentioned above is given below –** 
 
