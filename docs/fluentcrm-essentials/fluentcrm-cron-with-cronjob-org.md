@@ -15,17 +15,17 @@ There are a few online services that provide remote service to call a specific s
 
 To get started with [cron-job.org](http://cronjob.org) please go to their homepage: [Free cronjobs - from minutely to once a year | cron-job.org](https://cron-job.org/en/). Finish the user registration, and verification and go to the dashboard.
 
-![crm cronjoborg site](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-site.png)
+![crm cronjoborg site](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/cron-job-1.webp)
 
-Once you are done with the registration and get to Dashboard, Please click on the **Create Cronjob** button to create a new Remote Cron Job to call your WordPress website's Cron Script.
+Once you are done with the registration and get to Dashboard, Please click on the **CREATE CRONJOB** button to create a new Remote Cron Job to call your WordPress website's Cron Script.
 
-![crm cronjoborg creatnew](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-creatnew.png)
+![crm cronjoborg creatnew](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/create-new-2.webp)
 
 ## Create Cron Job
 
 The creation window will show a few options and we do not have to worry about all the things. We just need to:
 
-![crm cronjoborg create](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-create.png)
+![crm cronjoborg create](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-create-3.webp)
 
 -   **Set Title:** Provide a Name for the Cron Job as an Identifier.
 -   **URL:** This is the main part. The URL to the Cron Invocation via the web page of the WordPress Cron Script. In our case, this is ( Please replace the base URL or domain part with your website domain or subdomain ):
@@ -44,11 +44,11 @@ Once you confirm the test result shows success, create and save the cron job and
 
 ### Cronjobs List
 
-![crm cronjoborg list](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-list.png)
+![crm cronjoborg list](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-list-4.webp)
 
 ### Cronjob History
 
-![crm cronjoborg success history](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-success-history.png)
+![crm cronjoborg success history](/fluentcrm-essentials/fluentcrm-cron-with-cronjob-org/crm-cronjoborg-success-history-5.webp)
 
 If the configuration is correct and the test runs successfully, you will start to see **successful entries in the Cron Job History** after the scheduled cron times pass. This indicates that the cron jobs are running properly. If you notice any errors in the history, you should investigate and troubleshoot the issue.
 
