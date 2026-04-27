@@ -19,202 +19,118 @@ The Email Settings define the default Mail From email address and Names that wil
 
  * **Reply to Email:** The email that will receive the reply of the sent email.
 
-![crm email settings default](/global-settings/global-email-settings/crm_email_settings_default.png)
+![crm email settings default](/global-settings/global-email-settings/crm_email_settings_default.webp)
 
  * **Maximum Email Limit Per Second:** The maximum number of emails attempted per second. It can be lower due to a lot of factors like site performance, security or firewall limits, rules, the number of connections allowed from the remote mail server that delivers the emails, or by default WordPress hosting if no SMTP plugin is installed and configured.
 
 The above settings will only apply if there is no SMTP Plugin installed and uses the default mailing system. If an SMTP plugin is installed like FluentSMTP and that does not force the Sender Name and Email Address as below then the above settings will be in effect.
 
-![crm smtp email default settings](/global-settings/global-email-settings/crm_smtp_email_default_settings.png)
+![crm smtp email default settings](/global-settings/global-email-settings/crm_smtp_email_default_settings.webp)
 
 But if you have any SMTP plugin installed on your website which takes over the email delivery of the website then you will be able to select your configured email addresses or connections or delivery method from **From Email Address** option as below:
 
-![crm email settings dropdwon address](/global-settings/global-email-settings/crm_email_settings_dropdwon_address.png)
+![crm email settings dropdwon address](/global-settings/global-email-settings/crm_email_settings_dropdwon_address.webp)
 
 Below is an example of the **From Name** and **From Email Address** shown in Gmail Web Client.
 
-![crm email defaults preview](/global-settings/global-email-settings/crm_email_defaults_preview.png)
+![crm email defaults preview](/global-settings/global-email-settings/crm_email_defaults_preview.webp)
 *An example email sent from FluentCRM to show you how the From Name & From Email will show in the inbox.*
 
 ## Email Footer Settings
 
-![crm business settings email footer](/global-settings/global-email-settings/crm_business_settings_email_footer.png)
+![crm business settings email footer](/global-settings/global-email-settings/crm_business_settings_email_footer.webp)
 
 **Email Footer Text**: The footer section usually contains information about the sender's unsubscribe link or forward the email. You should provide your business address &#123;&#123;crm.business\_address&#125;&#125; and manage the subscription/unsubscribe URL for the best user experience.
 
 **Smartcode in Footer:** &#123;&#123;crm.business\_name&#125;&#125;, &#123;&#123;crm.business\_address&#125;&#125;, ##crm.manage\_subscription\_url##, ##crm.unsubscribe\_url## will be replaced with dynamic values. It is recommended to keep the texts as default aligned. Your provided email design template will align the texts.
 
-### **Available SmartCodes:**
+### Available SmartCodes
 
-#### Contact
+You can use SmartCodes in your subject, pre-header, and email body to dynamically personalize content for each recipient.
 
-![crm email settigns smartcodes contact](/global-settings/global-email-settings/crm_email_settigns_SmartCodes_contact.png)
+#### Contact SmartCodes
 
-**Data Field Name**
+![crm email settigns smartcodes contact](/global-settings/global-email-settings/crm_email_settigns_SmartCodes_contact.webp)
 
-**Smart Code**
+| Data Field Name | SmartCode |
+| --- | --- |
+| Full Name | <code>&#123;&#123;contact.full_name&#125;&#125;</code> |
+| Name Prefix | <code>&#123;&#123;contact.prefix&#125;&#125;</code> |
+| First Name | <code>&#123;&#123;contact.first_name&#125;&#125;</code> |
+| Last Name | <code>&#123;&#123;contact.last_name&#125;&#125;</code> |
+| Contact Email | <code>&#123;&#123;contact.email&#125;&#125;</code> |
+| Contact ID | <code>&#123;&#123;contact.id&#125;&#125;</code> |
+| User ID | <code>&#123;&#123;contact.user_id&#125;&#125;</code> |
+| Address Line 1 | <code>&#123;&#123;contact.address_line_1&#125;&#125;</code> |
+| Address Line 2 | <code>&#123;&#123;contact.address_line_2&#125;&#125;</code> |
+| City | <code>&#123;&#123;contact.city&#125;&#125;</code> |
+| State | <code>&#123;&#123;contact.state&#125;&#125;</code> |
+| Postal Code | <code>&#123;&#123;contact.postal_code&#125;&#125;</code> |
+| Country | <code>&#123;&#123;contact.country&#125;&#125;</code> |
+| Phone | <code>&#123;&#123;contact.phone&#125;&#125;</code> |
+| Status | <code>&#123;&#123;contact.status&#125;&#125;</code> |
+| Date of Birth | <code>&#123;&#123;contact.date_of_birth&#125;&#125;</code> |
 
-Full Name
+#### Custom Field SmartCodes
 
-&#123;&#123;contact.full\_name&#125;&#125;
+Custom fields depend on your FluentCRM settings. You can create as many custom fields as needed, and they will appear in the SmartCode selector.
 
-Name Prefix
+![crm email settigns smartcodes customfields](/global-settings/global-email-settings/crm_email_settigns_SmartCodes_customFields.webp)
 
-&#123;&#123;contact.prefix&#125;&#125;
+The **Data Field Name** matches the custom field **Label**, and the SmartCode uses the field **slug**.
 
-First Name
+![custom fields fluentcrm datetime 1](/global-settings/global-email-settings/Custom-Fields-FluentCRM__DateTime-1.webp)
 
-&#123;&#123;contact.first\_name&#125;&#125;
+Example:
 
-Last Name
+* **Data Field Name:** Date and Time
+* **SmartCode:** <code>&#123;&#123;contact.custom.date_time&#125;&#125;</code>
 
-&#123;&#123;contact.last\_name&#125;&#125;
+#### General SmartCodes
 
-Contact Email
+![crm email settigns smartcodes general](/global-settings/global-email-settings/crm_email_settigns_SmartCodes_general.webp)
 
-&#123;&#123;contact.email&#125;&#125;
+| Data Field Name | SmartCode |
+| --- | --- |
+| Business Name | <code>&#123;&#123;crm.business_name&#125;&#125;</code> |
+| Business Address | <code>&#123;&#123;crm.business_address&#125;&#125;</code> |
+| Admin Email | <code>&#123;&#123;wp.admin_email&#125;&#125;</code> |
+| Site URL | <code>&#123;&#123;wp.url&#125;&#125;</code> |
+| Dynamic Date (example: +2 days from now) | <code>&#123;&#123;other.date.+2 days&#125;&#125;</code> |
+| Unsubscribe URL | <code>##crm.unsubscribe_url##</code> |
+| Manage Subscription URL | <code>##crm.manage_subscription_url##</code> |
+| View on Browser URL | <code>##web_preview_url##</code> |
+| Unsubscribe Hyperlink HTML | <code>&#123;&#123;crm.unsubscribe_html\|Unsubscribe&#125;&#125;</code> |
+| Manage Subscription Hyperlink HTML | <code>&#123;&#123;crm.manage_subscription_html\|Manage Preference&#125;&#125;</code> |
 
-Contact ID
+#### WP User SmartCodes
 
-&#123;&#123;contact.id&#125;&#125;
+The following SmartCodes are available for WordPress user-related data:
 
-User ID
+| Data Field Name | SmartCode |
+| --- | --- |
+| User Display Name | <code>&#123;&#123;wp_user.display_name&#125;&#125;</code> |
+| User Login (username) | <code>&#123;&#123;wp_user.user_login&#125;&#125;</code> |
+| Password Reset URL (button / link usage) | <code>##wp_user.password_reset_url##</code> |
+| Password Reset URL (plain text) | <code>&#123;&#123;wp_user.password_reset_url&#125;&#125;</code> |
+| User Meta Data | <code>&#123;&#123;wp_user.meta.META_KEY&#125;&#125;</code> |
 
-&#123;&#123;contact.user\_id&#125;&#125;
-
-Address Line 1
-
-&#123;&#123;contact.address\_line\_1&#125;&#125;
-
-Address Line 2
-
-&#123;&#123;contact.address\_line\_2&#125;&#125;
-
-City
-
-&#123;&#123;contact.city&#125;&#125;
-
-State
-
-&#123;&#123;contact.state&#125;&#125;
-
-Postal Code
-
-&#123;&#123;contact.postal\_code&#125;&#125;
-
-Country
-
-&#123;&#123;contact.country&#125;&#125;
-
-Phone
-
-&#123;&#123;contact.phone&#125;&#125;
-
-Status
-
-&#123;&#123;contact.status&#125;&#125;
-
-Date of Birth
-
-&#123;&#123;contact.date\_of\_birth&#125;&#125;
-
-#### Custom Fields
-
-Custom Fields are dependent on the FLuentCRM Settings. You can add as many Custom Fields as you want and then they will be available here. 
-
-![crm email settigns smartcodes customfields](/global-settings/global-email-settings/crm_email_settigns_SmartCodes_customFields.png)
-
-The generic **Data Field Name** will be as you set in the **Label** while creation and **SmartCode** will recognize the **slug** value of the custom field as below:
-
-![custom fields fluentcrm datetime 1](/global-settings/global-email-settings/Custom-Fields-FluentCRM__DateTime-1.png)
-
-The above example screenshot will represent **Data Field Name** as "**Date and Time**" & **SmartCode** would be **&#123;&#123;contact.custom.date\_time&#125;&#125;**
-
-#### General
-
-![crm email settigns smartcodes general](/global-settings/global-email-settings/crm_email_settigns_SmartCodes_general.png)
-
-**Data Field Name**
-
-**Smart Code**
-
-Business Name
-
-&#123;&#123;crm.business\_name&#125;&#125;
-
-Business Address
-
-&#123;&#123;crm.business\_address&#125;&#125;
-
-Admin Email
-
-&#123;&#123;wp.admin\_email&#125;&#125;
-
-Site URL
-
-&#123;&#123;wp.url&#125;&#125;
-
-Dynamic Date  
-(example: +2Days from Now)
-
-&#123;&#123;other.date.+2 days&#125;&#125;
-
-Unsubscribe URL
-
-##crm.unsubscribe\_url##
-
-Manage Subscription URL
-
-##crm.manage\_subscription\_url## 
-
-View on Browser URL
-
-##web\_preview\_url## 
-
-Unsubscribe
-
-&#123;&#123;crm.unsubscribe\_html|Unsubscribe&#125;&#125;
-
-Manage Subscription  
-Hyperlink HTML
-
-&#123;&#123;crm.manage\_subscription\_html|Manage Preference&#125;&#125;
-
-#### WP User
-
-The available data properties and their smart codes are:
-
-User's Display Name
-{{wp_user.display_name}}
-
-User Login (username)
-{{wp_user.user_login}}
-
-Password Reset URL (on button / link)
-##wp_user.password_reset_url##
-
-Password Reset URL (as plain text)
-{{wp_user.password_reset_url}}
-
-User Meta Data
-{{wp_user.meta.META_KEY}}
-
-![crm email settigns smartcodes general](/global-settings/global-email-settings/wp-user-shortcode.png)
+![crm email settigns smartcodes general](/global-settings/global-email-settings/wp-user-shortcode.webp)
 
 
 ## Email Preference Settings
 
 Using The **##crm.manage\_subscription\_url##** SmartCode lets the user manage their subscriptions along with the Lists if defined in **Email Preference Settings**.
 
-![crm email settings manage subscriptions email](/global-settings/global-email-settings/crm_email_settings_manage_subscriptions_email.png)
+![crm email settings manage subscriptions email](/global-settings/global-email-settings/crm_email_settings_manage_subscriptions_email.webp)
 
 Below is an example email of using this SmartCode where the user will see a link saying **Manage Email Subscriptions** and this will take the user to a page similar to the below screenshot.
 
-![crm email settings manage subscriptions](/global-settings/global-email-settings/crm_email_settings_manage_subscriptions.png)
+![crm email settings manage subscriptions](/global-settings/global-email-settings/crm_email_settings_manage_subscriptions.webp)
 
 The screenshot below represents the available options of the preferences:
 
-![crm settings email preference](/global-settings/global-email-settings/crm_settings_email_preference.png)
+![crm settings email preference](/global-settings/global-email-settings/crm_settings_email_preference.webp)
 
 ### List Subscriptions
 
@@ -248,14 +164,14 @@ Please use the shortcode **\[fluentcrm\_pref\]** to show the form for your subsc
 
 The above shortcode renders the management form on a page as below screenshot:
 
-![crm email preference page](/global-settings/global-email-settings/crm_email_preference_Page.png)
+![crm email preference page](/global-settings/global-email-settings/crm_email_preference_Page.webp)
 
 #### Adding on a Page
 
-![crm email preference page add](/global-settings/global-email-settings/crm_email_preference_Page_Add.png)
+![crm email preference page add](/global-settings/global-email-settings/crm_email_preference_Page_Add.webp)
 
 #### Adding on a Fluent Forms Notification
 
 This can also be used in a Fluent Forms Form Submission Notification as below:
 
-![crm form confirmation email preference](/global-settings/global-email-settings/crm_form_confirmation_email_preference.png)
+![crm form confirmation email preference](/global-settings/global-email-settings/crm_form_confirmation_email_preference.webp)
