@@ -101,7 +101,6 @@ export default defineConfig({
                 { text: 'Advanced Features Settings', link: '/docs/advanced-features-settings' },
                 { text: 'Integration Settings', link: '/docs/global-integration-settings' },
                 { text: 'Incoming Webhooks', link: '/docs/global-incoming-webhooks' },
-                { text: 'REST API', link: '/docs/global-rest-api-settings' },
                 { text: 'Smart Links', link: '/docs/global-smartlinks-settings' },
                 { text: 'SMTP & Bounce Handlers', link: '/docs/smtp-bounce-handlers-settings' },
                 { text: 'FluentCRM Tools', link: '/docs/fluentcrm-tools-settings' },
