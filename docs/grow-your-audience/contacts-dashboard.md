@@ -7,11 +7,10 @@ order: 0
 
 # Contacts Dashboard
 
-## Contacts Dashboard
+FluentCRM provides an excellent contacts dashboard that represents all the necessary summaries of the activities. Total Contacts Paginated, Filter by Tags & Lists & Status, Advanced Filter with numerous data, Searchbox, Import & Export of the contacts, Bulk Actions on Contact Selection, and many more on the front page or the Contacts Dashboard.
+
 
 https://www.youtube.com/watch?v=tKrGDW6L62Y
-
-FluentCRM provides an excellent contacts dashboard that represents all the necessary summaries of the activities. Total Contacts Paginated, Filter by Tags & Lists & Status, Advanced Filter with numerous data, Searchbox, Import & Export of the contacts, Bulk Actions on Contact Selection, and many more on the front page or the Contacts Dashboard.
 
 > **New in v3:**
 >

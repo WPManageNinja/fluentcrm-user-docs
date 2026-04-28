@@ -104,7 +104,6 @@ export default defineConfig({
                 { text: 'Incoming Webhooks', link: '/docs/global-incoming-webhooks' },
                 { text: 'CRM Managers', link: '/docs/global-managers-settings' },
                 { text: 'System Admin Tools', link: '/docs/fluentcrm-tools-settings' },
-                { text: 'License Management', link: '/docs/how-to-install-upgrade-and-activate-license' },
               ],
             },
             {
