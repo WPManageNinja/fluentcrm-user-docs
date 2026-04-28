@@ -154,7 +154,6 @@ export default defineConfig({
             { text: 'Segment Your Audience (Lists & Tags)', link: '/docs/segment-your-audience' },
             { text: 'Advanced Filter', link: '/docs/advanced-filter' },
             { text: 'Company Module', link: '/docs/company-module' },
-            { text: 'Frontend Portal', link: '/docs/frontend-portal' },
           ],
         },
         // 4. Campaigns & Forms
