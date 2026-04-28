@@ -5,7 +5,7 @@ category: "global-settings"
 order: 0
 ---
 
-# SMTP/Email & Bounce Handlers
+# Email Service (SMTP & Bounce Handlers)
 
 FluentCRM uses the wp\_mail() function to broadcast all the emails that are PHP-based mailers. There are various ways to deliver emails from WordPress. The SMTP Protocol, API-based 3rd party delivery providers, and direct PHP-based sending require SMTP Port 25 to be opened from the WordPress hosting server. Below is a screenshot of when no SMTP plugins are used on the website.
 
