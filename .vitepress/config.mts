@@ -405,6 +405,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Frequently Asked Questions', link: '/docs/frequently-asked-questions' },
+            { text: 'How to Get Support', link: '/docs/how-to-get-support' },
             { text: 'Changelog', link: '/docs/change-log' },
           ],
         },
