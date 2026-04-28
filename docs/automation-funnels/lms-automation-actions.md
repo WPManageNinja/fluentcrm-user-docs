@@ -7,143 +7,124 @@ order: 0
 
 # LMS Actions
 
-[FluentCRM](https://fluentcrm.com/) offers various [Actions](/docs/primary-automation-actions), particularly for **LMS** (Learning Management System) platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**, to trigger tasks automatically. Once the automation is triggered, you can automatically add the desired **Action/s** to manage advanced, repetitive, or routine tasks.
+[FluentCRM](https://fluentcrm.com/) includes dedicated [Action](/docs/primary-automation-actions) blocks for LMS platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**. These actions let you automate enrollments and removals based on funnel events.
 
-This article will provide detailed information about all **LMS Actions** in **FluentCRM Automation**. 
+In this guide, we will walk through the LMS action flow using the currently available action screens.
 
-> **Remember**, to use the **LMS Actions** you must install and activate all the **LMS Plugins** in your website. Plus, learn the detailed integration process of [LearnDash](/docs/learndash-integration-with-fluentcrm), [LifterLMS](/docs/lifterlms-integration-with-fluentcrm), and [TutorLMS](/docs/tutorlms-integration-with-fluentcrm) with [FluentCRM](https://fluentcrm.com/).
+> To use LMS actions, install and activate your LMS plugins first. You can also review these integration guides:
+> - [LearnDash Integration](/docs/learndash-integration-with-fluentcrm)
+> - [LifterLMS Integration](/docs/lifterlms-integration-with-fluentcrm)
+> - [TutorLMS Integration](/docs/tutorlms-integration-with-fluentcrm)
 
-## All LMS Actions 
+## Open the action picker
 
-To learn how you can use all the **LMS Actions** in your **FluentCRM**, follow the steps with screenshots below –
+Go to **Automations** from the FluentCRM navbar and open your target automation (or create a new one).
 
-First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
+> To learn how to create a new automation funnel, read [Automation Editor](/docs/automation-editor).
 
-> To learn how to create a new automation funnel, read this [Documentation](/docs/automation-editor).
+![Open desired automation or create new one](/automation-funnels/lms-automation-actions/Open-desired-Automation-or-Create-new-one-3-scaled-1.webp)
 
-For example, I opened the **Tag Applied** automation funnel to explain all the **Actions** in **CRM**.
+Click the **Plus** icon where you want to add a step.
 
-![Open desired automation or create new one](/automation-funnels/lms-automation-actions/1.-Open-desired-Automation-or-Create-new-one-3-scaled.webp)
+![Click plus icon to add actions](/automation-funnels/lms-automation-actions/Click-Plus-Icon-to-add-Actions-2-scaled-2.webp)
 
-Now, click the **Plus Icon,** or just hover over it and click the **Add Action / Goal** option to get all the **LMS Actions**.
+In the popup, scroll to the LMS section.
 
-![Click plus icon to add actions](/automation-funnels/lms-automation-actions/2.-Click-Plus-Icon-to-add-Actions-2-scaled.webp)
+![All LMS actions](/automation-funnels/lms-automation-actions/All-LMS-Actions-3.webp)
 
-Now, a pop-up page will appear with all the **LMS Action Blocks** of FluentCRM to choose from. These are: 
+The LMS action groups are:
 
-1.  LifterLMS
-2.  LearnDash
-3.  TutorLMS
+1. **LifterLMS**
+2. **LearnDash**
+3. **TutorLMS**
 
-![All LMS actions](/automation-funnels/lms-automation-actions/3.-All-LMS-Actions.webp)
+## 1. LifterLMS Actions
 
-**A detailed explanation of the Actions mentioned above is given below –** 
+The available LifterLMS actions are:
 
-## 1\. LifterLMS 
-
-A detailed explanation of the following **Actions** **under** **LifterLMS** is given below – 
-
--   Enroll To Course
--   Remove From a Course
--   Enroll To a Membership Group
--   Remove From a LMS Membership
+- **Enroll To Course**
+- **Remove From a Course**
+- **Enroll To a Membership Group**
+- **Remove From a LMS Membership**
 
 ### Enroll To Course
 
-This action lets you Enroll the contact to a specific LMS Course.  
-After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
+Use this action to enroll the contact into a selected course.
 
-#### Settings of the Enroll To Course Action
+Main fields:
 
--   **Interval Label**: Here, a **Name** for the Action will be automatically added so you can easily find it later. You can change it according to your needs.
+- **Internal Label**: Name of this action step.
+- **Internal Description**: Optional subtitle/description.
+- **Select Course to Enroll**: Choose the target course.
+- **Do not enroll if contact is not an existing WordPress user**: Restricts enrollment to existing users only.
+- **Send default WordPress welcome email for new users**: Sends WP welcome email when user creation happens.
 
--   **Internal Description**: A **description** **of the action** will also be automatically added as a Subtitle. You can also change it according to your needs.
+Click **Save Settings** when done.
 
--   **Select Course to Enroll**: Select the course where you want the contacts to be enrolled.
-
--   **Do not enroll in the course if contact is not an existing WordPress User**: You can restrict contacts from course enrollment if they are not existing WordPress users by checking this option. **Remember**, if you leave this option unchecked, contacts will be automatically created as WordPress Users using the contact’s email address.
-
--   **Send default WordPress Welcome Email for new WordPress Users**: Check this option if you want to send a default welcome email to newly created WordPress Users after their WordPress Registration. 
-
-Once you are done, click the **Save Settings** button to save all your changes.  
-You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
-
-![Enrol to course in LifterLMS](/automation-funnels/lms-automation-actions/4.-Enroll-to-Course-in-LifterLMS.webp)
+![Enrol to course in LifterLMS](/automation-funnels/lms-automation-actions/Enroll-to-Course-in-LifterLMS-4.webp)
 
 ### Remove From a Course
 
-This action lets you Remove the contact from a specific LMS Course.  
-After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
+Use this action to remove a contact from a selected course.
 
-#### Settings of the Remove From Course Action
+Main fields:
 
--   **Interval Label**: Here, a **Name** for the Action will be automatically added so you can easily find it later. You can change it according to your needs.
+- **Internal Label**
+- **Internal Description**
+- **Select a Course that you want to remove from**
 
--   **Internal Description**: A **description** **of the action** will also be automatically added as a Subtitle. You can also change it according to your needs.
+Click **Save Settings** when done.
 
--   **Select a Course that you want to remove from**: Select the course from which you want the contacts to be removed.
-
-Once you are done, click the **Save Settings** button to save all your changes.  
-You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
-
-![Remove from a course in LifterLMS](/automation-funnels/lms-automation-actions/5.-Remove-from-a-Course-in-LifterLMS.webp)
+![Remove from a course in LifterLMS](/automation-funnels/lms-automation-actions/Remove-from-a-Course-in-LifterLMS-5.webp)
 
 ### Enroll To a Membership Group
 
-This action lets you Enroll the contact to a specific LMS Membership Group.  
-After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
+Use this action to enroll contacts into a selected LifterLMS membership group.
 
-#### Settings of the Enroll To Group Action
+Main fields:
 
--   **Interval Label**: Here, a **Name** for the Action will be automatically added so you can easily find it later. You can change it according to your needs.
+- **Internal Label**
+- **Internal Description**
+- **Select LifterLMS Membership Group to Enroll**
+- **Do not enroll if contact is not an existing WordPress user**
+- **Send default WordPress welcome email for new users**
 
--   **Internal Description**: A **description** **of the action** will also be automatically added as a Subtitle. You can also change it according to your needs.
+Click **Save Settings** when done.
 
--   **Select LifterLMS Membership Group to Enroll**: Select the LifterLMS Membership Group where you want the contacts to be enrolled.
+![Enrol to a group in LifterLMS](/automation-funnels/lms-automation-actions/Enroll-to-a-group-in-LifterLMS-6.webp)
 
--   **Do not enroll in the course if contact is not an existing WordPress User**: You can restrict contacts from course enrollment if they are not existing WordPress users by checking this option. **Remember**, if you leave this option unchecked, contacts will be automatically created as WordPress Users using the contact’s email address.
+### Remove From a LMS Membership
 
--   **Send default WordPress Welcome Email for new WordPress Users**: Check this option if you want to send a default welcome email to newly created WordPress Users after their WordPress Registration. 
+Use this action to remove contacts from a selected LifterLMS membership group.
 
-Once you are done, click the **Save Settings** button to save all your changes.  
-You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
+Main fields:
 
-![Enrol to a group in LifterLMS](/automation-funnels/lms-automation-actions/6.-Enroll-to-a-group-in-LifterLMS.webp)
+- **Internal Label**
+- **Internal Description**
+- **Select a Membership Group that you want to remove from**
 
-### Remove From a LMS Membership 
+Click **Save Settings** when done.
 
-This action lets you Remove the contacts from a specific LMS Membership Group.  
-After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
+![Remove from a group in LifterLMS](/automation-funnels/lms-automation-actions/Remove-from-a-Group-in-LifterLMS-7.webp)
 
-#### Settings of the Remove From Group Action
+## 2) LearnDash Actions
 
--   **Interval Label**: Here, a **Name** for the Action will be automatically added so you can easily find it later. You can change it according to your needs.
+LearnDash actions follow the same setup pattern as LifterLMS actions:
 
--   **Internal Description**: A **description** **of the action** will also be automatically added as a Subtitle. You can also change it according to your needs.
+- Set **Internal Label** and **Internal Description**
+- Select the course/group target
+- Save the action
 
--   **Select a Membership Group that you want to remove from**: Select the Membership Group from which you want the contacts to be removed.
+Use the relevant section above as a step reference for enrollment/removal flow.
 
-Once you are done, click the **Save Settings** button to save all your changes.  
-You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
+## 3) TutorLMS Actions
 
-![Remove from a group in LifterLMS](/automation-funnels/lms-automation-actions/7.-Remove-from-a-Group-in-LifterLMS.webp)
+TutorLMS actions also follow the same setup pattern:
 
-## 2\. LearnDash
+- Configure label/description
+- Choose the course target
+- Save settings
 
-All the **Actions** of **LearnDash** work the same way as the **Actions** of **LifterLMS**.  
-For a detailed explanation of how to use all the **Actions** in **LearnDash**, **click on the Actions** (attached with links) below – 
+Use the same action setup logic shown in the LifterLMS examples.
 
--   [Enroll To Course](/docs/lms-automation-actions/#settings-of-the-enroll-to-course-action)
--   [Remove From Course](/docs/lms-automation-actions/#remove-from-a-course)
--   [Enroll To Group](/docs/lms-automation-actions/#settings-of-the-enroll-to-group-action)
--   [Remove From Group](/docs/lms-automation-actions/#settings-of-the-remove-from-group-action)
-
-## 3\. TutorLMS
-
-All the **Actions** of **TutorLMS** work the same way as the **Actions** of **LifterLMS**.  
-For a detailed explanation of how to use all the **Actions** in **TutorLMS**, **click on the Actions** (attached with links) below – 
-
--   [Enroll To Course](/docs/lms-automation-actions/#settings-of-the-enroll-to-course-action)
--   [Remove From Course](/docs/lms-automation-actions/#remove-from-a-course)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
