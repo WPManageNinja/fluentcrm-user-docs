@@ -6,16 +6,14 @@ order: 0
 ---
 
 # Miscellaneous Actions
-<<<<<<< Updated upstream
-Besides [Primary](/docs/primary-automation-actions), [WordPress](/docs/wordpress-automation-actions), [Email](/docs/automation-email-actions), [WooCommerce](/docs/woocommerce-automation-actions), [LMS](/docs/lms-automation-actions), [Goals or Benchmarks](/docs/goals-or-benchmark-actions), and [Conditional](/docs/conditional-automation-actions) actions, FluentCRM also offers a few other actions to help you automate things in the WordPress Site, such as [Fluent Support](http://fluentsupport.com) Action.
-=======
 
-Besides [Primary](/docs/primary-automation-actions), [WordPress](/docs/wordpress-automation-actions), [Email](/docs/automation-email-actions), [WooCommerce](/docs/woocommerce-automation-actions), [LMS](/docs/lms-automation-actions), [Goals or Benchmarks](/docs/goals-or-benchmark-actions), and [Conditional](/docs/conditional-automation-actions) actions, [FluentCRM](https://fluentcrm.com/) also offers a few other actions to help you automate things in the WordPress Site, such as [Fluent Support](http://fluentsupport.com) Action.
->>>>>>> Stashed changes
+[FluentCRM](https://fluentcrm.com/) includes multiple automation action groups such as [Primary](/docs/primary-automation-actions), [WordPress](/docs/wordpress-automation-actions), [Email](/docs/automation-email-actions), [WooCommerce](/docs/woocommerce-automation-actions), [LMS](/docs/lms-automation-actions), [Goals or Benchmarks](/docs/goals-or-benchmark-actions), and [Conditional](/docs/conditional-automation-actions).  
+In addition to those, it also provides **Miscellaneous Actions** like **Fluent Support** integration.
 
-This article will provide detailed information about all **Fluent Support** **Action** in **FluentCRM Automation**. 
+This guide explains how to use the **Fluent Support Action** inside FluentCRM automations.
 
-> **Remember**, to use the **Fluent Support Action** you must install and activate the **Fluent Support Plugin** in your website. Read the documentation, to learn the installation process of **Fluent Support** [Free Version](https://fluentsupport.com/docs/how-to-install-activate-fluent-support/) and [Pro Version](https://fluentsupport.com/docs/upgrade-to-fluent-support-pro-add-on/).
+> To use the Fluent Support action, you must install and activate the **Fluent Support** plugin on your WordPress site.  
+> You can follow these installation guides for [Fluent Support Free](https://fluentsupport.com/docs/how-to-install-activate-fluent-support/) and [Fluent Support Pro](https://fluentsupport.com/docs/upgrade-to-fluent-support-pro-add-on/).
 
 ## Fluent Support Action 
 
@@ -25,7 +23,7 @@ First, go to the **Automation** section from the **FluentCRM Navbar**, and open 
 
 For example, I opened the **List Applied** automation funnel to explain all the **Actions** in **CRM**.
 
-![Open desired automation or create new one](/automation-funnels/miscellaneous-automation-actions/Create-new-one-4-scaled-1.webp)
+![Open desired automation or create new one](/automation-funnels/miscellaneous-automation-actions/Open-desired-Automation-or-Create-new-one-4-scaled-1.webp)
 
 Now, click the **Plus Icon,** or just hover over it and click the **Add Action / Goal** option to get all the **LMS Actions**.
 
