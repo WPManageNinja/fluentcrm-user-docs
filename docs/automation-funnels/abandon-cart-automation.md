@@ -32,7 +32,7 @@ A side pop-up will appear from the right, displaying the settings for this autom
 
 If you enable this then it ensures that the automation triggers and performs its actions for all relevant contacts, even if they are not currently marked as subscribed.
 
-You can enable the **Condition** for this automation. Click on the **Add** button to set the conditions. 
+You can enable the **Condition** for this automation. Click on the **Add Property** button to set the conditions. 
 
 Enabling **Skip this Automation if the Contact is Already in Active State** will prevent the automation from running multiple times for the same contact if they are already active within this automation.
 

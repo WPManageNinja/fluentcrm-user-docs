@@ -13,7 +13,7 @@ This article walks you through configuring the FluentCart abandoned-cart setting
 
 > **Note:** Make sure both **FluentCart** and **FluentCRM** are installed and activated, and that abandoned cart tracking is enabled in **FluentCRM → Settings → Abandoned Cart Settings**. See [Abandoned Cart Settings](/docs/abandoned-cart-settings) for the full configuration walkthrough.
 
-## How FluentCart abandoned-cart tracking works
+## How FluentCart Abandoned-cart Tracking Works
 
 Once the FluentCart driver is enabled:
 
@@ -23,11 +23,13 @@ Once the FluentCart driver is enabled:
 4. Your **Cart Abandoned (FluentCart)** automation kicks in and sends recovery emails.
 5. If the customer completes the order, FluentCRM marks the cart as **Recovered** and (optionally) removes the temporary lists/tags.
 
-## Build the recovery automation
+## Build the Recovery Automation
 
 Go to **FluentCRM → Automations** and click **+ New Automation**.
 
 You can start from the built-in **Abandoned Cart Recovery** template or pick **Create from Scratch**. For this walkthrough we'll use **Create from Scratch**.
+
+![Build the Recovery Automatiion]()
 
 ### Step 1 – Choose the FluentCart trigger
 
