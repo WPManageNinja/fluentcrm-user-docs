@@ -6,12 +6,7 @@ order: 0
 ---
 
 # WordPress Actions
-<<<<<<< Updated upstream
-
-[FluentCRM](https://fluentcrm.com/) provides several [Actions](/docs/primary-automation-actions), **especially for WordPress Sites,** to trigger tasks automatically. Once automation is triggered, you can automatically add the desired **Actions** to handle advanced, repetitive, or routine tasks. This article will provide detailed information about all **WordPress Actions** in **FluentCRM Automation**. 
-=======
-FluentCRM provides several [Actions**,**](/docs/primary-automation-actions) **especially for WordPress Sites,** to trigger tasks automatically. Once automation is triggered, you can automatically add the desired **Action/s** to handle advanced, repetitive, or routine tasks. This article will provide detailed information about all **WordPress Actions** in **FluentCRM Automation**.
->>>>>>> Stashed changes
+FluentCRM provides several [Actions](/docs/primary-automation-actions), **especially for WordPress sites,** to trigger tasks automatically. Once automation is triggered, you can add the desired **Actions** to handle advanced, repetitive, or routine tasks. This article provides detailed information about all **WordPress Actions** in **FluentCRM Automation**.
 
 > **Remember**, to use all the **WordPress** **Actions**, you need to have [FluentCRM Pro Plugin](/docs/how-to-install-upgrade-and-activate-license) installed and activated in your WordPress Site.
 
