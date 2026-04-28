@@ -32,7 +32,7 @@ A small form appears where you can set:
 
 ![Label creation form with title and colour picker](/email-campaign/labels-for-email-campaigns/manage-labels-3.webp)
 
-Once you are happy with the name and colour, save the label. It will now appear in the Manage Labels table and be available to assign to campaigns.
+Once you are happy with the name and colour, click on the **Create** button to save the label. It will now appear in the Manage Labels table and be available to assign to campaigns.
 
 ## Editing or deleting a label
 
@@ -48,7 +48,7 @@ In the **Manage Labels** table, click the three-dot action menu on any label row
 You can assign one or more labels to campaigns in bulk straight from the campaign list.
 
 1. On the **Email Campaigns** list, tick the checkbox next to each campaign you want to label. You can select as many as you need.
-2. Once campaigns are selected, a **Bulk Action** bar appears above the list. Open the **Select Labels** dropdown and choose the label(s) you want to apply.
+2. Once campaigns are selected, a **Bulk Action** bar will appears above the list click on it and select **Apply Labels**. The **Select Labels** from the dropdown and choose the label(s) you want to apply.
 3. Click **Apply Label**.
 
 The selected label will now appear next to those campaigns in the list.
