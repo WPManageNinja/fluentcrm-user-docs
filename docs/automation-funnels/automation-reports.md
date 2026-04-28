@@ -6,125 +6,59 @@ order: 0
 ---
 
 # Automation Reports
-FluentCRM offers a **Reports** section for each **Automation,** helping companies analyze campaign data and customer interactions to improve their **CRM** strategy. This article will guide you through using all the features of the **Reports** section inside a specific **Automation**.
 
-## View Reports
+FluentCRM provides a comprehensive **Reports** section for each automation, allowing you to analyze campaign performance and customer interactions to refine your marketing strategy. This article guides you through the features available within the reporting interface of a specific automation funnel.
 
-To learn how to view the Automation Reports in FluentCRM, follow the steps with the screenshots below – 
+## Accessing Automation Reports
 
-First, go to the **Automations** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its **Title**.
+To view reports for an automation:
 
-Or, create a new one by clicking the **+ New Automation.** To learn how to create a new automation funnel, read this [Documentation](/docs/automation-editor).
+1.  Navigate to the **[Automations](/docs/automation-editor)** section from the **FluentCRM Navbar**.
+2.  Open your desired automation by clicking on its **Title**.
+3.  On the **Automation Editor** page, click the **Stats** toggle to enable the reporting overlay.
 
-For example, I opened the **List Applied** automation funnel to explain the **Reports** section.
+![Reports](/automation-funnels/automation-reports/report-2.webp)
 
-![Open desired automation funnel](/automation-funnels/automation-reports/1.-Open-desired-Automation-funnel-scaled.webp)
+### 1. Summary Reporting
 
-Once you are on the [Automation Editor](/docs/automation-editor/#automation-editor) page, click the **View Reports** button and the **Reports** section will appear with all available options.
+>[!Note]
+>To sync new funnel steps to contacts who have already completed the automation, click the **Re-apply New Steps** button in the top right corner.
 
-![View reports button](/automation-funnels/automation-reports/2.-View-Reports-button-scaled.webp)
+The summary section offers three distinct views to analyze how contacts progress through your funnel.
 
-In the Reports Section, you will find two major types of reporting options for the funnel. These are:
+* **Chart Report:** This tab displays a visual summary of each automation step using a **Bar Diagram** and a **Line Graph**. It shows the volume and percentage of contacts at each stage, such as **Entrance**, **Wait X Days/Hours**, and specific actions like **Outgoing Webhooks** or **Check Condition**.
 
-1.  Summary Reporting
-2.  Individual Reporting
+![Chart Reports](/automation-funnels/automation-reports/chart-report-3.webp)
 
-Also, to sync new steps to existing completed contacts, click the **Re-apply New Steps** button in the top right corner.
+* **Step Report:** This tab provides a summary of each action block using **Circle Graphs**. Each card displays the percentage of contacts that reached that step, the total count, and the percentage change. It also highlights the **Overall Conversion Rate** for the entire funnel.
 
-> **For example**, if you add any new step to your automation funnel after some contacts complete the automation, you can resume the newly added steps to the existing completed contacts using this **Re-apply New Steps** button.
+![Step Reports](/automation-funnels/automation-reports/step-report-4.webp)
 
-![Reports section](/automation-funnels/automation-reports/3.-Reports-section-scaled.webp)
+* **Emails Analytics:** This tab focuses on the performance of email actions within your funnel. For each automated email (e.g., "Hello Customers"), you can view **Quick Stats** including:
+    * **Sent**: Total number of emails delivered.
+    * **Opened**: The percentage of recipients who opened the email.
+    * **Clicked**: The percentage of recipients who clicked a link within the email.
+    * **Unsubscribed**: The percentage of recipients who opted out after receiving the email.
 
-**The major two types of reporting options mentioned above are explained below –** 
+![Email Analytics](/automation-funnels/automation-reports/email-analytics-5.webp)
 
-### 1\. Summary Reporting  
+## 2. Individual Reporting
 
-In this section, you will get another three options to view the summary report for each action of the funnel. These are: 
+Located below the summary charts, this section provides a granular, contact-by-contact breakdown of automation activity.
 
--   Chart Report
--   Step Report
--   Emails Analytics
+* **Contact Overview:** View each contact's **Name**, **Email**, current **Status**, **Latest Action** performed, and the **Next Step** scheduled for them.
+* **Status Filters:** Filter the list to see contacts based on their progress:
+    * **All**: Every contact currently or previously in the funnel.
+    * **Active**: Contacts currently moving through the steps.
+    * **Completed**: Contacts who have finished all steps.
+    * **Cancelled**: Contacts whose automation was stopped manually or by a system rule.
+    * **Pending**: Contacts waiting for a specific trigger or delay to expire.
+* **Step & Sequence Filters:** Use the dropdown menu (e.g., **All Sequences**) to filter reports by specific automated actions within the funnel.
+* **Search Box:** Use the search icon to find specific contacts by name or email address.
+* **Actions:** Click the three-dot menu next to an individual contact to perform specific management tasks.
+* **Pagination:** With this option, you can set how many individual reports you want to display per page.
 
-#### Chart Report
+![Individual Reporting](/automation-funnels/automation-reports/individual-eporting-6.webp)
 
-This tab displays a summary of each [Automation Action](/docs/primary-automation-actions) in a **Chart** with a **Bar Diagram** and **Line** using **Percentages**. Simply, hover over any action to see its **Numerical** report.
 
-![Chart report tab](/automation-funnels/automation-reports/4.-Chart-Report-tab-scaled.webp)
 
-#### Step Report
-
-This tab also displays a summary of each [Automation Action](/docs/primary-automation-actions) but in a **Circle Graph.**
-
-![Step report tab](/automation-funnels/automation-reports/5.-Step-Report-tab-scaled.webp)
-
-#### Email Analytics
-
-This tab displays an analytical summary of your [Email Action](/docs/automation-email-actions) in the automation funnel with four different options. These are: 
-
--   **Sent**: This option will show how many emails were sent using this automation.
--   **Opened**: This will show what percentage of subscribers have opened your email.
--   **Clicked**: If you included any link in your automated email, this section will indicate what percentage of recipients have clicked (visited) the link.
--   **Unsubscribed**: This will show you the percentage of the unsubscribed rate.
-
-![Email analytics tab](/automation-funnels/automation-reports/6.-Email-Analytics-tab-scaled.webp)
-
-### 2\. Individual Reporting
-
-This section will show you the individual reports of every contact.  
-Here, you will get several options to view individual reports of the automation. These are: 
-
-1.  Individual Action Thread
-2.  Sequence Filter
-3.  Status Filter
-4.  Search Box
-5.  Delete Option
-6.  Pagination
-
-![Indiviual reporting section](/automation-funnels/automation-reports/7.-Indiviual-Reporting-section.webp)
-
-#### A. Individual Actions Thread
-
-To view the activity of each action for a specific contact, click the **Dropdown Arrow.**  
-Then, a thread will appear with a report of all the action activity details for a desired contact.
-
-![Individual actions thread](/automation-funnels/automation-reports/8.-Individual-Actions-Thread.webp)
-
-#### B. Sequence Filter
-
-This will filter the reports according to the automated action in the funnel.
-
-![Sequence filter](/automation-funnels/automation-reports/9.-Sequence-filter-scaled.webp)
-
-#### C. Status Filter
-
-This will filter the reports according to the following **Status** of **Automation**. 
-
--   **All**: It will show you the reports of all the contacts listed for automation.
--   **Active**: This will display any active automation that hasn’t yet been finished.
--   **Completed**: This will show each unique outcome of the finished automated activity.
--   **Canceled**: This will display a report of any cancellation performed by automation for that particular contact.
--   **Pending**: This will show the automations that are still on the pending list and waiting for a subscriber.
-
-![Status filter](/automation-funnels/automation-reports/10.-Status-filter-scaled.webp)
-
-#### D. Search Box 
-
-Using this option, you can search for specific customers with User Name & Email.  
-For example, here I searched for a customer by name.
-
-![Search filter](/automation-funnels/automation-reports/11.-Search-filter-scaled.webp)
-
-#### E. Delete
-
-Click this **Trash Icon,** if you want to delete any existing specific report if needed.   
-Plus, to delete all reports at once, click the **Checkbox** in the top left corner and press the **Delete Selected Contacts** button.
-
-![Delete individually or in a bulk](/automation-funnels/automation-reports/12.-Delete-individually-or-in-a-bulk-scaled.webp)
-
-#### F. Pagination
-
-With this option, you can set how many individual reports you want to display per page. 
-
-![Pagination option](/automation-funnels/automation-reports/13.-Pagination-option-scaled.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
