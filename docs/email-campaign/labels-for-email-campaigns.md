@@ -6,64 +6,54 @@ order: 0
 ---
 
 # Labels for Email Campaigns
-FluentCRM allows you to create **Labels** to organize and filter your **[Email Campaigns](/docs/setting-up-campaign)**. This article will guide you through creating and managing the **Labels** for **Email Campaigns.**
 
-## Creating Labels 
+**Labels** let you colour-code and group your Email Campaigns so you can find, filter, and act on related campaigns at a glance. Instead of scrolling through a long list, you can narrow it down to exactly the campaigns that belong to a project, team, or topic.
 
-To learn how to create the **Labels** in **FluentCRM**, follow the steps with the screenshots below – 
+This article walks you through creating labels, applying them to campaigns, and keeping them tidy over time.
 
-First, go to the **Campaigns** section from **FluentCRM’s left sidebar** or select **All** **Campaigns** under the **Emails** section from the **FluentCRM** **Navbar**.
+## Opening the Label Manager
 
-Then, click the **Three-dot-icon** in the top right corner, and press the **Manage Labels** button.
+Go to **FluentCRM → Emails → Email Campaigns**. In the top-right area of the list, click **More Actions** and choose **Manage Labels** from the dropdown.
 
-![Three dot icon and manage labels button](/email-campaign/labels-for-email-campaigns/1.-Three-dot-icon-and-Manage-Labels-button-scaled.webp)
+![More Actions dropdown showing Manage Labels](/email-campaign/labels-for-email-campaigns/manage-labels-1.webp)
 
-Click the **Create New Labe**l button to create new labels.
+The **Manage Labels** panel slides in. It shows a table of your existing labels (with their **Label** name and **Slug**) and a search box at the top so you can find a specific label quickly when the list grows.
 
-Here, you can also find all your existing labels. You can edit any labels by clicking the **Pencil Icon** or delete by clicking the **Trash Icon** at any time if needed.
+## Creating a new label
 
-![Create new label](/email-campaign/labels-for-email-campaigns/2.-Create-New-Label.webp)
+In the Manage Labels panel, click **+ Create New Label**.
 
-Now, provide a **Name**, select any desired **Color**, and click the **Create** button.  
-And, your **Label** will be created to help you categorize your Email Campaigns!
+![Manage Labels panel — Create New Label button](/email-campaign/labels-for-email-campaigns/manage-labels-2.webp)
 
-![Create button](/email-campaign/labels-for-email-campaigns/3.-Create-button-1.webp)
+A small form appears where you can set:
 
-## Applying Labels
+- **Label Title** — the display name that appears on campaigns and in filters.
+- **Label Color** — pick from a palette of colours to make the label visually distinct.
 
-Return to the **All** **Campaigns** section from the **FluentCRM** Navbar and select the **Campaign/s** where you want to apply the Labels.
+![Label creation form with title and colour picker](/email-campaign/labels-for-email-campaigns/manage-labels-3.webp)
 
-> You can select the campaigns individually by clicking their **Checkboxes**, or select all at once using the **Checkbox** at the top left beside the **Title** column.
+Once you are happy with the name and colour, save the label. It will now appear in the Manage Labels table and be available to assign to campaigns.
 
-Once you select the desired **Campaign/s**, you will get the **Select Action** box in the top left corner.  
-Now, click the **Dropdown Arrow** and select the **Apply Labels** action.
+## Editing or deleting a label
 
-Then, choose the desired **Labels** (single or multiple according to your needs) from the **Select Labels** box by clicking the Dropdown Arrow. 
+In the **Manage Labels** table, click the three-dot action menu on any label row to reveal the **Edit** and **Delete** options.
 
-Finally, click the **Apply** **Label** button and the labels will be applied.
+- **Edit** — opens the same form so you can rename the label or change its colour.
+- **Delete** — permanently removes the label. Campaigns that had this label assigned will no longer show it.
 
-![Apply labels](/email-campaign/labels-for-email-campaigns/4.-Apply-Labels-scaled.webp)
+![Label row with Edit and Delete options](/email-campaign/labels-for-email-campaigns/manage-labels-4.webp)
 
-Here, you can see the selected labels have appeared with their chosen Email Campaigns under the **Labels** column.
+## Applying labels to campaigns
 
-![All added labels](/email-campaign/labels-for-email-campaigns/5.-All-added-labels-scaled.webp)
+You can assign one or more labels to campaigns in bulk straight from the campaign list.
 
-## Filtering Email Campaigns by Labels
+1. On the **Email Campaigns** list, tick the checkbox next to each campaign you want to label. You can select as many as you need.
+2. Once campaigns are selected, a **Bulk Action** bar appears above the list. Open the **Select Labels** dropdown and choose the label(s) you want to apply.
+3. Click **Apply Label**.
 
-You can also filter the list of Email Campaigns by the applied labels.  
-To do this, click the **Arrow Icon** of the **Filter by Labels** box and choose the desired label from the dropdown list. 
+The selected label will now appear next to those campaigns in the list.
 
-![Filter by labels](/email-campaign/labels-for-email-campaigns/6.-Filter-by-Labels-scaled.webp)
+![Bulk label selection and Apply Label button](/email-campaign/labels-for-email-campaigns/manage-labels-5.webp)
 
-For example, here I chose the WordPress Users label from the list and all the Email Campaigns with WordPress Users labels have appeared.
+> **Tip:** You can apply multiple labels to the same campaign by repeating the steps above with a different label selected.
 
-![All filtered labels](/email-campaign/labels-for-email-campaigns/7.-All-filtered-labels-scaled.webp)
-
-## Deleting Labels
-
-If you want to delete any existing label/s, click the **Cross Icon** next to the **Label Name**, and press the **Yes** button.  
-This way you can remove the labels from the desired campaigns.
-
-![Delete labels](/email-campaign/labels-for-email-campaigns/8.-Delete-Labels-scaled.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

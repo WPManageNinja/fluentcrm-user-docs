@@ -1,216 +1,109 @@
 ---
-title: "SmartCode In Editor of Email Templates"
+title: "SmartCodes in the FluentCRM Email Editor"
 slug: "smartcodes-in-fluentcrm-email-editor"
 category: "email-campaign"
 order: 0
 ---
 
-# SmartCode In Editor of Email Templates
-FluentCRM is an amazing tool for **WordPress** regarding Email Marketing and Automation. It also offers a great email editor and one more interesting feature of dynamic information to be used by **SmartCode**. This article will guide you through the process of using **SmartCode** in Email Templates.
+# SmartCodes in the FluentCRM Email Editor
 
-## Smartcode
+**SmartCodes** are dynamic tokens you place inside your email subject lines, pre-headers, and body content. When FluentCRM sends the email, every token is replaced with the real value for that contact — so one email template can greet each subscriber by name, show their company, link to their personal unsubscribe page, and more.
 
- There are 2 types of SmartCode available in Fluent CRM. These are:
+This article explains the two types of SmartCodes, lists every available token, and shows you where to find and insert them in the editor.
 
--   **Primary SmartCodes**: This group stores the information regarding Contact and FluentCRM general information. Such as Contacts, General, and WP User.
--   **Additional SmartCodes**: This group contains some plugins and user-dependent fields. Such as smartcodes based on Custom Fields and Integrations.
+## Types of SmartCodes
 
-**To learn the process of Smartcode, follow the steps with screenshots below –** 
+FluentCRM organises SmartCodes into two groups:
 
-First, go to the **Email Templates** from the **Email** section of **Fluent CRM Navbar, open one of your desired emails, and click the SmartCode** button.
+- **Primary SmartCodes** — built-in tokens for contact profile fields, general CRM/site values, and WordPress user data. These are always available.
+- **Additional SmartCodes** — tokens generated from your own Custom Fields and from third-party plugin integrations (LMS courses, membership levels, etc.). These appear automatically once you create custom fields or activate an integration.
 
-![smartcode button](/email-campaign/smartcodes-in-fluentcrm-email-editor/SmartCode-Button-scaled.webp)
+## Where to find SmartCodes in the editor
 
-Once you click the button, you will get all the available options for the Smartcodes.
+Open any email template, campaign, or sequence step in the **Email** section. In the editor toolbar, click the **SmartCode** button (or the `{}` shortcut). A panel opens listing every available token grouped by category. Click any token to insert it at your cursor position.
 
-![all available options for smartcodes](/email-campaign/smartcodes-in-fluentcrm-email-editor/All-Available-Options-for-Smartcodes.webp)
+## Primary SmartCodes
 
-**All the Smartcoeds and their functional description mentioned above are briefly explained below –**
+### Contact
 
-### Primary Smartcodes
+These tokens pull from the contact's profile stored in FluentCRM.
 
-#### Contacts
+| SmartCode | What it returns |
+| --- | --- |
+| <code>&#123;&#123;contact.full_name&#125;&#125;</code> | Full name |
+| <code>&#123;&#123;contact.prefix&#125;&#125;</code> | Name prefix (Mr., Ms., Dr., etc.) |
+| <code>&#123;&#123;contact.first_name&#125;&#125;</code> | First name |
+| <code>&#123;&#123;contact.last_name&#125;&#125;</code> | Last name |
+| <code>&#123;&#123;contact.email&#125;&#125;</code> | Email address |
+| <code>&#123;&#123;contact.id&#125;&#125;</code> | Contact's unique numeric ID |
+| <code>&#123;&#123;contact.user_id&#125;&#125;</code> | Linked WordPress user ID |
+| <code>&#123;&#123;contact.address_line_1&#125;&#125;</code> | Address line 1 |
+| <code>&#123;&#123;contact.address_line_2&#125;&#125;</code> | Address line 2 |
+| <code>&#123;&#123;contact.city&#125;&#125;</code> | City |
+| <code>&#123;&#123;contact.state&#125;&#125;</code> | State / Province |
+| <code>&#123;&#123;contact.postal_code&#125;&#125;</code> | Postal / ZIP code |
+| <code>&#123;&#123;contact.country&#125;&#125;</code> | Country |
+| <code>&#123;&#123;contact.phone&#125;&#125;</code> | Phone number |
+| <code>&#123;&#123;contact.status&#125;&#125;</code> | Subscription status |
+| <code>&#123;&#123;contact.date_of_birth&#125;&#125;</code> | Date of birth |
+| <code>&#123;&#123;contact.company.name&#125;&#125;</code> | Company name |
+| <code>&#123;&#123;contact.company.industry&#125;&#125;</code> | Company industry |
+| <code>&#123;&#123;contact.company.address&#125;&#125;</code> | Company address |
+| <code>&#123;&#123;contact.created_at&#125;&#125;</code> | Date the contact was added |
 
-Code
+### General
 
-Description
+These tokens pull from your FluentCRM settings, your WordPress site, or are computed at send time.
 
-&#123;&#123;contact.full\_name&#125;&#125;
+| SmartCode | What it returns |
+| --- | --- |
+| <code>&#123;&#123;crm.business_name&#125;&#125;</code> | Business name from FluentCRM Settings |
+| <code>&#123;&#123;crm.business_address&#125;&#125;</code> | Business address from FluentCRM Settings |
+| <code>&#123;&#123;wp.admin_email&#125;&#125;</code> | Admin email from WordPress settings |
+| <code>&#123;&#123;wp.url&#125;&#125;</code> | Your site URL |
+| <code>&#123;&#123;other.date.+2 days&#125;&#125;</code> | Dynamic date — replace `+2 days` with any relative date string; returns a formatted date at send time |
+| <code>&#123;&#123;other.date_format.D, d M, Y&#125;&#125;</code> | Custom date using any PHP date format |
+| <code>&#123;&#123;other.latest_post.title&#125;&#125;</code> | Title of the most recently published post |
+| <code>##crm.unsubscribe_url##</code> | Unsubscribe URL for the contact |
+| <code>##crm.manage_subscription_url##</code> | Manage subscriptions page URL |
+| <code>##web_preview_url##</code> | Web preview (view in browser) URL |
+| <code>&#123;&#123;crm.unsubscribe_html\|Unsubscribe&#125;&#125;</code> | Ready-made unsubscribe hyperlink (link text: "Unsubscribe") |
+| <code>&#123;&#123;crm.manage_subscription_html\|Manage Preference&#125;&#125;</code> | Ready-made manage-subscription hyperlink (link text: "Manage Preference") |
 
-Full name of the contact
+> **CAN-SPAM / GDPR reminder:** Your email footer should always include your business address and a working unsubscribe link. Use <code>&#123;&#123;crm.business_address&#125;&#125;</code> and the unsubscribe tokens above to make this automatic.
 
-&#123;&#123;contact.prefix&#125;&#125;
+### WP User
 
-Name Prefix of the contact
+These tokens are available when a contact is also a registered WordPress user.
 
-&#123;&#123;contact.first\_name&#125;&#125;
+| SmartCode | What it returns |
+| --- | --- |
+| <code>&#123;&#123;wp_user.display_name&#125;&#125;</code> | User's display name |
+| <code>&#123;&#123;wp_user.user_login&#125;&#125;</code> | Username (login) |
+| <code>##wp_user.password_reset_url##</code> | Password reset URL (for use in buttons / links) |
+| <code>&#123;&#123;wp_user.password_reset_url&#125;&#125;</code> | Password reset URL (plain text) |
+| <code>&#123;&#123;wp_user.meta.META_KEY&#125;&#125;</code> | Any WordPress user meta value — replace `META_KEY` with the actual meta key |
 
-First Name of the contact
+## Additional SmartCodes
 
-&#123;&#123;contact.last\_name&#125;&#125;
+### Custom Fields
 
-Last Name of the contact
+Any Custom Fields you create in **FluentCRM → Settings → Custom Fields** automatically generate their own SmartCodes. They appear in the SmartCode panel under the **Custom Fields** group, named after the field label you set.
 
-&#123;&#123;contact.email&#125;&#125;
+For example, if you created custom fields called **Number**, **Gender**, **Login Date**, and **Description**, you will see a matching token for each in the panel.
 
-Email address
+To learn how to create custom fields, see [Custom Contact Fields](/docs/global-custom-contact-fields).
 
-&#123;&#123;contact.id&#125;&#125;
+### Integrations
 
-Contact's unique ID (Numeric)
+When you connect a third-party plugin — such as an LMS, membership platform, or ecommerce tool — FluentCRM adds integration-specific tokens to the SmartCode panel. These let you reference course enrolments, membership levels, order data, and similar plugin-side values directly in your emails.
 
-&#123;&#123;contact.user\_id&#125;&#125;
+For example, with TutorLMS connected you might see tokens for enrolled course names and course links.
 
-Connected User ID of the contact
+Available tokens depend on which integrations are active on your site. Head to **FluentCRM → Settings → Integrations** to connect plugins and unlock their SmartCodes.
 
-&#123;&#123;contact.address\_line\_1&#125;&#125;
+## Practical tips
 
-Address Line 1
-
-&#123;&#123;contact.address\_line\_2&#125;&#125;
-
-Address Line 2
-
-&#123;&#123;contact.city&#125;&#125;
-
-Address City
-
-&#123;&#123;contact.state&#125;&#125;
-
-Address State
-
-&#123;&#123;contact.postal\_code&#125;&#125;
-
-Address Postal Code
-
-&#123;&#123;contact.country&#125;&#125;
-
-Address Country
-
-&#123;&#123;contact.phone&#125;&#125;
-
-Phone Number
-
-&#123;&#123;contact.status&#125;&#125;
-
-Contact's Status
-
-&#123;&#123;contact.date\_of\_birth&#125;&#125;
-
-Date of Birth
-
-&#123;&#123;contact.company.name&#125;&#125;
-
-Company Name
-
-&#123;&#123;contact.company.industry&#125;&#125;
-
-Company Industry
-
-&#123;&#123;contact.company.address&#125;&#125;
-
-Company Address
-
-&#123;&#123;contact.created\_at&#125;&#125;
-
-Time of Created Contact
-
-#### General
-
-Code
-
-Description
-
-**&#123;&#123;crm.business\_name&#125;&#125;**
-
-Business Name defined in FluentCRM Settings
-
-**&#123;&#123;crm.business\_address&#125;&#125;**
-
-Business Address defined in FluentCRM Settings
-
-**&#123;&#123;wp.admin\_email&#125;&#125;**
-
-Email Address defined in WordPress settings
-
-**&#123;&#123;wp.url&#125;&#125;**
-
-Your Website URL
-
-&#123;&#123;other.date.+2 days&#125;&#125;
-
-Dynamic Date Field. You can replace **+2 days** with your own date strings. it will return the date (WP Date Format) when parsing the data.
-
-&#123;&#123;other.date\_format.D, d M, Y&#125;&#125;
-
-Custom Date Format (Any PHP Date Format)
-
-&#123;&#123;other.latest\_post.title&#125;&#125;
-
-Latest Post Tittle (Published)
-
-##crm.unsubscribe\_url##
-
-Web preview URL of an email
-
-##crm.manage\_subscription\_url##
-
-Manage the Subscription page URL of the contact
-
-##web\_preview\_url##
-
-Web preview URL of an email
-
-&#123;&#123;crm.unsubscribe\_html|Unsubscribe&#125;&#125;
-
-This will return an unsubscribe link with HTML code and the link text will be **Unsubscribe.**
-
-'&#123;&#123;crm.manage\_subscription\_html|Manage Preference&#125;&#125;
-
-Manage Subscription Hyperlink HTML with the link text "Manage Preference"
-
-#### WP User
-
-Code
-
-Description
-
-&#123;&#123;wp\_user.display\_name&#125;&#125;
-
-User’s display name
-
-&#123;&#123;wp\_user.user\_login&#125;&#125;
-
-User Login (username)
-
-\## wp\_user.password\_reset\_url ##
-
-Password reset URL (as plain text)
-
-&#123;&#123;wp\_user.password\_reset\_url&#125;&#125;
-
-Password reset url (as plain text)
-
-&#123;&#123;wp\_user.meta.META\_KEY&#125;&#125;
-
-User Meta Data
-
-### Additional Smartcodes
-
-#### Custom Fields
-
-In this option, you will get all the **SmartCodes** based on your [**Custom Fields**](/docs/global-custom-contact-fields) that you created in your **Fluent CRM** plugin.
-
-> For example, here, I have the **smartcodes** for **showcasing** the users’ **Number, Gender, Login Date**, and **Descriptions** related information **based on** the **Custom Fields** i have created before.
-
-![custom field smartcodes](/email-campaign/smartcodes-in-fluentcrm-email-editor/Custom-Field-smartcodes.webp)
-
-#### Integrations
-
-In this option, you will get all the **SmartCodes** based on the **Plugin Integrations** that you integrated with your **Fluent CRM** plugin.
-
-> For example, here, I have the **smartcodes** for **showcasing** the **Enrolled Course Names** and **Enrolled Course with links (list)** related information based on the **TutorLMS** plugin that I have **integrated with** **Fluent CRM** before.
-
-![smartcodes based on integrations](/email-campaign/smartcodes-in-fluentcrm-email-editor/Smartcodes-based-on-Integrations.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+- **Fallback values:** If a token might be empty for some contacts (for example, `first_name` is not always filled), consider writing your copy to work naturally even when the token returns nothing — for example, "Hi there" as a fallback greeting.
+- **Subject lines:** SmartCodes work in subject lines too. Personalising the subject with the contact's first name can noticeably improve open rates.
+- **Testing:** Use **Send a test email** from the editor toolbar and enter your own email address. Your own contact record values will be used, so you can verify that every token resolves correctly before sending.
