@@ -6,11 +6,10 @@ order: 0
 ---
 
 # WooCommerce Automation Actions
+
 [FluentCRM](https://fluentcrm.com/) offers [Action](/docs/primary-automation-actions) blocks (i.e., tasks that you wish to trigger automatically from your side) specifically for **WooCommerce** marketing automation. This article will provide detailed information about all **Action** blocks for **WooCommerce Automation** in **FluentCRM**. 
 
-## Actions for WooCommerce Automation in FluentCRM
-
-To learn how you can use these WooCommerce Actions in your Fluent CRM, follow the steps with screenshots below –
+## Actions for WooCommerce Automation 
 
 > Before you proceed, you need to **set up** the **WooCommerce** in your **WordPress** **Site** to get all the WooCommerse-related Triggers and Actions.  
 > **Additionally**, to get all **WooComerce Subscription-related triggers**, you can **install** the **[WooCommeerce Subscription Triggers Add-on](/docs/woocommerce-subscription-triggers)**.
@@ -21,7 +20,7 @@ First, go to the **Automation** section from the **Fluent CRM Navbar**, and open
 
 Now, click the **Plus Icon** on the automation funnel page.
 
-![plus icon for the action blocks popup](/automation-funnels/woocommerce-automation-actions/Plus-Icon-for-the-Action-Blocks-popup-scaled.webp)
+![plus icon for the action blocks popup](/automation-funnels/woocommerce-automation-actions/Desired-Automation-for-adding-Actions-scaled-2.webp)
 
 A pop-up page will appear with a set of Action blocks to choose from, scroll down and you will get the **Actions** dedicated to **WooCommerce**. These are:
 
@@ -46,7 +45,7 @@ A brief explanation of the options in the screenshot is given below:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash Icon** if needed.
 
-![change order status](/automation-funnels/woocommerce-automation-actions/Change-Order-Status.webp)
+![change order status](/automation-funnels/woocommerce-automation-actions/Change-Order-Status-4.webp)
 
 ### Add Order Note
 
@@ -62,13 +61,14 @@ A brief explanation of the options in the screenshot is given below:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash Icon** if needed.
 
-![add order note](/automation-funnels/woocommerce-automation-actions/Add-Order-Note.webp)
+![add order note](/automation-funnels/woocommerce-automation-actions/Add-Order-Note-5.webp)
 
 ### Create Coupon
 
+This action lets you **Add** your **Coupon** in WooCommerce for the contacts within the automation funnel.
+
 https://youtu.be/Xv77Fd6Gifw?si=fW-HhjTLzDgbQfMC
 
-This action lets you **Add** your **Coupon** in WooCommerce for the contacts within the automation funnel.
 
 A brief explanation of the options in the screenshot is given below:
 
@@ -79,17 +79,15 @@ A brief explanation of the options in the screenshot is given below:
 
 Now, select the **Type** of **Configuration** you want for your **Coupon Code** and click the **Continue** button.
 
-![create coupon](/automation-funnels/woocommerce-automation-actions/Create-Coupon.webp)
+![create coupon](/automation-funnels/woocommerce-automation-actions/Create-Coupon-6.webp)
 
-#### 1\. Configure From Scratch
+#### 1. Configure From Scratch
 
 If you do not have any existing coupon to configure, you can easily **create a coupon code from scratch** by using this option.
 
-To learn how to create coupon code from scratch, follow the steps with screenshots below –
-
 First, select the **Configure from scratch** option and click the **Continue** button.
 
-![configure from scratch option and continue button](/automation-funnels/woocommerce-automation-actions/Configure-from-scratch-option-and-Continue-button.webp)
+![configure from scratch option and continue button](/automation-funnels/woocommerce-automation-actions/Configure-from-scratch-option-and-Continue-button-7.webp)
 
 Once you click continue, it will generate a **Dynamic Coupon Code** that you can copy and use as a SmartCode in emails or other actions.
 
@@ -100,8 +98,6 @@ Also, you will get all the **settings options** under two tabs for creating a co
 
 Once you are done, click the **Save Settings** button to save all your changes and create the coupon.  
 You can also **Delete** the action by clicking the **Trash Icon** if needed.
-
-![dynamic coupon code configure from scratch general and restriction tabs](/automation-funnels/woocommerce-automation-actions/Dynamic-Coupon-Code-Configure-From-Scratch-General-and-Restriction-tabs.webp)
 
 ##### General Options
 
@@ -114,7 +110,7 @@ All the options under the General tab are briefly explained below –
 -   **Allow Free Shipping**: Use **Yes** if you want to allow free shipping with your coupon. In this case, a free shipping method must be enabled in your shipping zone and be set to require "**a valid free shipping coupon**". Otherwise, keep it **No** if you do not want to allow free shipping.
 -   **Restrict the generated coupon to Contact Email Only:** Check the option if you want to restrict the use of the coupon to only those users who received the coupon via email and logged in using that email. If you leave it unchecked, anyone can use the service with the coupon code.
 
-![all the general options](/automation-funnels/woocommerce-automation-actions/All-the-General-options.webp)
+![all the general options](/automation-funnels/woocommerce-automation-actions/general-8.webp)
 
 ##### Restrictions & Limits
 
@@ -132,7 +128,7 @@ All the options under the **Restrictions & Limits** tab are briefly explained be
 -   **Limit usage to X items**: Here, you can choose the maximum number of individual products to which this coupon can be applied for the product discounts. But, if you want to apply the coupon to all qualifying items in the cart, leave it blank.
 -   **Usage limit per user**: In this option, you can set how many times can a user use this coupon.
 
-![all the restrictions & limits options](/automation-funnels/woocommerce-automation-actions/all-the-Restrictions-Limits-options.webp)
+![all the restrictions & limits options](/automation-funnels/woocommerce-automation-actions/all-the-Restrictions-Limits-options-9.webp)
 
 #### **2\. Use** **Existing Coupon as Template**
 
@@ -141,8 +137,6 @@ If you have any existing coupon, you can easily **configure it** by using this o
 To learn how to configure existing coupon code, follow the steps with screenshots below –
 
 First, select the **Use Existing Coupon as Template** option, now choose your coupon from the **Select your existing Coupon Code** dropdown field, and click the **Continue** button.
-
-![use existing coupn as template option](/automation-funnels/woocommerce-automation-actions/Use-Existing-Coupn-as-Template-option-1.webp)
 
 Once you click continue, it will generate a **Dynamic Coupon Code** that you can copy and use as a SmartCode in emails or other actions.
 
@@ -154,7 +148,8 @@ Also, you will get two more **settings options** for customizing your coupon. Th
 Once you are done, click the **Save Settings** button to save all your changes and configure the coupon.  
 You can also **Delete** the action by clicking the **Trash Icon** if needed.
 
-![dynamic code existing coupon general & restrictions tabs](/automation-funnels/woocommerce-automation-actions/Dynamic-code-Existing-coupon-General-Restrictions-tabs.webp)
+![use existing coupn as template option](/automation-funnels/woocommerce-automation-actions/Use-Existing-Coupn-as-Template-option-10.webp)
+
 
 ##### General Options
 
@@ -163,12 +158,12 @@ The two options under the General tab are briefly explained below –
 -   **Coupon Code Prefix**: FluentCRM will generate a random coupon code for each contact. Use a prefix to make something like 'FluentCRM-XYZHS4'.
 -   **Restrict the generated coupon to Contact Email Only:** Check the option if you want to restrict the use of the coupon to only those users who received the coupon via email and logged in using that email. If you leave it unchecked, anyone can use the service with the coupon code.
 
-![general options of existing coupon](/automation-funnels/woocommerce-automation-actions/General-options-of-existing-coupon-1.webp)
+![general options of existing coupon](/automation-funnels/woocommerce-automation-actions/General-options-of-existing-coupon-11.webp)
 
 ##### Restrictions & Limits
 
 All the restrictions & limit settings of the coupon will remain the same as your selected existing coupon settings that you choose for the configuration.
 
-![restrictions & limits tab of existing coupon](/automation-funnels/woocommerce-automation-actions/Restrictions-limits-tab-of-existing-coupon.webp)
+![restrictions & limits tab of existing coupon](/automation-funnels/woocommerce-automation-actions/Restrictions-limits-tab-of-existing-coupon-12.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
