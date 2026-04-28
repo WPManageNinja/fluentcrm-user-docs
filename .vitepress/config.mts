@@ -91,9 +91,9 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: 'FluentCRM Global Settings', link: '/docs/fluentcrm-global-settings' },
-                { text: 'General Settings', link: '/docs/global-general-settings' },
                 { text: 'Business Settings', link: '/docs/global-business-settings' },
                 { text: 'Email Settings', link: '/docs/global-email-settings' },
+                { text: 'General Settings', link: '/docs/global-general-settings' },
                 { text: 'Compliance', link: '/docs/global-compliance-settings' },
                 { text: 'Double Opt-in Settings', link: '/docs/global-double-opt-in-settings' },
                 { text: 'Custom Contact Fields', link: '/docs/global-custom-contact-fields' },
