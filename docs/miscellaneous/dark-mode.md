@@ -7,7 +7,7 @@ order: 0
 
 # Dark Mode
 
-[FluentCRM](https://fluentcrm.com/) v3 ships with a system-wide **Dark Mode** so you can work in low-light environments without straining your eyes. The preference is stored per WordPress user, which means each member of your team can pick the theme they prefer.
+FluentCRM v3 ships with a system-wide **Dark Mode** so you can work in low-light environments without straining your eyes. The preference is stored per WordPress user, which means each member of your team can pick the theme they prefer.
 
 ## Toggle Dark Mode
 

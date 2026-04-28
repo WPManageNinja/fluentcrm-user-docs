@@ -7,7 +7,7 @@ order: 1
 
 # Configure SMS Module
 
-The **SMS Module** is a powerful feature in [FluentCRM](https://fluentcrm.com/) Pro that allows you to deliver SMS campaigns and automate messages directly to your subscribers or customers. This feature is crucial for time-sensitive or high-priority communications, complementing your existing email marketing efforts.
+The **SMS Module** is a powerful feature in FluentCRM Pro that allows you to deliver SMS campaigns and automate messages directly to your subscribers or customers. This feature is crucial for time-sensitive or high-priority communications, complementing your existing email marketing efforts.
 
 In this article, you will learn how to enable the SMS Module in your FluentCRM installation before configuring your preferred SMS provider.
 

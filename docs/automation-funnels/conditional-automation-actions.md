@@ -6,7 +6,7 @@ order: 0
 ---
 
 # Primary Conditionals
-[FluentCRM](https://fluentcrm.com/) offers several **Primary** **Conditionals** that allow users to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions. This enhances the automation funnel, enabling various possibilities. With Multi-Path conditional automation, you can create multiple branches, providing flexibility to customize your workflows.
+FluentCRM offers several **Primary** **Conditionals** that allow users to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions. This enhances the automation funnel, enabling various possibilities. With Multi-Path conditional automation, you can create multiple branches, providing flexibility to customize your workflows.
 
 This article will provide detailed information about all **Primary** **Conditional Actions** of **FluentCRM Automation**. 
 

@@ -7,7 +7,7 @@ order: 0
 
 # Global Search
 
-[FluentCRM](https://fluentcrm.com/) v3 introduces a unified **Global Search** that lets you jump to any contact, campaign, automation, company, or note from a single search box – no more clicking through five different lists to find what you need.
+FluentCRM v3 introduces a unified **Global Search** that lets you jump to any contact, campaign, automation, company, or note from a single search box – no more clicking through five different lists to find what you need.
 
 This article shows you how to open Global Search, what it can find, and how to make it part of your daily workflow.
 

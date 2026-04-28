@@ -7,7 +7,7 @@ order: 0
 
 # WooCommerce Automation Actions
 
-[FluentCRM](https://fluentcrm.com/) offers [Action](/docs/primary-automation-actions) blocks (i.e., tasks that you wish to trigger automatically from your side) specifically for **WooCommerce** marketing automation. This article will provide detailed information about all **Action** blocks for **WooCommerce Automation** in **FluentCRM**. 
+FluentCRM offers [Action](/docs/primary-automation-actions) blocks (i.e., tasks that you wish to trigger automatically from your side) specifically for **WooCommerce** marketing automation. This article will provide detailed information about all **Action** blocks for **WooCommerce Automation** in **FluentCRM**.
 
 ## Actions for WooCommerce Automation 
 

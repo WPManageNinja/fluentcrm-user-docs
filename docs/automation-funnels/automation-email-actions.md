@@ -7,7 +7,7 @@ order: 0
 
 # Email Actions
 
-[FluentCRM](https://fluentcrm.com/) provides several [Actions](/docs/primary-automation-actions) especially for **Email Marketing,** to automatically send emails to users. Once automation is triggered, you can add the desired **Action/s** to handle advanced, repetitive, or routine tasks. This article will provide detailed information about all **Email Actions** in **FluentCRM Automation**. 
+FluentCRM provides several [Actions](/docs/primary-automation-actions) especially for **Email Marketing,** to automatically send emails to users. Once automation is triggered, you can add the desired **Action/s** to handle advanced, repetitive, or routine tasks. This article will provide detailed information about all **Email Actions** in **FluentCRM Automation**.
 
 > **Remember**, to use all the **Email Actions excep**t “**Send Custom Email action**”, you need to have [FluentCRM Pro Plugin](/docs/how-to-install-upgrade-and-activate-license) installed and activated on your WordPress Site.
 

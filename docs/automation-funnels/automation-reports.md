@@ -6,7 +6,7 @@ order: 0
 ---
 
 # Automation Reports
-[FluentCRM](https://fluentcrm.com/) offers a **Reports** section for each **Automation,** helping companies analyze campaign data and customer interactions to improve their **CRM** strategy. This article will guide you through using all the features of the **Reports** section inside a specific **Automation**.
+FluentCRM offers a **Reports** section for each **Automation,** helping companies analyze campaign data and customer interactions to improve their **CRM** strategy. This article will guide you through using all the features of the **Reports** section inside a specific **Automation**.
 
 ## View Reports
 

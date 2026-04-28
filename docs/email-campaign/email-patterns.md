@@ -7,7 +7,7 @@ order: 0
 
 # Email Patterns
 
-[FluentCRM](https://fluentcrm.com/) ships with a dedicated **Patterns** library so you can save, reuse, and share blocks of email design across every campaign you run. Patterns are built right inside the Gutenberg-native email builder, which means anything you can design in a campaign – a hero header, a featured-product row, a footer, a testimonial section – can be saved once and dropped into any future email with a single click.
+FluentCRM ships with a dedicated **Patterns** library so you can save, reuse, and share blocks of email design across every campaign you run. Patterns are built right inside the Gutenberg-native email builder, which means anything you can design in a campaign – a hero header, a featured-product row, a footer, a testimonial section – can be saved once and dropped into any future email with a single click.
 
 This article walks you through where Patterns live, how to create your own, and how to insert them into a campaign.
 

@@ -6,7 +6,7 @@ order: 0
 ---
 
 # Miscellaneous Actions
-Besides [Primary](/docs/primary-automation-actions), [WordPress](/docs/wordpress-automation-actions), [Email](/docs/automation-email-actions), [WooCommerce](/docs/woocommerce-automation-actions), [LMS](/docs/lms-automation-actions), [Goals or Benchmarks](/docs/goals-or-benchmark-actions), and [Conditional](/docs/conditional-automation-actions) actions, [FluentCRM](https://fluentcrm.com/) also offers a few other actions to help you automate things in the WordPress Site, such as [Fluent Support](http://fluentsupport.com) Action.
+Besides [Primary](/docs/primary-automation-actions), [WordPress](/docs/wordpress-automation-actions), [Email](/docs/automation-email-actions), [WooCommerce](/docs/woocommerce-automation-actions), [LMS](/docs/lms-automation-actions), [Goals or Benchmarks](/docs/goals-or-benchmark-actions), and [Conditional](/docs/conditional-automation-actions) actions, FluentCRM also offers a few other actions to help you automate things in the WordPress Site, such as [Fluent Support](http://fluentsupport.com) Action.
 
 This article will provide detailed information about all **Fluent Support** **Action** in **FluentCRM Automation**. 
 

@@ -7,7 +7,7 @@ order: 0
 
 # Company Module
 
-In [FluentCRM](https://fluentcrm.com/), the Company Module feature organizes contacts to one or more company records. In this company record, you can see company information and the contacts you have added under the company. This article will guide you through the process of using this feature. 
+In FluentCRM, the Company Module feature organizes contacts to one or more company records. In this company record, you can see company information and the contacts you have added under the company. This article will guide you through the process of using this feature.
 
 > **One of the notable features of the Company Module is organizing one or more contacts under a single entity. Additionally, it automatically retrieves company logos from their website using the website URL only.**
 

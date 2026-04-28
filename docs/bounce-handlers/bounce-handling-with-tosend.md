@@ -7,7 +7,7 @@ order: 0
 
 # Bounce Handling with toSend
 
-If you use the [toSend](https://tosend.io/) email service to deliver your [FluentCRM](https://fluentcrm.com/) campaigns, this guide shows you how to forward bounces and complaints back to FluentCRM so contact statuses stay clean and accurate.
+If you use the [toSend](https://tosend.io/) email service to deliver your FluentCRM campaigns, this guide shows you how to forward bounces and complaints back to FluentCRM so contact statuses stay clean and accurate.
 
 ## Copy your FluentCRM webhook URL
 

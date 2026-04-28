@@ -6,7 +6,7 @@ order: 0
 ---
 
 # SmartCode In Editor of Email Templates
-[FluentCRM](https://fluentcrm.com/) is an amazing tool for **WordPress** regarding Email Marketing and Automation. It also offers a great email editor and one more interesting feature of dynamic information to be used by **SmartCode**. This article will guide you through the process of using **SmartCode** in Email Templates.
+FluentCRM is an amazing tool for **WordPress** regarding Email Marketing and Automation. It also offers a great email editor and one more interesting feature of dynamic information to be used by **SmartCode**. This article will guide you through the process of using **SmartCode** in Email Templates.
 
 ## Smartcode
 

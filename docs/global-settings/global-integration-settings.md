@@ -7,7 +7,7 @@ order: 0
 
 # Integration Settings
 
-Using the deep integration settings, [FluentCRM](https://fluentcrm.com/) can sync data from third-party plugins into your CRM and (where supported) push CRM activity back into them. While syncing the data, you can also assign Lists and Tags to the contacts so your audience is segmented automatically as new customers, students, members, or community members arrive.
+Using the deep integration settings, FluentCRM can sync data from third-party plugins into your CRM and (where supported) push CRM activity back into them. While syncing the data, you can also assign Lists and Tags to the contacts so your audience is segmented automatically as new customers, students, members, or community members arrive.
 
 ![crm integrations](/global-settings/global-integration-settings/crm_integrations.webp)
 

@@ -7,7 +7,7 @@ order: 0
 
 # RTL Support
 
-Starting with v3, [FluentCRM](https://fluentcrm.com/) ships with native **right-to-left (RTL)** language support. If your WordPress site is configured in Arabic, Hebrew, Persian, Urdu, or any other RTL language, FluentCRM automatically loads its RTL stylesheet so menus, tables, modals, and the email builder all render in the correct reading direction.
+Starting with v3, FluentCRM ships with native **right-to-left (RTL)** language support. If your WordPress site is configured in Arabic, Hebrew, Persian, Urdu, or any other RTL language, FluentCRM automatically loads its RTL stylesheet so menus, tables, modals, and the email builder all render in the correct reading direction.
 
 ## How RTL is activated
 

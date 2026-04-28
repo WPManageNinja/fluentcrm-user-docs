@@ -7,7 +7,7 @@ order: 0
 
 # Abandoned Cart Settings
 
-With [FluentCRM](https://fluentcrm.com/), you can automate the recovery of [abandoned carts](https://fluentcrm.com/what-is-abandoned-cart/) from both **WooCommerce** and **FluentCart**. This article walks you through every setting on the Abandoned Cart Settings page – timing rules, GDPR consent, audience segmentation, and the per-driver options for WooCommerce and FluentCart. To use the feature, make sure either WooCommerce or FluentCart is installed and activated.
+With FluentCRM, you can automate the recovery of [abandoned carts](https://fluentcrm.com/what-is-abandoned-cart/) from both **WooCommerce** and **FluentCart**. This article walks you through every setting on the Abandoned Cart Settings page – timing rules, GDPR consent, audience segmentation, and the per-driver options for WooCommerce and FluentCart. To use the feature, make sure either WooCommerce or FluentCart is installed and activated.
 
 https://youtu.be/w_5CKt1sJv4
 

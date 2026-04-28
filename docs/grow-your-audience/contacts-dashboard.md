@@ -86,33 +86,4 @@ And contacts listed can be paginated per 10, 20,.. contacts per page from the bo
 
 #### Primary Columns
 
-By default, the contacts dashboard shows the contact images coming from Gravatar, Email addresses, Names, Lists, Tags, and Status Columns. You can additionally choose to see more or fewer columns as you wish to see. The available selectable primary contact data columns are:
-
-1.  Contact Type
-2.  Tags
-3.  Lists
-4.  Source
-5.  Phone
-6.  Country
-7.  Created At
-8.  Last Changed Date
-9.  Last Activity
-
-![contacts fluentcrm 4](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-4.webp)
-
-#### Integrations & Custom Fields
-
-These columns are custom and plugin integration dependent. Wocommerce, LearnDash, or any other plugins will activate a few extra columns upon their activation in integration into the website. Custom Fields can empty or as many as you will add as guided in [Custom Fields.](/docs/global-custom-contact-fields) The available selectable custom additional contact data columns are:
-
-**Woocommerce:**
-
-1.  Lifetime Value
-2.  Purchase Count
-3.  Customer Since
-4.  Last Purchase
-
-**Custom Fields:** Dependent on the available Custom Fields in the FluentCRM.
-
-![contacts fluentcrm 5](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-5.png)
-
-That's all about an overview of the Contacts Dashboard.
+By default, the contacts dashboard shows the contact images coming from Gravatar, Email addresses, Names, Lists, Tags, and Status Columns. You can additionally choose to see more or fewer columns as you wish to see. 

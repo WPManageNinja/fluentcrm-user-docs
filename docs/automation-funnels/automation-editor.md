@@ -6,7 +6,7 @@ order: 0
 ---
 
 # Creating Automation and Its Editor
-The most important use of the [FluentCRM](https://fluentcrm.com/) is to use the Automated Actions based on some triggers that happen on the WordPress Website. FluentCRM specializes in such automation triggering various incidents and then taking action upon user conditions and requirements.
+The most important use of the FluentCRM is to use the Automated Actions based on some triggers that happen on the WordPress Website. FluentCRM specializes in such automation triggering various incidents and then taking action upon user conditions and requirements.
 
 This article will guide you through the process of creating new automations and the editor of FluentCRM Automation which lets you create an automation funnel, select the trigger, add actions & conditions the way you want to set up, and choose to end the automation. To learn the whole process, follow the article accordingly.
 

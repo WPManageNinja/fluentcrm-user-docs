@@ -6,7 +6,7 @@ order: 0
 ---
 
 # Labels for Email Campaigns
-[FluentCRM](https://fluentcrm.com/) allows you to create **Labels** to organize and filter your **[Email Campaigns](/docs/setting-up-campaign)**. This article will guide you through creating and managing the **Labels** for **Email Campaigns.**
+FluentCRM allows you to create **Labels** to organize and filter your **[Email Campaigns](/docs/setting-up-campaign)**. This article will guide you through creating and managing the **Labels** for **Email Campaigns.**
 
 ## Creating Labels 
 

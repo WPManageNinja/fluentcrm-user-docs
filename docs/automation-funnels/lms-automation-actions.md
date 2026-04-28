@@ -7,7 +7,7 @@ order: 0
 
 # LMS Actions
 
-[FluentCRM](https://fluentcrm.com/) includes dedicated [Action](/docs/primary-automation-actions) blocks for LMS platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**. These actions let you automate enrollments and removals based on funnel events.
+FluentCRM includes dedicated [Action](/docs/primary-automation-actions) blocks for LMS platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**. These actions let you automate enrollments and removals based on funnel events.
 
 In this guide, we will walk through the LMS action flow using the currently available action screens.
 

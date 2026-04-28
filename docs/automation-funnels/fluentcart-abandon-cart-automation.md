@@ -7,7 +7,7 @@ order: 0
 
 # FluentCart Abandon Cart Automation
 
-With [FluentCRM](https://fluentcrm.com/) v3, you can recover lost sales from [**FluentCart**](https://fluentcart.com/) just like you would from WooCommerce – with a built-in **Cart Abandoned** trigger, audience segmentation through tags and lists, and personalised email sequences. The FluentCart driver ships with **FluentCRM core** (free), so no extra add-on is required.
+With FluentCRM v3, you can recover lost sales from [**FluentCart**](https://fluentcart.com/) just like you would from WooCommerce – with a built-in **Cart Abandoned** trigger, audience segmentation through tags and lists, and personalised email sequences. The FluentCart driver ships with **FluentCRM core** (free), so no extra add-on is required.
 
 This article walks you through configuring the FluentCart abandoned-cart settings, building the recovery automation, and tracking results.
 

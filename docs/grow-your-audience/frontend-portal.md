@@ -7,7 +7,7 @@ order: 0
 
 # Frontend Portal (Pro)
 
-The **Frontend Portal** in [FluentCRM](https://fluentcrm.com/) Pro turns your WordPress site into a self-service hub for your contacts. Logged-in users can review their profile, update preferences, manage subscriptions, and read past campaigns – all from a clean, branded portal page that you control.
+The **Frontend Portal** in FluentCRM Pro turns your WordPress site into a self-service hub for your contacts. Logged-in users can review their profile, update preferences, manage subscriptions, and read past campaigns – all from a clean, branded portal page that you control.
 
 This article walks you through enabling the Frontend Portal, choosing a render mode, and embedding it on your site.
 

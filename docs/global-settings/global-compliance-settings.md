@@ -7,7 +7,7 @@ order: 0
 
 # Compliance
 
-[FluentCRM](https://fluentcrm.com/) helps you with data protection and other compliance issues by offering specific settings to add to your Privacy Policy. This article will guide you through the process of using the Compliance settings option in Fluent CRM.
+FluentCRM helps you with data protection and other compliance issues by offering specific settings to add to your Privacy Policy. This article will guide you through the process of using the Compliance settings option in Fluent CRM.
 
 ## Compliance Settings
 

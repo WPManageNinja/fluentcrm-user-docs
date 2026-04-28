@@ -6,7 +6,7 @@ order: 0
 ---
 
 # Labels for Automations
-[FluentCRM](https://fluentcrm.com/) allows you to create **Labels** to organize and filter your **[Automations](/docs/introduction-to-fluentcrm-automation)**. This article will guide you through creating and managing the **Labels** for **Automations**.
+FluentCRM allows you to create **Labels** to organize and filter your **[Automations](/docs/introduction-to-fluentcrm-automation)**. This article will guide you through creating and managing the **Labels** for **Automations**.
 
 ## Creating Labels 
 

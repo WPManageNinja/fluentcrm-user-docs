@@ -6,11 +6,11 @@ order: 0
 ---
 
 # Ecommerce Conditionals
-[FluentCRM](https://fluentcrm.com/) provides several **[Conditionals](/docs/conditional-automation-actions)** for **E-commerce Platforms** like **WooCommerce**, **Woo Current Order**, **Easy Digital Downloads**, and **AffiliateWP**, allowing you to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions.
+FluentCRM provides several **[Conditionals](/docs/conditional-automation-actions)** for **E-commerce Platforms** like **WooCommerce**, **Woo Current Order**, **Easy Digital Downloads**, and **AffiliateWP**, allowing you to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions.
 
 This article will provide detailed information about all **E-commerce** **Conditional Actions** of **FluentCRM Automation**. 
 
-> **Remember**, to use these **E-Commerce Conditionals** you must install and activate all the **E-commerce Plugins** in your website. Additionally, learn the detailed integration process of [WooCommerce](/docs/woocommerce-automation-with-fluentcrm) and [Easy Digital Downloads](/docs/easy-digital-downloads-integration-with-fluentcrm) with [FluentCRM](https://fluentcrm.com/).
+> **Remember**, to use these **E-Commerce Conditionals** you must install and activate all the **E-commerce Plugins** in your website. Additionally, learn the detailed integration process of [WooCommerce](/docs/woocommerce-automation-with-fluentcrm) and [Easy Digital Downloads](/docs/easy-digital-downloads-integration-with-fluentcrm) with FluentCRM.
 
 ## All E-commerce Conditionals
 

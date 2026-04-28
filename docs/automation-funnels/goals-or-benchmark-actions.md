@@ -6,13 +6,13 @@ order: 0
 ---
 
 # Goals or BenchMark Actions
-[FluentCRM](https://fluentcrm.com/) provides several **Goals or Benchmark Actions** to set your goals higher by measuring different aspects, actions, or steps you take in the automation. You can add these Goals / Benchmark actions as secondary additional triggers to any automation at any point and measure these steps to change the behavior of the marketing approach, and tasks, or update your concepts.
+FluentCRM provides several **Goals or Benchmark Actions** to set your goals higher by measuring different aspects, actions, or steps you take in the automation. You can add these Goals / Benchmark actions as secondary additional triggers to any automation at any point and measure these steps to change the behavior of the marketing approach, and tasks, or update your concepts.
 
 For example, You can set a benchmark from your campaign emails by tracking when a user clicks a link or makes a purchase, and then taking actions such as adding them to a new list, applying a tag, or sending a new email sequence.
 
 https://www.youtube.com/watch?v=kxfEHdplr7s&t=
 
-This article will provide detailed information about all the **Goals or Benchmark** [Actions](/docs/primary-automation-actions) of [FluentCRM](https://fluentcrm.com/) **Automation**. 
+This article will provide detailed information about all the **Goals or Benchmark** [Actions](/docs/primary-automation-actions) of FluentCRM **Automation**.
 
 ## All Goals/Benchmark Actions
 

@@ -11,7 +11,7 @@ FluentCRM provides several **[Conditionals](/docs/conditional-automation-actions
 
 This article will provide detailed information about all **LMS** **Conditional Actions** of **FluentCRM Automation**. 
 
-> **Remember**, to use these **LMS** **Conditionals** you must install and activate all the **LMS Plugins** in your website. Additionally, learn the detailed integration process of [LifterLMS](/docs/lifterlms-integration-with-fluentcrm), [LearnDash](/docs/learndash-integration-with-fluentcrm), and [TutorLMS](/docs/tutorlms-integration-with-fluentcrm) with [FluentCRM](https://fluentcrm.com/).
+> **Remember**, to use these **LMS** **Conditionals** you must install and activate all the **LMS Plugins** in your website. Additionally, learn the detailed integration process of [LifterLMS](/docs/lifterlms-integration-with-fluentcrm), [LearnDash](/docs/learndash-integration-with-fluentcrm), and [TutorLMS](/docs/tutorlms-integration-with-fluentcrm) with FluentCRM.
 
 ## All LMS Conditionals
 

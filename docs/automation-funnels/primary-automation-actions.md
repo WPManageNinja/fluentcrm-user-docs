@@ -6,9 +6,9 @@ order: 0
 ---
 
 # Primary Actions
-[FluentCRM](https://fluentcrm.com/) provides several **Primary Actions** to trigger tasks automatically. Once automation is triggered, you can add the desired **Action/s** to handle advanced, repetitive, or routine tasks automatically. Besides primary actions, FluentCRM also offers a variety of action blocks that let you automate processes even when you’re away from your website.
+FluentCRM provides several **Primary Actions** to trigger tasks automatically. Once automation is triggered, you can add the desired **Action/s** to handle advanced, repetitive, or routine tasks automatically. Besides primary actions, FluentCRM also offers a variety of action blocks that let you automate processes even when you’re away from your website.
 
-This article will provide detailed information about all **Primary** Actions of [FluentCRM](https://fluentcrm.com/) **Automation**. 
+This article will provide detailed information about all **Primary** Actions of FluentCRM **Automation**.
 
 ## All Primary Actions
 

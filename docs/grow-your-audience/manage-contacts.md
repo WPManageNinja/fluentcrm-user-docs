@@ -7,7 +7,7 @@ order: 0
 
 # Add and Manage All Contacts
 
-[FluentCRM](https://fluentcrm.com/) provides an excellent [Contacts Dashboard](/docs/contacts-dashboard/#Contacts-Dashboard) that represents all the necessary summaries of the activities. This article will guide you through the process of **Adding a new contact man**ually and **Managing contacts in bulk** in detail.
+FluentCRM provides an excellent [Contacts Dashboard](/docs/contacts-dashboard/#Contacts-Dashboard) that represents all the necessary summaries of the activities. This article will guide you through the process of **Adding a new contact man**ually and **Managing contacts in bulk** in detail.
 
 ## Adding New Contacts
 
