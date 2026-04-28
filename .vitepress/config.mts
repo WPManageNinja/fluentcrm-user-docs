@@ -418,7 +418,8 @@ export default defineConfig({
     },
     footer: {
       message: 'FluentCRM – Marketing Automation for WordPress',
-      copyright: '© WPManageNinja. Need help? Get support at wpmanageninja.com',
+      copyright:
+        '© WPManageNinja. Need help? Get support at <a href="https://wpmanageninja.com/account/support-tickets/" target="_blank" rel="noopener noreferrer">wpmanageninja.com</a>',
     },
     outline: {
       level: [2, 4],
