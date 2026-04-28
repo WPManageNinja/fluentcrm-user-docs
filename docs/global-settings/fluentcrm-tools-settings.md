@@ -77,7 +77,7 @@ After enabling developer mode, the page displays a **Complete Data Removal** pan
 
 Always take a full database backup before using this action.
 
-![crm tools danger zone](/global-settings/fluentcrm-tools-settings/crm_tools_danger_zone.webp)
+![crm tools danger zone](/global-settings/fluentcrm-tools-settings/crm_tools_database_reset_latest.webp)
 
 For reference, here is the older warning-style interface from previous versions:
 
