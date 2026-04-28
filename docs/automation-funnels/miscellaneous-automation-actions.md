@@ -6,7 +6,12 @@ order: 0
 ---
 
 # Miscellaneous Actions
+<<<<<<< Updated upstream
 Besides [Primary](/docs/primary-automation-actions), [WordPress](/docs/wordpress-automation-actions), [Email](/docs/automation-email-actions), [WooCommerce](/docs/woocommerce-automation-actions), [LMS](/docs/lms-automation-actions), [Goals or Benchmarks](/docs/goals-or-benchmark-actions), and [Conditional](/docs/conditional-automation-actions) actions, FluentCRM also offers a few other actions to help you automate things in the WordPress Site, such as [Fluent Support](http://fluentsupport.com) Action.
+=======
+
+Besides [Primary](/docs/primary-automation-actions), [WordPress](/docs/wordpress-automation-actions), [Email](/docs/automation-email-actions), [WooCommerce](/docs/woocommerce-automation-actions), [LMS](/docs/lms-automation-actions), [Goals or Benchmarks](/docs/goals-or-benchmark-actions), and [Conditional](/docs/conditional-automation-actions) actions, [FluentCRM](https://fluentcrm.com/) also offers a few other actions to help you automate things in the WordPress Site, such as [Fluent Support](http://fluentsupport.com) Action.
+>>>>>>> Stashed changes
 
 This article will provide detailed information about all **Fluent Support** **Action** in **FluentCRM Automation**. 
 
@@ -14,25 +19,21 @@ This article will provide detailed information about all **Fluent Support** **Ac
 
 ## Fluent Support Action 
 
-To learn how you can use all the **Fluent Support Actions** in your **FluentCRM**, follow the steps with screenshots below –
-
 First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
 
 > To learn how to create a new automation funnel, read this [Documentation](/docs/automation-editor).
 
-For example, I opened the **Tag Applied** automation funnel to explain all the **Actions** in **CRM**.
+For example, I opened the **List Applied** automation funnel to explain all the **Actions** in **CRM**.
 
-![Open desired automation or create new one](/automation-funnels/miscellaneous-automation-actions/1.-Open-desired-Automation-or-Create-new-one-4-scaled.webp)
+![Open desired automation or create new one](/automation-funnels/miscellaneous-automation-actions/Create-new-one-4-scaled-1.webp)
 
 Now, click the **Plus Icon,** or just hover over it and click the **Add Action / Goal** option to get all the **LMS Actions**.
 
-![Click plus icon to add actions](/automation-funnels/miscellaneous-automation-actions/2.-Click-Plus-Icon-to-add-Actions-3-scaled.webp)
+![Click plus icon to add actions](/automation-funnels/miscellaneous-automation-actions/add-Actions-3-scaled-2.webp)
 
 Now, a pop-up page will appear with the **Fluent Support Action Blocks.**
 
-![Fluent support action](/automation-funnels/miscellaneous-automation-actions/3.-Fluent-Support-Action.webp)
-
-**A detailed explanation of the Fluent Support Action mentioned above is given below –** 
+![Fluent support action](/automation-funnels/miscellaneous-automation-actions/Fluent-Support-Action-3.webp)
 
 ### Create Support Ticket
 
@@ -58,6 +59,6 @@ Here, are the Settings of the Create Support Ticket Action
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Create support ticket](/automation-funnels/miscellaneous-automation-actions/4.-Create-Support-Ticket.webp)
+![Create support ticket](/automation-funnels/miscellaneous-automation-actions/Create-Support-Ticket-4.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
