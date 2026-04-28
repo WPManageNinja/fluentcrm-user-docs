@@ -97,7 +97,6 @@ export default defineConfig({
                 { text: 'Custom Fields', link: '/docs/global-custom-contact-fields' },
                 { text: 'Smart Link', link: '/docs/global-smartlinks-settings' },
                 { text: 'Double Opt-in Settings', link: '/docs/global-double-opt-in-settings' },
-                { text: 'SMS Setting', link: '/docs/advanced-features-settings' },
                 { text: 'Integrations', link: '/docs/global-integration-settings' },
                 { text: 'Abandoned Cart Settings', link: '/docs/abandoned-cart-settings' },
                 { text: 'AI Writing', link: '/docs/ai-writing-settings' },
