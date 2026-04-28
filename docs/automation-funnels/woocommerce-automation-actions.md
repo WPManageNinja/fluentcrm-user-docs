@@ -165,5 +165,3 @@ The two options under the General tab are briefly explained below –
 All the restrictions & limit settings of the coupon will remain the same as your selected existing coupon settings that you choose for the configuration.
 
 ![restrictions & limits tab of existing coupon](/automation-funnels/woocommerce-automation-actions/Restrictions-limits-tab-of-existing-coupon-12.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

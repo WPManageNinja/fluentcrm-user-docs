@@ -59,5 +59,3 @@ Combine these with [Conditional Sections](/docs/conditional-sections-in-fluentcr
 -   **Onboarding sequence:** Trigger on **Affiliate Activated** → send a welcome email with their referral URL → schedule a 3-day "first sale" tip → tag as *Onboarded*.
 -   **Re-activation campaign:** Use the AffiliateWP dynamic segment with a "no referrals in last 60 days" condition → send a re-engagement email featuring new promo materials.
 -   **Quarterly performance digest:** Build a recurring campaign that uses smart codes to deliver each affiliate's stats every quarter.
-
-If you have any questions about the AffiliateWP integration, please feel free to [contact us](https://wpmanageninja.com/support-tickets/).

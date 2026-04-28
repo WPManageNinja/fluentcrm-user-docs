@@ -62,4 +62,4 @@ The Contact section of FluentCRM includes a dedicated widget that shows the recu
 
 ![memberpress integration fluentcrm 8](/integrations/memberpress-integration-with-fluentcrm/Memberpress-Integration-FluentCRM-8.webp)
 
-So, this is the process of Memberpress Integration with FluentCRM. If you have any questions then contact [us](https://wpmanageninja.com/support-tickets/).
+So, this is the process of Memberpress Integration with FluentCRM.

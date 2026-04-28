@@ -81,5 +81,3 @@ Now a popup will appear and here give the necessary information about the funnel
 To see the Booking Contact list in FluentCRM, go to **FluentCRM Contact** then click on the List that you applied before **Booking** In **FluentCRM list** or **Contact Tag**.
 
 ![contact fluentcrm with fluent booking](/integrations/fluent-booking-integration-with-fluentcrm/Contact-FluentCRM-with-fluent-booking.webp)
-
-If you have any questions about Fluent Booking Integration with FluentCRM, please contact [us](https://wpmanageninja.com/support-tickets/).

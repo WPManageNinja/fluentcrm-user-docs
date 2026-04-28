@@ -90,5 +90,3 @@ _If the event key is the same don’t create a new event it was just created._
 ![image](/event-tracking/event-tracking-record/image-1.png)
 
 If you want to track events programmatically, please check out [the developer's doc here](https://developers.fluentcrm.com/modules/event-tracking/).
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).

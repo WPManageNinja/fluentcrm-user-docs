@@ -122,5 +122,3 @@ Once you are done, click the **Add** button and your custom field will be added.
 > You can add as many custom fields as you want according to your needs by following the same process.
 
 ![final popup page for adding custom field](/grow-your-audience/company-module/Final-popup-page-for-adding-custom-field.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

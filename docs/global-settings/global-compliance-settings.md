@@ -41,6 +41,3 @@ This feature streamlines the user experience for those wishing to opt out.
 
 
 ![compliance settings option under settings section of fluentcrm](/global-settings/global-compliance-settings/Compliance-Settings-option-under-Settings-section-of-FluentCRM-scaled.webp)
-
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

@@ -39,4 +39,4 @@ To view bounced contacts, go to **FluentCRM → Contacts**. Then enable the **Ad
 
 ![bounce contact](/bounce-handlers/bounce-handling-with-smtp2go/Bounce-contact-scaled.webp)
 
-This setup helps you track bounced emails and manage your email campaigns efficiently. If you have any questions, please contact [us](https://wpmanageninja.com/support-tickets/).
+This setup helps you track bounced emails and manage your email campaigns efficiently.

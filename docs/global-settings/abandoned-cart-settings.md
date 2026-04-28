@@ -89,5 +89,3 @@ Once all done, click the **Save** button to apply all the changes you’ve made.
 -   [Abandon Cart Automation (WooCommerce)](/docs/abandon-cart-automation)
 -   [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation)
 -   [Abandoned Cart Report](/docs/abandoned-cart-report)
-
-If you have any questions about the Abandoned Cart settings, please feel free to [contact us](https://wpmanageninja.com/support-tickets/).

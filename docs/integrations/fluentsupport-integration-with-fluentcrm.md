@@ -55,5 +55,3 @@ Combine these with [Conditional Sections](/docs/conditional-sections-in-fluentcr
 -   **Service-recovery sequence:** Trigger on **Ticket Closed** → wait two days → send a CSAT email with a satisfaction smart link.
 -   **Tag-by-product:** Trigger on **Ticket Created** with a condition on the ticket's product → apply a product-specific tag in FluentCRM for re-engagement campaigns.
 -   **Power-user identification:** Apply a *Power User* tag after a contact closes their fifth ticket – it's an excellent leading indicator for testimonials and case studies.
-
-If you have any questions about the FluentSupport integration, please feel free to [contact us](https://wpmanageninja.com/support-tickets/).

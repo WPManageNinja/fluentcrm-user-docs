@@ -168,6 +168,4 @@ To learn more about the advanced report of LearnDash read this [Documentation](/
 
 ![image](/integrations/learndash-integration-with-fluentcrm/image-80.webp)
 
-If you have any further questions about this guide, please don't hesitate to [contact us](https://wpmanageninja.com/support-tickets/).
-
 **Tutorial:** [Learndash email marketing automation with FluentCRM](https://fluentcrm.com/learndash-email-marketing-automation-tutorial/)

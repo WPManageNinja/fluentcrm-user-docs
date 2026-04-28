@@ -150,5 +150,3 @@ Here are the Settings of the Email Sequence Completed action:
 Once you are done, click the **Save Settings** button to save all your changes.
 
 ![Email sequence completed](/automation-funnels/goals-or-benchmark-actions/Email-Sequence-Completed-8.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

@@ -208,6 +208,3 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 > To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
-
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

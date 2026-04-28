@@ -35,5 +35,3 @@ Now click on the **Save Webhook** to save your webhook settings. 
 If you want to view bounced contacts, go to **FluentCRM → Contacts**. Then enable the **Advanced Filter** option. Click **Add Property → Contact Segment → Status**, and select **Bounce**.
 
 ![bounce handling with sendgrid fluentcrm](/bounce-handlers/bounce-handling-with-postal-server/bounce-filter.webp)
-
-If you have any further questions about this guide, please don't hesitate to [contact us](https://wpmanageninja.com/support-tickets/).

@@ -48,5 +48,3 @@ The default scope is **All**, which returns up to a handful of matches per type 
 -   **Reuse a campaign as a starting point:** Search by campaign title, open it, then click **Duplicate**.
 -   **Audit a contact's notes:** Use the **Notes** scope to find a phrase you remember writing.
 -   **Locate companies by domain:** Search by `acme.com` instead of *Acme Inc.* if multiple companies share a name.
-
-If you have any questions about Global Search, please feel free to [contact us](https://wpmanageninja.com/support-tickets/).

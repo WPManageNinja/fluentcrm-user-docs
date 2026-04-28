@@ -107,5 +107,3 @@ Now choose a form from the **Select Your Form** dropdown if you want this automa
 A widget will appear in the FluentCRM contact’s profile for users who have subscribed via Fluent Forms.
 
 ![fluent forms subscriptions](/integrations/wp-fluent-forms-integration-with-fluentcrm/subscription-widget.webp)
-
-If you have any further queries regarding this article please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).

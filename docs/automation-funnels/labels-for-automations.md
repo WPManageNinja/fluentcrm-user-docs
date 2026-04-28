@@ -67,5 +67,3 @@ If you want to delete any existing label/s, click the **Cross Icon** next to the
 This way you can remove the labels from any automations.
 
 ![Delete label](/automation-funnels/labels-for-automations/delete-lable-7.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

@@ -87,5 +87,3 @@ If you've used the WooCommerce abandoned cart flow before, the FluentCart versio
 -   [Abandon Cart Automation (WooCommerce)](/docs/abandon-cart-automation)
 -   [Abandoned Cart Settings](/docs/abandoned-cart-settings)
 -   [FluentCart Integration with FluentCRM](/docs/fluentcart-integration-with-fluentcrm)
-
-If you have any questions about FluentCart abandoned cart automation, please feel free to [contact us](https://wpmanageninja.com/support-tickets/).

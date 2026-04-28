@@ -58,5 +58,3 @@ First, **select** the **desired contact/s** you want to manage, a **Select Actio
 > Additionally, you can also [Import](/docs/import-contacts-into-fluentcrm) or [Export](/docs/export-contacts-from-fluentcrm) your FluentCRM contact/s based on your selection.
 
 ![select bulk action dropdown field](/grow-your-audience/manage-contacts/Select-Bulk-Action-dropdown-field-scaled.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

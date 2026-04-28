@@ -126,5 +126,3 @@ TutorLMS actions also follow the same setup pattern:
 - Save settings
 
 Use the same action setup logic shown in the LifterLMS examples.
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

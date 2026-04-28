@@ -82,5 +82,3 @@ https://youtu.be/Q35Yzm-bMpA?si=wtBAAFwNl4Uijhkp
 https://youtu.be/n_efMvc2e08?si=jXAkA2df7VIgWFTi
 
 That’s all as an introduction or overview of FluentCRM automation. Please review the relevant elements to learn and start working with FluentCRM automation to build your own funnel in the WordPress website.
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

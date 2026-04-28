@@ -137,7 +137,3 @@ Finally, when you are done, enable the **Publish** toggle to make the full autom
 ![Published](/automation-funnels/conditional-automation-actions/automation-condition-6.webp)
 
 Also, to add more conditions or actions, always click the **Plus** icon.
-
-
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

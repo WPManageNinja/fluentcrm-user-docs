@@ -110,5 +110,3 @@ With [**FluentCRM Pro**](/docs/how-to-install-upgrade-and-activate-license), you
 You can add more filters by clicking the **+Add** button, add filters against the existing filter by clicking the **\+ OR** button, and delete any existing filter by clicking the **Trash Icon**.
 
 ![by advanced filter 10](/integrations/fluentcommunity-integration-with-fluentcrm/by-advanced-filter-10-scaled.webp)
-
-If you have any further questions or suggestions, please do not hesitate to reach out to our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). We're always here to help!

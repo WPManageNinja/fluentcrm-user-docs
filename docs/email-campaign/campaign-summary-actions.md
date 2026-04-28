@@ -77,5 +77,3 @@ If you applied **UTM parameters** during campaign setup ([Email Campaigns → Su
 -   The **Link Activity** widget displays the tagged URL alongside the click count, so you can match a click in your analytics tool back to the specific link in the email.
 
 This is the easiest way to confirm – after the campaign has been sent – exactly how the campaign appears in Google Analytics, Plausible, or your reporting tool of choice.
-
-If you have any further questions regarding campaign reporting or automated actions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).

@@ -108,5 +108,3 @@ The available FluentAffiliate conditions for segmentation are:
 2.  When setting up an **Email Campaign** and selecting the **Recipients,** you will find the Advanced Filter.
 
 ![automation trigger 03 1](/integrations/fluentaffiliate-integration-with-fluentcrm/Automation-Trigger-03-1-scaled.webp)
-
-If you have any further queries regarding this article, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).

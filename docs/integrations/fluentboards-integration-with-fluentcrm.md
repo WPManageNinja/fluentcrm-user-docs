@@ -60,5 +60,3 @@ This is handy when you onboard a new team or rotate contributors between project
 -   **Onboarding a new contributor:** Trigger on **Member Added to Board** → send a welcome email with the project brief, then apply a tag like *Active Contributor*.
 -   **Stalled-task nudge:** Combine **Task Assigned** with a delay action and a check-condition – if the task has not moved stage in 3 days, send a friendly reminder.
 -   **Project completion celebration:** Trigger on **Task Completed** for a "Final Sign-off" task → fire a campaign email and update a custom field.
-
-If you have any questions about the FluentBoards integration, please feel free to [contact us](https://wpmanageninja.com/support-tickets/).

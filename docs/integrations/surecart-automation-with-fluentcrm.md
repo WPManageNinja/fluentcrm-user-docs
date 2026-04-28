@@ -105,4 +105,4 @@ Clicking the **View Customer Profile** will redirect you to the Surecart custome
 
 ![surecart customer details](/integrations/surecart-automation-with-fluentcrm/surecart-customer-details-scaled.webp)
 
-By following these steps, you can successfully run marketing automation for SureCart using FluentCRM. If you have any further questions about this guide, please don't hesitate to [contact us](https://wpmanageninja.com/support-tickets/).
+By following these steps, you can successfully run marketing automation for SureCart using FluentCRM.

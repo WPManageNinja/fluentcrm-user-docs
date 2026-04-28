@@ -47,5 +47,3 @@ API: https://your-domain.com/wp-json/fluent-crm/v2/subscribers/{ID}/tracking-eve
 Then You will get a response like this:
 
 ![single contact event tracking 04](/event-tracking/event-tracking-with-action-hooks/single-contact-event-tracking-04.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).

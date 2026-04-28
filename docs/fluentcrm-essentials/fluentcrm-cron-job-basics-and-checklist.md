@@ -61,5 +61,3 @@ define('DISABLE_WP_CRON', true);    // Disable the default PHP-based Cron invoca
 -   [Cron Job: FluentCRM Cron With Cloudways](/docs/fluentcrm-cron-with-cloudways)
 -   [Cron Job: FluentCRM Cron with Cron-job.org](/docs/fluentcrm-cron-with-cronjob-org)
 -   [Cron Job: FluentCRM Cron with EasyCron](/docs/fluentcrm-cron-with-easycron)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

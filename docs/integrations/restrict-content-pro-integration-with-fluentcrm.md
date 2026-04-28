@@ -55,4 +55,4 @@ Here open a popup, simply fill in all the required filed that you want and click
 
 ![membership is expired trigger](/integrations/restrict-content-pro-integration-with-fluentcrm/Membership-is-Expired-trigger-6.webp)
 
-So, this is the integration process of Restrict Content Pro with FluentCRM. If you have any questions then contact our [support](https://wpmanageninja.com/support-tickets/) team.
+So, this is the integration process of Restrict Content Pro with FluentCRM.

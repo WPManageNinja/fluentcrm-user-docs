@@ -164,5 +164,3 @@ This automation funnel will start once a member is added to a membership level.
 Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
 
 > The settings options of this **Wishlist Member’s Membership Enrolled** trigger work the same way as the **MemberPress’** **Membership Enrolled** trigger. To learn how to use all the settings, read this [Section](/docs/fluentcrm-membership-triggers/#settings-of-membership-enrolled-trigger).
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/). Thank you.

@@ -54,5 +54,3 @@ Finally, click the **Save Settings** button to save your automation settings the
 -   [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation)
 -   [Abandoned Cart Settings](/docs/abandoned-cart-settings)
 -   [Abandoned Cart Report](/docs/abandoned-cart-report)
-
-If you have any further questions about abandoned cart automation, please feel free to [contact us.](https://wpmanageninja.com/support-tickets/)

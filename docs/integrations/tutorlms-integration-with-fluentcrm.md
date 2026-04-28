@@ -134,4 +134,4 @@ To view your course enrollment report, go to the FluentCRM dashboard and select 
 
 ![tutorlms reports](/integrations/tutorlms-integration-with-fluentcrm/TutorLMS-Reports.webp)
 
-So here is the entire process of integrating TutorLMS with FluentCRM. If you have any questions then feel free to contact our [support](https://wpmanageninja.com/support-tickets/) team.
+So here is the entire process of integrating TutorLMS with FluentCRM.

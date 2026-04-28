@@ -36,5 +36,3 @@ Internally, FluentCRM checks `is_rtl()` and loads `admin_rtl.css` on top of the 
 ## Switching back to LTR
 
 To switch back to a left-to-right layout, change the WordPress **Site Language** at **Settings → General** to an LTR language and save. FluentCRM will stop loading the RTL stylesheet on the next page load.
-
-If you have any questions about RTL support, please feel free to [contact us](https://wpmanageninja.com/support-tickets/).

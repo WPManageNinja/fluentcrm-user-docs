@@ -91,5 +91,3 @@ After you click any LMS trigger, a settings panel appears on the right side. You
 - **Restart the Automation:** Enable this if you want the same contact to re-enter the same funnel in future qualifying events.
 
 Once your configuration is ready, click the **Save Settings** button to continue into the [Automation Editor](/docs/automation-editor) and build your sequence.
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

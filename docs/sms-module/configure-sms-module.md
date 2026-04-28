@@ -169,4 +169,4 @@ To build full workflows that include SMS, start with [Introduction to FluentCRM 
 
 ![Indivisual SMS Send](/sms-module/configure-sms-module/individualy-sms-send-12.webp)
 
-That covers the core SMS Module setup and usage. If you have any further questions about this article, please contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).
+That covers the core SMS Module setup and usage.

@@ -107,4 +107,3 @@ Once you click the **Title** of your desired automation it will take you to the 
 10.  **Plus Icon**: Always press the **Plus Icon** to add new [Actions](/docs/primary-automation-actions) or [Conditions](/docs/conditional-automation-actions).
 
 This way you can create and edit automations easily at any time!  
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

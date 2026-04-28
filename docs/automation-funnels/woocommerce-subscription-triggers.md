@@ -94,5 +94,3 @@ This automation funnel will start when a subscription expires.
 After selecting this trigger, a pop-up will appear with the same options as the Subscription Activated Trigger Options for managing your funnel.
 
 Once you are done, click the **Save Settings** button to save all your changes.
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

@@ -42,5 +42,3 @@ After that, you can choose the FluentCRM Conditions from the **Choose Condition*
 You can also add multiple Conditions to filter more targeted audiences.
 
 ![conditions setup full](/integrations/oxygen-builder-integration-with-fluentcrm/Conditions-Setup-full.webp)
-
-If you have any further questions about this guide, please don't hesitate to [contact us](https://wpmanageninja.com/support-tickets/).

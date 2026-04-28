@@ -158,5 +158,3 @@ Once you are done, click the **Save Settings** button to save all your changes.
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
 ![Send campaign email](/automation-funnels/automation-email-actions/Send-Campaign-Email-12.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

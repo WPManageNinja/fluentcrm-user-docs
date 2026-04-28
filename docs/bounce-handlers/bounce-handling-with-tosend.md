@@ -45,5 +45,3 @@ You can also send a real campaign to a known-bouncing address and verify the con
 To review bounced contacts, go to **FluentCRM → Contacts**, enable **Advanced Filter**, then click **Add Property → Contact Segment → Status**, and choose **Bounce**.
 
 > **Tip:** If toSend retries a webhook several times before FluentCRM acknowledges it, the contact may briefly show as **Pending** before being marked **Bounced**. Subsequent retries are idempotent – FluentCRM will not double-count the bounce.
-
-If you have any questions about bounce handling with toSend, please feel free to [contact us](https://wpmanageninja.com/support-tickets/).

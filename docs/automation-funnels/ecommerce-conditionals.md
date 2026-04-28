@@ -120,5 +120,3 @@ Here you will get a set of **FluentCart** options to define your conditional **P
 Use these conditions to segment contacts by purchase status, total spend, average spending behavior, and customer recency.
 
 ![FluentCart property](/automation-funnels/ecommerce-conditionals/automation-6.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

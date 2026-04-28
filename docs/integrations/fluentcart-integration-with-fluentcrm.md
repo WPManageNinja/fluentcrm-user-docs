@@ -102,5 +102,3 @@ The available FluentCart conditions for segmentation are:
 2\. These same advanced filters are also available when setting up the **Recipients** for an **Email Campaign**, allowing you to send highly targeted broadcasts to specific customer groups.
 
 ![receipt advanced filter](/integrations/fluentcart-integration-with-fluentcrm/Receipt-advanced-filter-scaled.webp)
-
-If you have any further queries regarding this article, please do not hesitate to contact our [support team](https://fluentcrm.com/contact-us/).

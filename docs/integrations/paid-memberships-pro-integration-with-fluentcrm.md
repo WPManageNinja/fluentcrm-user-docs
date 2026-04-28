@@ -44,5 +44,3 @@ After that click **Save Settings** to save it.
 ![image](/integrations/paid-memberships-pro-integration-with-fluentcrm/image-6-3.webp)
 
 After that, you can add [action](/docs/primary-automation-actions) blocks to target membership websites for specific contact segments.
-
-If you have any further questions about this guide, please don't hesitate to [contact us](https://wpmanageninja.com/support-tickets/).
