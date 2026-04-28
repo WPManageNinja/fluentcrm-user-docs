@@ -292,10 +292,6 @@ class CustomTrigger
 
 The `prepareEditorDetails()` method is responsible for returning an object that FluentCRM uses to render the **settings** and **conditions** panels for this trigger in the automation editor.
 
-The trigger configuration panel will look similar to this:
-
-![Custom automation trigger settings](/devloper/custom-automation-trigger/Screenshot-2022-09-07-at-9.31.23-AM-1024x740.png)
-
 > The "Target Products" (or similar) area in your UI is generated from the `getSettingsFields()` definition. For more field types and structures, see the [form field code structure](/docs/form-field-code-structure) reference.
 
 ---
