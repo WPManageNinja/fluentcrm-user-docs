@@ -121,12 +121,6 @@ When this class is loaded, FluentCRM will:
 - Show a **Custom → Purchased Products** condition in the automation condition builder.
 - Call `assessAutomationConditions()` whenever that condition is used, passing the condition data and the current subscriber so you can decide whether it matches.
 
-The condition UI will look similar to this:
-
-![Custom automation condition settings](/devloper/custom-automation-condition/Screenshot-2022-09-07-at-12.02.07-PM-1024x467.png)
-
----
-
 ## Step 2 – Register the condition class
 
 Finally, instantiate your condition class once FluentCRM (FluentCampaign) is available. A common place is the `plugins_loaded` hook:
