@@ -6,7 +6,8 @@ order: 0
 ---
 
 # Email Actions
-[FluentCRM](https://fluentcrm.com/) provides several [Actions**,**](/docs/primary-automation-actions) especially for **Email Marketing,** to automatically send emails to users. Once automation is triggered, you can add the desired **Action/s** to handle advanced, repetitive, or routine tasks. This article will provide detailed information about all **Email Actions** in **FluentCRM Automation**. 
+
+[FluentCRM](https://fluentcrm.com/) provides several [Actions](/docs/primary-automation-actions) especially for **Email Marketing,** to automatically send emails to users. Once automation is triggered, you can add the desired **Action/s** to handle advanced, repetitive, or routine tasks. This article will provide detailed information about all **Email Actions** in **FluentCRM Automation**. 
 
 > **Remember**, to use all the **Email Actions excep**t “**Send Custom Email action**”, you need to have [FluentCRM Pro Plugin](/docs/how-to-install-upgrade-and-activate-license) installed and activated on your WordPress Site.
 
@@ -20,15 +21,15 @@ First, go to the **Automation** section from the **FluentCRM Navbar**, and open 
 
 For example, I opened the **Tag Applied** automation funnel to explain all the **Actions** in **CRM**.
 
-![Open desired automation or create new one](/automation-funnels/automation-email-actions/1.-Open-desired-Automation-or-Create-new-one-2-scaled.webp)
+![Open desired automation or create new one](/automation-funnels/automation-email-actions/automation-1.webp)
 
 Now, click the **Plus Icon,** or just hover over it and click the **Add Action / Goal** option to get all the **Email Actions**.
 
-![Click plus icon to add actions](/automation-funnels/automation-email-actions/2.-Click-Plus-Icon-to-add-Actions-1-scaled.webp)
+![Click plus icon to add actions](/automation-funnels/automation-email-actions/add-action-2.webp)
 
 Now, a pop-up page will appear with all the **Email Action Blocks** of **FluentCRM** to choose from. 
 
-![All email actions](/automation-funnels/automation-email-actions/3.-All-Email-Actions.webp)
+![All email actions](/automation-funnels/automation-email-actions/All-Email-Actions-3.webp)
 
 **A detailed explanation of the Actions mentioned above is given below –** 
 
@@ -39,7 +40,7 @@ This action lets you send a **Custom** **Email** to your **Subscriber**/**Custom
 Once you complete the setup, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Send custom email](/automation-funnels/automation-email-actions/4.-Send-Custom-Email-scaled.webp)
+![Send custom email](/automation-funnels/automation-email-actions/Send-Custom-Email-scaled-4.webp)
 
 The Settings of the Send Custom Email Action mentioned in the screenshot above is briefly explained below;
 
@@ -66,7 +67,7 @@ Select this option to send emails to the CRM Contacts within the Automation.
 -   **Email Pre-Header**: An Additional short subject is shown as a small subject line beside the primary subject.
 -   **Email Body**: Here, you will write the entire email body text. To learn more, read these [Compose Email in FluentCRM](/docs/compose-email-in-fluentcrm) and [Importing Email Templates into FluentCRM](/docs/email-templates/#Importing-Email-Templates-into-FluentCRM) documentation.
 
-![Send to the contact under send email to](/automation-funnels/automation-email-actions/5.-Send-To-the-Contact-under-Send-Email-to.webp)
+![Send to the contact under send email to](/automation-funnels/automation-email-actions/Send-To-the-Contact-under-Send-Email-to-5.webp)
 
 #### b. Send to Custom Email Address
 
@@ -76,7 +77,7 @@ Select this option to send emails to any custom email address within the Automat
 
 > To learn the use of the other setting options mentioned in the screenshot below, read this [**Section**](/docs/automation-email-actions/#a-send-to-contact).
 
-![Send to custom email address under send email to](/automation-funnels/automation-email-actions/6.-Send-To-Custom-Email-Address-under-Send-Email-to.webp)
+![Send to custom email address under send email to](/automation-funnels/automation-email-actions/Send-To-Custom-Email-Address-under-Send-Email-to-6.webp)
 
 ### D. Send a Test Email
 
@@ -86,7 +87,7 @@ To send a test email, click the **Send a test email**, input the email address w
 
 Once the email is sent successfully you will see a **Success Message** in the below right corner.
 
-![Send a test email](/automation-funnels/automation-email-actions/7.-Send-a-Test-Email.webp)
+![Send a test email](/automation-funnels/automation-email-actions/Send-a-Test-Email-7.webp)
 
 ### E. Schedule this email to a specific Date
 
@@ -94,7 +95,7 @@ Checking this option lets you **set** a **specific** **Date and Time** to send y
 
 Also, check this “**Skip sending email if date is overdued”** option if you don’t want to send the email after the scheduled date has passed.
 
-![Schedule this email to a specific date](/automation-funnels/automation-email-actions/8.-Schedule-this-email-to-a-specific-date.webp)
+![Schedule this email to a specific date](/automation-funnels/automation-email-actions/Schedule-this-email-to-a-specific-date-8.webp)
 
 ### F. Send Custom From Name and Email
 
@@ -104,7 +105,7 @@ Checking this option lets you customize your form name and email.
 
 -   **Reply To Name & Email**: With this option, you can specify the receiver name and email for users to reply to the notification, ensuring you receive their responses. Also here, you can use the [SmartCodes](/docs/smartcodes-in-fluentcrm-email-editor) in the **Reply To Name** field. If you leave this field blank, the user reply will be sent to the Default Email you set for your site. 
 
-![Set custom from name and email](/automation-funnels/automation-email-actions/9.-Set-Custom-From-Name-and-Email.webp)
+![Set custom from name and email](/automation-funnels/automation-email-actions/Set-Custom-From-Name-and-Email-9.webp)
 
 ## 2\. Set Sequence Emails
 
@@ -124,9 +125,9 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Set sequence emails action](/automation-funnels/automation-email-actions/10.-Set-Sequence-Emails-action.webp)
+![Set sequence emails action](/automation-funnels/automation-email-actions/Set-Sequence-Emails-action-10.webp)
 
-## 3\. Cancel Sequences Emails
+## 3\. Remove Sequences Emails
 
 This action lets you select from which sequences the contact will be removed within the automation.  
 After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action. 
@@ -140,9 +141,9 @@ Here are the Settings of the Cancel Sequences Emails action:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Cancel sequence emails](/automation-funnels/automation-email-actions/11.-Cancel-Sequence-Emails.webp)
+![Cancel sequence emails](/automation-funnels/automation-email-actions/Cancel-Sequence-Emails-11.webp)
 
-## 4\. Send Campaign Email
+## 4\. Schedule Campaign Email
 
 This action lets you select for which email campaign will be scheduled to this contact within the automation.   
 After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action. 
@@ -156,6 +157,6 @@ Here are the Settings of the Send Campaign Email action:
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
-![Send campaign email](/automation-funnels/automation-email-actions/12.-Send-Campaign-Email.webp)
+![Send campaign email](/automation-funnels/automation-email-actions/Send-Campaign-Email-12.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.

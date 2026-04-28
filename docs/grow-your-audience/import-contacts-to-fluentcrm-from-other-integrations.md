@@ -67,13 +67,13 @@ In the third step, you will see some sample data that will be imported. You can 
 
 ## Import contacts from TutorLMS
 
-After clicking the import button a popup will appear where you need to select the TutorLMS option as the contact source and then click next.
+After clicking the import button a popup will appear where you need to select the **TutorLMS** option as the contact source and then click next.
 
-![tutorlms import crm 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/TutorLMS-import-crm-1.png)
+![tutorlms import crm 1](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/TutorLMS-import-crm-1.webp)
 
-In the second step, you can select **Import By Courses** and map your courses with FluentCRM Tags that will be applied while importing the contacts.
+In the second step, you can select **Import By Courses** and map your **courses** with **FluentCRM Tags** that will be applied while importing the contacts.
 
-![tutorlms import crm 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/TutorLMS-import-crm-2.png)
+![tutorlms import crm 2](/grow-your-audience/import-contacts-to-fluentcrm-from-other-integrations/TutorLMS-import-crm-2.webp)
 
 In the third step, you will see some sample data that will be imported. You can select the List for the imported contacts. You can also Update a subscriber with new data from TutorLMS if the contact already exists in FluentCRM and set the new subscriber status.
 
