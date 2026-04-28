@@ -17,17 +17,16 @@ Go to your FluentCRM and select **[Automation](/docs/introduction-to-fluentcrm-a
 
 ![automation funnels fluentcrm abandon 1](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-1-scaled.webp)
 
-Here, FluentCRM provides several free automation funnel templates, including a built-in automation funnel template specifically for **Abandoned Carts**. You can choose this template or click on **Create from Scratch** to design your own.
-
-For the purposes of this article, we will select **Create from Scratch**.
-
-![automation funnels fluentcrm abandon 2](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-2-scaled.webp)
+Here, FluentCRM provides several free automation funnel templates, including a built-in automation funnel template specifically for **Abandoned Cart**. You can choose this template or create new from scratch to design your own.
 
 First, give your automation funnel a name, then select **WooCommerce** from the sidebar in the popup. Next, choose the **Cart Abandoned** Trigger and click the **Continue** button.
 
-![automation funnels fluentcrm abandon 3](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-3-scaled.webp)
+![automation funnels fluentcrm abandon](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-2-scaled.webp)
 
-A side pop-up will appear from the right, displaying the settings for this automation funnel. Choose the priority for the abandoned cart automation if you have multiple automations. Note that a higher priority means it will be matched earlier.
+A side pop-up will appear from the right, displaying the settings for this automation funnel. Choose the priority for the abandoned cart automation if you have multiple automations. 
+
+>[!Note]
+>A higher priority means it will be matched earlier.
 
 **Run the Automation Action Even if Contact Status is Not in Subscribed Status** means that the automation will execute its actions regardless of whether the contact is on the subscribed list or not. 
 
@@ -45,9 +44,9 @@ If you enable **Only Run this Automation for Subscribed Contact** then it will r
 
 With the default condition options, you will also see a specific condition option for the Abandoned Cart called **Cart Data**. This option allows you to specify more detailed criteria for when the automation should run.
 
-![automation funnels fluentcrm abandon 5](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-5-scaled.webp)
-
 Finally, click the **Save Settings** button to save your automation settings then design your automation funnel as desired.
+
+![automation funnels fluentcrm abandon 5](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-5-scaled.webp)
 
 ## Related reading
 
