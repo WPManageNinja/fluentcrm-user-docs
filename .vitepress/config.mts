@@ -255,7 +255,6 @@ export default defineConfig({
                 { text: 'Event Tracking Record', link: '/docs/event-tracking-record' },
                 { text: 'Event Tracking Automation', link: '/docs/event-tracking-automation' },
                 { text: 'Event Tracking with Action Hooks', link: '/docs/event-tracking-with-action-hooks' },
-                { text: 'Event Tracking with REST API', link: '/docs/event-tracking-with-rest-api' },
               ],
             },
           ],
