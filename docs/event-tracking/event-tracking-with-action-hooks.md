@@ -17,17 +17,11 @@ Then copy this **code** and paste it into your Snippets Php code section image
 
 ```
 do_action('fluent_crm/track_event_activity', [
-
     'event_key' => 'fcrm_event_tested',
-
     'title'     => 'Testing FluentCRM Event',
-
     'value'     => 'This is my event value with plain Text',
-
     'email'     => 'success+3000@simulator.amazonses.com',
-
     'provider'  => 'woocommerce'
-
 ], true);
 ```
 
