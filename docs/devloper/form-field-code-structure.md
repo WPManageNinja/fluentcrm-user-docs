@@ -183,7 +183,6 @@ FluentCRM will automatically resolve each key into the right dataset.
 
 **The preview of the example block.**
 
-![screenshot 2022 09 01 at 11.57.47 am](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-11.57.47-AM.png)
 
 ### Single or multi-select
 
@@ -206,7 +205,6 @@ This is an example **multi-select** type field component, you can find this stru
 
 **The preview of the example block.**
 
-![screenshot 2022 09 01 at 2.47.57 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-2.47.57-PM.png)
 
 **Option structure**
 
@@ -247,7 +245,6 @@ Radio `options` use the same structure as select options:
 
 **The preview of the example block.**
 
-![screenshot 2022 09 01 at 3.10.51 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.10.51-PM.png)
 
 ### Number input
 
@@ -263,7 +260,6 @@ This is an example **input-number** type field component, you can find this stru
 
 **The preview of the example block.**
 
-![screenshot 2022 09 01 at 3.22.58 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.22.58-PM.png)
 
 ### Text input
 
@@ -281,7 +277,6 @@ This is an example **input-text** type field component, you can find this struct
 
 **The preview of the example block.**
 
-![screenshot 2022 09 01 at 3.30.03 pm 1](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.30.03-PM-1.png)
 
 ### Text input popper
 
@@ -298,7 +293,6 @@ This is an example **input-text-popper** type field component, you can find this
 
 **The preview of the example block.**
 
-![screenshot 2022 09 01 at 3.50.01 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.50.01-PM.png)
 
 ### Yes & no check
 
@@ -315,7 +309,6 @@ This is an example **yes\_no\_check** type field component, you can find this st
 
 **The preview of the example block**:
 
-![screenshot 2022 09 01 at 3.54.18 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-3.54.18-PM.png)
 
 ### Grouped select
 
@@ -362,7 +355,6 @@ Child options inside each group:
 
 **The preview of the example block.**
 
-![screenshot 2022 09 01 at 4.33.13 pm](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-4.33.13-PM.png)
 
 ### Multi text options
 
@@ -381,7 +373,6 @@ This is an example **multi\_text\_options** type field component, you can find t
 
 **The preview of the example block.**
 
-![screenshot 2022 09 02 at 12.34.30 pm](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-12.34.30-PM.png)
 
 ### Email campaign composer
 
@@ -396,7 +387,6 @@ This is an example **email\_campaign\_composer** type field component, you can f
 
 **The preview of the example block.**
 
-![screenshot 2022 09 02 at 9.27.07 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-9.27.07-AM.png)
 
 ### Reload field selection
 
@@ -433,7 +423,6 @@ set selector title
 
 **The preview of the example block.**
 
-![screenshot 2022 09 02 at 9.38.23 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-9.38.23-AM.png)
 
 **Form group mapper**
 
@@ -472,7 +461,6 @@ There is also a property named **fields** which contains a list of input fields.
 
 **The preview of the example block.**
 
-![screenshot 2022 09 02 at 2.18.05 pm](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-2.18.05-PM.png)
 
 **Form many dropdown mappers**
 
@@ -513,7 +501,6 @@ There is also a property named **fields** which contains a list of input fields.
 
 **The preview of the example block.**
 
-![screenshot 2022 09 02 at 3.20.53 pm](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-3.20.53-PM.png)
 
 ### Html
 
@@ -542,7 +529,6 @@ This is an example **url\_selector** type field component, you can find this str
 
 **The preview of the example block:**
 
-![screenshot 2022 09 02 at 10.03.21 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-10.03.21-AM.png)
 
 ### Input value pair properties
 
@@ -591,7 +577,6 @@ Inner `options` items use:
 
 **The preview of the example block.**
 
-![screenshot 2022 09 02 at 10.48.35 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-10.48.35-AM.png)
 
 ### Text value multi properties
 
@@ -610,7 +595,6 @@ Inner `options` items use:
 
 This is an example **text-value-multi-properties** type field component, you can find this structure in every integration.
 
-![screenshot 2022 09 02 at 11.07.51 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-11.07.51-AM.png)
 
 ### Html editor
 
@@ -625,7 +609,6 @@ This is an example **html\_editor** type field component, you can find this stru
 
 **The preview of the example block.**
 
-![screenshot 2022 09 02 at 11.18.21 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-11.18.21-AM.png)
 
 ### Rest selector
 
@@ -642,7 +625,6 @@ This is an example **html\_editor** type field component, you can find this stru
 
 This is an example **rest\_selector** type field component, you can find this structure in every integration. The **option\_key** is a required property.
 
-![screenshot 2022 09 02 at 11.31.02 am](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-11.31.02-AM.png)
 
 ### Condition block groups
 
@@ -679,9 +661,6 @@ This is an example **condition_block_groups** type field component. The `labels`
 
 **The preview of this condition block groups**
 
-![screenshot 2022 09 01 at 10.52.37 am](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-10.52.37-AM.png)
-
-![screenshot 2022 09 01 at 10.50.34 am](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-10.50.34-AM.png)
 
 ### Custom sender config
 
@@ -696,7 +675,6 @@ This is an example **custom\_sender\_config** type field component, you can find
 
 **The preview of this example block**
 
-![screenshot 2022 09 01 at 11.10.55 am](/devloper/form-field-code-structure/Screenshot-2022-09-01-at-11.10.55-AM.png)
 
 ### Radio buttons
 
@@ -739,7 +717,6 @@ set selector title
 
 **The preview of this example block.**
 
-![screenshot 2022 09 02 at 12.08.55 pm](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-12.08.55-PM.png)
 
 ### Checkboxes
 
@@ -775,7 +752,6 @@ set selector title
 
 **The preview of this example block.**
 
-![screenshot 2022 09 02 at 12.12.39 pm](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-12.12.39-PM.png)
 
 **Time selector**
 
@@ -810,5 +786,3 @@ title
 set selector title
 
 **The preview of this example block.**
-
-![screenshot 2022 09 02 at 12.16.33 pm](/devloper/form-field-code-structure/Screenshot-2022-09-02-at-12.16.33-PM.png)
