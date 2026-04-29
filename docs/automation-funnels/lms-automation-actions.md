@@ -7,7 +7,7 @@ order: 0
 
 # LMS Actions
 
-FluentCRM includes dedicated [Action](/docs/primary-automation-actions) blocks for LMS platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**. These actions let you automate enrollments and removals based on funnel events.
+[FluentCRM](https://fluentcrm.com/) includes dedicated [Action](/docs/primary-automation-actions) blocks for LMS platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**. These actions let you automate enrollments and removals based on funnel events.
 
 In this guide, we will walk through the LMS action flow using the currently available action screens.
 
@@ -16,7 +16,7 @@ In this guide, we will walk through the LMS action flow using the currently avai
 > - [LifterLMS Integration](/docs/lifterlms-integration-with-fluentcrm)
 > - [TutorLMS Integration](/docs/tutorlms-integration-with-fluentcrm)
 
-## Open the action picker
+## Open the Action Picker
 
 Go to **Automations** from the FluentCRM navbar and open your target automation (or create a new one).
 
@@ -107,7 +107,7 @@ Click **Save Settings** when done.
 
 ![Remove from a group in LifterLMS](/automation-funnels/lms-automation-actions/Remove-from-a-Group-in-LifterLMS-7.webp)
 
-## 2) LearnDash Actions
+## 2. LearnDash Actions
 
 LearnDash actions follow the same setup pattern as LifterLMS actions:
 
@@ -117,7 +117,7 @@ LearnDash actions follow the same setup pattern as LifterLMS actions:
 
 Use the relevant section above as a step reference for enrollment/removal flow.
 
-## 3) TutorLMS Actions
+## 3. TutorLMS Actions
 
 TutorLMS actions also follow the same setup pattern:
 
@@ -126,3 +126,5 @@ TutorLMS actions also follow the same setup pattern:
 - Save settings
 
 Use the same action setup logic shown in the LifterLMS examples.
+
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
