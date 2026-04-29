@@ -6,6 +6,7 @@ order: 0
 ---
 
 # Event Tracking with Action Hooks
+
 If you want to run Event Tracking with Action Hook then you will need a snippet plugin. Here we are using the **[FluentSnippets](https://wordpress.org/plugins/easy-code-manager/)** WordPress plugin.
 
 After that navigate the **Fluentsnippets** and click **Create Your First Snippet** or **New Snippet**.
@@ -32,7 +33,7 @@ do_action('fluent_crm/track_event_activity', [
 
 Here change your **event key**, **title**, **value**, **email**, and **provider** name as you want. Then activate this snippet.
 
-![02](/event-tracking/event-tracking-with-action-hooks/02-1-scaled.webp)
+![paste php code](/event-tracking/event-tracking-with-action-hooks/paste-php-code-2.webp)
 
 Now to see your event tracked go to FluentCRM contact.
 
