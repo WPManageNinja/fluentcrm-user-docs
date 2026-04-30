@@ -74,10 +74,3 @@ From the same three-dot campaign menu, you can also run quick maintenance action
 - **Delete:** Click **Delete**, then confirm with **Yes** in the permission/confirmation prompt to permanently remove the campaign.
 
 ![Campaign actions menu with Reports, Export, Duplicate, and Delete](/sms-module/sms-report/sms-campaign-actions-menu.webp)
-
-## Related reading
-
-- [Configure SMS Module](/docs/configure-sms-module)
-- [SMS Automation](/docs/sms-automation)
-- [Twilio SMS Integration](/docs/twilio-integration)
-- [Amazon End User Messaging SMS Integration](/docs/amazon-end-user-messaging)
