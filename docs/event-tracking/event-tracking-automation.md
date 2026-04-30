@@ -67,4 +67,4 @@ If you want to see your Event Tracking details, go to your FluentCRM contacts pr
 
 You will track your event using your contacts subscriber ID or Contacts ID instead of your email address.
 
-![10](/event-tracking/event-tracking-automation/10.webp)
+![10](/event-tracking/event-tracking-automation/event-tracking-9.webp)

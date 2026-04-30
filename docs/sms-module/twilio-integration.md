@@ -64,3 +64,10 @@ If you want to learn how to create an SMS campaign, read [Configure SMS Module](
 ![Configure FluentCRM Twilio Settings](/sms-module/twilio-integration/save-twilio-sms-3.webp)
 
 
+## Related reading
+
+- [Configure SMS Module](/docs/configure-sms-module)
+- [SMS Automation](/docs/sms-automation)
+- [SMS Campaign Report](/docs/sms-campaign-report)
+- [Amazon End User Messaging SMS Integration](/docs/amazon-end-user-messaging)
+

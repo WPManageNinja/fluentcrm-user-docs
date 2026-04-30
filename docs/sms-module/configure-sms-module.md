@@ -56,20 +56,22 @@ You can access this feature from the main menu on the FluentCRM top menu bar and
 
 ### Creating a new SMS campaign
 
-To start a new campaign, click the **Create New Campaign** button on the main SMS Campaigns dashboard. The process involves three guided steps: **Start**, **Recipients**, and **Review**.
+To start a new campaign, click the **Create New Campaign** button on the main SMS Campaigns dashboard. The process involves three guided steps: **Start**, **Recipients**, and **Review**. While you work through the wizard, a **progress indicator** (for example **1/3 Completed**) shows how far you are.
 
 ![Create a new SMS Campaign](/sms-module/configure-sms-module/create-new-campaign-3.webp)
 
-#### Step 1: Start (basic information)
+#### Step 1: Start (SMS title and body)
 
-This is where you define the content and identity of your campaign:
+The first screen is where you name the campaign and write the message. The layout is grouped into **SMS Title** and **SMS Body**, with live feedback as you type.
 
-* **Title of the SMS campaign:** Provide a clear, internal title for your campaign (for example, “Black Friday special discount”). This is for internal identification only.
-* **Message content of the SMS campaign:** Enter the exact text you wish to send to your subscribers (for example, “You will get a 30% discount.”).
+* **SMS Title — Name your campaign:** Enter an internal name only you see on the dashboard (for example, “Black Friday offer” or “Offer”). It is not the text subscribers receive.
+* **SMS Body — Compose Message:** Enter the SMS copy contacts will get. As you type, FluentCRM shows a **character counter** (for example **0 / 1600**) and an **SMS segment counter** (for example **0/10 SMS messages**) so you can see length and how many SMS units the send will consume. Long messages are split automatically; an info note on the screen reminds you that a **standard SMS segment is about 160 characters** before splitting applies.
 
-Once you have filled in the required details, click **Create & Continue** to go to the next step (**Recipients**).
+You can still insert personalisation tokens from the **{ }** smart-code control next to the message field when it is available; see [SMS Smart Codes](#sms-smart-codes) above.
 
-![Start](/sms-module/configure-sms-module/start-4.webp)
+When you are ready, click **Create & Continue to next step [Recipients]** to open the **Recipients** step.
+
+![SMS campaign step 1 — title, body, and segment counters](/sms-module/configure-sms-module/sms-campaign-step1-compose.webp)
 
 #### Step 2: Recipients (selecting subscribers)
 
@@ -97,7 +99,6 @@ This is the final step where you verify campaign details and set the broadcast t
 * **Scheduling options:** Under **Broadcast / schedule this SMS campaign now**, choose when and how messages are delivered:
   * **Send the SMS messages right now:** Sends the campaign immediately when you confirm.
   * **Schedule the SMS messages:** Sets a single date and time for the broadcast using the available fields.
-  * **Schedule SMS messages within a specified date-time range:** Sets a start and end window; the system schedules sends randomly within that range (useful for load distribution or a more natural delivery pattern).
 
 When you have chosen your scheduling method and verified recipients and content, click **Send SMS messages now** or **Schedule this campaign** to finalize.
 
@@ -116,8 +117,7 @@ The campaigns dashboard shows each broadcast with:
   * **Archived / purged:** Removed from the active list.
   * **Incomplete:** Needs more configuration before sending.
 * **Labels:** Organizational labels applied to the campaign.
-* **Broadcast:** Date and time the campaign was or will be broadcast.
-* **Recipients:** The total count of contacts targeted for the broadcast.
+* **Created At:** The time of created.
 
 ![Feature and Data Columns](/sms-module/configure-sms-module/data-colum-9.webp)
 
@@ -168,5 +168,10 @@ Messages sent this way appear in the contact’s activity and count toward **DIR
 To build full workflows that include SMS, start with [Introduction to FluentCRM Automation](/docs/introduction-to-fluentcrm-automation).
 
 ![Indivisual SMS Send](/sms-module/configure-sms-module/individualy-sms-send-12.webp)
+
+If you want to view this SMS Stats in table, click on the the **View as table** button. You will also see, all types of SMS campaign from this dropdown option.
+
+![Indivisual SMS Send](/sms-module/configure-sms-module/viewing-in-table-13.webp)
+
 
 That covers the core SMS Module setup and usage.
