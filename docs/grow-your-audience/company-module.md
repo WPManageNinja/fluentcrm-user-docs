@@ -9,15 +9,15 @@ order: 0
 
 In FluentCRM, the Company Module feature organizes contacts to one or more company records. In this company record, you can see company information and the contacts you have added under the company. This article will guide you through the process of using this feature.
 
-> **One of the notable features of the Company Module is organizing one or more contacts under a single entity. Additionally, it automatically retrieves company logos from their website using the website URL only.**
+You can assign one or more contacts to a company record. FluentCRM can also automatically retrieve a company logo by using just its website URL.
 
 ### Enable Company Module 
 
-First, go to **Settings** from the top right corner of the **Fluent CRM Navbar**, click the **Advanced Feature** settings page, scroll down and you will find the **Company Module** option.
+First, go to **Settings** from the top right corner of the **FluentCRM Navbar**, click the **Advanced Feature** settings page, scroll down and you will find the **Company Module** option.
 
 Here, you will find two settings options. These are
 
--   **Enable Company Module for Contacts:** Enable this to unlock the **Company Module** feature inside the **Contacts** section dropdown of the **Fluent CRM Navbar**. 
+-   **Enable Company Module for Contacts:** Enable this to unlock the **Company Module** feature inside the **Contacts** section dropdown of the **FluentCRM Navbar**. 
 -   **Try to get company logo automatically from the given website URL**: Enable this to fetch the company logo automatically by providing only the website URL of the company.
 
 ![enabling company module from advanced feature config](/grow-your-audience/company-module/Enabling-Company-Module-from-Advanced-feature-config-scaled.webp)
@@ -77,7 +77,7 @@ Here, you can add notes for the company from the pop-up window.
 
 ### **Custom Fields**
 
-Fluent CRM doesn’t have any designated field for adding additional data to your company details. But you can do it easily with the **Custom Field** feature of Fluent CRM.
+FluentCRM doesn’t have any designated field for adding additional data to your company details. But you can do it easily with the **Custom Field** feature of FluentCRM.
 
 > The data for the **Custom Fields under** **Companies** are **independent from** the **Individual Contacts’ Custom Fields** data.
 
@@ -113,7 +113,7 @@ After selecting the Field Type, configure all the additional information accordi
 
 You will get the following additional fields for almost each field type –
 
--   **Labels**: Used to name the field for general users in the Fluent CRM interface.
+-   **Labels**: Used to name the field for general users in the FluentCRM interface.
 -   **Slug (Optional)**: Slugs can be used to call up custom fields in code.
 -   **Field Group (optional)**: This option is for adding sub-fields under a main field. For example, under the Address field, you can add sub-fields like City, Postcode, and Country. 
 

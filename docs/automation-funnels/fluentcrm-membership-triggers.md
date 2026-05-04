@@ -14,7 +14,7 @@ FluentCRM provides triggers for **Membership Platforms** like **MemberPress**, *
 
 To learn how you can use all the **Membership** **Triggers** of your **FluentCRM**, follow the steps with screenshots below – 
 
-First, go to the **Automation** section from the **Fluent CRM Navbar**, and click **\+ New Automation.** 
+First, go to the **Automation** section from the **FluentCRM Navbar**, and click **\+ New Automation.** 
 
 > To learn the detailed process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
 

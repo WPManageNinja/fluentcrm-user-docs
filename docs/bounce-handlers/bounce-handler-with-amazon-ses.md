@@ -14,31 +14,31 @@ Using Amazon SES, you can track the invalid email and mark them as Bounced. Amaz
 
 1\. Go to [Amazon SNS console](https://console.aws.amazon.com/sns/home).
 
-![](/bounce-handlers/bounce-handler-with-amazon-ses/1-go-to-SNS.jpg)
+![Amazon SNS console home screen](/bounce-handlers/bounce-handler-with-amazon-ses/1-go-to-SNS.jpg)
 
 2\. Choose Create topic.
 
-![](/bounce-handlers/bounce-handler-with-amazon-ses/2-goto-topics.jpg)
+![Create topic button in SNS](/bounce-handlers/bounce-handler-with-amazon-ses/2-goto-topics.jpg)
 
-3\. Select the Type **Standard** enter a name for the Topic, click on **Create topic** button..
+3\. Select the Type **Standard**, enter a name for the Topic, and click the **Create topic** button.
 
-![](/bounce-handlers/bounce-handler-with-amazon-ses/Amaon-Simple-Notification-Service-create-topic-1-1024x441.png)
+![Standard topic type and name field in SNS](/bounce-handlers/bounce-handler-with-amazon-ses/Amaon-Simple-Notification-Service-create-topic-1-1024x441.png)
 
 4\. From the Topic details of the topic that you created, navigate to Subscriptions, and then choose Create subscription.
 
-![](/bounce-handlers/bounce-handler-with-amazon-ses/4-create-subscription-1024x646.jpg)
+![Create subscription option in SNS topic details](/bounce-handlers/bounce-handler-with-amazon-ses/4-create-subscription-1024x646.jpg)
 
-5\. The topic will be pre-selected, in the **Protocol** select http or https (based on your server's SSL status).
+5\. The topic will be pre-selected. In the **Protocol** field, select http or https (based on your server's SSL status).
 
-![](/bounce-handlers/bounce-handler-with-amazon-ses/5-subscription-screen-1024x661.jpg)
+![Protocol selection screen for SNS subscription](/bounce-handlers/bounce-handler-with-amazon-ses/5-subscription-screen-1024x661.jpg)
 
-In Endpoint, you need to give your FluentCRM's endpoint, grab the URL from your **_FluentCRM dashboard -> Settings -> SMTP/Email Service Settings_** section.
+In the **Endpoint** field, enter your FluentCRM bounce handler URL. You can find this URL in **FluentCRM → Settings → Email Service Settings**.
 
-![](/bounce-handlers/bounce-handler-with-amazon-ses/6.5-Bounce-Handler-URL-1024x391.png)
+![FluentCRM bounce handler URL location in settings](/bounce-handlers/bounce-handler-with-amazon-ses/6.5-Bounce-Handler-URL-1024x391.png)
 
-After putting the URL in the **Endpoint** field, check **Enable raw message delivery** and click on **Create subscription** button. You should see a success screen like below:
+After entering the URL, check **Enable raw message delivery** and click the **Create subscription** button. You should see a success screen like the one below:
 
-![](/bounce-handlers/bounce-handler-with-amazon-ses/6-success-1024x402.jpg)
+![SNS subscription confirmed success screen](/bounce-handlers/bounce-handler-with-amazon-ses/6-success-1024x402.jpg)
 
 ### Configure Amazon SES to send bounce information to FluentCRM
 
@@ -58,7 +58,7 @@ After putting the URL in the **Endpoint** field, check **Enable raw message deli
 
 ![aws configure bounce](/bounce-handlers/bounce-handler-with-amazon-ses/AWS-configure-bounce-1024x584.png)
 
-Now click on the Save changes button. Thats it!
+Now click the **Save changes** button. That's it!
 
 You have to repeat the above two steps of adding the SNS topic for both the verified domain and email address separately.
 

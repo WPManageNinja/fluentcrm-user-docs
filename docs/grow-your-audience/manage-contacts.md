@@ -7,11 +7,11 @@ order: 0
 
 # Add and Manage All Contacts
 
-FluentCRM provides an excellent [Contacts Dashboard](/docs/contacts-dashboard/#Contacts-Dashboard) that represents all the necessary summaries of the activities. This article will guide you through the process of **Adding a new contact man**ually and **Managing contacts in bulk** in detail.
+FluentCRM provides an excellent [Contacts Dashboard](/docs/contacts-dashboard/#Contacts-Dashboard) that represents all the necessary summaries of the activities. This article will guide you through the process of **adding a new contact manually** and **managing contacts in bulk** in detail.
 
 ## Adding New Contacts
 
-First, go to **All Contacts** from the **Contacts** section of **Fluent CRM Navbar**.
+First, go to **All Contacts** from the **Contacts** section of the **FluentCRM Navbar**.
 
 ![All contacts option from contacts section](/grow-your-audience/manage-contacts/All-contacts-option-from-Contacts-section-scaled.webp)
 

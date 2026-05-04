@@ -44,7 +44,7 @@ In the second step, you will be asked to Select Your CSV Delimiter, by default C
 
 ![](/getting-started-with-audience/migrating-into-fluentcrm/fluentcrm-map-contacts-5.webp)
 
-In the third step, you will need to configure the field mapping from your CSV file with Fluent CRM fields. My example CSV file has three simple fields which are Firstname, Lastname, and Email. Your CSV might have more. Map the fields accordingly. The left column has your CSV data and the right column is the FluentCRM fields.
+In the third step, you will need to configure the field mapping from your CSV file with FluentCRM fields. My example CSV file has three simple fields which are Firstname, Lastname, and Email. Your CSV might have more. Map the fields accordingly. The left column has your CSV data and the right column is the FluentCRM fields.
 
 ![](/getting-started-with-audience/migrating-into-fluentcrm/fluentcrm-map-csvfeed-contacts-6.webp)
 

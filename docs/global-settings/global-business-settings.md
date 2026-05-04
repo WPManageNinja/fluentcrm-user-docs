@@ -7,9 +7,9 @@ order: 0
 
 # Business Settings
 
-As an Email Marketing Application, It is necessary to have business details and a logo of the business company that is used in emails, prints, and communications in FluentCRM.
+Business Settings is where you add your company name, address, and logo. FluentCRM uses these details across your emails, unsubscribe pages, and other communications — so you only need to enter them once.
 
-Setup your "**Business Name**", "**Business Full Address**" and "**Logo**". This Business Name, Address & Logo will be used in Emails, Unsubscribe Pages, and some other places.
+Set your **Business Name**, **Business Full Address**, and **Logo** here. These will appear automatically in your emails and unsubscribe pages.
 
 ![Business settings fluentcrm](/global-settings/global-business-settings/Settings-FluentCRM.webp)
 

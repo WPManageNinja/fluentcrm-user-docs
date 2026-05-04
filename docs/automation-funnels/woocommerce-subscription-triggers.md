@@ -7,7 +7,7 @@ order: 0
 
 # WooCommerce Subscription Triggers
 
-FluentCRM now includes **Triggers** specifically for **WooCommerce** **Subscriptions**, allowing users to manage subscription-related tasks through Fluent CRM automation. This article will guide you through the detailed information about all **WooCommerce Subscription Triggers**. 
+FluentCRM now includes **Triggers** specifically for **WooCommerce** **Subscriptions**, allowing users to manage subscription-related tasks through FluentCRM automation. This article will guide you through the detailed information about all **WooCommerce Subscription Triggers**. 
 
 ## Install & Activate WooCommerce Subscriptions Add-on
 
@@ -31,9 +31,9 @@ And, your WooCommerce Subscriptions Add-on will be installed and activated on yo
 
 ## WooCommerce Subscription Triggers in FluentCRM
 
-To learn how you can use this WooCommerce Subscription Triggers feature in your Fluent CRM, follow the steps with screenshots below –
+To learn how you can use this WooCommerce Subscription Triggers feature in your FluentCRM, follow the steps with screenshots below –
 
-Once you install & activate the add-on, go to the **Automation** section from the **Fluent CRM Navbar**, and click on the **\+ New Automation** button. 
+Once you install & activate the add-on, go to the **Automation** section from the **FluentCRM Navbar**, and click on the **\+ New Automation** button. 
 
 ![existing or new automatiton in fluent crm](/automation-funnels/woocommerce-subscription-triggers/automation-2.webp)
 
@@ -64,7 +64,7 @@ This automation funnel will start once a subscription occurs or is changed to ac
 
 -   **Automation Name**: Provide a **Name** for the **Automation** so that you may find it later easily.
 -   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/docs/automation-editor/#automation-editor).
--   **Contact Status**: Change the **Subscription** **Status** from the **Dropdown** list for the **Contact** that submits the form. To learn more about the Contact Status of Fluent CRM, [click here](/docs/fluentcrm-contacts-status).
+-   **Contact Status**: Change the **Subscription** **Status** from the **Dropdown** list for the **Contact** that submits the form. To learn more about the Contact Status of FluentCRM, [click here](/docs/fluentcrm-contacts-status).
 -   **Target Products**: Select the **Products** for which this automation will run. Otherwise, **leave** this field **Blank** if you want this funnel **to** **run for all products**.
 -   **Restart**: Check this option if you want the **automation to run multiple times** for the contact that triggers the automation.
 

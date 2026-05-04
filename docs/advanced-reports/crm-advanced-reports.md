@@ -11,7 +11,7 @@ FluentCRM advanced Reports are very important for users looking for deep data-dr
 
 Also, it includes most specific data third-party plugins like **WooCommerce, FluentCart, EDD, LifterLMS, LearnDash**, and many others. It helps to follow vital information to make intelligent choices. 
 
-## FluentCRM advanced Reports
+## FluentCRM Advanced Reports
 
 To access the **Advanced Reports** of FluentCRM, go to **WordPress Dashboards** navigate the **FluentCRM** and click on **Reports** from the Navbar.
 
@@ -50,7 +50,7 @@ This section is also presented by visual graphs, showing sending emails total **
 
 ### Unsubscribe Statistics
 
-**Unsubscribe** statistics show the total unsubscribed customers compared to previous to previous data by visual graphs. Also, a **Data Filter** is available for comparing data.
+**Unsubscribe** statistics show the total unsubscribed contacts compared to previous data by visual graphs. A **Date Filter** is also available for comparing data.
 
 ![Unsubscribe Statistics](/advanced-reports/crm-advanced-reports/unsubscribe-stats-5.webp)
 
@@ -90,7 +90,7 @@ Below, you’ll find detailed statistics for your WooCommerce reports.
 
 Here, you can see **Customer Growth**, which shows your business's Total customer Volume. Analyze your customer valuation with a **date filter** that measures specific time periods.
 
-![Customer Growtrh](/advanced-reports/crm-advanced-reports/customer-growth-9.webp)
+![Customer Growth](/advanced-reports/crm-advanced-reports/customer-growth-9.webp)
 
 ## EDD Advanced reports
 
@@ -110,7 +110,7 @@ FluentCRM delivers complicated reports using your EDD data. You can see the foll
 
 > To display EDD reports, you must [integrate EDD with FluentCRM.](/docs/easy-digital-downloads-integration-with-fluentcrm) 
 
-![EDD Adavenced Report](/advanced-reports/crm-advanced-reports/edd-advanced-report-10.webp)
+![EDD Advanced Report](/advanced-reports/crm-advanced-reports/edd-advanced-report-10.webp)
 
 You can view **Gross Volume** and **Customer Growth**, which show total sales and the increase in customers separately. Additionally, you can use **date filters** to select a custom date range.
 
@@ -145,16 +145,16 @@ In this student growth section, you’ll see your total student growth in a visu
 
 ![Student Growth](/advanced-reports/crm-advanced-reports/student-growth-14.webp)
 
-## Learndash Advanced reports
+## LearnDash Advanced Reports
 
-Go to the FluentCRM reports option and navigate to **Learndash; you'll see your website's detailed advanced reports and Learndash data. Here, you** can see the following reports:
+Go to the FluentCRM reports option and navigate to **LearnDash**. You'll see your site's detailed advanced reports and LearnDash data, including:
 
 -   Total Students
 -   Total Course Enrollment
 -   Total Membership Enrollment
 -   Top Selling Products
 
-> Before displaying Learndash Reports, you need to [integrate](/docs/learndash-integration-with-fluentcrm) Learndash with FluentCRM.
+> Before displaying LearnDash reports, you need to [integrate LearnDash with FluentCRM](/docs/learndash-integration-with-fluentcrm).
 
 ### Enrollments
 
@@ -166,4 +166,4 @@ This section allows you to view Students total course enrollment data. You can a
 
 Student growth stats show your total course growth data by visual charts. With the **Date Filter,** you can find detailed data reports for a specific date.
 
-Hopefully, now you clearly understand FluentCRM Advanced all reports. Don't hesitate to get in touch [with us](https://wpmanageninja.com/support-tickets/) if you have any queries.
+If you have any questions, [contact support](https://wpmanageninja.com/support-tickets/).

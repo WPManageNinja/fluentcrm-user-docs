@@ -15,7 +15,7 @@ To access these settings, navigate to **FluentCRM Dashboard ➜ Settings ➜ Gen
 
 This feature keeps your WordPress user database and FluentCRM contact list in sync, so both stay updated with the same information.
 
- * **Enable Sync between WP User Data and Fluent CRM Contact Data:** By checking this, any changes made to a WordPress user's profile (like name or email) will automatically reflect in their FluentCRM contact profile and vice versa.
+ * **Enable Sync between WP User Data and FluentCRM Contact Data:** By checking this, any changes made to a WordPress user's profile (like name or email) will automatically reflect in their FluentCRM contact profile and vice versa.
  * **Delete FluentCRM contact on WP User delete:** If you want to keep your CRM clean, enable this to automatically remove a contact from FluentCRM when their corresponding WordPress user account is deleted.
 
 ![crm general autosync](/global-settings/global-general-settings/crm_general_autoSync.webp)

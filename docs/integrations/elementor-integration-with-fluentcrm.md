@@ -7,9 +7,9 @@ order: 0
 
 # Elementor Integration with FluentCRM
 
-**FluentCRM** is a Self Hosted Email Marketing Automation Plugin for WordPress. This plugin provides easy solutions to make your email marketing & customer relationship smooth. Now you can integrate the Elementor page builder native forms with Fluent CRM.
+**FluentCRM** is a Self Hosted Email Marketing Automation Plugin for WordPress. This plugin provides easy solutions to make your email marketing & customer relationship smooth. Now you can integrate the Elementor page builder native forms with FluentCRM.
 
-Just follow this simple guide to learn how to integrate Elementor with Fluent CRM.
+Just follow this simple guide to learn how to integrate Elementor with FluentCRM.
 
 ### **Step 1: Create or Edit Your Page** 
 

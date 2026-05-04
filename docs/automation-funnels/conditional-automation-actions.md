@@ -115,13 +115,13 @@ Once you select your desired **Parameter** (First Field), you will get the **Opt
 
 **For example**, I chose “**First Name**” from the **Contact** property as a **Parameter**, the **“includes in”** as an **Operator**, and entered the “**Mr X**” as the respective **Values**. As a result, only subscriber named 'Mr X' will trigger the conditional actions.
 
-Do not forget to click the **Save Settings** button after setting the Condtiion/s.
+Do not forget to click the **Save Settings** button after setting the Condition/s.
 
 ![Published](/automation-funnels/conditional-automation-actions/automation-condition-5.webp)
 
 ## Setting Conditional Actions
 
-Once you set the desired condion/s, it is time to set **Actions** under that condition.
+Once you set the desired condition/s, it is time to set **Actions** under that condition.
 
 You can see, in the automation funnel, there are two paths for setting actions. These are:
 

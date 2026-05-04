@@ -6,9 +6,10 @@ order: 0
 ---
 
 # Creating Automation and Its Editor
-The most important use of the FluentCRM is to use the Automated Actions based on some triggers that happen on the WordPress Website. FluentCRM specializes in such automation triggering various incidents and then taking action upon user conditions and requirements.
 
-This article will guide you through the process of creating new automations and the editor of FluentCRM Automation which lets you create an automation funnel, select the trigger, add actions & conditions the way you want to set up, and choose to end the automation. To learn the whole process, follow the article accordingly.
+FluentCRM automations let you trigger a sequence of actions whenever something happens on your WordPress site — a form submission, a tag applied, a purchase made, and more.
+
+This article walks you through creating a new automation funnel and using the Automation Editor to build your trigger, actions, and conditions.
 
 ## Creating A New Automation
 
@@ -73,7 +74,7 @@ For example, when this automation runs, the contacts that are listed in the **St
 To learn how you can edit your existing Automations anytime, follow the steps with the screenshots below –
 
 First, go to the **Automations** section from the **FluentCRM Navbar**, select the automation you want to edit, and click on its **Title.**  
-For example, here, I’ve selected the **Listed Applied** automation for customization.
+For example, here, I’ve selected the **List Applied** automation for customization.
 
 
 

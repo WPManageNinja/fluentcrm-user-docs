@@ -14,7 +14,7 @@ FluentCRM offers [Action](/docs/primary-automation-actions) blocks (i.e., tasks 
 > Before you proceed, you need to **set up** the **WooCommerce** in your **WordPress** **Site** to get all the WooCommerce-related Triggers and Actions.  
 > **Additionally**, to get all **WooCommerce Subscription-related triggers**, you can **install** the **[WooCommerce Subscription Triggers Add-on](/docs/woocommerce-subscription-triggers)**.
 
-First, go to the **Automation** section from the **Fluent CRM Navbar**, and open your **desired** **Automation** by clicking on its title.
+First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title.
 
 ![desired automation for adding actions](/automation-funnels/woocommerce-automation-actions/Desired-Automation-for-adding-Actions-scaled.webp)
 

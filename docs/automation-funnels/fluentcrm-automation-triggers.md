@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=mmSU-Wo6YOs&t
 
 To learn how you can use all the primary Triggers of your FluentCRM, follow the steps with screenshots below – 
 
-First, go to the **Automation** section from the **Fluent CRM Navbar**, and click **\+ New Automation.** 
+First, go to the **Automation** section from the **FluentCRM Navbar**, and click **\+ New Automation.** 
 
 > To learn the detailed process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
 
@@ -34,13 +34,13 @@ All the **Primary Triggers** for creating an automation funnel are divided into 
 
 Once you select your desired **Trigger**, click the **Continue** button, and put a **Title** under the **Internal Label** field for this automation funnel so that you can easily find it later. 
 
-If you leave it blank, it will automatically titled according to its trigger’s name.
+If you leave it blank, it will be automatically titled based on the trigger you selected.
 
 ![CRM triggers](/automation-funnels/fluentcrm-automation-triggers/automation-trigger-2.webp)
 
 ## 1\. CRM Trigger
 
-The detailed explanation of all the CRM Triggers is given below – 
+Here is a detailed look at each CRM trigger: 
 
 ### List Applied
 
@@ -177,7 +177,7 @@ There are also a few primary **Triggers** for creating an Automation Funnel that
 
 Once you select your desired **Trigger**, click the **Continue** button, and put a **Title** under the **Internal Label** field for this automation funnel so that you can easily find it later. 
 
-If you leave it blank, it will automatically titled according to its trigger’s name.
+If you leave it blank, it will be automatically titled based on the trigger you selected.
 
 ![Wordpress triggers](/automation-funnels/fluentcrm-automation-triggers/automation-trigger-3.webp)
 
