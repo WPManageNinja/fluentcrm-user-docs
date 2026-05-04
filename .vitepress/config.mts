@@ -90,6 +90,7 @@ export default defineConfig({
               text: 'Settings',
               collapsed: true,
               items: [
+                { text: 'Global Settings Overview', link: '/docs/fluentcrm-global-settings' },
                 { text: 'Business Setup', link: '/docs/global-business-settings' },
                 { text: 'Global Email Settings', link: '/docs/global-email-settings' },
                 { text: 'Email Service', link: '/docs/smtp-bounce-handlers-settings' },
@@ -199,7 +200,7 @@ export default defineConfig({
             { text: 'Configure SMS Module', link: '/docs/configure-sms-module' },
             { text: 'Twilio SMS Integration', link: '/docs/twilio-integration' },
             { text: 'SMS Automation', link: '/docs/sms-automation' },
-            { text: 'Amazon SNS Integration', link: '/docs/amazon-end-user-messaging' },
+            { text: 'Amazon End User Messaging (SMS)', link: '/docs/amazon-end-user-messaging' },
             { text: 'SMS Report', link: '/docs/sms-campaign-report' },
           ],
         },

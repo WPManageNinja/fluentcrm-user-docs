@@ -1,11 +1,11 @@
 ---
-title: "Goals or BenchMark Actions"
+title: "Goals or Benchmark Actions"
 slug: "goals-or-benchmark-actions"
 category: "automation-funnels"
 order: 0
 ---
 
-# Goals or BenchMark Actions
+# Goals or Benchmark Actions
 
 [FluentCRM](https://fluentcrm.com/) provides several **Goals or Benchmark Actions** to set your goals higher by measuring different aspects, actions, or steps you take in the automation. You can add these Goals / Benchmark actions as secondary additional triggers to any automation at any point and measure these steps to change the behavior of the marketing approach, and tasks, or update your concepts.
 
@@ -36,7 +36,7 @@ Now, a pop-up page will appear with all the **Goals / Benchmark Action** blocks 
 
 ### 1\. Order Received in WooCommerce
 
-This action will run once a new order is placed as processing in WooCoomerce. To have this option in your automation, you need to set up WooCoomerce on your site before starting the process. After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
+This action will run once a new order is placed as processing in WooCommerce. To have this option in your automation, you need to set up WooCommerce on your site before starting the process. After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
 
 #### Settings of the Order Received in WooCommerce action:
 
@@ -67,7 +67,7 @@ This automation funnel will start once a new order is placed as completed in EDD
 
 After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
 
-> The settings options of this **New Order Success in EDD** benchmark action work the same way as the **Order Received in WooCoommerce** action. To learn how to use all the settings, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-order-received-in-woocommerce-action).
+> The settings options of this **New Order Success in EDD** benchmark action work the same way as the **Order Received in WooCommerce** action. To learn how to use all the settings, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-order-received-in-woocommerce-action).
 
 ### 3\. List Applied
 
@@ -117,7 +117,7 @@ Once you are done, click the **Save Settings** button to save all your changes.
 This automation funnel will start once the selected Tags have been removed from a contact.  
 After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
 
-> The settings options of this **Tag Removed** benchmark action work the same way as the **List Aplied** action. To learn how to use all the settings, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
+> The settings options of this **Tag Removed** benchmark action work the same way as the **List Applied** action. To learn how to use all the settings, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
 
 ### 7\. Link Click
 

@@ -10,7 +10,7 @@ order: 0
 
 ## My scheduled email/email sequence isn't being sent correctly, what should I do?
 
-The most common case we found for a few reported issues is CRON is not running for some reason(Go to **FluentCRM>Settings>Tools** and see when is the last time your CRON has been run.). This happens because WordPress CRON is quite unreliable. Check out [this doc](/docs/replace-wordpress-cron-with-a-real-cron-job) to replace WordPress CRON with a real CRON job.
+The most common case we found for a few reported issues is CRON is not running for some reason (go to **FluentCRM → Settings → System Admin Tools** and check when your CRON last ran). This happens because WordPress CRON is quite unreliable. Check out [this doc](/docs/replace-wordpress-cron-with-a-real-cron-job) to replace WordPress CRON with a real CRON job.
 
 ## Both FluentCRM and Fluent Forms have double opt-in, which one should I use?
 

@@ -1,5 +1,5 @@
 ---
-title: "WP Cli Commands"
+title: "WP-CLI Commands"
 slug: "wp-cli-commands"
 category: "devloper"
 order: 0

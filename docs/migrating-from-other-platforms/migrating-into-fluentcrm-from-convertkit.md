@@ -1,11 +1,11 @@
 ---
-title: "Migrating into FluentCRM from Convertkit"
+title: "Migrating into FluentCRM from ConvertKit"
 slug: "migrating-into-fluentcrm-from-convertkit"
 category: "migrating-from-other-platforms"
 order: 0
 ---
 
-# Migrating from Convertkit to FluentCRM
+# Migrating from ConvertKit to FluentCRM
 
 Moving your contacts from Kit (formerly ConvertKit) to FluentCRM is incredibly simple thanks to a direct API connection. This method allows the two systems to sync directly, so you don’t have to worry about manual downloads or messy spreadsheets.
 

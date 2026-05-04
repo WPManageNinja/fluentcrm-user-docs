@@ -12,7 +12,7 @@ Once your list and forms are set, you are ready to go for creating an email c
 **Things to do before you start an email campaign with FluentCRM**
 
 -   Firstly make sure you have subscribers in your contact lists. If you don’t have subscribers in your contact lists, [Import Contacts into FluentCRM](/docs/import-contacts-into-fluentcrm) or follow the [Opt-in Forms (Fluent Forms) Basic Configuration](/docs/opt-in-forms-fluent-forms-basic-configuration) to capture leads from a Signup form.
--   Be sure to [FluentCRM Global Settings](/docs/fluentcrm-global-settings) before you start sending your first email campaign.
+-   Be sure to configure [FluentCRM Global Settings](/docs/fluentcrm-global-settings) before you start sending your first email campaign.
 
 https://www.youtube.com/watch?v=XSAmIlfMga0
 
@@ -114,7 +114,7 @@ Choose your **List & Tag**. You can select one list and one tag from the dropdow
 
 #### **By Dynamic Segment**
 
-You can also run the campaign by dynamic segments, for example, Woocomemrce Users or LearnDash, LifterLMS users, or any other dynamic segments you created in FluentCRM. Please visit the [General & Dynamic Segments](/docs/segment-your-audience) documentation to know more details.
+You can also run the campaign by dynamic segments, for example, WooCommerce Users or LearnDash, LifterLMS users, or any other dynamic segments you created in FluentCRM. Please visit the [General & Dynamic Segments](/docs/segment-your-audience) documentation to know more details.
 
 #### **By Advanced Filter**
 

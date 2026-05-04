@@ -30,7 +30,7 @@ If both plugins are installed, FluentCRM enables both drivers and you'll see two
 
 ### WooCommerce Specific Settings
 
-If you Enable Abandoned cart Fetaure for WooCommerce, you have access to these specific recovery and exclusion controls:
+If you Enable Abandoned cart Feature for WooCommerce, you have access to these specific recovery and exclusion controls:
 
 The option **Mark Cart as Recovered when WooCommerce Order Status Changes to** _Pending Payment, On hold, Processing, Completed,_ and _Draft_ specifies the conditions under which an abandoned cart will be considered recovered.
 

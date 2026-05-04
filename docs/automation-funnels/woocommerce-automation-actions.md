@@ -11,8 +11,8 @@ FluentCRM offers [Action](/docs/primary-automation-actions) blocks (i.e., tasks 
 
 ## Actions for WooCommerce Automation 
 
-> Before you proceed, you need to **set up** the **WooCommerce** in your **WordPress** **Site** to get all the WooCommerse-related Triggers and Actions.  
-> **Additionally**, to get all **WooComerce Subscription-related triggers**, you can **install** the **[WooCommeerce Subscription Triggers Add-on](/docs/woocommerce-subscription-triggers)**.
+> Before you proceed, you need to **set up** the **WooCommerce** in your **WordPress** **Site** to get all the WooCommerce-related Triggers and Actions.  
+> **Additionally**, to get all **WooCommerce Subscription-related triggers**, you can **install** the **[WooCommerce Subscription Triggers Add-on](/docs/woocommerce-subscription-triggers)**.
 
 First, go to the **Automation** section from the **Fluent CRM Navbar**, and open your **desired** **Automation** by clicking on its title.
 
@@ -56,7 +56,7 @@ A brief explanation of the options in the screenshot is given below:
 -   **Interval Label**: Provide a **Name** for the **Action** so that you may find it later easily.
 -   **Internal Description**: Write a **description** for the **Action** that will be used as a **Subtitle**.
 -   **Order Note**: In this field, write your desired note. Also, you have the Smartcodes options on the right-hand side to include essential data automatically in your notes from the customers’ **Contacts**.
--   **Order Note Type**: You have two options for adding notes either the **Private Note** for yourself or the **Note to Customer** for your WooCommers Users.
+-   **Order Note Type**: You have two options for adding notes either the **Private Note** for yourself or the **Note to Customer** for your WooCommerce Users.
 
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash Icon** if needed.

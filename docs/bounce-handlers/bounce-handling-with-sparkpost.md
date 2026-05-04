@@ -1,17 +1,17 @@
 ---
-title: "Bounce Handling with Sparkpost"
+title: "Bounce Handling with SparkPost"
 slug: "bounce-handling-with-sparkpost"
 category: "bounce-handlers"
 order: 0
 ---
 
-# Bounce Handling with Sparkpost
+# Bounce Handling with SparkPost
 
 If you use [SparkPost](https://sparkpost.com) email service then use this documentation to set up Bounce handling with FluentCRM.
 
 First copy the Webhook URL at **FluentCRM -> Settings -> Email Service** and Select **SparkPost** from the dropdown and copy the **webhook URL**.
 
-![Select Sparkpost](/bounce-handlers/bounce-handling-with-sparkpost/select-sparkpost.webp)
+![Select SparkPost](/bounce-handlers/bounce-handling-with-sparkpost/select-sparkpost.webp)
 
 Then Login to your SparkPost account then navigate to Webhooks and click on Event Webhook.
 

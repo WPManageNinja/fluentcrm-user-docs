@@ -9,9 +9,11 @@ order: 0
 
 FluentCRM provides several **[Conditionals](/docs/conditional-automation-actions)** for **LMS** (Learning Management System) platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**, allowing you to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions.
 
-This article will provide detailed information about all **LMS** **Conditional Actions** of **FluentCRM Automation**. 
+This article will provide detailed information about all **LMS** **Conditional Actions** of **FluentCRM Automation**. 
 
 > **Remember**, to use these **LMS** **Conditionals** you must install and activate all the **LMS Plugins** in your website. Additionally, learn the detailed integration process of [LifterLMS](/docs/lifterlms-integration-with-fluentcrm), [LearnDash](/docs/learndash-integration-with-fluentcrm), and [TutorLMS](/docs/tutorlms-integration-with-fluentcrm) with FluentCRM.
+
+> **Note:** Conditional support is currently available for **LifterLMS**, **LearnDash**, and **TutorLMS**. [LearnPress](/docs/learpress-integration-with-fluentcrm) and other LMS platforms are supported via Triggers and Actions, but do not yet have dedicated conditional blocks. Conditional support for additional platforms is planned for a future release.
 
 ## All LMS Conditionals
 

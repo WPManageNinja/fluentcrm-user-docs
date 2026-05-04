@@ -71,7 +71,7 @@ Choose your **List & Tag**. You can select one list and one tag from the dropdo
 
 ### By Dynamic Segment
 
-You can also run the campaign by dynamic segments, for example, Woocomemrce Users or LearnDash, LifterLMS users, or any other dynamic segments you created in FluentCRM. Please visit the [General & Dynamic Segments](/docs/segment-your-audience) documentation to know more details.
+You can also run the campaign by dynamic segments, for example, WooCommerce Users or LearnDash, LifterLMS users, or any other dynamic segments you created in FluentCRM. Please visit the [General & Dynamic Segments](/docs/segment-your-audience) documentation to know more details.
 
 ### By Advanced Filter
 

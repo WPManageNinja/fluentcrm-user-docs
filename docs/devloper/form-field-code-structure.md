@@ -69,66 +69,9 @@ The following sections give practical examples for each type.
 
 ---
 
-## Detailed examples (legacy format)
+## Detailed examples
 
-The rest of this page contains the original, detailed examples for every field type. You can use the snippets directly in your own integrations.
-
-Key
-
-Description
-
-label
-
-Label title of your form field
-
-inline\_help
-
-Help message below your form input
-
-placeholder
-
-Placeholder of the selector
-
-help
-
-Description about selector
-
-wrapper\_class
-
-(Optional) With this property, someone can customize the form block design.
-
-readonly
-
-(Optional) If this property is true, then the field will be read-only
-
-dependency
-
--   [Option selectors](#option-selectors)
--   [Single or multi-select](#signle-or-multi-select)
--   [Radio](#radio)
--   [Number input](#number-input)
--   [Text input](#text-input)
--   [Text input popper](#input-text-popper)
--   [Yes & no check](#yes-and-no-check)
--   [Grouped select](#grouped-select)
--   [Multi text options](#multi-text-options)
--   [Email campaign composer](#email-campaign-composer)
--   [Reload field selection](#reload-field-selection)
--   [Form group mapper](#form-group-mapper)
--   [Form many dropdown mappers](#form-many-dropdown-mappers)
--   [Html](#html)
--   [Url selector](#url-selector)
--   Date time
--   Condition groups
--   [Input values pair properties](#input-values-pair-properties)
--   [Text values multi properties](#text-value-multi-properties)
--   [Html editor](#html-editor)
--   [Rest selector](#rest-selector)
--   [Condition block groups](#condition-block-groups)
--   [Custom sender config](#custom-sender-config)
--   [Radio buttons](#radio-buttons)
--   [Checkboxes](#checkboxes)
--   [Time Selector](#time-selector)
+The rest of this page contains detailed examples for every field type. You can use the snippets directly in your own integrations.
 
 ### Option selectors
 
@@ -181,7 +124,6 @@ FluentCRM will automatically resolve each key into the right dataset.
 | `edd_products`                       | All Easy Digital Downloads products.                                               |
 | `product_selector_edd`               | All Easy Digital Downloads products.                                               |
 
-**The preview of the example block.**
 
 
 ### Single or multi-select
@@ -203,7 +145,6 @@ FluentCRM will automatically resolve each key into the right dataset.
 
 This is an example **multi-select** type field component, you can find this structure in every integration. The **options** property contains the options of the select field. The structure of single select and multi-select is the same. Every option has two properties, **id** & **title**.
 
-**The preview of the example block.**
 
 
 **Option structure**
@@ -220,7 +161,7 @@ Each option inside the `options` array has this shape:
 ```
 'purchase_type'      => [
     'type'        => 'radio',
-    'label'       => 'Purchase Type'
+    'label'       => 'Purchase Type',
     'help'        => 'Select the purchase type',
     'options'     => [
         [
@@ -243,7 +184,6 @@ Radio `options` use the same structure as select options:
 | `id`   | Value stored/sent. |
 | `title`| Label shown next to the radio button. |
 
-**The preview of the example block.**
 
 
 ### Number input
@@ -258,7 +198,6 @@ Radio `options` use the same structure as select options:
 
 This is an example **input-number** type field component, you can find this structure in every integration. There are also some optional properties.
 
-**The preview of the example block.**
 
 
 ### Text input
@@ -275,7 +214,6 @@ This is an example **input-number** type field component, you can find this stru
 
 This is an example **input-text** type field component, you can find this structure in every integration.
 
-**The preview of the example block.**
 
 
 ### Text input popper
@@ -291,7 +229,6 @@ This is an example **input-text** type field component, you can find this struct
 
 This is an example **input-text-popper** type field component, you can find this structure in every integration. The possible value of the **field\_type** property is text or textarea.
 
-**The preview of the example block.**
 
 
 ### Yes & no check
@@ -323,7 +260,7 @@ This is an example **yes\_no\_check** type field component, you can find this st
                'slug'    => 'first_course',
                'options' => [
                      [
-                         'id'    => '1'
+                         'id'    => '1',
                          'title' => 'First Lesson'
                      ]
                ]
@@ -353,7 +290,6 @@ Child options inside each group:
 | `id`   | Unique identifier. |
 | `title`| Label shown in the UI. |
 
-**The preview of the example block.**
 
 
 ### Multi text options
@@ -371,7 +307,6 @@ Child options inside each group:
 
 This is an example **multi\_text\_options** type field component, you can find this structure in every integration.
 
-**The preview of the example block.**
 
 
 ### Email campaign composer
@@ -385,7 +320,6 @@ This is an example **multi\_text\_options** type field component, you can find t
 
 This is an example **email\_campaign\_composer** type field component, you can find this structure in every integration.
 
-**The preview of the example block.**
 
 
 ### Reload field selection
@@ -407,7 +341,6 @@ This is an example **email\_campaign\_composer** type field component, you can f
 
 This is an example **reload\_field\_selection** type field component, you can find this structure in every integration. The **options** property contains a list. Every option has two properties named **id** & **title**.
 
-**The preview of the example block.**
 
 Key
 
@@ -421,16 +354,15 @@ title
 
 set selector title
 
-**The preview of the example block.**
 
 
 **Form group mapper**
 
 ```
 'primary_fields'        => [
-    'label'             => 'Map Primary Data',,
+    'label'             => 'Map Primary Data',
     'type'              => 'form-group-mapper',
-    'value_options'.    => [
+    'value_options'     => [
         [
             'id'    => '',
             'title' => ''
@@ -459,7 +391,6 @@ This is an example **form-group-mapper** type field component, you can find this
 
 There is also a property named **fields** which contains a list of input fields.
 
-**The preview of the example block.**
 
 
 **Form many dropdown mappers**
@@ -499,7 +430,6 @@ This is an example **form-many-drop-down-mapper** type field component, you can 
 
 There is also a property named **fields** which contains a list of input fields.
 
-**The preview of the example block.**
 
 
 ### Html
@@ -575,7 +505,6 @@ Inner `options` items use:
 | `slug` | Optional machine‑readable key. |
 | `title`| Text shown in the dropdown. |
 
-**The preview of the example block.**
 
 
 ### Text value multi properties
@@ -607,7 +536,6 @@ This is an example **text-value-multi-properties** type field component, you can
 
 This is an example **html\_editor** type field component, you can find this structure in every integration.
 
-**The preview of the example block.**
 
 
 ### Rest selector
@@ -659,7 +587,6 @@ This is an example **rest\_selector** type field component, you can find this st
 
 This is an example **condition_block_groups** type field component. The `labels` array is required. The `groups` field defines the available condition groups and their children for this condition builder.
 
-**The preview of this condition block groups**
 
 
 ### Custom sender config
@@ -673,7 +600,6 @@ This is an example **condition_block_groups** type field component. The `labels`
 
 This is an example **custom\_sender\_config** type field component, you can find this structure in every integration. The **check\_label** property is the title of the block
 
-**The preview of this example block**
 
 
 ### Radio buttons
@@ -715,7 +641,6 @@ title
 
 set selector title
 
-**The preview of this example block.**
 
 
 ### Checkboxes
@@ -750,7 +675,6 @@ title
 
 set selector title
 
-**The preview of this example block.**
 
 
 **Time selector**
@@ -785,4 +709,3 @@ title
 
 set selector title
 
-**The preview of this example block.**

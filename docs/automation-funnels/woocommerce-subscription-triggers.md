@@ -11,12 +11,14 @@ FluentCRM now includes **Triggers** specifically for **WooCommerce** **Subscript
 
 ## Install & Activate WooCommerce Subscriptions Add-on
 
-Before you proceed, you need to install and activate the WooCommeerce Subscription Triggers add-on in your WordPress Site to get all the Subscription-related Triggers.
+Before you proceed, you need to install and activate the **FluentCRM WooCommerce Subscription Triggers** add-on in your WordPress site to get all the Subscription-related Triggers.
+
+> **Note:** This is a FluentCRM add-on, not the WooCommerce Subscriptions plugin by Automattic. You can obtain it from your [FluentCRM account](https://fluentcrm.com) as part of your Pro license.
 
 To learn how to install & activate the WooCommerce Subscription Triggers Add-on, follow the steps with screenshots below –
 
-First, you need to **purchase** the WooCommerce Subscriptions Add-on from [here](https://woocommerce.com/products/woocommerce-subscriptions/).  
-Then, go to the **Plugins** from the **WordPress Left Sideba**r, and click the **Add New Plugin** button.
+First, **download** the WooCommerce Subscription Triggers Add-on `.zip` file from your FluentCRM account area.  
+Then, go to **Plugins** from the **WordPress Left Sidebar**, and click the **Add New Plugin** button.
 
 Click on the **Upload Plugin** button.
 

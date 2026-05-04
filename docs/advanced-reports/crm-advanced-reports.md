@@ -62,7 +62,7 @@ This chart shows monthly emails sent with comparisons and percentage changes.
 
 ## WooCommerce advanced reports
 
-From the FluentCRM Report, navigate the Woocommerce then you’ll see the WooCommerce Advanced Reports.
+From the FluentCRM Report, navigate to **WooCommerce** and you’ll see the WooCommerce Advanced Reports.
 
 FluentCRM provides detailed reports for your WooCommerce data.  You can see the following reports:
 
@@ -76,7 +76,7 @@ FluentCRM provides detailed reports for your WooCommerce data.  You can see the
 
 ![ WooCommerce advanced reports](/advanced-reports/crm-advanced-reports/woocommerce-advanced-report-7.webp)
 
-> To display your WooCommerce data you must integrate it with WooCommerce plugins to FluentCRM. [Learn more](/docs/woocommerce-automation-with-fluentcrm).
+> To display your WooCommerce data you must integrate WooCommerce with FluentCRM. [Learn more](/docs/woocommerce-automation-with-fluentcrm).
 
 ### Gross Volume
 

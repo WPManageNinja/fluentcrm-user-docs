@@ -37,8 +37,8 @@ The Global Settings are divided into several key sections to help you manage you
 12. [Compliance](/docs/global-compliance-settings)
 13. [Incoming Webhooks](/docs/global-incoming-webhooks)
 14. [Managers](/docs/global-managers-settings)
-15. [REST API](/docs/global-rest-api-settings)
-16. [Advanced Features Settings](/docs/advanced-features-settings)
+15. **REST API** *(documentation coming soon)*
+16. **Advanced Features Settings** *(documentation coming soon)*
 17. [System Admin Tools](/docs/fluentcrm-tools-settings) – includes **Cron Job Monitor**, **Data Cleanup**, and **CRM Database Reset**
 
-> **Note:** The exact list of tabs you see depends on which features are active. **SMS Setting** appears only with FluentCRM Pro, and **Frontend Portal** is added to the Pro settings menu when the [Frontend Portal](/docs/frontend-portal) is enabled.
+> **Note:** The exact list of tabs you see depends on which features are active. **SMS Setting** appears only with FluentCRM Pro, and **Frontend Portal** is added to the Pro settings menu when the Frontend Portal add-on is enabled.

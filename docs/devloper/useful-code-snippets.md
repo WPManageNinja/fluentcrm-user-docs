@@ -20,11 +20,11 @@ add_filter('fluent_crm/track_click', '__return_false');
 
 **Add Custom Contact Status**
 
-(Change "Withdrawed" to the custom contact status you want to display.)
+(Change "Withdrawn" to the custom contact status you want to display.)
 
 ```
 add_filter('fluent_crm/contact_statuses', function($statuses){
-      $statuses[] = "Withdrawed";
+      $statuses[] = "Withdrawn";
 
       return $statuses;
   },10, 1);

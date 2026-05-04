@@ -6,29 +6,26 @@ order: 0
 ---
 
 # Action Hooks
-FluentCRM trigger action hook on different life-cycle of your contact and other modules.
+FluentCRM triggers action hooks at different points in the lifecycle of your contacts and other modules.
 
-### Contact Specific Actions Hooks
+### Contact Specific Action Hooks
 
 ```php
 <?php
 
 // New contact created
- do_action('fluentcrm_contact_created', Model $contact);
+do_action('fluentcrm_contact_created', Model $contact);
 
-// contact updated
+// Contact updated
 do_action('fluentcrm_contact_updated', Model $contact);
 
-// contact updated
-do_action('fluentcrm_contact_updated', Model $contact);
-
-// custom fields updated
+// Custom fields updated
 do_action('fluentcrm_contact_custom_data_updated', array $newValues, Model $contact);
 
 // Contact added to lists
 do_action( 'fluentcrm_contact_added_to_lists', array $listIds, Model $contact);
 
-// Contact removed from
+// Contact removed from lists
 do_action( 'fluentcrm_contact_removed_from_lists', array $listIds, Model $contact);
 
 // Contact added to tags
