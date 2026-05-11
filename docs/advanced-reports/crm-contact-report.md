@@ -1,3 +1,10 @@
+---
+title: "CRM Contact Report"
+description: "Analyze your FluentCRM contact database with the CRM Contact Report — track contact statuses, growth trends, geographic distribution, and top tags and lists for smarter marketing decisions."
+slug: "crm-contact-report"
+category: "advanced-reports"
+order: 0
+---
 
 # CRM Contact Reports
 

@@ -1,3 +1,10 @@
+---
+title: "Emails Report"
+description: "Track FluentCRM email marketing performance with the Emails Report — monitor sent, delivered, opened, clicked, and bounced metrics, performance charts, and recent campaign engagement in one dashboard."
+slug: "emails-report"
+category: "advanced-reports"
+order: 1
+---
 
 # Emails Report
 
