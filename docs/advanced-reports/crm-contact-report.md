@@ -48,8 +48,6 @@ FluentCRM allows you to dive deeper into growth patterns based on your internal 
 * **Contact Growth by Tag:** Use the dropdown menu to select a specific tag (e.g., *new*, *sunday*, or *Valentines Offer*) to see how that specific segment has grown over time.
 * **Contact Growth by List:** Select a specific list (e.g., *Forms*, *subscribed*, or *test*) to view the acquisition rate for that particular subscription group.
 
-![Targeted Growth Analysis](/advanced-reports/crm-report/contact-by-growth-3.webp)
-
 ## 5. Top Labels Analytics
 
 The bottom section of the report visualizes your most effective segments through horizontal bar charts.
