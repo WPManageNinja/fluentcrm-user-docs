@@ -101,6 +101,7 @@ export default defineConfig({
                 { text: 'Integrations', link: '/docs/global-integration-settings' },
                 { text: 'Abandoned Cart Settings', link: '/docs/abandoned-cart-settings' },
                 { text: 'AI Writing', link: '/docs/ai-writing-settings' },
+                { text: 'MCP for AI Agents', link: '/docs/mcp-for-ai-agents' },
                 { text: 'Compliance Settings', link: '/docs/global-compliance-settings' },
                 { text: 'Incoming Webhooks', link: '/docs/global-incoming-webhooks' },
                 { text: 'CRM Managers', link: '/docs/global-managers-settings' },
