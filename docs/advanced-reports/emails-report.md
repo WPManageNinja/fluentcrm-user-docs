@@ -37,7 +37,7 @@ The dashboard uses interactive line graphs to visualize trends and help you iden
 
 ## 3. Campaign Engagement Analytics
 
-This section provides an aggregate view of your campaign success rates:
+This section provides an total view of your campaign success rates:
 
 * **Avg. Open Rate:** The percentage of sent emails that were opened.
 * **Avg. Click Rate:** The percentage of recipients who clicked a link.
@@ -47,7 +47,7 @@ This section provides an aggregate view of your campaign success rates:
 
 ## 4. Recent Campaigns
 
-The bottom section of the report lists your most recently executed campaigns (e.g., *Monday Offer*, *FCRM 1*). This quick-view table allows you to see the individual **Open Rate** and basic stats for each broadcast at a glance without leaving the main reporting page.
+The bottom section of the report lists your most recently executed campaigns. This quick-view table allows you to see the individual **Open Rate** and basic stats for each broadcast at a glance without leaving the main reporting page.
 
 ![Campaign Analytics](/advanced-reports/emails/campaign-3.webp)
 
