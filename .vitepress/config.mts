@@ -326,7 +326,7 @@ export default defineConfig({
           text: 'Reports & Analytics',
           collapsed: true,
           items: [
-            { text: 'CRM Advanced Reports', link: '/docs/crm-advanced-reports' },
+            { text: 'CRM Contact Report', link: '/docs/crm-contact-report' },
             { text: 'Abandoned Cart Report', link: '/docs/abandoned-cart-report' },
             { text: 'WooCommerce Advanced Reports', link: '/docs/woocommerce-advanced-reports' },
             { text: 'EDD Advanced Reports', link: '/docs/edd-advanced-reports' },
