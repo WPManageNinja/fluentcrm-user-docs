@@ -9,7 +9,7 @@ order: 0
 
 FluentCRM and Fluent Forms work seamlessly when installed on the same site, but you may want to collect leads from different websites or domains and centralize them within a single FluentCRM dashboard. By utilizing the **Incoming Webhooks** feature in FluentCRM and the **Webhook Integration** in Fluent Forms, you can capture remote data effortlessly.
 
-For this purpose, we will utilise [Fluent Forms' Webhook integration](https://fluentforms.com/docs/webhooks-integration-with-fluent-forms/) on the source site and FluentCRM's [Incoming Webhooks](/docs/global-incoming-webhooks) on the destination site.
+For this purpose, we will utilise [Fluent Forms' Webhook integration](https://fluentforms.com/docs/webhooks-integration-with-fluent-forms/) on the source site and FluentCRM's [Incoming Webhooks](/global-incoming-webhooks) on the destination site.
 
 ![Webhook](/forms/capturing-leads-through-fluent-forms-webhook/crm_form_webhook_remote-1.webp)
 
@@ -19,11 +19,11 @@ On your primary website (where FluentCRM is installed), you must create an entry
 
 ### Create an Incoming Webhook
 
-From your FluentCRM dashboard, navigate to **[FluentCRM Global Settings](/docs/fluentcrm-global-settings)** ➜ **[Incoming Webhooks](/docs/global-incoming-webhooks)**. From there, click the **Create WebHook** button.
+From your FluentCRM dashboard, navigate to **[FluentCRM Global Settings](/fluentcrm-global-settings)** ➜ **[Incoming Webhooks](/global-incoming-webhooks)**. From there, click the **Create WebHook** button.
 
 ![Create Webhook](/forms/capturing-leads-through-fluent-forms-webhook/create-webhook-2.webp)
 
-Now, Enter a name for the webhook and select the **Lists** and **Tags** that should be assigned to any contact arriving through this link. Based on your preference, you can also set the [FluentCRM Contacts Status](/docs/fluentcrm-contacts-status) to either **Pending** or **Subscribed**. The pending status will send a [Double Opt-in Confirmation Email](/docs/global-double-opt-in-settings).
+Now, Enter a name for the webhook and select the **Lists** and **Tags** that should be assigned to any contact arriving through this link. Based on your preference, you can also set the [FluentCRM Contacts Status](/fluentcrm-contacts-status) to either **Pending** or **Subscribed**. The pending status will send a [Double Opt-in Confirmation Email](/global-double-opt-in-settings).
 
 >[!Note]
 > Setting the status to **Pending** is recommended if you need to send a **Double Opt-in Confirmation Email** to remain compliant with marketing standards.
@@ -38,7 +38,7 @@ Now, Click the **Create Webhook** button. Upon creating the webhook, FluentCRM w
 
 After creating the webhook successfully, you will see a confirmation message in the top-right corner. A unique **Webhook URL** will be generated, which you will use to send data to FluentCRM. You will also find a list of **Fields with Keys** that can be used for data mapping.
 
-You can check the available keys from [Contacts SmartCodes](/docs/smartcodes-in-fluentcrm-email-editor#Contacts) (use the key names without the `{{ }}` when using them in the webhook).
+You can check the available keys from [Contacts SmartCodes](/smartcodes-in-fluentcrm-email-editor#Contacts) (use the key names without the `{{ }}` when using them in the webhook).
 
 Close the popup to return to the main screen. From there, you can **copy** the webhook URL using the copy button. You can also **edit** or **delete** the webhook anytime if you need to update the configuration.
 
@@ -85,7 +85,7 @@ After configuring the feed, perform a test submission on your remote form.
 
 #### Form Entry Data
 
-As we have seen in the [Feed Status](/docs/opt-in-forms-fluent-forms-basic-configuration#Feed-Status) of [Basic Configuration](/docs/opt-in-forms-fluent-forms-basic-configuration) this might be confusing as the submission log will not show the webhook data processing in the General Section. The WebHook is a part of API Calls.
+As we have seen in the [Feed Status](/opt-in-forms-fluent-forms-basic-configuration#Feed-Status) of [Basic Configuration](/opt-in-forms-fluent-forms-basic-configuration) this might be confusing as the submission log will not show the webhook data processing in the General Section. The WebHook is a part of API Calls.
 
 ![Form Entries](/forms/capturing-leads-through-fluent-forms-webhook/form-entry-9.webp)
 

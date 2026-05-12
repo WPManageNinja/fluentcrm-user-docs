@@ -6,13 +6,13 @@ order: 0
 ---
 
 # Primary Conditionals
-FluentCRM offers several **Primary** **Conditionals** that allow users to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions. This enhances the automation funnel, enabling various possibilities. With Multi-Path conditional automation, you can create multiple branches, providing flexibility to customize your workflows.
+FluentCRM offers several **Primary** **Conditionals** that allow users to create conditional checks and take alternative [Actions](/primary-automation-actions) based on those set conditions. This enhances the automation funnel, enabling various possibilities. With Multi-Path conditional automation, you can create multiple branches, providing flexibility to customize your workflows.
 
 This article will provide detailed information about all **Primary** **Conditional Actions** of **FluentCRM Automation**. 
 
 https://youtu.be/yFYXfOlBVwc
 
-> **Remember**, to use all the **Conditionals**, you need to have [FluentCRM Pro Plugin](/docs/how-to-install-upgrade-and-activate-license) installed and activated in your WordPress Site.
+> **Remember**, to use all the **Conditionals**, you need to have [FluentCRM Pro Plugin](/how-to-install-upgrade-and-activate-license) installed and activated in your WordPress Site.
 
 ## All Primary Conditionals
 
@@ -20,7 +20,7 @@ To learn how you can use all the **Primary Conditionals** in your FluentCRM, fol
 
 First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
 
-> To learn the process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
+> To learn the process of creating a new automation funnel, read this [Documentation](/automation-editor).
 
 For example, I opened the **List Applied** automation funnel to explain all the **Primary Conditionals** 
 
@@ -96,7 +96,7 @@ Here you will get the **Options** based on the **Contact Activities** property t
 
 Here you will get the **Options** based on all the **Custom Fields** you have in your **FluentCRM** to set the desired **Parameter** for your condition. These are
 
-> To learn how to add custom fields in FluentCRM Contacts, read this [Documentation](/docs/global-custom-contact-fields).
+> To learn how to add custom fields in FluentCRM Contacts, read this [Documentation](/global-custom-contact-fields).
 
 Such as I had the following custom fields added to my FluentCRM:
 
@@ -130,7 +130,7 @@ You can see, in the automation funnel, there are two paths for setting actions. 
 
 In a condition, you can add as many actions as you need by clicking the **\+ Add Action** button.
 
-> Read this documentation to learn how to add [Primary](/docs/primary-automation-actions), [Email](/docs/automation-email-actions), [Goals/Benchmark](/docs/goals-or-benchmark-actions), [WordPress](/docs/wordpress-automation-actions), [LMS](/docs/lms-automation-actions), [WooCommerce](/docs/woocommerce-automation-actions), [Abandoned Cart](/docs/abandon-cart-automation), and [Miscellaneous](/docs/miscellaneous-automation-actions) actions. Additionally, read this [Documentation](/docs/fluentcrm-automation-triggers) to learn more about triggers
+> Read this documentation to learn how to add [Primary](/primary-automation-actions), [Email](/automation-email-actions), [Goals/Benchmark](/goals-or-benchmark-actions), [WordPress](/wordpress-automation-actions), [LMS](/lms-automation-actions), [WooCommerce](/woocommerce-automation-actions), [Abandoned Cart](/abandon-cart-automation), and [Miscellaneous](/miscellaneous-automation-actions) actions. Additionally, read this [Documentation](/fluentcrm-automation-triggers) to learn more about triggers
 
 Finally, when you are done, enable the **Publish** toggle to make the full automation funnel functional. Otherwise, it will remain as a draft.
 

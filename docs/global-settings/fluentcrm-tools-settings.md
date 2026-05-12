@@ -40,7 +40,7 @@ In the **Cron Job Monitor**, you can see the **Hook Name**, **Interval**, and th
 
 ![crm tools cron job](/global-settings/fluentcrm-tools-settings/crm_tools_Cron_job.webp)
 
-It is strongly recommended that you replace your default WordPress cron that runs by PHP script with a server-side Cron Job. We have a guide on how to do this on various platforms here: [Server Side Cron Job Replacement](/docs/replace-wordpress-cron-with-a-real-cron-job). This will ensure that scheduled events are running timely and properly and FluentCRM also runs smoothly and do not miss any events.
+It is strongly recommended that you replace your default WordPress cron that runs by PHP script with a server-side Cron Job. We have a guide on how to do this on various platforms here: [Server Side Cron Job Replacement](/replace-wordpress-cron-with-a-real-cron-job). This will ensure that scheduled events are running timely and properly and FluentCRM also runs smoothly and do not miss any events.
 
 ## System Logs
 

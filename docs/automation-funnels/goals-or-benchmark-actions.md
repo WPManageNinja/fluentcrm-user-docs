@@ -13,13 +13,13 @@ For example, You can set a benchmark from your campaign emails by tracking when 
 
 https://www.youtube.com/watch?v=kxfEHdplr7s&t=
 
-This article will provide detailed information about all the **Goals or Benchmark** [Actions](/docs/primary-automation-actions) of [FluentCRM](https://fluentcrm.com/) **Automation**. 
+This article will provide detailed information about all the **Goals or Benchmark** [Actions](/primary-automation-actions) of [FluentCRM](https://fluentcrm.com/) **Automation**. 
 
 ## All Goals/Benchmark Actions
 
 First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
 
-> To learn the process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
+> To learn the process of creating a new automation funnel, read this [Documentation](/automation-editor).
 
 For example, I opened the **List Applied** automation funnel to explain all the **Goals/Benchmark** actions.
 
@@ -67,7 +67,7 @@ This automation funnel will start once a new order is placed as completed in EDD
 
 After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
 
-> The settings options of this **New Order Success in EDD** benchmark action work the same way as the **Order Received in WooCommerce** action. To learn how to use all the settings, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-order-received-in-woocommerce-action).
+> The settings options of this **New Order Success in EDD** benchmark action work the same way as the **Order Received in WooCommerce** action. To learn how to use all the settings, read this [**Section**](/goals-or-benchmark-actions/#settings-of-the-order-received-in-woocommerce-action).
 
 ### 3\. List Applied
 
@@ -96,7 +96,7 @@ You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
 
 This automation funnel will start once the selected lists have been removed from a contact. After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
 
-> The settings options of this **List Removed** benchmark action work the same way as the **List Applied** action. To learn how to use all the settings, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
+> The settings options of this **List Removed** benchmark action work the same way as the **List Applied** action. To learn how to use all the settings, read this [**Section**](/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
 
 ### 5\. Tag Applied
 
@@ -106,7 +106,7 @@ Here are the Settings of the Tag Applied action:
 
 -   **Select Tags**: Select the **Tags (single or multiple)** using the dropdown arrow for which you want to trigger this automation funnel. If you do not have any existing Tags in your FluentCRM, you can directly create one from here by clicking the **Plus** icon in the right corner of the field.
 
-> To learn the use of all the other settings mentioned in the screenshot below, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
+> To learn the use of all the other settings mentioned in the screenshot below, read this [**Section**](/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -117,21 +117,21 @@ Once you are done, click the **Save Settings** button to save all your changes.
 This automation funnel will start once the selected Tags have been removed from a contact.  
 After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
 
-> The settings options of this **Tag Removed** benchmark action work the same way as the **List Applied** action. To learn how to use all the settings, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
+> The settings options of this **Tag Removed** benchmark action work the same way as the **List Applied** action. To learn how to use all the settings, read this [**Section**](/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
 
 ### 7\. Link Click
 
 This automation funnel will start once a subscriber clicks on this provided link. After selecting this **Action**, a tab will appear on the right-hand side with options to set up your action.
 
-> **Remember**, to use this action, you need to have [FluentCRM Pro Plugin](/docs/how-to-install-upgrade-and-activate-license) installed and activated in your WordPress Site.
+> **Remember**, to use this action, you need to have [FluentCRM Pro Plugin](/how-to-install-upgrade-and-activate-license) installed and activated in your WordPress Site.
 
 Here are the Settings of the Link Click action:
 
--   **Copy This Link**: FluentCRM will provide a link that you need to use to trigger this benchmark action. If you do not see the link immediately please save the action and it will generate a link for you. Please remember that this works similarly to [Smart Links](/docs/global-smartlinks-settings).
+-   **Copy This Link**: FluentCRM will provide a link that you need to use to trigger this benchmark action. If you do not see the link immediately please save the action and it will generate a link for you. Please remember that this works similarly to [Smart Links](/global-smartlinks-settings).
 
 -   **Redirect To**: Place the destination URL where you want the user to be redirected after clicking the link.
 
->  To learn the use of all the other settings mentioned in the screenshot below, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
+>  To learn the use of all the other settings mentioned in the screenshot below, read this [**Section**](/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -143,9 +143,9 @@ This automation funnel will run once a selected email sequence is completed for 
 
 Here are the Settings of the Email Sequence Completed action:
 
--   **Select Email Sequences**: Select the [Email Sequence](/docs/email-sequence) (Single or Multiple) from the dropdown that needs to be completed to trigger this benchmark action.
+-   **Select Email Sequences**: Select the [Email Sequence](/email-sequence) (Single or Multiple) from the dropdown that needs to be completed to trigger this benchmark action.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [**Section**](/docs/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
+> To learn the use of all the settings mentioned in the screenshot below, read this [**Section**](/goals-or-benchmark-actions/#settings-of-the-list-applied-action).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 

@@ -39,7 +39,7 @@ Once you install & activate the add-on, go to the **Automation** section from th
 
 Once you click the + New Automation button, a pop-up page will appear with all the Popular Pre-built Funnel Templates for creating automations.
 
-Now, you just need to click on the desired templates and it will redirect you to the [Automation Editor](/docs/automation-editor/#automation-editor) where the full funnel diagram will be ready automatically. Alternatively, to get all the WooCommerce-related triggers, simply click on the **Create from Scratch** box.
+Now, you just need to click on the desired templates and it will redirect you to the [Automation Editor](/automation-editor/#automation-editor) where the full funnel diagram will be ready automatically. Alternatively, to get all the WooCommerce-related triggers, simply click on the **Create from Scratch** box.
 
 Here, another pop-up will appear for creating an Automation Funnel where you will find the WooCommerce options from the left sidebar.  
 Now click on **WooCommerce** and you will get four **Woocommerce Subscription** **Triggers**. These are:
@@ -63,8 +63,8 @@ This automation funnel will start once a subscription occurs or is changed to ac
 #### **A brief explanation of the options in the screenshot is given below:**
 
 -   **Automation Name**: Provide a **Name** for the **Automation** so that you may find it later easily.
--   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/docs/automation-editor/#automation-editor).
--   **Contact Status**: Change the **Subscription** **Status** from the **Dropdown** list for the **Contact** that submits the form. To learn more about the Contact Status of FluentCRM, [click here](/docs/fluentcrm-contacts-status).
+-   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/automation-editor/#automation-editor).
+-   **Contact Status**: Change the **Subscription** **Status** from the **Dropdown** list for the **Contact** that submits the form. To learn more about the Contact Status of FluentCRM, [click here](/fluentcrm-contacts-status).
 -   **Target Products**: Select the **Products** for which this automation will run. Otherwise, **leave** this field **Blank** if you want this funnel **to** **run for all products**.
 -   **Restart**: Check this option if you want the **automation to run multiple times** for the contact that triggers the automation.
 

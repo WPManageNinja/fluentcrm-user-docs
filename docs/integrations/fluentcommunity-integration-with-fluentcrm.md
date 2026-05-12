@@ -40,13 +40,13 @@ To access these, go to **FluentCRM → Automations**, click **\+ New Automation*
 
 Once you select your desired **Trigger**, click the **Continue** button. Also, you can give a **Title** to your Automation in the **Internal Label** field for easy referencing later. But if you leave it blank, the title will be automatically set based on your chosen trigger.
 
-In addition to the triggers listed below, FluentCRM includes many more triggers. [Click here](/docs/introduction-to-fluentcrm-automation/#i-trigger) to view the full list.
+In addition to the triggers listed below, FluentCRM includes many more triggers. [Click here](/introduction-to-fluentcrm-automation/#i-trigger) to view the full list.
 
 ![automation trigger 3](/integrations/fluentcommunity-integration-with-fluentcrm/automation-trigger-3.webp)
 
 ## Automation Actions for FluentCommunity
 
-Click the **Plus (+) icon**, or hover over it and select **Add Action / Goal**, to see all available FluentCommunity [**actions**](/docs/primary-automation-actions).
+Click the **Plus (+) icon**, or hover over it and select **Add Action / Goal**, to see all available FluentCommunity [**actions**](/primary-automation-actions).
 
 ![add actions 4](/integrations/fluentcommunity-integration-with-fluentcrm/add-actions-4-scaled.webp)
 
@@ -85,7 +85,7 @@ The integration allows you to filter and segment your recipients in **Email Camp
 
 First, go to **Campaigns** under the **Emails** section from the **FluentCRM Navbar**, and click the **\+ Add Campaign** button.
 
-To learn the detailed process of creating a new Email Campaign, read this [Documentation](/docs/setting-up-campaign/#create-a-new-campaign).
+To learn the detailed process of creating a new Email Campaign, read this [Documentation](/setting-up-campaign/#create-a-new-campaign).
 
 ![create a new campaign 8](/integrations/fluentcommunity-integration-with-fluentcrm/create-a-new-campaign-8-scaled.webp)
 
@@ -102,7 +102,7 @@ You can target community members by utilizing **Automation** to apply specific L
 
 #### By Advanced Filter (Pro Feature)
 
-With [**FluentCRM Pro**](/docs/how-to-install-upgrade-and-activate-license), you can target members even more precisely without manual tagging. Now, click on the **\+ Add** button to start the filtering where you will get two options **Space Membership** and **Course Enrollment** for **FluentCommunity**.
+With [**FluentCRM Pro**](/how-to-install-upgrade-and-activate-license), you can target members even more precisely without manual tagging. Now, click on the **\+ Add** button to start the filtering where you will get two options **Space Membership** and **Course Enrollment** for **FluentCommunity**.
 
 -   **Space Membership:** Include or exclude members based on the specific Spaces they belong to.
 -   **Course Enrollment:** Target recipients based on whether they are enrolled in particular courses.

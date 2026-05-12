@@ -7,7 +7,7 @@ order: 0
 
 # Transfer License from one Domain to another
 
-You may already know [How to Install, Upgrade and Activate FluentCRM Licenses](/docs/how-to-install-upgrade-and-activate-license) but sometimes it could be necessary to transfer your existing FluentCRM license from one domain to another. And this article will show you how to easily do so.
+You may already know [How to Install, Upgrade and Activate FluentCRM Licenses](/how-to-install-upgrade-and-activate-license) but sometimes it could be necessary to transfer your existing FluentCRM license from one domain to another. And this article will show you how to easily do so.
 
 First, you need to deactivate your existing license. This can be done in the following ways.
 
@@ -31,6 +31,6 @@ You'll see all your activated licenses. Click on the **Deactivate Site** to deac
 
 ## Activate License on New Domain
 
-To use FluentCRM on another website, copy your license key from the WPManageNinja account dashboard. Then simply [Install and Activate FluentCRM](/docs/how-to-install-upgrade-and-activate-license/#Install-and-Activate-FluentCRM) free version and Pro add-on. The Pro add-on can also be found on your WPManageNinja account dashboard.
+To use FluentCRM on another website, copy your license key from the WPManageNinja account dashboard. Then simply [Install and Activate FluentCRM](/how-to-install-upgrade-and-activate-license/#Install-and-Activate-FluentCRM) free version and Pro add-on. The Pro add-on can also be found on your WPManageNinja account dashboard.
 
-Next, go to FluentCRM **Settings** → **License Management**. And then you can paste the license key copied from your dashboard as guided in [Activate FluentCRM License](/docs/how-to-install-upgrade-and-activate-license/#Activate-FluentCRM-License)
+Next, go to FluentCRM **Settings** → **License Management**. And then you can paste the license key copied from your dashboard as guided in [Activate FluentCRM License](/how-to-install-upgrade-and-activate-license/#Activate-FluentCRM-License)

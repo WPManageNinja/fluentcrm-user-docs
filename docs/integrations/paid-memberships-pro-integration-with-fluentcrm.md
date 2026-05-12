@@ -43,4 +43,4 @@ After that click **Save Settings** to save it.
 
 ![image](/integrations/paid-memberships-pro-integration-with-fluentcrm/image-6-3.webp)
 
-After that, you can add [action](/docs/primary-automation-actions) blocks to target membership websites for specific contact segments.
+After that, you can add [action](/primary-automation-actions) blocks to target membership websites for specific contact segments.

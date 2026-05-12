@@ -61,9 +61,9 @@ You can additionally **set an OR condition** to check for **both Pages and Blog 
 
 In the next section, the recurring campaign subscribers should be selected. This is similar to regular campaigns. You can add recipients:
 
-1.  By [List](/docs/segment-your-audience#Lists) & [Tag](/docs/segment-your-audience#Tags),
-2.  By [Dynamic Segment](/docs/segment-your-audience#Dynamic-Segments) and
-3.  By [Advanced Filter](/docs/advanced-filter).
+1.  By [List](/segment-your-audience#Lists) & [Tag](/segment-your-audience#Tags),
+2.  By [Dynamic Segment](/segment-your-audience#Dynamic-Segments) and
+3.  By [Advanced Filter](/advanced-filter).
 
 ### By List & Tag
 
@@ -71,17 +71,17 @@ Choose your **List & Tag**. You can select one list and one tag from the dropdo
 
 ### By Dynamic Segment
 
-You can also run the campaign by dynamic segments, for example, WooCommerce Users or LearnDash, LifterLMS users, or any other dynamic segments you created in FluentCRM. Please visit the [General & Dynamic Segments](/docs/segment-your-audience) documentation to know more details.
+You can also run the campaign by dynamic segments, for example, WooCommerce Users or LearnDash, LifterLMS users, or any other dynamic segments you created in FluentCRM. Please visit the [General & Dynamic Segments](/segment-your-audience) documentation to know more details.
 
 ### By Advanced Filter
 
-You can select custom contacts by using [Advanced Filter](/docs/advanced-filter) and filter the contacts accordingly. This is a wide conditional section based on various Data Properties for Contacts and Activities inside FluentCRM.
+You can select custom contacts by using [Advanced Filter](/advanced-filter) and filter the contacts accordingly. This is a wide conditional section based on various Data Properties for Contacts and Activities inside FluentCRM.
 
 ![recurring campaign recipients](/email-campaign/recurring-campaign/by-list-&-tag-6.webp)
 
 ## Email Content Settings
 
-Once the Recipients are selected, the Email Content to be sent should be composed. Since this is a Recurring Campaign based on Posts and Pages Published, The Latest Posts Block is a desired and relevant Content Block we can utilize to fetch our Posts or Pages published. To know more in-depth about Latest Posts Block please check out the documentation: [Latest Posts Block](/docs/content-blocks-in-fluentcrm-email-editor#conditional-block)
+Once the Recipients are selected, the Email Content to be sent should be composed. Since this is a Recurring Campaign based on Posts and Pages Published, The Latest Posts Block is a desired and relevant Content Block we can utilize to fetch our Posts or Pages published. To know more in-depth about Latest Posts Block please check out the documentation: [Latest Posts Block](/content-blocks-in-fluentcrm-email-editor#conditional-block)
 
 ![recurring campaign latest posts](/email-campaign/recurring-campaign/recurring-campaign-latest-posts-7.webp)
 

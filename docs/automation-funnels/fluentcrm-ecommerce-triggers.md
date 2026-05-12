@@ -53,7 +53,7 @@ Available FluentCart triggers include:
 * **Subscription Cancelled:** Runs when a subscription is canceled.
 * **Subscription Renewed:** Runs after a successful subscription renewal.
 * **Subscription Expired / End of Access Validity:** Runs when subscription access ends.
-* **Cart Abandoned (FluentCart):** Runs when a FluentCart cart is left without checkout. See [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation) for the full walkthrough.
+* **Cart Abandoned (FluentCart):** Runs when a FluentCart cart is left without checkout. See [FluentCart Abandon Cart Automation](/fluentcart-abandon-cart-automation) for the full walkthrough.
 
 ![Ecommerce Trigger](/automation-funnels/fluentcrm-ecommerce-triggers/ecommerce-automation-2.webp)
 

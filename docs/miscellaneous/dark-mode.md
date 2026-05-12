@@ -23,5 +23,5 @@ Your choice is stored against your WordPress user (so it survives logout and app
 
 -   **Charts and reports** automatically adapt to the dark palette so contrast and legibility stay consistent.
 -   **Email previews** continue to render with the light background that subscribers will actually see in their inbox – Dark Mode only restyles the FluentCRM admin chrome.
--   **RTL support** works alongside Dark Mode. If your site uses a right-to-left language, see [RTL Support](/docs/rtl-support).
+-   **RTL support** works alongside Dark Mode. If your site uses a right-to-left language, see [RTL Support](/rtl-support).
 -   **Third-party plugins** that hook into FluentCRM's admin pages may not honour Dark Mode if they ship their own CSS – this is rare but worth knowing if you notice a single panel still rendering in light theme.

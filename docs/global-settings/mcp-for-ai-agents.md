@@ -12,7 +12,7 @@ FluentCRM Pro ships with a built-in **MCP (Model Context Protocol) server** that
 Once enabled, any MCP-compatible AI client can look up contacts, create tags, trigger automations, and perform other CRM tasks as part of a conversation or automated workflow.
 
 >[!Note]
-> This feature requires **FluentCRM Pro**. [See what's included →](/docs/how-to-install-upgrade-and-activate-license)
+> This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
 ## Access MCP for AI Agents settings
 

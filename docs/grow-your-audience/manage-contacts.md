@@ -7,7 +7,7 @@ order: 0
 
 # Add and Manage All Contacts
 
-FluentCRM provides an excellent [Contacts Dashboard](/docs/contacts-dashboard/#Contacts-Dashboard) that represents all the necessary summaries of the activities. This article will guide you through the process of **adding a new contact manually** and **managing contacts in bulk** in detail.
+FluentCRM provides an excellent [Contacts Dashboard](/contacts-dashboard/#Contacts-Dashboard) that represents all the necessary summaries of the activities. This article will guide you through the process of **adding a new contact manually** and **managing contacts in bulk** in detail.
 
 ## Adding New Contacts
 
@@ -17,7 +17,7 @@ First, go to **All Contacts** from the **Contacts** section of the **FluentCRM N
 
 Now, click on the **\+ Add Contact** button on the top right corner of the dashboard to add a new contact manually.
 
-> Here you can see the full **All Contacts Dashboard**. To learn more detail use about it, read this [Documentation](/docs/contacts-dashboard/#Contacts-Dashboard).
+> Here you can see the full **All Contacts Dashboard**. To learn more detail use about it, read this [Documentation](/contacts-dashboard/#Contacts-Dashboard).
 
 ![+ add contacts button](/grow-your-audience/manage-contacts/Add-Contacts-button-scaled.webp)
 
@@ -25,8 +25,8 @@ Then, a **modal** will appear on the right-hand side with a **few contact fields
 
 -   **Basic Info:** Here, you will get all these fields (Prefix, First Name, Last Name, Email, Phone, Date of Birth, and Company/business) to input the basic information about your contacts.
 -   **Address Info:** Here, you will get all these fields (Address Line 1, Address Line 2, City, State, Postal Code, Country) to input the address info about your contacts.
--   **Add** **Custom Data:** Here you will get all the custom contact fields you have in your FluentCRM plugin to add a few extra customized information about your contacts if needed. To learn how to add custom contact fields in FluentCRM, read this [Documentation](/docs/global-custom-contact-fields).
--   **Identifiers:** Here you will get all these fields (Lists, Tags, and Status) to sort your contacts by including them in a single or multiple lists, putting a tag, and selecting their [subscription status](/docs/fluentcrm-contacts-status).
+-   **Add** **Custom Data:** Here you will get all the custom contact fields you have in your FluentCRM plugin to add a few extra customized information about your contacts if needed. To learn how to add custom contact fields in FluentCRM, read this [Documentation](/global-custom-contact-fields).
+-   **Identifiers:** Here you will get all these fields (Lists, Tags, and Status) to sort your contacts by including them in a single or multiple lists, putting a tag, and selecting their [subscription status](/fluentcrm-contacts-status).
 
 Once you are done providing and selecting all the necessary information, click on the **Create Contact** or **Create & Add Another** button and your contact will be added.
 
@@ -55,6 +55,6 @@ First, **select** the **desired contact/s** you want to manage, a **Select Actio
 -   **Send Double Opt-in Confirmation:** Once you select contact/s, can send a Double Opt-in Confirmation Email to the pending status contact/s.
 -   **Delete Contact:** You can also delete a single contact or multiple contacts based on your selection.
 
-> Additionally, you can also [Import](/docs/import-contacts-into-fluentcrm) or [Export](/docs/export-contacts-from-fluentcrm) your FluentCRM contact/s based on your selection.
+> Additionally, you can also [Import](/import-contacts-into-fluentcrm) or [Export](/export-contacts-from-fluentcrm) your FluentCRM contact/s based on your selection.
 
 ![select bulk action dropdown field](/grow-your-audience/manage-contacts/Select-Bulk-Action-dropdown-field-scaled.webp)

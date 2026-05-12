@@ -19,13 +19,13 @@ Before you build **WooCommerce** abandoned-cart automations, turn on abandoned-c
 4. Choose which order statuses should mark a cart as **recovered** (for example **Processing** and **Completed**, depending on your store).
 5. Click **Save** (top right).
 
-For every option on this screen, see [Abandoned Cart Settings](/docs/abandoned-cart-settings).
+For every option on this screen, see [Abandoned Cart Settings](/abandoned-cart-settings).
 
 ![Enable Abandoned Cart module and WooCommerce abandoned cart feature](/automation-funnels/abandon-cart-automation/enable-abandoned-cart-module-woocommerce.png)
 
 ## Abandon Cart Automation 
 
-Go to your FluentCRM and select **[Automation](/docs/introduction-to-fluentcrm-automation)** from the Navbar then click on the **New Automation** button. 
+Go to your FluentCRM and select **[Automation](/introduction-to-fluentcrm-automation)** from the Navbar then click on the **New Automation** button. 
 
 ![automation funnels fluentcrm abandon 1](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-1-scaled.webp)
 
@@ -62,6 +62,6 @@ Finally, click the **Save Settings** button to save your automation settings the
 
 ## Related reading
 
--   [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation)
--   [Abandoned Cart Settings](/docs/abandoned-cart-settings)
--   [Abandoned Cart Report](/docs/abandoned-cart-report)
+-   [FluentCart Abandon Cart Automation](/fluentcart-abandon-cart-automation)
+-   [Abandoned Cart Settings](/abandoned-cart-settings)
+-   [Abandoned Cart Report](/abandoned-cart-report)

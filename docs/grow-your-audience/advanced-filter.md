@@ -9,7 +9,7 @@ order: 0
 
 In FluentCRM, the **Advanced Filter** option helps you find and segment contacts using more specific conditions. This feature allows you to filter contacts based on different types of data, including both static information (such as contact details) and dynamic data that changes through contact activity or FluentCRM actions.
 
-You can find the **Advanced Filter** option in the [**Contacts Dashboard**](/docs/contacts-dashboard). When you turn on the **Advanced Filter** toggle, additional filtering options will appear, similar to the example shown in the screenshot.
+You can find the **Advanced Filter** option in the [**Contacts Dashboard**](/contacts-dashboard). When you turn on the **Advanced Filter** toggle, additional filtering options will appear, similar to the example shown in the screenshot.
 
 ![contacts fluentcrm 7](/grow-your-audience/advanced-filter/Contacts-FluentCRM-7.webp)
 
@@ -43,7 +43,7 @@ The available data properties and their short descriptions are:
 11.  **Phone/ Mobile:** Phone or Mobile Number that may contain or not contain the country code depending on how you added the information.
 12.  **WP User ID:** The WordPress User ID of the contact if the contact is present in the WordPress user list.
 13.  **Name Prefix(Title):** Mr, Mrs, and Ms depending on the person’s designation.
-14.  **Source:** The source of the contact like Woocommerce, Fluent Forms, or other sources. You can also update or add source information while [importing the user](/docs/import-contacts-into-fluentcrm/#Importing-Contacts-from-CSV-File). If you are using a [CSV file to import](/docs/import-contacts-into-fluentcrm/#Importing-Contacts-from-CSV-File) please add a source column in the CSV file.
+14.  **Source:** The source of the contact like Woocommerce, Fluent Forms, or other sources. You can also update or add source information while [importing the user](/import-contacts-into-fluentcrm/#Importing-Contacts-from-CSV-File). If you are using a [CSV file to import](/import-contacts-into-fluentcrm/#Importing-Contacts-from-CSV-File) please add a source column in the CSV file.
 15.  **Last Activity:** The Last Activity field in FluentCRM provides a consolidated view of WordPress user logins and interactions with email campaigns, such as email click activities.
 16.  **Created At:** The date and time when the user was created in the FluentCRM.
 
@@ -53,7 +53,7 @@ The available data properties and their short descriptions are:
 
 The available data properties and their short descriptions are:
 
-1.  **Status:** [**Subscription Status**](/docs/fluentcrm-contacts-status) of the contact.
+1.  **Status:** [**Subscription Status**](/fluentcrm-contacts-status) of the contact.
 2.  **Type:** The contact type of the user is either **Customer** or **Lead**.
 3.  **Tags:** Tags that are available in the FluentCRM.
 4.  **Lists:** Lists that are available in the FluentCRM.
@@ -77,7 +77,7 @@ The available data properties and their short descriptions are:
 
 ## Custom Field Properties
 
-This is a user-defined option that is configured in [**Custom Contact Fields Settings**](/docs/global-custom-contact-fields). All the available custom contact fields will be listed in this option to let you apply to filter based on the custom contact field properties.
+This is a user-defined option that is configured in [**Custom Contact Fields Settings**](/global-custom-contact-fields). All the available custom contact fields will be listed in this option to let you apply to filter based on the custom contact field properties.
 
 ![contacts fluentcrm 4 1](/grow-your-audience/advanced-filter/Contacts-FluentCRM-4-1.webp)
 

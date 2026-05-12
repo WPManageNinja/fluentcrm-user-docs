@@ -15,7 +15,7 @@ To Export All Contacts please go to the **FluentCRM Dashboard** ➜ **Contact
 
 ![crm contacts options](/grow-your-audience/export-contacts-from-fluentcrm/crm_contacts_options.webp)
 
-This will open a modal with numerous data fields to choose from and you will be able to select as many fields you want to include in your export file. The custom contact fields will be available based on your settings in the [**Custom Contact Fields**.](/docs/global-custom-contact-fields) There will be other categories of fields depending on the integrations like Woocommerce, LearnDash, EDD, etc.
+This will open a modal with numerous data fields to choose from and you will be able to select as many fields you want to include in your export file. The custom contact fields will be available based on your settings in the [**Custom Contact Fields**.](/global-custom-contact-fields) There will be other categories of fields depending on the integrations like Woocommerce, LearnDash, EDD, etc.
 
 ![contacts fluentcrm 16](/grow-your-audience/export-contacts-from-fluentcrm/Contacts-FluentCRM-16.webp)
 
@@ -24,4 +24,4 @@ This will open a modal with numerous data fields to choose from and you will be 
 
 After providing/selecting all the values, just click on the **Export Contacts** button and your contacts will be exported into a CSV (**Comma Separated Values**) file.
 
-The above method will be applied to all of the contacts of the FluentCRM. Now if you want to export only specific contacts from specific criteria then please follow the [**Basic Filtering**](/docs/contacts-dashboard/#Basic-Filters-Pagination) and **[Advanced Filtering](/docs/advanced-filter)** guidelines and filter them out first, then you can follow the exact above method to export the filtered contacts into a CSV file.
+The above method will be applied to all of the contacts of the FluentCRM. Now if you want to export only specific contacts from specific criteria then please follow the [**Basic Filtering**](/contacts-dashboard/#Basic-Filters-Pagination) and **[Advanced Filtering](/advanced-filter)** guidelines and filter them out first, then you can follow the exact above method to export the filtered contacts into a CSV file.

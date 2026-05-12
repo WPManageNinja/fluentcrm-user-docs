@@ -8,7 +8,7 @@ Repository: `WPManageNinja/fluentcrm-user-docs` | Branch: `docteam` → merges t
 - **142 markdown files** across 16 doc sections inside `docs/`
 - **VitePress config**: `.vitepress/config.mts` — controls sidebar, nav, rewrites, and a custom YouTube embed plugin
 - **Images**: stored in `docs/public/[category]/[slug]/` as `.webp` files
-- **URL rewrite**: `docs/:category/:slug.md` → `docs/:slug.md` (category folder is hidden from URLs)
+- **URL rewrite**: `docs/:category/:slug.md` → `:slug.md` (category folder and `/docs/` prefix are hidden from URLs)
 - **Dev server**: `npm run docs:dev` | **Build**: `npm run docs:build`
 
 ## Plugin Versions Covered
@@ -28,7 +28,7 @@ Repository: `WPManageNinja/fluentcrm-user-docs` | Branch: `docteam` → merges t
 3. **All new images must be `.webp`** — never `.jpg`, `.png`, `.gif`
 4. **Always update `.vitepress/config.mts`** when adding a new doc file
 5. **The `docs/devloper/` folder has a typo** (missing `e`) — this is intentional/legacy; use it as-is until a migration is planned
-6. **Sidebar link format**: always `/docs/slug-here` (never `/docs/category/slug`)
+6. **Sidebar link format**: always `/slug-here` (never `/docs/slug` or `/docs/category/slug`)
 
 ## Correct Product Name Casing (Quick Reference)
 
@@ -75,7 +75,7 @@ Repository: `WPManageNinja/fluentcrm-user-docs` | Branch: `docteam` → merges t
 **Pro feature notice (always use this exact wording):**
 ```
 >[!Note]
-> This feature requires **FluentCRM Pro**. [See what's included →](/docs/how-to-install-upgrade-and-activate-license)
+> This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 ```
 
 ## Doc Frontmatter Format
@@ -93,6 +93,6 @@ order: 0
 
 All sidebar entries in `.vitepress/config.mts` use:
 ```ts
-{ text: 'Page Title', link: '/docs/the-slug' },
+{ text: 'Page Title', link: '/the-slug' },
 ```
 The slug is the filename without `.md` and without the folder prefix.

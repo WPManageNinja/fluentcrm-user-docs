@@ -188,4 +188,4 @@ We can now move on to Action.
 
 So that completes our Zapier integration tutorial. If you get stuck or have any questions about the tutorial, feel free to comment below!
 
-FluentCRM offers excellent webhook connectivity so that you can easily connect your data sources and automate tasks easily. Read our [documentation for easy Webhook integration](/docs/webhook-integration)!
+FluentCRM offers excellent webhook connectivity so that you can easily connect your data sources and automate tasks easily. Read our [documentation for easy Webhook integration](/webhook-integration)!

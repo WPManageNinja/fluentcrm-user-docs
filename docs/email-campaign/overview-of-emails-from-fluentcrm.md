@@ -9,7 +9,7 @@ order: 0
 
 FluentCRM is an Email Marketing and Automation Tool that integrates with the WordPress email delivery system which can be extended by additional SMTP plugins like FluentSMTP and processes the automation emails, email campaigns, email sequences, and test emails.
 
-Once you are done with configuring the [**settings of the FluentCRM**](/docs/fluentcrm-global-settings), [**importing contacts into FluentCRM**](/docs/import-contacts-into-fluentcrm), and [**segmenting your contact**](/docs/segment-your-audience), you are ready to send an [**Email Campaign**](/docs/setting-up-campaign), **[Email Sequence](/docs/email-sequence)**, and **[Automation Emails](/docs/introduction-to-fluentcrm-automation)**. You can run email campaigns to send your marketing messages to the subscribers who opted for your marketing messages. 
+Once you are done with configuring the [**settings of the FluentCRM**](/fluentcrm-global-settings), [**importing contacts into FluentCRM**](/import-contacts-into-fluentcrm), and [**segmenting your contact**](/segment-your-audience), you are ready to send an [**Email Campaign**](/setting-up-campaign), **[Email Sequence](/email-sequence)**, and **[Automation Emails](/introduction-to-fluentcrm-automation)**. You can run email campaigns to send your marketing messages to the subscribers who opted for your marketing messages. 
 
 In FluentCRM, an email campaign is a bulk email marketing campaign that is sent to many contacts at once instantly or in a scheduled time defined by you. This is as easy as adding a template, adding the content, designing the template, selecting your audience group, and then sending it off to your subscribers.
 
@@ -21,9 +21,9 @@ FluentCRM offers several ways to compose and send emails depending on your marke
 
 Campaigns are bulk marketing messages sent to a large group of contacts at once.
 
- * **Gutenberg-native editor:** v3 uses the WordPress block editor as the default email composer, with **Device Preview**, the WordPress media library, [reusable Email Patterns](/docs/email-patterns), and [AI Writing](/docs/ai-writing-settings) built in.
+ * **Gutenberg-native editor:** v3 uses the WordPress block editor as the default email composer, with **Device Preview**, the WordPress media library, [reusable Email Patterns](/email-patterns), and [AI Writing](/ai-writing-settings) built in.
  * **Switch Editor any time:** Prefer drag-and-drop? The **Visual Builder** is one click away. Coding from scratch? Use **Raw HTML**. There's also the **Classic Editor** if that's how you prefer to work.
- * **Scheduling:** Send campaigns immediately, schedule them for a specific date and time, or queue them for a sending time-window. More about campaigns is discussed in [**Email Campaigns**](/docs/setting-up-campaign).
+ * **Scheduling:** Send campaigns immediately, schedule them for a specific date and time, or queue them for a sending time-window. More about campaigns is discussed in [**Email Campaigns**](/setting-up-campaign).
 
 ![crm email compose campaign](/email-campaign/overview-of-emails-from-fluentcrm/email-campaign-1.webp)
 
@@ -32,7 +32,7 @@ Campaigns are bulk marketing messages sent to a large group of contacts at once.
 Sequences are a series of "drip" emails sent automatically over a period of time (e.g., a 7-day welcome series).
 
  * **Smart Delays:** You can set a specific Delay (in days or hours) between each email in the sequence.
- * **Time Windows:** Use the Sending Time Range to ensure emails only arrive during business hours, or enable Specific Days Only to avoid sending on weekends. More about sequences are discussed in [**Email Sequence**](/docs/email-sequence).
+ * **Time Windows:** Use the Sending Time Range to ensure emails only arrive during business hours, or enable Specific Days Only to avoid sending on weekends. More about sequences are discussed in [**Email Sequence**](/email-sequence).
 
 ![crm email compose sequence](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_sequence-2.webp)
 
@@ -49,7 +49,7 @@ If you send regular updates, like a "Weekly Post Update," Recurring Campaigns au
 
 Found under **Emails ➜ Email Templates**, this feature allows you to create and save "master designs" that can be reused across different campaigns and automations.
 
-Save time by building a layout with your brand's logo, colors, and footer, then simply select it whenever you start a new email. More about templates are discussed in [**Email Templates**](/docs/email-templates).
+Save time by building a layout with your brand's logo, colors, and footer, then simply select it whenever you start a new email. More about templates are discussed in [**Email Templates**](/email-templates).
 
 ![Composing Emails in Email Template](/email-campaign/overview-of-emails-from-fluentcrm/crm_email_compose_template-4.webp)
 
@@ -57,7 +57,7 @@ Save time by building a layout with your brand's logo, colors, and footer, then 
 
 Found under **Emails ➜ Patterns**, this is a library of reusable Gutenberg blocks – think hero headers, featured-product rows, footers, testimonial sections – that you can drop into any campaign or automation email.
 
-Build a section once, save it as a Pattern, and insert it anywhere with one click. The full walkthrough lives on the [**Email Patterns**](/docs/email-patterns) page.
+Build a section once, save it as a Pattern, and insert it anywhere with one click. The full walkthrough lives on the [**Email Patterns**](/email-patterns) page.
 
 ### 6. Send Custom Email (Automation Action)
 

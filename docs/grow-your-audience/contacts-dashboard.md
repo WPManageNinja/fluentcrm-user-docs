@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=tKrGDW6L62Y
 >
 > -   **Bulk-action floating bar** – When you select one or more contacts, a floating action bar appears at the bottom of the screen with the most-used bulk actions (apply tag/list, change status, send double opt-in, export, delete). It stays in view as you scroll, so you no longer have to scroll back to the top to apply an action.
 > -   **Up to 600 contacts per page** – The pagination dropdown now goes up to **600 / page** for power users managing very large lists.
-> -   **Segments menu item** – **Contacts → Segments** sits alongside Lists, Tags, and Companies for quick access to [Dynamic Segments](/docs/segment-your-audience#dynamic-segments).
+> -   **Segments menu item** – **Contacts → Segments** sits alongside Lists, Tags, and Companies for quick access to [Dynamic Segments](/segment-your-audience#dynamic-segments).
 
 ![contacts fluentcrm](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM.webp)
 
@@ -36,19 +36,19 @@ Similar to Lists & Tags if you want you can filter by each or multiple Contact S
 
 ### 4\. Add Contact:
 
-FluentCRM provides an easy way to add a new contact with a popup letting you add contact details. More on Adding a new Contact is discussed in [Add New Contact.](/docs/manage-contacts/#Add-New-Contact)
+FluentCRM provides an easy way to add a new contact with a popup letting you add contact details. More on Adding a new Contact is discussed in [Add New Contact.](/manage-contacts/#Add-New-Contact)
 
 ### 5\. Import:
 
-With this option, you can import contacts from different sources like CSV files, WordPress Users, 3rd Party sources like Active Campaign, etc. More on Importing Contacts are discussed in [Import Contacts](/docs/manage-contacts/#Import-Contacts).
+With this option, you can import contacts from different sources like CSV files, WordPress Users, 3rd Party sources like Active Campaign, etc. More on Importing Contacts are discussed in [Import Contacts](/manage-contacts/#Import-Contacts).
 
 ### 6\. Export:
 
-To Export all or specific contacts by limits along with data properties selected you can use this FluentCRM option. More on exporting contacts are discussed in [Export Contacts.](/docs/manage-contacts/#Export-Contacts)
+To Export all or specific contacts by limits along with data properties selected you can use this FluentCRM option. More on exporting contacts are discussed in [Export Contacts.](/manage-contacts/#Export-Contacts)
 
 ### 7\. Advanced Filter:
 
-This is a very advanced filter that provides numerous data types and also puts logical conditions like AND & OR to filter your contacts based on advanced data conditions. More on Advanced Filter are discussed in [Advanced Filter.](/docs/advanced-filter)
+This is a very advanced filter that provides numerous data types and also puts logical conditions like AND & OR to filter your contacts based on advanced data conditions. More on Advanced Filter are discussed in [Advanced Filter.](/advanced-filter)
 
 ### 8\. Searchbox:
 
@@ -70,7 +70,7 @@ If you have multiple Lists, for example, a List named Students contains 60 conta
 
 The same goes for Tags as well.
 
-You can also filter by any or multiple contact statuses. To know more about status types and what are they please visit [FluentCRM Contact Status.](/docs/fluentcrm-contacts-status)
+You can also filter by any or multiple contact statuses. To know more about status types and what are they please visit [FluentCRM Contact Status.](/fluentcrm-contacts-status)
 
 All the above 3 types of filters work as **AND** conditions in conjunction.
 

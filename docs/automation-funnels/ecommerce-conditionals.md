@@ -6,11 +6,11 @@ order: 0
 ---
 
 # Ecommerce Conditionals
-FluentCRM provides several **[Conditionals](/docs/conditional-automation-actions)** for **E-commerce Platforms** like **WooCommerce**, **Woo Current Order**, **Easy Digital Downloads**, and **AffiliateWP**, allowing you to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions.
+FluentCRM provides several **[Conditionals](/conditional-automation-actions)** for **E-commerce Platforms** like **WooCommerce**, **Woo Current Order**, **Easy Digital Downloads**, and **AffiliateWP**, allowing you to create conditional checks and take alternative [Actions](/primary-automation-actions) based on those set conditions.
 
 This article will provide detailed information about all **E-commerce** **Conditional Actions** of **FluentCRM Automation**. 
 
-> **Remember**, to use these **E-Commerce Conditionals** you must install and activate all the **E-commerce Plugins** in your website. Additionally, learn the detailed integration process of [WooCommerce](/docs/woocommerce-automation-with-fluentcrm) and [Easy Digital Downloads](/docs/easy-digital-downloads-integration-with-fluentcrm) with FluentCRM.
+> **Remember**, to use these **E-Commerce Conditionals** you must install and activate all the **E-commerce Plugins** in your website. Additionally, learn the detailed integration process of [WooCommerce](/woocommerce-automation-with-fluentcrm) and [Easy Digital Downloads](/easy-digital-downloads-integration-with-fluentcrm) with FluentCRM.
 
 ## All E-commerce Conditionals
 
@@ -18,7 +18,7 @@ To learn how you can use all the **E-commerce Conditionals** in your FluentCRM, 
 
 First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
 
-> To learn the process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
+> To learn the process of creating a new automation funnel, read this [Documentation](/automation-editor).
 
 For example, I opened the **List Applied** automation funnel to explain all the **E-commerce Conditionals**.
 
@@ -51,7 +51,7 @@ Once you click the **\+ Add** button, you will get all the **E-commerce Properti
 3.  EDD (Easy Digital Downloads)
 4.  AffiliateWP
 
-> To learn the full process of creating a conditional action, read this full [Documentation](/docs/conditional-automation-actions)
+> To learn the full process of creating a conditional action, read this full [Documentation](/conditional-automation-actions)
 
 **A detailed explanation of the Properties mentioned above is given below –** 
 
@@ -77,7 +77,7 @@ Here you will get a wide range of **Options** based on the **WooCommerce** prope
 
 #### 2\. Woo Current Order
 
->  **Remember**, to get the “**Woo Current Order**” property you need to use the **WooCommerce Trigger**. To learn more about WooCommerce Trigger, read this [Documentation](/docs/fluentcrm-ecommerce-triggers/#woocommerce-triggers).
+>  **Remember**, to get the “**Woo Current Order**” property you need to use the **WooCommerce Trigger**. To learn more about WooCommerce Trigger, read this [Documentation](/fluentcrm-ecommerce-triggers/#woocommerce-triggers).
 
 Here you will get a wide range of **Options** based on the **Woo Current Order** property to set the desired **Parameter** for your condition. These are:
 

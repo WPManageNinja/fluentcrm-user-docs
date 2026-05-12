@@ -11,7 +11,7 @@ Cloudways provides a comprehensive range of cloud solutions including dedicated 
 
 ## Find WordPress Installation Directory
 
-We need to find the WordPress Installation directory first where the Cron Script wp-cron.php file is located and will be needed in the further steps. You can find your WordPress Installation Directory easily by going to **WordPress Dashboard ⮕ Tools ⮕ Site Health ⮕ Info Tab ⮕ Directories and Sizes Section.** More about this can be found here: [Find WordPress Installation Directory](/docs/fluentcrm-cron-job-basics-and-checklist/#find-wordpress-installation-directory)
+We need to find the WordPress Installation directory first where the Cron Script wp-cron.php file is located and will be needed in the further steps. You can find your WordPress Installation Directory easily by going to **WordPress Dashboard ⮕ Tools ⮕ Site Health ⮕ Info Tab ⮕ Directories and Sizes Section.** More about this can be found here: [Find WordPress Installation Directory](/fluentcrm-cron-job-basics-and-checklist/#find-wordpress-installation-directory)
 
 ![crm get wordpress directory](/fluentcrm-essentials/fluentcrm-cron-with-cloudways/crm-get-wordpress-directory.webp)
 

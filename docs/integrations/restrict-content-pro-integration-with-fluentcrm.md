@@ -25,7 +25,7 @@ A pop-up will appear to give the Name and Descriptiona and other details about t
 
  **Automation Name:** Edit or set a new Automation name.
  **Internal Description:** Enter an internal description of your automation.
- **Subscription Status:** Change the Subscription Status for the contact that submits the form according to [FluentCRM Contacts Status](/docs/fluentcrm-contacts-status).
+ **Subscription Status:** Change the Subscription Status for the contact that submits the form according to [FluentCRM Contacts Status](/fluentcrm-contacts-status).
  **Membership Level:**  Choose which Membership Levels to check for the trigger. Leaving it blank will run for all membership levels.
  **Restart:** Check this option if you want the automation to run multiple times for the contact that triggers the automation.
 

@@ -71,7 +71,7 @@ Review the original logic used to target this campaign. This tab displays the sp
 
 ## UTM Parameters in Campaign Details *(new in v3)*
 
-If you applied **UTM parameters** during campaign setup ([Email Campaigns → Subject & Settings](/docs/setting-up-campaign#utm-parameters)), they are now visible directly inside the campaign's report:
+If you applied **UTM parameters** during campaign setup ([Email Campaigns → Subject & Settings](/setting-up-campaign#utm-parameters)), they are now visible directly inside the campaign's report:
 
 -   The **Campaign Details** tab shows the exact `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, and `utm_content` values that were appended.
 -   The **Link Activity** widget displays the tagged URL alongside the click count, so you can match a click in your analytics tool back to the specific link in the email.

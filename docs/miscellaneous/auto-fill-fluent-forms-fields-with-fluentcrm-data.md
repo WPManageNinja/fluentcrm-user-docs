@@ -52,9 +52,9 @@ To get pre-filled data from **FluentCRM**, you need to use the smartcode with a 
 
 For example, if you want to fetch the **email** from your **FluentCRM Contact's profile** into the **Fluent Forms Email field**, first, add the smartcode `{fluentcrm.data}` in the field. Now, modify the smartcode by adding the field name like this: `{fluentcrm.email}`. 
 
-Once done, the **email field** will be pre-filled with data from FluentCRM. You can check out more **FluentCRM smartcodes** in this [article](/docs/merge-codes-smart-codes-usage).
+Once done, the **email field** will be pre-filled with data from FluentCRM. You can check out more **FluentCRM smartcodes** in this [article](/merge-codes-smart-codes-usage).
 
-If you want to pre-fill **Custom Fields** data from FluentCRM, first add the **desired field** to your form. Then, use the shortcode {fluentcrm.data} and modify it with the specific **Custom Field slug**. To learn more about **Custom Field slug**, check out this [documentation](/docs/global-custom-contact-fields).
+If you want to pre-fill **Custom Fields** data from FluentCRM, first add the **desired field** to your form. Then, use the shortcode {fluentcrm.data} and modify it with the specific **Custom Field slug**. To learn more about **Custom Field slug**, check out this [documentation](/global-custom-contact-fields).
 
 ![email field 06](/miscellaneous/auto-fill-fluent-forms-fields-with-fluentcrm-data/email-field-06-scaled.webp)
 

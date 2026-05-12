@@ -67,7 +67,7 @@ Once connected, AI Writing becomes available in the email editing experience. Op
 - **Fix Grammar** – Corrects grammar, spelling, and punctuation.
 - **Custom Prompt** – Lets you describe exactly how the text should be transformed.
 
-These tools appear in the editor toolbar in the [Visual Builder](/docs/fluentcrm-visual-builder) and Gutenberg-based editing flow.
+These tools appear in the editor toolbar in the [Visual Builder](/fluentcrm-visual-builder) and Gutenberg-based editing flow.
 
 ![AI Writing menu inside email editor](/global-settings/ai-writing/ai-writing-4.webp)
 

@@ -13,7 +13,7 @@ This article will provide detailed information about all **Primary** **Triggers*
 
 https://www.youtube.com/watch?v=mmSU-Wo6YOs&t
 
-> **Remember**, to use all the **CRM Triggers**, you need to have [FluentCRM Pro Plugin](/docs/how-to-install-upgrade-and-activate-license) installed and activated in your WordPress Site.
+> **Remember**, to use all the **CRM Triggers**, you need to have [FluentCRM Pro Plugin](/how-to-install-upgrade-and-activate-license) installed and activated in your WordPress Site.
 
 ## Primary Triggers of FluentCRM
 
@@ -21,7 +21,7 @@ To learn how you can use all the primary Triggers of your FluentCRM, follow the 
 
 First, go to the **Automation** section from the **FluentCRM Navbar**, and click **\+ New Automation.** 
 
-> To learn the detailed process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
+> To learn the detailed process of creating a new automation funnel, read this [Documentation](/automation-editor).
 
 ![New Automation button](/automation-funnels/fluentcrm-automation-triggers/automation-trigger-1.webp)
 
@@ -51,7 +51,7 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 -   **Automation Name**: Provide a **Name** for the **Automation** so that you may find it later easily.
 
--   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/docs/automation-editor).
+-   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/automation-editor).
 
 -   **Select Lists**: Select the **Lists (single or multiple)** using the dropdown arrow for which you want to trigger this automation funnel. If you do not have any existing Contact List in your FluentCRM, you can directly create one from here by clicking the **Plus** icon.
 
@@ -68,7 +68,7 @@ Once you are done, click the **Save Settings** button to save all your changes.
 This automation funnel will start once the selected lists have been removed from a contact.  
 Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
+> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -82,7 +82,7 @@ Here, are the Settings of Tag Applied Trigger
 
 -   **Select Tags**: Select the **Tags (single or multiple)** using the dropdown arrow for which you want to trigger this automation funnel. If you do not have any existing Tags in your FluentCRM, you can directly create one from here by clicking the **Plus** icon.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
+> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -91,7 +91,7 @@ Once you are done, click the **Save Settings** button to save all your changes.
 This automation funnel will start once the selected Tags have been removed from a contact.  
 Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
+> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -102,17 +102,17 @@ This automation funnel will be initiated on the day of the contact's birthday. W
 
 Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
+> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
 ### Contact Created
 
-This automation funnel will start once a new contact will be added. To learn the detailed process of adding contacts, read this [Documentation](/docs/manage-contacts/#Add-New-Contact). 
+This automation funnel will start once a new contact will be added. To learn the detailed process of adding contacts, read this [Documentation](/manage-contacts/#Add-New-Contact). 
 
 Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
+> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -121,13 +121,13 @@ Once you are done, click the **Save Settings** button to save all your changes.
 This automation funnel will start once a new form is submitted in Fluent Forms.  
 Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
 
-> **Remember**, to use this trigger you must install and activate the [FluentForms](http://fluentforms.com) plugin in your website. Plus, if you want to learn how to integrate **FluentForms** with **FluentCRM**, read this [Documentation](/docs/wp-fluent-forms-integration-with-fluentcrm).
+> **Remember**, to use this trigger you must install and activate the [FluentForms](http://fluentforms.com) plugin in your website. Plus, if you want to learn how to integrate **FluentForms** with **FluentCRM**, read this [Documentation](/wp-fluent-forms-integration-with-fluentcrm).
 
 Here are the Settings of the New Form Submission trigger
 
 -   **Automation Name**: Provide a **Name** for the **Automation** so that you may find it later easily.
 
--   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/docs/automation-editor).
+-   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/automation-editor).
 
 -   **Select your Form**: Select the desired **Form** using the dropdown arrow for which you want to trigger this automation funnel. 
 
@@ -135,7 +135,7 @@ Here are the Settings of the New Form Submission trigger
 
 -   **Map Other Data**: Use this option if you want to add your **FluentCRM** fields beside the primary fields. Here, you can also select the **Value** according to the **FluentCRM** fields using the **Dropdown** arrow. Add as many **Other Fields** as you need by clicking the **+Add More** button and delete any field by clicking the **Trash** Icon.
 
--   **Subscription Status**: Change the subscription status using the dropdown list for the contact that submits the form according to [FluentCRM Contacts Status](/docs/fluentcrm-contacts-status).
+-   **Subscription Status**: Change the subscription status using the dropdown list for the contact that submits the form according to [FluentCRM Contacts Status](/fluentcrm-contacts-status).
 
 -   **Run the automation actions even contact status is not in subscribed status**: Check this option if you want to run the automation even when the contact's status is not in subscribed status.
 
@@ -150,11 +150,11 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 Here, are the Settings of the Company Applied Trigger
 
--   **Select Companies**: Select the **Company (single or multiple)** using the dropdown arrow for which you want to trigger this automation funnel. If you do not have any existing Company in your FluentCRM, read this [Documentation](/docs/company-module) to create one.
+-   **Select Companies**: Select the **Company (single or multiple)** using the dropdown arrow for which you want to trigger this automation funnel. If you do not have any existing Company in your FluentCRM, read this [Documentation](/company-module) to create one.
 
 -   **Run When**: Select whether the contact needs to belong to one **Company** or all of the **Companies** you’ve selected.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
+> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -164,7 +164,7 @@ Once you are done, click the **Save Settings** button to save all your changes.
 This automation funnel will start once the selected companies have been removed from a contact  
 Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
+> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -190,13 +190,13 @@ Once you select this trigger, a tab will appear on the right-hand side with opti
 
 Here, are the Settings of the New User Sign-Up Trigger
 
--   **Subscription Status**: Change the subscription status using the dropdown list for the contact that submits the form according to [FluentCRM Contacts Status](/docs/fluentcrm-contacts-status).
+-   **Subscription Status**: Change the subscription status using the dropdown list for the contact that submits the form according to [FluentCRM Contacts Status](/fluentcrm-contacts-status).
 
 -   **If Contact Already Exist?**: Specify what will happen if the subscriber already exists in the database. You can either update if the contact is already present in the FluentCRM Contacts which means recurring triggering for the automation or Skip the automation for this contact.
 
 -   **Targeted User Roles**: Select which user roles registration will trigger this automation Funnel. Leave blank to run for all user roles.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
+> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -205,6 +205,6 @@ Once you are done, click the **Save Settings** button to save all your changes.
 This automation funnel will start once a user logs into your WordPress Site.  
 Once you select this trigger, a tab will appear on the right-hand side with options to set your trigger.
 
-> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/docs/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
+> To learn the use of all the settings mentioned in the screenshot below, read this [Section](/fluentcrm-automation-triggers/#settings-of-list-applied-trigger).
 
 Once you are done, click the **Save Settings** button to save all your changes.

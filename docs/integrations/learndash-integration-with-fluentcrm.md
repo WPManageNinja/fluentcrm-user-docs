@@ -56,10 +56,10 @@ FluentCRM’s email marketing automation includes four major elements. These are
 
 FluentCRM’s email marketing automation includes four major elements. These are:
 
- * **Triggers:** Triggers are essential for initiating email marketing automation. They can be behavior-based, or time-based. Learn more about [FluentCRM’s Triggers](/docs/fluentcrm-automation-triggers).
- * **Action Blocks:** The actions that will be done throughout the funnel for example sending an email, adding the user to a list, etc. Learn everything about [FluentCRM Action Blocks](/docs/primary-automation-actions).
- * **Goals:** Goals or Benchmarking Action is the behavior of the users for example whether they purchased a product, clicked on a link, etc. Learn everything about [FluentCRM Goals Blocks](/docs/goals-or-benchmark-actions).
- * **Conditionals:** Conditionals will let you set multiple paths based on if/else conditions. Learn more about [FluentCRM Conditionals](/docs/conditional-automation-actions).
+ * **Triggers:** Triggers are essential for initiating email marketing automation. They can be behavior-based, or time-based. Learn more about [FluentCRM’s Triggers](/fluentcrm-automation-triggers).
+ * **Action Blocks:** The actions that will be done throughout the funnel for example sending an email, adding the user to a list, etc. Learn everything about [FluentCRM Action Blocks](/primary-automation-actions).
+ * **Goals:** Goals or Benchmarking Action is the behavior of the users for example whether they purchased a product, clicked on a link, etc. Learn everything about [FluentCRM Goals Blocks](/goals-or-benchmark-actions).
+ * **Conditionals:** Conditionals will let you set multiple paths based on if/else conditions. Learn more about [FluentCRM Conditionals](/conditional-automation-actions).
 
 ## LearnDash Automation
 
@@ -78,7 +78,7 @@ You will notice a pop-up window appear. Add a suitable Internal Label and choose
 
 ![image](/integrations/learndash-integration-with-fluentcrm/image-72.webp)
 
-> Apart from these triggers, FluentCRM also comes with lots of other triggers. To see the full list of triggers and learn how to configure them, please check this [documentation](/docs/fluentcrm-automation-triggers).
+> Apart from these triggers, FluentCRM also comes with lots of other triggers. To see the full list of triggers and learn how to configure them, please check this [documentation](/fluentcrm-automation-triggers).
 
 When you select a trigger and click **Continue**, a pop-up box will appear with some options to set up the trigger. You can set your **Automation Name** and **Internal Description** of your Automation here. 
 
@@ -92,7 +92,7 @@ Once you’re done setting up the trigger click on the **Save Settings** button,
 
 ## Action Blocks
 
-These [Action Blocks](/docs/primary-automation-actions) allow FluentCRM users to automate their LearnDash course management, such as enrolling or removing students from courses and groups based on specific triggers or conditions defined within FluentCRM's automation workflows.
+These [Action Blocks](/primary-automation-actions) allow FluentCRM users to automate their LearnDash course management, such as enrolling or removing students from courses and groups based on specific triggers or conditions defined within FluentCRM's automation workflows.
 
 Click on the plus icon on the Automation Funnel page and the **Add Action/Goal** option will come click on it.
 
@@ -100,7 +100,7 @@ Click on the plus icon on the Automation Funnel page and the **Add Action/Goal**
 
 Then you will notice a pop-up with a set of Action blocks to choose from. If you scroll down, you will see four dedicated action blocks available for LearnDash.
 
-From here, you can choose any type of action block. Please check our funnel action blocks documentation to learn how to use [funnel action blocks](/docs/primary-automation-actions).
+From here, you can choose any type of action block. Please check our funnel action blocks documentation to learn how to use [funnel action blocks](/primary-automation-actions).
 
 **Enroll To Course:** This action enrolls the contact into a specific LearnDash course.
 
@@ -114,7 +114,7 @@ From here, you can choose any type of action block. Please check our funnel acti
 
 ## Goals/Trigger Blocks (Benchmark)
 
-[Goals/Trigger blocks](/docs/goals-or-benchmark-actions) are goal or trigger items that your user might do. They let you measure these steps and automate the funnel based on goal completion.
+[Goals/Trigger blocks](/goals-or-benchmark-actions) are goal or trigger items that your user might do. They let you measure these steps and automate the funnel based on goal completion.
 
 Click on the plus icon(+) to open the pop-up for selecting the **Add Action/Goals**. For Learndash, you can choose **List Applied goal.** 
 
@@ -122,7 +122,7 @@ Click on the plus icon(+) to open the pop-up for selecting the **Add Action/Goal
 
 This trigger block will run once a list is applied to a contact within the automation funnel. In this block, you can add an internal label, specify the list for which the goal applies, when it will run, and Benchmark Type. 
 
-Click **Save Settings** when you’re done. You can use other [goals](/docs/goals-or-benchmark-actions) or benchmarks
+Click **Save Settings** when you’re done. You can use other [goals](/goals-or-benchmark-actions) or benchmarks
 
 ## Conditionals
 
@@ -132,7 +132,7 @@ Conditionals are conditional logic. If you want to automate different activities
 
 Then make sure to click the **Save Settings** button.
 
-If you want to use other conditionals please check out this [documentation](/docs/conditional-automation-actions). 
+If you want to use other conditionals please check out this [documentation](/conditional-automation-actions). 
 
 Once you've completed these steps, you'll see a report of your course enrollment contacts, similar to the screenshot below.
 
@@ -164,7 +164,7 @@ You must choose **Learndash** for data filtering. Then click the **Filter** opti
 
 To access your course enrollment report, navigate to the FluentCRM dashboard and click **Reports** from the top menu. Then, select the **LearnDash** option to see full information about your enrolled contacts and courses.
 
-To learn more about the advanced report of LearnDash read this [Documentation](/docs/crm-advanced-reports#learndash-advanced-reports).
+To learn more about the advanced report of LearnDash read this [Documentation](/crm-advanced-reports#learndash-advanced-reports).
 
 ![image](/integrations/learndash-integration-with-fluentcrm/image-80.webp)
 

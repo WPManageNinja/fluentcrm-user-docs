@@ -18,7 +18,7 @@ When you start a new template, you will see several key fields to help organize 
  * **Template Title:** This is an internal name used as an identifier so you can easily find the template later.
  * **Email Subject:** The primary line your recipients will see in their inbox. You can use the SmartCode icon {} to personalize this for each contact.
  * **Email Pre-Header:** A short summary that appears next to the subject line in most email apps. It’s a great way to provide extra context and boost open rates.
- * **Email Body:** Use the [block editor](/docs/compose-email-in-fluentcrm) or [visual builder](/docs/fluentcrm-visual-builder) to compose your content. You can add text, images, and buttons to create a professional look.
+ * **Email Body:** Use the [block editor](/compose-email-in-fluentcrm) or [visual builder](/fluentcrm-visual-builder) to compose your content. You can add text, images, and buttons to create a professional look.
 
 ![crm email compose template](/email-campaign/email-templates/email-template-1.webp)
 

@@ -7,7 +7,7 @@ order: 0
 
 # Cron Job: FluentCRM Cron with EasyCron
 
-We have seen in [Cron Job: FluentCRM Cron with Cron-job.org](/docs/fluentcrm-cron-with-cronjob-org) that an alternative method can be configured to run cron jobs remotely in case we do not have access to the Shell, or features inside the server to configure the cronjob for WordPress. In this article, we will explore another online service to call our WordPress Website's cron script remotely.
+We have seen in [Cron Job: FluentCRM Cron with Cron-job.org](/fluentcrm-cron-with-cronjob-org) that an alternative method can be configured to run cron jobs remotely in case we do not have access to the Shell, or features inside the server to configure the cronjob for WordPress. In this article, we will explore another online service to call our WordPress Website's cron script remotely.
 
 As a reminder, a few warnings for such remote cron invocation are listed again below:
 

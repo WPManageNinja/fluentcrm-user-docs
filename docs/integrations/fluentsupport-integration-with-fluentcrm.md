@@ -48,7 +48,7 @@ Once FluentSupport is active, the following smart codes become available inside 
 -   `##fs.last_ticket_status##` – The current status of that ticket.
 -   `##fs.open_tickets_count##` – Count of currently-open tickets for the contact.
 
-Combine these with [Conditional Sections](/docs/conditional-sections-in-fluentcrm-email-editor) to send entirely different messages to "happy customer" vs. "open ticket" segments.
+Combine these with [Conditional Sections](/conditional-sections-in-fluentcrm-email-editor) to send entirely different messages to "happy customer" vs. "open ticket" segments.
 
 ## Use cases
 

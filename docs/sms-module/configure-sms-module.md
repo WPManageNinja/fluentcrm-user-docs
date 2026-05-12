@@ -23,8 +23,8 @@ On the SMS Setting page, locate the toggle switch for **Enable SMS Module**. Ena
 
 After enabling the module, you must select an **SMS Provider** from the dropdown menu below. FluentCRM supports two providers out of the box:
 
--   **[Twilio](/docs/twilio-integration)** – Global SMS leader with strong deliverability.
--   **[Amazon End User Messaging (SNS)](/docs/amazon-end-user-messaging)** – AWS-native SMS service.
+-   **[Twilio](/twilio-integration)** – Global SMS leader with strong deliverability.
+-   **[Amazon End User Messaging (SNS)](/amazon-end-user-messaging)** – AWS-native SMS service.
 
 Once you have enabled the module and selected a provider (configured in separate steps), be sure to click the **Save Settings** button to apply your changes.
 
@@ -37,11 +37,11 @@ Enabling the SMS Module is the essential first step to using this feature for de
 
 ### Twilio incoming webhook
 
-When you save Twilio credentials, FluentCRM also generates a unique **SMS Incoming Webhook URL** at the bottom of the SMS Setting page. Paste this URL into your Twilio messaging service's **A message comes in** webhook field if you want FluentCRM to receive replies and inbound messages from contacts. See the full walkthrough on the [Twilio SMS Integration](/docs/twilio-integration) page.
+When you save Twilio credentials, FluentCRM also generates a unique **SMS Incoming Webhook URL** at the bottom of the SMS Setting page. Paste this URL into your Twilio messaging service's **A message comes in** webhook field if you want FluentCRM to receive replies and inbound messages from contacts. See the full walkthrough on the [Twilio SMS Integration](/twilio-integration) page.
 
 ### SMS Smart Codes
 
-You can personalise every SMS just like an email. Click the **{ }** smart-code icon next to the message field to insert tokens like `##contact.first_name##`, `##contact.email##`, custom field values, or any other smart code FluentCRM ships with. The full token list is documented at [Merge Codes / Smart Codes Usage](/docs/merge-codes-smart-codes-usage).
+You can personalise every SMS just like an email. Click the **{ }** smart-code icon next to the message field to insert tokens like `##contact.first_name##`, `##contact.email##`, custom field values, or any other smart code FluentCRM ships with. The full token list is documented at [Merge Codes / Smart Codes Usage](/merge-codes-smart-codes-usage).
 
 
 ## SMS Campaigns: Creating and Managing your SMS
@@ -165,7 +165,7 @@ Type your message in the field labeled **Type a message**, then press **Enter** 
 
 Messages sent this way appear in the contact’s activity and count toward **DIRECT** in SMS stats.
 
-To build full workflows that include SMS, start with [Introduction to FluentCRM Automation](/docs/introduction-to-fluentcrm-automation).
+To build full workflows that include SMS, start with [Introduction to FluentCRM Automation](/introduction-to-fluentcrm-automation).
 
 ![Indivisual SMS Send](/sms-module/configure-sms-module/individualy-sms-send-12.webp)
 

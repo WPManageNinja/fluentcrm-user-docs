@@ -17,7 +17,7 @@ To learn how you can use all the **Primary Actions** in your **FluentCRM**, foll
 First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title.  
 Or, create a new one by clicking the **+ New Automation.**
 
-> To learn how to create a new automation funnel, read this [Documentation](/docs/automation-editor).
+> To learn how to create a new automation funnel, read this [Documentation](/automation-editor).
 
 For example, I opened the **Tag Applied** automation funnel to explain all the Primary Actions of FluentCRM.
 
@@ -87,7 +87,7 @@ Use this option if you want to set the waiting time between actions for a specif
 
 With this option, you can set wait times between actions based on a **Custom Contact Field** of **Contact/s**. For instance, if you choose **Contact’s Next Date of Birth**, the automation will pause until that specific date.
 
-> To learn more about **Custom Contact Fileds**, read this [Documentation](/docs/global-custom-contact-fields).
+> To learn more about **Custom Contact Fileds**, read this [Documentation](/global-custom-contact-fields).
 
 ![Wait by custom field](/automation-funnels/primary-automation-actions/action-7.webp)
 
@@ -102,7 +102,7 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 
 -   **Internal Description**: A **description** **of the action** will also be automatically added as a Subtitle. You can also change it to suit your needs.
 
--   **Select Company**: Select a **Company** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing Company in your FluentCRM, read this [Documentation](/docs/company-module) to create one.
+-   **Select Company**: Select a **Company** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing Company in your FluentCRM, read this [Documentation](/company-module) to create one.
 
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
@@ -118,7 +118,7 @@ Here are the Settings of the Apply List action:
 
 -   **Select Lists**: Select the **List (single or multiple)**  from the dropdown list using the **Dropdown Arrow**. If you do not have any existing Contact List in your FluentCRM, you can directly create one from here by clicking the **Plus** icon. 
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/docs/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -133,7 +133,7 @@ Here are the Settings of the Apply Tag action:
 
 -   **Select Tags**: Select the **Tag (single or multiple)**  from the dropdown list using the **Dropdown Arrow**. If you do not have any existing Contact List in your FluentCRM, you can directly create one from here by clicking the **Plus** icon. 
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/docs/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -146,9 +146,9 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 
 Here are the Settings of the Remove From Company action:
 
--   **Select Company**: Select a **Company** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing Company in your FluentCRM, read this [Documentation](/docs/company-module) to create one.
+-   **Select Company**: Select a **Company** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing Company in your FluentCRM, read this [Documentation](/company-module) to create one.
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/docs/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -163,7 +163,7 @@ Here are the Settings of the Remove From List action:
 
 -   **Select Lists**: Select the **List (single or multiple)**  from the dropdown list using the **Dropdown Arrow**. If you do not have any existing Contact List in your FluentCRM, you can directly create one from here by clicking the **Plus** icon. 
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/docs/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -178,7 +178,7 @@ Here are the Settings of the Remove From Tags action:
 
 -   **Select Tags**: Select the **Tag (single or multiple)**  from the dropdown list using the **Dropdown Arrow**. If you do not have any existing Contact List in your FluentCRM, you can directly create one from here by clicking the **Plus** icon. 
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/docs/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -197,7 +197,7 @@ Here are the Settings of the Add Notes & Activities action:
 
 -   **Description**: Here, you can add a description for your note. You can also use the **SmartCodes** here by clicking the **Three-dot-icon**.
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/docs/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -212,7 +212,7 @@ Here are the Settings of the Update Contact Property action:
 
 -   **Select contact properties that you want to update:** With this option, you can select the contact **Property** and the proper **Value** of that property from the dropdown list by clicking the **Dropdown Arrow**. You can add as many properties as you want by clicking the **+Add More** button, and delete any existing property by clicking the **Trash Icon**.
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/docs/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -266,7 +266,7 @@ Here are the Settings of the Split (A/B Testing) action:
 
 -   **Path B Contact Split (%)**: Set the **percentage** of **Path B** to distribute contacts for testing conditions and benchmarking to find the most effective approach.
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/docs/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
 
 Once you are done, click the **Save Settings** button to save all your changes.
 
@@ -281,7 +281,7 @@ Here are the Settings of the Cancel Automation action:
 
 -   **Select Automation that you want to cancel**: Select the other **Automation/s** you want to cancel reaching this point for the contact.
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/docs/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this **[Section](/primary-automation-actions/#here-are-the-settings-of-the-apply-company-action)**.
 
 Once you are done, click the **Save Settings** button to save all your changes.
 

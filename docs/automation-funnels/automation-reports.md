@@ -13,7 +13,7 @@ FluentCRM provides a comprehensive **Reports** section for each automation, allo
 
 To view reports for an automation:
 
-1.  Navigate to the **[Automations](/docs/automation-editor)** section from the **FluentCRM Navbar**.
+1.  Navigate to the **[Automations](/automation-editor)** section from the **FluentCRM Navbar**.
 2.  Open your desired automation by clicking on its **Title**.
 3.  On the **Automation Editor** page, click the **Stats** toggle to enable the reporting overlay.
 

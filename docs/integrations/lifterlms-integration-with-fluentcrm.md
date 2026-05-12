@@ -23,11 +23,11 @@ FluentCRM also lets you automate a wide range of tasks, such as sending behavior
 
 FluentCRM’s email marketing automation includes four major elements. These are:
 
-1.  **[Automation Editor](/docs/automation-editor):** The editor where you will be able to add, edit or modify your desired actions or activities in automation. To know more about this please visit [Automation Editor](/docs/automation-editor).
-2.  **Triggers:** Triggers are essential for initiating email marketing automation. There are a lot of triggers that can start or initiate automation in FluentCRM such as [Primary Automation Triggers](/docs/fluentcrm-automation-triggers), [Ecommerce Triggers](/docs/fluentcrm-ecommerce-triggers), [Membership Triggers](/docs/fluentcrm-membership-triggers), and [LMS Triggers](/docs/fluentcrm-lms-triggers).
-3.  **Actions**: Once an Automation is initiated you can add various actions that you want to run when such activities are triggered like [Primary Actions](/docs/primary-automation-actions), [WordPress Actions](/docs/wordpress-automation-actions), [Email Actions](/docs/automation-email-actions), [Goals or BenchMark Actions](/docs/goals-or-benchmark-actions), [LMS Actions](/docs/lms-automation-actions), [Miscellaneous Actions](/docs/miscellaneous-automation-actions), and [Conditional Automation Actions](/docs/conditional-automation-actions).
-4.  [**Goals**](/docs/goals-or-benchmark-actions): Generally FluentCRM automation starts with a single and specific trigger. What if you want to run the same automation triggering based on another trigger? This way you could also benchmark the automation. To know more about this please visit [Goals or BenchMark Actions](/docs/goals-or-benchmark-actions).
-5.  **[Conditionals](/docs/conditional-automation-actions)**: One of the most useful features of FluentCRM is that you have advanced and more control over what you want to do or customize your target more with the flexibility of the FluentCRM data. Please visit [Conditional Automation Actions](/docs/conditional-automation-actions) to learn more about such flexibility in using data-based conditions in automation.
+1.  **[Automation Editor](/automation-editor):** The editor where you will be able to add, edit or modify your desired actions or activities in automation. To know more about this please visit [Automation Editor](/automation-editor).
+2.  **Triggers:** Triggers are essential for initiating email marketing automation. There are a lot of triggers that can start or initiate automation in FluentCRM such as [Primary Automation Triggers](/fluentcrm-automation-triggers), [Ecommerce Triggers](/fluentcrm-ecommerce-triggers), [Membership Triggers](/fluentcrm-membership-triggers), and [LMS Triggers](/fluentcrm-lms-triggers).
+3.  **Actions**: Once an Automation is initiated you can add various actions that you want to run when such activities are triggered like [Primary Actions](/primary-automation-actions), [WordPress Actions](/wordpress-automation-actions), [Email Actions](/automation-email-actions), [Goals or BenchMark Actions](/goals-or-benchmark-actions), [LMS Actions](/lms-automation-actions), [Miscellaneous Actions](/miscellaneous-automation-actions), and [Conditional Automation Actions](/conditional-automation-actions).
+4.  [**Goals**](/goals-or-benchmark-actions): Generally FluentCRM automation starts with a single and specific trigger. What if you want to run the same automation triggering based on another trigger? This way you could also benchmark the automation. To know more about this please visit [Goals or BenchMark Actions](/goals-or-benchmark-actions).
+5.  **[Conditionals](/conditional-automation-actions)**: One of the most useful features of FluentCRM is that you have advanced and more control over what you want to do or customize your target more with the flexibility of the FluentCRM data. Please visit [Conditional Automation Actions](/conditional-automation-actions) to learn more about such flexibility in using data-based conditions in automation.
 
 At first, from your FluentCRM dashboard & go to the **Automations** option. Then click on the **New Automation** button to add an automation funnel.
 
@@ -42,21 +42,21 @@ You will notice a pop-up window appear, where you have to add a suitable **Inte
 
 ![LifterLMS Trigger](/integrations/lifterlms-integration-with-fluentcrm/lifterlms-trigger-3.webp)
 
-Apart from these triggers, FluentCRM also comes with lots of other triggers. To see the full list of triggers and learn how to configure them, please check [this documentation](/docs/fluentcrm-automation-triggers).
+Apart from these triggers, FluentCRM also comes with lots of other triggers. To see the full list of triggers and learn how to configure them, please check [this documentation](/fluentcrm-automation-triggers).
 
 When you select a trigger and click **Continue**, a pop-up box will appear with some options to set up the trigger. Once you're done setting up the trigger, you can use Actions, Goals, and Conditionals to design your marketing automation Funnel.
 
 **Action Block**
 
-[Actions blocks](/docs/primary-automation-actions) are tasks that you wish to trigger from your side. Click on the plus icon on the Automation Funnel page. Then you will notice a pop-up appear with a set of action blocks to choose from.
+[Actions blocks](/primary-automation-actions) are tasks that you wish to trigger from your side. Click on the plus icon on the Automation Funnel page. Then you will notice a pop-up appear with a set of action blocks to choose from.
 
 ![Action Block](/integrations/lifterlms-integration-with-fluentcrm/action-block-4.webp)
 
-From here, you can choose any type of action block. FluentCRM offers 15 action blocks for LifterLMS marketing automation. Please check our [funnel action blocks](/docs/primary-automation-actions) documentation to find out how to use action blocks.
+From here, you can choose any type of action block. FluentCRM offers 15 action blocks for LifterLMS marketing automation. Please check our [funnel action blocks](/primary-automation-actions) documentation to find out how to use action blocks.
 
 **Goals/Trigger Block(Benchmark)**
 
-[Goals/Trigger blocks](/docs/goals-or-benchmark-actions) are goal or trigger items that your user might do. They let you measure these steps and automate the funnel based on goal completion.
+[Goals/Trigger blocks](/goals-or-benchmark-actions) are goal or trigger items that your user might do. They let you measure these steps and automate the funnel based on goal completion.
 
 Click on the plus icon(+) to open the pop-up for selecting the **Goals**. For LifterLMS, you can choose **List Applied** goal. This trigger block will run once a list is applied to a contact within the automation funnel. In this block, you can add an internal label, specify the list for which the goal applies, and Benchmark Type. 
 
@@ -65,7 +65,7 @@ Click on the plus icon(+) to open the pop-up for selecting the **Goals**. For L
 
 Click **Save Settings** when you’re done.
 
-If you want to use other goals or benchmarks, please check our [goal/benchmark documentation](/docs/goals-or-benchmark-actions).
+If you want to use other goals or benchmarks, please check our [goal/benchmark documentation](/goals-or-benchmark-actions).
 
 **Conditionals**
 
@@ -84,4 +84,4 @@ Once the conditions are set, contacts will proceed through different paths in th
 
 ![Settings](/integrations/lifterlms-integration-with-fluentcrm/condiotional-8.webp)
 
-If you want to use other conditionals please check out [this documentation](/docs/conditional-automation-actions).
+If you want to use other conditionals please check out [this documentation](/conditional-automation-actions).
