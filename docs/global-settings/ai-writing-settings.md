@@ -61,11 +61,11 @@ Make sure billing is enabled on your provider account – most providers reject 
 
 Once connected, AI Writing becomes available in the email editing experience. Open the AI menu from the editor toolbar to apply one-click transformations to selected text:
 
-- **Rewrite** – Rewrites text while keeping the same meaning.
-- **Shorten** – Makes selected text shorter and more concise.
-- **Expand** – Adds detail and engagement.
-- **Fix Grammar** – Corrects grammar, spelling, and punctuation.
-- **Custom Prompt** – Lets you describe exactly how the text should be transformed.
+- **Rewrite**: Rewrites text while keeping the same meaning.
+- **Shorten**: Makes selected text shorter and more concise.
+- **Expand**: Adds detail and engagement.
+- **Fix Grammar**: Corrects grammar, spelling, and punctuation.
+- **Custom Prompt**: Lets you describe exactly how the text should be transformed.
 
 These tools appear in the editor toolbar in the [Visual Builder](/fluentcrm-visual-builder) and Gutenberg-based editing flow.
 
