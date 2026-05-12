@@ -74,16 +74,16 @@ export default defineConfig({
           text: 'Getting Started',
           collapsed: false,
           items: [
-            { text: 'Install, Upgrade and Activate License', link: '/docs/how-to-install-upgrade-and-activate-license' },
-            { text: 'Transfer License from One Domain to Another', link: '/docs/transfer-license-from-one-domain-to-another' },
-            { text: 'Introduction to FluentCRM Dashboard', link: '/docs/dashboard-introduction' },
-            { text: 'Migrating into FluentCRM', link: '/docs/migrating-into-fluentcrm' },
-            { text: 'Migrate FluentCRM to a New Site', link: '/docs/migrate-fluentcrm-to-a-new-site' },
+            { text: 'Install & Activate License', link: '/docs/how-to-install-upgrade-and-activate-license' },
+            { text: 'Transfer Your License', link: '/docs/transfer-license-from-one-domain-to-another' },
+            { text: 'Dashboard Overview', link: '/docs/dashboard-introduction' },
+            { text: 'Migration Overview', link: '/docs/migrating-into-fluentcrm' },
+            { text: 'Move to a New Site', link: '/docs/migrate-fluentcrm-to-a-new-site' },
           ],
         },
-        // 2. Setup & Delivery
+        // 2. Configuration & Delivery
         {
-          text: 'Setup & Delivery',
+          text: 'Configuration & Delivery',
           collapsed: true,
           items: [
             {
@@ -205,9 +205,9 @@ export default defineConfig({
             { text: 'SMS Report', link: '/docs/sms-campaign-report' },
           ],
         },
-        // 6. Automations & Events
+        // 6. Automations
         {
-          text: 'Automations & Events',
+          text: 'Automations',
           collapsed: true,
           items: [
             {
@@ -384,9 +384,9 @@ export default defineConfig({
             },
           ],
         },
-        // 10. Migration & Updates
+        // 10. Migrate to FluentCRM
         {
-          text: 'Migration & Updates',
+          text: 'Migrate to FluentCRM',
           collapsed: true,
           items: [
             {
@@ -402,9 +402,9 @@ export default defineConfig({
             },
           ],
         },
-        // 11. Help & Updates
+        // 11. Help & Support
         {
-          text: 'Help & Updates',
+          text: 'Help & Support',
           collapsed: true,
           items: [
             { text: 'Frequently Asked Questions', link: '/docs/frequently-asked-questions' },
