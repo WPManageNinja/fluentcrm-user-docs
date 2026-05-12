@@ -11,6 +11,8 @@ The **LearnDash Reports** page helps you see how your online courses are growing
 
 To access these reports, navigate to the **Reports** dropdown in the top navbar and select **LearnDash** from the left sidebar.
 
+>[!Note]
+>Make sure your LearnDash data is properly synced with FluentCRM. You can read more about the [LearnDash integration with FluentCRM](/docs/learndash-integration-with-fluentcrm).
 
 ## 1. Enrollment Overview
 

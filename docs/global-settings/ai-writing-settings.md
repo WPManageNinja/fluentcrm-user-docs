@@ -11,9 +11,9 @@ FluentCRM v3 ships with a built-in **AI Writing** assistant that helps you draft
 
 This article walks you through enabling AI Writing, choosing a provider and model, adding your API key, testing the connection, and using AI tools in the email editor.
 
-## Access AI Writing settings
+## Access AI Configuration settings
 
-Go to **FluentCRM → Settings → AI Writing** from your WordPress admin. The dedicated settings tab is where you enable or disable AI Writing, choose a provider and model, add your API key, add optional custom instructions, and run a connection test.
+Go to **FluentCRM → Settings → AI Configuration** from your WordPress admin. The dedicated settings tab is where you enable or disable AI Writing, choose a provider and model, add your API key, add optional custom instructions, and run a connection test.
 
 ## Supported AI providers
 
