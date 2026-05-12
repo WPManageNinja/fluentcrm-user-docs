@@ -15,10 +15,10 @@ This guide shows you how to register a **custom automation trigger** in FluentCR
 
 An automation (or funnel) trigger defines **when** a funnel should start. Triggers are based on user behavior or system events. FluentCRM ships with many built‑in triggers, such as:
 
-- [Primary Automation Triggers](/docs/fluentcrm-automation-triggers)
-- [Ecommerce Triggers](/docs/fluentcrm-ecommerce-triggers)
-- [Membership Triggers](/docs/fluentcrm-membership-triggers)
-- [LMS Triggers](/docs/fluentcrm-lms-triggers)
+- [Primary Automation Triggers](/fluentcrm-automation-triggers)
+- [Ecommerce Triggers](/fluentcrm-ecommerce-triggers)
+- [Membership Triggers](/fluentcrm-membership-triggers)
+- [LMS Triggers](/fluentcrm-lms-triggers)
 
 Sometimes, you need to start a funnel from **your own plugin logic**. In that case, you can register a custom trigger and fire it whenever your event happens.
 
@@ -292,7 +292,7 @@ class CustomTrigger
 
 The `prepareEditorDetails()` method is responsible for returning an object that FluentCRM uses to render the **settings** and **conditions** panels for this trigger in the automation editor.
 
-> The "Target Products" (or similar) area in your UI is generated from the `getSettingsFields()` definition. For more field types and structures, see the [form field code structure](/docs/form-field-code-structure) reference.
+> The "Target Products" (or similar) area in your UI is generated from the `getSettingsFields()` definition. For more field types and structures, see the [form field code structure](/form-field-code-structure) reference.
 
 ---
 

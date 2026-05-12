@@ -41,4 +41,4 @@ LearnPress also allows users to create groups. You can set up automated tagging
 
 On this metabox, you can set tags to apply when students complete a lesson.
 
-Essentially, such flexible tagging means you can start creating email campaigns and [set up email marketing automation funnels](/docs/introduction-to-fluentcrm-automation) for your LearnPress students by selecting FluentCRM’s tag applied and tag removed [triggers](/docs/fluentcrm-automation-triggers).
+Essentially, such flexible tagging means you can start creating email campaigns and [set up email marketing automation funnels](/introduction-to-fluentcrm-automation) for your LearnPress students by selecting FluentCRM’s tag applied and tag removed [triggers](/fluentcrm-automation-triggers).

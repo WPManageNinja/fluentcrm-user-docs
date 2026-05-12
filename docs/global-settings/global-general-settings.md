@@ -35,7 +35,7 @@ Capture every new member of your site automatically.
 
  * **Double Opt-in:** To maintain GDPR compliance and ensure that contacts are real and valid, you can enable **Double Opt-in Email Confirmation**. When this is enabled, FluentCRM will automatically send a confirmation email to new contacts created from WordPress user signups. The user must confirm their subscription through this email before they are marked as **Subscribed**.
 
- You can customize the content and email body from the [Double Opt-in Settings](/docs/global-double-opt-in-settings). Below is an example of a typical opt-in confirmation email sent to users.
+ You can customize the content and email body from the [Double Opt-in Settings](/global-double-opt-in-settings). Below is an example of a typical opt-in confirmation email sent to users.
 
 ![crm double opt in email](/global-settings/global-general-settings/crm_double_opt_in_email.webp)
 

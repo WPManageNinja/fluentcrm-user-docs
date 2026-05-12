@@ -23,17 +23,17 @@ Bounce handlers allow you to manage bounced contacts without manual intervention
 
 To configure Bounce Handlers for available services please check each relevant documentation:
 
-1.  [Amazon SES](/docs/bounce-handler-with-amazon-ses)
-2.  [Mailgun](/docs/bounce-handling-with-mailgun)
-3.  [SendGrid](/docs/bounce-handling-with-sendgrid)
-4.  [Pepipost](/docs/bounce-handling-with-pepipost)
-5.  [PostMark](/docs/bounce-handling-with-postmark)
-6.  [Sparkpost](/docs/bounce-handling-with-sparkpost)
-7.  [SendGrid](/docs/bounce-handling-with-sendgrid)
-8.  [Elastic Email](/docs/bounce-handling-with-elastic-email)
-9.  [Postal Server](/docs/bounce-handling-with-postal-server)
-10.  [SMTP2Go](/docs/bounce-handling-with-smtp2go)
-11.  [Brevo (ex Sendinblue)](/docs/bounce-handling-with-brevo)
+1.  [Amazon SES](/bounce-handler-with-amazon-ses)
+2.  [Mailgun](/bounce-handling-with-mailgun)
+3.  [SendGrid](/bounce-handling-with-sendgrid)
+4.  [Pepipost](/bounce-handling-with-pepipost)
+5.  [PostMark](/bounce-handling-with-postmark)
+6.  [Sparkpost](/bounce-handling-with-sparkpost)
+7.  [SendGrid](/bounce-handling-with-sendgrid)
+8.  [Elastic Email](/bounce-handling-with-elastic-email)
+9.  [Postal Server](/bounce-handling-with-postal-server)
+10.  [SMTP2Go](/bounce-handling-with-smtp2go)
+11.  [Brevo (ex Sendinblue)](/bounce-handling-with-brevo)
 
 >[!Note]
 >We are constantly working to expand this list. If your provider isn't listed, keep an eye out for future updates.

@@ -57,17 +57,17 @@ To configure it in Twilio:
 
 Twilio will now POST inbound messages to FluentCRM, where they show up on the **All SMS Activities** screen and on the relevant contact's **SMS** tab.
 
-Your **Twilio integration** is now complete. You are ready to start creating and sending SMS campaigns or utilising SMS in your [automation funnels](/docs/sms-automation).
+Your **Twilio integration** is now complete. You are ready to start creating and sending SMS campaigns or utilising SMS in your [automation funnels](/sms-automation).
 
-If you want to learn how to create an SMS campaign, read [Configure SMS Module](/docs/configure-sms-module).
+If you want to learn how to create an SMS campaign, read [Configure SMS Module](/configure-sms-module).
 
 ![Configure FluentCRM Twilio Settings](/sms-module/twilio-integration/save-twilio-sms-3.webp)
 
 
 ## Related reading
 
-- [Configure SMS Module](/docs/configure-sms-module)
-- [SMS Automation](/docs/sms-automation)
-- [SMS Campaign Report](/docs/sms-campaign-report)
-- [Amazon End User Messaging SMS Integration](/docs/amazon-end-user-messaging)
+- [Configure SMS Module](/configure-sms-module)
+- [SMS Automation](/sms-automation)
+- [SMS Campaign Report](/sms-campaign-report)
+- [Amazon End User Messaging SMS Integration](/amazon-end-user-messaging)
 

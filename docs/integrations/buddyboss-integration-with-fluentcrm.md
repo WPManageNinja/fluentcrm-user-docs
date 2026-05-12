@@ -28,7 +28,7 @@ If you have any automation running for the tags you applied to the new contacts 
 
 FluentCRM also helps you set up automated tagging for BuddyBoss **Profile Types** and **Groups**. This simply means you can set up tagging while you’re editing a BuddyBoss profile type or group and contacts will get that tag without you even doing anything!
 
-**Pro-Tip**: You can [set up automation funnels](/docs/introduction-to-fluentcrm-automation) with the Tag Trigger to automate emails for new contacts.
+**Pro-Tip**: You can [set up automation funnels](/introduction-to-fluentcrm-automation) with the Tag Trigger to automate emails for new contacts.
 
 #### **Setting up tags in a BuddyBoss profile type:**
 
@@ -46,4 +46,4 @@ BuddyBoss also allows users to create groups. You can set up automated tagging f
 
 On this metabox, you can set tags to apply when members join the group and you can also enable the checkbox to remove tags on group leave.
 
-Essentially, such flexible tagging means you can start creating email campaigns and [set up email marketing automation funnels](/docs/introduction-to-fluentcrm-automation) by selecting FluentCRM’s tag applied and tag removed [triggers](/docs/fluentcrm-automation-triggers).
+Essentially, such flexible tagging means you can start creating email campaigns and [set up email marketing automation funnels](/introduction-to-fluentcrm-automation) by selecting FluentCRM’s tag applied and tag removed [triggers](/fluentcrm-automation-triggers).

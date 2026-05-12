@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=RuAb-51Z4zs
 
 1.  WooCommerce
 2.  Easy Digital Downloads
-3.  [FluentCart](/docs/fluentcart-integration-with-fluentcrm)
+3.  [FluentCart](/fluentcart-integration-with-fluentcrm)
 4.  SureCart *(Pro)*
 
 **Learning Management Systems:**
@@ -38,23 +38,23 @@ https://www.youtube.com/watch?v=RuAb-51Z4zs
 
 **Community & Productivity:**
 
-1.  [FluentCommunity](/docs/fluentcommunity-integration-with-fluentcrm)
-2.  [FluentBoards](/docs/fluentboards-integration-with-fluentcrm) *(new)*
-3.  [FluentSupport](/docs/fluentsupport-integration-with-fluentcrm) *(new)*
-4.  [FluentBooking](/docs/fluent-booking-integration-with-fluentcrm)
+1.  [FluentCommunity](/fluentcommunity-integration-with-fluentcrm)
+2.  [FluentBoards](/fluentboards-integration-with-fluentcrm) *(new)*
+3.  [FluentSupport](/fluentsupport-integration-with-fluentcrm) *(new)*
+4.  [FluentBooking](/fluent-booking-integration-with-fluentcrm)
 5.  BuddyPress / BuddyBoss *(Pro)*
-6.  [Fluent Affiliate](/docs/fluentaffiliate-integration-with-fluentcrm)
-7.  [AffiliateWP](/docs/affiliatewp-integration-with-fluentcrm) *(Pro)*
+6.  [Fluent Affiliate](/fluentaffiliate-integration-with-fluentcrm)
+7.  [AffiliateWP](/affiliatewp-integration-with-fluentcrm) *(Pro)*
 
 **WordPress Automations:**
 
 1.  WPFusion
-2.  [Zapier](/docs/zapier-integration-with-fluentcrm)
-3.  [Webhooks (Incoming/Outgoing)](/docs/webhook-integration)
+2.  [Zapier](/zapier-integration-with-fluentcrm)
+3.  [Webhooks (Incoming/Outgoing)](/webhook-integration)
 
 **Form Integrations:**
 
-1.  [Fluent Forms](/docs/wp-fluent-forms-integration-with-fluentcrm)
+1.  [Fluent Forms](/wp-fluent-forms-integration-with-fluentcrm)
 2.  Elementor Pro Form *(Pro)*
 3.  Divi Bloom
 4.  ThriveArchitect
@@ -62,9 +62,9 @@ https://www.youtube.com/watch?v=RuAb-51Z4zs
 **Page Builders:**
 
 1.  Thrive Themes
-2.  [Elementor Page Builder](/docs/elementor-integration-with-fluentcrm)
+2.  [Elementor Page Builder](/elementor-integration-with-fluentcrm)
 3.  Default Gutenberg Editor & Conditional Blocks
-4.  [Oxygen Builder](/docs/oxygen-builder-integration-with-fluentcrm)
+4.  [Oxygen Builder](/oxygen-builder-integration-with-fluentcrm)
 5.  Beaver Builder *(Pro)*
 
 > **Note:** Integrations marked *(Pro)* require **FluentCRM Pro**. Free integrations are included in the core plugin and load automatically once both plugins are active.

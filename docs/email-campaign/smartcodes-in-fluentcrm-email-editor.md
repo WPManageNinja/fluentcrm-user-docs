@@ -92,7 +92,7 @@ Any Custom Fields you create in **FluentCRM → Settings → Custom Fields** aut
 
 For example, if you created custom fields called **Number**, **Gender**, **Login Date**, and **Description**, you will see a matching token for each in the panel.
 
-To learn how to create custom fields, see [Custom Contact Fields](/docs/global-custom-contact-fields).
+To learn how to create custom fields, see [Custom Contact Fields](/global-custom-contact-fields).
 
 ### Integrations
 

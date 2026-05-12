@@ -32,13 +32,13 @@ Here are the details for the other settings:
 -   **Assign Tags**: Assign the contacts to your particular contact Tags.
 -   **Auto Checked**: Enable the checkbox automatically for the customer.
 -   **Do not show Checkbox**: Hide the checkbox for the customer if he is already added in the FluentCRM subscription list.
--   **Double Opt-in**: Enable double [Opt-in email](/docs/fluentcrm-global-settings#4-toc-title) from the contacts.
+-   **Double Opt-in**: Enable double [Opt-in email](/fluentcrm-global-settings#4-toc-title) from the contacts.
 
 ### Contact Segmentation
 
 FluentCRM also lets you add or remove tags to contacts based on **Product Purchases** and **Refund Requests**.
 
-In order to apply [tags](/docs/segment-your-audience#1-toc-title) to contacts, open WooCommerce product editor and click **FluentCRM** from the product data section. Next, select which tags you want to add or remove when someone purchases your product. You can also do the same when refunds actions happen for the same contact.
+In order to apply [tags](/segment-your-audience#1-toc-title) to contacts, open WooCommerce product editor and click **FluentCRM** from the product data section. Next, select which tags you want to add or remove when someone purchases your product. You can also do the same when refunds actions happen for the same contact.
 
 ![product tags in woocommerce](/integrations/woocommerce-automation-with-fluentcrm/Product-TAgs-in-WooCommerce.webp)
 
@@ -54,10 +54,10 @@ https://youtu.be/Xv77Fd6Gifw?si=wQMUH6hE78QXG7pD
 
 FluentCRM’s email marketing automation includes four major elements. These are:
 
-1.  **Triggers:** Triggers are essential for initiating email marketing automation. They can be behavior-based, or time-based. Learn more about [FluentCRM’s Triggers](/docs/fluentcrm-automation-triggers).
-2.  **Action Blocks**: The actions that will be done throughout the funnel for example sending an email, adding the user to a list, etc. Learn everything about [FluentCRM Action Blocks](/docs/primary-automation-actions)
-3.  **Benchmarks**: Benchmarking the behavior of the users for example whether they purchased a product, clicked into a link, etc. Learn everything about [FluentCRM Benchmark Blocks](/docs/goals-or-benchmark-actions)
-4.  **Conditionals**: Conditionals will let you set multiple paths based on if/else conditions. Learn more about [FluentCRM Conditionals](/docs/conditional-automation-actions)
+1.  **Triggers:** Triggers are essential for initiating email marketing automation. They can be behavior-based, or time-based. Learn more about [FluentCRM’s Triggers](/fluentcrm-automation-triggers).
+2.  **Action Blocks**: The actions that will be done throughout the funnel for example sending an email, adding the user to a list, etc. Learn everything about [FluentCRM Action Blocks](/primary-automation-actions)
+3.  **Benchmarks**: Benchmarking the behavior of the users for example whether they purchased a product, clicked into a link, etc. Learn everything about [FluentCRM Benchmark Blocks](/goals-or-benchmark-actions)
+4.  **Conditionals**: Conditionals will let you set multiple paths based on if/else conditions. Learn more about [FluentCRM Conditionals](/conditional-automation-actions)
 
 At first, from your FluentCRM dashboard & go to the **Automations** option. Then click on the **+ New Automation** button to add an automation funnel.
 
@@ -67,7 +67,7 @@ You will notice a pop-up window appear. And then select **WooCommerce** from the
 
 ![automations triggers woocommerce fluentcrm](/integrations/woocommerce-automation-with-fluentcrm/Automations-Triggers-WooCommerce-FluentCRM.webp)
 
-From here, you can select one of four available triggers. Currently, available [WooCommmerce Triggers](/docs/fluentcrm-automation-triggers#2-toc-title) are
+From here, you can select one of four available triggers. Currently, available [WooCommmerce Triggers](/fluentcrm-automation-triggers#2-toc-title) are
 
 1.  **New Order(Processing)** - This will trigger the automation funnel once a new order is placed on WooCommerce for the targetted products, product category or all products.
 2.  **Order Completed** - This will trigger the automation funnel once an order has been marked as completed in your WooCommerce store for the targetted products, product category or all products.
@@ -88,7 +88,7 @@ Choose the **Purchase Type** for what type of purchase you want to run this funn
 
 **Action Block**
 
-[Actions blocks](/docs/primary-automation-actions) are tasks that you wish to trigger from your side. Click on the plus icon on the Automation Funnel page. Then you will notice a pop-up appear with a set of action blocks to choose from.
+[Actions blocks](/primary-automation-actions) are tasks that you wish to trigger from your side. Click on the plus icon on the Automation Funnel page. Then you will notice a pop-up appear with a set of action blocks to choose from.
 
 ![woocommerce action for triggers ](/integrations/woocommerce-automation-with-fluentcrm/WooCommerce-Action-for-Triggers-.webp)
 
@@ -110,7 +110,7 @@ The specific action blocks for WooCommerce include:
 
 **Goals/Trigger Block(Benchmark)**
 
-[Goals/Trigger blocks](/docs/goals-or-benchmark-actions) are goal or trigger items that your user might do. They let you measure these steps and automate the funnel based on goal completion.
+[Goals/Trigger blocks](/goals-or-benchmark-actions) are goal or trigger items that your user might do. They let you measure these steps and automate the funnel based on goal completion.
 
 Click on the plus icon(+) to open the pop-up for selecting the **Goals**. For WooCommerce, you can choose **Order Received in WooCommerce** goal. This trigger block will run once a new order is placed as processing.
 
@@ -120,7 +120,7 @@ In this block, you can add an internal label, choose target products, target pro
 
 ![Product category](/integrations/woocommerce-automation-with-fluentcrm/Edit-Funnel-Fl-6.webp)
 
-Please check our [documentation](/docs/goals-or-benchmark-actions) if you want to use other goals or benchmarks.
+Please check our [documentation](/goals-or-benchmark-actions) if you want to use other goals or benchmarks.
 
 **Condition**s
 
@@ -128,7 +128,7 @@ If you want to automate different activities based on If/Else conditions, you ca
 
 ![conditions for woocommerce 1](/integrations/woocommerce-automation-with-fluentcrm/Conditions-for-woocommerce-1.webp)
 
-If you want to use other conditionals please check out [this documentation](/docs/conditional-automation-actions).
+If you want to use other conditionals please check out [this documentation](/conditional-automation-actions).
 
 **Product Block(for Email Templates)**
 

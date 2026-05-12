@@ -39,11 +39,11 @@ For each email, you will need to configure the following:
  * **Email Pre-Header:** Provide short summary text that appears after the subject line in the recipient's inbox.
 
 ![crm sequence compose email](/email-campaign/email-sequence/compose-email-4.webp)
- * **Compose Content:** You can write your content from scratch or **Import Email Templates** you have previously created. If you want to learn more about Compose Email, read this [Documentation](/docs/compose-email-in-fluentcrm).
+ * **Compose Content:** You can write your content from scratch or **Import Email Templates** you have previously created. If you want to learn more about Compose Email, read this [Documentation](/compose-email-in-fluentcrm).
 
  ![crm sequence template](/email-campaign/email-sequence/brows-template-5.webp)
 
- * **SmartCodes:** Use dynamic data (like <code>&#123;&#123;contact.first_name&#125;&#125;</code>) to personalize each message for the recipient. To learn more about dynamic data using by **SmartCode** please visit [SmartCode in Email Editor](/docs/smartcodes-in-fluentcrm-email-editor).
+ * **SmartCodes:** Use dynamic data (like <code>&#123;&#123;contact.first_name&#125;&#125;</code>) to personalize each message for the recipient. To learn more about dynamic data using by **SmartCode** please visit [SmartCode in Email Editor](/smartcodes-in-fluentcrm-email-editor).
 
 ![crm sequence smartcode](/email-campaign/email-sequence/smartcode-6.webp)
 
@@ -117,7 +117,7 @@ Your automated nurturing process is now active! Use these sequences to provide v
 
 https://www.youtube.com/watch?v=TgJYytkqon0
 
-Once you've created email sequences, you can trigger them inside [Automation](/docs/introduction-to-fluentcrm-automation). To add an email sequence within an automation funnel, simply hit the (+) button and choose **Set Sequence Emails** from the [Email Actions](/docs/automation-email-actions).
+Once you've created email sequences, you can trigger them inside [Automation](/introduction-to-fluentcrm-automation). To add an email sequence within an automation funnel, simply hit the (+) button and choose **Set Sequence Emails** from the [Email Actions](/automation-email-actions).
 
 So that's all about email sequences. Go ahead and nurture your audience with any kind of email sequence!
 

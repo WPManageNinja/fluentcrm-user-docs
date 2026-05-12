@@ -29,30 +29,30 @@ Then click on the **Continue** button.
 
 Now a pop-up will come up from where you have to give a **Title** to your Automation in the **Internal Label** field for easy referencing later. But, if you leave it blank, the title will be automatically set based on your chosen trigger.
 
-> Apart from the triggers shown below, FluentCRM also comes with lots of other triggers. To see the full list of triggers, [click here](/docs/introduction-to-fluentcrm-automation/#triggers).
+> Apart from the triggers shown below, FluentCRM also comes with lots of other triggers. To see the full list of triggers, [click here](/introduction-to-fluentcrm-automation/#triggers).
 
 For example, I’ve selected the **List Applied** trigger under the **CRM** option. As a result, this automation funnel will trigger when the selected list will be applied to any of the **FluentCRM Contacts.**
 
 ![choose trigger for automation](/automation-funnels/automation-editor/automation-funnel-3.webp)
 
-Once you choose the **Trigger**, you will be redirected to the similar screen below from where you can add the [Action](/docs/primary-automation-actions) blocks, [Conditional Automation Actions](/docs/conditional-automation-actions), and [Goals or BenchMark Actions](/docs/goals-or-benchmark-actions) into your Funnel.
+Once you choose the **Trigger**, you will be redirected to the similar screen below from where you can add the [Action](/primary-automation-actions) blocks, [Conditional Automation Actions](/conditional-automation-actions), and [Goals or BenchMark Actions](/goals-or-benchmark-actions) into your Funnel.
 
 To add Actions, click the **Plus Icon** and press on the **Add Action / Goal** or **Conditional Action.** For example, I’ve selected the **Add Action / Goal** option for the automation.
 
 ![add action : goal option](/automation-funnels/automation-editor/automation-funnel-4.webp)
 
 
-Now, a popup will appear with a set of [Action Blocks](/docs/primary-automation-actions) from where you can choose any type of action block. 
+Now, a popup will appear with a set of [Action Blocks](/primary-automation-actions) from where you can choose any type of action block. 
 
 There are various actions that can be added like –
 
-1.  [Primary Actions](/docs/primary-automation-actions),
-2.  [Goals BenchMark Actions](/docs/goals-or-benchmark-actions),
-3.  [WordPress Actions](/docs/wordpress-automation-actions),
-4.  [Email Actions](/docs/automation-email-actions),
-5.  [LMS Actions](/docs/lms-automation-actions), and
-6.  [Miscellaneous Actions](/docs/miscellaneous-automation-actions) along with the
-7.  [Conditional Automation Actions](/docs/conditional-automation-actions).
+1.  [Primary Actions](/primary-automation-actions),
+2.  [Goals BenchMark Actions](/goals-or-benchmark-actions),
+3.  [WordPress Actions](/wordpress-automation-actions),
+4.  [Email Actions](/automation-email-actions),
+5.  [LMS Actions](/lms-automation-actions), and
+6.  [Miscellaneous Actions](/miscellaneous-automation-actions) along with the
+7.  [Conditional Automation Actions](/conditional-automation-actions).
 
 For example, here, I’ve selected **Apply Tag** as an Automation **Action**. 
 
@@ -90,7 +90,7 @@ Once you click the **Title** of your desired automation it will take you to the 
 
 3.  **Status Toggle**: Enable this option, to **Publish** and run your automation. Otherwise, your automation will be saved as a **Draft** only.
 
-4.  **View Reports**: By clicking this button, you can check the overall **Reports** of the Automations. To learn more detailed reporting details please visit [Automation Reports](/docs/automation-reports).
+4.  **View Reports**: By clicking this button, you can check the overall **Reports** of the Automations. To learn more detailed reporting details please visit [Automation Reports](/automation-reports).
 
 5.  **Guideline Resource**: This button will open a sidebar on the right-hand side with the documentation to guide you through the basics of FluentCRM Automation Actions.
 
@@ -105,6 +105,6 @@ Once you click the **Title** of your desired automation it will take you to the 
 
 9.  **Move Icon**: To move any action, please hover over the action you want to move and you will see **2 Arrows** beside them indicating up or below to move the action. Now, by clicking the **Arrows** you can easily move your action up and down within the funnel.
 
-10.  **Plus Icon**: Always press the **Plus Icon** to add new [Actions](/docs/primary-automation-actions) or [Conditions](/docs/conditional-automation-actions).
+10.  **Plus Icon**: Always press the **Plus Icon** to add new [Actions](/primary-automation-actions) or [Conditions](/conditional-automation-actions).
 
 This way you can create and edit automations easily at any time!  

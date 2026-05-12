@@ -19,7 +19,7 @@ FluentCRM offers automation triggers for FluentAffiliate, allowing you to automa
 
 Go to **FluentCRM → Automations** and click the **\+ New Automation** button. Select an **Automation Trigger** from the available **FluentAffiliate** options, then click the **Continue** button to build your automation funnel as needed.
 
-If you want to know more about how to create a complete automation, check out our [documentation](/docs/automation-editor) for detailed steps.
+If you want to know more about how to create a complete automation, check out our [documentation](/automation-editor) for detailed steps.
 
 ![add automation 02](/integrations/fluentaffiliate-integration-with-fluentcrm/Add-Automation-02-scaled.webp)
 

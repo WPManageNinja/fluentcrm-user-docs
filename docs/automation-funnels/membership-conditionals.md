@@ -6,11 +6,11 @@ order: 0
 ---
 
 # Membership Conditionals
-FluentCRM provides several [**Conditionals**](/docs/conditional-automation-actions) for **Membership Platforms** like **Paid** **Membership Pro**, **Wishlist Member**, and **Restrict Content Pro**, allowing you to create conditional checks and take alternative [Actions](/docs/primary-automation-actions) based on those set conditions.
+FluentCRM provides several [**Conditionals**](/conditional-automation-actions) for **Membership Platforms** like **Paid** **Membership Pro**, **Wishlist Member**, and **Restrict Content Pro**, allowing you to create conditional checks and take alternative [Actions](/primary-automation-actions) based on those set conditions.
 
 This article will provide detailed information about all **Membership Conditional Actions** of **FluentCRM Automation**. 
 
-> **Remember**, to use these **Membership Conditionals** you must install and activate all the **LMS Plugins** in your website. Additionally, learn the detailed integration process of [Paid Membership Pro](/docs/paid-memberships-pro-integration-with-fluentcrm) and [Restrict Content Pro](/docs/restrict-content-pro-integration-with-fluentcrm) with FluentCRM.
+> **Remember**, to use these **Membership Conditionals** you must install and activate all the **LMS Plugins** in your website. Additionally, learn the detailed integration process of [Paid Membership Pro](/paid-memberships-pro-integration-with-fluentcrm) and [Restrict Content Pro](/restrict-content-pro-integration-with-fluentcrm) with FluentCRM.
 
 ## All Membership Conditionals
 
@@ -18,7 +18,7 @@ To learn how you can use all the **Membership Conditionals** in your FluentCRM, 
 
 First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
 
-> To learn the process of creating a new automation funnel, read this [Documentation](/docs/automation-editor).
+> To learn the process of creating a new automation funnel, read this [Documentation](/automation-editor).
 
 For example, I opened the **List Applied** automation funnel to explain all the **Membership Conditionals**.
 
@@ -49,7 +49,7 @@ These are:
 2.  Wishlist Member
 3.  RCP (Restrict Content Pro)
 
-> To learn the full process of creating a conditional action, read this full [Documentation](/docs/conditional-automation-actions).
+> To learn the full process of creating a conditional action, read this full [Documentation](/conditional-automation-actions).
 
 ![All membership properties](/automation-funnels/membership-conditionals/membership-condition-3.webp)
 

@@ -23,22 +23,22 @@ https://www.youtube.com/watch?v=WTjaTvojyOQ
 
 The Global Settings are divided into several key sections to help you manage your marketing automation efficiently:
 
-1.  [Business Settings](/docs/global-business-settings)
-2.  [Email Settings](/docs/global-email-settings)
-3.  [Email Service (SMTP & Bounce Handlers)](/docs/smtp-bounce-handlers-settings)
-4.  [General Settings](/docs/global-general-settings)
-5.  [Custom Contact Fields](/docs/global-custom-contact-fields)
-6.  [Smart Links](/docs/global-smartlinks-settings)
-7.  [Double Opt-in Settings](/docs/global-double-opt-in-settings)
-8.  **SMS Setting** *(Pro – see [Configure SMS Module](/docs/configure-sms-module))*
-9.  [Integration Settings](/docs/global-integration-settings)
-10. [Abandoned Cart Settings](/docs/abandoned-cart-settings)
-11. [AI Writing](/docs/ai-writing-settings) *(new in v3)*
-12. [Compliance](/docs/global-compliance-settings)
-13. [Incoming Webhooks](/docs/global-incoming-webhooks)
-14. [Managers](/docs/global-managers-settings)
+1.  [Business Settings](/global-business-settings)
+2.  [Email Settings](/global-email-settings)
+3.  [Email Service (SMTP & Bounce Handlers)](/smtp-bounce-handlers-settings)
+4.  [General Settings](/global-general-settings)
+5.  [Custom Contact Fields](/global-custom-contact-fields)
+6.  [Smart Links](/global-smartlinks-settings)
+7.  [Double Opt-in Settings](/global-double-opt-in-settings)
+8.  **SMS Setting** *(Pro – see [Configure SMS Module](/configure-sms-module))*
+9.  [Integration Settings](/global-integration-settings)
+10. [Abandoned Cart Settings](/abandoned-cart-settings)
+11. [AI Writing](/ai-writing-settings) *(new in v3)*
+12. [Compliance](/global-compliance-settings)
+13. [Incoming Webhooks](/global-incoming-webhooks)
+14. [Managers](/global-managers-settings)
 15. **REST API** *(documentation coming soon)*
 16. **Advanced Features Settings** *(documentation coming soon)*
-17. [System Admin Tools](/docs/fluentcrm-tools-settings) – includes **Cron Job Monitor**, **Data Cleanup**, and **CRM Database Reset**
+17. [System Admin Tools](/fluentcrm-tools-settings) – includes **Cron Job Monitor**, **Data Cleanup**, and **CRM Database Reset**
 
 > **Note:** The exact list of tabs you see depends on which features are active. **SMS Setting** appears only with FluentCRM Pro, and **Frontend Portal** is added to the Pro settings menu when the Frontend Portal add-on is enabled.

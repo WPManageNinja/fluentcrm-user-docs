@@ -19,7 +19,7 @@ Before you start designing your email, make sure the basic details are set:
  * **Email Subject:** Write a clear and engaging subject line. You can click the **{} icon** to add SmartCodes, such as the contact’s first name, to make it more personal.
  * **Email Pre-Header:** Add a short preview text that appears next to the subject line in the inbox. This helps encourage people to open your email.
 
-> **Important:** FluentCRM v3 ships with a **Gutenberg-native email builder** as the default editor. It supports device preview, the WordPress media library, [reusable Email Patterns](/docs/email-patterns), and [AI Writing](/docs/ai-writing-settings) – so you can compose, personalise, and reuse email designs without leaving the editor.
+> **Important:** FluentCRM v3 ships with a **Gutenberg-native email builder** as the default editor. It supports device preview, the WordPress media library, [reusable Email Patterns](/email-patterns), and [AI Writing](/ai-writing-settings) – so you can compose, personalise, and reuse email designs without leaving the editor.
 
 ![Email Template](/email-campaign/compose-email-in-fluentcrm/email-template-1.webp)
 
@@ -96,7 +96,7 @@ To build your email, click the **+ (Plus)** icon at the top left or simply type 
 If you need more control or want to switch your workflow, click the **three dots (⋮)** at the top right:
 
  * **Switch Editor:** Stay on the Gutenberg-native default, or switch to the **Visual Builder**, **Classic Editor**, or **Raw HTML** for custom code.
- * **Insert Pattern:** Drop in a saved [Email Pattern](/docs/email-patterns) so you don't have to rebuild common sections (header, hero, footer) every time.
+ * **Insert Pattern:** Drop in a saved [Email Pattern](/email-patterns) so you don't have to rebuild common sections (header, hero, footer) every time.
  * **Import/Use Templates:** If you’ve already made a great design, click Import to bring it into your current draft.
  * **Save as Template:** If you've created a layout you love, save it so you can use it as a starting point for future emails.
  * **Device Preview:** Toggle between Desktop and Mobile preview from the editor toolbar to confirm the layout works on both.
@@ -126,7 +126,7 @@ To do this, go to the **Settings** tab and click on **Global Email Settings**. S
 
 One of the most helpful features of FluentCRM is the **Preview**. By clicking on the Eye button you can preview the composed email to see how it may look in the recipient's email client. Please remember that there are numerous email clients that are Web, Desktop or Mobile based. The email content you composed may look slightly different on different devices. You should add mobile device-specific CSS codes too so that the email content looks better on Mobile devices as well.
 
-> **Tip:** Use the **Device Preview** toggle in the toolbar to switch between Desktop and Mobile views and verify how your design will look on both. Some block-level customisation is bound by Gutenberg's own constraints – when in doubt, switch to the [Visual Builder](/docs/fluentcrm-visual-builder) for drag-and-drop fine control.
+> **Tip:** Use the **Device Preview** toggle in the toolbar to switch between Desktop and Mobile views and verify how your design will look on both. Some block-level customisation is bound by Gutenberg's own constraints – when in doubt, switch to the [Visual Builder](/fluentcrm-visual-builder) for drag-and-drop fine control.
 
 ![crm email editor preview](/email-campaign/compose-email-in-fluentcrm/email-preview-10.webp)
 

@@ -86,6 +86,6 @@ Once you are done with the **Data Selection** and **Conditions** please click on
 
 ![new dynamic segment fluentcrm](/grow-your-audience/segment-your-audience/New-Dynamic-Segment-FluentCRM.webp)
 
-That's all about segmenting contacts in FluentCRM. Dynamic Segments is a powerful feature that selects contacts automatically as your data changes. To get the most out of it, check the [**Advanced Filtering**](/docs/advanced-filter) guide to build precise conditions for your segments.
+That's all about segmenting contacts in FluentCRM. Dynamic Segments is a powerful feature that selects contacts automatically as your data changes. To get the most out of it, check the [**Advanced Filtering**](/advanced-filter) guide to build precise conditions for your segments.
 
 ![Dynamic Segment](/grow-your-audience/segment-your-audience/final-segment.webp)

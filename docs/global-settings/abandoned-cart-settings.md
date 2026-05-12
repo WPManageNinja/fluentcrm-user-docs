@@ -44,7 +44,7 @@ If FluentCart is installed, a parallel section appears for the FluentCart driver
 
 The option **Mark Cart as Recovered when FluentCart Order Status Changes to** typically includes _Paid_, _Processing_, and _Completed_. Once a FluentCart order moves into one of the selected statuses, FluentCRM marks the corresponding abandoned cart as recovered, stops any in-flight recovery automations, and (optionally) removes the temporary abandoned-cart lists/tags.
 
-> **Note:** The FluentCart driver lives in FluentCRM core – no additional add-on is required. If you want a step-by-step automation walkthrough specific to FluentCart, see [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation).
+> **Note:** The FluentCart driver lives in FluentCRM core – no additional add-on is required. If you want a step-by-step automation walkthrough specific to FluentCart, see [FluentCart Abandon Cart Automation](/fluentcart-abandon-cart-automation).
 
 ## **Timing Configuration** 
 
@@ -86,6 +86,6 @@ Once all done, click the **Save** button to apply all the changes you’ve made.
 
 ## Related reading
 
--   [Abandon Cart Automation (WooCommerce)](/docs/abandon-cart-automation)
--   [FluentCart Abandon Cart Automation](/docs/fluentcart-abandon-cart-automation)
--   [Abandoned Cart Report](/docs/abandoned-cart-report)
+-   [Abandon Cart Automation (WooCommerce)](/abandon-cart-automation)
+-   [FluentCart Abandon Cart Automation](/fluentcart-abandon-cart-automation)
+-   [Abandoned Cart Report](/abandoned-cart-report)

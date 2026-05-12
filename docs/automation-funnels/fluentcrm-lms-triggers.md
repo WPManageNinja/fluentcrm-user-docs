@@ -11,7 +11,7 @@ FluentCRM provides powerful automation triggers for top **Learning Management Sy
 
 FluentCRM currently supports a wide range of LMS platforms, including **LearnDash**, **LifterLMS**, **TutorLMS**, **LearnPress**, **Academy LMS**, and **FluentCommunity**.
 
-> **Note:** To use an LMS trigger, you must have your LMS plugin installed and activated on your WordPress site, along with **FluentCRM Pro**. For setup details, check the integration guides for [LearnDash](/docs/learndash-integration-with-fluentcrm), [LifterLMS](/docs/lifterlms-integration-with-fluentcrm), [TutorLMS](/docs/tutorlms-integration-with-fluentcrm), and [LearnPress](/docs/learpress-integration-with-fluentcrm).
+> **Note:** To use an LMS trigger, you must have your LMS plugin installed and activated on your WordPress site, along with **FluentCRM Pro**. For setup details, check the integration guides for [LearnDash](/learndash-integration-with-fluentcrm), [LifterLMS](/lifterlms-integration-with-fluentcrm), [TutorLMS](/tutorlms-integration-with-fluentcrm), and [LearnPress](/learpress-integration-with-fluentcrm).
 
 ## How to Access LMS Triggers
 
@@ -23,7 +23,7 @@ With the latest FluentCRM interface, finding your LMS trigger is simple:
 4. From the left sidebar, click your LMS platform (for example, LearnDash or TutorLMS).
 5. Choose your preferred trigger from the list.
 
-> To learn the complete process of creating and building an automation funnel, read the [Automation Editor documentation](/docs/automation-editor).
+> To learn the complete process of creating and building an automation funnel, read the [Automation Editor documentation](/automation-editor).
 
 ![LMS Triggers](/automation-funnels/fluentcrm-lms-triggers/lms-triggers-1.webp)
 
@@ -85,9 +85,9 @@ After you click any LMS trigger, a settings panel appears on the right side. You
 
 - **Internal Label (Automation Name):** Set a clear name so your team can find the funnel quickly.
 - **Internal Description:** Add a short note that describes your funnel purpose.
-- **Subscription Status:** Choose which [contact status](/docs/fluentcrm-contacts-status) is required for entering the funnel.
+- **Subscription Status:** Choose which [contact status](/fluentcrm-contacts-status) is required for entering the funnel.
 - **If Contact Already Exists:** Decide what should happen for existing contacts (for example, update profile details and continue).
 - **Target Courses / Lessons / Groups:** Select the exact course, lesson, or group to trigger the automation. Keep this blank to run for any matching item.
 - **Restart the Automation:** Enable this if you want the same contact to re-enter the same funnel in future qualifying events.
 
-Once your configuration is ready, click the **Save Settings** button to continue into the [Automation Editor](/docs/automation-editor) and build your sequence.
+Once your configuration is ready, click the **Save Settings** button to continue into the [Automation Editor](/automation-editor) and build your sequence.

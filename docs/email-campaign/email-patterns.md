@@ -68,7 +68,7 @@ Open **Emails → Patterns** and click the action menu (three-dot icon) for the 
 
 ## When to use Patterns vs. Templates
 
-Both Patterns and [Email Templates](/docs/email-templates) help you reuse design, but they solve slightly different problems.
+Both Patterns and [Email Templates](/email-templates) help you reuse design, but they solve slightly different problems.
 
 | Use a **Pattern** when… | Use a **Template** when… |
 | --- | --- |

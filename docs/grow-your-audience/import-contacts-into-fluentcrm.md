@@ -19,7 +19,7 @@ The CSV import tool will help you add contacts to FluentCRM. You can easily uplo
 
 -   You already have your contacts in a spreadsheet program like MS Excel or Google Sheets, Now export the contacts as a CSV file.
 -   The date field must be formatted in a specific way for example the Date of Birth or other Dates must follow the **Y-m-d** format.
--   In FluentCRM, you can categorize your contacts based on their [subscription status](/docs/fluentcrm-contacts-status), like subscribed or unsubscribed. You can only select one status at a time.
+-   In FluentCRM, you can categorize your contacts based on their [subscription status](/fluentcrm-contacts-status), like subscribed or unsubscribed. You can only select one status at a time.
 -   FluentCRM has no limit to the number of subscribers you can import like other SaaS email marketing providers, so feel free to import all your contacts.
 -   If you are importing a **Country** for the contacts please use the [Alpha-2 Value \[2 Letter\] ISO 3166 Country Codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes). Example: BD, US, GB, etc.
 -   The minimum field to import contacts into FluentCRM is the **Email field**.
@@ -65,7 +65,7 @@ On the next screen, you will be asked to map the CSV fields into FluentCRM field
 15.  Source.
 16.  Date of Birth (Y-m-d format)
 
-You will also see a few other additional Custom Fields if you added them to the [**Custom Contact Fields.**](/docs/global-custom-contact-fields)
+You will also see a few other additional Custom Fields if you added them to the [**Custom Contact Fields.**](/global-custom-contact-fields)
 
 The Other Options are:
 
@@ -98,15 +98,15 @@ The options available here to be selected are:
 
 FluentCRM allows you to import users from other WordPress plugins into FluentCRM contacts. The relevant importing guides are listed below:
 
-1.  **[Import contacts from WooCommerce](/docs/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-WooCommerce)**
-2.  **[Import contacts from Easy Digital Downloads (EDD)](/docs/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Easy-Digital-Downloads)**
-3.  **[Import contacts from Learndash](/docs/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Learndash)**
-4.  **[Import contacts from LifterLMS](/docs/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-LifterLMS)**
-5.  **[Import contacts from TutorLMS](/docs/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-TutorLMS)**
-6.  **[Import contacts from Learnpress](/docs/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Learnpress)**
-7.  **[Import contacts from Paid Memberships Pro](/docs/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Paid-Memberships-Pro)**
-8.  **[Import contacts from MemberPress](/docs/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-MemberPress)**
-9.  **[Import contacts from Restrict Content Pro](/docs/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Restrict-Content-Pro)**
+1.  **[Import contacts from WooCommerce](/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-WooCommerce)**
+2.  **[Import contacts from Easy Digital Downloads (EDD)](/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Easy-Digital-Downloads)**
+3.  **[Import contacts from Learndash](/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Learndash)**
+4.  **[Import contacts from LifterLMS](/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-LifterLMS)**
+5.  **[Import contacts from TutorLMS](/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-TutorLMS)**
+6.  **[Import contacts from Learnpress](/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Learnpress)**
+7.  **[Import contacts from Paid Memberships Pro](/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Paid-Memberships-Pro)**
+8.  **[Import contacts from MemberPress](/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-MemberPress)**
+9.  **[Import contacts from Restrict Content Pro](/import-contacts-to-fluentcrm-from-other-integrations/#Import-contacts-from-Restrict-Content-Pro)**
 
 ## Importing Contacts from Other CRM
 
@@ -114,8 +114,8 @@ FluentCRM allows you to import users from other WordPress plugins into FluentCRM
 
 FluentCRM also provides an easy way to import Contacts from Other CRM Services like Mailchimp, ConvertKit, Mailerlite, Drip, and ActiveCampaign.
 
-1.  **[Importing guidelines for Mailchimp.](/docs/migrating-into-fluentcrm-from-mailchimp)**
-2.  **[Importing guidelines for ConvertKit.](/docs/migrating-into-fluentcrm-from-convertkit)**
-3.  **[Importing guidelines for Mailerlite.](/docs/migrating-into-fluentcrm-from-mailerlite)**
-4.  **[Importing guidelines for Drip.](/docs/migrating-into-fluentcrm-from-drip)**
-5.  **[Importing guidelines for ActiveCampaign](/docs/migrating-into-fluentcrm-from-activecampaign).**
+1.  **[Importing guidelines for Mailchimp.](/migrating-into-fluentcrm-from-mailchimp)**
+2.  **[Importing guidelines for ConvertKit.](/migrating-into-fluentcrm-from-convertkit)**
+3.  **[Importing guidelines for Mailerlite.](/migrating-into-fluentcrm-from-mailerlite)**
+4.  **[Importing guidelines for Drip.](/migrating-into-fluentcrm-from-drip)**
+5.  **[Importing guidelines for ActiveCampaign](/migrating-into-fluentcrm-from-activecampaign).**

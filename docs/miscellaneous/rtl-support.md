@@ -31,7 +31,7 @@ Internally, FluentCRM checks `is_rtl()` and loads `admin_rtl.css` on top of the 
 
 -   **Email content itself is not flipped.** RTL only restyles the admin UI you use to author emails. The email message is laid out using WordPress's standard email rendering, which respects the recipient's mail client. If you author in an RTL language and want to keep the rendered email RTL, set `dir="rtl"` on the outermost block or use a Pattern that already includes that attribute.
 -   **Custom theme overrides** that target FluentCRM's admin CSS can leak left-aligned spacing back in. If a panel still looks mis-aligned, check whether your theme is enqueueing CSS on the admin side.
--   **Dark Mode** works alongside RTL – see [Dark Mode](/docs/dark-mode).
+-   **Dark Mode** works alongside RTL – see [Dark Mode](/dark-mode).
 
 ## Switching back to LTR
 

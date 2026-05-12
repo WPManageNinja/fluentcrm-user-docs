@@ -10,7 +10,7 @@ order: 0
 
 ## My scheduled email/email sequence isn't being sent correctly, what should I do?
 
-The most common case we found for a few reported issues is CRON is not running for some reason (go to **FluentCRM → Settings → System Admin Tools** and check when your CRON last ran). This happens because WordPress CRON is quite unreliable. Check out [this doc](/docs/replace-wordpress-cron-with-a-real-cron-job) to replace WordPress CRON with a real CRON job.
+The most common case we found for a few reported issues is CRON is not running for some reason (go to **FluentCRM → Settings → System Admin Tools** and check when your CRON last ran). This happens because WordPress CRON is quite unreliable. Check out [this doc](/replace-wordpress-cron-with-a-real-cron-job) to replace WordPress CRON with a real CRON job.
 
 ## Both FluentCRM and Fluent Forms have double opt-in, which one should I use?
 
@@ -26,7 +26,7 @@ Once you've created custom fields, you'll need to map the field data. For exampl
 
 ## Email Templates: Can I set alternate text in case there isn't a value for the dynamic tags I'm using?
 
-Yes, you can set alternate text for [merge codes](/docs/merge-codes-smart-codes-usage) within email templates. In case there isn't a value available for your dynamic tag, FluentCRM will automatically replace it with the alternate text you've provided.
+Yes, you can set alternate text for [merge codes](/merge-codes-smart-codes-usage) within email templates. In case there isn't a value available for your dynamic tag, FluentCRM will automatically replace it with the alternate text you've provided.
 
 Suppose you're using a dynamic tag to pull off the contact's name within your email template. In that case, the dynamic tag will be: **&#123;&#123;contact.first\_name&#125;&#125;**
 

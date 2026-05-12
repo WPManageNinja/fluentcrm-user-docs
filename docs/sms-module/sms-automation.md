@@ -13,7 +13,7 @@ FluentCRM’s most powerful feature is its ability to run **Automated Actions** 
 In this guide, you’ll learn how to create new automations and how to integrate the **Send a SMS** action into your funnels. Using the **Automation Editor**, you can pick a trigger, add actions and conditions, and define exactly how your automation should flow from start to finish.
 
 >[!Note]
->Before adding the "**Send a SMS**" action, users must have an active SMS provider (like [Twilio](/docs/twilio-integration) or Amazon End User Messaging) configured in **FluentCRM Settings > SMS Settings**, or the action will not function.
+>Before adding the "**Send a SMS**" action, users must have an active SMS provider (like [Twilio](/twilio-integration) or Amazon End User Messaging) configured in **FluentCRM Settings > SMS Settings**, or the action will not function.
 
 ## Creating A New Automation Funnel
 

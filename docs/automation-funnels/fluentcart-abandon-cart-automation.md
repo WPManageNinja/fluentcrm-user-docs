@@ -23,7 +23,7 @@ Before you build **FluentCart** abandoned-cart automations, turn on abandoned-ca
 4. Choose which order statuses should mark a cart as **recovered** (for example **Processing** and **Completed**, depending on your store).
 5. Click **Save** (top right).
 
-For every option on this screen, see [Abandoned Cart Settings](/docs/abandoned-cart-settings).
+For every option on this screen, see [Abandoned Cart Settings](/abandoned-cart-settings).
 
 ![Abandoned Cart Settings](/automation-funnels/fluentcart-abandon-cart-automation/enable-abandoned-cart-1.webp)
 
@@ -79,7 +79,7 @@ Drop in **Wait** steps and **Send Email Action** steps to build a sequence like:
 | Wait 2 days | Final pause. |
 | Send Email | Last reminder before the cart is marked **Lost**. |
 
-Use [Smart Codes](/docs/smartcodes-in-fluentcrm-email-editor) to drop product names, totals, and the recovery link into your emails.
+Use [Smart Codes](/smartcodes-in-fluentcrm-email-editor) to drop product names, totals, and the recovery link into your emails.
 
 ### Step 4 – Activate
 
@@ -96,17 +96,17 @@ The **Abandoned Cart Report** at **FluentCRM → Reports → Abandoned Carts** b
 -   Recovery rate (%) per driver.
 -   Top recovery campaigns and their attributed revenue.
 
-See [Abandoned Cart Report](/docs/abandoned-cart-report) for a full walkthrough.
+See [Abandoned Cart Report](/abandoned-cart-report) for a full walkthrough.
 
 ## Differences from the WooCommerce flow
 
 If you've used the WooCommerce abandoned cart flow before, the FluentCart version is almost identical with two small differences:
 
 -   The trigger lives under the **FluentCart** category in the trigger sidebar (not WooCommerce).
--   The **Mark as Recovered** condition uses FluentCart order statuses (Paid, Processing, Completed) rather than WooCommerce statuses. You can configure this in [Abandoned Cart Settings](/docs/abandoned-cart-settings).
+-   The **Mark as Recovered** condition uses FluentCart order statuses (Paid, Processing, Completed) rather than WooCommerce statuses. You can configure this in [Abandoned Cart Settings](/abandoned-cart-settings).
 
 ## Related reading
 
--   [Abandon Cart Automation (WooCommerce)](/docs/abandon-cart-automation)
--   [Abandoned Cart Settings](/docs/abandoned-cart-settings)
--   [FluentCart Integration with FluentCRM](/docs/fluentcart-integration-with-fluentcrm)
+-   [Abandon Cart Automation (WooCommerce)](/abandon-cart-automation)
+-   [Abandoned Cart Settings](/abandoned-cart-settings)
+-   [FluentCart Integration with FluentCRM](/fluentcart-integration-with-fluentcrm)

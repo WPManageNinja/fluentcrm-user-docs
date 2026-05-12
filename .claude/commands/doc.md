@@ -185,10 +185,10 @@ Good rhythm (broken into clear steps):
 ```
 
 #### Cross-reference (in-context, never "click here")
-- ✓ *"Read the [Email Sequence guide](/docs/email-sequence) to learn how sequences work."*
-- ✓ *"For the full list of triggers, see the [automation triggers reference](/docs/fluentcrm-automation-triggers)."*
-- ✗ *"Click [here](/docs/email-sequence) to learn more."*
-- ✗ *"To learn more, [click here](/docs/email-sequence)."*
+- ✓ *"Read the [Email Sequence guide](/email-sequence) to learn how sequences work."*
+- ✓ *"For the full list of triggers, see the [automation triggers reference](/fluentcrm-automation-triggers)."*
+- ✗ *"Click [here](/email-sequence) to learn more."*
+- ✗ *"To learn more, [click here](/email-sequence)."*
 
 #### Closing the action loop
 - *"Click **Save Settings** to apply your changes."*
@@ -381,7 +381,7 @@ The codebase uses TWO callout formats. Both are valid. Pick based on context:
 - **The Pro Feature Notice is a fixed pattern**:
 
 ```markdown
-> **Note:** This feature requires **FluentCRM Pro**. [See what's included →](/docs/how-to-install-upgrade-and-activate-license)
+> **Note:** This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 ```
 
 ### When to use which
@@ -446,10 +446,10 @@ Alt text is mandatory and must describe what the image shows. It's used by scree
 
 All internal links use this format:
 ```markdown
-[descriptive link text](/docs/slug-here)
+[descriptive link text](/slug-here)
 ```
 
-Note: the link is `/docs/[slug]` — **never** `/docs/[category]/[slug]`. VitePress rewrites handle the folder.
+Note: the link is `/[slug]` — **never** `/docs/[category]/[slug]`. VitePress rewrites handle the folder.
 
 ### Link Text Rules
 
@@ -461,9 +461,9 @@ Note: the link is `/docs/[slug]` — **never** `/docs/[category]/[slug]`. VitePr
 
 | Bad | Good |
 |-----|------|
-| *"To learn more, [click here](/docs/email-sequence)."* | *"Read the [Email Sequence guide](/docs/email-sequence) for details."* |
-| *"Read this [documentation](/docs/automation-editor)."* | *"See the [Automation Editor reference](/docs/automation-editor)."* |
-| *"You can find this [in this article](/docs/contact-statuses)."* | *"This is covered in the [Contact Statuses doc](/docs/contact-statuses)."* |
+| *"To learn more, [click here](/email-sequence)."* | *"Read the [Email Sequence guide](/email-sequence) for details."* |
+| *"Read this [documentation](/automation-editor)."* | *"See the [Automation Editor reference](/automation-editor)."* |
+| *"You can find this [in this article](/contact-statuses)."* | *"This is covered in the [Contact Statuses doc](/contact-statuses)."* |
 
 ### External Links
 
@@ -474,9 +474,9 @@ Note: the link is `/docs/[slug]` — **never** `/docs/[category]/[slug]`. VitePr
 ### When to Cross-Reference
 
 Always link out to:
-- **Prerequisite docs** — *"You need to [enable the SMS module](/docs/configure-sms-module) first."*
-- **Related concepts** — *"Smart Codes are explained in detail in the [Smart Codes guide](/docs/smartcodes-in-fluentcrm-email-editor)."*
-- **The next logical step** — *"Once you have your form, [build the automation that listens for it](/docs/fluentcrm-automation-triggers)."*
+- **Prerequisite docs** — *"You need to [enable the SMS module](/configure-sms-module) first."*
+- **Related concepts** — *"Smart Codes are explained in detail in the [Smart Codes guide](/smartcodes-in-fluentcrm-email-editor)."*
+- **The next logical step** — *"Once you have your form, [build the automation that listens for it](/fluentcrm-automation-triggers)."*
 
 ### "What's Next?" Section
 
@@ -485,8 +485,8 @@ End every task-based doc with a "What's Next?" section. It guides the user forwa
 ```markdown
 ## What's Next?
 
-- [Set up your first automation funnel](/docs/automation-editor)
-- [Create an email sequence to nurture new contacts](/docs/email-sequence)
+- [Set up your first automation funnel](/automation-editor)
+- [Create an email sequence to nurture new contacts](/email-sequence)
 ```
 
 For purely conceptual or reference docs, "What's Next?" is optional.
@@ -915,12 +915,12 @@ Use this to determine where every new doc goes.
 When adding a new doc, update `.vitepress/config.mts`:
 
 ```ts
-{ text: 'Page Title Here', link: '/docs/the-slug' },
+{ text: 'Page Title Here', link: '/the-slug' },
 ```
 
 - Find the correct section comment (e.g., `// 3. Audience`)
 - Add the entry in the logical position
-- The `link` is always `/docs/[slug]` — never includes the folder
+- The `link` is always `/[slug]` — never includes the folder or `/docs/` prefix
 
 ---
 
@@ -998,8 +998,8 @@ End with: *"Should I apply all of these fixes, or which specific ones would you 
 1. Read `.vitepress/config.mts`
 2. Find the correct section by its `// N. Section Name` comment
 3. Add, remove, or reorder entries
-4. Verify the link is `/docs/slug` format and the `.md` file actually exists
-5. Don't change the section structure (sections are: Getting Started, Setup & Delivery, Audience, Campaigns & Forms, SMS Module, Automations & Events, Integrations, Reports & Analytics, Advanced & Developer, Migration & Updates, Help & Updates)
+4. Verify the link is `/slug` format (no `/docs/` prefix) and the `.md` file actually exists
+5. Don't change the section structure (sections are: Getting Started, Configuration & Delivery, Audience, Campaigns & Forms, SMS Module, Automations, Integrations, Reports & Analytics, Advanced & Developer, Migrate to FluentCRM, Help & Support)
 
 ---
 
@@ -1055,9 +1055,9 @@ End with: *"Should I apply all of these fixes, or which specific ones would you 
 
 ### Example 7: Vague Reference
 
-❌ *"To learn more, [click here](/docs/email-sequence)."*
+❌ *"To learn more, [click here](/email-sequence)."*
 
-✓ *"Read the [Email Sequence guide](/docs/email-sequence) for the full setup."*
+✓ *"Read the [Email Sequence guide](/email-sequence) for the full setup."*
 
 ---
 
@@ -1081,7 +1081,7 @@ End with: *"Should I apply all of these fixes, or which specific ones would you 
 
 ❌ *"> **Remember**, to use all the **Conditionals**, you need to have FluentCRM Pro Plugin installed and activated in your WordPress Site."*
 
-✓ *"> **Note:** This feature requires **FluentCRM Pro**. [See what's included →](/docs/how-to-install-upgrade-and-activate-license)"*
+✓ *"> **Note:** This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)"*
 
 ---
 
@@ -1197,7 +1197,7 @@ Run through this list before considering any doc complete or before reporting an
 - [ ] Format consistent within the file (don't mix `> **Note:**` with `>[!Note]`)
 
 ### Links
-- [ ] All internal links use `/docs/slug` format (never `/docs/folder/slug`)
+- [ ] All internal links use `/slug` format (never `/docs/slug` or `/docs/folder/slug`)
 - [ ] Link text is descriptive (no "click here" / "read more")
 - [ ] All linked slugs actually exist as `.md` files
 - [ ] External links use full `https://` URLs
@@ -1211,7 +1211,7 @@ Run through this list before considering any doc complete or before reporting an
 
 ### Sidebar
 - [ ] New doc added to correct section in `.vitepress/config.mts`
-- [ ] Link entry uses `/docs/slug` format
+- [ ] Link entry uses `/slug` format (no `/docs/` prefix)
 - [ ] Position in sidebar is logical (not random)
 
 ### YouTube Embeds

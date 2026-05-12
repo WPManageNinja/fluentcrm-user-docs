@@ -20,7 +20,7 @@ FluentCRM provides a wide range of automation triggers for FluentCart, enabling 
 Go to **FluentCRM → Automations** and click the **\+ New Automation** button. Select an **Automation Trigger** from the available **FluentCart** options, then click the **Continue** button to build your automation funnel as needed.
 
 >[!Note]
->If you want to know more about how to create a complete automation, check out our [documentation](/docs/automation-editor) for detailed steps.
+>If you want to know more about how to create a complete automation, check out our [documentation](/automation-editor) for detailed steps.
 
 ![new automation 01](/integrations/fluentcart-integration-with-fluentcrm/New-Automation-01-scaled.webp)
 
@@ -72,7 +72,7 @@ For example, after an **Order Paid** trigger, you could:
 -   Use **Send Custom Email** to send a thank you note with related product suggestions.
 -   Use **Add Notes & Activity** to add a record of the purchase to the contact's profile.
 
-If you want to know more about automation actions, check out our [documentation](/docs/primary-automation-actions) for detailed steps.
+If you want to know more about automation actions, check out our [documentation](/primary-automation-actions) for detailed steps.
 
 ## **Contact Segmentation & Filtering with FluentCart Data**
 

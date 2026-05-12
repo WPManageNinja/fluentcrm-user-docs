@@ -29,13 +29,13 @@ FluentCRM also lets you automate tasks such as sending behavioral emails, email 
 
 FluentCRM’s email marketing automation includes four major elements. These are:
 
-1.  **Triggers:** Triggers are essential for initiating email marketing automation. They can be behavior-based, or time-based. Learn more about FluentCRM’s [Triggers](/docs/fluentcrm-automation-triggers).
+1.  **Triggers:** Triggers are essential for initiating email marketing automation. They can be behavior-based, or time-based. Learn more about FluentCRM’s [Triggers](/fluentcrm-automation-triggers).
 
-2.  **Action Blocks:** The actions that will be done throughout the funnel for example sending an email, adding the user to a list, etc. Learn everything about FluentCRM [Action Blocks](/docs/primary-automation-actions).
+2.  **Action Blocks:** The actions that will be done throughout the funnel for example sending an email, adding the user to a list, etc. Learn everything about FluentCRM [Action Blocks](/primary-automation-actions).
 
-3.  **Goals:** Benchmarking the behavior of the users for example whether they purchased a product, clicked on a link, etc. Learn everything about FluentCRM [Benchmark Blocks](/docs/goals-or-benchmark-actions).
+3.  **Goals:** Benchmarking the behavior of the users for example whether they purchased a product, clicked on a link, etc. Learn everything about FluentCRM [Benchmark Blocks](/goals-or-benchmark-actions).
 
-4.  **Conditionals:** Conditionals will let you set multiple paths based on if/else conditions. Learn more about [FluentCRM Conditionals](/docs/conditional-automation-actions).
+4.  **Conditionals:** Conditionals will let you set multiple paths based on if/else conditions. Learn more about [FluentCRM Conditionals](/conditional-automation-actions).
 
 First, from your FluentCRM dashboard & go to the **Automation** from the navbar. Then click the **New Automation** button to add an automation funnel.
 
@@ -65,7 +65,7 @@ After setting up your trigger, you can design your marketing automation workflow
 
 ## Action Blocks
 
-[Actions blocks](/docs/primary-automation-actions) are tasks that you wish to trigger from your side. Click on the plus icon on the Automation Funnel page. 
+[Actions blocks](/primary-automation-actions) are tasks that you wish to trigger from your side. Click on the plus icon on the Automation Funnel page. 
 
 ![tutorlms actions goal](/integrations/tutorlms-integration-with-fluentcrm/Tutorlms-actions-goal.webp)
 
@@ -87,7 +87,7 @@ If you don't want to enroll the existing WordPress users in the action then simp
 
 ## Goals
 
-[Goals blocks](/docs/goals-or-benchmark-actions) are goal or action items that your user might do. They let you measure these steps and automate the funnel based on goal completion. Click on the plus icon(+) to open the pop-up to select the Goals. 
+[Goals blocks](/goals-or-benchmark-actions) are goal or action items that your user might do. They let you measure these steps and automate the funnel based on goal completion. Click on the plus icon(+) to open the pop-up to select the Goals. 
 
 ![tutorlms goals in fluentcrm](/integrations/tutorlms-integration-with-fluentcrm/TutorLMS-goals-in-FluentCRM.webp)
 
@@ -97,9 +97,9 @@ Here you can choose any goals. In these Goals, you can add an internal label, sp
 
 ## **Condition**
 
-[Conditionals](/docs/conditional-automation-actions) are conditional logic. If you want to automate different activities based on If/Else conditions, you can choose a conditional. For TutorLMS, FluentCRM allows you to automate different activities based on whether a student in the automation has enrolled in a course.
+[Conditionals](/conditional-automation-actions) are conditional logic. If you want to automate different activities based on If/Else conditions, you can choose a conditional. For TutorLMS, FluentCRM allows you to automate different activities based on whether a student in the automation has enrolled in a course.
 
-If you want to use other conditionals please check out this [documentation](/docs/conditional-automation-actions). 
+If you want to use other conditionals please check out this [documentation](/conditional-automation-actions). 
 
 ![tutorlms conditional in fluentcrm](/integrations/tutorlms-integration-with-fluentcrm/TutorLMS-Conditional-in-FluentCRM.webp)
 

@@ -23,7 +23,7 @@ If you'd prefer to create your own funnel, you can start from scratch by clickin
 
 ![memberpress integration fluentcrm 2](/integrations/memberpress-integration-with-fluentcrm/Memberpress-Integration-FluentCRM-2-scaled-2.webp)
 
-Now enter an **Internal Label** for the automation funnel, select the **MemberPress** category to see the available triggers for the MemberPress, now choose the trigger that suits your needs. There are two [Memberpress Triggers](/docs/fluentcrm-membership-triggers).
+Now enter an **Internal Label** for the automation funnel, select the **MemberPress** category to see the available triggers for the MemberPress, now choose the trigger that suits your needs. There are two [Memberpress Triggers](/fluentcrm-membership-triggers).
 
 1.  **Membership Enrollment:** When a member enrolls at a membership level.
 2.  **Subscription Expired:** when members' subscriptions expire this trigger will start.
@@ -42,7 +42,7 @@ Click the **Continue** button for the next step.
 
 ## Setting Up Actions and Triggers
 
- **Action Blocks**: [Actions](/docs/primary-automation-actions) are tasks triggered by you, like sending an email. Add actions based on what you want to happen next. 
+ **Action Blocks**: [Actions](/primary-automation-actions) are tasks triggered by you, like sending an email. Add actions based on what you want to happen next. 
 
 ![memberpress integration fluentcrm 5](/integrations/memberpress-integration-with-fluentcrm/Memberpress-Integration-FluentCRM-5-scaled-5.webp)
 

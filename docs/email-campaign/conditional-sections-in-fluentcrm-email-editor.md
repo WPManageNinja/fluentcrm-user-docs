@@ -26,10 +26,10 @@ When the Conditional Section is selected, the **Block** settings sidebar on the 
   * **Show if in selected tags:** The content will only be visible to subscribers who have the tags you specify.
   * **Show if not in selected tags:** The content will be hidden from anyone who has the selected tags but shown to everyone else.
 
-**Tags:** Select one or multiple tags from your database. For example, you might select an "Affiliate" tag to show a special bonus offer only to your partners. To know more about Tags please check the [**Segmentation Guide.**](/docs/segment-your-audience/#Tags)
+**Tags:** Select one or multiple tags from your database. For example, you might select an "Affiliate" tag to show a special bonus offer only to your partners. To know more about Tags please check the [**Segmentation Guide.**](/segment-your-audience/#Tags)
 
 Once you sent the email as an Email Campaign, you will then be able to see the actual email that was generated and delivered to the recipients.
 
 ![crm email editor conditional block](/email-campaign/conditional-sections-in-fluentcrm-email-editor/crm_email_editor_conditional_block.png)
 
-Remember that, The Conditional Sections do not support nesting. You can add one single block to each conditional block from any of the [Text](/docs/content-blocks-in-fluentcrm-email-editor/#Text-Content-Blocks), [Media](/docs/content-blocks-in-fluentcrm-email-editor/#Media-Content-Blocks), [Design](/docs/content-blocks-in-fluentcrm-email-editor/#Design-Content-Blocks), or [Widget Blocks](/docs/content-blocks-in-fluentcrm-email-editor/#Widgets-Content-Blocks).
+Remember that, The Conditional Sections do not support nesting. You can add one single block to each conditional block from any of the [Text](/content-blocks-in-fluentcrm-email-editor/#Text-Content-Blocks), [Media](/content-blocks-in-fluentcrm-email-editor/#Media-Content-Blocks), [Design](/content-blocks-in-fluentcrm-email-editor/#Design-Content-Blocks), or [Widget Blocks](/content-blocks-in-fluentcrm-email-editor/#Widgets-Content-Blocks).

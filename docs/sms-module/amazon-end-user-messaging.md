@@ -199,4 +199,4 @@ After saving, FluentCRM generates a unique **SMS Incoming Webhook URL** at the b
 
 ---
 
-Your **Amazon End User Messaging integration** is now complete. You are ready to use AWS for high-volume SMS campaigns and automated workflows in FluentCRM. To start sending, visit the [SMS Automation](/docs/sms-automation) or [SMS Campaign Report](/docs/sms-campaign-report) documentation.
+Your **Amazon End User Messaging integration** is now complete. You are ready to use AWS for high-volume SMS campaigns and automated workflows in FluentCRM. To start sending, visit the [SMS Automation](/sms-automation) or [SMS Campaign Report](/sms-campaign-report) documentation.

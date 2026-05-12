@@ -35,14 +35,14 @@ A popup will display several ready-to-use **Templates**.
 Mapping ensures that every person who fills out your form is correctly categorized in your CRM.
 
 * **Form Title:** Enter a clear name for your form.
-* **List & Tag Selection:** Select the specific **[Lists](/docs/segment-your-audience)** and **[Tags](/docs/segment-your-audience)** you want to apply to contacts who submit this form. 
+* **List & Tag Selection:** Select the specific **[Lists](/segment-your-audience)** and **[Tags](/segment-your-audience)** you want to apply to contacts who submit this form. 
 
 >[!Note]
 >Tag and List must be created in FluentCRM before setting up the form.
 
-* **Double Opt-in:** Enable the **[Double Opt-in Confirmation](/docs/global-double-opt-in-settings#double-opt-in-settings)** checkbox to ensure new contacts confirm their subscription via email before being marked as "Subscribed".
+* **Double Opt-in:** Enable the **[Double Opt-in Confirmation](/global-double-opt-in-settings#double-opt-in-settings)** checkbox to ensure new contacts confirm their subscription via email before being marked as "Subscribed".
 
-You will also see a message saying “This form will be created in Fluent Forms and you can customize it anytime” which means the form is customizable and you can design and configure settings later at any time. We made a dedicated guide on that in [Fluent Forms Advanced Configuration](/docs/opt-in-forms-advanced-configuration).
+You will also see a message saying “This form will be created in Fluent Forms and you can customize it anytime” which means the form is customizable and you can design and configure settings later at any time. We made a dedicated guide on that in [Fluent Forms Advanced Configuration](/opt-in-forms-advanced-configuration).
 
 ![Maping Tags and List](/forms/opt-in-forms-fluent-forms-basic-configuration/create-a-form-4.webp)
 
@@ -102,7 +102,7 @@ Since a successful feed adds the contact immediately, perform a final check in y
  - Navigate to **Contacts ➜ All Contacts**.
  - Your test submission should appear in the list with its assigned **Lists**, **Tags**, and current **Subscription Status** (such as Pending or Subscribed).
 
-For more complex setups, such as dynamic tag selection or conditional logic, please refer to the **[Fluent Forms Advanced Configuration](/docs/opt-in-forms-advanced-configuration)** guide.
+For more complex setups, such as dynamic tag selection or conditional logic, please refer to the **[Fluent Forms Advanced Configuration](/opt-in-forms-advanced-configuration)** guide.
 
 ![Contact Verification](/forms/opt-in-forms-fluent-forms-basic-configuration/viewing-conatct-9.webp)
 

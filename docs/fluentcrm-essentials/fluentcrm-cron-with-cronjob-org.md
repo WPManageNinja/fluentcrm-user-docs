@@ -7,7 +7,7 @@ order: 0
 
 # Cron Job: FluentCRM Cron with Cron-job.org
 
-In this article, we will be exploring how to configure the cron job in other ways, in case we do not have permission, feature, or authorization to configure the cron job the recommended way as in the [Replace WordPress Cron with a Real Cron Job](/docs/replace-wordpress-cron-with-a-real-cron-job) guide with PHP Application Binary.
+In this article, we will be exploring how to configure the cron job in other ways, in case we do not have permission, feature, or authorization to configure the cron job the recommended way as in the [Replace WordPress Cron with a Real Cron Job](/replace-wordpress-cron-with-a-real-cron-job) guide with PHP Application Binary.
 
 There are a few online services that provide remote service to call a specific script available and public on the web. The recommended setup is to invoke the cron script with PHP Binary itself. We have dedicated documentation regarding the differences between remote and local cron job configurations here: **Cron Job: Differences and Troubleshooting**. In addition, a few key points are listed below:
 

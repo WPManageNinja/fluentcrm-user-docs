@@ -212,7 +212,7 @@ class CustomBenchmark
 
 The `pushBlockFields()` method returns the configuration schema used to render the benchmark’s settings panel in the funnel editor, and `handle()` is called when the benchmark is triggered so you can implement your own goal‑handling logic.
 
-> The “Target Products” area is generated from the `getBlockFields()` configuration. For more field types and options, see the [form field code structure](/docs/form-field-code-structure) reference.
+> The “Target Products” area is generated from the `getBlockFields()` configuration. For more field types and options, see the [form field code structure](/form-field-code-structure) reference.
 
 ---
 

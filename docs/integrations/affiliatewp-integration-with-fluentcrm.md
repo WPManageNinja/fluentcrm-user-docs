@@ -52,7 +52,7 @@ When AffiliateWP is active, FluentCRM exposes affiliate-specific smart codes you
 -   `##affwp.unpaid_earnings##` – Current unpaid balance.
 -   `##affwp.paid_earnings##` – Lifetime paid earnings.
 
-Combine these with [Conditional Sections](/docs/conditional-sections-in-fluentcrm-email-editor) to surface different content to high-performers vs. dormant affiliates.
+Combine these with [Conditional Sections](/conditional-sections-in-fluentcrm-email-editor) to surface different content to high-performers vs. dormant affiliates.
 
 ## Use cases
 

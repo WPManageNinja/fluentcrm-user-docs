@@ -13,7 +13,7 @@ This guide covers advanced techniques for extending your subscription forms beyo
 
 While pre-made templates offer a quick start, you can manually add a wide variety of input fields to capture more detailed subscriber data.
 
-* **Adding New Fields:** From the [basic configuration guide](/docs/opt-in-forms-fluent-forms-basic-configuration), we saw the **Edit Form** buttons from both of FluentCRM and Fluent Forms. 
+* **Adding New Fields:** From the [basic configuration guide](/opt-in-forms-fluent-forms-basic-configuration), we saw the **Edit Form** buttons from both of FluentCRM and Fluent Forms. 
 
 ![Edit Form](/forms/opt-in-forms-advanced-configuration/edit-form-1.webp)
 

@@ -62,7 +62,7 @@ FluentCRM offers automation triggers for Fluent Forms, allowing you to automate 
 
 Go to **FluentCRM** and create a new automation. Select an **Automation Trigger** from the available Fluent Forms options then click the **Continue** button and build your automation funnel as needed.
 
-If you want to know more about how to create an automation, check out our [documentation](/docs/automation-editor) for detailed steps
+If you want to know more about how to create an automation, check out our [documentation](/automation-editor) for detailed steps
 
 ### **Available Automation Triggers**
 

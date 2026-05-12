@@ -7,9 +7,9 @@ order: 0
 
 # Email Actions
 
-FluentCRM provides several [Actions](/docs/primary-automation-actions) especially for **Email Marketing,** to automatically send emails to users. Once automation is triggered, you can add the desired **Action/s** to handle advanced, repetitive, or routine tasks. This article will provide detailed information about all **Email Actions** in **FluentCRM Automation**.
+FluentCRM provides several [Actions](/primary-automation-actions) especially for **Email Marketing,** to automatically send emails to users. Once automation is triggered, you can add the desired **Action/s** to handle advanced, repetitive, or routine tasks. This article will provide detailed information about all **Email Actions** in **FluentCRM Automation**.
 
-> **Remember**, to use all the **Email Actions** except “**Send Custom Email action**”, you need to have [FluentCRM Pro Plugin](/docs/how-to-install-upgrade-and-activate-license) installed and activated on your WordPress Site.
+> **Remember**, to use all the **Email Actions** except “**Send Custom Email action**”, you need to have [FluentCRM Pro Plugin](/how-to-install-upgrade-and-activate-license) installed and activated on your WordPress Site.
 
 ## All Email Actions
 
@@ -17,7 +17,7 @@ To learn how you can use all the **Email Actions** in your **FluentCRM**, follow
 
 First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
 
-> To learn the process of creating a new automation funnel, read this [**Documentation**](/docs/automation-editor).
+> To learn the process of creating a new automation funnel, read this [**Documentation**](/automation-editor).
 
 For example, I opened the **Tag Applied** automation funnel to explain all the **Actions** in **CRM**.
 
@@ -65,7 +65,7 @@ Select this option to send emails to the CRM Contacts within the Automation.
 
 -   **Email Subject**: The Email Subject is shown as a subject or topic in the recipient’s email clients.
 -   **Email Pre-Header**: An Additional short subject is shown as a small subject line beside the primary subject.
--   **Email Body**: Here, you will write the entire email body text. To learn more, read these [Compose Email in FluentCRM](/docs/compose-email-in-fluentcrm) and [Importing Email Templates into FluentCRM](/docs/email-templates/#Importing-Email-Templates-into-FluentCRM) documentation.
+-   **Email Body**: Here, you will write the entire email body text. To learn more, read these [Compose Email in FluentCRM](/compose-email-in-fluentcrm) and [Importing Email Templates into FluentCRM](/email-templates/#Importing-Email-Templates-into-FluentCRM) documentation.
 
 ![Send to the contact under send email to](/automation-funnels/automation-email-actions/Send-To-the-Contact-under-Send-Email-to-5.webp)
 
@@ -75,7 +75,7 @@ Select this option to send emails to any custom email address within the Automat
 
 -   **Send To Email Address (If Custom)**: Here, enter the desired email address where you want to send this Email. 
 
-> To learn the use of the other setting options mentioned in the screenshot below, read this [**Section**](/docs/automation-email-actions/#a-send-to-contact).
+> To learn the use of the other setting options mentioned in the screenshot below, read this [**Section**](/automation-email-actions/#a-send-to-contact).
 
 ![Send to custom email address under send email to](/automation-funnels/automation-email-actions/Send-To-Custom-Email-Address-under-Send-Email-to-6.webp)
 
@@ -101,9 +101,9 @@ Also, check this “**Skip sending email if date is overdued”** option if you 
 
 Checking this option lets you customize your form name and email.
 
--   **From Name & Email**: Here, you can specify the sender name and email in the **From Name** and **From Email** fields respectively. Plus, you can **add different dynamic data** in the **From Name** by inserting [SmartCodes](/docs/smartcodes-in-fluentcrm-email-editor) to make the email more personalized.
+-   **From Name & Email**: Here, you can specify the sender name and email in the **From Name** and **From Email** fields respectively. Plus, you can **add different dynamic data** in the **From Name** by inserting [SmartCodes](/smartcodes-in-fluentcrm-email-editor) to make the email more personalized.
 
--   **Reply To Name & Email**: With this option, you can specify the receiver name and email for users to reply to the notification, ensuring you receive their responses. Also here, you can use the [SmartCodes](/docs/smartcodes-in-fluentcrm-email-editor) in the **Reply To Name** field. If you leave this field blank, the user reply will be sent to the Default Email you set for your site. 
+-   **Reply To Name & Email**: With this option, you can specify the receiver name and email for users to reply to the notification, ensuring you receive their responses. Also here, you can use the [SmartCodes](/smartcodes-in-fluentcrm-email-editor) in the **Reply To Name** field. If you leave this field blank, the user reply will be sent to the Default Email you set for your site. 
 
 ![Set custom from name and email](/automation-funnels/automation-email-actions/Set-Custom-From-Name-and-Email-9.webp)
 
@@ -118,7 +118,7 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 
 -   **Internal Description**: A **description** **of the action** will also be automatically added as a Subtitle. You can also change it to suit your needs.
 
--   **Select Email Sequence**: Select an **Email Sequence** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing **Email Sequence** in your **FluentCRM**, read this [Documentation](/docs/email-sequence) to create one.
+-   **Select Email Sequence**: Select an **Email Sequence** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing **Email Sequence** in your **FluentCRM**, read this [Documentation](/email-sequence) to create one.
 
 -   **Re-assign Sequence  Emails?**: Check this option if you want to restart the sequence emails for already existing contacts in the email sequence.
 
@@ -134,9 +134,9 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 
 Here are the Settings of the Cancel Sequences Emails action:
 
--   **Select Email Sequence**: Select an **Email Sequence** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing **Email Sequence** in your **FluentCRM**, read this [Documentation](/docs/email-sequence) to create one.
+-   **Select Email Sequence**: Select an **Email Sequence** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing **Email Sequence** in your **FluentCRM**, read this [Documentation](/email-sequence) to create one.
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this [**Section**](/docs/automation-email-actions/#here-are-the-settings-of-the-set-sequence-emails-action).
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this [**Section**](/automation-email-actions/#here-are-the-settings-of-the-set-sequence-emails-action).
 
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
@@ -150,9 +150,9 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 
 Here are the Settings of the Send Campaign Email action:
 
--   **Select Campaign**: Select a **Campaign** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing **Email Campaign** in your **FluentCRM**, read this [Documentation](/docs/setting-up-campaign) to create one.
+-   **Select Campaign**: Select a **Campaign** from the dropdown list using the **Dropdown Arrow**. If you do not have any existing **Email Campaign** in your **FluentCRM**, read this [Documentation](/setting-up-campaign) to create one.
 
-> To learn the use of the First Two setting options mentioned in the screenshot below, read this [Section](/docs/automation-email-actions/#here-are-the-settings-of-the-set-sequence-emails-action).
+> To learn the use of the First Two setting options mentioned in the screenshot below, read this [Section](/automation-email-actions/#here-are-the-settings-of-the-set-sequence-emails-action).
 
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.

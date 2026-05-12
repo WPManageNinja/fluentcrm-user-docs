@@ -7,20 +7,20 @@ order: 0
 
 # LMS Actions
 
-[FluentCRM](https://fluentcrm.com/) includes dedicated [Action](/docs/primary-automation-actions) blocks for LMS platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**. These actions let you automate enrollments and removals based on funnel events.
+[FluentCRM](https://fluentcrm.com/) includes dedicated [Action](/primary-automation-actions) blocks for LMS platforms like **LifterLMS**, **LearnDash**, and **TutorLMS**. These actions let you automate enrollments and removals based on funnel events.
 
 In this guide, we will walk through the LMS action flow using the currently available action screens.
 
 > To use LMS actions, install and activate your LMS plugins first. You can also review these integration guides:
-> - [LearnDash Integration](/docs/learndash-integration-with-fluentcrm)
-> - [LifterLMS Integration](/docs/lifterlms-integration-with-fluentcrm)
-> - [TutorLMS Integration](/docs/tutorlms-integration-with-fluentcrm)
+> - [LearnDash Integration](/learndash-integration-with-fluentcrm)
+> - [LifterLMS Integration](/lifterlms-integration-with-fluentcrm)
+> - [TutorLMS Integration](/tutorlms-integration-with-fluentcrm)
 
 ## Open the Action Picker
 
 Go to **Automations** from the FluentCRM navbar and open your target automation (or create a new one).
 
-> To learn how to create a new automation funnel, read [Automation Editor](/docs/automation-editor).
+> To learn how to create a new automation funnel, read [Automation Editor](/automation-editor).
 
 ![Open desired automation or create new one](/automation-funnels/lms-automation-actions/Open-desired-Automation-or-Create-new-one-3-scaled-1.webp)
 

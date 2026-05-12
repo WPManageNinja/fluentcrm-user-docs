@@ -56,7 +56,7 @@ These blocks help you manage the layout and interactive elements of your email:
 
 ## Conditional Content Blocks
 
-The **Conditional Section** allows you to show specific content only to selected subscribers. For more detail, see [Conditional Sections in the Email Editor](/docs/conditional-sections-in-fluentcrm-email-editor).
+The **Conditional Section** allows you to show specific content only to selected subscribers. For more detail, see [Conditional Sections in the Email Editor](/conditional-sections-in-fluentcrm-email-editor).
 
 * **Condition Type:** You can choose to “Show if in selected tags” or “Show if not in selected tags”.
 * **Tag Selection:** Select the specific tags that will trigger the visibility of this block.

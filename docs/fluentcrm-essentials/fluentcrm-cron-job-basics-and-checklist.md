@@ -7,7 +7,7 @@ order: 0
 
 # Cron Job: Basics & Checklist
 
-FluentCRM is a plugin that works continuously in the background to complete and process the tasks that are scheduled every minute like any other Email Marketing Application. This article will guide you through the **Primary Requirements** of **WordPress Cron Job Handover** to either [**Server-side**](/docs/replace-wordpress-cron-with-a-real-cron-job) or **Alternative Methods.**
+FluentCRM is a plugin that works continuously in the background to complete and process the tasks that are scheduled every minute like any other Email Marketing Application. This article will guide you through the **Primary Requirements** of **WordPress Cron Job Handover** to either [**Server-side**](/replace-wordpress-cron-with-a-real-cron-job) or **Alternative Methods.**
 
 ## What Cron Jobs Do?
 
@@ -29,7 +29,7 @@ Go to **Settings** from the top navigation bar. Then, from the left sidebar, ope
 
 ## Disable Default WordPress Cron System
 
-Before we proceed to configure a [**Server-side**](/docs/replace-wordpress-cron-with-a-real-cron-job) cron job, we will need to confirm that the **default PHP-based scheduled job** **running** is **disabled** from the **WordPress Configuration File** (wp-config.php).
+Before we proceed to configure a [**Server-side**](/replace-wordpress-cron-with-a-real-cron-job) cron job, we will need to confirm that the **default PHP-based scheduled job** **running** is **disabled** from the **WordPress Configuration File** (wp-config.php).
 
 To do this please open the wp-config.php file and look for the section below:
 
@@ -57,7 +57,7 @@ define('DISABLE_WP_CRON', true);    // Disable the default PHP-based Cron invoca
 
 **Now please follow the links relevant to your hosting and preference to configure the server-side cron job:**
 
--   [Cron Job: Replace with a Server-side Cron Job (cPanel)](/docs/replace-wordpress-cron-with-a-real-cron-job)
--   [Cron Job: FluentCRM Cron With Cloudways](/docs/fluentcrm-cron-with-cloudways)
--   [Cron Job: FluentCRM Cron with Cron-job.org](/docs/fluentcrm-cron-with-cronjob-org)
--   [Cron Job: FluentCRM Cron with EasyCron](/docs/fluentcrm-cron-with-easycron)
+-   [Cron Job: Replace with a Server-side Cron Job (cPanel)](/replace-wordpress-cron-with-a-real-cron-job)
+-   [Cron Job: FluentCRM Cron With Cloudways](/fluentcrm-cron-with-cloudways)
+-   [Cron Job: FluentCRM Cron with Cron-job.org](/fluentcrm-cron-with-cronjob-org)
+-   [Cron Job: FluentCRM Cron with EasyCron](/fluentcrm-cron-with-easycron)

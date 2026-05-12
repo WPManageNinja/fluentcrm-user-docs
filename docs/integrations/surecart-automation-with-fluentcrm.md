@@ -9,7 +9,7 @@ order: 0
 
 SureCart Plugin makes e-commerce easy for businesses. It is feature-rich and has a user-friendly interface, allowing retailers to develop gorgeous online storefronts, manage inventory efficiently, and provide secure checkout experiences.
 
-FluentCRM automatically integrates with Surecart. It lets you automate some marketing automation [triggers](/docs/fluentcrm-automation-triggers). Follow these steps to learn how to use marketing automation with SureCart.
+FluentCRM automatically integrates with Surecart. It lets you automate some marketing automation [triggers](/fluentcrm-automation-triggers). Follow these steps to learn how to use marketing automation with SureCart.
 
 ## Marketing Automation Trigger for Surcart
 
@@ -75,7 +75,7 @@ Choose the desired action block based on your requirements. FluentCRM offers man
 
 ![image](/integrations/surecart-automation-with-fluentcrm/image-8.png)
 
-See detailed instructions on using these action blocks [here](/docs/primary-automation-actions).
+See detailed instructions on using these action blocks [here](/primary-automation-actions).
 
 ## Goals/ Triggers Blocks
 
@@ -85,7 +85,7 @@ See detailed instructions on using these action blocks [here](/docs/primary-auto
 
 ![image](/integrations/surecart-automation-with-fluentcrm/image-9.png)
 
-If you want to use other goals or benchmarks check our [documentation](/docs/goals-or-benchmark-actions).
+If you want to use other goals or benchmarks check our [documentation](/goals-or-benchmark-actions).
 
 ## Conditions
 
@@ -93,7 +93,7 @@ If you want to use other goals or benchmarks check our [documentation](/docs/goa
 
 ![image](/integrations/surecart-automation-with-fluentcrm/image-10.png)
 
-If you want to use other conditionals please check out this [documentation](/docs/conditional-automation-actions).
+If you want to use other conditionals please check out this [documentation](/conditional-automation-actions).
 
 ### Contact’s Purchase History 
 

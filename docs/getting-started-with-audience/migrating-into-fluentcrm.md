@@ -75,8 +75,8 @@ Locate the vertical three-dots menu **icon (⋮)** on the right side of the page
 
 Currently, we support migrating from other CRM via API, the list of supported CRM with migration process is as follows:
 
-1.  **[MailChimp](/docs/migrating-into-fluentcrm-from-mailchimp)**
-2.  **[ConvertKit](/docs/migrating-into-fluentcrm-from-convertkit)**
-3.  **[MailerLite](/docs/migrating-into-fluentcrm-from-mailerlite)**
-4.  **[Drip](/docs/migrating-into-fluentcrm-from-drip)**
-5.  **[ActiveCampaign](/docs/migrating-into-fluentcrm-from-activecampaign)**
+1.  **[MailChimp](/migrating-into-fluentcrm-from-mailchimp)**
+2.  **[ConvertKit](/migrating-into-fluentcrm-from-convertkit)**
+3.  **[MailerLite](/migrating-into-fluentcrm-from-mailerlite)**
+4.  **[Drip](/migrating-into-fluentcrm-from-drip)**
+5.  **[ActiveCampaign](/migrating-into-fluentcrm-from-activecampaign)**

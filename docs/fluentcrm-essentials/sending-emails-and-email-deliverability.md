@@ -45,7 +45,7 @@ Click the button to install FluentSMTP. Or, you can download and install FluentS
 
 ## FluentCRM Email Processing
 
-There are different places from where Emails can be sent such as **Test Emails** from [**Email Templates**](/docs/email-templates), [**Email Campaigns**](/docs/setting-up-campaign), [**Email Sequences**](/docs/email-sequence), [**Automation Email Actions**](/docs/automation-email-actions), [**Double Opt-in Settings**](/docs/global-double-opt-in-settings), and [**Recurring Campaigns**](/docs/recurring-campaign).
+There are different places from where Emails can be sent such as **Test Emails** from [**Email Templates**](/email-templates), [**Email Campaigns**](/setting-up-campaign), [**Email Sequences**](/email-sequence), [**Automation Email Actions**](/automation-email-actions), [**Double Opt-in Settings**](/global-double-opt-in-settings), and [**Recurring Campaigns**](/recurring-campaign).
 
 FluentCRM generates and schedules emails from various points, including **Campaigns**, **Sequences**, and **Automations**. Once triggered, the system starts a background task to generate unique content and headers for each subscriber.
 

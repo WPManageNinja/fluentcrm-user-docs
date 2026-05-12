@@ -198,7 +198,7 @@ The `pushBlockFields()` method returns the configuration schema for the actionâ€
 
 The block configuration UI will look similar to this:
 
-> The field definitions inside `getBlockFields()` follow the same structure as other FluentCRM form fields. For more field types and options, see the [form field code structure](/docs/form-field-code-structure) reference.
+> The field definitions inside `getBlockFields()` follow the same structure as other FluentCRM form fields. For more field types and options, see the [form field code structure](/form-field-code-structure) reference.
 
 ---
 

@@ -11,8 +11,8 @@ Once your list and forms are set, you are ready to go for creating an email c
 
 **Things to do before you start an email campaign with FluentCRM**
 
--   Firstly make sure you have subscribers in your contact lists. If you don’t have subscribers in your contact lists, [Import Contacts into FluentCRM](/docs/import-contacts-into-fluentcrm) or follow the [Opt-in Forms (Fluent Forms) Basic Configuration](/docs/opt-in-forms-fluent-forms-basic-configuration) to capture leads from a Signup form.
--   Be sure to configure [FluentCRM Global Settings](/docs/fluentcrm-global-settings) before you start sending your first email campaign.
+-   Firstly make sure you have subscribers in your contact lists. If you don’t have subscribers in your contact lists, [Import Contacts into FluentCRM](/import-contacts-into-fluentcrm) or follow the [Opt-in Forms (Fluent Forms) Basic Configuration](/opt-in-forms-fluent-forms-basic-configuration) to capture leads from a Signup form.
+-   Be sure to configure [FluentCRM Global Settings](/fluentcrm-global-settings) before you start sending your first email campaign.
 
 https://www.youtube.com/watch?v=XSAmIlfMga0
 
@@ -26,7 +26,7 @@ From **Emails ➜ Campaigns**, you can create an email campaign by clicking on t
 
 A popup will appear asking for an **Internal Campaign Title**. This name is for your reference only and will not be seen by subscribers. After entering the title, choose your preferred editor:
 
- * **Default (Gutenberg):** The v3 Gutenberg-native editor with device preview, [Email Patterns](/docs/email-patterns), and [AI Writing](/docs/ai-writing-settings).
+ * **Default (Gutenberg):** The v3 Gutenberg-native editor with device preview, [Email Patterns](/email-patterns), and [AI Writing](/ai-writing-settings).
  * **Visual Builder:** A drag-and-drop builder for highly designed layouts.
  * **Classic Editor:** A simple, traditional text editor.
  * **Raw HTML:** For advanced users who want to paste custom code.
@@ -37,18 +37,18 @@ Click **Create Campaign** to move to the editor.
 
 ## 2. Compose Your Email
 
-In the editor, you can start writing your content. You can use SmartCodes (like <code>&#123;&#123;contact.first_name&#125;&#125;</code>) to personalize the message for each recipient. Please check our [**Compose Email in FluentCRM**](/docs/compose-email-in-fluentcrm) to know a detailed guide about composing Emails in FluentCRM.
+In the editor, you can start writing your content. You can use SmartCodes (like <code>&#123;&#123;contact.first_name&#125;&#125;</code>) to personalize the message for each recipient. Please check our [**Compose Email in FluentCRM**](/compose-email-in-fluentcrm) to know a detailed guide about composing Emails in FluentCRM.
 
 You can add images, buttons, and various text blocks to make your email engaging.
 
-Once you are done manually composing the new **Email Content** or [Importing an existing **Email Template**](/docs/email-templates#Importing-Email-Templates-into-FluentCRM) click the **Next** button at the top right.
+Once you are done manually composing the new **Email Content** or [Importing an existing **Email Template**](/email-templates#Importing-Email-Templates-into-FluentCRM) click the **Next** button at the top right.
 
 ![crm campaign compose overview](/email-campaign/setting-up-campaign/crm_campaign_compose_overview-3.webp)
 
 
 ### Import Existing Email Template
 
-You can also use a premade or predesigned **Email Template** to use in the Email Campaign by Clicking on the **Emails > Email Templates > More Action > Import** button. To know more details about Email Templates please visit [Email Templates in FluentCRM.](/docs/email-templates)
+You can also use a premade or predesigned **Email Template** to use in the Email Campaign by Clicking on the **Emails > Email Templates > More Action > Import** button. To know more details about Email Templates please visit [Email Templates in FluentCRM.](/email-templates)
 
 ![crm campaign import template](/email-campaign/setting-up-campaign/crm_campaign_import_template-4.webp)
 
@@ -65,7 +65,7 @@ You can **Enable A/B testing** to try different subject lines. Also, you can add
 You can set a **Priority (%)** for each version; the system will send the variations to a portion of your list to see which performs best.
 
 >[!Note]
->The available data properties are discussed in the [SmartCode in Email Editor](/docs/smartcodes-in-fluentcrm-email-editor).
+>The available data properties are discussed in the [SmartCode in Email Editor](/smartcodes-in-fluentcrm-email-editor).
 
 ![crm campaign ab](/email-campaign/setting-up-campaign/subject-and-settings-5.webp)
 
@@ -81,7 +81,7 @@ Click the checkbox to add UTM parameters to every URL in the email: **Campaign S
 
 ![crm campaign utm](/email-campaign/setting-up-campaign/crm_campaign_UTM-6.webp)
 
-> **New in v3:** Once a campaign is sent, the UTM tags you applied are visible in the campaign's **Details** tab and shown next to each tracked link in the **Link Activity** report. This makes it easy to confirm what was tagged after the fact – see [Campaign Summary & Actions](/docs/campaign-summary-actions) for the full report.
+> **New in v3:** Once a campaign is sent, the UTM tags you applied are visible in the campaign's **Details** tab and shown next to each tracked link in the **Link Activity** report. This makes it easy to confirm what was tagged after the fact – see [Campaign Summary & Actions](/campaign-summary-actions) for the full report.
 
 #### Send a Test Email
 
@@ -104,9 +104,9 @@ Once you have configured all of the above depending on your requirements, you wi
 
 Now, define exactly who should receive this campaign. You can filter your audience using three methods:
 
-1.  By [List](/docs/segment-your-audience#Lists) & [Tag](/docs/segment-your-audience#Tags),
-2.  By [Dynamic Segment](/docs/segment-your-audience#Dynamic-Segments) and
-3.  By [Advanced Filter](/docs/advanced-filter).
+1.  By [List](/segment-your-audience#Lists) & [Tag](/segment-your-audience#Tags),
+2.  By [Dynamic Segment](/segment-your-audience#Dynamic-Segments) and
+3.  By [Advanced Filter](/advanced-filter).
 
 #### **By List & Tag**
 
@@ -114,11 +114,11 @@ Choose your **List & Tag**. You can select one list and one tag from the dropdow
 
 #### **By Dynamic Segment**
 
-You can also run the campaign by dynamic segments, for example, WooCommerce Users or LearnDash, LifterLMS users, or any other dynamic segments you created in FluentCRM. Please visit the [General & Dynamic Segments](/docs/segment-your-audience) documentation to know more details.
+You can also run the campaign by dynamic segments, for example, WooCommerce Users or LearnDash, LifterLMS users, or any other dynamic segments you created in FluentCRM. Please visit the [General & Dynamic Segments](/segment-your-audience) documentation to know more details.
 
 #### **By Advanced Filter**
 
-You can select custom contacts by using [Advanced Filter](/docs/advanced-filter) and filter the contacts accordingly. This is a wide conditional section based on various Data Properties for Contacts and Activities inside FluentCRM.
+You can select custom contacts by using [Advanced Filter](/advanced-filter) and filter the contacts accordingly. This is a wide conditional section based on various Data Properties for Contacts and Activities inside FluentCRM.
 
 The system will show you the total number of contacts found based on your selection at the bottom of the page. Click **Continue To Next Step [Review and Send]**.
 
@@ -167,6 +167,6 @@ Once you start sending immediately you will see a screen similar to the below sc
 
 If you want to pause the running campaign delivery, please click on the **Pause Sending** button.
 
-Once all the emails are delivered you will then see the campaign summary with the statistics and some other actions. Please visit [Campaign Summary & Actions](/docs/campaign-summary-actions) to know in-depth details that are available in the summary.
+Once all the emails are delivered you will then see the campaign summary with the statistics and some other actions. Please visit [Campaign Summary & Actions](/campaign-summary-actions) to know in-depth details that are available in the summary.
 
-That's all for Email Campaign creation and sending. Please visit the [Campaign Summary & Actions](/docs/campaign-summary-actions) documentation to Manage the campaigns or apply various actions to users of the campaign you sent.
+That's all for Email Campaign creation and sending. Please visit the [Campaign Summary & Actions](/campaign-summary-actions) documentation to Manage the campaigns or apply various actions to users of the campaign you sent.
