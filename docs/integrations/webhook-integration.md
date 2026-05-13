@@ -40,29 +40,11 @@ After filling in the details, click the **Create** button. FluentCRM will then g
 
 In your webhook source send a post request to the generated URL. Send the data as key pair formdata or JSON object. You can specify the tags, lists, and status in the webhook source and that will overwrite the defined value in the feed
 
-Title
-
-Data Key
-
-Data Type
-
-Tags
-
-tags
-
-array ex: \[1,2,3\]
-
-Lists
-
-lists
-
-array ex: \[5,6,7\]
-
-Subscription Status
-
-status
-
-string ex: subscribed | pending | unsubscribed
+| Title | Data Key | Data Type |
+|---|---|---|
+| Tags | `tags` | Array — e.g. `[1, 2, 3]` |
+| Lists | `lists` | Array — e.g. `[5, 6, 7]` |
+| Subscription Status | `status` | String — `subscribed`, `pending`, or `unsubscribed` |
 
 #### Example POST request in postman
 
