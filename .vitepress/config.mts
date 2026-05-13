@@ -389,17 +389,11 @@ export default defineConfig({
           text: 'Migrate to FluentCRM',
           collapsed: true,
           items: [
-            {
-              text: 'Migration Guides',
-              collapsed: true,
-              items: [
-                { text: 'Migrating from ActiveCampaign', link: '/migrating-into-fluentcrm-from-activecampaign' },
-                { text: 'Migrating from ConvertKit', link: '/migrating-into-fluentcrm-from-convertkit' },
-                { text: 'Migrating from Drip', link: '/migrating-into-fluentcrm-from-drip' },
-                { text: 'Migrating from Mailchimp', link: '/migrating-into-fluentcrm-from-mailchimp' },
-                { text: 'Migrating from MailerLite', link: '/migrating-into-fluentcrm-from-mailerlite' },
-              ],
-            },
+            { text: 'Migrating from ActiveCampaign', link: '/migrating-into-fluentcrm-from-activecampaign' },
+            { text: 'Migrating from ConvertKit', link: '/migrating-into-fluentcrm-from-convertkit' },
+            { text: 'Migrating from Drip', link: '/migrating-into-fluentcrm-from-drip' },
+            { text: 'Migrating from Mailchimp', link: '/migrating-into-fluentcrm-from-mailchimp' },
+            { text: 'Migrating from MailerLite', link: '/migrating-into-fluentcrm-from-mailerlite' },
           ],
         },
         // 11. Help & Support
