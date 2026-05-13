@@ -341,20 +341,12 @@ This is an example **email\_campaign\_composer** type field component, you can f
 
 This is an example **reload\_field\_selection** type field component, you can find this structure in every integration. The **options** property contains a list. Every option has two properties named **id** & **title**.
 
+**Option structure**
 
-Key
-
-Description
-
-id
-
-set selector id
-
-title
-
-set selector title
-
-
+| Key | Description |
+|---|---|
+| `id` | Sets the selector ID |
+| `title` | Sets the selector title |
 
 **Form group mapper**
 
@@ -629,17 +621,10 @@ This is an example **radio\_buttons** type field component, you can find this st
 
 **options possible sets:**
 
-key
-
-Description
-
-id
-
-set selector id
-
-title
-
-set selector title
+| Key | Description |
+|---|---|
+| `id` | Sets the selector ID |
+| `title` | Sets the selector title |
 
 
 
@@ -663,19 +648,10 @@ This is an example **checkboxes** type field component, you can find this struct
 
 **options possible sets:**
 
-key
-
-Description
-
-id
-
-set selector id
-
-title
-
-set selector title
-
-
+| Key | Description |
+|---|---|
+| `id` | Sets the selector ID |
+| `title` | Sets the selector title |
 
 **Time selector**
 
@@ -697,15 +673,8 @@ This is an example **time\_selector** type field component, you can find this st
 
 **options possible sets:**
 
-key
-
-Description
-
-id
-
-set selector id
-
-title
-
-set selector title
+| Key | Description |
+|---|---|
+| `id` | Sets the selector ID |
+| `title` | Sets the selector title |
 
