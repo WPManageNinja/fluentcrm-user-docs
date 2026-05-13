@@ -37,6 +37,4 @@ Now, **Save** your webhook settings and use the **Test** button to ensure the se
 
 To view bounced contacts, go to **FluentCRM → Contacts**. Then enable the **Advanced Filter** option. Click **Add Property → Contact Segment → Status**, and select **Bounce**.
 
-![bounce contact](/bounce-handlers/bounce-handling-with-smtp2go/Bounce-contact-scaled.webp)
-
 This setup helps you track bounced emails and manage your email campaigns efficiently.

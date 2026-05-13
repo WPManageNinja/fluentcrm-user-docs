@@ -83,5 +83,3 @@ Click the **Save** button to save your changes. You will then be able to see the
 To view bounced contacts in your **FluentCRM**, go to **Contacts**. Then, click on **Filter by Statuses** and check the **Bounced** checkbox.
 
 You will now see all the bounced contacts.
-
-![fluent crm brevo contacts](/bounce-handlers/bounce-handling-with-brevo/Fluent-CRM-Brevo-contacts-scaled.webp)

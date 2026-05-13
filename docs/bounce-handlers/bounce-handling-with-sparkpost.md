@@ -33,5 +33,3 @@ If you set up these two webhook correctly, so whenever an email mark as a compla
 ### Viewing Bounced Contacts
 
 If you want to view bounced contacts, go to **FluentCRM → Contacts**. Then enable the **Advanced Filter** option. Click **Add Property → Contact Segment → Status**, and select **Bounce**.
-
-![view bounced contacts in fluentcrm](/bounce-handlers/bounce-handling-with-sparkpost/Bounce-contact-scaled.webp)
