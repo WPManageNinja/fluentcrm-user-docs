@@ -267,6 +267,7 @@ export default defineConfig({
           text: 'Integrations',
           collapsed: true,
           items: [
+            { text: 'Integrations Overview', link: '/fluentcrm-integrations' },
             {
               text: 'Forms & Ecommerce',
               collapsed: true,
