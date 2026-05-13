@@ -125,6 +125,7 @@ export default defineConfig({
               text: 'Bounce Handling',
               collapsed: true,
               items: [
+                { text: 'Bounce Handling Overview', link: '/bounce-handling-overview' },
                 { text: 'Bounce Handling with Amazon SES', link: '/bounce-handler-with-amazon-ses' },
                 { text: 'Bounce Handling with Brevo', link: '/bounce-handling-with-brevo' },
                 { text: 'Bounce Handling with Elastic Email', link: '/bounce-handling-with-elastic-email' },
@@ -210,15 +211,9 @@ export default defineConfig({
           text: 'Automations',
           collapsed: true,
           items: [
-            {
-              text: 'Automation Basics',
-              collapsed: true,
-              items: [
-                { text: 'Introduction to FluentCRM Automation', link: '/introduction-to-fluentcrm-automation' },
-                { text: 'Automation Editor', link: '/automation-editor' },
-                { text: 'How to Import / Export Automations', link: '/how-to-import-export-automation-funnels-with-fluentcrm' },
-              ],
-            },
+            { text: 'Introduction to FluentCRM Automation', link: '/introduction-to-fluentcrm-automation' },
+            { text: 'Automation Editor', link: '/automation-editor' },
+            { text: 'How to Import / Export Automations', link: '/how-to-import-export-automation-funnels-with-fluentcrm' },
             {
               text: 'Triggers & Conditions',
               collapsed: true,
@@ -328,6 +323,7 @@ export default defineConfig({
           text: 'Reports & Analytics',
           collapsed: true,
           items: [
+            { text: 'Reports Overview', link: '/advanced-reports-overview' },
             { text: 'CRM Contact Report', link: '/crm-contact-report' },
             { text: 'Emails Report', link: '/emails-report' },
             { text: 'Abandoned Cart Report', link: '/abandoned-cart-report' },

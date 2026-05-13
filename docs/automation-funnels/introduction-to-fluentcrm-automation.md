@@ -67,18 +67,26 @@ Ready to build? Starting a new automated workflow is incredibly easy.
 
 > **Pro Tip:** Even if you use a pre-built template, you can always add, delete, or modify the steps inside the visual Automation Editor to perfectly match your business needs.
 
-## Few Useful Guidelines
+## Video Walkthroughs
 
-Our team prepared a few videos showcasing how automations work inside FluentCRM. You can watch them to get a clearer understanding of FluentCRM automations.
+If you prefer to learn by watching, these videos cover the key parts of building automations in FluentCRM:
+
+### FluentCRM Automation Overview
 
 https://youtu.be/XfhtNmXh7Bs?si=uMlI5jvUiNHZzmvs
 
+### Building Your First Automation Funnel
+
 https://youtu.be/AS9os42uozk?si=D3_yynSbNZgrUz2n
+
+### Using Conditional Actions
 
 https://youtu.be/wPFdx5vXfSA?si=tRZ-V0zmpDHQyHVl
 
+### WooCommerce Automation Walkthrough
+
 https://youtu.be/Q35Yzm-bMpA?si=wtBAAFwNl4Uijhkp
 
-https://youtu.be/n_efMvc2e08?si=jXAkA2df7VIgWFTi
+### Email Sequence Inside an Automation
 
-That’s all as an introduction or overview of FluentCRM automation. Please review the relevant elements to learn and start working with FluentCRM automation to build your own funnel in the WordPress website.
+https://youtu.be/n_efMvc2e08?si=jXAkA2df7VIgWFTi

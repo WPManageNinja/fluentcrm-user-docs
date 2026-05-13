@@ -7,7 +7,7 @@ order: 0
 
 # Cron Job: Basics & Checklist
 
-FluentCRM is a plugin that works continuously in the background to complete and process the tasks that are scheduled every minute like any other Email Marketing Application. This article will guide you through the **Primary Requirements** of **WordPress Cron Job Handover** to either [**Server-side**](/replace-wordpress-cron-with-a-real-cron-job) or **Alternative Methods.**
+FluentCRM processes scheduled tasks every minute — just like any other email marketing application. Reliable email delivery depends on a reliable cron job. This page covers the primary requirements for handing WordPress cron over to either a [server-side cron](/replace-wordpress-cron-with-a-real-cron-job) or a remote alternative service.
 
 ## What Cron Jobs Do?
 

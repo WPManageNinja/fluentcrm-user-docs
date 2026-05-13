@@ -7,6 +7,12 @@ order: 0
 
 # Event Tracking Record
 
+Event Tracking Records let you store custom behavioral data on a contact's profile — things like how many times they visited a pricing page, which product feature they clicked, or how far they scrolled through a tutorial. You define the event key and value yourself, and FluentCRM stores each occurrence so you can use it as a condition or trigger inside any automation.
+
+For example: you could track a "viewed-pricing" event, and when that event fires 3 or more times for the same contact, automatically send them a targeted discount email.
+
+To create a Tracking Event Record, build an Automation Funnel and use the **Tracking Event Recorded** trigger.
+
 For Tracking Event Records create an Automation Funnel. Select **Tracking Event Recorded** automation Trigger. Click on the **Continue** button after that.
 
 ![Tracking Record](/event-tracking/event-tracking-record/tracking-record-1.webp)

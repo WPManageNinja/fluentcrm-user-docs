@@ -23,20 +23,23 @@ https://www.youtube.com/watch?v=WTjaTvojyOQ
 
 The Global Settings are divided into several key sections to help you manage your marketing automation efficiently:
 
-1.  [Business Settings](/global-business-settings)
-2.  [Email Settings](/global-email-settings)
-3.  [Email Service (SMTP & Bounce Handlers)](/smtp-bounce-handlers-settings)
-4.  [General Settings](/global-general-settings)
-5.  [Custom Contact Fields](/global-custom-contact-fields)
-6.  [Smart Links](/global-smartlinks-settings)
-7.  [Double Opt-in Settings](/global-double-opt-in-settings)
-8.  **SMS Setting** *(Pro – see [Configure SMS Module](/configure-sms-module))*
-9.  [Integration Settings](/global-integration-settings)
-10. [Abandoned Cart Settings](/abandoned-cart-settings)
-11. [AI Writing](/ai-writing-settings) *(new in v3)*
-12. [Compliance](/global-compliance-settings)
-13. [Incoming Webhooks](/global-incoming-webhooks)
-14. [Managers](/global-managers-settings)
-15. [System Admin Tools](/fluentcrm-tools-settings) – includes **Cron Job Monitor**, **Data Cleanup**, and **CRM Database Reset**
+| Setting | What you configure here |
+|---------|------------------------|
+| [Business Setup](/global-business-settings) | Your company name, address, logo, and timezone |
+| [Global Email Settings](/global-email-settings) | From name, from email, email footer, and unsubscribe link behavior |
+| [Email Service (SMTP & Bounce Handlers)](/smtp-bounce-handlers-settings) | Which SMTP provider sends your emails and which bounce handler receives failures |
+| [General Settings](/global-general-settings) | Contact double opt-in defaults, subscription behavior, and miscellaneous preferences |
+| [Custom Fields](/global-custom-contact-fields) | Add extra fields to contact profiles beyond the built-in ones |
+| [Smart Link](/global-smartlinks-settings) | Create trackable smart links that auto-apply tags or trigger automations when clicked |
+| [Double Opt-in Settings](/global-double-opt-in-settings) | Customize the confirmation email and page for double opt-in subscribers |
+| **SMS Setting** *(Pro)* | Enable and configure SMS sending — see [Configure SMS Module](/configure-sms-module) |
+| [Integrations](/global-integration-settings) | Enable or disable third-party plugin integrations (WooCommerce, LearnDash, etc.) |
+| [Abandoned Cart Settings](/abandoned-cart-settings) | Enable abandoned cart tracking per e-commerce plugin and configure recovery timing |
+| [AI Configuration](/ai-writing-settings) | Connect an AI provider (OpenAI, etc.) to power the AI writing assistant in the email editor |
+| [Compliance Settings](/global-compliance-settings) | GDPR-related options, data retention, and contact data request handling |
+| [Incoming Webhooks](/global-incoming-webhooks) | Create webhook endpoints that external services can call to add or update contacts *(Pro)* |
+| [CRM Managers](/global-managers-settings) | Grant other WordPress users access to the FluentCRM dashboard without giving them admin rights |
+| [System Admin Tools](/fluentcrm-tools-settings) | Cron job monitor, data cleanup tools, and CRM database reset |
 
-> **Note:** The exact list of tabs you see depends on which features are active. **SMS Setting** appears only with FluentCRM Pro, and **Frontend Portal** is added to the Pro settings menu when the Frontend Portal add-on is enabled.
+>[!Note]
+> The exact tabs you see depend on which features are active. **SMS Setting** appears only with FluentCRM Pro. **Frontend Portal** is added to the Pro settings menu when the Frontend Portal add-on is enabled.

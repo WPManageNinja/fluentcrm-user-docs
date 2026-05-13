@@ -19,22 +19,28 @@ To view reports for an automation:
 
 ![Reports](/automation-funnels/automation-reports/report-2.webp)
 
-### 1. Summary Reporting
+## Summary Reporting
 
 >[!Note]
 >To sync new funnel steps to contacts who have already completed the automation, click the **Re-apply New Steps** button in the top right corner.
 
 The summary section offers three distinct views to analyze how contacts progress through your funnel.
 
-* **Chart Report:** This tab displays a visual summary of each automation step using a **Bar Diagram** and a **Line Graph**. It shows the volume and percentage of contacts at each stage, such as **Entrance**, **Wait X Days/Hours**, and specific actions like **Outgoing Webhooks** or **Check Condition**.
+### Chart Report
+
+This tab displays a visual summary of each automation step using a **Bar Diagram** and a **Line Graph**. It shows the volume and percentage of contacts at each stage, such as **Entrance**, **Wait X Days/Hours**, and specific actions like **Outgoing Webhooks** or **Check Condition**.
 
 ![Chart Reports](/automation-funnels/automation-reports/chart-report-3.webp)
 
-* **Step Report:** This tab provides a summary of each action block using **Circle Graphs**. Each card displays the percentage of contacts that reached that step, the total count, and the percentage change. It also highlights the **Overall Conversion Rate** for the entire funnel.
+### Step Report
+
+This tab provides a summary of each action block using **Circle Graphs**. Each card displays the percentage of contacts that reached that step, the total count, and the percentage change. It also highlights the **Overall Conversion Rate** for the entire funnel.
 
 ![Step Reports](/automation-funnels/automation-reports/step-report-4.webp)
 
-* **Emails Analytics:** This tab focuses on the performance of email actions within your funnel. For each automated email (e.g., "Hello Customers"), you can view **Quick Stats** including:
+### Emails Analytics
+
+This tab focuses on the performance of email actions within your funnel. For each automated email (e.g., "Hello Customers"), you can view **Quick Stats** including:
     * **Sent**: Total number of emails delivered.
     * **Opened**: The percentage of recipients who opened the email.
     * **Clicked**: The percentage of recipients who clicked a link within the email.
@@ -42,7 +48,7 @@ The summary section offers three distinct views to analyze how contacts progress
 
 ![Email Analytics](/automation-funnels/automation-reports/email-analytics-5.webp)
 
-## 2. Individual Reporting
+## Individual Reporting
 
 Located below the summary charts, this section provides a granular, contact-by-contact breakdown of automation activity.
 

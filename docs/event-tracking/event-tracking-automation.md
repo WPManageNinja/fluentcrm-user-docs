@@ -7,13 +7,11 @@ order: 0
 
 # Event Tracking Automation
 
-Event Tracking in FluentCRM is a powerful tool that helps understand users' actions and behaviors on your websites. It records these actions and generates automated responses, ensuring your audience receives timely and relevant material.  
-
-Also, essential for optimizing marketing strategies and increasing user engagement. 
+Event Tracking in FluentCRM lets you record any custom action a contact takes on your site and use that data to trigger or branch your automations. For example: you could track a "watched-demo" event each time a contact views your product demo page, then automatically send a follow-up email the moment they watch it for the second time — without any manual work.
 
 ## Enable Event Tracking Module
 
-First, navigate to the FluentCRM Dashboard then click on the **Addons** section from the left WordPress sidebar. Here you’ll see the **Event Tracking Module**. Now click on the **Setting** button to enable event tracking activity.
+First, navigate to the FluentCRM Dashboard then click on the **Addons** section from the left WordPress sidebar. Here you'll see the **Event Tracking Module**. Now click on the **Setting** button to enable event tracking activity.
 
 A pop-up will appear, enable the **Checkbox** and click the **Save Settings** button.
 
@@ -29,11 +27,11 @@ A popup will appear. Now select the **Tag Applied** automation trigger and press
 
 ![Tag Applied](/event-tracking/event-tracking-automation/tag-applied-3.webp)
 
-Now here opens a new popup. Set the Automation name and put a Description in the **Internal Description** boxes. Now select **Tags** for your FluentCRM contact base. You can add multiple Tags from your CRM contacts. 
+Now here opens a new popup. Set the Automation name and put a Description in the **Internal Description** boxes. Now select **Tags** for your FluentCRM contact base. You can add multiple Tags from your CRM contacts.
 
-Next, select the **Run When** tag option and tick the radio button. Here you’ll see three options:
+Next, select the **Run When** tag option and tick the radio button. Here you'll see three options:
 
-   1.  Contact added in any of the selected tags 
+   1.  Contact added in any of the selected tags
    2.  Contact added in all of the selected tags
    3.  Run the automation actions even if the contact status is not subscribed.
 
@@ -63,7 +61,7 @@ Now publish the automation by enabling the toggle in the top right corner.
 
 ![Tracking Automation Enable](/event-tracking/event-tracking-automation/enable-automation-8.webp)
 
-If you want to see your Event Tracking details, go to your FluentCRM contacts profile. 
+If you want to see your Event Tracking details, go to your FluentCRM contacts profile.
 
 You will track your event using your contacts subscriber ID or Contacts ID instead of your email address.
 

@@ -9,7 +9,7 @@ order: 2
 
 Twilio is a leading cloud communication platform that empowers developers to create powerful customer engagement features. By integrating [**FluentCRM**](https://fluentcrm.com/) with **Twilio**, you can reliably send SMS campaigns and automated messages to your subscribers worldwide – and, with v3, optionally receive inbound replies via Twilio's incoming webhook.
 
-This article will guide you through connecting your Twilio account to FluentCRM.
+Follow the steps below to connect your Twilio account to FluentCRM.
 
 
 ## Accessing the Twilio SMS Provider
