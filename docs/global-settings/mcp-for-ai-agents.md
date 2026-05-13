@@ -18,7 +18,7 @@ Once enabled, any MCP-compatible AI client can look up contacts, create tags, tr
 
 Go to **FluentCRM → Settings → MCP for AI Agents** from your WordPress admin. This is where you enable the feature, install the required adapter, grab your endpoint URL, and generate connection snippets for your preferred AI client.
 
-## Step 1 — Install the WordPress MCP Adapter
+## Install the WordPress MCP Adapter
 
 FluentCRM's MCP tools rely on the **WordPress MCP Adapter** plugin to expose the endpoint. If the adapter isn't installed yet, the Status section shows an **Adapter Required** notice and an **Install MCP Adapter** button.
 
@@ -29,11 +29,11 @@ Click **Install MCP Adapter** and WordPress will install and activate the plugin
 >[!Tip]
 > You can also install the adapter manually from **Plugins → Add New**. Search for **WordPress MCP** and install the plugin by WPManageNinja.
 
-## Step 2 — Enable MCP for AI Agents
+## Enable MCP for AI Agents
 
 Turn on the **Enable MCP for AI Agents** toggle. When active, FluentCRM exposes its capabilities through the WordPress MCP Adapter so AI agents can read and write your CRM data with your authorization.
 
-## Step 3 — Check the Status panel
+## Check the Status panel
 
 Once the adapter is installed and the toggle is on, the **Status** panel confirms the connection and shows three key details:
 
@@ -45,7 +45,7 @@ Once the adapter is installed and the toggle is on, the **Status** panel confirm
 | **Endpoint URL** | The MCP endpoint your AI client connects to — typically `https://your-site.com/wp-json/fluent-crm/mcp`. Click **Copy** to copy it. |
 | **Tools available** | Total number of MCP tools exposed (e.g. `25`). FluentCRM Pro adds additional tools on top of the base set. |
 
-## Step 4 — Connect a client
+## Connect a client
 
 The **Connect a client** panel generates a ready-to-paste connection snippet for your chosen AI client. Authentication uses a **WordPress Application Password** — a feature built into WordPress 5.6+ with no extra plugin required.
 
