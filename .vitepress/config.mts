@@ -213,7 +213,7 @@ export default defineConfig({
           items: [
             { text: 'Introduction to FluentCRM Automation', link: '/introduction-to-fluentcrm-automation' },
             { text: 'Automation Editor', link: '/automation-editor' },
-            { text: 'How to Import / Export Automations', link: '/how-to-import-export-automation-funnels-with-fluentcrm' },
+            { text: 'Import / Export Automations', link: '/how-to-import-export-automation-funnels-with-fluentcrm' },
             {
               text: 'Triggers & Conditions',
               collapsed: true,
