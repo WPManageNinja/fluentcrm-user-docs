@@ -77,6 +77,7 @@ export default defineConfig({
             { text: 'Install & Activate License', link: '/how-to-install-upgrade-and-activate-license' },
             { text: 'Transfer Your License', link: '/transfer-license-from-one-domain-to-another' },
             { text: 'Dashboard Overview', link: '/dashboard-introduction' },
+            { text: 'FluentCRM Glossary', link: '/fluentcrm-glossary' },
             { text: 'Migration Overview', link: '/migrating-into-fluentcrm' },
             { text: 'Move to a New Site', link: '/migrate-fluentcrm-to-a-new-site' },
           ],

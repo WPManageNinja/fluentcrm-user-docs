@@ -192,6 +192,20 @@ For pure concept/reference docs, "What's Next?" is optional.
 
 ---
 
+## Smart Code Examples in Prose (VitePress Gotcha)
+
+VitePress 2.x parses `{{ }}` as Vue template interpolation **even inside inline backticks**. If you write a Smart Code example like `` `{{contact.first_name}}` ``, the build fails with `Cannot read properties of undefined`.
+
+**Fix:** wrap the example in `<code v-pre>...</code>` instead of backticks:
+
+```markdown
+A dynamic placeholder like <code v-pre>{{contact.first_name}}</code> that's replaced with the contact's data.
+```
+
+The `v-pre` directive tells Vue to skip compilation. Renders identically to a backtick code span but the braces stay literal. Fenced code blocks (triple-backtick) are automatically `v-pre` so this only affects inline code.
+
+---
+
 ## YouTube Video Embeds
 
 The VitePress config has a custom plugin that auto-embeds YouTube URLs.
