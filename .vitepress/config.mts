@@ -389,6 +389,7 @@ export default defineConfig({
           text: 'Migrate to FluentCRM',
           collapsed: true,
           items: [
+            { text: 'Migration Overview', link: '/migrate-to-fluentcrm' },
             { text: 'Migrating from ActiveCampaign', link: '/migrating-into-fluentcrm-from-activecampaign' },
             { text: 'Migrating from ConvertKit', link: '/migrating-into-fluentcrm-from-convertkit' },
             { text: 'Migrating from Drip', link: '/migrating-into-fluentcrm-from-drip' },
