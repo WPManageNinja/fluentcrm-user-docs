@@ -47,68 +47,6 @@ _Released on May 14, 2026_
 
 :::
 
-## FluentCRM v3.0.0-rc.2.1
-
-_Released on April 23, 2026_
-
-::: code-group
-
-```markdown [🚀 Improvements]
-• Polishes the Pro license activation flow
-```
-
-```markdown [🐞 Bug fixes]
-• Fixes Frontend Portal rendering for standalone slug pages
-• Fixes AI Writing connection test for selected providers
-• Other minor stability fixes
-```
-
-:::
-
-## FluentCRM v3.0.0-rc.2
-
-_Released on April 23, 2026_
-
-::: code-group
-
-```markdown [✨ Newly Added]
-• Adds Frontend Portal (Pro) – `[fluent_crm]` shortcode and standalone page modes for a logged-in, user-facing portal
-• Adds Bulk-action floating bar for the Contacts list with refreshed selection UI
-```
-
-```markdown [🚀 Improvements]
-• Contact list pagination supports up to 600 contacts per page
-• Email Patterns library refined – patterns can be inserted/saved directly from the Gutenberg block editor
-• AI Writing flow polish (provider switching, error states)
-• Email sending speed and reliability
-```
-
-```markdown [🐞 Bug fixes]
-• Fixes various v3 RC issues reported during the beta cycle
-```
-
-:::
-
-## FluentCRM v3.0.0-rc.1
-
-_Released on April 2026_
-
-::: code-group
-
-```markdown [✨ Newly Added]
-• Adds rewritten Reports with new charts, widgets, and improved campaign insights
-• Adds UTM details inside campaign details after sending
-• Adds Twilio incoming webhook support for inbound SMS handling
-```
-
-```markdown [🚀 Improvements]
-• Dashboard widgets for Active Automations, Recommendations, Recent Campaigns, and Sales filter
-• Compliance settings page is now first-class with `anonymize_ip`, `email_open_tracking`, `email_click_tracking`, `personal_data_export`, and `one_click_unsubscribe` toggles
-• System Admin Tools area split into Cron Job Monitor, Data Cleanup, and CRM Database Reset routes
-```
-
-:::
-
 ## FluentCRM v2.9.87
 
 _Released on November 24, 2025_
