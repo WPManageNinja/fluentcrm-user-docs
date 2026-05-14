@@ -9,6 +9,44 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.0.0
+
+_Released on May 14, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• FluentCRM v3 rebuilt with Vue 3 and Element Plus for a faster, cleaner experience
+• Gutenberg-native email builder with device preview
+• Reusable Email Patterns added to the email builder
+• SMS marketing — Campaigns, Automations, and Direct Message with incoming support
+• Frontend Portal introduced
+• Redesigned bulk selection experience with more actions
+• New dashboard and rewritten reports with charts, widgets, campaign insights, and UTM visibility
+• Dark Mode support with persistent admin theme preference
+• Write with AI — Generate email content and summaries with AI assistance
+• AI Summaries added in Contacts
+• MCP for AI Agents introduced
+• Global search across CRM records
+• Dedicated email preference page, improved docs page, and reorganized settings
+• RTL support, drag-and-drop custom fields, and a better importer flow
+• FluentCart abandoned cart recovery
+• toSend email service integration with bounce handling
+```
+
+```markdown [🚀 Improvements]
+• Email sending optimized for better speed, reliability, and deliverability
+• Bounce handling is more robust
+• Abandoned cart for WooCommerce is more reliable
+• Better link tracking, automation reliability, and overall framework scalability
+```
+
+```markdown [📋 Other]
+• Security hardening, compatibility fixes, UI polish, and many bug fixes
+```
+
+:::
+
 ## FluentCRM v3.0.0-rc.2.1
 
 _Released on April 23, 2026_
@@ -67,115 +105,6 @@ _Released on April 2026_
 • Dashboard widgets for Active Automations, Recommendations, Recent Campaigns, and Sales filter
 • Compliance settings page is now first-class with `anonymize_ip`, `email_open_tracking`, `email_click_tracking`, `personal_data_export`, and `one_click_unsubscribe` toggles
 • System Admin Tools area split into Cron Job Monitor, Data Cleanup, and CRM Database Reset routes
-```
-
-:::
-
-## FluentCRM v3.0.0-beta.10
-
-_Released on April 2026_
-
-::: code-group
-
-```markdown [✨ Newly Added]
-• Adds UTM visibility to campaign details / link stats post-send
-```
-
-```markdown [🚀 Improvements]
-• Email Patterns import/export
-• Frontend Portal profile dropdown with branding controls (Pro)
-```
-
-```markdown [🐞 Bug fixes]
-• Fixes edge cases in Dynamic Segments rendering
-```
-
-:::
-
-## FluentCRM v3.0.0-beta.8
-
-_Released on April 2026_
-
-::: code-group
-
-```markdown [🚀 Improvements]
-• Reports area polish – chart labels, monthly grouping, currency formatting
-• AI Writing settings page (`/settings/ai_settings`) with provider selection (OpenAI, Claude, Gemini)
-• Drag-and-drop reorder for Custom Contact Fields builder
-```
-
-```markdown [🐞 Bug fixes]
-• Fixes Dark Mode persistence per user
-```
-
-:::
-
-## FluentCRM v3.0.0-beta.5
-
-_Released on March 2026_
-
-::: code-group
-
-```markdown [✨ Newly Added]
-• Adds toSend email service integration and bounce webhook (`fluent-crm/v2/public/bounce_handler/tosend/...`)
-• Adds Dynamic Segments menu item under Contacts (Pro segment types)
-```
-
-```markdown [🚀 Improvements]
-• Global Search powered by `OptionsController::search()` with scopes for subscribers, campaigns, automations, companies, and notes
-• Admin bar global search entry
-```
-
-:::
-
-## FluentCRM v3.0.0-beta.3
-
-_Released on March 2026_
-
-::: code-group
-
-```markdown [✨ Newly Added]
-• Adds SMS Smartcodes available across SMS campaigns and automations
-• Adds Twilio incoming SMS handling via dedicated webhook
-• Adds dedicated SMS Settings tab (`/settings/sms_settings`) and SMS section in admin menu (Pro)
-```
-
-```markdown [🚀 Improvements]
-• Amazon End User Messaging (SNS) provider polish
-```
-
-:::
-
-## FluentCRM v3.0.0-beta.1
-
-_Released on February 2026_
-
-> **Note:** This is the first major release in the 3.0 line. Please back up your site before upgrading. Compatibility: WordPress 6.7+, PHP 7.4+.
-
-::: code-group
-
-```markdown [✨ Newly Added]
-• Adds FluentCRM 3.0 rebuilt on Vue 3 + Element Plus
-• Adds Gutenberg-native email builder with device preview, media button, and reusable Email Patterns
-• Adds SMS Marketing module (Twilio + Amazon End User Messaging) with campaigns and automation actions
-• Adds AI Writing assistant for email content (Smart Headings, Smart Buttons, Magic Image, content rewrite)
-• Adds FluentCart abandoned cart recovery (core) with dedicated driver and trigger
-• Adds FluentCart Order, Subscription, and Abandon Cart triggers in core
-• Adds Email Patterns library with a dedicated Emails → Patterns page
-• Adds dedicated Email Preference page for subscribers
-• Adds Dark Mode with persistent per-user preference
-• Adds RTL support – `admin_rtl.css` auto-loads for right-to-left languages
-• Adds Global Search across subscribers, campaigns, automations, companies, and notes
-• Adds Contacts → Segments (Dynamic Segments) menu item
-• Adds drag-and-drop builder for Custom Contact Fields
-• Reorganized Settings, Addons, and System Admin Tools areas
-```
-
-```markdown [🚀 Improvements]
-• "Funnels" relabeled to Automations in user-facing copy
-• Improved Docs/Help page in admin
-• Bulk import flow with progress feedback
-• Email sending speed and queue reliability
 ```
 
 :::
