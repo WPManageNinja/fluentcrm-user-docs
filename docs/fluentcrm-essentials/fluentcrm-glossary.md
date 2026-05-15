@@ -296,10 +296,3 @@ FluentCRM connects natively with these platforms. Each integration adds contact 
 
 **License Transfer**: Move your Pro license from one domain to another when you migrate or rebuild a site. See [Transfer Your License](/transfer-license-from-one-domain-to-another).
 
----
-
-## What's Next?
-
-- New to FluentCRM? Start with the [Dashboard Overview](/dashboard-introduction).
-- Building your first workflow? Read the [Introduction to FluentCRM Automation](/introduction-to-fluentcrm-automation).
-- Need help? See [How to Get Support](/how-to-get-support).
