@@ -36,9 +36,18 @@ export default defineConfig({
   ],
   ignoreDeadLinks: true,
   cleanUrls: true,
+  // Keep agent/context files out of the built site and sitemap.
+  srcExclude: ['CLAUDE.md', '**/README.md'],
   // Serve docs/category/slug.md at /slug (hide both category and /docs/ prefix from URL)
   rewrites: {
     'docs/:category/:slug.md': ':slug.md',
+  },
+  // Auto-generates dist/sitemap.xml on `npm run docs:build`.
+  // URLs honor `cleanUrls` and `rewrites` above, so entries look like
+  // https://docs.fluentcrm.com/dashboard-introduction (no .html, no /docs/ prefix).
+  sitemap: {
+    hostname: 'https://docs.fluentcrm.com/',
+    lastmodDateOnly: true,
   },
   markdown: {
     config: (md) => {
