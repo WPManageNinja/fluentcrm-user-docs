@@ -26,7 +26,7 @@ From **Emails ➜ Campaigns**, you can create an email campaign by clicking on t
 
 A popup will appear asking for an **Internal Campaign Title**. This name is for your reference only and will not be seen by subscribers. After entering the title, choose your preferred editor:
 
- * **Default (Gutenberg):** The v3 Gutenberg-native editor with device preview, [Email Patterns](/email-patterns), and [AI Writing](/ai-writing-settings).
+ * **Default (Gutenberg):** The v3 Gutenberg-native editor with device preview, [Email Patterns](/email-patterns), and [AI Writing](/ai-model-setup).
  * **Visual Builder:** A drag-and-drop builder for highly designed layouts.
  * **Classic Editor:** A simple, traditional text editor.
  * **Raw HTML:** For advanced users who want to paste custom code.

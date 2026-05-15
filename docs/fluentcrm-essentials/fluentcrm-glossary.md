@@ -250,7 +250,7 @@ FluentCRM connects natively with these platforms. Each integration adds contact 
 
 **Incoming Webhook**: A unique URL FluentCRM generates for an external service to POST contact data to — creating or updating contacts from outside WordPress. See [Incoming Webhooks](/global-incoming-webhooks).
 
-**AI Writing**: Hook up an AI provider (OpenAI, etc.) to power AI-generated subject lines, headlines, and button text in the email editor. See [AI Writing Settings](/ai-writing-settings).
+**AI Writing**: Hook up an AI provider (OpenAI, etc.) to power AI-generated subject lines, headlines, and button text in the email editor. See [AI Model Setup](/ai-model-setup).
 
 **MCP for AI Agents**: Model Context Protocol endpoint that lets AI agents like Claude securely read and act on your FluentCRM data via API. See [MCP for AI Agents](/mcp-for-ai-agents).
 

@@ -35,7 +35,7 @@ The Global Settings are divided into several key sections to help you manage you
 | **SMS Setting** *(Pro)* | Enable and configure SMS sending — see [Configure SMS Module](/configure-sms-module) |
 | [Integrations](/global-integration-settings) | Enable or disable third-party plugin integrations (WooCommerce, LearnDash, etc.) |
 | [Abandoned Cart Settings](/abandoned-cart-settings) | Enable abandoned cart tracking per e-commerce plugin and configure recovery timing |
-| [AI Configuration](/ai-writing-settings) | Connect an AI provider (OpenAI, etc.) to power the AI writing assistant in the email editor |
+| [AI Model Setup](/ai-model-setup) | Connect an AI provider (OpenAI, etc.) to power AI Writing in the email editor and AI Summary on contact profiles |
 | [Compliance Settings](/global-compliance-settings) | GDPR-related options, data retention, and contact data request handling |
 | [Incoming Webhooks](/global-incoming-webhooks) | Create webhook endpoints that external services can call to add or update contacts *(Pro)* |
 | [CRM Managers](/global-managers-settings) | Grant other WordPress users access to the FluentCRM dashboard without giving them admin rights |

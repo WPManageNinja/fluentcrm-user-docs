@@ -19,7 +19,7 @@ Before you start designing your email, make sure the basic details are set:
  * **Email Subject:** Write a clear and engaging subject line. You can click the **{} icon** to add SmartCodes, such as the contact’s first name, to make it more personal.
  * **Email Pre-Header:** Add a short preview text that appears next to the subject line in the inbox. This helps encourage people to open your email.
 
-> **Important:** FluentCRM v3 ships with a **Gutenberg-native email builder** as the default editor. It supports device preview, the WordPress media library, [reusable Email Patterns](/email-patterns), and [AI Writing](/ai-writing-settings) – so you can compose, personalise, and reuse email designs without leaving the editor.
+> **Important:** FluentCRM v3 ships with a **Gutenberg-native email builder** as the default editor. It supports device preview, the WordPress media library, [reusable Email Patterns](/email-patterns), and [AI Writing](/ai-model-setup) – so you can compose, personalise, and reuse email designs without leaving the editor.
 
 ![Email Template](/email-campaign/compose-email-in-fluentcrm/email-template-1.webp)
 

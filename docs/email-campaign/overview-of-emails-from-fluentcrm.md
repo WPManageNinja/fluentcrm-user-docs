@@ -21,7 +21,7 @@ FluentCRM offers several ways to compose and send emails depending on your marke
 
 Campaigns are bulk marketing messages sent to a large group of contacts at once.
 
- * **Gutenberg-native editor:** v3 uses the WordPress block editor as the default email composer, with **Device Preview**, the WordPress media library, [reusable Email Patterns](/email-patterns), and [AI Writing](/ai-writing-settings) built in.
+ * **Gutenberg-native editor:** v3 uses the WordPress block editor as the default email composer, with **Device Preview**, the WordPress media library, [reusable Email Patterns](/email-patterns), and [AI Writing](/ai-model-setup) built in.
  * **Switch Editor any time:** Prefer drag-and-drop? The **Visual Builder** is one click away. Coding from scratch? Use **Raw HTML**. There's also the **Classic Editor** if that's how you prefer to work.
  * **Scheduling:** Send campaigns immediately, schedule them for a specific date and time, or queue them for a sending time-window. More about campaigns is discussed in [**Email Campaigns**](/setting-up-campaign).
 

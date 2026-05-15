@@ -102,8 +102,14 @@ export default defineConfig({
                 { text: 'Double Opt-in Settings', link: '/global-double-opt-in-settings' },
                 { text: 'Integrations', link: '/global-integration-settings' },
                 { text: 'Abandoned Cart Settings', link: '/abandoned-cart-settings' },
-                { text: 'AI Writing', link: '/ai-writing-settings' },
-                { text: 'MCP for AI Agents', link: '/mcp-for-ai-agents' },
+                {
+                  text: 'AI Configuration',
+                  collapsed: true,
+                  items: [
+                    { text: 'AI Model Setup', link: '/ai-model-setup' },
+                    { text: 'MCP for AI Agents', link: '/mcp-for-ai-agents' },
+                  ],
+                },
                 { text: 'Compliance Settings', link: '/global-compliance-settings' },
                 { text: 'Incoming Webhooks', link: '/global-incoming-webhooks' },
                 { text: 'CRM Managers', link: '/global-managers-settings' },
