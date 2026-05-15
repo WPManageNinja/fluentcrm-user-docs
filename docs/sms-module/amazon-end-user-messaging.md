@@ -17,7 +17,6 @@ This guide walks you through the full setup in four parts:
 3. [Get a phone number (originator) in AWS End User Messaging](#step-3-set-up-a-phone-number-in-aws-end-user-messaging)
 4. [Enter your credentials in FluentCRM](#step-4-configure-fluentcrm)
 
----
 
 ## Step 1: Open AWS IAM and Create a Dedicated User
 
@@ -79,7 +78,7 @@ AWS will ask you to select the **use case** for this key. Select **Third-party s
 After completing the optional description tag step, AWS will display the **Retrieve access keys** screen. This is the **only time** the Secret Access Key is shown in full.
 
 - **Access key**: Copy the **Access Key ID** shown in the table (e.g., `AKIA3HS23OQJQ3HOFGTJ`).
-- **Secret access key**: Click **Show** to reveal it, then copy it — or click **Download .csv file** to save both keys safely.
+- **Secret access key**: Click **Show** to reveal it, then copy it or click **Download .csv file** to save both keys safely.
 
 Click **Done** when finished.
 
@@ -102,7 +101,7 @@ Make sure your console is set to the **AWS Region** you intend to use for sendin
 
 ![Phone numbers list in AWS End User Messaging](/sms-module/amazon-end-user-messaging/aws-phone-numbers-list-8.webp)
 
-If you already have a phone number listed, click on it to view its details — confirm that its **Number status** shows **Active** and that **SMS** is listed under **Capabilities**.
+If you already have a phone number listed, click on it to view its details confirm that its **Number status** shows **Active** and that **SMS** is listed under **Capabilities**.
 
 ![Phone number details – Two-way messaging tab](/sms-module/amazon-end-user-messaging/aws-phone-number-details-9.webp)
 
@@ -143,17 +142,17 @@ Click **Next**.
 
 **Step 4 – Review and request**
 
-Review your selections — country, use case, and originator type — and click **Request** to submit.
+Review your selections country, use case, and originator type and click **Request** to submit.
 
 ![Request originator – Step 4: Review and request](/sms-module/amazon-end-user-messaging/aws-request-originator-review-14.webp)
 
 > **Note:** Short code registration is subject to AWS review and carrier approval. For testing, you can use the **Simulator** phone number type which is available immediately.
 
----
+
 
 ## Step 3b: Sender IDs (Optional)
 
-Some countries support **Sender IDs** — alphanumeric names (e.g., *MyBrand*) that appear instead of a numeric phone number in the recipient's inbox. To manage Sender IDs, navigate to:
+Some countries support **Sender IDs** alphanumeric names (e.g., *MyBrand*) that appear instead of a numeric phone number in the recipient's inbox. To manage Sender IDs, navigate to:
 
 **AWS End User Messaging → SMS → Sender IDs**
 
@@ -163,7 +162,7 @@ If no Sender IDs are registered, the page will show *"No Sender Id found"*. Clic
 
 > **Note:** Sender ID support and registration requirements vary by country. Check the [AWS Sender ID documentation](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-senderid.html) for your target country before proceeding.
 
----
+
 
 ## Step 4: Configure FluentCRM
 
@@ -197,6 +196,5 @@ Click **Save** at the top right of the page.
 
 After saving, FluentCRM generates a unique **SMS Incoming Webhook URL** at the bottom of the page. Copy this URL and add it to your AWS End User Messaging configuration if you need to handle delivery receipts or inbound messages.
 
----
 
 Your **Amazon End User Messaging integration** is now complete. You are ready to use AWS for high-volume SMS campaigns and automated workflows in FluentCRM. To start sending, visit the [SMS Automation](/sms-automation) or [SMS Campaign Report](/sms-campaign-report) documentation.
