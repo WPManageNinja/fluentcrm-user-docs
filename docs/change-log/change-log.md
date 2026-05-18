@@ -9,6 +9,55 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.0.5
+
+_Released on May 15, 2026_
+
+::: code-group
+
+```markdown [🐞 Bug fixes]
+• Fixes Classic Template email issue
+```
+
+:::
+
+## FluentCRM v3.0.3
+
+_Released on May 15, 2026_
+
+::: code-group
+
+```markdown [🚀 Improvements]
+• Improves database performance
+• Improves SMS SmartCodes
+• Improves Advanced Filter and Dynamic Segment issues
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes UI issues
+• Fixes WooCommerce button styling issue
+• Fixes SmartCode link issues in Gutenberg Button
+• Fixes Automation Dark Mode issues
+```
+
+```markdown [📋 Other]
+• Other improvements and bug fixes
+```
+
+:::
+
+## FluentCRM v3.0.2
+
+_Released on May 14, 2026_
+
+::: code-group
+
+```markdown [🐞 Bug fixes]
+• Fixes issues on some sites
+```
+
+:::
+
 ## FluentCRM v3.0.0
 
 _Released on May 14, 2026_
