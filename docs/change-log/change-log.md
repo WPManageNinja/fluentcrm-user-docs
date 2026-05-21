@@ -9,6 +9,55 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.0.7
+
+_Released on May 19, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Adds WP Media Library support to Email Editor footer
+```
+
+```markdown [🚀 Improvements]
+• Improves Visual Builder template import issue
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes duplication issue in sequences
+• Fixes synced pattern saving issue
+• Fixes List block RTL rendering issue
+• Fixes WooCommerce single product email mobile layout
+• Fixes Campaign emails table contact column overflow
+• Fixes RTL issues
+```
+
+```markdown [📋 Other]
+• Other improvements and bug fixes
+```
+
+:::
+
+## FluentCRM v3.0.6
+
+_Released on May 18, 2026_
+
+::: code-group
+
+```markdown [🐞 Bug fixes]
+• Fixes blank page issue
+• Fixes template import issue
+• Fixes EDD issue
+• Fixes email footer issues
+• Fixes Recurring Campaign issues
+```
+
+```markdown [📋 Other]
+• Other improvements and bug fixes
+```
+
+:::
+
 ## FluentCRM v3.0.5
 
 _Released on May 15, 2026_
