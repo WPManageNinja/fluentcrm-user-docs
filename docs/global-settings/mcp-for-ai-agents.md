@@ -140,7 +140,7 @@ If you see real contacts in the reply, your connection is live and authenticated
 
 Once connected, your AI client gets access to **25 FluentCRM tools** (including 4 FluentCampaign Pro tools when Pro is active). You don't call these by name. The AI picks the right tool based on what you ask in plain language. Here's a friendly overview of what's available, grouped by area.
 
-### Contacts
+## Contacts
 
 Tools that look up, create, edit, or remove people in your CRM.
 
@@ -158,7 +158,7 @@ Tools that look up, create, edit, or remove people in your CRM.
 - *"Add a note on Sarah Lee saying she requested a refund on May 1st."*
 - *"Update `john@example.com`, set their first name to John and tag them as 'Webinar Attendee'."*
 
-### Lists, tags, and segments
+## Lists, tags, and segments
 
 Tools for organizing your audience.
 
@@ -172,7 +172,7 @@ Tools for organizing your audience.
 - *"How many contacts would match a dynamic segment of subscribed customers who haven't opened an email in 90 days?"*
 - *"Remove the 'Trial' tag from everyone who has the 'Paid Customer' tag."*
 
-### Campaigns
+## Campaigns
 
 Tools for one-off email broadcasts.
 
@@ -188,7 +188,7 @@ Tools for one-off email broadcasts.
 - *"Show me the open and click rates for my last 3 campaigns."*
 - *"Draft a new campaign called 'June Newsletter' for the Newsletter list and save it as a draft."*
 
-### Automations (funnels)
+## Automations (funnels)
 
 Tools for your automation funnels and the people enrolled in them.
 
@@ -202,7 +202,7 @@ Tools for your automation funnels and the people enrolled in them.
 - *"Which contacts are currently in the 'New Customer Welcome' automation?"*
 - *"Remove `jane@example.com` from the 'Abandoned Cart Recovery' automation."*
 
-### Email sequences
+## Email sequences
 
 Tools for your drip-style sequences.
 
@@ -214,7 +214,7 @@ Tools for your drip-style sequences.
 
 - *"Enroll every contact tagged 'Free Trial' into the 'Onboarding Sequence'."*
 
-### Workspace context
+## Workspace context
 
 A single tool that gives the AI a snapshot of your CRM, used when it needs orientation.
 
