@@ -29,9 +29,10 @@
   }
 }
 
-/* Doc content: prevent horizontal overflow */
+/* Doc content: keep text wrapping inside the column without clipping the
+   left-margin .header-anchor (which is absolutely positioned at margin-left: -0.87em
+   and was previously hidden by overflow-x: auto on this container). */
 .vp-doc {
-  overflow-x: auto;
   max-width: 100%;
   word-wrap: break-word;
 }
@@ -44,7 +45,7 @@
   overflow-wrap: break-word;
 }
 
-/* Tables: scroll horizontally on small screens */
+/* Tables: scroll horizontally on small screens via the wrapper element */
 .vp-doc .table-wrapper {
   overflow-x: auto;
   max-width: 100%;
@@ -87,7 +88,7 @@
 }
 
 /*
- * Balanced doc media: fills the content column up to the asset’s native width,
+ * Balanced doc media: fills the content column up to the asset's native width,
  * then stays centered — avoids upscaling past source pixels (keeps GIFs/screenshots sharp).
  */
 .vp-doc .doc-figure-balanced {
