@@ -9,6 +9,49 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.1.0
+
+_Released on May 23, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Adds WordPress AI support for WordPress 7.x
+• Adds SmartCode insert menu in Email Editor footer
+• Adds Visual/Text mode switch to custom footer editor
+• Adds font family selector in custom footer editor
+```
+
+```markdown [🚀 Improvements]
+• Makes Advanced Filter dropdowns searchable
+• AI contact summaries now respect locale and language
+• Improves reliability and performance in scheduled email processing
+• Improves caching and Gutenberg asset loading flow
+• Fixes auto AI model issue and adds Gemini 3.5 Flash
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes footer disable toggle issue in editor
+• Fixes product email block spacing in preview and sent emails
+• Fixes SmartCode URL rendering issues
+• Fixes Campaign recipients table column layout issue
+• Fixes WordPress admin menu visibility issue
+• Fixes core automation trigger registration timing issue
+• Fixes Gutenberg editor canvas link color preset issue
+• Fixes conditional block suppressing iframe/media-only content
+• Fixes invalid Gutenberg block auto-recovery issue
+• Fixes Compose navigation button rendering issue during Gutenberg DOM mount
+• Fixes Campaign A/B subject validation flow
+• Fixes action dropdown placement and multi-select popover item spacing
+• Fixes UI issues in Gutenberg editor
+```
+
+```markdown [📋 Other]
+• Other improvements and bug fixes
+```
+
+:::
+
 ## FluentCRM v3.0.7
 
 _Released on May 19, 2026_
