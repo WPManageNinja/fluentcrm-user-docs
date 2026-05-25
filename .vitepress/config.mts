@@ -131,10 +131,12 @@ export default defineConfig({
               items: [
                 { text: 'Sending Emails and Email Deliverability', link: '/sending-emails-and-email-deliverability' },
                 { text: 'Cron Job Basics and Checklist', link: '/fluentcrm-cron-job-basics-and-checklist' },
+                { text: 'Replace WordPress Cron with Real Cron (cPanel)', link: '/replace-wordpress-cron-with-a-real-cron-job' },
+                { text: 'Cron on a VPS (SSH & Crontab)', link: '/fluentcrm-cron-on-a-vps' },
+                { text: 'Cron with xCloud', link: '/fluentcrm-cron-with-xcloud' },
                 { text: 'Cron with Cloudways', link: '/fluentcrm-cron-with-cloudways' },
                 { text: 'Cron with Cron-Job.org', link: '/fluentcrm-cron-with-cronjob-org' },
                 { text: 'Cron with EasyCron', link: '/fluentcrm-cron-with-easycron' },
-                { text: 'Replace WordPress Cron with Real Cron', link: '/replace-wordpress-cron-with-a-real-cron-job' },
                 { text: 'Troubleshoot Guidelines on WordPress Error', link: '/troubleshoot-guidelines-on-wordpress-error' },
               ],
             },

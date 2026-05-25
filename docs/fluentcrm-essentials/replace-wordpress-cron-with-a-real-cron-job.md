@@ -11,7 +11,7 @@ The importance of configuring a **Cron Job** for a WordPress Website is to ensur
 
 ## Prechecks
 
-Before we begin, please make sure that you have read about the [Cron Job: Basics & Checklist](/fluentcrm-cron-job-basics-and-checklist) and event recurrences of FluentCRM and also followed [Disable Default WordPress Cron System](/fluentcrm-cron-job-basics-and-checklist/#disable-default-wordpress-cron-system) with the code below:
+Before we begin, please make sure that you have read about the [Cron Job: Basics & Checklist](/fluentcrm-cron-job-basics-and-checklist) and event recurrences of FluentCRM and also followed [Step 1: Disable the default WordPress cron](/fluentcrm-cron-job-basics-and-checklist/#step-1-disable-the-default-wordpress-cron) with the code below:
 
 ```
 /* Add any custom values between this line and the "stop editing" line. */

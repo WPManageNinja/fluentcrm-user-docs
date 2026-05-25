@@ -27,11 +27,16 @@ Go to **Settings** from the top navigation bar. Then, from the left sidebar, ope
 
 ![settings tools cron job status](/fluentcrm-essentials/fluentcrm-cron-job-basics-and-checklist/Settings-Tools_Cron-Job-Status-scaled.webp)
 
-## Disable Default WordPress Cron System
+## Replace the Default WordPress Cron System
 
-Before we proceed to configure a [**Server-side**](/replace-wordpress-cron-with-a-real-cron-job) cron job, we will need to confirm that the **default PHP-based scheduled job** **running** is **disabled** from the **WordPress Configuration File** (wp-config.php).
+By default, WordPress runs its scheduled tasks only when someone visits your site. On a low-traffic site, that means FluentCRM's email sending and automations stall or fire late. The fix is a **two-step** process: disable the default WordPress cron, then replace it with a real server-side cron that runs every minute.
 
-To do this please open the wp-config.php file and look for the section below:
+>[!Warning]
+> These two steps go together — do not stop after Step 1. Adding `define('DISABLE_WP_CRON', true);` on its own **stops all scheduled tasks**: WordPress no longer triggers cron at all, and FluentCRM (along with every other plugin that depends on cron) silently stops processing. You **must** also set up the real cron job in Step 2. If you can only do one, do neither.
+
+### Step 1: Disable the default WordPress cron
+
+Open your `wp-config.php` file and look for this section:
 
 ```
 /* Add any custom values between this line and the "stop editing" line. */
@@ -39,13 +44,13 @@ To do this please open the wp-config.php file and look for the section below:
 /* That's all, stop editing! Happy publishing. */
 ```
 
-We need to add a new Configuration Directive for Server-Side invocation within these two lines which is below:
+Add the directive between those two lines:
 
 ```
-define('DISABLE_WP_CRON', true); // Disable Default WordPress Cron System
+define('DISABLE_WP_CRON', true);    // Disable the default PHP-based Cron invocation.
 ```
 
-Now the code will look similar as below:
+The result should look like this:
 
 ```
 /* Add any custom values between this line and the "stop editing" line. */
@@ -55,9 +60,16 @@ define('DISABLE_WP_CRON', true);    // Disable the default PHP-based Cron invoca
 /* That's all, stop editing! Happy publishing. */
 ```
 
-**Now please follow the links relevant to your hosting and preference to configure the server-side cron job:**
+### Step 2: Add a real server-side cron job (required)
+
+Now set up a cron job that triggers WordPress every minute. Follow the guide that matches your hosting:
 
 -   [Cron Job: Replace with a Server-side Cron Job (cPanel)](/replace-wordpress-cron-with-a-real-cron-job)
+-   [Cron Job: Set up on a VPS (SSH & Crontab)](/fluentcrm-cron-on-a-vps)
+-   [Cron Job: FluentCRM Cron With xCloud](/fluentcrm-cron-with-xcloud)
 -   [Cron Job: FluentCRM Cron With Cloudways](/fluentcrm-cron-with-cloudways)
 -   [Cron Job: FluentCRM Cron with Cron-job.org](/fluentcrm-cron-with-cronjob-org)
 -   [Cron Job: FluentCRM Cron with EasyCron](/fluentcrm-cron-with-easycron)
+
+>[!Tip]
+> After setting up your cron, come back to **Settings → System Admin Tools → Cron Job Monitor** and confirm the intervals match the [recommended values](#fluentcrm-cron-job-status) above. That's the fastest way to verify everything is running.

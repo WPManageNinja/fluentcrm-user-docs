@@ -5,6 +5,8 @@
 This is the official **FluentCRM user documentation site** built with **VitePress 1.6.4**.  
 Repository: `WPManageNinja/fluentcrm-user-docs` | Branch: `docteam` → merges to `master`.
 
+> **This repo is a git submodule of the main plugin repo** (`WPManageNinja/fluent-crm`), mounted at `user-docs/`. It is its own repository: commits and pushes here go to `fluentcrm-user-docs`, and the parent plugin repo only tracks the submodule pointer. The sibling `dev-docs/` submodule is the separate **developer** docs (`FluentCRM/fluent-crm-developers-docs`) — keep end-user content here, not there.
+
 - **142 markdown files** across 16 doc sections inside `docs/`
 - **VitePress config**: `.vitepress/config.mts` — controls sidebar, nav, rewrites, and a custom YouTube embed plugin
 - **Images**: stored in `docs/public/[category]/[slug]/` as `.webp` files
