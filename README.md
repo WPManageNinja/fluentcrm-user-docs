@@ -43,15 +43,6 @@ fluentcrm-user-docs/
 
 ---
 
-## Plugin Versions Covered
-
-| Plugin | Version |
-|--------|---------|
-| FluentCRM Free | `3.0.0-rc.2` |
-| FluentCRM Pro | `3.0.0-rc.2.1` |
-
----
-
 ## Integrations Documented
 
 WooCommerce · Easy Digital Downloads · MemberPress · LearnDash · LearnPress · LifterLMS · TutorLMS · BuddyBoss · AffiliateWP · FluentForms · FluentSupport · FluentCart · FluentCommunity · FluentBoards · FluentAffiliate · Fluent Booking · Elementor · Zapier · Pabbly · and more.
