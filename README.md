@@ -110,8 +110,8 @@ The dev server runs at `http://localhost:5173` by default.
 
 ### Writing Style
 
-- **Voice:** Second person ("you"), active voice, conversational but precise.
-- **Images:** Always `.webp` — never `.jpg`, `.png`, or `.gif`.
+- **Voice:** Second person, active voice, conversational but precise.
+- **Images:** Always `.webp`.
 - **Product names:** `FluentCRM` (never "Fluent CRM"), `WooCommerce`, `LearnDash`, etc. — see `CLAUDE.md` for the full casing reference table.
 - **Callouts:**
 
