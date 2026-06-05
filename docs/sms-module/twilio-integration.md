@@ -52,7 +52,7 @@ To configure the incoming webhook inside your Twilio Console, follow these steps
 
 1. Log in to your Twilio account and select the **Develop** tab from the left-hand navigation sidebar.
 2. Expand the **Phone Numbers** menu, click on **Manage**, and then select **Active numbers**.
-3. Under the **Active Numbers** list, Locate your provisioned **phone number** and click on it to open its unique configuration panel.
+3. Under the **Active Numbers** list, Locate your provisioned **phone number** and **click** on it to open its unique configuration panel.
 
 ![Configure incoming webhook](/sms-module/twilio-integration/active-number-4.webp)
 
