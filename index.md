@@ -42,7 +42,7 @@ features:
   - icon: 📊
     title: Reports
     details: CRM, WooCommerce, LMS, and cart recovery reporting.
-    link: /crm-advanced-reports
+    link: /advanced-reports-overview
     linkText: View reports 
   - icon: 🔌
     title: Integrations
