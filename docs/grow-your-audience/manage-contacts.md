@@ -7,7 +7,7 @@ order: 0
 
 # Add and Manage All Contacts
 
-FluentCRM provides an excellent [Contacts Dashboard](/contacts-dashboard/#Contacts-Dashboard) that represents all the necessary summaries of the activities. This article will guide you through the process of **adding a new contact manually** and **managing contacts in bulk** in detail.
+FluentCRM's [Contacts Dashboard](/contacts-dashboard/#Contacts-Dashboard) is your central view for all contact activity. This page covers how to **add contacts manually** and how to **manage contacts in bulk**.
 
 ## Adding New Contacts
 
@@ -21,14 +21,23 @@ Now, click on the **\+ Add Contact** button on the top right corner of the dashb
 
 ![+ add contacts button](/grow-your-audience/manage-contacts/Add-Contacts-button-scaled.webp)
 
-Then, a **modal** will appear on the right-hand side with a **few contact fields** for storing information about the contact. These are:
+A panel slides open on the right with the following sections:
 
--   **Basic Info:** Here, you will get all these fields (Prefix, First Name, Last Name, Email, Phone, Date of Birth, and Company/business) to input the basic information about your contacts.
--   **Address Info:** Here, you will get all these fields (Address Line 1, Address Line 2, City, State, Postal Code, Country) to input the address info about your contacts.
--   **Add** **Custom Data:** Here you will get all the custom contact fields you have in your FluentCRM plugin to add a few extra customized information about your contacts if needed. To learn how to add custom contact fields in FluentCRM, read this [Documentation](/global-custom-contact-fields).
--   **Identifiers:** Here you will get all these fields (Lists, Tags, and Status) to sort your contacts by including them in a single or multiple lists, putting a tag, and selecting their [subscription status](/fluentcrm-contacts-status).
+-   **Basic Info:** Prefix, First Name, Last Name, Email, Phone, Date of Birth, and **Company**.
+-   **Address Info:** Address Line 1, Address Line 2, City, State, Postal Code, and Country.
+-   **Custom Data:** Any custom contact fields you have configured in FluentCRM. See [Custom Contact Fields](/global-custom-contact-fields).
+-   **Identifiers:** Lists, Tags, and [Subscription Status](/fluentcrm-contacts-status) for this contact.
 
-Once you are done providing and selecting all the necessary information, click on the **Create Contact** or **Create & Add Another** button and your contact will be added.
+Once you have filled in the details, click **Create Contact** to save, or **Create & Add Another** to save and immediately open a blank form for the next contact.
+
+### Assigning or Creating a Company
+
+The **Company** field in Basic Info is a live-search selector. Type to find an existing company from your Companies list.
+
+If the company doesn't exist yet, click the **+ Create New** button that appears in the dropdown. A slide-in drawer opens with the full company creation form. Fill in the company details and save — the new company is created and automatically selected for the contact you are adding, without leaving the form.
+
+>[!Note]
+> The **+ Create New** button is visible only to users with permission to manage companies in FluentCRM.
 
 ![add new contact page](/grow-your-audience/manage-contacts/Add-new-contact-page.webp)
 
