@@ -162,7 +162,7 @@ From the sidebar, you can browse and drag the following into your email:
  * **Search Bar:** Quickly find specific layout types by typing keywords into the search field at the top of the panel.
 
 >[!TIP]
->Use Global Styles (located below the Layouts tab) to ensure consistent padding, colors, and fonts across all the layout blocks you add.
+> Use Global Styles (located below the Layouts tab) to ensure consistent padding, colors, and fonts across all the layout blocks you add.
 
 ![Visual Builder Layout Block](/email-campaign/fluentcrm-visual-builder/layout-15.webp)
 
@@ -214,4 +214,23 @@ If you need to move between different editing environments, you can use the Swit
 >High-quality images can increase engagement, but always remember to add **Alt Text** to your images for better accessibility and deliverability.
 
 ![fluentcrm visual builder stock media](/email-campaign/fluentcrm-visual-builder/stock-media-16.webp)
+
+## Global Link Color Picker
+
+FluentCRM 3.1.5 adds a **Global Link Color Picker** to the **Default (Gutenberg)** email editor. Set one link color for the entire email so every hyperlink matches your brand — no need to style each block separately.
+
+### Set link color in Gutenberg mode
+
+1. Open an email in the **Default (Gutenberg)** editor (use **Switch Editor** in the right-hand panel if you're in Visual Builder or another mode).
+2. Click the **sidebar** icon in the top toolbar to open the right-hand settings panel.
+3. Open the **Email-Body** tab and scroll to the **Style** section.
+4. Under **Global Colors**, click **Links** to open the color picker.
+5. Choose your brand color and save the email. FluentCRM applies it to all hyperlinks when the message renders for sending.
+
+The **Style** panel also includes global colors for **Body Background**, **Content Background**, **Headings**, and **Text**, plus layout controls such as **Max Width**, **Content Border Radius**, and **Content Padding**.
+
+![Gutenberg email editor Global Colors panel with the Links color picker open](/email-campaign/fluentcrm-visual-builder/gutenberg-global-link-color-picker.webp)
+
+>[!Tip]
+> In **Visual Builder** (drag-and-drop mode), set the default link color under **Global Style → Links & Accessibility → Links**.
 

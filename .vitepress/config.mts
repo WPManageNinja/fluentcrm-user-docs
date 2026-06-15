@@ -111,6 +111,7 @@ export default defineConfig({
                 { text: 'Double Opt-in Settings', link: '/global-double-opt-in-settings' },
                 { text: 'Integrations', link: '/global-integration-settings' },
                 { text: 'Abandoned Cart Settings', link: '/abandoned-cart-settings' },
+                { text: 'FluentCart Checkout Subscription', link: '/fluentcart-checkout-subscription' },
                 {
                   text: 'AI Configuration',
                   collapsed: true,

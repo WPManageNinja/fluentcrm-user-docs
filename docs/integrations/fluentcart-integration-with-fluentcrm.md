@@ -38,6 +38,7 @@ Below are the triggers available for the FluentCart integration. Each one can be
 -   **Subscription Renewed:** This will start when a subscription is renewed. A great opportunity to thank the customer for their loyalty.
 -   **Subscription Expired / End of Access Validity:** This will start when a subscription expires. Use this to trigger a final reminder or a last-chance offer to renew.
 -   **Subscription End of Term (Completed):** This will start when a subscription reaches its end of term/completion.
+-   **Cart Abandoned - FluentCart:** This will start when a customer abandons a cart in FluentCart. Use this to trigger a recovery sequence — send a reminder email with the abandoned items and a link back to checkout.
 
 ![automation trigger 02](/integrations/fluentcart-integration-with-fluentcrm/Automation-trigger-02.webp)
 
@@ -74,6 +75,52 @@ For example, after an **Order Paid** trigger, you could:
 
 If you want to know more about automation actions, check out our [documentation](/primary-automation-actions) for detailed steps.
 
+## **FluentCart SmartCodes**
+
+When a FluentCart trigger fires an automation, FluentCRM makes order and customer data available as SmartCodes you can use in email subject lines, body content, or action settings. These codes resolve to the actual values from the triggering order at send time.
+
+### Cart Order SmartCodes
+
+| SmartCode | Description |
+| --- | --- |
+| `{{cart_order.order_id}}` | Order ID |
+| `{{cart_order.invoice_no}}` | Invoice Number |
+| `{{cart_order.status}}` | Order Status |
+| `{{cart_order.type}}` | Order Type |
+| `{{cart_order.payment_method}}` | Payment Method |
+| `{{cart_order.payment_method_title}}` | Payment Method Title |
+| `{{cart_order.payment_status}}` | Payment Status |
+| `{{cart_order.currency}}` | Currency |
+| `{{cart_order.subtotal}}` | Order Subtotal |
+| `{{cart_order.shipping_total}}` | Shipping Total |
+| `{{cart_order.total_amount}}` | Total Amount |
+| `{{cart_order.total_paid}}` | Total Paid Amount |
+| `{{cart_order.total_refund}}` | Total Refund |
+| `{{cart_order.shipping_status}}` | Shipping Status |
+| `{{cart_order.note}}` | Order Note |
+| `{{cart_order.created_at}}` | Order Creation Date |
+| `{{cart_order.completed_at}}` | Order Completion Date |
+
+### Cart Customer SmartCodes
+
+| SmartCode | Description |
+| --- | --- |
+| `{{cart_customer.first_name}}` | Customer First Name |
+| `{{cart_customer.last_name}}` | Customer Last Name |
+| `{{cart_customer.email}}` | Customer Email |
+| `{{cart_customer.status}}` | Customer Status |
+| `{{cart_customer.purchase_value}}` | Total Purchase Value |
+| `{{cart_customer.purchase_count}}` | Total Purchase Count |
+| `{{cart_customer.aov}}` | Average Order Value (AOV) |
+| `{{cart_customer.first_purchase_date}}` | First Purchase Date |
+| `{{cart_customer.last_purchase_date}}` | Last Purchase Date |
+| `{{cart_customer.country}}` | Customer Country |
+| `{{cart_customer.city}}` | Customer City |
+| `{{cart_customer.notes}}` | Customer Notes |
+
+>[!Tip]
+> SmartCodes in the `cart_order` and `cart_customer` groups are only available in automations triggered by a FluentCart event. They resolve to empty strings in non-FluentCart contexts.
+
 ## **Contact Segmentation & Filtering with FluentCart Data**
 
 The integration allows you to filter and segment your contacts in FluentCRM based on their purchase history and data from FluentCart. This is useful for sending targeted email campaigns or for creating dynamic contact segments.
@@ -102,3 +149,11 @@ The available FluentCart conditions for segmentation are:
 2\. These same advanced filters are also available when setting up the **Recipients** for an **Email Campaign**, allowing you to send highly targeted broadcasts to specific customer groups.
 
 ![receipt advanced filter](/integrations/fluentcart-integration-with-fluentcrm/Receipt-advanced-filter-scaled.webp)
+
+## **Checkout Subscription Opt-In**
+
+FluentCRM 3.1.5 adds a built-in newsletter opt-in checkbox to the FluentCart checkout page. When a customer checks the box and completes their order, FluentCRM automatically creates or updates their contact — assigning them to a list, applying tags, and optionally triggering a double opt-in confirmation.
+
+This lets you grow your email list directly from the checkout flow without a separate form or third-party plugin.
+
+See [FluentCart Checkout Subscription](/fluentcart-checkout-subscription) for full configuration details.
