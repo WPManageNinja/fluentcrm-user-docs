@@ -152,7 +152,7 @@ The available FluentCart conditions for segmentation are:
 
 ## **Checkout Subscription Opt-In**
 
-FluentCRM 3.1.5 adds a built-in newsletter opt-in checkbox to the FluentCart checkout page. When a customer checks the box and completes their order, FluentCRM automatically creates or updates their contact — assigning them to a list, applying tags, and optionally triggering a double opt-in confirmation.
+FluentCRM includes a built-in newsletter opt-in checkbox on the FluentCart checkout page. When a customer checks the box and completes their order, FluentCRM automatically creates or updates their contact — assigning them to a list, applying tags, and optionally triggering a double opt-in confirmation.
 
 This lets you grow your email list directly from the checkout flow without a separate form or third-party plugin.
 
