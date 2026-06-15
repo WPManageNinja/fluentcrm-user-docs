@@ -9,6 +9,47 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.1.5
+
+_Released on June 15, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Adds FluentCart checkout subscription opt-in for assigning lists, tags, and double opt-in from checkout
+• Adds global link color picker to the Gutenberg email editor
+• Adds CSV export for FluentCRM system logs with date range options
+• Adds company quick-create flow in contact addition
+```
+
+```markdown [🚀 Improvements]
+• Improves campaign email queue reliability with lock-first sender handling, safer stale email recovery, and loopback fallback
+• Improves campaign recipient processing progress UI
+• Improves CSP compatibility for public forms and email view-on-browser pages
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes campaign recipient processing skipping contacts during large list chunking
+• Fixes RSS block rendering and feed item links in the email editor
+• Fixes ##web_preview_url## and other URL SmartCode issues
+• Fixes duplicate footer issue in email web preview
+• Fixes email template footer disable persistence issue
+• Fixes missing footer settings in the classic email editor
+• Fixes missing subject and settings step in Gutenberg recurring campaign editor
+• Fixes revenue re-sync issue in sent campaign reports
+• Fixes WooCommerce dashboard sales stats for modern order stats and HPOS-friendly stores
+• Fixes Latest Posts block links to resolve original WP RSS Aggregator feed item URLs
+• Fixes Latest Posts block filtered URLs validation before rendering
+• Fixes Add Media button issue in Companies Notes & Activities
+• Fixes automation label contrast in Dark Mode
+• Fixes automation label sync from the label dialog
+• Fixes conditional blocks being selectable inside conditional child branches
+• Fixes data cleanup delete flow interruption issue
+• Fixes Emogrifier autoloader conflict with FluentCart
+```
+
+:::
+
 ## FluentCRM v3.1.0
 
 _Released on May 23, 2026_

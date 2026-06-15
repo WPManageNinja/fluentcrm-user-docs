@@ -43,19 +43,40 @@ At the top of the page, a notice explains that this block sets the **default sen
 
 ## Email Footer Settings
 
-**Email Footer Text** uses the WordPress-style editor (Visual and **Text** modes) so you can format the block that appears at the bottom of outgoing emails. The toolbar includes paragraph style, font family and size, bold, italic, lists, links, blockquote, alignment, underline, **Add Media**, and a **Shortcode** helper. A typical footer includes your business line plus unsubscribe and preference links, for example:
+**Email Footer Text** sets the content that appears at the bottom of every outgoing email. The editor supports two modes:
 
-<code>&#123;&#123;crm.business_name&#125;&#125;, &#123;&#123;crm.business_address&#125;&#125;</code>  
-and linked text such as **Unsubscribe** and **Manage Email Subscriptions** that use the manage and unsubscribe URL tokens (see below).
+- **Visual mode** — a rich-text toolbar with paragraph style, font family, font size, bold, italic, underline, lists, links, blockquote, alignment, and **Add Media**.
+- **Text mode** — direct HTML editing for precise control over markup.
 
-Below the editor, an on-screen guide reminds you that **Business Name**, **Business Address**, and a working **Unsubscribe** path are important for compliance (for example, CAN-SPAM) and help keep messages out of spam folders. It also documents the main tokens:
+### SmartCode Insert Menu
+
+The footer editor includes a **SmartCode** button that opens a dedicated insert menu. Use it to browse and insert contact fields, general CRM tokens, and subscription management URLs directly into your footer — no need to type SmartCodes manually.
+
+The most commonly used footer SmartCodes are:
 
 * **Business Name:** <code>&#123;&#123;crm.business_name&#125;&#125;</code>
 * **Business Address:** <code>&#123;&#123;crm.business_address&#125;&#125;</code>
-* **Manage Email Subscriptions URL:** <code>##crm.manage_subscription_url##</code>
+* **Manage Subscription URL:** <code>##crm.manage_subscription_url##</code>
 * **Unsubscribe URL:** <code>##crm.unsubscribe_url##</code>
 
-Keep footer text in the default alignment when possible; your email template usually controls final layout.
+A typical compliant footer looks like:
+
+```
+{{crm.business_name}}, {{crm.business_address}}
+[Unsubscribe](##crm.unsubscribe_url##) | [Manage Preferences](##crm.manage_subscription_url##)
+```
+
+>[!Note]
+> Business name, business address, and a working unsubscribe path are required by CAN-SPAM and similar regulations. FluentCRM shows a reminder beneath the editor.
+
+Keep footer text in the default alignment when possible — your email template controls the final visual layout.
+
+### Disabling the Footer Per Template
+
+Individual email templates can disable the global footer. Open the template editor and toggle the **Disable Footer** option in the template settings. This setting now persists correctly across saves.
+
+>[!Tip]
+> Disabling the footer removes your unsubscribe link from that template. Only use this for transactional emails where you have a legal basis to omit it.
 
 ![Global Email Settings — footer editor, compliance notes, and redirect](/global-settings/global-email-settings/email-footer.webp)
 

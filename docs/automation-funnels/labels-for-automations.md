@@ -7,63 +7,53 @@ order: 0
 
 # Labels for Automations
 
-FluentCRM allows you to create **Labels** to organize and filter your **[Automations](/introduction-to-fluentcrm-automation)**. This article will guide you through creating and managing the **Labels** for **Automations**.
+Labels let you tag and organize your [Automations](/introduction-to-fluentcrm-automation) so you can filter and find related funnels quickly. Each label has a name and a color you choose when creating it.
 
-## Creating Labels 
+## Creating Labels
 
-First, go to the **Automations** section from the **FluentCRM Navbar**, click the **More Actions** dropdown in the top right corner, and press the **Manage Labels** button.
+Go to the **Automations** section in the FluentCRM navbar, open the **More Actions** dropdown in the top-right corner, and click **Manage Labels**.
 
 ![Manage labels](/automation-funnels/labels-for-automations/manage-lable-1.webp)
 
-A popup will appear. Now, click the **Create New Label** button to create new labels.
+In the panel that opens, click **Create New Label**. Your existing labels are listed here too — click the **Pencil** icon to edit one or the **Trash** icon to delete it.
 
-Here, you can also find all your existing labels. You can edit any labels by clicking the **Pencil Icon** or delete by clicking the **Trash Icon** at any time if needed.
+![Create new label](/automation-funnels/labels-for-automations/Create-New-Label-2.webp)
 
-![Create new label ](/automation-funnels/labels-for-automations/Create-New-Label-2.webp)
+Enter a **Name**, pick a **Color**, and click **Create**.
 
-Now, provide a **Name**, select any desired **Color**, and click the **Create** button.  
-And, your **Label** will be created to help you categorize your Automations!
+![Create label](/automation-funnels/labels-for-automations/Create-lable-3.webp)
 
-![Lable](/automation-funnels/labels-for-automations/Create-lable-3.webp)
+>[!Note]
+> Label colors display correctly in both light and dark mode pick any color from the palette and the label text stays readable.
 
 ## Applying Labels
 
-Return to the **Automations** section from the **FluentCRM** Navbar and select the **Automation/s** where you want to apply the Labels.
+You can apply labels in bulk from the automations list, or one at a time from the row menu.
 
-Once you select the desired Automation/s, you will get the **Select Action** box in the bottom. Now, click the **Dropdown Arrow** and select the **Apply Label**s action.
-
-Then, choose the desired **Labels** (single or multiple according to your needs) from the **Select Labels** box by clicking the Dropdown Arrow. 
-
-Finally, click the **Apply Label** button and the labels will be applied.
+**Bulk apply:** Select one or more automations using their checkboxes. The **Select Action** bar appears at the bottom — open the dropdown, choose **Apply Labels**, select the labels you want, and click **Apply Label**.
 
 ![Apply label button](/automation-funnels/labels-for-automations/Apply-Label-button-scaled-4.webp)
 
-Here, you can see the applied labels have appeared with their chosen automations under the **Labels** column.
+The labels appear in the **Labels** column next to each automation.
 
-![Labels added to selcted automations](/automation-funnels/labels-for-automations/Labels-added-to-selceted-automations-scaled-5.webp)
+![Labels added to selected automations](/automation-funnels/labels-for-automations/Labels-added-to-selceted-automations-scaled-5.webp)
 
-Or, you can also add lable by clicking the **three-dots** your desired automation from the right side. Then click on the **Apply Lables**
+**Row menu apply:** Click the **three-dot menu** on any automation row and select **Apply Labels**.
 
-![Labels added](/automation-funnels/labels-for-automations/three-dot-lable-1.webp)
+![Labels row menu](/automation-funnels/labels-for-automations/three-dot-lable-1.webp)
 
-A popup will appear. Choose the **Lables** from dropdown and click **Apply** button.
+Choose the labels from the dropdown and click **Apply**.
 
-![Labels added](/automation-funnels/labels-for-automations/apply-lable-2.webp)
-
+![Apply label popup](/automation-funnels/labels-for-automations/apply-lable-2.webp)
 
 ## Filtering Automations by Labels
 
-You can also filter the list of automations by the applied labels. To do this, click the **Filter Icon** and choose the desired label from the dropdown list. 
+To see only automations with a specific label, click the **Filter** icon above the list and choose a label from the dropdown. The list updates to show only matching automations.
 
-For example, here I chose the **Fluentcommunnity Label** from the list and only the **Automations** with the **Fluentcommunity** label appeared.
-
-![Filter by label ](/automation-funnels/labels-for-automations/Filter-By-Label-dropdown-scaled-6.webp)
-
+![Filter by label](/automation-funnels/labels-for-automations/Filter-By-Label-dropdown-scaled-6.webp)
 
 ## Deleting Labels
 
-If you want to delete any existing label/s, click the **Cross Icon** next to the **Label Name**, and press the **Yes** button.  
-
-This way you can remove the labels from any automations.
+Open **Manage Labels**, click the **Cross** icon next to the label name, and confirm with **Yes**. Deleting a label removes it from all automations it was applied to.
 
 ![Delete label](/automation-funnels/labels-for-automations/delete-lable-7.webp)

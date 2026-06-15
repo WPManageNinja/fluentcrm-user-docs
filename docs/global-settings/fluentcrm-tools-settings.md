@@ -44,16 +44,55 @@ It is strongly recommended that you replace your default WordPress cron that run
 
 ## System Logs
 
-The **System Logs** screen helps you inspect recent FluentCRM activity and troubleshoot background processes such as automation actions, scheduler runs, and SMS processing.
+### Enable System Log for debugging
+
+Before FluentCRM records events you can review on the **System Logs** screen, turn logging on from **FluentCRM → Settings → General Settings**. Scroll to **Enable System Log for debugging** and click **Settings**.
+
+In the panel that opens, check **Enable System Log for debugging**, then click **Save Settings**. When the feature is active, the row shows an **Enabled** badge.
+
+![Enable System Log for debugging settings](/global-settings/fluentcrm-tools-settings/crm_tools_enable_system_log_for_debugging.webp)
+
+Open **FluentCRM → Settings → System Admin Tools → System Logs** to review recent background activity — automation runs, SMS scheduler checks, cron handlers, and similar system events.
 
 The page includes:
 
-- A search box to filter logs quickly.
+- A **Reset** button in the top-right corner to clear applied filters and return to the default view.
+- A search box (**Type & enter**) to filter log entries quickly.
 - **Refresh** to reload the latest entries.
-- **Reset** to clear applied filters/state and return to the default view.
+- An **Export** dropdown to download logs as CSV for a chosen date range.
 - A table with **ID**, **Date & Time**, **Title**, and **Description** columns.
 
+Typical entries include automation follow-up actions, SMS scheduler runs, and cron handler events. Each row shows when the event ran and a short status message — for example, completed job counts or the handler that executed.
+
 ![crm tools system logs](/global-settings/fluentcrm-tools-settings/crm_tools_system_logs.webp)
+
+### Export System Logs as CSV
+
+You can export system logs as a CSV file for debugging, support handoff, or internal audits. Click the **Export** dropdown on the System Logs page and choose a range:
+
+| Option | What it exports |
+| --- | --- |
+| **Export Last 7 Days** | Logs from the past 7 days |
+| **Export Last 15 Days** | Logs from the past 15 days |
+| **Export Last 30 Days** | Logs from the past 30 days |
+| **Export All** | Every log entry in the database |
+
+The CSV downloads immediately with a filename such as:
+
+```text
+fluent-crm-system-logs-last-30-days-2026-06-15.csv
+```
+
+or
+
+```text
+fluent-crm-system-logs-all-2026-06-15.csv
+```
+
+The file contains four columns: **ID**, **Date & Time**, **Title**, and **Description**. Large exports are streamed in chunks so they do not load the full log set into memory at once.
+
+>[!Tip]
+> If you are sharing logs with support, **Export Last 7 Days** or **Export Last 15 Days** is usually sufficient and produces a smaller, easier-to-share file.
 
 ## Reset FluentCRM Data
 

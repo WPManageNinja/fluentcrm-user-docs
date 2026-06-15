@@ -38,6 +38,7 @@ Below are the triggers available for the FluentCart integration. Each one can be
 -   **Subscription Renewed:** This will start when a subscription is renewed. A great opportunity to thank the customer for their loyalty.
 -   **Subscription Expired / End of Access Validity:** This will start when a subscription expires. Use this to trigger a final reminder or a last-chance offer to renew.
 -   **Subscription End of Term (Completed):** This will start when a subscription reaches its end of term/completion.
+-   **Cart Abandoned - FluentCart:** This will start when a customer abandons a cart in FluentCart. Use this to trigger a recovery sequence — send a reminder email with the abandoned items and a link back to checkout.
 
 ![automation trigger 02](/integrations/fluentcart-integration-with-fluentcrm/Automation-trigger-02.webp)
 
@@ -74,6 +75,52 @@ For example, after an **Order Paid** trigger, you could:
 
 If you want to know more about automation actions, check out our [documentation](/primary-automation-actions) for detailed steps.
 
+## **FluentCart SmartCodes**
+
+When a FluentCart trigger fires an automation, FluentCRM makes order and customer data available as SmartCodes you can use in email subject lines, body content, or action settings. These codes resolve to the actual values from the triggering order at send time.
+
+### Cart Order SmartCodes
+
+| SmartCode | Description |
+| --- | --- |
+| <code>&#123;&#123;cart_order.order_id&#125;&#125;</code> | Order ID |
+| <code>&#123;&#123;cart_order.invoice_no&#125;&#125;</code> | Invoice Number |
+| <code>&#123;&#123;cart_order.status&#125;&#125;</code> | Order Status |
+| <code>&#123;&#123;cart_order.type&#125;&#125;</code> | Order Type |
+| <code>&#123;&#123;cart_order.payment_method&#125;&#125;</code> | Payment Method |
+| <code>&#123;&#123;cart_order.payment_method_title&#125;&#125;</code> | Payment Method Title |
+| <code>&#123;&#123;cart_order.payment_status&#125;&#125;</code> | Payment Status |
+| <code>&#123;&#123;cart_order.currency&#125;&#125;</code> | Currency |
+| <code>&#123;&#123;cart_order.subtotal&#125;&#125;</code> | Order Subtotal |
+| <code>&#123;&#123;cart_order.shipping_total&#125;&#125;</code> | Shipping Total |
+| <code>&#123;&#123;cart_order.total_amount&#125;&#125;</code> | Total Amount |
+| <code>&#123;&#123;cart_order.total_paid&#125;&#125;</code> | Total Paid Amount |
+| <code>&#123;&#123;cart_order.total_refund&#125;&#125;</code> | Total Refund |
+| <code>&#123;&#123;cart_order.shipping_status&#125;&#125;</code> | Shipping Status |
+| <code>&#123;&#123;cart_order.note&#125;&#125;</code> | Order Note |
+| <code>&#123;&#123;cart_order.created_at&#125;&#125;</code> | Order Creation Date |
+| <code>&#123;&#123;cart_order.completed_at&#125;&#125;</code> | Order Completion Date |
+
+### Cart Customer SmartCodes
+
+| SmartCode | Description |
+| --- | --- |
+| <code>&#123;&#123;cart_customer.first_name&#125;&#125;</code> | Customer First Name |
+| <code>&#123;&#123;cart_customer.last_name&#125;&#125;</code> | Customer Last Name |
+| <code>&#123;&#123;cart_customer.email&#125;&#125;</code> | Customer Email |
+| <code>&#123;&#123;cart_customer.status&#125;&#125;</code> | Customer Status |
+| <code>&#123;&#123;cart_customer.purchase_value&#125;&#125;</code> | Total Purchase Value |
+| <code>&#123;&#123;cart_customer.purchase_count&#125;&#125;</code> | Total Purchase Count |
+| <code>&#123;&#123;cart_customer.aov&#125;&#125;</code> | Average Order Value (AOV) |
+| <code>&#123;&#123;cart_customer.first_purchase_date&#125;&#125;</code> | First Purchase Date |
+| <code>&#123;&#123;cart_customer.last_purchase_date&#125;&#125;</code> | Last Purchase Date |
+| <code>&#123;&#123;cart_customer.country&#125;&#125;</code> | Customer Country |
+| <code>&#123;&#123;cart_customer.city&#125;&#125;</code> | Customer City |
+| <code>&#123;&#123;cart_customer.notes&#125;&#125;</code> | Customer Notes |
+
+>[!Tip]
+> SmartCodes in the `cart_order` and `cart_customer` groups are only available in automations triggered by a FluentCart event. They resolve to empty strings in non-FluentCart contexts.
+
 ## **Contact Segmentation & Filtering with FluentCart Data**
 
 The integration allows you to filter and segment your contacts in FluentCRM based on their purchase history and data from FluentCart. This is useful for sending targeted email campaigns or for creating dynamic contact segments.
@@ -102,3 +149,11 @@ The available FluentCart conditions for segmentation are:
 2\. These same advanced filters are also available when setting up the **Recipients** for an **Email Campaign**, allowing you to send highly targeted broadcasts to specific customer groups.
 
 ![receipt advanced filter](/integrations/fluentcart-integration-with-fluentcrm/Receipt-advanced-filter-scaled.webp)
+
+## **Checkout Subscription Opt-In**
+
+FluentCRM 3.1.5 adds a built-in newsletter opt-in checkbox to the FluentCart checkout page. When a customer checks the box and completes their order, FluentCRM automatically creates or updates their contact — assigning them to a list, applying tags, and optionally triggering a double opt-in confirmation.
+
+This lets you grow your email list directly from the checkout flow without a separate form or third-party plugin.
+
+See [FluentCart Checkout Subscription](/fluentcart-checkout-subscription) for full configuration details.

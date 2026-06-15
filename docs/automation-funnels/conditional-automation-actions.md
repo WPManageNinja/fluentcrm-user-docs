@@ -6,134 +6,105 @@ order: 0
 ---
 
 # Primary Conditionals
-FluentCRM offers several **Primary** **Conditionals** that allow users to create conditional checks and take alternative [Actions](/primary-automation-actions) based on those set conditions. This enhances the automation funnel, enabling various possibilities. With Multi-Path conditional automation, you can create multiple branches, providing flexibility to customize your workflows.
 
-This article will provide detailed information about all **Primary** **Conditional Actions** of **FluentCRM Automation**. 
+The **Check Condition** block lets you branch an automation based on a contact's properties. Contacts who meet your conditions follow the **Yes** path; contacts who don't follow the **No** path. You can stack multiple conditions using AND/OR logic to build precise targeting rules.
+
+>[!Note]
+> This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
 https://youtu.be/yFYXfOlBVwc
 
-> **Remember**, to use all the **Conditionals**, you need to have [FluentCRM Pro Plugin](/how-to-install-upgrade-and-activate-license) installed and activated in your WordPress Site.
+## Adding a Condition Block
 
-## All Primary Conditionals
-
-To learn how you can use all the **Primary Conditionals** in your FluentCRM, follow the steps with screenshots below –
-
-First, go to the **Automation** section from the **FluentCRM Navbar**, and open your **desired** **Automation** by clicking on its title. Or, create a new one by clicking the **+ New Automation.** 
-
-> To learn the process of creating a new automation funnel, read this [Documentation](/automation-editor).
-
-For example, I opened the **List Applied** automation funnel to explain all the **Primary Conditionals** 
-
-![Open a desired automation or create new one](/automation-funnels/conditional-automation-actions/automation-condition-1.webp)
-
-Now, click the **Plus Icon** or hover over it and click the **Conditional Action** option to view all the **Primary Conditionals**.
+Open an automation funnel, click the **Plus (+)** icon between steps, and choose **Conditional Action**.
 
 ![Click the plus icon or conditional action option](/automation-funnels/conditional-automation-actions/automation-condition-2.webp)
 
-Then, a **Check Condition** page will appear in the left Sidebar for adding conditions.  
-The explanation of the following settings is given below:
-
--   **Interval Label**: Here, a **Name** for the Action will be automatically added so you can easily find it later. You can change it that suit your needs.
-
--   **Internal Description**: A **description** **of the action** will also be automatically added as a Subtitle. You can also change it suit to your needs.
-
--   **\+ Add Button**: To add a new condition/s, always click this **\+ Add** button. And, to delete any existing condition, always click the **Trash Icon**.
-
--   **\+ OR Button**: To add condition/s against any existing condition/s, always click the **+ OR** button. Then, the process of adding conditions here is also the same.
-
-Once you are done, click the **Save Settings** button to save all your changes.  
-You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
+The **Check Condition** settings panel opens in the left sidebar.
 
 ![Check condition page with settings options](/automation-funnels/conditional-automation-actions/automation-condition-3.webp)
 
-Once you click the **\+ Add** button, you will get **Four Types** of **Primary Properties** to set the **Parameter** based on the selected property. These are:
+## Configuring Conditions
 
-1.  Contact
-2.  Contact Segment
-3.  Contact Activities
-4.  Custom Fields
+### Match Type
 
-**A detailed explanation of the Properties mentioned above is given below –** 
+At the top of the conditions panel, choose how the block evaluates multiple conditions:
 
-#### 1\. Contact
+- **True if all conditions match** — the contact must satisfy every condition (AND logic).
+- **True if any of the conditions match** — the contact only needs to satisfy one condition (OR logic).
 
-Here you will get a wide range of **Options** based on the **Contact** property to set the desired **Parameter** for your condition. These are:
+### Adding Conditions
 
--   First Name
--   Last Name
--   Email
--   Address Line 1
--   Address Line 2
--   City
--   State
--   Postal Code
--   Country
--   Phone
--   WP User ID
--   Type
--   Name Prefix (Title)
--   Date of Birth
--   Last Activity
--   Created At
+Click **+ Add** to add a condition row. Each row has three parts:
 
-#### 2\. Contact Segment
+1. **Parameter** — the contact property to check (see [Property Types](#condition-property-types) below).
+2. **Operator** — how to compare the value (e.g. *is*, *is not*, *contains*, *greater than*).
+3. **Value** — what to compare against.
 
-Here you will get the **Options** based on the **Contact Segment** property to set the desired **Parameter** for your condition. These are
+Click the **Trash** icon on any row to remove it.
 
--   Tags
--   Lists
--   WP User Role
+### AND / OR Groups
 
-#### 3\. Contact Activities
+- **+ Add** adds another condition to the current group — all conditions in the group must match.
+- **+ OR** creates a new condition group. If any group matches, the overall block evaluates as **Yes**.
 
-Here you will get the **Options** based on the **Contact Activities** property to set the desired **Parameter** for your condition. These are
+Click **Save Settings** when finished.
 
--   Last Email Sent
--   Last Email Clicked
--   Last Email Open (approximately)
+>[!Note]
+> Each condition checks the contact's current data when they reach this step. Tags, field updates, and other changes from earlier funnel steps are included.
 
-#### 4\. Custom Fields
+## Condition Property Types
 
-Here you will get the **Options** based on all the **Custom Fields** you have in your **FluentCRM** to set the desired **Parameter** for your condition. These are
+Click **+ Add** to open the property selector. Four categories are available:
 
-> To learn how to add custom fields in FluentCRM Contacts, read this [Documentation](/global-custom-contact-fields).
+### 1. Contact
 
-Such as I had the following custom fields added to my FluentCRM:
+Check any standard contact field:
 
--   Number
--   Gender
--   Login Date
--   Logout Date
+- First Name, Last Name, Email
+- Address Line 1, Address Line 2, City, State, Postal Code, Country
+- Phone, WP User ID, Type, Name Prefix
+- Date of Birth, Last Activity, Created At
+
+### 2. Contact Segment
+
+Check list and tag membership or WordPress role:
+
+- Tags
+- Lists
+- WP User Role
+
+### 3. Contact Activities
+
+Check email engagement history:
+
+- Last Email Sent
+- Last Email Clicked
+- Last Email Open (approximate)
+
+### 4. Custom Fields
+
+Any custom fields you have defined in FluentCRM appear here automatically. To add custom fields, see [Custom Contact Fields](/global-custom-contact-fields).
 
 ![Check condition options](/automation-funnels/conditional-automation-actions/automation-condition-4.webp)
 
-## Setting Condition/s
+## Setting a Condition — Example
 
-Once you select your desired **Parameter** (First Field), you will get the **Options** to select the **Operator** (Middle Field) and **Value/s** (Last Field) based on the selected **Parameter.** 
+Select **First Name** (Contact → First Name) as the parameter, choose **includes in** as the operator, and enter the value. Only contacts whose first name matches will take the **Yes** path.
 
-> Remember, the selected parameter will trigger the action only if the condition is met.
+![Condition example](/automation-funnels/conditional-automation-actions/automation-condition-5.webp)
 
-**For example**, I chose “**First Name**” from the **Contact** property as a **Parameter**, the **“includes in”** as an **Operator**, and entered the “**Mr X**” as the respective **Values**. As a result, only subscriber named 'Mr X' will trigger the conditional actions.
+## Setting Actions on Each Path
 
-Do not forget to click the **Save Settings** button after setting the Condition/s.
+After saving the condition block, two branches appear in the funnel canvas:
 
-![Published](/automation-funnels/conditional-automation-actions/automation-condition-5.webp)
+- **Yes** — actions here run when the contact meets your conditions.
+- **No** — actions here run when the contact does not meet your conditions.
 
-## Setting Conditional Actions
+Click **+ Add Action** under either branch to add steps. You can mix any action type on both paths.
 
-Once you set the desired condition/s, it is time to set **Actions** under that condition.
+For a full list of available actions, see [Primary Actions](/primary-automation-actions), [Email Actions](/automation-email-actions), [Goals/Benchmarks](/goals-or-benchmark-actions), [WordPress Actions](/wordpress-automation-actions), [LMS Actions](/lms-automation-actions), [WooCommerce Actions](/woocommerce-automation-actions), and [Miscellaneous Actions](/miscellaneous-automation-actions).
 
-You can see, in the automation funnel, there are two paths for setting actions. These are:
+When the funnel is ready, enable the **Publish** toggle to make it live.
 
-1.  **No**: The action you will add under this path will run when the contacts do not meet the condition/s.
-2.  **Yes**: The action you will add under this path will run when the contacts meet the condition/s.
-
-In a condition, you can add as many actions as you need by clicking the **\+ Add Action** button.
-
-> Read this documentation to learn how to add [Primary](/primary-automation-actions), [Email](/automation-email-actions), [Goals/Benchmark](/goals-or-benchmark-actions), [WordPress](/wordpress-automation-actions), [LMS](/lms-automation-actions), [WooCommerce](/woocommerce-automation-actions), [Abandoned Cart](/abandon-cart-automation), and [Miscellaneous](/miscellaneous-automation-actions) actions. Additionally, read this [Documentation](/fluentcrm-automation-triggers) to learn more about triggers
-
-Finally, when you are done, enable the **Publish** toggle to make the full automation funnel functional. Otherwise, it will remain as a draft.
-
-![Published](/automation-funnels/conditional-automation-actions/automation-condition-6.webp)
-
-Also, to add more conditions or actions, always click the **Plus** icon.
+![Published funnel with conditional paths](/automation-funnels/conditional-automation-actions/automation-condition-6.webp)
