@@ -83,40 +83,40 @@ When a FluentCart trigger fires an automation, FluentCRM makes order and custome
 
 | SmartCode | Description |
 | --- | --- |
-| `{{cart_order.order_id}}` | Order ID |
-| `{{cart_order.invoice_no}}` | Invoice Number |
-| `{{cart_order.status}}` | Order Status |
-| `{{cart_order.type}}` | Order Type |
-| `{{cart_order.payment_method}}` | Payment Method |
-| `{{cart_order.payment_method_title}}` | Payment Method Title |
-| `{{cart_order.payment_status}}` | Payment Status |
-| `{{cart_order.currency}}` | Currency |
-| `{{cart_order.subtotal}}` | Order Subtotal |
-| `{{cart_order.shipping_total}}` | Shipping Total |
-| `{{cart_order.total_amount}}` | Total Amount |
-| `{{cart_order.total_paid}}` | Total Paid Amount |
-| `{{cart_order.total_refund}}` | Total Refund |
-| `{{cart_order.shipping_status}}` | Shipping Status |
-| `{{cart_order.note}}` | Order Note |
-| `{{cart_order.created_at}}` | Order Creation Date |
-| `{{cart_order.completed_at}}` | Order Completion Date |
+| <code>&#123;&#123;cart_order.order_id&#125;&#125;</code> | Order ID |
+| <code>&#123;&#123;cart_order.invoice_no&#125;&#125;</code> | Invoice Number |
+| <code>&#123;&#123;cart_order.status&#125;&#125;</code> | Order Status |
+| <code>&#123;&#123;cart_order.type&#125;&#125;</code> | Order Type |
+| <code>&#123;&#123;cart_order.payment_method&#125;&#125;</code> | Payment Method |
+| <code>&#123;&#123;cart_order.payment_method_title&#125;&#125;</code> | Payment Method Title |
+| <code>&#123;&#123;cart_order.payment_status&#125;&#125;</code> | Payment Status |
+| <code>&#123;&#123;cart_order.currency&#125;&#125;</code> | Currency |
+| <code>&#123;&#123;cart_order.subtotal&#125;&#125;</code> | Order Subtotal |
+| <code>&#123;&#123;cart_order.shipping_total&#125;&#125;</code> | Shipping Total |
+| <code>&#123;&#123;cart_order.total_amount&#125;&#125;</code> | Total Amount |
+| <code>&#123;&#123;cart_order.total_paid&#125;&#125;</code> | Total Paid Amount |
+| <code>&#123;&#123;cart_order.total_refund&#125;&#125;</code> | Total Refund |
+| <code>&#123;&#123;cart_order.shipping_status&#125;&#125;</code> | Shipping Status |
+| <code>&#123;&#123;cart_order.note&#125;&#125;</code> | Order Note |
+| <code>&#123;&#123;cart_order.created_at&#125;&#125;</code> | Order Creation Date |
+| <code>&#123;&#123;cart_order.completed_at&#125;&#125;</code> | Order Completion Date |
 
 ### Cart Customer SmartCodes
 
 | SmartCode | Description |
 | --- | --- |
-| `{{cart_customer.first_name}}` | Customer First Name |
-| `{{cart_customer.last_name}}` | Customer Last Name |
-| `{{cart_customer.email}}` | Customer Email |
-| `{{cart_customer.status}}` | Customer Status |
-| `{{cart_customer.purchase_value}}` | Total Purchase Value |
-| `{{cart_customer.purchase_count}}` | Total Purchase Count |
-| `{{cart_customer.aov}}` | Average Order Value (AOV) |
-| `{{cart_customer.first_purchase_date}}` | First Purchase Date |
-| `{{cart_customer.last_purchase_date}}` | Last Purchase Date |
-| `{{cart_customer.country}}` | Customer Country |
-| `{{cart_customer.city}}` | Customer City |
-| `{{cart_customer.notes}}` | Customer Notes |
+| <code>&#123;&#123;cart_customer.first_name&#125;&#125;</code> | Customer First Name |
+| <code>&#123;&#123;cart_customer.last_name&#125;&#125;</code> | Customer Last Name |
+| <code>&#123;&#123;cart_customer.email&#125;&#125;</code> | Customer Email |
+| <code>&#123;&#123;cart_customer.status&#125;&#125;</code> | Customer Status |
+| <code>&#123;&#123;cart_customer.purchase_value&#125;&#125;</code> | Total Purchase Value |
+| <code>&#123;&#123;cart_customer.purchase_count&#125;&#125;</code> | Total Purchase Count |
+| <code>&#123;&#123;cart_customer.aov&#125;&#125;</code> | Average Order Value (AOV) |
+| <code>&#123;&#123;cart_customer.first_purchase_date&#125;&#125;</code> | First Purchase Date |
+| <code>&#123;&#123;cart_customer.last_purchase_date&#125;&#125;</code> | Last Purchase Date |
+| <code>&#123;&#123;cart_customer.country&#125;&#125;</code> | Customer Country |
+| <code>&#123;&#123;cart_customer.city&#125;&#125;</code> | Customer City |
+| <code>&#123;&#123;cart_customer.notes&#125;&#125;</code> | Customer Notes |
 
 >[!Tip]
 > SmartCodes in the `cart_order` and `cart_customer` groups are only available in automations triggered by a FluentCart event. They resolve to empty strings in non-FluentCart contexts.
