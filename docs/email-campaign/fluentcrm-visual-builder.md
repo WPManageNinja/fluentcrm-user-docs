@@ -217,7 +217,7 @@ If you need to move between different editing environments, you can use the Swit
 
 ## Global Link Color Picker
 
-FluentCRM 3.1.5 adds a **Global Link Color Picker** to the **Default (Gutenberg)** email editor. Set one link color for the entire email so every hyperlink matches your brand — no need to style each block separately.
+The **Global Link Color Picker** in the **Default (Gutenberg)** email editor lets you set one link color for the entire email so every hyperlink matches your brand — no need to style each block separately.
 
 ### Set link color in Gutenberg mode
 

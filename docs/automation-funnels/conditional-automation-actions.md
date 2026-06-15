@@ -51,7 +51,7 @@ Click the **Trash** icon on any row to remove it.
 Click **Save Settings** when finished.
 
 >[!Note]
-> As of FluentCRM 3.1.5, conditions are evaluated against the contact's data at the moment they reach this step — so changes made by earlier steps in the same funnel (such as adding a tag or updating a field) are reflected correctly.
+> Each condition checks the contact's current data when they reach this step. Tags, field updates, and other changes from earlier funnel steps are included.
 
 ## Condition Property Types
 
