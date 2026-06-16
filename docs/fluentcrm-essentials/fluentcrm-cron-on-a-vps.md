@@ -43,13 +43,13 @@ sudo -u www-data crontab -e
 
 3. Add this line, replacing the URL with your site:
 
-```cron
+```bash
 * * * * * wget -q -O - https://yoursite.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1
 ```
 
 Prefer `curl`? This does the same thing:
 
-```cron
+```bash
 * * * * * curl -s https://yoursite.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1
 ```
 
@@ -73,7 +73,7 @@ sudo -u www-data crontab -e
 
 3. Add this line, replacing the path and the `wp` location with yours:
 
-```cron
+```bash
 * * * * * cd /var/www/html && /usr/local/bin/wp cron event run --due-now >/dev/null 2>&1
 ```
 
