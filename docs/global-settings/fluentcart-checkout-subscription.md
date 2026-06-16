@@ -22,11 +22,6 @@ Go to **FluentCRM → Settings → General Settings** and scroll to the **Fluent
 
 ![FluentCart Checkout Subscription settings in General Settings](/global-settings/fluentcart-checkout-subscription/fluentcart-checkout-settings.webp)
 
-## What Customers See at Checkout
-
-Once enabled, FluentCRM automatically displays the subscription checkbox on your FluentCart checkout page — right above the payment methods section. The label you set in General Settings appears next to the checkbox.
-
-![Subscription checkbox on the FluentCart checkout page](/global-settings/fluentcart-checkout-subscription/fluentcart-checkout-preview.webp)
 
 ## Configure the Settings
 
@@ -67,6 +62,13 @@ This is enabled by default and is recommended for list quality and compliance.
 > The double opt-in email content and confirmation page are configured in **FluentCRM → Settings → [Double Opt-in Settings](/global-double-opt-in-settings)**.
 
 Disable this option only if you have a clear legal basis for single opt-in (for example, existing customer relationships under legitimate interest).
+
+## What Customers See at Checkout
+
+Once enabled, FluentCRM automatically displays the subscription checkbox on your FluentCart checkout page right above the payment methods section. The label you set in General Settings appears next to the checkbox.
+
+![Subscription checkbox on the FluentCart checkout page](/global-settings/fluentcart-checkout-subscription/fluentcart-checkout-preview.webp)
+
 
 ## How Subscription Works
 
