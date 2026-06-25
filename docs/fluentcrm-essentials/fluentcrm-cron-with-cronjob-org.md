@@ -29,7 +29,7 @@ The creation window will show a few options and we do not have to worry about al
 -   **URL:** This is the main part. The URL to the Cron Invocation via the web page of the WordPress Cron Script. In our case, this is ( Please replace the base URL or domain part with your website domain or subdomain ):
 
 ```
-https://testwp.ibrahim.com/wp-cron.php?doing_wp_cron
+https://yoursite.com/wp-cron.php?doing_wp_cron
 ```
 
 -   **Enable Job & Save Responses in Job History.**

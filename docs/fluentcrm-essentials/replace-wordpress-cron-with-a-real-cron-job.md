@@ -42,13 +42,13 @@ Most of cases, the suitable recommended time interval for running the Cron job i
 The command for running WordPress is:
 
 ```
-wget -q -O - https://testwp.ibrahim.com/wp-cron.php?doing_wp_cron > /dev/null 2>&1
+wget -q -O - https://yoursite.com/wp-cron.php?doing_wp_cron > /dev/null 2>&1
 ```
 
 The total command including time intervals which is the resulting final output is:
 
 ```
-* * * * * wget -q -O - https://testwp.ibrahim.com/wp-cron.php?doing_wp_cron > /dev/null 2>&1
+* * * * * wget -q -O - https://yoursite.com/wp-cron.php?doing_wp_cron > /dev/null 2>&1
 ```
 
 That's all for cPanel WordPress Cron Configuration! Thanks and enjoy working with WordPress Scheduled Events.

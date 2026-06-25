@@ -34,7 +34,7 @@ The first section or tab contains the essential settings of the Cron Job.
 -   **URL to Call:** The URL to the webpage of the WordPress Cron Script including any additional parameters. Please replace with your own domain or subdomain where in our case it is:
 
 ```
-https://testwp.ibrahim.com/wp-cron.php?doing_wp_cron
+https://yoursite.com/wp-cron.php?doing_wp_cron
 ```
 
 -   **When to Execute:** This should be every minute or per minute. It is required by FluentCRM's Every Minute Email Sending Schedule.
