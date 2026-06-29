@@ -9,6 +9,52 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.1.7
+
+_Released on June 25, 2026_
+
+::: code-group
+
+```markdown [🚀 Improvements]
+• Centralizes email sending cap settings
+• Syncs automation contact list table UI/UX with other tables
+• Adds Created At and Updated At sorting in the funnels table
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes FluentCart checkout subscription opt-in missing in modal checkout
+• Fixes FluentCart checkout opt-in selected lists showing IDs instead of names
+• Fixes FluentCart purchase history order links opening the wrong admin screen
+• Fixes WooCommerce single product email preview button text issue
+• Fixes striped Gutenberg table style rendering issue in email
+• Fixes email design preset switch resetting global email styles
+• Fixes contact growth report list and tag selector search issue
+• Fixes email footer disabled state reset issue when using Send Email
+• Fixes raw HTML template import not updating the campaign body editor
+• Fixes sequence email action menu popover issue
+• Fixes missing Contact Type field in CSV import mapping
+• Fixes contact profile support section table layout issue
+• Fixes Gutenberg editor next button render issue in some cases
+```
+
+:::
+
+## FluentCRM v3.1.6
+
+_Released on June 21, 2026_
+
+::: code-group
+
+```markdown [🚀 Improvements]
+• Adds support for months unit for wait times in automation
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes database index migration failed issue
+```
+
+:::
+
 ## FluentCRM v3.1.5
 
 _Released on June 15, 2026_
