@@ -9,6 +9,26 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.1.8
+
+_Released on June 30, 2026_
+
+::: code-group
+
+```markdown [🚀 Improvements]
+• Email sending now respects the configured maximum sending cap
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes abandoned cart totals and provider-specific recovery notices
+• Fixes FluentCart abandoned cart coupon fallback
+• Fixes FluentCart abandoned cart built-in template smartcodes
+• Fixes LearnPress course completion tags not being applied with deprecated hooks
+• Fixes reflected XSS issues in admin flows
+```
+
+:::
+
 ## FluentCRM v3.1.7
 
 _Released on June 25, 2026_
