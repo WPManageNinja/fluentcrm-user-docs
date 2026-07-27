@@ -26,16 +26,16 @@ With the adapter active, switch on the **Enable MCP for AI Agents** toggle at th
 
 If you ever want to pause access for every connected AI client at once, just flip this toggle off. The endpoint stops responding to MCP requests immediately, no other changes needed.
 
-## Step 2: Install Fluent Toolkit
+## Step 2: Install FluentHub
 
-FluentCRM exposes its MCP tools through a small companion plugin called **Fluent Toolkit**. Until it's installed and active, the page shows an **Adapter Required** badge in the top-right and the Status panel offers an install option.
+FluentCRM exposes its MCP tools through a small companion plugin called **FluentHub**. Until it's installed and active, the page shows an **Adapter Required** badge in the top-right and the Status panel offers an install option.
 
-![MCP for AI Agents page showing the Adapter Required state with the Install Fluent Toolkit button](/global-settings/mcp-ai-agent/crm-mcp-2.webp)
+![MCP for AI Agents page showing the Adapter Required state with the Install FluentHub button](/global-settings/mcp-ai-agent/crm-mcp-2.webp)
 
-**FluentCRM Pro users**: Click **Install Fluent Toolkit**. WordPress installs and activates the plugin in the background, then the page refreshes into the connected state.
+**FluentCRM Pro users**: Click **Install FluentHub**. WordPress installs and activates the plugin in the background, then the page refreshes into the connected state.
 
 >[!Note]
-> **Using the free version of FluentCRM?** You won't see the one-click **Install Fluent Toolkit** button. Instead, you'll see a link to download the plugin from GitHub. Download the ZIP from the [Fluent Toolkit GitHub repository](https://github.com/WPManageNinja/fluent-toolkit), then upload it via **Plugins → Add New → Upload Plugin** and activate it. After activation, return to **MCP for AI Agents** and the page will flip into the connected state.
+> **Using the free version of FluentCRM?** You won't see the one-click **Install FluentHub** button. Instead, you'll see a link to download the plugin from GitHub. Download the ZIP from the [FluentHub GitHub repository](https://github.com/WPManageNinja/fluent-toolkit), then upload it via **Plugins → Add New → Upload Plugin** and activate it. After activation, return to **MCP for AI Agents** and the page will flip into the connected state.
 
 ## Step 3: Confirm the Status panel
 
@@ -43,7 +43,7 @@ Once the toggle is on, the **Status** panel shows three details you'll want to k
 
 | Field | What it shows |
 | --- | --- |
-| **Adapter** | The installed Fluent Toolkit version (for example, `Fluent Toolkit 2.0.2`) along with a green **Connected** badge. |
+| **Adapter** | The installed FluentHub version (for example, `FluentHub 2.0.2`) along with a green **Connected** badge. |
 | **Endpoint URL** | The address your AI client connects to, usually `https://your-site.com/wp-json/fluent-crm/mcp`. Click the copy icon to grab it in one click. |
 | **Tools available** | Total number of MCP tools exposed (typically `25`, including 4 FluentCampaign Pro tools when Pro is active). |
 
@@ -52,6 +52,10 @@ A green **Connected** badge in the top-right of the page is your confirmation th
 ## Step 4: Generate a WordPress Application Password
 
 AI clients sign in using a **WordPress Application Password**. This is a feature built directly into WordPress 5.6 and later, so you don't need any extra plugin to use it. Each application gets its own password, which means you can revoke a single AI client without affecting your main login or any of your other tools.
+
+The **Connect a client** panel links straight to the right screen, so you don't have to go looking for it:
+
+![Connect a client panel with an arrow pointing to the Open profile Application Passwords link](/global-settings/mcp-ai-agent/crm-mcp-3.webp)
 
 To create one:
 
@@ -81,7 +85,44 @@ Back on **MCP for AI Agents**, scroll to the **Connect a client** panel. FluentC
 >[!Warning]
 > The generated snippet already contains your encoded credentials. Treat it like a password: never paste it into a public repository, a shared chat, or a screenshot.
 
-### Worked example: connecting Cursor
+### The easiest way: let your AI agent set it up
+
+If editing config files isn't your thing, skip it. Open **Claude Code**, **Claude Desktop**, or **Cursor** in any folder on your computer and ask the AI to do the setup for you. It knows where its own config file lives, it can create the file if it doesn't exist, and it can install anything that's missing along the way.
+
+Copy your snippet from FluentCRM, then paste a prompt like this:
+
+> *"Set up this MCP server for me. First check whether Node.js and npx are installed and install them if they aren't. Then add this configuration to your MCP config file, and tell me if I need to restart anything afterward:"*
+>
+> *(paste your snippet here)*
+
+The agent handles the file paths, the JSON formatting, and the restart instructions. You just confirm when it asks.
+
+>[!Warning]
+> Your snippet contains your login credentials. Only do this in an AI client running on your own computer, and never in a shared or public workspace.
+
+### Before you start: Node.js and npx
+
+Some clients need **Node.js** (which includes `npx`) on your computer:
+
+| Client | Needs Node.js/npx? |
+| --- | --- |
+| **Claude Code** | Yes — the client itself installs through npm. |
+| **Claude Desktop** | Yes — it reaches your site through a small `npx` helper. |
+| **OpenAI Codex** | Yes, if your snippet starts with `npx`. |
+| **Cursor** | No — it connects to the URL directly. |
+
+To check whether you already have it, open Terminal (macOS) or Command Prompt (Windows) and run:
+
+```bash
+node -v
+```
+
+If you see a version number like `v20.11.0`, you're set. If you get "command not found", download the **LTS** installer from [nodejs.org](https://nodejs.org), run it, and close and reopen your terminal.
+
+>[!Tip]
+> Not comfortable in a terminal? Ask your AI agent to check and install it for you, as described above.
+
+### Connecting Cursor
 
 Here's the full Cursor flow as a worked example. The same idea applies to other clients, only the snippet format changes.
 
@@ -113,16 +154,127 @@ Here's the full Cursor flow as a worked example. The same idea applies to other 
 
 That's it. Cursor's AI can now talk to your FluentCRM.
 
-### Other AI clients
+### Connecting Claude Code
 
-The other tabs work the same way, only the snippet format changes to match the client:
+Claude Code is the terminal version of Claude, so its snippet is a command you run rather than a file you edit. This is the quickest setup of the lot.
 
-- **Claude Code**: A terminal command (`claude mcp add ...`) you paste into your terminal. After it runs, the FluentCRM tools appear in your next `claude` session.
-- **Claude Desktop**: A snippet for `claude_desktop_config.json`. Paste it into the file at the path Anthropic documents for your OS, then restart Claude Desktop.
-- **OpenAI Codex**: A configuration block for Codex's settings. Follow the instructions shown under the snippet on the OpenAI Codex tab.
-- **Other**: Generic configuration block you can adapt for any MCP-compliant client.
+**1. Install Claude Code** if you don't have it yet. Open your terminal and run:
 
-In every case, the workflow is the same: fill in the username and password fields, pick the right tab, copy the snippet, and paste it into the AI client where it expects an MCP server config.
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+**2. Copy the snippet** from the **Claude Code** tab in FluentCRM. It looks like this:
+
+```bash
+claude mcp add \
+  --transport http \
+  fluent-crm https://your-site.com/wp-json/fluent-crm/mcp \
+  --header "Authorization: Basic <encoded-credentials>"
+```
+
+**3. Paste it into your terminal and press Enter.** You can run it from any folder. Claude Code confirms the server was added.
+
+**4. Start Claude Code** by running `claude`, then type `/mcp` to see your connected servers. **fluent-crm** appears in the list with all its tools.
+
+>[!Tip]
+> Claude Code stores this per project folder by default. To use FluentCRM from any folder on your computer, add `--scope user` to the end of the command.
+
+### Connecting Claude Desktop
+
+Claude Desktop reads its MCP servers from a configuration file. You don't have to hunt for that file, because Claude Desktop will open it for you.
+
+**1. Open the config file from inside Claude Desktop.** Go to **Settings → Developer → Edit Config**. Claude Desktop creates the file if it doesn't exist yet and shows you where it lives:
+
+- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+
+**2. Open the file in a plain text editor.** TextEdit on macOS or Notepad on Windows both work fine.
+
+**3. Paste the snippet.** Copy it from the **Claude Desktop** tab in FluentCRM. It looks like this:
+
+```json
+{
+  "mcpServers": {
+    "fluent-crm": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://your-site.com/wp-json/fluent-crm/mcp",
+        "--header",
+        "Authorization: Basic <encoded-credentials>"
+      ]
+    }
+  }
+}
+```
+
+Where exactly you paste it depends on what's already in the file:
+
+- **The file is empty, or contains just `{}`** — delete whatever is there and paste the whole snippet in. Done.
+- **The file already has other MCP servers** — don't paste the whole thing, or you'll wipe them out. Instead, copy only the `"fluent-crm": { ... }` part and add it inside the existing `"mcpServers"` block, with a comma after the entry above it:
+
+```json
+{
+  "mcpServers": {
+    "some-existing-server": {
+      "command": "npx",
+      "args": ["-y", "some-package"]
+    },
+    "fluent-crm": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://your-site.com/wp-json/fluent-crm/mcp",
+        "--header",
+        "Authorization: Basic <encoded-credentials>"
+      ]
+    }
+  }
+}
+```
+
+**4. Save the file and fully quit Claude Desktop**, then open it again. Closing the window isn't enough: quit it from the menu bar (macOS) or the system tray (Windows).
+
+**5. Check the connection.** Look for the tools or connectors icon in the message box. **fluent-crm** appears there with its tools listed.
+
+>[!Warning]
+> This file must stay valid JSON. A missing comma or an extra one stops Claude Desktop from loading any of your servers. If Claude Desktop starts without your tools, a punctuation slip in this file is the usual reason — paste the file into your AI agent and ask it to check the syntax.
+
+### Connecting OpenAI Codex
+
+Codex keeps its MCP servers in a configuration file at `~/.codex/config.toml`, written in TOML rather than JSON.
+
+**1. Copy the snippet** from the **OpenAI Codex** tab in FluentCRM.
+
+**2. Open `~/.codex/config.toml`.** If the file or the `.codex` folder doesn't exist, create it. On macOS, press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> in Finder and type `~/.codex` to get there.
+
+**3. Paste the snippet at the end of the file.** TOML blocks stack one after another, so you can add it below whatever is already there without touching the rest. It looks roughly like this:
+
+```toml
+[mcp_servers.fluent-crm]
+command = "npx"
+args = [
+  "-y",
+  "mcp-remote",
+  "https://your-site.com/wp-json/fluent-crm/mcp",
+  "--header",
+  "Authorization: Basic <encoded-credentials>"
+]
+```
+
+**4. Save the file and restart Codex.** Your FluentCRM tools are available in the next session.
+
+>[!Note]
+> Always use the snippet FluentCRM generates rather than the example above. Codex has changed its MCP configuration format between versions, and the plugin generates the format that matches the current release.
+
+### Other MCP clients
+
+The **Other** tab gives you a generic configuration block you can adapt for any MCP-compliant client. Point the client at your **Endpoint URL**, pass the `Authorization: Basic` header exactly as generated, and you're connected.
+
+In every case the workflow is the same: fill in the username and password fields, pick the right tab, copy the snippet, and paste it where your AI client expects an MCP server config.
 
 ## Step 6: Verify it's working
 
@@ -233,8 +385,10 @@ Application Passwords are scoped to a single connection, so revoking one only di
 
 ## Troubleshooting
 
-- **"Adapter Required" badge still showing after install.** Hard-refresh the settings page. If it persists, go to **Plugins** and confirm **Fluent Toolkit** is both installed and **Active**.
+- **"Adapter Required" badge still showing after install.** Hard-refresh the settings page. If it persists, go to **Plugins** and confirm **FluentHub** is both installed and **Active**.
 - **Tools available shows 0.** Make sure the **Enable MCP for AI Agents** toggle is on. The count refreshes the moment the adapter reconnects.
 - **"Unauthorized" error in the AI client.** The username or Application Password is wrong. Re-generate the password (copy it immediately) and paste it back into the Connect a client panel, then re-copy the snippet into your AI client.
-- **FluentCRM tools not appearing in the AI client.** Restart the client fully after running the connect command or saving `mcp.json`. Some clients (like Claude Code) need a full restart, not just a reload.
+- **FluentCRM tools not appearing in the AI client.** Restart the client fully after running the connect command or saving the config file. Closing the window usually isn't enough — quit Claude Desktop from the menu bar or system tray and reopen it.
+- **Claude Desktop or Codex shows a "server failed to start" error.** Node.js is probably missing. Run `node -v` in your terminal; if you get "command not found", install the LTS release from [nodejs.org](https://nodejs.org) and restart the client.
+- **Claude Desktop loses all its MCP servers after an edit.** `claude_desktop_config.json` has a JSON syntax error, usually a missing or extra comma. Paste the file into your AI agent and ask it to fix the syntax.
 - **Connection works locally but not in production.** Confirm the **Endpoint URL** in Status uses the same scheme (`http` or `https`) and domain your AI client is configured with. WordPress Application Passwords also require a reachable REST API at `/wp-json/`.
