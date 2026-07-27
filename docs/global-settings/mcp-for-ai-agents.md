@@ -173,9 +173,13 @@ claude mcp add \
   --header "Authorization: Basic <encoded-credentials>"
 ```
 
+![Calude Code Snippet FluentCRM in a table](/global-settings/mcp-ai-agent/crm-mcp-11.webp)
+
 **3. Paste it into your terminal and press Enter.** You can run it from any folder. Claude Code confirms the server was added.
 
 **4. Start Claude Code** by running `claude`, then type `/mcp` to see your connected servers. **fluent-crm** appears in the list with all its tools.
+
+![Claude Code MCP Connected](/global-settings/mcp-ai-agent/crm-mcp-12.webp)
 
 >[!Tip]
 > Claude Code stores this per project folder by default. To use FluentCRM from any folder on your computer, add `--scope user` to the end of the command.
