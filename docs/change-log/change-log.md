@@ -9,6 +9,55 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.1.10
+
+_Released on July 27, 2026_
+
+::: code-group
+
+```markdown [🚀 Improvements]
+• Campaigns start sending immediately instead of waiting for the next cron tick
+• Enables multi-threaded email sending by default
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes list and automation report counts on custom database table prefixes
+```
+
+:::
+
+## FluentCRM v3.1.9
+
+_Released on July 27, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Adds sticky notes to the automation editor, kept through export, import, and duplication
+• Adds FluentCRM contact widget to the FluentCart customer page
+• Adds Empty / Not Empty operators for tags, lists, and companies in advanced filters
+• Adds new MCP abilities for tags, lists, and contact filters, plus batch contact lookups and automation enrollment data
+```
+
+```markdown [🚀 Improvements]
+• Adds search, status filter, and sortable columns to Sequence Subscribers
+• Adds more paragraph font presets to the email editor
+• Reworks the email sending pipeline for safer parallel workers
+• Weekly cleanup now clears stored email bodies for sent, cancelled, and failed emails to free up database space
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes Gmail horizontal scrollbar on the Plain Left email design
+• Fixes missing Order By options in the Latest Posts block
+• Fixes test email address validation and campaign title uniqueness checks
+```
+
+```markdown [🔒 Security]
+• Hardens permission checks and input handling for non-admin roles across contacts, notes, imports, and webhooks
+```
+
+:::
+
 ## FluentCRM v3.1.8
 
 _Released on June 30, 2026_
