@@ -49,6 +49,47 @@ export default defineConfig({
     hostname: 'https://docs.fluentcrm.com/',
     lastmodDateOnly: true,
   },
+  // Inject TechArticle JSON-LD schema for pages opted in via `techArticle: true`
+  // in frontmatter. Runs at build time so the <script type="application/ld+json">
+  // ships in the static HTML (no client-side DOM injection needed).
+  transformHead({ pageData }) {
+    const fm = pageData.frontmatter
+    if (!fm.techArticle) return
+
+    const slug = fm.slug || pageData.relativePath.replace(/\.md$/, '')
+    const url = `https://docs.fluentcrm.com/${slug}`
+
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'TechArticle',
+      headline: fm.title,
+      description: fm.description,
+      ...(fm.image ? { image: `https://docs.fluentcrm.com${fm.image}` } : {}),
+      datePublished: fm.datePublished,
+      dateModified: fm.dateModified || fm.datePublished,
+      proficienciesRequired: fm.proficiencies || 'WordPress Administration',
+      dependencies: 'WordPress, FluentCRM',
+      author: {
+        '@type': 'Organization',
+        name: 'FluentCRM',
+        url: 'https://fluentcrm.com',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'FluentCRM',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://docs.fluentcrm.com/brand/fluentCRM-logo-color.svg',
+        },
+      },
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': url,
+      },
+    }
+
+    return [['script', { type: 'application/ld+json' }, JSON.stringify(schema)]]
+  },
   markdown: {
     config: (md) => {
       // Convert a bare YouTube URL line into an embedded player
