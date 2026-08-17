@@ -26,16 +26,16 @@ With the adapter active, switch on the **Enable MCP for AI Agents** toggle at th
 
 If you ever want to pause access for every connected AI client at once, just flip this toggle off. The endpoint stops responding to MCP requests immediately, no other changes needed.
 
-## Step 2: Install FluentToolkit
+## Step 2: Install FluentHub
 
-FluentCRM exposes its MCP tools through a small companion plugin called **FluentToolkit**. Until it's installed and active, the page shows an **Adapter Required** badge in the top-right and the Status panel offers an install option.
+FluentCRM exposes its MCP tools through a small companion plugin called **FluentHub**. Until it's installed and active, the page shows an **Adapter Required** badge in the top-right and the Status panel offers an install option.
 
-![MCP for AI Agents page showing the Adapter Required state with the Install FluentToolkit button](/global-settings/mcp-ai-agent/crm-mcp-2.webp)
+![MCP for AI Agents page showing the Adapter Required state with the Install FluentHub button](/global-settings/mcp-ai-agent/crm-mcp-2.webp)
 
-**FluentCRM Pro users**: Click **Install FluentToolkit**. WordPress installs and activates the plugin in the background, then the page refreshes into the connected state.
+**FluentCRM Pro users**: Click **Install FluentHub**. WordPress installs and activates the plugin in the background, then the page refreshes into the connected state.
 
 >[!Note]
-> **Using the free version of FluentCRM?** You won't see the one-click **Install FluentToolkit** button. Download FluentToolkit yourself from [https://static.wpmanageninja.com/fluent-toolkit.zip](https://static.wpmanageninja.com/fluent-toolkit.zip), then upload the ZIP via **Plugins → Add New → Upload Plugin** and activate it. After activation, return to **MCP for AI Agents** and the page will flip into the connected state.
+> **Using the free version of FluentCRM?** You won't see the one-click **Install FluentHub** button. Download FluentHub yourself from [https://static.wpmanageninja.com/fluent-toolkit.zip](https://static.wpmanageninja.com/fluent-toolkit.zip), then upload the ZIP via **Plugins → Add New → Upload Plugin** and activate it. After activation, return to **MCP for AI Agents** and the page will flip into the connected state.
 
 >[!Tip]
 > Prefer to handle it yourself on Pro too? You can always download the ZIP from [https://static.wpmanageninja.com/fluent-toolkit.zip](https://static.wpmanageninja.com/fluent-toolkit.zip) instead of using the one-click button.
@@ -46,7 +46,7 @@ Once the toggle is on, the **Status** panel shows three details you'll want to k
 
 | Field | What it shows |
 | --- | --- |
-| **Adapter** | The installed FluentToolkit version (for example, `FluentToolkit 2.0.2`) along with a green **Connected** badge. |
+| **Adapter** | The installed FluentHub version (for example, `FluentHub 2.0.2`) along with a green **Connected** badge. |
 | **Endpoint URL** | The address your AI client connects to, usually `https://your-site.com/wp-json/fluent-crm/mcp`. Click the copy icon to grab it in one click. |
 | **Tools available** | Total number of MCP tools exposed (typically `25`, including 4 FluentCampaign Pro tools when Pro is active). |
 
@@ -392,7 +392,7 @@ Application Passwords are scoped to a single connection, so revoking one only di
 
 ## Troubleshooting
 
-- **"Adapter Required" badge still showing after install.** Hard-refresh the settings page. If it persists, go to **Plugins** and confirm **FluentToolkit** is both installed and **Active**.
+- **"Adapter Required" badge still showing after install.** Hard-refresh the settings page. If it persists, go to **Plugins** and confirm **FluentHub** is both installed and **Active**.
 - **Tools available shows 0.** Make sure the **Enable MCP for AI Agents** toggle is on. The count refreshes the moment the adapter reconnects.
 - **"Unauthorized" error in the AI client.** The username or Application Password is wrong. Re-generate the password (copy it immediately) and paste it back into the Connect a client panel, then re-copy the snippet into your AI client.
 - **FluentCRM tools not appearing in the AI client.** Restart the client fully after running the connect command or saving the config file. Closing the window usually isn't enough — quit Claude Desktop from the menu bar or system tray and reopen it.
