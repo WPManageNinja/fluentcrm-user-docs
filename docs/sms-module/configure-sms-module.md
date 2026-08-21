@@ -17,9 +17,9 @@ In this article, you will learn how to enable the SMS Module in your FluentCRM i
 
 To activate SMS functionality within your CRM, you need to navigate to the plugin settings and enable the module.
 
-From your WordPress dashboard, go to **FluentCRM → Settings**. The settings URL fragment is `/settings/sms_settings` – click **SMS Setting** in the left-hand sidebar.
+From your WordPress dashboard, go to **FluentCRM → Settings → Messaging → SMS Settings**.
 
-On the SMS Setting page, locate the toggle switch for **Enable SMS Module**. Enabling this module unlocks the ability to create and send SMS campaigns and use SMS in your automations.
+On the SMS Settings page, locate the toggle switch for **Enable SMS Module**. Enabling this module unlocks the ability to create and send SMS campaigns and use SMS in your automations.
 
 After enabling the module, you must select an **SMS Provider** from the dropdown menu below. FluentCRM supports two providers out of the box:
 
@@ -37,7 +37,7 @@ Enabling the SMS Module is the essential first step to using this feature for de
 
 ### Twilio incoming webhook
 
-When you save Twilio credentials, FluentCRM also generates a unique **SMS Incoming Webhook URL** at the bottom of the SMS Setting page. Paste this URL into your Twilio messaging service's **A message comes in** webhook field if you want FluentCRM to receive replies and inbound messages from contacts. See the full walkthrough on the [Twilio SMS Integration](/twilio-integration) page.
+When you save Twilio credentials, FluentCRM also generates a unique **SMS Incoming Webhook URL** at the bottom of the SMS Settings page. Paste this URL into your Twilio messaging service's **A message comes in** webhook field if you want FluentCRM to receive replies and inbound messages from contacts. See the full walkthrough on the [Twilio SMS Integration](/twilio-integration) page.
 
 ### SMS Smart Codes
 
