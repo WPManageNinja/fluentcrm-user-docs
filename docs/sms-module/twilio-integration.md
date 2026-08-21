@@ -43,7 +43,7 @@ Now return to the **SMS Settings** page in FluentCRM to enter your credentials.
 
 #### SMS Incoming Webhook (Optional but recommended)
 
-Upon saving Twilio credentials, FluentCRM generates a unique **SMS Incoming Webhook URL** at the bottom of the SMS Setting page. Paste this URL into your Twilio messaging service so FluentCRM can:
+Upon saving Twilio credentials, FluentCRM generates a unique **SMS Incoming Webhook URL** at the bottom of the SMS Settings page. Paste this URL into your Twilio messaging service so FluentCRM can:
 
 -   Capture inbound replies from contacts and store them on the contact's SMS timeline.
 -   Trigger automation steps when a contact replies (e.g. apply a tag, fork an automation).

@@ -171,7 +171,7 @@ With your AWS credentials and phone number ready, return to FluentCRM to complet
 ### 4.1 Enable the SMS Module
 
 1. From your WordPress dashboard, navigate to **FluentCRM Pro → Settings**.
-2. In the left-hand menu, click **SMS Setting**.
+2. In the left-hand menu, open **Messaging** and click **SMS Settings**.
 3. Switch the **Enable SMS Module** toggle to **ON**.
 4. Under **SMS Provider**, open the **Choose your SMS provider** dropdown and select **Amazon End User Messaging**.
 
