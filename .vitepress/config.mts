@@ -255,16 +255,35 @@ export default defineConfig({
             },
           ],
         },
-        // 5. SMS Module
+        // 5. Messaging (mirrors FluentCRM's Settings → Messaging group and the
+        //    Messaging top-nav dropdown, which both hold SMS and WhatsApp)
         {
-          text: 'SMS Module',
+          text: 'Messaging',
           collapsed: true,
           items: [
-            { text: 'Configure SMS Module', link: '/configure-sms-module' },
-            { text: 'Twilio SMS Integration', link: '/twilio-integration' },
-            { text: 'SMS Automation', link: '/sms-automation' },
-            { text: 'Amazon End User Messaging (SMS)', link: '/amazon-end-user-messaging' },
-            { text: 'SMS Report', link: '/sms-campaign-report' },
+            {
+              text: 'SMS',
+              collapsed: true,
+              items: [
+                { text: 'Configure SMS Module', link: '/configure-sms-module' },
+                { text: 'Twilio SMS Integration', link: '/twilio-integration' },
+                { text: 'SMS Automation', link: '/sms-automation' },
+                { text: 'Amazon End User Messaging (SMS)', link: '/amazon-end-user-messaging' },
+                { text: 'SMS Report', link: '/sms-campaign-report' },
+              ],
+            },
+            {
+              text: 'WhatsApp',
+              collapsed: true,
+              items: [
+                { text: 'Configure WhatsApp Module', link: '/configure-whatsapp-module' },
+                { text: 'Meta Cloud API Integration', link: '/whatsapp-meta-cloud-api-integration' },
+                { text: 'Twilio WhatsApp Integration', link: '/whatsapp-twilio-integration' },
+                { text: 'WhatsApp Templates', link: '/whatsapp-templates' },
+                { text: 'WhatsApp Campaign', link: '/whatsapp-campaign' },
+                { text: 'WhatsApp Activities', link: '/whatsapp-activities' },
+              ],
+            },
           ],
         },
         // 6. Automations

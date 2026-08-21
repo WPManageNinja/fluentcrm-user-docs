@@ -32,7 +32,8 @@ The Global Settings are divided into several key sections to help you manage you
 | [Custom Fields](/global-custom-contact-fields) | Add extra fields to contact profiles beyond the built-in ones |
 | [Smart Link](/global-smartlinks-settings) | Create trackable smart links that auto-apply tags or trigger automations when clicked |
 | [Double Opt-in Settings](/global-double-opt-in-settings) | Customize the confirmation email and page for double opt-in subscribers |
-| **SMS Setting** *(Pro)* | Enable and configure SMS sending — see [Configure SMS Module](/configure-sms-module) |
+| **Messaging → SMS Settings** *(Pro)* | Enable and configure SMS sending — see [Configure SMS Module](/configure-sms-module) |
+| **Messaging → WhatsApp Settings** *(Pro)* | Enable WhatsApp and connect a provider — see [Configure WhatsApp Module](/configure-whatsapp-module) |
 | [Integrations](/global-integration-settings) | Enable or disable third-party plugin integrations (WooCommerce, LearnDash, etc.) |
 | [Abandoned Cart Settings](/abandoned-cart-settings) | Enable abandoned cart tracking per e-commerce plugin and configure recovery timing |
 | [AI Model Setup](/ai-model-setup) | Connect an AI provider (OpenAI, etc.) to power AI Writing in the email editor and AI Summary on contact profiles |
@@ -42,4 +43,4 @@ The Global Settings are divided into several key sections to help you manage you
 | [System Admin Tools](/fluentcrm-tools-settings) | Cron job monitor, data cleanup tools, and CRM database reset |
 
 >[!Note]
-> The exact tabs you see depend on which features are active. **SMS Setting** appears only with FluentCRM Pro. **Frontend Portal** is added to the Pro settings menu when the Frontend Portal add-on is enabled.
+> The exact tabs you see depend on which features are active. **Messaging** — which holds **SMS Settings** and **WhatsApp Settings** — appears only with FluentCRM Pro. **Frontend Portal** is added to the Pro settings menu when the Frontend Portal add-on is enabled.
