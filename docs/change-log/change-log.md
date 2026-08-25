@@ -9,6 +9,28 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.1.13
+
+_Released on August 24, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Signs every release with an Ed25519 key; the plugin verifies the signature before WordPress unzips the update (Pro)
+• Publishes public MD5 and SHA-256 checksums for every file at checksums.wpmanageninja.com (Pro)
+```
+
+```markdown [🚀 Improvements]
+• Internal Changes for Messaging Platforms Features
+• Route Policies Improvements for Roles and Permissions
+```
+
+```markdown [🔒 Security]
+• Fixes edge cases reported in a Patchstack security review (Pro)
+```
+
+:::
+
 ## FluentCRM v3.1.10
 
 _Released on July 27, 2026_
