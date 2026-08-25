@@ -41,8 +41,6 @@ Click **Resend** on any failed row to try again. Fix the underlying cause first 
 
 Open any contact from **Contacts**, then select the **WhatsApp** tab alongside **Overview**, **Emails**, and **Purchases**.
 
-![Contact profile WhatsApp tab with the conversation thread, WhatsApp Stats, and WA Subscribed status](/whatsapp-module/whatsapp-activities/contact-whatsapp-tab-2.webp)
-
 The tab holds three things:
 
 - **WhatsApp Stats:** Counts for **All**, **Sent**, **Received**, **Campaign**, and **Read**. Click **View as Table** for a tabular breakdown.
@@ -62,8 +60,9 @@ This is the [24-hour rule](/whatsapp-templates) applied to one conversation.
 
 Each contact carries a WhatsApp status independent of their email subscription status, shown as a badge at the top of the profile — for example, **WA Subscribed**.
 
-Change it from the **WhatsApp Status** dropdown on that badge, visible in the screenshot above. A contact who opts out of WhatsApp keeps receiving your emails; the two channels are tracked separately.
+Change it from the **WhatsApp Status** dropdown on that badge, visible in the screenshot. A contact who opts out of WhatsApp keeps receiving your emails; the two channels are tracked separately.
 
 >[!Note]
 > Contacts who are not WhatsApp-subscribed are skipped when a campaign sends, which is why a campaign's final recipient count can come in below the count shown at the recipients step.
 
+![Contact profile WhatsApp tab with the conversation thread, WhatsApp Stats, and WA Subscribed status](/whatsapp-module/whatsapp-activities/contact-whatsapp-tab-2.webp)

@@ -54,9 +54,8 @@ Click **Save** once your credentials are in.
 
 At the bottom of the page, FluentCRM generates a **Webhook URL** unique to your site. Copy it and paste it into your provider's webhook settings.
 
-::: info
-Without this webhook, messages still go out, but your site never hears back — you get no delivery statuses, and replies from contacts never reach the CRM. Each provider guide covers exactly where to paste it.
-:::
+>[!Note]
+> Without this webhook, messages still go out, but your site never hears back — you get no delivery statuses, and replies from contacts never reach the CRM. Each provider guide covers exactly where to paste it.
 
 >[!Warning]
 > The Webhook URL contains a hash unique to your site. Treat it like a credential and don't share it publicly.
