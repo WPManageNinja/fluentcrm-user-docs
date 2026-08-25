@@ -9,6 +9,54 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.2.0
+
+_Released on August 25, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Adds the WhatsApp module for reaching contacts through WhatsApp campaigns and automations
+• Adds a FluentCart Create Coupon automation action with coupon smartcode support
+• Adds theme colors to the email editor
+• Adds a Media & Text block for emails
+• Adds Select All for contacts in a dynamic segment
+• Adds replace, add, and subtract modes to bulk custom field updates
+```
+
+```markdown [🚀 Improvements]
+• Redesigns the license screen with a grace period and clearer status
+• Event tracking dates now follow the site date format
+• Checks tag and list name length before saving
+• Speeds up sending on large campaigns
+• Polishes dark mode across inputs, buttons, and admin screens
+• Non-subscribed contacts can be re-invited through opt-in forms and LMS integrations
+• Includes active WooCommerce subscriptions on re-sync
+• Adds WordPress 7.1 compatibility
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes the fluent_crm/default_email_design_template filter not being applied to templates created from scratch
+• Fixes the configured Default Contact Status not being honored for WooCommerce and EDD
+• Fixes raw HTML campaign content not saving in the editor
+• Fixes https:// being prepended to smartcode button links
+• Fixes image links being lost when replacing an image from the media library
+• Fixes styling issues on the View in Browser email page
+• Fixes outdated revenue showing after re-syncing a campaign report
+• Fixes bounces from ToSend not being recorded
+• Fixes phone numbers in local format being rejected
+• Fixes tag search returning empty results when searching from page 2
+• Fixes incorrect counts in automation step reports
+• Fixes a fatal error and incorrect campaign revenue totals on refunded WooCommerce orders
+```
+
+```markdown [🔒 Security]
+• Improves role and policy based security
+• Fixes several security issues
+```
+
+:::
+
 ## FluentCRM v3.1.10
 
 _Released on July 27, 2026_
