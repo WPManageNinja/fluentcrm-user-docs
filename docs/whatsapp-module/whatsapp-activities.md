@@ -63,6 +63,6 @@ Each contact carries a WhatsApp status independent of their email subscription s
 Change it from the **WhatsApp Status** dropdown on that badge, visible in the screenshot. A contact who opts out of WhatsApp keeps receiving your emails; the two channels are tracked separately.
 
 >[!Note]
-> Contacts who are not WhatsApp-subscribed are skipped when a campaign sends, which is why a campaign's final recipient count can come in below the count shown at the recipients step.
+> Contacts who are not WhatsApp-subscribed are skipped when a campaign or message sends, which is why a campaign's final recipient count can come in below the count shown at the recipients step.
 
 ![Contact profile WhatsApp tab with the conversation thread, WhatsApp Stats, and WA Subscribed status](/whatsapp-module/whatsapp-activities/contact-whatsapp-tab-2.webp)

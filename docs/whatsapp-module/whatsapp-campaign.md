@@ -57,7 +57,7 @@ Choose who receives the campaign using one of three tabs:
 A live count — for example, **93 contacts found based on your selection** — updates as you refine the criteria, so you can sanity-check the audience size before moving on.
 
 >[!Important]
-> Only WhatsApp-subscribed contacts receive the campaign. The count above reflects your list, tag, and filter criteria — it doesn't account for WhatsApp status, so unsubscribed contacts are still counted here and then dropped at send time.
+> Only WhatsApp-subscribed contacts receive the campaign and messages. The count above reflects your list, tag, and filter criteria — it doesn't account for WhatsApp status, so unsubscribed contacts are still counted here and then dropped at send time.
 >
 > Set a contact's status from the **WhatsApp Status** dropdown on their contact profile. See [WhatsApp subscription status](/whatsapp-activities#whatsapp-subscription-status) for where to find it.
 
