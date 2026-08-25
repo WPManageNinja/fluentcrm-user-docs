@@ -7,18 +7,17 @@ order: 4
 
 # WhatsApp Templates
 
-A WhatsApp template is a pre-written message that your provider has reviewed and approved. Templates exist because WhatsApp doesn't let businesses message people freely — outside a 24-hour reply window, an approved template is the only thing that reaches a contact.
-
-That makes templates the backbone of almost every WhatsApp campaign you'll run.
+A WhatsApp template is a pre-written message that your provider has reviewed and approved. Templates exist because WhatsApp doesn't let businesses message people freely outside a 24-hour reply window — an approved template is the only thing that reaches a contact.
 
 >[!Note]
 > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
-## The 24-Hour Rule
+That makes templates the backbone of almost every WhatsApp campaign you'll run.
 
-When a contact messages you, a 24-hour session opens and you can reply with any free-form text. Once it closes, free-form messages get rejected and only approved templates go through.
-
-Since most of your contacts have never messaged you first, plan on templates for anything you initiate.
+>[!Note]
+> **The 24-hour rule:** when a contact messages or calls you, a 24-hour window opens — Meta calls it the *customer service window* — and you can reply with any free-form text. Each new message or call from that contact resets the timer to a fresh 24 hours. Once the window closes, free-form messages stop going through and only approved templates reach them.
+>
+> Since most of your contacts have never messaged you first, plan on templates for anything you initiate. Templates don't override opt-in either — Meta requires contacts to have opted in before you message them at all.
 
 ## Where to Find Templates
 
@@ -84,4 +83,3 @@ Approval usually takes minutes but can run longer. The template's **Status** upd
 ## Using Templates in a Campaign
 
 When composing a WhatsApp campaign, set **Message Type** to **Approved Template (recommended)** and pick your template. This is the option that reaches your full audience — see [WhatsApp Campaign](/whatsapp-campaign) for the full flow.
-

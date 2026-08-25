@@ -62,9 +62,3 @@ In WordPress, go to **FluentCRM → Settings → Messaging → WhatsApp Settings
 After saving, copy the **Webhook URL** from the bottom of the WhatsApp Settings page and paste it into your Twilio WhatsApp sender's incoming message webhook field.
 
 Without it, messages still send, but delivery statuses and contact replies never make it back to FluentCRM.
-
-## What's Next?
-
-- [Create and submit WhatsApp templates](/whatsapp-templates)
-- [Send your first WhatsApp campaign](/whatsapp-campaign)
-- [Configure WhatsApp Module settings](/configure-whatsapp-module)
