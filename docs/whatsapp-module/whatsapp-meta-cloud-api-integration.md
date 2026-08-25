@@ -74,7 +74,7 @@ FluentCRM uses this to verify that incoming webhooks genuinely came from Meta.
 
 ![App settings Basic page with the App secret field and Show button](/whatsapp-module/whatsapp-meta-cloud-api-integration/app-secret-17.webp)
 
-## Step 5: Parmanent Access Token (Keeping the Connection Alive)
+## Step 5: Permanent Access Token (Keeping the Connection Alive)
 
 The token from **Generate new token** is a temporary one — it expires and takes your connection down with it. That's fine while you're testing, but a live site needs a permanent token from a Meta System User, which is what the **Permanent Access Token** field is asking for.
 
@@ -107,7 +107,6 @@ To create one:
 >[!Warning]
 > Meta shows this token once. Copy it straight into FluentCRM — if you close the dialog without copying it, you have to generate a new one.
 
-
 ## Step 6: Enter the Credentials in FluentCRM
 
 In WordPress, go to **FluentCRM → Settings → Messaging → WhatsApp Settings**.
@@ -115,10 +114,10 @@ In WordPress, go to **FluentCRM → Settings → Messaging → WhatsApp Settings
 1. Turn on **Enable WhatsApp Module**.
 2. Set **Choose your WhatsApp provider** to **Meta Cloud API (WhatsApp Business)**.
 3. Paste each credential into its matching field:
-   - **WhatsApp Business Account ID** 
-   - **Phone Number ID** 
-   - **Permanent Access Token** 
-   - **App Secret** 
+   - **WhatsApp Business Account ID**
+   - **Phone Number ID**
+   - **Permanent Access Token**
+   - **App Secret**
 4. In **Webhook Verify Token**, type any secret string you choose — for example `crmwapp`. Write it down, because you enter the identical string on Meta's side next.
 5. Click **Save**.
 
@@ -153,5 +152,3 @@ The test number is capped and only reaches recipients you add manually. To messa
 - **Step 2. Production setup** — register your own business phone number as the sender.
 - **Step 3. Business verification** — verify your business portfolio with Meta.
 - **Add a payment method** — until you do, only conversations your customers start are free, and you can't initiate messages.
-
-

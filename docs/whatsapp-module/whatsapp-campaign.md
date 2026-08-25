@@ -33,7 +33,7 @@ Name the campaign under **WhatsApp Title → Name your campaign**. This is inter
 Then, under **WhatsApp Message**, pick a **Message Type**:
 
 - **Approved Template (recommended):** Uses a template your provider has approved. This reaches your entire audience.
-- **Free-form Text:** Plain text typed into **Compose Message**, with **B**, **I**, and strikethrough formatting and a 4096-character limit.
+- **Free-form Text:** Plain text typed into **Compose Message**.
 
 A **Message preview** on the right renders the message as a WhatsApp chat bubble as you type.
 
@@ -55,6 +55,11 @@ Choose who receives the campaign using one of three tabs:
 ![WhatsApp campaign recipients step with Included and Excluded Contacts rows and a live contact count](/whatsapp-module/whatsapp-campaign/campaign-recipients-4.webp)
 
 A live count — for example, **93 contacts found based on your selection** — updates as you refine the criteria, so you can sanity-check the audience size before moving on.
+
+>[!Important]
+> Only WhatsApp-subscribed contacts receive the campaign. The count above reflects your list, tag, and filter criteria — it doesn't account for WhatsApp status, so unsubscribed contacts are still counted here and then dropped at send time.
+>
+> Set a contact's status from the **WhatsApp Status** dropdown on their contact profile. See [WhatsApp subscription status](/whatsapp-activities#whatsapp-subscription-status) for where to find it.
 
 Click **Continue to next step [Review]**.
 
@@ -88,4 +93,3 @@ Click **Cancel Schedule** to stop a campaign that hasn't finished.
 - **Scheduled:** Waiting for its send time.
 - **Processing:** Currently sending.
 - **Archived:** Removed from the active list.
-
