@@ -57,6 +57,22 @@ _Released on August 25, 2026_
 
 :::
 
+## FluentCRM v3.1.13
+
+_Released on August 24, 2026_
+
+::: code-group
+
+```markdown [🚀 Improvements]
+• Internal changes for the messaging platform features
+```
+
+```markdown [🔒 Security]
+• Improves route policies for roles and permissions
+```
+
+:::
+
 ## FluentCRM v3.1.10
 
 _Released on July 27, 2026_
