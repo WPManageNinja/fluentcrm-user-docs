@@ -74,45 +74,7 @@ FluentCRM uses this to verify that incoming webhooks genuinely came from Meta.
 
 ![App settings Basic page with the App secret field and Show button](/whatsapp-module/whatsapp-meta-cloud-api-integration/app-secret-17.webp)
 
-## Step 5: Enter the Credentials in FluentCRM
-
-In WordPress, go to **FluentCRM → Settings → Messaging → WhatsApp Settings**.
-
-1. Turn on **Enable WhatsApp Module**.
-2. Set **Choose your WhatsApp provider** to **Meta Cloud API (WhatsApp Business)**.
-3. Paste each credential into its matching field:
-   - **WhatsApp Business Account ID** (Step 3)
-   - **Phone Number ID** (Step 3)
-   - **Permanent Access Token** (Step 3)
-   - **App Secret** (Step 4)
-4. In **Webhook Verify Token**, type any secret string you choose — for example `crmwapp`. Write it down, because you enter the identical string on Meta's side next.
-5. Click **Save**.
-
-![FluentCRM WhatsApp Settings filled in with Meta Cloud API credentials](/whatsapp-module/whatsapp-meta-cloud-api-integration/fluentcrm-meta-settings-19.webp)
-
-After saving, copy the **Webhook URL** shown at the bottom of the page. You need it for the next step.
-
-## Step 6: Create the Webhook
-
-Go back to your Meta app and open **Other tools → Tools**. Among the tools listed, find **Webhooks** under **Configuration** and click **Configure webhooks**.
-
-![WhatsApp tools page with the Webhooks card and Configure webhooks link](/whatsapp-module/whatsapp-meta-cloud-api-integration/whatsapp-tools-8.webp)
-
-On the webhook page:
-
-1. Paste the **Webhook URL** you copied from FluentCRM into **Callback URL**.
-2. Paste your **Webhook Verify Token** — the exact string from Step 5 — into **Verify token**.
-3. Click **Verify and save**.
-4. Under **Webhook fields**, subscribe to the fields you want. At minimum, subscribe to **messages** so replies and delivery statuses reach FluentCRM.
-
-![Meta webhook configuration with the Callback URL and Verify token fields](/whatsapp-module/whatsapp-meta-cloud-api-integration/webhook-callback-18.webp)
-
-That completes the connection.
-
->[!Warning]
-> While your app is unpublished, Meta only delivers test webhooks sent from the app dashboard. Publish the app before you rely on production data.
-
-## Keeping the Connection Alive
+## Step 5: Parmanent Access Token (Keeping the Connection Alive)
 
 The token from **Generate new token** is a temporary one — it expires and takes your connection down with it. That's fine while you're testing, but a live site needs a permanent token from a Meta System User, which is what the **Permanent Access Token** field is asking for.
 
@@ -144,6 +106,45 @@ To create one:
 
 >[!Warning]
 > Meta shows this token once. Copy it straight into FluentCRM — if you close the dialog without copying it, you have to generate a new one.
+
+
+## Step 6: Enter the Credentials in FluentCRM
+
+In WordPress, go to **FluentCRM → Settings → Messaging → WhatsApp Settings**.
+
+1. Turn on **Enable WhatsApp Module**.
+2. Set **Choose your WhatsApp provider** to **Meta Cloud API (WhatsApp Business)**.
+3. Paste each credential into its matching field:
+   - **WhatsApp Business Account ID** (Step 3)
+   - **Phone Number ID** (Step 3)
+   - **Permanent Access Token** (Step 3)
+   - **App Secret** (Step 4)
+4. In **Webhook Verify Token**, type any secret string you choose — for example `crmwapp`. Write it down, because you enter the identical string on Meta's side next.
+5. Click **Save**.
+
+![FluentCRM WhatsApp Settings filled in with Meta Cloud API credentials](/whatsapp-module/whatsapp-meta-cloud-api-integration/fluentcrm-meta-settings-19.webp)
+
+After saving, copy the **Webhook URL** shown at the bottom of the page. You need it for the next step.
+
+## Step 7: Create the Webhook
+
+Go back to your Meta app and open **Other tools → Tools**. Among the tools listed, find **Webhooks** under **Configuration** and click **Configure webhooks**.
+
+![WhatsApp tools page with the Webhooks card and Configure webhooks link](/whatsapp-module/whatsapp-meta-cloud-api-integration/whatsapp-tools-8.webp)
+
+On the webhook page:
+
+1. Paste the **Webhook URL** you copied from FluentCRM into **Callback URL**.
+2. Paste your **Webhook Verify Token** — the exact string from Step 5 — into **Verify token**.
+3. Click **Verify and save**.
+4. Under **Webhook fields**, subscribe to the fields you want. At minimum, subscribe to **messages** so replies and delivery statuses reach FluentCRM.
+
+![Meta webhook configuration with the Callback URL and Verify token fields](/whatsapp-module/whatsapp-meta-cloud-api-integration/webhook-callback-18.webp)
+
+That completes the connection.
+
+>[!Warning]
+> While your app is unpublished, Meta only delivers test webhooks sent from the app dashboard. Publish the app before you rely on production data.
 
 ## Going Live
 
