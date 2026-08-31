@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { zoomablePlugin } from './theme/markdown-plugin-zoomable'
 
 // Treat standalone YouTube links as embedded videos in docs
 const YOUTUBE_URL_RE =
@@ -92,6 +93,9 @@ export default defineConfig({
   },
   markdown: {
     config: (md) => {
+      // Make doc images click-to-zoom
+      md.use(zoomablePlugin)
+
       // Convert a bare YouTube URL line into an embedded player
       md.block.ruler.before('paragraph', 'youtube_embed', youtubeBlockRule)
       md.renderer.rules.youtube_embed = (tokens: any[], idx: number) => {
