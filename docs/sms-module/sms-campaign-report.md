@@ -13,12 +13,12 @@ FluentCRM provides detailed reporting for SMS campaigns so you can track deliver
 
 To open the report for any sent or archived SMS campaign:
 
-1. Go to **SMS** from the top FluentCRM navbar.
+1. Open the **Messaging** dropdown on the top FluentCRM navbar and select **SMS Campaigns**.
 2. Find your campaign in the **SMS Campaigns** list.
-3. Click the three-dot menu under **Actions**.
+3. Click the **three-dots** **⋮** menu at the end of that row.
 4. Select **Reports** from the dropdown.
 
-![Access reports from the SMS campaign actions menu](/sms-module/sms-report/data-colum-9.webp)
+![Reach SMS Campaigns from the Messaging dropdown, then select Reports from a campaign's ⋮ menu](/sms-module/sms-report/data-colum-9.webp)
 
 ## Campaign Details and Preview
 
@@ -26,7 +26,7 @@ The **Campaign Details** tab gives you a complete snapshot:
 
 - **Technical data:** Campaign **Title**, **Total Recipients**, **Scheduled on** date/time, and **Sent By** user.
 - **SMS preview:** The exact message content delivered to subscribers.
-- **SMS stats:** Quick counters such as **Total SMSs** and **Success SMS**.
+- **SMS stats:** Quick counters such as **Total Messages** and **failed SMS**.
 
 ![Campaign details, preview, and stats](/sms-module/sms-report/campaign-details-9-1.webp)
 
@@ -48,9 +48,9 @@ Use the **Actions** tab to manage tags based on campaign result groups:
 - **Tag selection:** Select one or more tags to apply.
 - **Filter subscribers:** Target by:
   - **All Recipients**
-  - **Subscribers with sent SMS**
-  - **Subscribers with failed SMS**
-  - **Subscribers with delivered SMS**
+  - **Subscribers with sent messages**
+  - **Subscribers with failed messages**
+  - **Subscribers with delivered messages**
 
 Then click **Add Tags to Subscribers** (or the remove action button) to execute.
 
@@ -60,17 +60,15 @@ Then click **Add Tags to Subscribers** (or the remove action button) to execute.
 
 The **Contact Selections** tab helps you verify how the audience was originally built:
 
-- Review advanced filters used at send time (for example, activity fields or contact properties).
+- Review the lists/tags, dynamic segment, or advanced filter conditions used at send time — for example, the **Included Contacts** and **Excluded Contacts** lists and tags shown here.
 - Confirm your segmentation logic matched the audience you intended to target.
 
 ![Contact selections tab with original audience filters](/sms-module/sms-report/contact-selections-9-4.webp)
 
 ### Export, Duplicate, and Delete Campaign
 
-From the same three-dot campaign menu, you can also run quick maintenance actions:
+From the same **⋮** menu shown above, you can also run quick maintenance actions:
 
 - **Export:** Click **Export** to download that campaign's data as a **JSON** file (usually generated in about a second).
 - **Duplicate:** Click **Duplicate** to create a copy of the campaign with the same settings/content, so you can reuse it quickly.
 - **Delete:** Click **Delete**, then confirm with **Yes** in the permission/confirmation prompt to permanently remove the campaign.
-
-![Campaign actions menu with Reports, Export, Duplicate, and Delete](/sms-module/sms-report/sms-campaign-actions-menu.webp)
