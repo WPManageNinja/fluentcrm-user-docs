@@ -265,6 +265,9 @@ export default defineConfig({
           text: 'Messaging',
           collapsed: true,
           items: [
+            { text: 'Messaging Overview', link: '/messaging-overview' },
+            { text: 'Unified Inbox', link: '/unified-inbox' },
+            { text: 'Contact Message Tab', link: '/contact-message-tab' },
             {
               text: 'SMS',
               collapsed: true,
