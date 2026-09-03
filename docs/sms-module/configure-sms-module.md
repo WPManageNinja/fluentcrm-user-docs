@@ -24,6 +24,9 @@ At the top of the page, turn on **Enable Message Module** — this is the shared
 
 Once it's on, switch to the **SMS** tab (next to **WhatsApp**) and turn on **Enable SMS Module** as well. This unlocks the ability to create and send SMS campaigns and use SMS in your automations.
 
+> [!Note]
+> You can also **Enable the Message Module** from **FluentCRM Dashboard → Addons → Advanced Features**. Then open **Message Module** → **Settings** and turn on **Enable Message Module**.
+
 Next, select an **SMS Provider** from the **Choose your SMS provider** dropdown under **SMS Provider**. FluentCRM supports two providers out of the box:
 
 -   **[Twilio](/twilio-integration)** – Global SMS leader with strong deliverability.
@@ -110,11 +113,16 @@ In this step, you define your target audience under **Select Subscribers**. Choo
 
 As you define your criteria, the system shows a live count (for example, “174 contacts found”) to validate your selection.
 
-**One-time recipients**: Switch to this tab when you need to message numbers that aren't stored as contacts yet, for example a list handed to you by a partner or collected at an event:
+## One-time Recipients
 
-1. Pick a **Default country** so FluentCRM can normalize numbers entered without a country code.
+Use this **One-time Receipients** to send messages to phone numbers that are not saved as contacts in FluentCRM. This is useful when you have a new list of numbers from a partner, event, or another source.
+
+1. Select a **Default country** so FluentCRM can normalize numbers entered without a country code.
 
 2. Add the numbers, either by clicking **Choose CSV** under **Upload CSV** and then **Upload**, or by switching to **Paste** and pasting one number per line into the text box.
+
+> [!Note]
+> One Time Recipients is only for new phone numbers that are not already saved as contacts. If a number already exists as a contact in FluentCRM, it cannot be used as a one time recipient.
 
 ![Uploading one-time recipients by CSV](/sms-module/configure-sms-module/one-time-receiptpent-9.webp)
 
