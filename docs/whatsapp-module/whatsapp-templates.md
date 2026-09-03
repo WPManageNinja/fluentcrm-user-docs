@@ -7,7 +7,7 @@ order: 4
 
 # WhatsApp Templates
 
-A WhatsApp template is a pre-written message that your provider has reviewed and approved. Templates exist because WhatsApp doesn't let businesses message people freely outside a 24-hour reply window — an approved template is the only thing that reaches a contact.
+A WhatsApp template is a message your provider has reviewed and approved in advance. Templates exist because WhatsApp won't let businesses message people freely — outside a 24-hour reply window, an approved template is the only thing that reaches a contact.
 
 >[!Note]
 > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
@@ -15,71 +15,97 @@ A WhatsApp template is a pre-written message that your provider has reviewed and
 That makes templates the backbone of almost every WhatsApp campaign you'll run.
 
 >[!Note]
-> **The 24-hour rule:** when a contact messages or calls you, a 24-hour window opens — Meta calls it the *customer service window* — and you can reply with any free-form text. Each new message or call from that contact resets the timer to a fresh 24 hours. Once the window closes, free-form messages stop going through and only approved templates reach them.
+> **The 24-hour rule:** when a contact messages or calls you, a 24-hour window opens — Meta calls it the *customer service window* — and you can reply with any free-form text. Each new message or call from that contact resets the timer. Once the window closes, free-form messages stop going through and only approved templates reach them.
 >
-> Since most of your contacts have never messaged you first, plan on templates for anything you initiate. Templates don't override opt-in either — Meta requires contacts to have opted in before you message them at all.
+> Most of your contacts have never messaged you first, so plan on templates for anything you initiate. Templates don't override opt-in either — Meta requires contacts to have agreed to hear from you before you message them at all.
 
 ## Where to Find Templates
 
-Go to **Messaging → WhatsApp Templates** in the FluentCRM top menu, or open the **Templates** tab from the WhatsApp Campaigns screen.
+Go to **FluentCRM → Messaging → Templates**.
 
-The list shows each template's **Provider**, **Category**, **Language**, **Status**, and **Variables**, along with a **Preview**.
+This screen is shared with SMS. Use the **All / SMS / WhatsApp** filter to show just one channel. Above the table, FluentCRM shows your current provider and when it last synced.
 
-![WhatsApp Templates dashboard with Sync Templates and Create Template buttons](/whatsapp-module/whatsapp-templates/templates-dashboard-1.webp)
+![Templates screen listing WhatsApp templates with provider, category, language, status, and variable columns](/whatsapp-module/whatsapp-templates/templates-list-1.webp)
 
-The current provider appears just below the page title, so you can confirm which account these templates belong to.
+Each row shows:
 
-## Syncing Existing Templates
+- **Template Name:** The name your provider knows it by.
+- **Provider:** Which platform approved it.
+- **Category:** `MARKETING`, `UTILITY`, or `AUTHENTICATION`.
+- **Language:** The language the template was submitted in.
+- **Status:** `APPROVED`, `PENDING`, or `REJECTED`. Only approved templates can be sent.
+- **Variables:** How many placeholders the template expects.
 
-If you already approved templates directly with Meta or Twilio, click **Sync Templates** to pull them into FluentCRM. Nothing is created — this just fetches what your provider already has.
+The eye icon previews a template; the bin icon deletes it.
 
-Sync again whenever a template's approval status changes on the provider side.
+>[!Note]
+> SMS templates appear on this same screen with `-` in the Category, Language, and Status columns. Those columns describe provider approval, and an SMS template doesn't need any — you write it and it's ready.
+
+## Syncing Templates
+
+Click **Sync Templates** to pull the current list and approval statuses from your provider.
+
+Sync whenever you've created a template in Meta's dashboard instead of here, or when you're waiting on a review to clear. A template that was `PENDING` when you last looked won't flip to `APPROVED` on its own.
 
 ## Creating a Template
 
 Click **Create Template** to build one and submit it for review.
 
-![Create Template screen with name, category, language, content fields, and live preview](/whatsapp-module/whatsapp-templates/create-template-2.webp)
+![Template editor with channel, name, category, language, content fields, buttons, and a live preview](/whatsapp-module/whatsapp-templates/create-template-2.webp)
 
-### Template Name and Language
+### Template Details
 
-- **Name your template:** Lowercase letters, numbers, and underscores only. This is the name your provider's reviewers see.
-- **Category:** What the template is for — for example, **Marketing — Promotions, offers, updates**. Pick honestly; the wrong category is a common rejection reason.
-- **Language:** The language the content is written in.
+- **Channel:** Select **WhatsApp**. (The same editor creates SMS templates, which skip the review process entirely.)
+- **Name your template:** Lowercase letters, numbers, and underscores only — for example `winter_offer`. This is the name Meta's reviewers see.
+- **Category:** What the message is for. **Marketing** covers promotions, offers, and updates; **Utility** covers order updates and account alerts; **Authentication** covers OTP and verification codes. Categorise honestly — Meta rejects templates whose content doesn't match the category they were submitted under.
+- **Language:** The language you've written the template in.
 
 ### Content
 
-- **Header** *(optional)*: A short bold line above the message, up to 60 characters.
-- **Body** *(required)*: The main message, up to 1024 characters. Format with `*bold*`, `_italic_`, and `~strikethrough~`.
-- **Footer** *(optional)*: Small grey text below the message, up to 60 characters.
-
-A live **Template preview** on the right shows the message as it will appear in WhatsApp.
+- **Header** *(optional)*: A short bold line at the top, up to 60 characters.
+- **Body** *(required)*: The message itself, up to 1024 characters. The toolbar adds bold, italic, strikethrough, and monospace formatting.
+- **Footer** *(optional)*: Small grey text at the bottom, up to 60 characters. A good home for "Reply STOP to unsubscribe".
 
 ### Variables
 
-Use numbered placeholders — <code v-pre>{{1}}</code>, <code v-pre>{{2}}</code>, and so on — for anything that changes per contact. FluentCRM fills them from contact data when the message sends, so one approved template covers your whole list.
+Insert placeholders with the `{x}` toolbar button. They're numbered — <code v-pre>{{1}}</code>, <code v-pre>{{2}}</code>, and so on — and you map each one to real contact data when you build the campaign.
 
-Click the **{x}** button in the body toolbar to insert one.
+Write your body so the variables read naturally in a sentence. Meta reviews templates by eye, and one that's mostly placeholders tends to get rejected.
 
 ### Buttons
 
-Add up to three buttons per template.
+Add up to three buttons. Click **+ Add Button**, then pick a type:
 
-- **Add Button:** A standard call-to-action button.
-- **Add Unsubscribe Button:** Adds a "Stop messages" button so contacts can opt out in one tap.
+- **Quick reply:** Sends a preset reply back to you when tapped.
+- **Visit website:** Opens a URL you provide.
+- **Call phone:** Dials a number you provide.
+
+While a template has no buttons yet, a second shortcut appears — **+ Add Unsubscribe Button**. It drops in a "Stop messages" quick reply so contacts can opt out in one tap.
+
+A contact who taps **Stop messages** is unsubscribed automatically — the button sends the word back to you as a reply, and FluentCRM reads it the same way it reads a typed `STOP`. See [how contacts opt themselves out](/whatsapp-activities#how-contacts-opt-themselves-out).
 
 >[!Tip]
 > Add an unsubscribe button to marketing templates. It gives people a clean way out, which protects your number's quality rating — and WhatsApp throttles senders that collect blocks and reports.
 
 ### Submitting
 
-Click **Submit for Review** to send the template to your provider.
+The **Template preview** on the right shows how the message will look on a phone as you type. When it reads right, click **Submit for Review**.
 
-Approval usually takes minutes but can run longer. The template's **Status** updates in the list once your provider decides; click **Sync Templates** if it looks stale.
+The template arrives as `PENDING`. Meta usually answers within minutes, though it can take up to 24 hours. Click **Sync Templates** to check.
 
->[!Warning]
-> You can't send with a template until it's approved. Submit templates ahead of any campaign you're planning rather than the day you want to send.
+If it comes back `REJECTED`, the usual culprits are a category that doesn't match the content, promotional language in a template submitted as `UTILITY`, or a body that's mostly variables. Fix it and submit again under a new name.
 
-## Using Templates in a Campaign
+## Using a Template
 
-When composing a WhatsApp campaign, set **Message Type** to **Approved Template (recommended)** and pick your template. This is the option that reaches your full audience — see [WhatsApp Campaign](/whatsapp-campaign) for the full flow.
+Templates show up wherever WhatsApp messages are sent:
+
+- **In a campaign:** Select **Approved Template** as the message type, pick the template, and map its variables. See [WhatsApp Campaign](/whatsapp-campaign).
+- **In the inbox:** Use **Send Template** to reach someone whose 24-hour window has closed. See the [Unified Inbox guide](/unified-inbox).
+- **In automations:** WhatsApp actions use approved templates the same way.
+
+Only `APPROVED` templates appear in these pickers.
+
+## What's Next?
+
+- [Send a WhatsApp campaign with your template](/whatsapp-campaign)
+- [Reply to contacts in the Unified Inbox](/unified-inbox)
