@@ -1,68 +1,115 @@
 ---
-title: "WhatsApp Activities and Contact Conversations"
+title: "WhatsApp Activities"
 slug: "whatsapp-activities"
 category: "whatsapp-module"
 order: 6
 ---
 
-# WhatsApp Activities and Contact Conversations
+# WhatsApp Activities
 
-Every WhatsApp message FluentCRM sends is logged, in two places. **Activities** gives you the site-wide view for spotting failures, and each contact's **WhatsApp** tab gives you the conversation view for a single person.
+Activities is the record of every message FluentCRM has sent or queued — what went out, to whom, whether it arrived, and what to do when it didn't.
 
 >[!Note]
 > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
-## WhatsApp Activities
+Campaigns tell you what you sent. Activities tells you what actually landed.
 
-Go to **Messaging → Activities** in the FluentCRM top menu, or open the **Activities** tab from the WhatsApp Campaigns screen.
+## Opening Activities
 
-![WhatsApp Activities log listing contacts, messages, source, type, status, and Resend actions](/whatsapp-module/whatsapp-activities/activities-log-1.webp)
+Go to **FluentCRM → Messaging → Activities**.
 
-Each row shows:
+The screen covers both channels. Use the **All / WhatsApp / SMS** filter to show WhatsApp only, search by contact or message text, or use the filter icon for finer control.
 
-- **Contact:** Who received the message.
-- **Message:** The message content.
-- **Source:** What sent it — the campaign or automation name.
-- **Type:** Where it came from, such as **Campaign**.
-- **Status:** **Pass** for delivered, **Failed** for rejected.
-- **Channel:** Always **WhatsApp** in this log.
-- **Actions:** A **Resend** button to retry.
+![Messaging Activities table with channel filters and rows showing contact, message, source, type, status, and resend actions](/whatsapp-module/whatsapp-activities/activities-list-1.webp)
 
-Use the search box and filter icon to narrow the log down.
+## Reading the Table
 
->[!Tip]
-> A cluster of **Failed** rows right after a campaign usually means a provider problem, not a per-contact one. Check that your access token hasn't expired and that the template you sent is still approved.
+- **Contact:** Who the message went to. Rows with no contact record show the number alone.
+- **Message:** The message body as sent.
+- **Source:** The campaign it came from, or `n/a` for a one-to-one message.
+- **Type:** `Campaign` for campaign sends, or `Custom SMS` for a message sent by hand or by an automation.
+- **Status:** `Sent` or `Failed`.
+- **Channel:** `WhatsApp` or `SMS`.
 
 ## Retrying a Failed Message
 
-Click **Resend** on any failed row to try again. Fix the underlying cause first — resending against an expired token or a rejected template just fails a second time.
+Click **Resend** on a failed row to try it again.
 
-## The Contact WhatsApp Tab
+Fix the cause first, though, or it'll fail the same way. On WhatsApp the usual reasons are:
 
-Open any contact from **Contacts**, then select the **WhatsApp** tab alongside **Overview**, **Emails**, and **Purchases**.
+- **The 24-hour window has closed** and the message wasn't a template. Send an approved template instead.
+- **A variable rendered empty.** Add a fallback to the template mapping, as described in [WhatsApp Campaign](/whatsapp-campaign).
+- **The contact isn't WhatsApp-subscribed.** Check their status before retrying.
+- **Your provider rejected it** — an expired token, your daily sending limit reached, or an unapproved template.
 
-The tab holds three things:
-
-- **WhatsApp Stats:** Counts for **All**, **Sent**, **Received**, **Campaign**, and **Read**. Click **View as Table** for a tabular breakdown.
-- **Conversation thread:** The full back-and-forth with this contact, in chat form.
-- **Send Template:** Sends an approved template directly to this contact.
-
-### Session Status
-
-A banner in the stats panel tells you what you can send right now:
-
-- **No Active Session** — *Only template messages can be sent.* The contact hasn't messaged you in the last 24 hours.
-- An active session means free-form replies work until the window closes.
-
-This is the [24-hour rule](/whatsapp-templates) applied to one conversation.
+>[!Note]
+> A campaign's delivered count often sits below the recipient estimate you saw while building it. Contacts who aren't subscribed on the channel are skipped at send time, and they're not counted as failures.
 
 ## WhatsApp Subscription Status
 
-Each contact carries a WhatsApp status independent of their email subscription status, shown as a badge at the top of the profile — for example, **WA Subscribed**.
+WhatsApp consent is tracked per conversation, separately from email. A contact who opts out of WhatsApp keeps receiving your emails, and someone you've never messaged counts as reachable.
 
-Change it from the **WhatsApp Status** dropdown on that badge, visible in the screenshot. A contact who opts out of WhatsApp keeps receiving your emails; the two channels are tracked separately.
+A conversation carries one of four statuses:
+
+- **Subscribed:** You can message them.
+- **Unsubscribed:** They opted out. Campaigns and automations skip them.
+- **Pending:** Consent hasn't been confirmed yet.
+- **Bounced:** The number couldn't be reached. FluentCRM sets this one itself.
+
+Change it from the **Status** dropdown in the contact panel of the [Unified Inbox](/unified-inbox), or on the [contact's Message tab](/contact-message-tab). Both offer the first three — Bounced isn't something you set by hand.
+
+![Unified Inbox contact panel showing a contact's WhatsApp channel and Subscribed status dropdown](/whatsapp-module/whatsapp-activities/contact-status-2.webp)
+
+## How Contacts Opt Themselves Out
+
+Contacts don't have to contact you to stop hearing from you. They reply to your WhatsApp message with a keyword, and FluentCRM works out what they meant and updates their status — no action needed from you.
+
+### The Keywords
+
+| To stop messages, they reply | To start again, they reply |
+|---|---|
+| `stop` | `start` |
+| `stopall` | `unstop` |
+| `unsubscribe` | `subscribe` |
+| `quit` | `resubscribe` |
+| `cancel` | `resume` |
+| `end` | `opt in` |
+| `revoke` | `optin` |
+| `opt out` | |
+| `optout` | |
+
+Any one of these on its own is enough. A contact who replies `STOP` is unsubscribed on WhatsApp immediately, and campaigns, automations, and one-to-one sends all skip them from that moment on.
+
+### How FluentCRM Reads Them
+
+The match is deliberately forgiving in some ways and strict in others.
+
+- **Case and punctuation don't matter.** `STOP`, `Stop!` and `stop.` all work.
+- **Filler words are ignored.** FluentCRM strips words like *please*, *me*, *my*, *send*, *sending*, *messages*, *updates*, *now*, *again*, and *thanks* before matching — so "please stop sending me messages" reads as `stop`.
+- **Only short messages count as commands.** Anything longer than six words is treated as a normal message, not an instruction. That's deliberate: it stops a sentence like "I couldn't stop laughing at your last offer" from unsubscribing someone by accident.
+
+Anything that isn't a keyword is stored as an ordinary reply and shows up in your [Unified Inbox](/unified-inbox) for you to answer.
+
+### What the Contact Sees
+
+An opt-out gets an automatic reply confirming it:
+
+> You have been unsubscribed. Reply START to receive updates again.
+
+An opt-in is applied silently — the contact's status flips back to **Subscribed** and your next campaign reaches them, with no confirmation message sent.
 
 >[!Note]
-> Contacts who are not WhatsApp-subscribed are skipped when a campaign or message sends, which is why a campaign's final recipient count can come in below the count shown at the recipients step.
+> These keywords are the contact's route out. You can also set the status yourself from the [Unified Inbox](/unified-inbox) or the [contact's Message tab](/contact-message-tab) — useful when someone asks you to stop by phone or email instead.
 
-![Contact profile WhatsApp tab with the conversation thread, WhatsApp Stats, and WA Subscribed status](/whatsapp-module/whatsapp-activities/contact-whatsapp-tab-2.webp)
+>[!Tip]
+> Add a "Stop messages" button to your marketing templates so people can opt out in one tap, without having to know any keyword at all. See [WhatsApp Templates](/whatsapp-templates).
+
+## Conversation History on a Contact
+
+Activities covers every contact at once. To see one person's history on its own — with a composer for messaging them directly — open their profile and click the **Message** tab. The [Contact Message Tab guide](/contact-message-tab) covers it.
+
+## What's Next?
+
+- [Reply to contacts in the Unified Inbox](/unified-inbox)
+- [Message a single contact from their profile](/contact-message-tab)
+- [Send another WhatsApp campaign](/whatsapp-campaign)

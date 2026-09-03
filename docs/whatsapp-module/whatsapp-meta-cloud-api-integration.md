@@ -109,19 +109,20 @@ To create one:
 
 ## Step 6: Enter the Credentials in FluentCRM
 
-In WordPress, go to **FluentCRM → Settings → Messaging → WhatsApp Settings**.
+In WordPress, go to **FluentCRM → Settings → Messaging**.
 
-1. Turn on **Enable WhatsApp Module**.
-2. Set **Choose your WhatsApp provider** to **Meta Cloud API (WhatsApp Business)**.
-3. Paste each credential into its matching field:
+1. Turn on **Enable Message Module**.
+2. Open the **WhatsApp** tab and turn on **Enable WhatsApp Module**.
+3. Set **Choose your WhatsApp provider** to **Meta Cloud API (WhatsApp Business)**.
+4. Paste each credential into its matching field:
    - **WhatsApp Business Account ID**
    - **Phone Number ID**
    - **Permanent Access Token**
    - **App Secret**
-4. In **Webhook Verify Token**, type any secret string you choose — for example `crmwapp`. Write it down, because you enter the identical string on Meta's side next.
-5. Click **Save**.
+5. In **Webhook Verify Token**, type any secret string you choose — for example `crmwapp`. Write it down, because you enter the identical string on Meta's side next.
+6. Click **Save**.
 
-![FluentCRM WhatsApp Settings filled in with Meta Cloud API credentials](/whatsapp-module/whatsapp-meta-cloud-api-integration/fluentcrm-meta-settings-19.webp)
+![FluentCRM Messaging settings on the WhatsApp tab with Meta Cloud API credentials filled in and the Webhook URL below](/whatsapp-module/whatsapp-meta-cloud-api-integration/fluentcrm-meta-settings-19.webp)
 
 After saving, copy the **Webhook URL** shown at the bottom of the page. You need it for the next step.
 
