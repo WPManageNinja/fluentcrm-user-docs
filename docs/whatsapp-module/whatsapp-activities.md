@@ -7,12 +7,12 @@ order: 6
 
 # WhatsApp Activities
 
-Activities is the record of every message FluentCRM has sent or queued — what went out, to whom, whether it arrived, and what to do when it didn't.
+Activities is the running record of every message FluentCRM has sent, or has queued up to send. It's where you go to find out whether something actually reached the person you sent it to, and what to do about it when it didn't.
 
 >[!Note]
 > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
-Campaigns tell you what you sent. Activities tells you what actually landed.
+A campaign tells you what you sent. This screen tells you what landed, and the two numbers are rarely identical.
 
 ## Opening Activities
 
