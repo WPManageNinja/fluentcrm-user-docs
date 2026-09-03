@@ -7,14 +7,16 @@ order: 0
 
 # Messaging Overview
 
-Messaging lets you reach contacts on SMS and WhatsApp from the same place you already send email — campaigns, automations, and a shared inbox your team can reply from.
+Your contacts already get your emails. Messaging adds SMS and WhatsApp on top of that, so you can also reach people on their phone — from a campaign, from an automation, or straight from a shared inbox your team answers together.
 
 >[!Note]
 > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
-Email goes one way. Messaging goes both ways: a contact can reply, and their reply lands back in FluentCRM against their contact record. That changes what you can do with it — order updates people actually read, appointment reminders they can answer, and a real conversation when they have a question.
+What makes it different from email is that people write back. When they do, their reply arrives in FluentCRM on that contact's record, sitting alongside everything else you already know about them.
 
-SMS and WhatsApp share one module, one inbox, and one activity log. You can run either channel on its own, or both together.
+That opens up messages email was never much good at. A delivery update gets read within minutes instead of sitting unopened. An appointment reminder can be confirmed with a single word. And when someone has a question, you can just answer it, right there.
+
+Both channels live in the same module and share the same inbox and activity log. Run SMS, run WhatsApp, or run both — whichever suits how you actually talk to your customers.
 
 ## Enabling the Messaging Module
 
@@ -22,9 +24,13 @@ Go to **FluentCRM → Settings → Messaging** and turn on **Enable Message Modu
 
 ![FluentCRM Settings Messaging page with the Enable Message Module toggle switched off](/messaging/messaging-overview/enable-message-module-1.webp)
 
-Two tabs appear once the module is on — **SMS** and **WhatsApp**. Each has its own switch and its own provider fields, so turning on the module doesn't commit you to both channels.
+There's a second door to the same switch, if you happen to be in the add-ons screen already. Go to **FluentCRM → Addons**, find **Message Module** under **Advanced Features**, click **Settings**, tick **Enable Message Module**, and save. It's one setting behind both — turning it on in either place turns it on everywhere. The **Configure** button on that same row takes you straight to the Messaging settings.
 
-![Messaging settings with the module enabled, showing the SMS and WhatsApp tabs](/messaging/messaging-overview/channel-tabs-2.webp)
+![Addons Advanced Features list with the Message Module row and its Enable Message Module checkbox open](/messaging/messaging-overview/addons-message-module-2.webp)
+
+Back in **Settings → Messaging**, two tabs appear once the module is on — **SMS** and **WhatsApp**. Each has its own switch and its own provider fields, so turning on the module doesn't commit you to both channels.
+
+![Messaging settings with the module enabled, showing the SMS and WhatsApp tabs](/messaging/messaging-overview/channel-tabs-3.webp)
 
 The module on its own doesn't send anything. Each channel needs a provider connected first:
 
@@ -35,7 +41,7 @@ The module on its own doesn't send anything. Each channel needs a provider conne
 
 Once a channel is active, **Messaging** appears in the top navigation with everything the module adds.
 
-![FluentCRM top navigation with the Messaging dropdown open showing Inbox, SMS Campaigns, WhatsApp Campaigns, Templates, and Activities](/messaging/messaging-overview/messaging-menu-3.webp)
+![FluentCRM top navigation with the Messaging dropdown open showing Inbox, SMS Campaigns, WhatsApp Campaigns, Templates, and Activities](/messaging/messaging-overview/messaging-menu-4.webp)
 
 - **Inbox:** Every SMS and WhatsApp conversation in one screen, where you read and reply. See the [Unified Inbox guide](/unified-inbox).
 - **SMS Campaigns:** One-off text broadcasts to a segment of your contacts.
@@ -49,7 +55,7 @@ Only channels you've switched on appear here. A site running WhatsApp alone neve
 
 A campaign sends one message to many contacts at once. You pick the audience the same way you do for email — by list and tag, by dynamic segment, or with the advanced filter — then review and send or schedule it.
 
-![WhatsApp Campaigns list showing campaign titles, message previews, status, and channel columns](/messaging/messaging-overview/whatsapp-campaigns-4.webp)
+![WhatsApp Campaigns list showing campaign titles, message previews, status, and channel columns](/messaging/messaging-overview/whatsapp-campaigns-5.webp)
 
 ### Templates
 
@@ -57,7 +63,7 @@ Templates hold message bodies you reuse. Both channels share one screen, with a 
 
 The two channels treat templates differently. An SMS template is just saved text — write it and use it. A WhatsApp template has to be approved by your provider before it can be sent, so it carries a category, a language, and an approval status. [WhatsApp Templates](/whatsapp-templates) covers that side.
 
-![Templates screen listing WhatsApp templates with provider, category, language, status, and variables columns](/messaging/messaging-overview/templates-5.webp)
+![Templates screen listing WhatsApp templates with provider, category, language, status, and variables columns](/messaging/messaging-overview/templates-6.webp)
 
 ### Activities
 
@@ -65,7 +71,7 @@ Activities is the log of everything the module has sent. Filter it by channel, s
 
 Each row shows the contact, the message, its **Source** (the campaign it came from, or `n/a` for a one-to-one message), its **Type**, its **Status**, and the **Channel** it went out on.
 
-![Messaging Activities table with All, WhatsApp, and SMS filters and rows showing status and resend actions](/messaging/messaging-overview/activities-6.webp)
+![Messaging Activities table with All, WhatsApp, and SMS filters and rows showing status and resend actions](/messaging/messaging-overview/activities-7.webp)
 
 ## Messaging Elsewhere in FluentCRM
 
