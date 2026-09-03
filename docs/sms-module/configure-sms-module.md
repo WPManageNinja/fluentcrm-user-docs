@@ -115,14 +115,16 @@ As you define your criteria, the system shows a live count (for example, “174 
 
 ## One-time Recipients
 
-Use this **One-time Receipients** to send messages to phone numbers that are not saved as contacts in FluentCRM. This is useful when you have a new list of numbers from a partner, event, or another source.
+Use **One-time recipients** to send messages to phone numbers that aren't saved as contacts in FluentCRM. This is useful when you have a new list of numbers from a partner, an event, or another source.
 
 1. Select a **Default country** so FluentCRM can normalize numbers entered without a country code.
 
 2. Add the numbers, either by clicking **Choose CSV** under **Upload CSV** and then **Upload**, or by switching to **Paste** and pasting one number per line into the text box.
 
-> [!Note]
-> One Time Recipients is only for new phone numbers that are not already saved as contacts. If a number already exists as a contact in FluentCRM, it cannot be used as a one time recipient.
+>[!Note]
+> **Use this for numbers that aren't in your CRM yet.** If a number already belongs to a contact, the message still goes out — but this route skips your usual list and tag targeting, so that person can easily get it twice. Reach existing contacts through **FluentCRM contacts** instead.
+>
+> Anyone who has opted out is skipped for you, and counted under **Contact Opt-outs** or **Conversation Opt-outs**.
 
 ![Uploading one-time recipients by CSV](/sms-module/configure-sms-module/one-time-receiptpent-9.webp)
 
