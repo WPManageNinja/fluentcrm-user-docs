@@ -7,12 +7,12 @@ order: 1
 
 # Unified Inbox
 
-The Unified Inbox is where every SMS and WhatsApp conversation lands — both channels, all your contacts, one screen. Read what people sent you, reply in a few keystrokes, and see who you're talking to without leaving the thread.
+Every SMS and WhatsApp conversation your business is having ends up in the Unified Inbox. One screen, both channels, everyone you've ever messaged — so you can work through the day's replies without hopping between contact records to find them.
 
 >[!Note]
 > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
-Campaigns and automations push messages out. The inbox is the other half: it's where the replies come back. A contact answers your appointment reminder, asks about an order, or texts STOP — all of it shows up here, attached to their contact record.
+Sending is the easy half. The moment you start messaging people they start messaging back, and those replies need somewhere to land where you'll actually see them. That's what this screen is for. Someone confirms an appointment, someone else wants to know where their order is, a third person just types STOP — it all arrives here, already matched to the right contact.
 
 ## Opening the Inbox
 
@@ -35,6 +35,8 @@ To narrow the list:
 - **Search conversations:** Find a thread by name, phone number, or email.
 - **All / SMS / WhatsApp:** Show one channel or both.
 - **Unread only:** Hide everything you've already answered.
+
+Beside the search box sits a **+** button. That's how you start a conversation from scratch — with a contact, or with a number that isn't in your CRM at all. See [starting a new conversation](#starting-a-new-conversation) below.
 
 ### The Thread
 
@@ -70,11 +72,13 @@ The inbox refreshes itself every 20 seconds while the tab is open, so new replie
 
 ## Starting a New Conversation
 
-Click the **+** button above the conversation list to message someone who hasn't written to you yet.
+Click the **+** button beside the search box to message someone you haven't got a conversation with yet — including a number that isn't in your contacts.
 
 ![New conversation panel with a phone number search, SMS and WhatsApp channel toggle, and a Not in your contacts result](/messaging/unified-inbox/new-conversation-3.webp)
 
-Search for a contact by name or number, pick **SMS** or **WhatsApp**, and write the first message. The same rules apply as anywhere else — consent is checked, and a WhatsApp message to someone outside the 24-hour window needs an approved template.
+Type a phone number into the search box. FluentCRM lists any existing chats and contacts that match it, and if the number is new to you it shows up on its own marked **Not in your contacts** — you can still pick it and message it. Choose **SMS** or **WhatsApp**, then write your first message.
+
+The usual rules still apply: consent is checked, and a WhatsApp message to someone outside the 24-hour window needs an approved template.
 
 ## Messages From Numbers You Don't Know
 
