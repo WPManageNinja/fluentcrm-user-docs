@@ -22,6 +22,9 @@ WhatsApp lives inside FluentCRM's shared messaging module, alongside SMS — so 
 
 ![FluentCRM Settings Messaging page with the Enable Message Module toggle](/whatsapp-module/configure-whatsapp-module/enable-message-module-1.webp)
 
+>[!Note]
+> The same switch is also in **FluentCRM → Addons**, under **Advanced Features** — open **Message Module → Settings** and tick **Enable Message Module** there instead. Either place works. See the [Messaging Overview](/messaging-overview) for that route.
+
 ## Step 2: Enable WhatsApp
 
 Open the **WhatsApp** tab and turn on **Enable WhatsApp Module**.
