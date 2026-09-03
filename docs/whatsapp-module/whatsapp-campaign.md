@@ -7,7 +7,7 @@ order: 5
 
 # WhatsApp Campaign
 
-A WhatsApp campaign sends one message to many contacts at once — a sale announcement, a shipping update, an event reminder. You build it in three steps: write the message, choose who gets it, then review and send.
+A WhatsApp campaign sends the same message out to a whole group of contacts at once — a sale you want people to hear about, an update on their order, a nudge before an event you're running. Building one takes three steps: write the message, choose who gets it, then review it and send.
 
 >[!Note]
 > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
@@ -87,6 +87,11 @@ Add numbers either way:
 FluentCRM then reports what it made of your list: how many it **Parsed**, plus counts for **Duplicate**, **Invalid**, **Contact opt-outs**, and **Conversation opt-outs**. Anything in those last four is dropped before sending.
 
 ![One-time recipients with pasted numbers, parsed counts, and the consent confirmation checkbox](/whatsapp-module/whatsapp-campaign/one-time-paste-5.webp)
+
+>[!Note]
+> **Use this for numbers that aren't in your CRM yet.** If a number already belongs to a contact, the message still goes out — but this route skips your usual list and tag targeting, so that person can easily get it twice. Reach existing contacts through **FluentCRM contacts** instead.
+>
+> Anyone who has opted out is skipped for you, and counted under **Contact opt-outs** or **Conversation opt-outs**.
 
 Finally, tick **I confirm these recipients consented to receive messages through this channel**. You can't continue without it.
 
