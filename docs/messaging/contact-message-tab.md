@@ -7,12 +7,12 @@ order: 2
 
 # Contact Message Tab
 
-Every contact profile has a **Message** tab holding their full SMS and WhatsApp history — and a composer for messaging them right there, without leaving the record you're already looking at.
+Open any contact and you'll find a **Message** tab on their profile. It holds everything you've ever sent them on SMS and WhatsApp, and lets you write to them without going anywhere else.
 
 >[!Note]
 > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
-The [Unified Inbox](/unified-inbox) is where you work through conversations. This tab is the opposite view: you're already looking at one person, and you want their messaging history in the same place as their tags, lists, and purchases.
+You'd reach for the [Unified Inbox](/unified-inbox) when you're working through a queue of conversations. This tab is for the other moment — when you're already reading someone's profile and want to know what you last said to them, right there next to their tags and their purchase history.
 
 ## Opening the Tab
 
