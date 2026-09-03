@@ -7,55 +7,83 @@ order: 1
 
 # Configure WhatsApp Module
 
-The **WhatsApp Module** lets you send WhatsApp messages to your contacts from campaigns and automations, right alongside your email and SMS. WhatsApp messages get opened far more often than email, which makes them a strong channel for order updates, appointment reminders, and time-sensitive offers.
+Turning on WhatsApp gives you WhatsApp campaigns, approved message templates, WhatsApp conversations in the [Unified Inbox](/unified-inbox), and WhatsApp actions inside automations.
 
 >[!Note]
 > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
-## Enabling the WhatsApp Module
+Setup is three things: switch on the module, connect a provider, and hand that provider your webhook URL. This guide covers the FluentCRM side of all three. The provider account itself is set up in [Meta Cloud API Integration](/whatsapp-meta-cloud-api-integration) or [Twilio WhatsApp Integration](/whatsapp-twilio-integration).
 
-From your WordPress dashboard, go to **FluentCRM → Settings → Messaging → WhatsApp Settings**.
+## Step 1: Enable the Message Module
 
-Turn on **Enable WhatsApp Module**. This unlocks WhatsApp campaigns, WhatsApp templates, the WhatsApp tab on contact profiles, and WhatsApp actions inside automations.
+Go to **FluentCRM → Settings → Messaging** and turn on **Enable Message Module**.
 
-![WhatsApp Settings page with the Enable WhatsApp Module toggle switched on](/whatsapp-module/configure-whatsapp-module/enable-whatsapp-module-1.webp)
+WhatsApp lives inside FluentCRM's shared messaging module, alongside SMS — so this master switch comes first. Nothing WhatsApp-specific appears until it's on.
 
-## Choosing a WhatsApp Provider
+![FluentCRM Settings Messaging page with the Enable Message Module toggle](/whatsapp-module/configure-whatsapp-module/enable-message-module-1.webp)
 
-WhatsApp does not let plugins send messages directly. Every message goes through an approved provider, so you must connect one before anything sends.
+## Step 2: Enable WhatsApp
 
-Under **WhatsApp Provider**, pick one from **Choose your WhatsApp provider**:
+Open the **WhatsApp** tab and turn on **Enable WhatsApp Module**.
 
-- **Meta Cloud API (WhatsApp Business):** Meta's own API. You run your own WhatsApp Business Account and phone number, with no reseller in the middle. Set it up in the [Meta Cloud API integration guide](/whatsapp-meta-cloud-api-integration).
-- **Twilio WhatsApp:** Uses your existing Twilio account and its WhatsApp sender. Easier to start with if you already run [Twilio SMS](/twilio-integration). Set it up in the [Twilio WhatsApp integration guide](/whatsapp-twilio-integration).
+![Messaging settings on the WhatsApp tab with the Enable WhatsApp Module toggle](/whatsapp-module/configure-whatsapp-module/enable-whatsapp-module-2.webp)
 
-The credential fields below the dropdown change to match the provider you select.
+>[!Note]
+> The **SMS** tab beside it is a separate channel with its own switch. Enabling WhatsApp doesn't enable SMS, and you don't need SMS to use WhatsApp.
+
+## Step 3: Choose a Provider
+
+FluentCRM doesn't talk to WhatsApp directly — WhatsApp requires a business platform in between. Pick yours from **Choose your WhatsApp provider**.
+
+![WhatsApp provider dropdown open with Twilio WhatsApp and Meta Cloud API options](/whatsapp-module/configure-whatsapp-module/choose-provider-3.webp)
+
+- **Meta Cloud API (WhatsApp Business):** WhatsApp's official platform, run by Meta. More setup up front, and the cheaper option at volume.
+- **Twilio WhatsApp:** Twilio handles the Meta relationship for you. Faster to get running, especially if you already send SMS through Twilio.
+
+Either one delivers the same messages. Choose on setup effort and pricing, not features.
+
+The fields below the dropdown change to match your choice.
 
 ### Meta Cloud API Fields
 
-- **WhatsApp Business Account ID:** Identifies the WhatsApp Business Account that owns your message templates. Found in **Meta Business Settings → WhatsApp Accounts**.
-- **Phone Number ID:** The sending number's ID — not the phone number itself. Found in **Meta for Developers → WhatsApp → API Setup**.
-- **Permanent Access Token:** The access token from your Meta app. The token generated in Meta's **Try it out** section is temporary and expires, so a live site needs a permanent token from a Meta System User.
-- **App Secret:** Used to verify the signature on webhooks Meta sends back to your site.
-- **Webhook Verify Token:** Any secret string you choose. The same string must be entered on Meta's side during webhook setup, or the connection fails verification.
+![Meta Cloud API credential fields including Business Account ID, Phone Number ID, and Permanent Access Token](/whatsapp-module/configure-whatsapp-module/meta-cloud-fields-5.webp)
+
+- **WhatsApp Business Account ID:** Identifies the account that owns your message templates. Found in **Meta Business Settings → WhatsApp Accounts**.
+- **Phone Number ID:** A numeric ID, not the phone number itself. Found in **Meta for Developers → WhatsApp → API Setup**.
+- **Permanent Access Token:** Generated from a Meta System User. The temporary token Meta offers first expires and takes your connection down with it.
+- **App Secret:** Used to verify that incoming webhooks genuinely came from Meta.
+- **Webhook Verify Token:** Any secret string you choose. Write it down — you enter the identical string on Meta's side when you create the webhook.
+
+The [Meta Cloud API Integration guide](/whatsapp-meta-cloud-api-integration) walks through collecting each of these.
 
 ### Twilio WhatsApp Fields
 
-- **Twilio Account SID:** The same Account SID your Twilio account uses.
-- **Twilio Auth Token:** The same Auth Token your Twilio account uses.
-- **WhatsApp From Number:** Your approved Twilio WhatsApp sender number, in full international format (for example, `+14155238886`).
+![Twilio WhatsApp credential fields including Account SID, Auth Token, and WhatsApp From Number](/whatsapp-module/configure-whatsapp-module/twilio-fields-4.webp)
+
+- **Twilio Account SID:** The same Account SID as your Twilio account.
+- **Twilio Auth Token:** The same Auth Token as your Twilio account.
+- **WhatsApp From Number:** Your approved Twilio WhatsApp sender in full international format, such as `+14155238886`.
 - **Messaging Service SID:** Optional. Use a Messaging Service sender pool for template messages.
 
-![WhatsApp Settings with Twilio WhatsApp selected and its credential fields](/whatsapp-module/configure-whatsapp-module/whatsapp-provider-twilio-2.webp)
+The [Twilio WhatsApp Integration guide](/whatsapp-twilio-integration) covers where to find these.
 
-Click **Save** once your credentials are in.
+Click **Save** when your credentials are in.
 
-## Connecting the Webhook
+## Step 4: Connect the Webhook
 
-At the bottom of the page, FluentCRM generates a **Webhook URL** unique to your site. Copy it and paste it into your provider's webhook settings.
+After saving, FluentCRM generates a **Webhook URL** at the bottom of the page. Copy it and paste it into your provider's webhook settings.
 
->[!Note]
-> Without this webhook, messages still go out, but your site never hears back — you get no delivery statuses, and replies from contacts never reach the CRM. Each provider guide covers exactly where to paste it.
+![WhatsApp settings showing the saved credentials and the generated Webhook URL field](/whatsapp-module/configure-whatsapp-module/webhook-url-6.webp)
+
+This step is easy to skip and expensive to skip. Without the webhook, messages still go out — but nothing comes back. No delivery statuses, no replies in your inbox, and no opt-outs recorded when someone texts STOP.
+
+Each provider guide shows exactly where to paste it.
 
 >[!Warning]
 > The Webhook URL contains a hash unique to your site. Treat it like a credential and don't share it publicly.
+
+## What's Next?
+
+- [Connect Meta Cloud API](/whatsapp-meta-cloud-api-integration)
+- [Connect Twilio WhatsApp](/whatsapp-twilio-integration)
+- [Create your first WhatsApp template](/whatsapp-templates)
