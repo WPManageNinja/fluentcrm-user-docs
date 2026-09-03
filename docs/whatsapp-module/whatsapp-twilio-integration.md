@@ -44,21 +44,22 @@ For production, register your own WhatsApp sender in the Twilio Console under **
 
 ## Step 3: Enter the Credentials in FluentCRM
 
-In WordPress, go to **FluentCRM → Settings → Messaging → WhatsApp Settings**.
+In WordPress, go to **FluentCRM → Settings → Messaging**.
 
-1. Turn on **Enable WhatsApp Module**.
-2. Set **Choose your WhatsApp provider** to **Twilio WhatsApp**.
-3. Fill in the fields:
+1. Turn on **Enable Message Module**.
+2. Open the **WhatsApp** tab and turn on **Enable WhatsApp Module**.
+3. Set **Choose your WhatsApp provider** to **Twilio WhatsApp**.
+4. Fill in the fields:
    - **Twilio Account SID:** The Account SID from Step 1.
    - **Twilio Auth Token:** The Auth Token from Step 1.
    - **WhatsApp From Number:** Your approved sender number in full international format, such as `+14155238886`.
    - **Messaging Service SID:** Optional. Use a Messaging Service sender pool for template messages.
-4. Click **Save**.
+5. Click **Save**.
 
-![FluentCRM WhatsApp Settings with Twilio WhatsApp selected and credentials entered](/whatsapp-module/whatsapp-twilio-integration/twilio-settings-fluentcrm-3.webp)
+![FluentCRM Messaging settings on the WhatsApp tab with Twilio WhatsApp selected and credentials entered](/whatsapp-module/whatsapp-twilio-integration/twilio-settings-fluentcrm-3.webp)
 
 ## Step 4: Connect the Webhook
 
-After saving, copy the **Webhook URL** from the bottom of the WhatsApp Settings page and paste it into your Twilio WhatsApp sender's incoming message webhook field.
+After saving, copy the **Webhook URL** from the bottom of the WhatsApp tab and paste it into your Twilio WhatsApp sender's incoming message webhook field.
 
 Without it, messages still send, but delivery statuses and contact replies never make it back to FluentCRM.
