@@ -113,6 +113,7 @@ As you define your criteria, the system shows a live count (for example, “174 
 **One-time recipients**: Switch to this tab when you need to message numbers that aren't stored as contacts yet, for example a list handed to you by a partner or collected at an event:
 
 1. Pick a **Default country** so FluentCRM can normalize numbers entered without a country code.
+
 2. Add the numbers, either by clicking **Choose CSV** under **Upload CSV** and then **Upload**, or by switching to **Paste** and pasting one number per line into the text box.
 
 ![Uploading one-time recipients by CSV](/sms-module/configure-sms-module/one-time-receiptpent-9.webp)
