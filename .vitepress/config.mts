@@ -117,6 +117,7 @@ export default defineConfig({
     siteTitle: false,
     nav: [
       { text: 'User Docs', link: '/dashboard-introduction' },
+      { text: 'Try It Free', link: 'https://try.wpmanageninja.com/?products=fluent-crm', target: '_blank', rel: 'noopener noreferrer' },
       { text: 'Dev Docs', link: 'https://developers.fluentcrm.com/', target: '_blank', rel: 'noopener noreferrer' },
       { text: 'Changelog', link: '/change-log' },
       { text: 'Website', link: 'https://fluentcrm.com', target: '_blank', rel: 'noopener noreferrer' },
