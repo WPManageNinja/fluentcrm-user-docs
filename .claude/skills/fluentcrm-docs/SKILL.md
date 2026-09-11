@@ -60,7 +60,8 @@ Reference files are not all loaded at once. Open only what's relevant to the cur
 2. Pick the matching template from `references/doc-anatomy.md`. Use the voice rules from `references/voice-and-tone.md`.
 3. Create the file at `docs/[folder]/[slug].md`. Front-load value in the first sentence — no "this article will guide you through…".
 4. Add the sidebar entry in `.vitepress/config.mts` per `references/sidebar-and-folders.md`. Verify the link is `/slug` (no `/docs/` prefix).
-5. Run the full checklist in `references/quality-checklist.md` before declaring done.
+5. Run `npm run featured:generate` once the `title` is final — it renders the page's social-share card to `docs/public/images/featured/[slug].png` (idempotent; commit the PNG with the page). If you retitled or renamed an existing page, delete its old card first so the generator rebuilds it.
+6. Run the full checklist in `references/quality-checklist.md` before declaring done.
 
 ### B. Update an Existing Doc
 

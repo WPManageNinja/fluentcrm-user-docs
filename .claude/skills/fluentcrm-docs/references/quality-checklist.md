@@ -82,6 +82,10 @@ Run through this list before considering any doc complete or before reporting an
 - [ ] Link entry uses `/slug` format (no `/docs/` prefix)
 - [ ] Position in sidebar is logical (not random)
 
+## Featured (social-share) image
+- [ ] `npm run featured:generate` has been run after the final `title` — `docs/public/images/featured/[slug].png` exists and is staged with the page
+- [ ] If the page was renamed or retitled, the stale card was deleted first and the generator reported no orphans
+
 ## YouTube Embeds
 - [ ] If a video is included, it's a bare URL on its own line
 - [ ] Blank line above and below the URL

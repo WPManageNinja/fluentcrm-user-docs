@@ -10,8 +10,9 @@ Repository: `WPManageNinja/fluentcrm-user-docs` | Branch: `docteam` → merges t
 - **142 markdown files** across 16 doc sections inside `docs/`
 - **VitePress config**: `.vitepress/config.mts` — controls sidebar, nav, rewrites, and a custom YouTube embed plugin
 - **Images**: stored in `docs/public/[category]/[slug]/` as `.webp` files
+- **Featured (social-share) images**: generated, not hand-made — `scripts/generate-featured-images.mjs` renders one branded 1200x630 PNG per page into `docs/public/images/featured/[slug].png` from the page's `title` frontmatter and category folder; `.vitepress/config.mts` (`featuredImageFor()`) points each page's `og:image` / `twitter:image` at it, falling back to `default.png`. Run `npm run featured:generate` after adding a page and commit the PNG. A renamed/retitled page needs its old card deleted first (the generator skips existing files and only reports orphans). The card is named after the URL slug (file basename) — that rule lives in both the script and the config; keep them in sync.
 - **URL rewrite**: `docs/:category/:slug.md` → `:slug.md` (category folder and `/docs/` prefix are hidden from URLs)
-- **Dev server**: `npm run docs:dev` | **Build**: `npm run docs:build`
+- **Dev server**: `npm run docs:dev` | **Build**: `npm run docs:build` | **Social cards**: `npm run featured:generate`
 
 ## Plugin Versions Covered
 
@@ -27,8 +28,8 @@ Repository: `WPManageNinja/fluentcrm-user-docs` | Branch: `docteam` → merges t
 
 1. **Product name is always `FluentCRM`** — never "Fluent CRM" (two words)
 2. **Never change factual content** (feature behaviour, step sequences, option names) without verifying from plugin source or explicit user instruction
-3. **All new images must be `.webp`** — never `.jpg`, `.png`, `.gif`
-4. **Always update `.vitepress/config.mts`** when adding a new doc file
+3. **All new images must be `.webp`** — never `.jpg`, `.png`, `.gif` (the one exception: the generated social cards in `docs/public/images/featured/`, which scrapers require as PNG)
+4. **Always update `.vitepress/config.mts`** when adding a new doc file, and run `npm run featured:generate` so the page gets its social card
 5. **The `docs/devloper/` folder has a typo** (missing `e`) — this is intentional/legacy; use it as-is until a migration is planned
 6. **Sidebar link format**: always `/slug-here` (never `/docs/slug` or `/docs/category/slug`)
 

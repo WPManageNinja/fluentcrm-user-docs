@@ -1,5 +1,46 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type HeadConfig } from 'vitepress'
+import { existsSync } from 'node:fs'
+import { join, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { zoomablePlugin } from './theme/markdown-plugin-zoomable'
+
+// Canonical origin, reused by the canonical link, the JSON-LD @id and the absolute
+// og:/twitter: URLs below. (The sitemap block states it with a trailing slash.)
+const SITE_URL = 'https://docs.fluentcrm.com'
+const SITE_NAME = 'FluentCRM Documentation'
+const SITE_DESCRIPTION =
+  'Marketing Automation for WordPress – FluentCRM user guides and documentation'
+
+/**
+ * Per-page link-preview cards.
+ *
+ * `scripts/generate-featured-images.mjs` renders a branded 1200x630 PNG carrying each
+ * page's own title into `docs/public/images/featured/<slug>.png`, which the publicDir
+ * serves at `/images/featured/<slug>.png`.
+ *
+ * NAMING RULE — kept in sync with that script: the `rewrites` below maps
+ * `docs/:category/:slug.md` to `:slug.md`, so `pageData.relativePath` arrives here
+ * already flattened to `<slug>.md` and the card is named after that same slug (the
+ * home page's `index.md` uses `index.png`).
+ *
+ * Anything without a generated card falls back to `default.png`, which the generator
+ * also emits — so a shared link is never left with no preview at all. The URL must be
+ * absolute: relative paths are ignored by Slack/X/LinkedIn/Facebook scrapers.
+ */
+const FEATURED_DIR = join(
+  dirname(fileURLToPath(import.meta.url)),
+  '..',
+  'docs',
+  'public',
+  'images',
+  'featured'
+)
+
+function featuredImageFor(relativePath: string): string {
+  const name = `${relativePath.replace(/\.md$/, '')}.png`
+  const file = existsSync(join(FEATURED_DIR, name)) ? name : 'default.png'
+  return `${SITE_URL}/images/featured/${encodeURIComponent(file)}`
+}
 
 // Treat standalone YouTube links as embedded videos in docs
 const YOUTUBE_URL_RE =
@@ -30,10 +71,20 @@ function youtubeBlockRule(state: any, startLine: number, endLine: number, silent
 }
 
 export default defineConfig({
-  title: 'FluentCRM Documentation',
-  description: 'Marketing Automation for WordPress – FluentCRM user guides and documentation',
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
   head: [
     ['link', { rel: 'icon', href: '/brand/s-logo-1.png' }],
+
+    // Open Graph / Twitter values that never vary per page. Every generated card is
+    // 1200x630, so the dimensions live here; the image URL itself is per page and
+    // is set in transformHead() below.
+    ['meta', { property: 'og:site_name', content: SITE_NAME }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:locale', content: 'en_US' }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ],
   ignoreDeadLinks: true,
   cleanUrls: true,
@@ -50,22 +101,44 @@ export default defineConfig({
     hostname: 'https://docs.fluentcrm.com/',
     lastmodDateOnly: true,
   },
-  // Inject TechArticle JSON-LD schema for pages opted in via `techArticle: true`
-  // in frontmatter. Runs at build time so the <script type="application/ld+json">
-  // ships in the static HTML (no client-side DOM injection needed).
-  transformHead({ pageData }) {
+  // Per-page <head> tags, emitted at build time into the static HTML:
+  //  1. canonical + the Open Graph / Twitter values that differ per page, including
+  //     the page's own featured image (see featuredImageFor above);
+  //  2. TechArticle JSON-LD for pages opted in via `techArticle: true` in frontmatter.
+  transformHead({ pageData, description }) {
     const fm = pageData.frontmatter
-    if (!fm.techArticle) return
+    // The bare page title, without the `| FluentCRM Documentation` template suffix
+    // the <title> tag carries — share cards already show the site name separately.
+    const title = fm.title || pageData.title || SITE_NAME
 
-    const slug = fm.slug || pageData.relativePath.replace(/\.md$/, '')
-    const url = `https://docs.fluentcrm.com/${slug}`
+    // `relativePath` is already the REWRITTEN (flattened) path, so it matches the
+    // public URL — see the `rewrites` option above. The home page is `index.md`.
+    const slug =
+      fm.slug ||
+      pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
+    const url = slug ? `${SITE_URL}/${slug}` : `${SITE_URL}/`
+    const image = featuredImageFor(pageData.relativePath)
+
+    const head: HeadConfig[] = [
+      ['link', { rel: 'canonical', href: url }],
+      ['meta', { property: 'og:title', content: title }],
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:url', content: url }],
+      ['meta', { property: 'og:image', content: image }],
+      ['meta', { property: 'og:image:alt', content: title }],
+      ['meta', { name: 'twitter:title', content: title }],
+      ['meta', { name: 'twitter:description', content: description }],
+      ['meta', { name: 'twitter:image', content: image }],
+    ]
+
+    if (!fm.techArticle) return head
 
     const schema = {
       '@context': 'https://schema.org',
       '@type': 'TechArticle',
       headline: fm.title,
       description: fm.description,
-      ...(fm.image ? { image: `https://docs.fluentcrm.com${fm.image}` } : {}),
+      image: fm.image ? `${SITE_URL}${fm.image}` : image,
       datePublished: fm.datePublished,
       dateModified: fm.dateModified || fm.datePublished,
       proficienciesRequired: fm.proficiencies || 'WordPress Administration',
@@ -80,7 +153,7 @@ export default defineConfig({
         name: 'FluentCRM',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://docs.fluentcrm.com/brand/fluentCRM-logo-color.svg',
+          url: `${SITE_URL}/brand/fluentCRM-logo-color.svg`,
         },
       },
       mainEntityOfPage: {
@@ -89,7 +162,8 @@ export default defineConfig({
       },
     }
 
-    return [['script', { type: 'application/ld+json' }, JSON.stringify(schema)]]
+    head.push(['script', { type: 'application/ld+json' }, JSON.stringify(schema)])
+    return head
   },
   markdown: {
     config: (md) => {
