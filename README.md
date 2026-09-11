@@ -34,8 +34,11 @@ fluentcrm-user-docs/
 │   ├── devloper/                        # REST API and developer reference
 │   ├── change-log/                      # Release notes
 │   └── public/                          # Static assets and images (WebP)
+│       └── images/featured/             # Generated 1200x630 social-share cards, one per page
 ├── .vitepress/
-│   └── config.mts                       # VitePress config: nav, sidebar, URL rewrites, YouTube plugin
+│   └── config.mts                       # VitePress config: nav, sidebar, URL rewrites, YouTube plugin, OG tags
+├── scripts/
+│   └── generate-featured-images.mjs     # Renders the social-share cards (npm run featured:generate)
 ├── CLAUDE.md                            # AI contributor guidelines
 ├── package.json
 └── index.md                             # Homepage
@@ -65,6 +68,12 @@ npm run docs:build
 
 # Preview production build
 npm run docs:preview
+
+# Render a social-share card for any page that doesn't have one yet
+npm run featured:generate
+
+# Re-render every card (after changing the generator's design)
+npm run featured:regenerate
 ```
 
 The dev server runs at `http://localhost:5173` by default.
@@ -99,6 +108,8 @@ The dev server runs at `http://localhost:5173` by default.
 
 3. Place any images in `docs/public/<category>/<slug>/` as `.webp` files.
 
+4. Run `npm run featured:generate` to create the page's social-share card, and commit the PNG it writes to `docs/public/images/featured/<slug>.png`.
+
 ### Writing Style
 
 - **Voice:** Second person, active voice, conversational but precise.
@@ -123,6 +134,15 @@ The dev server runs at `http://localhost:5173` by default.
   >[!Note]
   > This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
   ```
+
+### Featured (social-share) images
+
+Every page gets its own link-preview card — the image Slack, X, LinkedIn and Facebook show when someone shares a docs URL. Cards are **generated, not designed by hand**: `scripts/generate-featured-images.mjs` renders a branded 1200×630 PNG carrying the page's `title` and its category into `docs/public/images/featured/<slug>.png`, and `.vitepress/config.mts` points each page's `og:image` / `twitter:image` at it. A page with no card falls back to `default.png`.
+
+- Run `npm run featured:generate` after adding a page. It only renders missing cards, so it's safe to run any time; commit the new PNG alongside the page.
+- If you rename or retitle a page, delete its old card first (`rm docs/public/images/featured/<old-slug>.png`) and run the generator again — it skips existing files and only *reports* orphans, it never deletes them.
+- The card is named after the page's URL slug (the file basename, since the rewrite below drops the category). That rule is written in both the script and the config, so a change to one must be mirrored in the other.
+- These PNGs are the one deliberate exception to the "all images must be `.webp`" rule: social scrapers expect PNG/JPEG.
 
 ### URL Rewrites
 
