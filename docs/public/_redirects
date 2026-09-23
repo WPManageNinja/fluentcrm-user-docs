@@ -1,0 +1,25 @@
+# Cloudflare Pages redirects for docs.fluentcrm.com
+# https://developers.cloudflare.com/pages/configuration/redirects/
+#
+# Old/pre-migration URLs that are still linked externally or indexed by
+# search engines. Source markdown has already been fixed where these were
+# referenced internally (see git history); these entries catch anyone
+# landing on the stale URL directly.
+
+# Legacy /docs/:slug URLs from before the docs/:category/:slug -> :slug rewrite
+/docs/lifterlms-integration-with-fluentcrm              /lifterlms-integration-with-fluentcrm              301
+/docs/easy-digital-downloads-integration-with-fluentcrm  /easy-digital-downloads-integration-with-fluentcrm  301
+/docs/learndash-integration-with-fluentcrm               /learndash-integration-with-fluentcrm              301
+
+# Legacy category-prefixed URL
+/grow-your-audience/company-module   /company-module   301
+
+# Renamed/retired slug -> current CRM Advanced Reports landing page
+/crm-advanced-reports   /advanced-reports-overview   301
+
+# Malformed external link that was published with a leading slash
+# (/https://fluentforms.com/...), which made it resolve against this site's
+# own origin instead of going out to fluentforms.com. Source is fixed
+# (see docs/forms/capturing-leads-through-fluent-forms-webhook.md); this
+# catches the URL that's already out in search results/backlinks.
+/https:/fluentforms.com/docs/how-to-create-a-form-with-fluent-forms/   https://fluentforms.com/docs/how-to-create-a-form-with-fluent-forms/   301
