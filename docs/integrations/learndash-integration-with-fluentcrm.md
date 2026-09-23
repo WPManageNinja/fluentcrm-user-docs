@@ -164,7 +164,7 @@ You must choose **Learndash** for data filtering. Then click the **Filter** opti
 
 To access your course enrollment report, navigate to the FluentCRM dashboard and click **Reports** from the top menu. Then, select the **LearnDash** option to see full information about your enrolled contacts and courses.
 
-To learn more about the advanced report of LearnDash read this [Documentation](/crm-advanced-reports#learndash-advanced-reports).
+To learn more about the advanced report of LearnDash read this [Documentation](/learndash-advanced-reports).
 
 ![image](/integrations/learndash-integration-with-fluentcrm/image-80.webp)
 
