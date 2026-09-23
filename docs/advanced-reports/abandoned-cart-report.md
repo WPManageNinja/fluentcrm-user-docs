@@ -33,14 +33,17 @@ Below the revenue summary, the **Abandoned Carts** table provides a granular loo
 * **Name/Email Search:** Quickly find a specific customer to check their cart status.
 * **Automation:** Identifies which specific recovery funnel (e.g., *Cart Abandoned - FluentCart*) is currently handling the contact.
 * **Cart Total:** The exact monetary value of the items left in the checkout.
-* **Order Status:** Displays the current real-time status of the cart (e.g., *Abandoned*, *Recovered*, or *Lost*).
+* **Order Status:** Displays the current real-time status of the cart: *Draft* (customer is still on checkout, cut-off not reached), *Processing* (abandoned, recovery automation running), *Recovered*, *Lost*, *Opt-out*, or *Skipped*.
 * **Time:** Shows exactly when the abandonment occurred.
+
+>[!Tip]
+> A **Skipped** cart passed the cut-off time but FluentCRM didn't start an automation for it. Hover the **skipped** badge to see why, for example *No automation found for this cart based on condition match* or *Under Cool Off Period*. See [Troubleshooting: the automation doesn't start](/abandon-cart-automation#troubleshooting-the-automation-doesn-t-start) for what each reason means and how to fix it.
 
 
 ## 3. Data Filtering and Management
 
 * **Date Range Picker:** In the top right corner, you can filter the entire report by specific dates (e.g., May 04 – May 11) to analyze weekly or monthly performance.
-* **Cart Type Filter:** Use the **All carts** dropdown menu to filter the list by status, making it easy to isolate only "Recovered" or "Active" carts for review.
+* **Cart Type Filter:** Use the **All carts** dropdown menu to filter the list by status (*Draft Carts*, *In Progress*, *Recovered Carts*, *Lost Carts*, *Opt-Out Carts*, *Skipped Carts*), making it easy to isolate one group for review.
 * **Setup Alerts:** If you do not have an active recovery sequence running, a warning banner will appear at the top of the dashboard with a quick link to set up your automation.
 
 ![abandoned report 1](/advanced-reports/abandoned-cart-report/Abandoned-Report-1-scaled.webp)
