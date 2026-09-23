@@ -37,7 +37,7 @@ Tags offer granular internal labeling. A contact can belong to one list but have
 
 ### 3. **Company Segments**
 
-If you have enabled the **[Company Module](/grow-your-audience/company-module)**, you can segment your audience based on their organizational affiliation. This is essential for B2B marketing.
+If you have enabled the **[Company Module](/company-module)**, you can segment your audience based on their organizational affiliation. This is essential for B2B marketing.
 
  * Navigate to **Contacts ➜ Companies**.
 
