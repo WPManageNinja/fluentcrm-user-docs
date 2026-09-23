@@ -44,13 +44,17 @@ If FluentCart is installed, a parallel section appears for the FluentCart driver
 
 The option **Mark Cart as Recovered when FluentCart Order Status Changes to** typically includes _Paid_, _Processing_, and _Completed_. Once a FluentCart order moves into one of the selected statuses, FluentCRM marks the corresponding abandoned cart as recovered, stops any in-flight recovery automations, and (optionally) removes the temporary abandoned-cart lists/tags.
 
-> **Note:** The FluentCart driver lives in FluentCRM core – no additional add-on is required. If you want a step-by-step automation walkthrough specific to FluentCart, see [FluentCart Abandon Cart Automation](/fluentcart-abandon-cart-automation).
+>[!Note]
+> The FluentCart driver lives in FluentCRM core – no additional add-on is required. If you want a step-by-step automation walkthrough specific to FluentCart, see [FluentCart Abandon Cart Automation](/fluentcart-abandon-cart-automation).
 
 ## **Timing Configuration** 
 
+>[!Note]
+> FluentCRM tracks a cart from the **checkout page**, once a billing email is available (prefilled for logged-in customers, typed in by guests). Adding a product to the cart without opening checkout doesn't create a cart record. See [When a cart counts as abandoned](/abandon-cart-automation#when-a-cart-counts-as-abandoned).
+
 In the Abandoned Cart Settings you will get some options for the Abandoned Automation. 
 
- * **Cart Abandoned Cut-off Time:** Cart Abandoned Cut-off Time refers to the specific period after which a shopping cart is considered abandoned if the customer has not completed the purchase.
+ * **Cart Abandoned Cut-off Time:** How many minutes of inactivity before FluentCRM treats a cart as abandoned. The countdown starts from the customer's last activity on the checkout page, and a scheduled task that runs every five minutes picks up carts that have passed the cut-off, so the automation can start up to five minutes after the time you set here.
  * **Mark as Lost After:**  In abandoned cart this setting refers to the duration after which an abandoned cart is considered lost if the customer has not completed the purchase within that time frame.
  * **Cool-off Period:** The Cool-off period for abandoned cart tracking defines how many days customers who have made a purchase will be excluded from abandoned cart follow-ups. This prevents them from receiving such emails for the specified number of days after their purchase.
  * **Status for New Contacts:** In the FluentCRM plugin's abandoned settings, Status for New Contacts refers to the default status assigned to new contacts who are added to your CRM system when they abandon a cart. This status helps categorize and manage these contacts for follow-up and marketing activities.
@@ -82,6 +86,7 @@ Each option includes a dropdown to select existing lists or tags, and a **plus (
 
 Once all done, click the **Save** button to apply all the changes you’ve made.
 
+>[!Note]
 > **Compatibility:** The WooCommerce driver supports both the **Classic Cart** and the **block-based checkout**. The FluentCart driver supports the standard FluentCart checkout. If you only see one section on this page, confirm both plugins are installed and activated.
 
 ## Related reading
