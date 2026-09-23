@@ -12,7 +12,7 @@ FluentCRM provides an integrated reporting suite for **Easy Digital Downloads (E
 To access these reports, navigate to the **Reports** dropdown in the top navbar and select **EDD** from the left sidebar.
 
 >[!Note]
->Ensure your EDD data is properly synced with FluentCRM. You can learn more about the [EDD integration with FluentCRM](/docs/easy-digital-downloads-integration-with-fluentcrm).
+>Ensure your EDD data is properly synced with FluentCRM. You can learn more about the [EDD integration with FluentCRM](/easy-digital-downloads-integration-with-fluentcrm).
 
 
 ## 1. Sales Performance Overview
