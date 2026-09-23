@@ -12,7 +12,7 @@ The **LifterLMS Reports** page gives you a clear view of how your courses and st
 To access this dashboard, go to the **Reports** menu in the top navbar and select **LifterLMS** from the left sidebar.
 
 >[!Note]
->Make sure your Lifterlms data is properly synced with FluentCRM. You can read more about the [Lifterlms integration with FluentCRM](/docs/lifterlms-integration-with-fluentcrm).
+>Make sure your Lifterlms data is properly synced with FluentCRM. You can read more about the [Lifterlms integration with FluentCRM](/lifterlms-integration-with-fluentcrm).
 
 ## 1. High-Level Metrics
 
