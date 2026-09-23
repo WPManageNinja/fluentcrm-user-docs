@@ -56,7 +56,7 @@ Go to **Fluent Forms** ➜ **Integrations**. Locate the **WebHooks** module and 
 
 ### Create the Webhook Feed
 
-First, open the **Settings** for the specific form you wish to use. if you want to know how to create a form, read this [Documentation](/https://fluentforms.com/docs/how-to-create-a-form-with-fluent-forms/).
+First, open the **Settings** for the specific form you wish to use. If you want to know how to create a form, read this [Documentation](https://fluentforms.com/docs/how-to-create-a-form-with-fluent-forms/).
 
 Now, choose **WebHook** from the left sidebar and click **+Add New**.
 
