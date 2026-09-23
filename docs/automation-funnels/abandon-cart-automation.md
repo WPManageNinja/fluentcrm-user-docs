@@ -9,6 +9,18 @@ order: 0
 
 With FluentCRM, you can automate abandoned cart recovery for **WooCommerce**, segment your customers by adding tags and lists, and run email campaigns to bring shoppers back. This article walks you through building the recovery automation for WooCommerce.
 
+## When a cart counts as abandoned
+
+FluentCRM starts tracking a cart on the **checkout page**, not when a product is added to the cart. A cart record needs an email address to attach to, so it's created as soon as the billing email is available:
+
+- **Logged-in customers**: WooCommerce prefills the billing email, so the cart is captured when the checkout page loads.
+- **Guests**: the cart is captured once they type their email into the billing email field.
+
+From that point the **Cart Abandoned Cut-off Time** countdown starts. If the customer doesn't complete the order within that window, a background task (which runs every five minutes) marks the cart as abandoned, matches it to your highest-priority Cart Abandoned automation, and starts the funnel. In practice, expect the automation to start up to five minutes after the cut-off time has passed.
+
+>[!Note]
+> Adding a product to the cart and leaving without opening checkout is not tracked. Nudge shoppers toward checkout with a clear cart-page call to action if you want more carts captured.
+
 ## Enable Abandoned Cart in global settings
 
 Before you build **WooCommerce** abandoned-cart automations, turn on abandoned-cart tracking in FluentCRM:
@@ -59,6 +71,21 @@ With the default condition options, you will also see a specific condition optio
 Finally, click the **Save Settings** button to save your automation settings then design your automation funnel as desired.
 
 ![automation funnels fluentcrm abandon 5](/automation-funnels/abandon-cart-automation/Automation-Funnels-FluentCRM-Abandon-5-scaled.webp)
+
+## Troubleshooting: the automation doesn't start
+
+The cart shows up in the report but nobody enters the automation? Open **Reports → Abandoned Carts**, set the filter to **Skipped Carts**, and hover the **skipped** badge on the cart. The tooltip tells you exactly why FluentCRM didn't start a funnel for it. The usual reasons:
+
+- **No automation found for this cart based on condition match**: the cart didn't pass the trigger's conditions. Test conditions are the most common cause, for example an *Email includes* rule that your test address doesn't match. Remove or widen the condition, then test again.
+- **Contact status is not allowed to process this cart**: the contact already exists in FluentCRM with a status other than **Subscribed** or **Transactional** (typically **Pending** from double opt-in). Only subscribed and transactional contacts can enter an abandoned cart automation.
+- **Under Cool Off Period**: the same email or WordPress user placed an order within the **Cool-off Period** set in [Abandoned Cart Settings](/abandoned-cart-settings). Any order status you selected under *Mark Cart as Recovered* counts, including *Pending payment*. Use a fresh email or set the cool-off to 0 while testing.
+- **No automation found for this cart**: no published automation uses the *Cart Abandoned - WooCommerce* trigger. Check the automation's status is **Published**, not **Draft**.
+
+If the cart never appears in the report at all, check that:
+
+- the test customer reached the **checkout page** and an email was available (see [When a cart counts as abandoned](#when-a-cart-counts-as-abandoned));
+- the customer's WordPress role isn't listed under **Disable Tracking for User Roles**. Testing while logged in as an administrator is the classic trap here;
+- WP-Cron is running on your site. FluentCRM evaluates draft carts on its five-minute scheduled task, so a site with cron disabled or blocked never promotes carts to abandoned.
 
 ## Related reading
 
