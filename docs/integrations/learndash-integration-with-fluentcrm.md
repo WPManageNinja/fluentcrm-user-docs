@@ -157,8 +157,16 @@ You must choose **Learndash** for data filtering. Then click the **Filter** opti
 -   **Enrollment Categories**
 -   **Enrollment Tags**
 -   **Is a Student?**
+-   **Completed Lessons**
 
 ![image](/integrations/learndash-integration-with-fluentcrm/image-79.webp)
+
+### Filter by Completed Lessons
+
+>[!Note]
+> This filter requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
+
+To reach students who finished a particular LearnDash lesson, or the ones who haven't, choose **Completed Lessons** in the LearnDash group of the Advanced Filter. Select one or more lessons, then choose whether contacts must have completed any of them, all of them, or none of them. The results come straight from LearnDash's own progress records, so they stay current without a re-sync. Only lessons count here; topics and quizzes are not matched. Read [Completed Lessons (LMS Filter)](/advanced-filter#completed-lessons-lms-filter) for every condition and its behavior.
 
 ## Advanced Reports
 
