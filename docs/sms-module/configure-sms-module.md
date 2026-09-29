@@ -49,6 +49,9 @@ When you save Twilio credentials, FluentCRM also generates a unique **SMS Incomi
 
 Paste this URL into your Twilio messaging service's **A message comes in** webhook field if you want FluentCRM to receive replies and inbound messages from contacts. See the full walkthrough on the [Twilio SMS Integration](/twilio-integration) page.
 
+>[!Warning]
+> If you connected Twilio before FluentCRM 3.2.0, replace the URL in Twilio with the one shown now. The older `fc_s_webhook=twilio` URL is retired and returns a "410 Gone" error, so replies stop arriving until you update it.
+
 ### SMS Smart Codes
 
 You can personalise every SMS just like an email. Click the **{ }** smart-code icon next to the message field to insert tokens like `##contact.first_name##`, `##contact.email##`, custom field values, or any other smart code FluentCRM ships with. The full token list is documented at [Merge Codes / Smart Codes Usage](/merge-codes-smart-codes-usage).

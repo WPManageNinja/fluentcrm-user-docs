@@ -217,3 +217,19 @@ Attaches a word before the value. If the name is John, it prints "Hello John".
 ```
 
 Adds a character after the value. Great for adding a comma only if the name exists (e.g., "John,").
+
+- **urlencode**
+
+```text
+{{contact.email||urlencode}}
+```
+
+Makes a value safe to place inside a link's query string. This matters most for email addresses that contain a plus sign, such as `jane+news@example.com`. Dropped into a URL as it is, the `+` is read as a space when the page opens and the address arrives broken. With `urlencode`, the link carries `jane%2Bnews%40example.com` and the receiving page decodes it back to the original address.
+
+For example, to send a contact to a form with their email already filled in:
+
+```text
+https://example.com/register/?user_email={{contact.email||urlencode}}
+```
+
+Use it on any value you put in a URL parameter, including names that contain spaces, `&`, or `#`. Leave it off everywhere else, since the text in the body of your email should stay as it is. Existing merge codes are unaffected, and your contact's stored email never changes.

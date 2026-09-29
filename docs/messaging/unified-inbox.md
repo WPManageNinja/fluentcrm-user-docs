@@ -36,6 +36,8 @@ To narrow the list:
 - **All / SMS / WhatsApp:** Show one channel or both.
 - **Unread only:** Hide everything you've already answered.
 
+The list loads 50 conversations at a time. Scroll toward the bottom and the next 50 appear, so older conversations are always reachable. Your search and filters apply as you go. The 20-second auto-refresh only updates the top of the list, so it won't jump you back or drop the older rows you've already scrolled through.
+
 Beside the search box sits a **+** button. That's how you start a conversation from scratch — with a contact, or with a number that isn't in your CRM at all. See [starting a new conversation](#starting-a-new-conversation) below.
 
 ### The Thread
