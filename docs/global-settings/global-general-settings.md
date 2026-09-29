@@ -11,15 +11,6 @@ The **General Settings** section in FluentCRM allows you to bridge the gap betwe
 
 To access these settings, navigate to **FluentCRM Dashboard ➜ Settings ➜ General Settings**.
 
-## Date & Time Format
-
-This setting controls how FluentCRM prints dates on its own screens. Pick the one that reads best for how you work:
-
-- **Date Time difference (EG: 2 hours ago):** Shows how long ago something happened, or how far away it is, such as "2 hours ago" or "in 3 days". This is the default.
-- **WordPress Default:** Shows the full date and time using the date and time formats from **Settings → General** in WordPress.
-
-Views that show a date, such as a contact's [FluentCart purchase history](/additional-integrated-contact-overview#fluentcart-purchase-history), follow the option you choose here. Click **Save** after changing it.
-
 ## Auto Sync User Data and Contact Data
 
 This feature keeps your WordPress user database and FluentCRM contact list in sync, so both stay updated with the same information.

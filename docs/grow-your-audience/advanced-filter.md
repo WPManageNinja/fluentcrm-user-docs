@@ -135,10 +135,6 @@ The available data properties and their short descriptions are:
 8.  **Used Coupons:** Any used coupons in the purchased order against the customer.
 9.  **Purchased Product Variations**: Filter contacts based on their purchased WooCommerce product variations.
 
-**Picking products:** The product selectors, such as **Purchased Products**, list only **published** products, so drafts and private items don't clutter the choice. A filter you saved earlier keeps working and keeps showing its product's name, even if that product has since become a draft.
-
-**Purchased Product Variations** loads the first 20 products, then shows a **Load more** button so you can keep browsing. If your store has more products than that, you can also type in the box to search. Your selections stay in place while you search or load more, so you can pick variations from different products in one filter.
-
 ![contacts fluentcrm](/grow-your-audience/advanced-filter/Contacts-FluentCRM-scaled.webp)
 
 ### LearnDash
@@ -151,40 +147,8 @@ The available data properties and their short descriptions are:
 4.  **Enrollment Groups:** The Groups that are available on the Enrolled List for any contact.
 5.  **Enrollment Categories:** The Categories that are available on the Enrolled List for any contact.
 6.  **Enrollment Tags:** The Tags that are available on the Enrolled List for any contact.
-7.  **Completed Lessons:** The lessons a contact has finished. See [Completed Lessons](#completed-lessons-lms-filter) below.
 
 ![contacts fluentcrm 8](/grow-your-audience/advanced-filter/Contacts-FluentCRM-8.webp)
-
-### Completed Lessons (LMS Filter)
-
->[!Note]
-> This filter requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
-
-**Completed Lessons** finds contacts by the specific lessons they have finished. It's available for **LearnDash**, **LifterLMS**, **LearnPress**, and **TutorLMS**, so you can follow up with students who reached a certain point in a course, or nudge the ones who haven't.
-
-1. In the **Contacts** dashboard, turn on **Advanced Filter** and click **+ Add Property**.
-2. Choose your LMS group, then select **Completed Lessons**.
-3. Pick a condition:
-   - **Includes:** Contacts who completed at least one of the selected lessons.
-   - **Includes all of:** Contacts who completed every selected lesson.
-   - **Does not include (in any):** Contacts who completed none of the selected lessons.
-   - **Includes none of (match all):** Also contacts who completed none of the selected lessons. It returns the same contacts as **Does not include (in any)**.
-4. Search for lessons by title and select one or more.
-5. Click **Filter**.
-
-A few behaviors are worth knowing:
-
-- **Results are live.** The filter reads the LMS's own completion records each time it runs. If a student's lesson is marked incomplete later, they drop out of the results without any re-sync.
-- **Only lessons count.** For LearnDash, topics and quizzes don't match this filter, and neither do whole courses. Use the enrollment filters for courses.
-- **The lesson list is limited to the LMS you chose.** Each search returns up to 50 lessons, newest first, so type part of the title to narrow it down. For LifterLMS the list shows lessons that belong to a course, and for TutorLMS it shows lessons that sit inside a topic and course.
-- **Selections are remembered.** A saved filter keeps showing a lesson's title even if you've since moved that lesson to the trash.
-- **An empty selection returns nobody.** If you add the filter but haven't chosen a lesson yet, no contacts match.
-- **Contacts without a WordPress account.** Completion data lives on WordPress users, so a contact with no linked user can't have completed anything. For LearnDash, LifterLMS, and LearnPress, the two exclusion conditions include these contacts. TutorLMS exclusions don't return them.
-
-If the option appears greyed out, that LMS isn't enabled for filtering in FluentCRM yet.
-
->[!Note]
-> If you deactivate an LMS plugin, FluentCRM removes that plugin's saved conditions from the Contacts filter the next time you open the Contacts screen, so you don't end up with broken filter rows. Reactivating the plugin brings the option back, but the conditions removed in the meantime don't return on their own. Rebuild them if you still need them.
 
 ## Filter Conditions
 
