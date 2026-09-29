@@ -321,6 +321,7 @@ export default defineConfig({
                 { text: 'Campaign Summary Actions', link: '/campaign-summary-actions' },
                 { text: 'Email Sequence', link: '/email-sequence' },
                 { text: 'Recurring Campaign', link: '/recurring-campaign' },
+                { text: 'Campaign Archive', link: '/campaign-archive' },
               ],
             },
             {
