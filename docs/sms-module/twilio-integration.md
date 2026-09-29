@@ -50,6 +50,9 @@ Upon saving Twilio credentials, FluentCRM generates a unique **SMS Incoming Webh
 -   Capture inbound replies from contacts and store them on the contact's SMS timeline.
 -   Trigger automation steps when a contact replies (e.g. apply a tag, fork an automation).
 
+>[!Warning]
+> **Set up Twilio before FluentCRM 3.2.0? Update your webhook URL.** The older incoming-message URL, the one that contains `fc_s_webhook=twilio`, no longer works. Twilio now receives a "410 Gone" error from it, which you'll see in your Twilio error log, and replies stop reaching your Inbox. Go to **Settings → Messaging**, open the **SMS** tab, copy the URL under **SMS Incoming Webhook**, and paste it into your Twilio number's **A message comes in** field.
+
 To configure the incoming webhook inside your Twilio Console, follow these steps:
 
 1. Log in to your Twilio account and select the **Develop** tab from the left-hand navigation sidebar.
