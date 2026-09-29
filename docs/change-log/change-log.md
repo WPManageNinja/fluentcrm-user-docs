@@ -9,66 +9,6 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
-## FluentCRM v3.2.5
-
-_Released on September 28, 2026_
-
-::: code-group
-
-```markdown [✨ Newly Added]
-• Adds company sync for new contacts created through Fluent Forms
-• Adds Completed Lessons filters for LearnDash, LifterLMS, LearnPress, and TutorLMS (Pro)
-• Adds a Campaign Archives Gutenberg block with card layouts (Pro)
-```
-
-```markdown [🚀 Improvements]
-• FluentCart purchase dates now follow the FluentCRM date preference
-• Adds integration sections to the Reports sidebar
-• Excludes unpublished WooCommerce products from selectors
-• Improves WooCommerce purchase conditions for registered customers
-• Latest Posts layouts now support WordPress title filters
-• Tag and list adders now show validation errors properly
-• Adds pagination to WooCommerce product variation selectors
-• Adds URL encoding support for smartcode values
-• Speeds up campaign reports and company contact counts
-• Retires legacy Twilio webhook URLs. Update older configurations to the URL shown in FluentCRM settings (Pro)
-```
-
-```markdown [🐞 Bug fixes]
-• Fixes saved LMS filters remaining active after deactivating the LMS plugin
-• Fixes Messaging campaigns skipping recipients from dynamic segments (Pro)
-• Fixes WooCommerce HPOS handling for purchase tags, subscription reports, and campaign revenue updates
-• Fixes incoming SMS text losing its original capitalization (Pro)
-• Fixes a scrolling issue in Inbox conversations (Pro)
-• Fixes contact creation after changing an automation trigger
-• Fixes trigger registration after publishing automations through the REST API
-• Fixes WhatsApp template variables and Twilio approval issues (Pro)
-• Fixes WooCommerce subscription variations in segment filters
-• Fixes WooCommerce coupon expiry being calculated from first use instead of coupon generation
-• Fixes automation follow-ups with nested Email Sequence goals
-• Fixes trigger registry updates after trigger changes
-• Fixes re-applied automation steps not continuing after conditional branches
-• Fixes MySQL 5.6 database installation compatibility
-• Fixes preference form visibility for logged-in users
-• Fixes From and Reply-To names with commas breaking email delivery
-• Fixes Latest Posts editor entity display
-• Fixes display-condition tag selection overflow in the visual builder
-• Fixes missing automation API data validation
-• Fixes missing FluentCRM custom fields in existing Elementor forms
-• Fixes the Messaging database migration on some sites (Pro)
-• Fixes Cron cleanup and scheduler initialization
-• Fixes five-minute Cron Monitor targeting
-• Fixes double opt-in email padding
-• Fixes cleared company owners not staying cleared
-```
-
-```markdown [📋 Other]
-• Updates contact-profile hooks with backward compatibility
-• Other improvements and bug fixes
-```
-
-:::
-
 ## FluentCRM v3.2.0
 
 _Released on September 3, 2026_
