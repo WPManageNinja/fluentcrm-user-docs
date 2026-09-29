@@ -19,6 +19,18 @@ When a customer buys something from your WooCommerce store, the details appear h
 
 ![Purchase History Woocommerce ](/grow-your-audience/additional-integrated-contact-overview/woocommerce-purchase-history-1.webp)
 
+## FluentCart Purchase History
+
+FluentCRM matches a contact to a FluentCart customer by email address, so a contact who has bought from your FluentCart store shows their orders here.
+
+* **Order table:** Lists each order with its **Order** number, **Date**, **Status**, and **Total**. You can sort by order, date, or total.
+* **Order Summary (right sidebar):** Shows **Total Orders**, **Total Spent**, **First Order**, and **Last Order**.
+* **Purchased Products:** Lists each product the contact bought. The dates beside a product are links, and each opens that order in FluentCart.
+
+Every date on this screen follows the **Date & Time Format** you chose in [General Settings](/global-general-settings#date-time-format). With the default, dates read like "3 days ago". Switch to **WordPress Default** and they show as full dates, in the same format your WordPress site uses. FluentCart's own date setting doesn't affect this screen.
+
+If the contact has no matching FluentCart customer, the tab shows a short note that there are no purchases to display.
+
 ## Paymattic Purchase History
 
 If you use Paymattic to accept payments or donations through forms, that history will also show up in this tab.
