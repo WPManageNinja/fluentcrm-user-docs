@@ -42,3 +42,10 @@ LearnPress also allows users to create groups. You can set up automated tagging
 On this metabox, you can set tags to apply when students complete a lesson.
 
 Essentially, such flexible tagging means you can start creating email campaigns and [set up email marketing automation funnels](/introduction-to-fluentcrm-automation) for your LearnPress students by selecting FluentCRM’s tag applied and tag removed [triggers](/fluentcrm-automation-triggers).
+
+### Filter by Completed Lessons
+
+>[!Note]
+> This filter requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
+
+To reach students who finished a particular LearnPress lesson, or the ones who haven't, choose **Completed Lessons** in the LearnPress group of the Advanced Filter. Select one or more lessons, then choose whether contacts must have completed any of them, all of them, or none of them. The results come straight from LearnPress's own progress records, so they stay current without a re-sync. Read [Completed Lessons (LMS Filter)](/advanced-filter#completed-lessons-lms-filter) for every condition and its behavior.
