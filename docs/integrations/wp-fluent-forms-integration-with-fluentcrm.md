@@ -36,7 +36,6 @@ Now, go to the Forms **Settings and Integration** tab from the top menu bar and 
  * **B. FluentCRM List:** Select the FluentCRM contact list you wish to integrate with. You can also change this anytime if needed.
  * **C. Primary Fields:** Use all the fields under this option to properly link your **FluentCRM** fields with the **Form Fields**. You can easily select the value for the form fields based on the **FluentCRM** fields using the **Shortcode**.
  * **D. Other fields:** You can map additional fields to Fluent Forms fields. To add multiple fields **Plus (+) Icon**.
- * **Company Fields (Optional):** Appears right below **Other Fields** when the [Company Module](/company-module) is enabled. Map a form field to **Company Name** to attach new contacts to a company. See [Sync a Company From the Form](#sync-a-company-from-the-form).
  * **E. Contact Tag:** Here select one or multiple FluentCRM tags for the contact from your FluentCRM Contact tags.
  * **Enable Dynamic Tag Selection:**  To apply tags based on submission values, enable dynamic tags by checking the **Enable Dynamic Tag Selection** option.
  * **Skip contact already exists in FluentCRM:** If you want to prevent duplicate contact in FluentCRM then check the checkboxes of **skip contact already exist in FluentCRM**. 
@@ -56,31 +55,6 @@ Now, go to the Forms **Settings and Integration** tab from the top menu bar and 
 After configuring the integration, Click the **Save Feed** button to finalize your FluentCRM integration.
 
 ![fluentfroms integation with fluentcrm 3](/integrations/wp-fluent-forms-integration-with-fluentcrm/FluentFroms-Integation-with-FluentCRM-3.webp)
-
-### Sync a Company From the Form
-
-B2B forms often ask for a company name next to the person's details. With the [Company Module](/company-module) turned on, the feed can turn that answer into a company record and attach the new contact to it, so you don't have to create companies by hand.
-
-1. Enable the Company Module under **Settings → Advanced Features**.
-2. Open your FluentCRM feed in Fluent Forms. The **Company Fields (Optional)** mapper sits below **Other Fields**.
-3. In the first column, choose a **FluentCRM Company Field**. In the second, choose the matching **Form Field**.
-4. Map **Company Name** at minimum. Everything else is optional.
-5. Click **Save Feed**.
-
-Besides **Company Name**, you can map the standard company fields, such as **Industry**, **Company Email**, **Company Phone**, the address fields, **Website URL**, and **Employees Number**, along with any custom company fields you've created. Owner details aren't available here. Leave **Company Name** unmapped and the feed behaves exactly as before, creating only the contact.
-
-When a submission creates a new contact, FluentCRM handles the company like this:
-
-- **The company already exists:** FluentCRM looks for one with exactly the same name and attaches the contact to it. It doesn't change anything else on that company, so a stranger filling in your public form can't overwrite your company details.
-- **The company is new:** FluentCRM creates it from the mapped fields and attaches the contact to it.
-- **Primary company:** If the contact has no primary company yet, this one becomes it. A mapped **Company Name** takes precedence over a **Primary Company** mapped under **Other Fields**.
-
-Company names are trimmed to 192 characters before the lookup.
-
->[!Warning]
-> Company sync runs only when the submission creates a **new** contact. If the email address already belongs to a contact, the company mapping is skipped and the contact's companies stay as they were.
-
-If the company can't be created or attached, the Fluent Forms submission log shows a **failed** entry for the feed. The contact itself has already been created by then and isn't rolled back, and resubmitting the form won't retry the company because the contact now exists. Add the company to that contact manually.
 
 ## **Automation Triggers for Fluent Forms**
 

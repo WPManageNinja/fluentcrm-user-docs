@@ -123,18 +123,10 @@ Here you must select TutorLMS and then click any of the filter options. You can 
 -   Enrollment Categories
 -   Enrollment Tags
 -   Is a Student
--   Completed Lessons
 
 After that click the Filter button to filter your TutorLMS data.
 
 ![advanced filtering tutorlms](/integrations/tutorlms-integration-with-fluentcrm/Advanced-Filtering-tutorlms.webp)
-
-### Filter by Completed Lessons
-
->[!Note]
-> This filter requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
-
-To reach students who finished a particular TutorLMS lesson, or the ones who haven't, choose **Completed Lessons** in the TutorLMS group of the Advanced Filter. Select one or more lessons, then choose whether contacts must have completed any of them, all of them, or none of them. The results come straight from TutorLMS's own progress records, so they stay current without a re-sync. The lesson list shows lessons that sit inside a topic and a course. Read [Completed Lessons (LMS Filter)](/advanced-filter#completed-lessons-lms-filter) for every condition and its behavior.
 
 ## Advanced Reports
 
