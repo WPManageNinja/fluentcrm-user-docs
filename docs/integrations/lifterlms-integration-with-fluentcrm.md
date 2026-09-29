@@ -17,13 +17,6 @@ In order to capture and apply tags based on course enrollment and course complet
 
 ![Lead Generation](/integrations/lifterlms-integration-with-fluentcrm/image-39-1.webp)
 
-### Filter by Completed Lessons
-
->[!Note]
-> This filter requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
-
-To reach students who finished a particular LifterLMS lesson, or the ones who haven't, choose **Completed Lessons** in the LifterLMS group of the Advanced Filter. Select one or more lessons, then choose whether contacts must have completed any of them, all of them, or none of them. The results come straight from LifterLMS's own progress records, so they stay current without a re-sync. The lesson list shows lessons that belong to a course. Read [Completed Lessons (LMS Filter)](/advanced-filter#completed-lessons-lms-filter) for every condition and its behavior.
-
 ### Marketing Automation
 
 FluentCRM also lets you automate a wide range of tasks, such as sending behavioral emails, [email sequences](https://fluentcrm.com/how-to-write-an-email-sequence/), contact property updates, and many more.
