@@ -48,7 +48,7 @@ This tab provides a summary of the campaign's configuration:
 
 View every individual recipient and their specific interactions:
 
- * **Filter Options:** Refine the list to see only those who have **Clicked**, **Viewed**, or remained Unopened.
+ * **Filter Options:** Refine the list to see only those who have **Clicked**, **Viewed**, or **remained Unopened**.
  * **Data Fields:** See the contact's Name, Email, number of Actions (clicks), and the delivery Status.
  * **Export:** Use the **Export** button to download the recipient data as a **CSV** file.
 
