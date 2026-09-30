@@ -11,17 +11,28 @@ TutorLMS is one of the most popular LMS plugins for WordPress. If you have creat
 
 ## Integration Settings
 
-To enable the integration and sync TutorLMS with FluentCRM, go to **Settings** and select **Integration Settings** from the left sidebar, then choose TutorLMS. Here, you can assign a default list, tag, and contact status to update TutorLMS students' information in FluentCRM, allowing you to segment contacts effectively. Use the dropdown menus to select the desired tags, lists, and statuses.
+To enable the integration and sync TutorLMS with FluentCRM, click the **Settings** icon in the top-right corner of the FluentCRM navbar, select **Integrations** from the left sidebar, and click **Manage** next to **TutorLMS**.
 
-Click on the **Sync TutorLMS Students** button to update the existing student data and automatically segment future students based on the selected tag, list, and contact status.
+![Integration Settings](/integrations/tutorlms-integration-with-fluentcrm/sync-tutorlms-1.webp)
 
-![Integration Settings](/integrations/tutorlms-integration-with-fluentcrm/sync-tutorlms-1.png)
+On the **TutorLMS Setting** page, set the defaults FluentCRM applies to your TutorLMS students so you can segment them right away:
 
-## Course Tag settings in TutorLMS
+-   **Default List to Contact (Optional):** Select the list to add students to. Leave it blank if you don't want to filter campaigns by list.
+-   **Default Tag for Contact (Optional):** Select the tag to apply to students. Leave it blank if you don't want to filter campaigns by tag.
+-   **Default Contact Status (For new contacts):** Choose the status new contacts get. The default is **Subscribed**.
 
-FluentCRM allows you to capture your TutorLMS students as leads and automatically segment them based on course-specific tags. To do this, navigate to the **TutorLMS Course Edit** section then scroll down to find the **FluentCRM - Course Tag** option, and apply the appropriate tags to students enrolling in the course. This makes it easy to organize and target your communications within FluentCRM.
+Click **Sync TutorLMS Students** to import your existing students and automatically segment future students with the selected list, tag, and contact status.
 
-![fluentcrm tags for course](/integrations/tutorlms-integration-with-fluentcrm/FluentCRM-tags-for-course.webp)
+![fluentcrm sync data](/integrations/tutorlms-integration-with-fluentcrm/sync-fluentcrm-data-2.webp)
+
+After the first sync, the page shows two buttons:
+
+-   **Disable Automatic Syncing:** Stops FluentCRM from syncing new students automatically.
+-   **Re-Sync Data:** Runs the sync again to update your student data.
+
+If you have a large number of students, use WP CLI to sync instead. The **Read CLI Documentation** link below the buttons explains how.
+
+![fluentcrm re-sync data](/integrations/tutorlms-integration-with-fluentcrm/re-sync-3.webp)
 
 ## TutorLMS Automation
 
@@ -37,73 +48,94 @@ FluentCRM’s email marketing automation includes four major elements. These are
 
 4.  **Conditionals:** Conditionals will let you set multiple paths based on if/else conditions. Learn more about [FluentCRM Conditionals](/conditional-automation-actions).
 
-First, from your FluentCRM dashboard & go to the **Automation** from the navbar. Then click the **New Automation** button to add an automation funnel.
+First, go to **Automations** in the FluentCRM navbar. Then click the **New Automation** button to add an automation funnel.
 
 ![new automation](/integrations/tutorlms-integration-with-fluentcrm/New-Automation.webp)
 
-A pop-up window will appear, where you have to add an Internal Label and choose the trigger that will initiate an automation funnel. You can choose one from three available TutorLMS Triggers.
+A pop-up window appears. Select **TutorLMS** from the left sidebar to see the three available TutorLMS triggers:
 
--   **Enrollment in a Course:** This will let you trigger an automation funnel when someone enrolls in a TutorLMS course.
--   **Student Completes a Course:** This will let you trigger an automation funnel when someone completes a TutorLMS course.
--   **Students Complete a Lesson:** This will let you trigger an automation funnel when students complete a lesson.
+-   **Course Enrolled:** Runs the automation when a student is enrolled in a course.
+-   **Course Completed:** Runs the automation when a student completes a course.
+-   **Lesson Completed:** Runs the automation when a student completes a lesson.
 
-Now select a trigger and click the **Continue** button.
+Select a trigger and click the **Continue** button.
 
 ![tutorlms trigger](/integrations/tutorlms-integration-with-fluentcrm/tutorlms-trigger.webp)
 
-A new popup will appear, allowing you to customize the Automation's name and Internal description. Next, select the desired **subscription status**.
+A settings panel opens on the right. The screenshot below shows the **Course Enrolled** trigger. Here you can:
 
-In the **Condition** section, you can set specific rules for your automation funnel. For example, you can determine what happens if a contact already exists or doesn't exist within the automation. You'll have two options to choose from: **Update if Exists** or **Skip the Automation if Contact Already Exists**. This allows you to control how existing contacts are handled in your automated workflows.
+-   Edit the **Automation Name** and add an **Internal Description**.
+-   Select the **Subscription Status** contacts need to run through the automation. Check **Run the automation actions even if the contact status is not subscribed** to include other statuses.
+-   Under **Conditions**, choose what happens if the contact already exists: **Update if Exist** or **Skip this automation if contact already exist**.
+-   Select **Target Courses** to run the automation only for those courses. Leave it blank to run it for any course enrollment.
+-   Check **Restart the Automation Multiple times for a contact for this event** if you want the automation to restart for a contact who is already in it. Otherwise, FluentCRM skips contacts who already exist in the automation.
 
-If you want to restart automation for the same contacts then select **Restart the Automation Multiple Times for this Event** checkbox.
-
-Click the **Save Setting** button to save all your changes.
+Click **Save Settings** to save all your changes.
 
 ![tutorlms trigger in fluentcrm](/integrations/tutorlms-integration-with-fluentcrm/TutorLms-trigger-in-FluentCRM.webp)
 
-After setting up your trigger, you can design your marketing automation workflow using Actions, Goals, and Conditions.
+After you set up the trigger, you can design your marketing automation workflow using Actions, Goals, and Conditions.
 
 ## Action Blocks
 
-[Actions blocks](/primary-automation-actions) are tasks that you wish to trigger from your side. Click on the plus icon on the Automation Funnel page. 
+[Actions blocks](/primary-automation-actions) are tasks that you wish to trigger from your side. Click the plus icon on the Automation Funnel page, then select **Add Action / Goal**.
 
 ![tutorlms actions goal](/integrations/tutorlms-integration-with-fluentcrm/Tutorlms-actions-goal.webp)
 
-Then you will notice a pop-up with a set of action blocks to choose from. You can select any type of action block to automate your workflows.
+A panel opens on the right with the available action blocks. You can select any action block to automate your workflow.
 
-FluentCRM offers two specific action blocks designed for TutorLMS marketing automation.
+Under the **TutorLMS** group, FluentCRM offers two action blocks designed for TutorLMS marketing automation.
 
-**Enroll to Course:** The **Enroll To Course** action enrolls a contact to a specific LMS course.
+**Enroll To Course:** Enrolls the contact in a specific LMS course.
 
-**Remove From a Course:** The **Remove From a Course** action removes a contact from a specific LMS course
+**Remove From a Course:** Removes the contact from a specific LMS course.
 
 ![tutorlms two trigger in fluentcrm](/integrations/tutorlms-integration-with-fluentcrm/TutorLMS-two-Trigger-in-FluentCRM.webp)
 
-After selecting the TutorLMS actions a pop-up will appear from the right side. Here enter the Internal Lable name, Internal Description. Now choose the specific TutorLMS course for enrollment.
+Select **Enroll To Course** and a panel opens on the right. In this panel:
 
-If you don't want to enroll the existing WordPress users in the action then simply check this **Do not enroll the course if contact is not an existing WordPress user** option. Now click **Save Settings**.
+-   Enter an **Internal Label** and an **Internal Description**.
+-   Select the course from **Select Course to Enroll**.
+-   Check **Do not enroll the course if contact is not an existing WordPress User** to skip contacts who don't have a WordPress account.
+-   Leave **Send default WordPress Welcome Email for new WordPress users** checked to send the welcome email. If no user exists with the contact's email address, FluentCRM creates a WordPress user.
+
+Click **Save Settings**.
 
 ![enroll action in tutorlms](/integrations/tutorlms-integration-with-fluentcrm/enroll-action-in-tutorlms.webp)
 
 ## Goals
 
-[Goals blocks](/goals-or-benchmark-actions) are goal or action items that your user might do. They let you measure these steps and automate the funnel based on goal completion. Click on the plus icon(+) to open the pop-up to select the Goals. 
+[Goals blocks](/goals-or-benchmark-actions) are goal or action items that your user might do. They let you measure these steps and automate the funnel based on goal completion. Click the plus icon (+), select **Add Action / Goal**, and open the **Goals** tab.
 
 ![tutorlms goals in fluentcrm](/integrations/tutorlms-integration-with-fluentcrm/TutorLMS-goals-in-FluentCRM.webp)
 
-Here you can choose any goals. In these Goals, you can add an internal label, specify the lists for the goal, set the condition when it will run, and choose Benchmark Type. After that click the **Save Settings** button.
+Select a goal to configure it. The screenshot below uses **List Applied**. Here you can:
+
+-   Add an **Internal Label** and an **Internal Description**.
+-   Select the lists in **Select Lists**.
+-   Choose **Run When**: the contact is added to any of the selected lists, or to all of them.
+-   Choose the **Benchmark type**: **Optional Point** works as an optional trigger point, and **Essential Point** makes the funnel wait for this step before it processes further actions.
+-   Check **Contacts can enter directly to this sequence point** to let any contact who meets the goal enter the funnel at this point.
+
+Click **Save Settings**.
 
 ![goal list apply](/integrations/tutorlms-integration-with-fluentcrm/goal-list-apply.webp)
 
-## **Condition**
+## Condition
 
 [Conditionals](/conditional-automation-actions) are conditional logic. If you want to automate different activities based on If/Else conditions, you can choose a conditional. For TutorLMS, FluentCRM allows you to automate different activities based on whether a student in the automation has enrolled in a course.
 
-If you want to use other conditionals please check out this [documentation](/conditional-automation-actions). 
+Click the plus icon (+) and select **Conditional Action**, or open the **Conditionals** tab and choose **Check Condition**.
 
 ![tutorlms conditional in fluentcrm](/integrations/tutorlms-integration-with-fluentcrm/TutorLMS-Conditional-in-FluentCRM.webp)
 
-Once you've completed these steps, you'll see a report of your course enrollment contacts, similar to the screenshot below.
+Under **Specify Matching Conditions**, click **Add Property** to pick a contact property, choose an operator such as **includes**, and enter the **Condition Value**. Click **+ OR** to add another group of conditions. FluentCRM runs the yes blocks when the contact matches and the no blocks when it doesn't. Click **Save Settings** to finish.
+
+![tutorlms check condition settings](/integrations/tutorlms-integration-with-fluentcrm/add-condition.webp)
+
+If you want to use other conditionals please check out this [documentation](/conditional-automation-actions).
+
+After contacts go through the enrollment, open a contact's profile and click the **Courses** tab. The **TutorLMS Courses** table lists each course's **ID**, **Course Name**, **Started At**, and **Progress**.
 
 ![course contact details](/integrations/tutorlms-integration-with-fluentcrm/Course-Contact-details-1.webp)
 
@@ -111,21 +143,21 @@ Once you've completed these steps, you'll see a report of your course enrollment
 
 With the help of advanced filtering, you can use various key data points such as last **enrollment date**, **first enrollment data**, **courses enrolled**, **enrolled categories**, and **enrollment tags**. it can be as simple as checking whether a contact is a student or not. That makes it easy to send hyper-targeted emails and run automation.
 
-Now you can filter your course data go to your FluentCRM contact section then click the Advanced filter to do filters. Next, click on the add button to start filtering data. 
+To filter your course data, go to **Contacts** in the FluentCRM navbar, turn on the **Advanced Filter** toggle, and click **Add Property** to start filtering.
 
 ![start lms advanced filter](/integrations/tutorlms-integration-with-fluentcrm/start-LMS-Advanced-filter.webp)
 
-Here you must select TutorLMS and then click any of the filter options. You can pick multiple options to filter your LMS data.
+Select **TutorLMS** in the property list, then choose a filter option. You can add multiple properties to filter your LMS data.
 
 -   Last Enrollment Date
 -   First Enrollment Date
--   Enrollment Course
+-   Enrollment Courses
 -   Enrollment Categories
 -   Enrollment Tags
 -   Is a Student
 -   Completed Lessons
 
-After that click the Filter button to filter your TutorLMS data.
+Set the operator and value for each property, then click **Apply Filters**. To keep the result for later, click **Save as Segment**.
 
 ![advanced filtering tutorlms](/integrations/tutorlms-integration-with-fluentcrm/Advanced-Filtering-tutorlms.webp)
 
@@ -138,7 +170,7 @@ To reach students who finished a particular TutorLMS lesson, or the ones who hav
 
 ## Advanced Reports
 
-To view your course enrollment report, go to the FluentCRM dashboard and select the **Reports** section from the top menu. Then, click the **TutorLMS** tab to access detailed information about your enrolled contacts and their courses.
+To view your course enrollment report, select **Reports** from the FluentCRM navbar. Then, click **TutorLMS** in the left sidebar to open **TutorLMS - Advanced Reports**. It shows your **Total Students** and **Total Course Enrollments**, with **Enrollments** and **Students Growth** tabs to chart them over a date range.
 
 ![tutorlms reports](/integrations/tutorlms-integration-with-fluentcrm/TutorLMS-Reports.webp)
 
