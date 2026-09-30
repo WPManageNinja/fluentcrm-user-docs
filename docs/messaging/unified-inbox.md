@@ -46,6 +46,7 @@ The middle pane is the conversation itself, oldest to newest, split by day so yo
 
 Each message you send carries its delivery state. When one fails, the thread says so in place — and tells you why, rather than leaving you to guess:
 
+> [!Note]
 > No template selected and the contact has not messaged within 24 hours — Meta only accepts template messages outside that window. Select an approved template for this campaign.
 
 That failure is the single most common one on WhatsApp, and it's worth understanding before it surprises you.
@@ -88,9 +89,4 @@ Someone can message your business number without being in your CRM. FluentCRM ke
 
 When it's someone worth keeping, click **Create contact** in that panel. FluentCRM prefills the phone number, creates the contact, and links the existing conversation to them — the history you've already exchanged stays attached.
 
-## What's Next?
 
-- [Message a single contact from their profile](/contact-message-tab)
-- [Send a WhatsApp campaign](/whatsapp-campaign)
-- [Build reusable WhatsApp templates](/whatsapp-templates)
-- [Review everything the module has sent](/whatsapp-activities)
