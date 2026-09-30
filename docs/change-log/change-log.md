@@ -11,7 +11,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 
 ## FluentCRM v3.2.5
 
-_Released on September 28, 2026_
+_Released on September 30, 2026_
 
 ::: code-group
 
@@ -19,9 +19,12 @@ _Released on September 28, 2026_
 • Adds company sync for new contacts created through Fluent Forms
 • Adds Completed Lessons filters for LearnDash, LifterLMS, LearnPress, and TutorLMS (Pro)
 • Adds a Campaign Archives Gutenberg block with card layouts (Pro)
+• Adds CSV import options to update existing contacts only and preserve existing contact data
 ```
 
 ```markdown [🚀 Improvements]
+• Simplifies renaming campaigns, automations, and email sequences
+• Adds revenue badges to the campaigns list and refreshes revenue automatically in reports
 • FluentCart purchase dates now follow the FluentCRM date preference
 • Adds integration sections to the Reports sidebar
 • Excludes unpublished WooCommerce products from selectors
@@ -32,6 +35,8 @@ _Released on September 28, 2026_
 • Adds URL encoding support for smartcode values
 • Speeds up campaign reports and company contact counts
 • Retires legacy Twilio webhook URLs. Update older configurations to the URL shown in FluentCRM settings (Pro)
+• Speeds up block editor startup and email template loading
+• Handles FluentCRM smartcode values in Fluent Forms more safely
 ```
 
 ```markdown [🐞 Bug fixes]
@@ -60,6 +65,9 @@ _Released on September 28, 2026_
 • Fixes five-minute Cron Monitor targeting
 • Fixes double opt-in email padding
 • Fixes cleared company owners not staying cleared
+• Fixes Visual Builder campaigns rendering incorrectly
+• Refines contact email history visibility based on user permissions
+• Fixes subscriber meta index compatibility with MyISAM tables and adds database index repair
 ```
 
 ```markdown [📋 Other]
