@@ -11,22 +11,25 @@ In FluentCRM, the Company Module feature organizes contacts to one or more compa
 
 You can assign one or more contacts to a company record. FluentCRM can also automatically retrieve a company logo by using just its website URL.
 
-### Enable Company Module 
+### Enable Company Module
 
-First, go to **Settings** from the top right corner of the **FluentCRM Navbar**, click the **Advanced Feature** settings page, scroll down and you will find the **Company Module** option.
+Go to **Addons** in the FluentCRM sidebar to open the **Advanced Features** page. Find **Company Module** and click its **Settings** button.
 
-Here, you will find two settings options. These are
+The **Company Module Settings** popup has two options:
 
--   **Enable Company Module for Contacts:** Enable this to unlock the **Company Module** feature inside the **Contacts** section dropdown of the **FluentCRM Navbar**. 
--   **Try to get company logo automatically from the given website URL**: Enable this to fetch the company logo automatically by providing only the website URL of the company.
+-   **Enable Company Module for Contacts:** Turn this on to add **Companies** to the **Contacts** dropdown in the FluentCRM navbar.
+-   **Try to get company logo automatically from the given website url:** Turn this on and FluentCRM tries to fetch the company logo from the website URL you enter.
+
+After that, click the **Save Settings** button to apply your changes.
 
 ![enabling company module from advanced feature config](/grow-your-audience/company-module/Enabling-Company-Module-from-Advanced-feature-config-scaled.webp)
 
 ## Adding Companies
 
-After enabling the Company Module feature, go to **Companies** from the **Contacts** section dropdown.
+After you enable the Company Module, click **Contacts** in the FluentCRM navbar and select **Companies** from the dropdown. The **Companies** page lists each company with its **Company Owner**, **Industry**, **Type**, **Contacts**, and **Employees**.
 
-> Remember, you will not get this "**Companies**" option inside the **Contacts** section if you do not activate/enable the company module.
+>[!Note]
+> The **Companies** option appears in the **Contacts** dropdown only after you enable the Company Module.
 
 ![companies option under contacts section](/grow-your-audience/company-module/Companies-option-under-Contacts-section-scaled.webp)
 
@@ -65,6 +68,7 @@ Here, you can **Add Existing contacts** or **Create new** ones for the company f
 
 You can also add notes and activities for the company using the “**Notes & Activities**” section. 
 
+> [!Note]
 > The data for the **Notes & Activities under Companies** are **independent from** the **Individual Contacts' Notes & Activities** data.
 
 Click on the **Add Notes** button to add notes for the company and a pop-up will appear. 
@@ -75,13 +79,12 @@ Here, you can add notes for the company from the pop-up window.
 
 ![create note popup page](/grow-your-audience/company-module/Create-note-popup-page-scaled.webp)
 
-### **Custom Fields**
+### Custom Fields
 
 FluentCRM doesn’t have any designated field for adding additional data to your company details. But you can do it easily with the **Custom Field** feature of FluentCRM.
 
+> [!Note]
 > The data for the **Custom Fields under** **Companies** are **independent from** the **Individual Contacts’ Custom Fields** data.
-
-**To learn how to add Custom Fields in Companies, follow the steps with screenshots below –**
 
 From the left sidebar, click the **Add Custom Fields** button, and a pop-up page will appear on the right-hand side.
 
