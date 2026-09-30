@@ -44,6 +44,9 @@ After providing all the necessary information, click the **Create Company** butt
 
 ![create company popup page](/grow-your-audience/company-module/Create-company-popup-page.webp)
 
+>[!Note]
+> When the Company Module is enabled, new contacts created through a Fluent Forms submission are also synced with their company, so you don't have to assign them by hand.
+
 Once you add the company, you will get Three major options. These are:
 
 > **Contacts** is for adding and organizing the contacts under a single company, and **Notes & Activities** and **Custom Fields** for adding the essential information to the company.

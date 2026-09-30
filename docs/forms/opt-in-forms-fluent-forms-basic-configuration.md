@@ -56,6 +56,9 @@ After clicking **Create Form**, several management options become available:
 
 ![Managing Action](/forms/opt-in-forms-fluent-forms-basic-configuration/managing-action-5.webp)
 
+>[!Note]
+> If you use the [Company Module](/company-module), new contacts created through Fluent Forms are synced with their company automatically.
+
 ## Embedding the Form on Your Site
 
 To display your form to your audience, you can use two primary methods:

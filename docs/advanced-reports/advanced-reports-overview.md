@@ -11,6 +11,8 @@ FluentCRM's Reports dashboard gives you a unified view of your contacts, email p
 
 To access reports, click the **Reports** dropdown in the top navigation bar of your FluentCRM dashboard.
 
+The Reports sidebar groups reports into sections, and connected integrations can add their own sections. Revenue figures refresh automatically, so you don't need to reload data by hand.
+
 ## Available Reports
 
 ### Contact & Email Reports

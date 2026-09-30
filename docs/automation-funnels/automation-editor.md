@@ -76,6 +76,9 @@ To learn how you can edit your existing Automations anytime, follow the steps wi
 First, go to the **Automations** section from the **FluentCRM Navbar**, select the automation you want to edit, and click on its **Title.**  
 For example, here, I’ve selected the **List Applied** automation for customization.
 
+>[!Tip]
+> To rename an automation, change its title directly. Renaming works the same way for campaigns and email sequences.
+
 
 
 Once you click the **Title** of your desired automation it will take you to the **Automation Editor** page with all the available options for your edit.

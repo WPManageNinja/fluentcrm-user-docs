@@ -25,6 +25,9 @@ Campaigns are bulk marketing messages sent to a large group of contacts at once.
  * **Switch Editor any time:** Prefer drag-and-drop? The **Visual Builder** is one click away. Coding from scratch? Use **Raw HTML**. There's also the **Classic Editor** if that's how you prefer to work.
  * **Scheduling:** Send campaigns immediately, schedule them for a specific date and time, or queue them for a sending time-window. More about campaigns is discussed in [**Email Campaigns**](/setting-up-campaign).
 
+ * **Revenue badges:** The campaigns list shows a revenue badge for campaigns that generated revenue. Revenue figures in reports refresh automatically.
+ * **Easy renaming:** You can rename campaigns, automations, and email sequences without opening the full editor.
+
 ![crm email compose campaign](/email-campaign/overview-of-emails-from-fluentcrm/email-campaign-1.webp)
 
 ### 2. Email Sequences

@@ -75,6 +75,11 @@ The Other Options are:
 4.  **New Subscriber Status:** Give a status for the contacts.
 5.  **Do Not Trigger Automations (Tag & List Related Events):** This option asks you if you want the new contacts to be added to automation if the Lists, Tags, or other conditions are triggered.
 6.  **Force update contact status**. This will update all imported contact statuses regardless of their previous status: If you want to force the Contact Subscription Status to be updated to the one you select now.
+7.  **Update existing contacts only:** Use this when your CSV should only refresh contacts already in FluentCRM. Rows that don't match an existing contact are not added as new contacts.
+8.  **Preserve existing contact data:** Keeps the data already saved on a contact from being overwritten by the values in your CSV.
+
+>[!Tip]
+> Use **Update existing contacts only** when you're syncing fresh data from a spreadsheet and don't want to grow your contact list by accident.
 
 ## Importing WordPress Users as Contacts
 

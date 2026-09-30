@@ -144,6 +144,9 @@ The available FluentCart conditions for segmentation are:
 -   **Expired Licenses:** Find contacts with expired licenses.
 -   **Has any active license?:** Segment contacts based on whether they have any active licenses or not.
 
+>[!Note]
+> FluentCart purchase dates, such as **First Order Date** and **Last Order Date**, follow the date format set in your FluentCRM date preferences.
+
 ![advanced filter 04](/integrations/fluentcart-integration-with-fluentcrm/advanced-filter-04-scaled.webp)
 
 2\. These same advanced filters are also available when setting up the **Recipients** for an **Email Campaign**, allowing you to send highly targeted broadcasts to specific customer groups.
