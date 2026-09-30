@@ -16,63 +16,29 @@ _Released on September 30, 2026_
 ::: code-group
 
 ```markdown [✨ Newly Added]
-• Adds company sync for new contacts created through Fluent Forms
+• Adds company sync for new Fluent Forms contacts
 • Adds Completed Lessons filters for LearnDash, LifterLMS, LearnPress, and TutorLMS (Pro)
 • Adds a Campaign Archives Gutenberg block with card layouts (Pro)
-• Adds CSV import options to update existing contacts only and preserve existing contact data
+• Adds CSV import options to update existing contacts only and preserve existing data
 ```
 
 ```markdown [🚀 Improvements]
-• Simplifies renaming campaigns, automations, and email sequences
-• Adds revenue badges to the campaigns list and refreshes revenue automatically in reports
-• FluentCart purchase dates now follow the FluentCRM date preference
-• Adds integration sections to the Reports sidebar
-• Excludes unpublished WooCommerce products from selectors
-• Improves WooCommerce purchase conditions for registered customers
-• Latest Posts layouts now support WordPress title filters
-• Tag and list adders now show validation errors properly
-• Adds pagination to WooCommerce product variation selectors
-• Adds URL encoding support for smartcode values
-• Speeds up campaign reports and company contact counts
+• Speeds up reports, company contact counts, block editor startup, and template loading
+• Makes renaming campaigns, automations, and sequences easier; adds campaign revenue badges and automatic report refresh
+• Adds URL-encoded smartcodes, safer Fluent Forms smartcode handling, and improved WooCommerce product selectors
 • Retires legacy Twilio webhook URLs. Update older configurations to the URL shown in FluentCRM settings (Pro)
-• Speeds up block editor startup and email template loading
-• Handles FluentCRM smartcode values in Fluent Forms more safely
 ```
 
 ```markdown [🐞 Bug fixes]
-• Fixes saved LMS filters remaining active after deactivating the LMS plugin
-• Fixes Messaging campaigns skipping recipients from dynamic segments (Pro)
-• Fixes WooCommerce HPOS handling for purchase tags, subscription reports, and campaign revenue updates
-• Fixes incoming SMS text losing its original capitalization (Pro)
-• Fixes a scrolling issue in Inbox conversations (Pro)
-• Fixes contact creation after changing an automation trigger
-• Fixes trigger registration after publishing automations through the REST API
-• Fixes WhatsApp template variables and Twilio approval issues (Pro)
-• Fixes WooCommerce subscription variations in segment filters
-• Fixes WooCommerce coupon expiry being calculated from first use instead of coupon generation
-• Fixes automation follow-ups with nested Email Sequence goals
-• Fixes trigger registry updates after trigger changes
-• Fixes re-applied automation steps not continuing after conditional branches
-• Fixes MySQL 5.6 database installation compatibility
-• Fixes preference form visibility for logged-in users
-• Fixes From and Reply-To names with commas breaking email delivery
-• Fixes Latest Posts editor entity display
-• Fixes display-condition tag selection overflow in the visual builder
-• Fixes missing automation API data validation
-• Fixes missing FluentCRM custom fields in existing Elementor forms
-• Fixes the Messaging database migration on some sites (Pro)
-• Fixes Cron cleanup and scheduler initialization
-• Fixes five-minute Cron Monitor targeting
-• Fixes double opt-in email padding
-• Fixes cleared company owners not staying cleared
-• Fixes Visual Builder campaigns rendering incorrectly
-• Refines contact email history visibility based on user permissions
-• Fixes subscriber meta index compatibility with MyISAM tables and adds database index repair
+• Fixes automation trigger updates, REST publishing, nested sequence goals, and continuation after re-applied conditional branches
+• Fixes Messaging dynamic-segment recipients, Inbox scrolling, SMS capitalization, and WhatsApp template variables and approvals (Pro)
+• Fixes WooCommerce HPOS purchase tags, subscription reports, revenue updates, and subscription variation filters; coupon expiry now starts at generation
+• Fixes MySQL 5.6 installation, MyISAM indexes, database repair, Messaging migrations, and cron scheduling
+• Fixes Visual Builder campaigns, email sender names with commas, logged-in preference forms, and Elementor custom fields
 ```
 
 ```markdown [📋 Other]
-• Updates contact-profile hooks with backward compatibility
-• Other improvements and bug fixes
+• Additional integration, contact management, editor, and compatibility fixes
 ```
 
 :::
