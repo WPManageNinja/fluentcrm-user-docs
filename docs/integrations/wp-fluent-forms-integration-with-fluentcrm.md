@@ -11,15 +11,16 @@ Fluent Forms integrates with FluentCRM to help you collect leads and gather valu
 
 In this article, you’ll learn how to integrate FluentCRM with Fluent Forms and how it works.
 
+> [!Note]
 > No additional settings are required to integrate FluentCRM with Fluent Forms. Simply install and activate both plugins on your site.
 
-## **Feed integration Settings for FluentCRM** 
+## Feed integration Settings for FluentCRM
 
 First, go to **Integrations** in the Fluent Forms navbar and search for **FluentCRM**. You’ll see the FluentCRM integration module simply toggle it to enable the FluentCRM module, which will activate the Feed Integration for FluentCRM in your forms.
 
 ![fluentfroms integation with fluentcrm 1](/integrations/wp-fluent-forms-integration-with-fluentcrm/FluentFroms-Integation-with-FluentCRM-1.webp)
 
-## **Integration Feed for FluentCRM in Forms**
+## Integration Feed for FluentCRM in Forms
 
 Go to **Forms** from the Fluent Forms navbar, and select the form you want to integrate with your FluentCRM. 
 
@@ -32,57 +33,34 @@ Now, go to the Forms **Settings and Integration** tab from the top menu bar and 
 
 ### Configure FluentCRM Integration Feed
 
- * **A. Feed Name**: Here you need to enter a name for your FluentCRM integration feed.
- * **B. FluentCRM List:** Select the FluentCRM contact list you wish to integrate with. You can also change this anytime if needed.
- * **C. Primary Fields:** Use all the fields under this option to properly link your **FluentCRM** fields with the **Form Fields**. You can easily select the value for the form fields based on the **FluentCRM** fields using the **Shortcode**.
- * **D. Other fields:** You can map additional fields to Fluent Forms fields. To add multiple fields **Plus (+) Icon**.
- * **Company Fields (Optional):** Appears right below **Other Fields** when the [Company Module](/company-module) is enabled. Map a form field to **Company Name** to attach new contacts to a company. See [Sync a Company From the Form](#sync-a-company-from-the-form).
- * **E. Contact Tag:** Here select one or multiple FluentCRM tags for the contact from your FluentCRM Contact tags.
- * **Enable Dynamic Tag Selection:**  To apply tags based on submission values, enable dynamic tags by checking the **Enable Dynamic Tag Selection** option.
- * **Skip contact already exists in FluentCRM:** If you want to prevent duplicate contact in FluentCRM then check the checkboxes of **skip contact already exist in FluentCRM**. 
- * **Skip name update if existing contact has old data:** If you want to retain existing contact names even if new data is submitted then check the checkboxes of **skip name update if existing contact have old data (per primary)** options.
- * **Enable Double Opt-In for a new Contact:** Enable this option to send a double opt-in email for new contacts.
- * **Enable Force subscribe if contact is not in subscribed status:** Here check the checkboxes to enable this to subscribe existing contacts that are not already subscribed.
- * **F. Conditional logic:** If you want to allow FluentCRM integration conditionally based on your submission values then **Enable Conditional Logic** options. To know more about this conditional logic read the [article](https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/conditional-logic-fluent-form/).
- * **G. Run Only on Events:** You will get this option only in the Subscription form. You’ll find three conditions here. If you want this integration feed to run only when one of these events occurs, select the event to trigger the feed accordingly. The available conditions are:
+Each letter below matches the label in the screenshot.
+
+ * **A. Feed Name:** Enter a name for the feed so you can recognize it later.
+ * **B. FluentCRM List:** Select the FluentCRM list that new contacts are added to. You can change it anytime.
+ * **C. Primary Fields:** Map the FluentCRM contact fields (**Email Address**, **First Name**, **Last Name**, **Full Name**) to your form fields. Pick a form field from the dropdown or type a custom value with a smart code. **Email Address** is required. If you leave **First Name** and **Last Name** unmapped, FluentCRM splits **Full Name** into both.
+ * **D. Other Fields:** Map additional FluentCRM fields, including custom fields, to form fields. Click the **Plus (+)** icon to add more rows.
+ * **E. Company Fields (Optional):** Appears when the [Company Module](/company-module) is enabled. Map a form field to **Company Name** to attach new contacts to a company.
+ * **F. Contact Tags:** Select one or more tags to apply to the contact. Check **Enable Dynamic Tag Selection** to apply tags based on submission values instead.
+ * **G. Skip if contact already exists in FluentCRM:** Check this to skip the feed when the email already belongs to a contact, so no existing contact is touched.
+ * **H. Skip name update if an existing contact has old data (per primary field):** Check this to keep the names already stored on an existing contact, even when the submission contains new ones.
+ * **I. Enable Double opt-in for new contacts:** Check this to send a double opt-in confirmation email to new contacts.
+ * **J. Enable Force Subscribe if contact is not in subscribed status (Existing contact only):** Check this to subscribe an existing contact regardless of their current status.
+ * **K. Conditional Logics:** Check **Enable conditional logic** to run the feed only when the submission meets your conditions. Learn more in the [Fluent Forms conditional logic guide](https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/conditional-logic-fluent-form/).
+ * **L. Remove Contact Tags:** Select the tags to remove from the contact when the feed runs.
+ * **M. Status:** Check **Enable This feed** to activate the integration.
+
+On a form with a subscription field, a **Run Only on Events** option also appears. Select an event to run the feed only when it occurs:
 
 -   **On Subscription Active**
 -   **On Subscription Cancel**
 -   **On Payment Refund**
 
- * **H. Remove Contact Tags:** If you want to remove a contact's tags in FluentCRM, select the desired tags from the dropdown list.
- * **I. Status:** Enable this feed option to activate the integration.
-
-After configuring the integration, Click the **Save Feed** button to finalize your FluentCRM integration.
+Click **Save Feed** to finish.
 
 ![fluentfroms integation with fluentcrm 3](/integrations/wp-fluent-forms-integration-with-fluentcrm/FluentFroms-Integation-with-FluentCRM-3.webp)
 
-### Sync a Company From the Form
 
-B2B forms often ask for a company name next to the person's details. With the [Company Module](/company-module) turned on, the feed can turn that answer into a company record and attach the new contact to it, so you don't have to create companies by hand.
-
-1. Enable the Company Module under **Settings → Advanced Features**.
-2. Open your FluentCRM feed in Fluent Forms. The **Company Fields (Optional)** mapper sits below **Other Fields**.
-3. In the first column, choose a **FluentCRM Company Field**. In the second, choose the matching **Form Field**.
-4. Map **Company Name** at minimum. Everything else is optional.
-5. Click **Save Feed**.
-
-Besides **Company Name**, you can map the standard company fields, such as **Industry**, **Company Email**, **Company Phone**, the address fields, **Website URL**, and **Employees Number**, along with any custom company fields you've created. Owner details aren't available here. Leave **Company Name** unmapped and the feed behaves exactly as before, creating only the contact.
-
-When a submission creates a new contact, FluentCRM handles the company like this:
-
-- **The company already exists:** FluentCRM looks for one with exactly the same name and attaches the contact to it. It doesn't change anything else on that company, so a stranger filling in your public form can't overwrite your company details.
-- **The company is new:** FluentCRM creates it from the mapped fields and attaches the contact to it.
-- **Primary company:** If the contact has no primary company yet, this one becomes it. A mapped **Company Name** takes precedence over a **Primary Company** mapped under **Other Fields**.
-
-Company names are trimmed to 192 characters before the lookup.
-
->[!Warning]
-> Company sync runs only when the submission creates a **new** contact. If the email address already belongs to a contact, the company mapping is skipped and the contact's companies stay as they were.
-
-If the company can't be created or attached, the Fluent Forms submission log shows a **failed** entry for the feed. The contact itself has already been created by then and isn't rolled back, and resubmitting the form won't retry the company because the contact now exists. Add the company to that contact manually.
-
-## **Automation Triggers for Fluent Forms**
+## Automation Triggers for Fluent Forms
 
 FluentCRM offers automation triggers for Fluent Forms, allowing you to automate actions based on user interactions. When you create a new automation in FluentCRM, you’ll find three automation triggers for Fluent Forms.
 
@@ -90,7 +68,7 @@ Go to **FluentCRM** and create a new automation. Select an **Automation Trigger*
 
 If you want to know more about how to create an automation, check out our [documentation](/automation-editor) for detailed steps
 
-### **Available Automation Triggers**
+### Available Automation Triggers
 
 -   **Subscription Canceled**This automation starts when a user cancels their subscription. It only applies to users who subscribed via Fluent Forms, and the cancellation must be done from the frontend by the user. If an admin cancels the subscription, this trigger won’t run.
 -   **Subscription Payment Received**This automation triggers when a user makes a subscription-based payment through Fluent Forms.
@@ -98,7 +76,7 @@ If you want to know more about how to create an automation, check out our [docum
 
 ![fluentfroms integation with fluentcrm 4](/integrations/wp-fluent-forms-integration-with-fluentcrm/FluentFroms-Integation-with-FluentCRM-4.webp)
 
-#### **Subscription Canceled**
+#### Subscription Canceled
 
 After selecting the **Subscription Canceled** automation trigger, a pop-up will appear where you need to provide some necessary details.
 
@@ -108,7 +86,7 @@ You can also specify if this automation should run for specific forms. To do thi
 
 ![fluentfroms integation with fluentcrm 5](/integrations/wp-fluent-forms-integration-with-fluentcrm/FluentFroms-Integation-with-FluentCRM-5.webp)
 
-#### **Subscription Payment Received**
+#### Subscription Payment Received
 
 After selecting the **Subscription Payment Received** automation trigger, a pop-up will appear where you need to enter the required details.
 
@@ -120,7 +98,7 @@ Select the **Subscription Status** after this trigger action.
 
 ![fluentfroms integation with fluentcrm 6](/integrations/wp-fluent-forms-integration-with-fluentcrm/FluentFroms-Integation-with-FluentCRM-6.webp)
 
-#### **New Form Submission**
+#### New Form Submission
 
 After selecting the **New From Submission** automation trigger, a pop-up will appear where you need to provide some necessary details.
 
@@ -128,7 +106,7 @@ Now choose a form from the **Select Your Form** dropdown if you want this automa
 
 ![fluentfroms integation with fluentcrm 7](/integrations/wp-fluent-forms-integration-with-fluentcrm/FluentFroms-Integation-with-FluentCRM-7.webp)
 
-## **FluentForm Subscriptions Widget in Contact Profile**
+## FluentForm Subscriptions Widget in Contact Profile
 
 A widget will appear in the FluentCRM contact’s profile for users who have subscribed via Fluent Forms.
 
