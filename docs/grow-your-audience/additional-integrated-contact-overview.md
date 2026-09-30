@@ -21,15 +21,18 @@ When a customer buys something from your WooCommerce store, the details appear h
 
 ## FluentCart Purchase History
 
-FluentCRM matches a contact to a FluentCart customer by email address, so a contact who has bought from your FluentCart store shows their orders here.
+FluentCRM matches a contact to a FluentCart customer by email address. Open a contact and click the **Purchases** tab, and a contact who has bought from your FluentCart store shows their orders under **FluentCart Purchase History**.
 
-* **Order table:** Lists each order with its **Order** number, **Date**, **Status**, and **Total**. You can sort by order, date, or total.
-* **Order Summary (right sidebar):** Shows **Total Orders**, **Total Spent**, **First Order**, and **Last Order**.
-* **Purchased Products:** Lists each product the contact bought. The dates beside a product are links, and each opens that order in FluentCart.
+* **Order table:** Lists each order with its **Date**, **Status**, and **Total**. The order number (for example, #79) sits above the date. You can sort by **Date** or **Total**. Click the External Link icon to open the order in FluentCart.
+* **Order Summary:** Shows **Total Orders**, **Total Spent**, **First Order**, and **Last Order**.
+* **Purchased Products:** Lists each product the contact bought with its variation, price, and purchase date. The dates beside a product are links, and each opens that order in FluentCart.
+* **Commerce Info (Additional Information sidebar):** Shows the contact's **Lifetime Value**, **Paid Purchases**, **First Paid Order**, and **Last Paid Order**, plus their **Recent Purchases**.
 
 Every date on this screen follows the **Date & Time Format** you chose in [General Settings](/global-general-settings#date-time-format). With the default, dates read like "3 days ago". Switch to **WordPress Default** and they show as full dates, in the same format your WordPress site uses. FluentCart's own date setting doesn't affect this screen.
 
 If the contact has no matching FluentCart customer, the tab shows a short note that there are no purchases to display.
+
+![Purchase History FluentCart](/grow-your-audience/additional-integrated-contact-overview/purchase-history-44.webp)
 
 ## Paymattic Purchase History
 
