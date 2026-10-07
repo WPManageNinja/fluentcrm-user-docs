@@ -1,0 +1,53 @@
+{
+  "outDir": "docs/public/email-campaign/campaign-archive",
+  "viewport": {
+    "width": 1600,
+    "height": 1400
+  },
+  "steps": [
+    {
+      "admin": "/add-ons"
+    },
+    {
+      "shot": {
+        "name": "campaign-archives-addon-settings",
+        "clip": "app",
+        "arrows": [
+          {
+            "target": "button:has-text(\"Settings\") >> nth=2",
+            "from": "right",
+            "len": 150
+          }
+        ],
+        "crop": {
+          "top": 985,
+          "height": 400
+        }
+      }
+    },
+    {
+      "click": "button:has-text(\"Settings\") >> nth=2"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": ".el-drawer .el-checkbox"
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "shot": {
+        "name": "campaign-archive-enable-feature",
+        "clip": {
+          "element": ".el-drawer",
+          "pad": 0
+        },
+        "crop": {
+          "height": 1360
+        }
+      }
+    }
+  ]
+}
