@@ -16,7 +16,7 @@ Newsletter archives give visitors a reason to subscribe: they can read what you 
 
 The archive stays off until you enable it, and both the block and the shortcode depend on that switch.
 
-1. Go to **Settings → Advanced Features**.
+1. Go to **FluentCRM → Addons**. Under **Advanced Features**, find **Campaign Archives** and click **Settings**.
 2. Check **Enable Campaign Archive Frontend Feature**.
 3. Set the global rules under **Campaign Archive Settings** (described below).
 4. Click **Save**.
