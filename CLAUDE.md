@@ -99,3 +99,12 @@ All sidebar entries in `.vitepress/config.mts` use:
 { text: 'Page Title', link: '/the-slug' },
 ```
 The slug is the filename without `.md` and without the folder prefix.
+
+## Screenshots (dev site → docs)
+
+Never take doc screenshots by hand or with the Claude-in-Chrome extension. Load the skill **`fluentcrm-doc-screenshots`** and follow it. Summary:
+
+- **Source:** the Local dev site `http://localhost:10053` (`admin`/`admin`, override with `FCRM_SITE`/`FCRM_USER`/`FCRM_PASS`). The site must be running in Local.
+- **Tooling:** `npm run shots -- scripts/screenshots/plans/<doc-slug>.json` drives headless Google Chrome via `playwright-core`, hides the WordPress bar and menu, draws brand-purple (`#431d99`) arrows with `sharp`, and writes `.webp` (q82) into `docs/public/<category>/<slug>/` at 2880 px wide.
+- **Plans:** one JSON plan per doc in `scripts/screenshots/plans/`, kept as regression fixtures. `campaign-archive.json` is the worked example.
+- **Verify** each image with the Read tool before referencing it, then run `npm run docs:build`.
