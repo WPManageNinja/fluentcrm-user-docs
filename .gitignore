@@ -6,3 +6,6 @@
 # macOS
 .DS_Store
 **/.DS_Store
+
+# Raw PNGs from the screenshot runner (only the .webp in docs/public is committed)
+/scripts/screenshots/raw/
