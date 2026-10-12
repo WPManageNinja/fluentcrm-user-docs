@@ -9,6 +9,45 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.2.6
+
+_Released on October 11, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Adds contact status quick filters with counts, and pinned list and tag favorites
+• Adds smarter contact search with field-specific queries, custom field support, a field picker, and search tips
+• Adds a first-run Contacts screen with shortcuts to import contacts, add a contact, and collect signups
+• Adds Email Preview and Page Preview to the global and list-specific Double Opt-in Settings
+```
+
+```markdown [🚀 Improvements]
+• Redesigns contact bulk actions with a floating toolbar and clearer selection scope
+• Adds Gmail-style email previews with sender information and the email subject
+• Refines the email and double opt-in settings layouts, with grouped Email Settings navigation
+• Unifies dashboard and report summary cards, and improves dark mode readability
+• Clarifies UI wording and expands translation coverage across FluentCRM and FluentCRM Pro
+• Improves MCP tools and reporting prompts
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes contact search, filtering, selection, export, and profile-save inconsistencies
+• Fixes email editor autosave, content recovery, and preview and rendering differences
+• Fixes campaign scheduling, queue recovery, unscheduling, and bounce handling
+• Fixes live automation edits, branch continuation, and delay preservation when cloning or importing
+• Fixes reports showing anonymous email activity as rates instead of totals
+• Fixes SMS and WhatsApp campaign failure feedback, sent counts, conversation matching, and opt-out handling (Pro)
+• Fixes sequence sending and completion, queued-email cancellation, and duplicate or blocked recurring campaign runs (Pro)
+• Fixes WooCommerce, EDD, membership, and LMS integration issues (Pro)
+```
+
+```markdown [📋 Other]
+• Updates dependencies and adds compatibility fixes
+```
+
+:::
+
 ## FluentCRM v3.2.5
 
 _Released on September 28, 2026_
