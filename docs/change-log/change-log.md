@@ -11,39 +11,41 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 
 ## FluentCRM v3.2.6
 
-_Released on October 11, 2026_
+_Released on October 12, 2026_
 
 ::: code-group
 
 ```markdown [✨ Newly Added]
-• Adds contact status quick filters with counts, and pinned list and tag favorites
-• Adds smarter contact search with field-specific queries, custom field support, a field picker, and search tips
-• Adds a first-run Contacts screen with shortcuts to import contacts, add a contact, and collect signups
-• Adds Email Preview and Page Preview to the global and list-specific Double Opt-in Settings
+• Adds a contact status dropdown with counts
+• Adds smarter contact search with field-specific queries
+• Adds first-run contact shortcuts for importing contacts, adding a contact, and collecting signups
+• Adds Email Preview and Page Preview to the Double Opt-in Settings
 ```
 
 ```markdown [🚀 Improvements]
-• Redesigns contact bulk actions with a floating toolbar and clearer selection scope
-• Adds Gmail-style email previews with sender information and the email subject
-• Refines the email and double opt-in settings layouts, with grouped Email Settings navigation
-• Unifies dashboard and report summary cards, and improves dark mode readability
-• Clarifies UI wording and expands translation coverage across FluentCRM and FluentCRM Pro
-• Improves MCP tools and reporting prompts
+• Makes contact bulk actions clearer
+• Adds Gmail-style email previews
+• Improves editor styling, mobile layouts, settings, dashboard cards, and dark mode
+• Uses consistent US English wording and broadens translation coverage
+• Makes smartcodes safer and strengthens permissions for WordPress user automation actions
 ```
 
 ```markdown [🐞 Bug fixes]
-• Fixes contact search, filtering, selection, export, and profile-save inconsistencies
-• Fixes email editor autosave, content recovery, and preview and rendering differences
-• Fixes campaign scheduling, queue recovery, unscheduling, and bounce handling
-• Fixes live automation edits, branch continuation, and delay preservation when cloning or importing
-• Fixes reports showing anonymous email activity as rates instead of totals
-• Fixes SMS and WhatsApp campaign failure feedback, sent counts, conversation matching, and opt-out handling (Pro)
-• Fixes sequence sending and completion, queued-email cancellation, and duplicate or blocked recurring campaign runs (Pro)
-• Fixes WooCommerce, EDD, membership, and LMS integration issues (Pro)
+• Fixes campaign scheduling, queue recovery, recipient exclusions, unscheduling, and bounce handling
+• Fixes live automation edits, branch delays, date conditions, and A/B split percentages
+• Fixes sequence timing, completion, queued-email cancellation, and recurring campaign runs (Pro)
+• Fixes email autosave, smartcodes, product blocks, conditional content, and tracking preferences
+• Fixes contact filtering, exports, webhook creation, list edits, and campaign duplication
+• Fixes Fluent Forms custom-field clearing while preserving hidden fields
+• Fixes automation custom-field updates, subtraction, and smart-link URLs (Pro)
+• Fixes SMS and WhatsApp audiences, opt-outs, reporting, conversations, and disabled-channel sends (Pro)
+• Fixes commerce, membership, and LMS integrations, including subscription restarts and failed-payment cart recovery (Pro)
+• Fixes report totals, labels, note editing, and AI settings saves
 ```
 
 ```markdown [📋 Other]
-• Updates dependencies and adds compatibility fixes
+• Changed strings may need retranslation. Your selected language stays unchanged
+• Updates AI models, MCP tools, security, and compatibility across FluentCRM and FluentCRM Pro
 ```
 
 :::
