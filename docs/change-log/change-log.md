@@ -9,6 +9,47 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.2.6
+
+_Released on October 12, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Adds a contact status dropdown with counts
+• Adds smarter contact search with field-specific queries
+• Adds first-run contact shortcuts for importing contacts, adding a contact, and collecting signups
+• Adds Email Preview and Page Preview to the Double Opt-in Settings
+```
+
+```markdown [🚀 Improvements]
+• Makes contact bulk actions clearer
+• Adds Gmail-style email previews
+• Improves editor styling, mobile layouts, settings, dashboard cards, and dark mode
+• Uses consistent US English wording and broadens translation coverage
+• Makes smartcodes safer and strengthens permissions for WordPress user automation actions
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes campaign scheduling, queue recovery, recipient exclusions, unscheduling, and bounce handling
+• Fixes live automation edits, branch delays, date conditions, and A/B split percentages
+• Fixes sequence timing, completion, queued-email cancellation, and recurring campaign runs (Pro)
+• Fixes email autosave, smartcodes, product blocks, conditional content, and tracking preferences
+• Fixes contact filtering, exports, webhook creation, list edits, and campaign duplication
+• Fixes Fluent Forms custom-field clearing while preserving hidden fields
+• Fixes automation custom-field updates, subtraction, and smart-link URLs (Pro)
+• Fixes SMS and WhatsApp audiences, opt-outs, reporting, conversations, and disabled-channel sends (Pro)
+• Fixes commerce, membership, and LMS integrations, including subscription restarts and failed-payment cart recovery (Pro)
+• Fixes report totals, labels, note editing, and AI settings saves
+```
+
+```markdown [📋 Other]
+• Changed strings may need retranslation. Your selected language stays unchanged
+• Updates AI models, MCP tools, security, and compatibility across FluentCRM and FluentCRM Pro
+```
+
+:::
+
 ## FluentCRM v3.2.5
 
 _Released on September 30, 2026_
