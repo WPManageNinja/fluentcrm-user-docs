@@ -184,7 +184,7 @@ FluentCRM connects natively with these platforms. Each integration adds contact 
 - **AffiliateWP**: Triggers for AffiliateWP affiliate events. See [AffiliateWP Integration](/affiliatewp-integration-with-fluentcrm).
 - **FluentBooking**: Booking event triggers from the native FluentBooking plugin. See [Fluent Booking Integration](/fluent-booking-integration-with-fluentcrm).
 - **FluentBoards**: Project board triggers. See [FluentBoards Integration](/fluentboards-integration-with-fluentcrm).
-- **FluentSupport**: Support ticket triggers and customer sync. See [FluentSupport Integration](/fluentsupport-integration-with-fluentcrm).
+- **FluentSupport**: Customer-to-contact sync, tag and list management from tickets, a contact Tickets tab, and a Create Support Ticket automation action. See [FluentSupport Integration](/fluentsupport-integration-with-fluentcrm).
 
 ### Builders & Automation Tools
 - **Elementor**: Capture Elementor form submissions as contacts. See [Elementor Integration](/elementor-integration-with-fluentcrm).

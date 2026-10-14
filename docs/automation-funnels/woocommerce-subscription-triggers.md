@@ -7,33 +7,21 @@ order: 0
 
 # WooCommerce Subscription Triggers
 
-FluentCRM now includes **Triggers** specifically for **WooCommerce** **Subscriptions**, allowing users to manage subscription-related tasks through FluentCRM automation. This article will guide you through the detailed information about all **WooCommerce Subscription Triggers**. 
+FluentCRM Pro includes five **Triggers** for **WooCommerce Subscriptions**, so you can start an automation when a subscription starts, renews, fails to renew, is cancelled, or expires.
 
-## Install & Activate WooCommerce Subscriptions Add-on
+## Requirements
 
-Before you proceed, you need to install and activate the **FluentCRM WooCommerce Subscription Triggers** add-on in your WordPress site to get all the Subscription-related Triggers.
+These triggers are built into **FluentCRM Pro**. There is no separate FluentCRM add-on to install. They appear once the **[WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/)** extension is installed and active on your site, alongside WooCommerce itself.
 
-> **Note:** This is a FluentCRM add-on, not the WooCommerce Subscriptions plugin by Automattic. You can obtain it from your [FluentCRM account](https://fluentcrm.com) as part of your Pro license.
+>[!Note]
+> This feature requires **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
-To learn how to install & activate the WooCommerce Subscription Triggers Add-on, follow the steps with screenshots below –
-
-First, **download** the WooCommerce Subscription Triggers Add-on `.zip` file from your FluentCRM account area.  
-Then, go to **Plugins** from the **WordPress Left Sidebar**, and click the **Add New Plugin** button.
-
-Click on the **Upload Plugin** button.
-
-Now, click on the **Choose file** to upload the **.zip file** of **WooCommerce Subscriptions** that you’ve purchased, and press the **Install Now** button.
-
-![choose the zip file & click install button](/automation-funnels/woocommerce-subscription-triggers/add-plugin-1.webp)
-
-Once you installed the add-on, click the **Activate** button.  
-And, your WooCommerce Subscriptions Add-on will be installed and activated on your WordPress Site.
+>[!Warning]
+> WooCommerce Subscriptions is a paid extension sold by WooCommerce. If it isn't active, the subscription triggers don't appear in the automation editor.
 
 ## WooCommerce Subscription Triggers in FluentCRM
 
-To learn how you can use this WooCommerce Subscription Triggers feature in your FluentCRM, follow the steps with screenshots below –
-
-Once you install & activate the add-on, go to the **Automation** section from the **FluentCRM Navbar**, and click on the **\+ New Automation** button. 
+With WooCommerce Subscriptions active, go to the **Automation** section from the **FluentCRM Navbar**, and click on the **\+ New Automation** button. 
 
 ![existing or new automatiton in fluent crm](/automation-funnels/woocommerce-subscription-triggers/automation-2.webp)
 
@@ -42,7 +30,7 @@ Once you click the + New Automation button, a pop-up page will appear with all t
 Now, you just need to click on the desired templates and it will redirect you to the [Automation Editor](/automation-editor/#automation-editor) where the full funnel diagram will be ready automatically. Alternatively, to get all the WooCommerce-related triggers, simply click on the **Create from Scratch** box.
 
 Here, another pop-up will appear for creating an Automation Funnel where you will find the WooCommerce options from the left sidebar.  
-Now click on **WooCommerce** and you will get four **Woocommerce Subscription** **Triggers**. These are:
+Now click on **WooCommerce** and you will find five subscription triggers:
 
 -   Subscription Activated
 -   Renewal Payment Received
@@ -58,13 +46,13 @@ Once you select your desired Subscription Trigger, put a **Label** under the **I
 
 ### Subscription Activated
 
-This automation funnel will start once a subscription occurs or is changed to active status. Once you select this trigger, a pop-up will appear with options to manage your funnel.
+This automation funnel will start once a WooCommerce subscription starts or changes to active. Once you select this trigger, a pop-up will appear with options to manage your funnel.
 
 #### **A brief explanation of the options in the screenshot is given below:**
 
 -   **Automation Name**: Provide a **Name** for the **Automation** so that you may find it later easily.
 -   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/automation-editor/#automation-editor).
--   **Contact Status**: Change the **Subscription** **Status** from the **Dropdown** list for the **Contact** that submits the form. To learn more about the Contact Status of FluentCRM, [click here](/fluentcrm-contacts-status).
+-   **Contact Status**: Choose the status for the customer's contact if they aren't in FluentCRM yet. Selecting **Pending** sends a double opt-in email to new contacts. To learn more, see [Contact Status](/fluentcrm-contacts-status).
 -   **Target Products**: Select the **Products** for which this automation will run. Otherwise, **leave** this field **Blank** if you want this funnel **to** **run for all products**.
 -   **Restart**: Check this option if you want the **automation to run multiple times** for the contact that triggers the automation.
 

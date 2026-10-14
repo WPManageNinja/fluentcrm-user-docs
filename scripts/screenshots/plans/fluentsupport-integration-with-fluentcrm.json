@@ -1,0 +1,66 @@
+{
+  "outDir": "docs/public/integrations/fluentsupport-integration-with-fluentcrm",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "steps": [
+    {
+      "front": "/wp-admin/admin.php?page=fluent-support#/settings/fluentcrm-integration",
+      "hideThemeHeader": false
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "shot": {
+        "name": "fluentsupport-crm-settings",
+        "clip": {
+          "x": 420,
+          "y": 88,
+          "width": 1170,
+          "height": 520
+        }
+      }
+    },
+    {
+      "front": "/wp-admin/admin.php?page=fluent-support#/tickets/748/view",
+      "hideThemeHeader": false
+    },
+    {
+      "wait": 3500
+    },
+    {
+      "shot": {
+        "name": "ticket-crm-sidebar",
+        "clip": {
+          "x": 400,
+          "y": 88,
+          "width": 1200,
+          "height": 540
+        }
+      }
+    },
+    {
+      "admin": "/subscribers/28083"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": ":text-is(\"Tickets\"):visible"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "shot": {
+        "name": "contact-tickets-tab",
+        "clip": "app",
+        "crop": {
+          "height": 1380
+        }
+      }
+    }
+  ]
+}

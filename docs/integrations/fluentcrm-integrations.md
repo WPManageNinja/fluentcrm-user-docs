@@ -57,7 +57,7 @@ Engage your community members and affiliate partners with targeted automations.
 | [AffiliateWP](/affiliatewp-integration-with-fluentcrm) | Trigger automations when new affiliates register via AffiliateWP |
 | [Fluent Booking](/fluent-booking-integration-with-fluentcrm) | Add contacts and trigger follow-up sequences when appointments are booked |
 | [FluentBoards](/fluentboards-integration-with-fluentcrm) | Connect your project board activity to contact-level CRM data |
-| [FluentSupport](/fluentsupport-integration-with-fluentcrm) | Sync support ticket activity with FluentCRM contacts for lifecycle automation |
+| [FluentSupport](/fluentsupport-integration-with-fluentcrm) | Sync support customers to FluentCRM contacts, manage their tags and lists from a ticket, and create tickets from automations |
 
 ## Builders & Automation Tools
 
