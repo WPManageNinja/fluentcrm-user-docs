@@ -25,11 +25,11 @@ For example, I opened the **List Applied** automation funnel to explain all the 
 
 ![Open desired automation or create new one](/automation-funnels/miscellaneous-automation-actions/Open-desired-Automation-or-Create-new-one-4-scaled-1.webp)
 
-Now, click the **Plus Icon,** or just hover over it and click the **Add Action / Goal** option to get all the **LMS Actions**.
+Now, click the **Plus Icon,** or just hover over it and click the **Add Action / Goal** option to open the action blocks. The **Fluent Support** group sits at the bottom of the list. Type `support` in the search box to jump straight to it.
 
 ![Click plus icon to add actions](/automation-funnels/miscellaneous-automation-actions/add-Actions-3-scaled-2.webp)
 
-Now, a pop-up page will appear with the **Fluent Support Action Blocks.**
+The **Create Support Ticket** block appears under **Fluent Support**. Click it to add the action.
 
 ![Fluent support action](/automation-funnels/miscellaneous-automation-actions/Fluent-Support-Action-3.webp)
 
@@ -40,21 +40,24 @@ After selecting this **Action**, a tab will appear on the right-hand side with o
 
 Here, are the Settings of the Create Support Ticket Action
 
--   **Interval Label**: Here, a **Name** for the Action will be automatically added so you can easily find it later. You can change it according to your needs.
+-   **Internal Label**: A name for the action is added automatically so you can find it later. Change it if you like.
 
 -   **Internal Description**: Write a description that will be used as a **Subtitle** in the **Block** **Diagram** in the [Automation Editor](/automation-editor).
 
--   **Ticket Title**: Add the **Title** for the ticket so you can easily find it in **Fluent Support Tickets** section. You can also use [SmartCodes](/smartcodes-in-fluentcrm-email-editor) by clicking the **Three-dot-icon**.
+-   **Ticket Title** (required): Add the **Title** for the ticket so you can easily find it in **Fluent Support Tickets** section. You can also use [SmartCodes](/smartcodes-in-fluentcrm-email-editor) by clicking the **Three-dot-icon**.
 
--   **Ticket Description**: Also, add a **Description** or **Ticket Body** (i.e., content you want to add in the ticket). Here, also you can use the [SmartCodes](/smartcodes-in-fluentcrm-email-editor) by clicking the **Add SmartCodes** dropdown arrow.
+-   **Ticket Description** (required): Add a **Description** or **Ticket Body** (i.e., content you want to add in the ticket). Here, also you can use the [SmartCodes](/smartcodes-in-fluentcrm-email-editor) by clicking the **Add SmartCodes** dropdown arrow.
 
 -   **Default Business Inbox**: Using this option, you can set the default business inbox where the ticket will be created. To learn more about the **Business Inbox** field, read this [Documentation](https://fluentsupport.com/docs/business-inbox/) of Fluent Support.
 
 -   **Default Assigned Agent**: This allows to assign support agent for the tickets that will be created in Fluent Support. To learn more about the **Support Agent/Staff** field, read this [Documentation](https://fluentsupport.com/docs/adding-support-staffs-agents/) of Fluent Support.
 
--   **Priority (Admin)**: With this option, you can set the priority level for your tickets and it will only visible to the Support Admin. To learn more about the **Priority (Admin)** field, read this [Documentation](https://fluentsupport.com/docs/filtering-sorting-searching-tickets/) of Fluent Support.
+-   **Priority (Admin)**: Choose **Normal**, **Medium**, or **Critical**. Only support agents see this priority. To learn more about the **Priority (Admin)** field, read this [Documentation](https://fluentsupport.com/docs/filtering-sorting-searching-tickets/) of Fluent Support.
 
 Once you are done, click the **Save Settings** button to save all your changes.  
 You can also **Delete** the action by clicking the **Trash** **Icon** if needed.
+
+>[!Note]
+> If the ticket title or description is empty when the action runs, FluentCRM skips the step and the contact moves on to the next one. If the contact isn't a FluentSupport customer yet, FluentSupport creates the customer for the ticket.
 
 ![Create support ticket](/automation-funnels/miscellaneous-automation-actions/Create-Support-Ticket-4.webp)

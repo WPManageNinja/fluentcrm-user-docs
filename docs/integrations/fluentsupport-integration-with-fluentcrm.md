@@ -48,16 +48,22 @@ If the customer's email already belongs to a FluentCRM contact, FluentSupport up
 
 Agents can see and change the customer's FluentCRM data on the ticket screen. Open any ticket in FluentSupport and look at **Customer Informations** in the right sidebar. When the customer's email matches a FluentCRM contact, a **CRM** section appears with:
 
-- The contact's status, such as **Subscribed**.
+- The contact's status, such as **Subscribed**. Click the badge to open the contact in FluentCRM in a new tab.
 - **Contacts Tag** with the tags the contact has.
 - **Contacts List** with the lists the contact belongs to.
 
 ![Screenshot of a FluentSupport ticket with the CRM status, Contacts Tag and Contacts List in the sidebar](/integrations/fluentsupport-integration-with-fluentcrm/ticket-crm-sidebar.webp)
 
-To change them, click the **+** button next to **Contacts Tag** or **Contacts List**. A box titled **Apply / Remove Tags on FluentCRM Profile** (or lists) opens with the contact's current selection. Add or remove items, then click **Update Settings**. What you save becomes the contact's full set, so anything you remove from the box is removed from the contact.
+If the contact's name in FluentCRM differs from the customer's name in FluentSupport, the FluentCRM name also appears beside the status badge so you can spot the mismatch.
+
+To change tags or lists, click the **+** button next to **Contacts Tag** or **Contacts List**. A box titled **Apply / Remove Tags on FluentCRM Profile** (or **Apply / Remove Lists on FluentCRM Profile**) opens with the contact's current selection. Add or remove items, then click **Update Settings**.
+
+![Screenshot of the Apply / Remove Tags on FluentCRM Profile box in a FluentSupport ticket](/integrations/fluentsupport-integration-with-fluentcrm/ticket-crm-tag-picker.webp)
+
+What you save becomes the contact's full set, so anything you remove from the box is removed from the contact.
 
 >[!Note]
-> The CRM section only appears for customers who already exist as FluentCRM contacts. Your account also needs permission to manage contacts in FluentCRM, otherwise the update is refused.
+> The CRM section only appears for customers who already exist as FluentCRM contacts. The **+** buttons only appear if your account can manage contacts in FluentCRM. Without that permission you can see the tags and lists but not change them.
 
 ## See a contact's tickets in FluentCRM
 
@@ -87,7 +93,7 @@ If the contact has no FluentSupport customer record yet, FluentSupport creates o
 
 ## FluentSupport workflows (Pro)
 
-With FluentSupport Pro, go to **Fluent Support → Workflows** and create a workflow that runs **On Ticket Creation**, **On Customer Response**, or **On Ticket Closed**. Once FluentCRM is active, the workflow editor gains FluentCRM actions and conditions that act on the ticket's customer.
+With FluentSupport Pro, go to **Fluent Support → Workflows** and create a workflow. The trigger can be **On Ticket Creation**, **On Customer Response**, **On Ticket Reopened**, **On Agent Response**, **On Agent Assigned**, **On Customer Feedback**, or **On Ticket Closed**. Once FluentCRM is active, the workflow editor gains FluentCRM actions and conditions that act on the ticket's customer.
 
 **Actions**
 
