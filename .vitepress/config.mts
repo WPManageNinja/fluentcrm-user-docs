@@ -3,6 +3,7 @@ import { existsSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { zoomablePlugin } from './theme/markdown-plugin-zoomable'
+import { writeDocJson } from './doc-json'
 
 // Canonical origin, reused by the canonical link, the JSON-LD @id and the absolute
 // og:/twitter: URLs below. (The sitemap block states it with a trailing slash.)
@@ -101,6 +102,9 @@ export default defineConfig({
     hostname: 'https://docs.fluentcrm.com/',
     lastmodDateOnly: true,
   },
+  // Writes /<slug>.json for every doc plus /docs-index.json, which the FluentCRM
+  // plugin fetches to show docs in-app. See doc-json.ts.
+  buildEnd: (siteConfig) => writeDocJson(siteConfig, SITE_URL),
   // Per-page <head> tags, emitted at build time into the static HTML:
   //  1. canonical + the Open Graph / Twitter values that differ per page, including
   //     the page's own featured image (see featuredImageFor above);
