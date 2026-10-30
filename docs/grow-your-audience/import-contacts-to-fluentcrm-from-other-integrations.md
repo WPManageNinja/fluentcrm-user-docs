@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=RuAb-51Z4zs
 
 **Things to know before importing the contacts**
 
--   You must have the plugin (WooCommerce, EDD, LearnDash, LifterLMS, TutorLMS, LearnPress, Paid Memberships Pro, Restrict Content Pro, or BuddyBoss) from which you want to import the contacts already installed on your site, otherwise, you won't see the option in the import modal.
+-   You must have the plugin (WooCommerce, EDD, LearnDash, LifterLMS, TutorLMS, LearnPress, Paid Memberships Pro, Kadence Memberships (formerly Restrict Content Pro), or BuddyBoss) from which you want to import the contacts already installed on your site, otherwise, you won't see the option in the import modal.
 
 **First Step**
 
