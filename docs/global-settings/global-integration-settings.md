@@ -9,7 +9,16 @@ order: 0
 
 Using the deep integration settings, FluentCRM can sync data from third-party plugins into your CRM and (where supported) push CRM activity back into them. While syncing the data, you can also assign Lists and Tags to the contacts so your audience is segmented automatically as new customers, students, members, or community members arrive.
 
-![crm integrations](/global-settings/global-integration-settings/crm_integrations.webp)
+Go to **FluentCRM → Settings → Integrations** to see every integration FluentCRM offers, whether or not the other plugin is on your site. Each row shows its status on the right:
+
+* **Manage:** The integration is active and has settings. Click it to open its deep integration settings.
+* **Active:** The other plugin is installed and the integration is working. There's nothing to configure.
+* **Not installed:** FluentCRM supports this plugin, but it isn't installed on your site.
+* **Pro:** The integration needs FluentCRM Pro.
+
+Use the dropdown to narrow the list to **E-Commerce**, **LMS**, **Membership**, **Page Builders**, **Fluent Ecosystem**, or **Others**, or type in **Search here** to find a plugin by name.
+
+![Screenshot of the Integrations settings screen listing integrations with their status](/global-settings/global-integration-settings/crm_integrations.webp)
 
 The relevant product/plugin-specific integration settings are documented below:
 
@@ -34,7 +43,7 @@ https://www.youtube.com/watch?v=RuAb-51Z4zs
 1.  Paid Memberships Pro
 2.  MemberPress
 3.  Wishlist Member *(Pro)*
-4.  Restrict Content Pro
+4.  Kadence Memberships (formerly Restrict Content Pro)
 
 **Community & Productivity:**
 
