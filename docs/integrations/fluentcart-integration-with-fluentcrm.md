@@ -77,9 +77,11 @@ If you want to know more about automation actions, check out our [documentation]
 
 ## **FluentCart SmartCodes**
 
-When a FluentCart trigger fires an automation, FluentCRM makes order and customer data available as SmartCodes you can use in email subject lines, body content, or action settings. These codes resolve to the actual values from the triggering order at send time.
+FluentCRM gives you two groups of FluentCart SmartCodes for email subject lines, body content, and action settings. **Cart Order** codes describe the order that started an automation. **FluentCart Customer** codes describe the contact's customer record in your store, so you can use them anywhere you write an email.
 
 ### Cart Order SmartCodes
+
+Cart Order codes appear in the SmartCode panel only inside automations that start with a FluentCart trigger. They resolve to the values from the triggering order at send time.
 
 | SmartCode | Description |
 | --- | --- |
@@ -101,10 +103,18 @@ When a FluentCart trigger fires an automation, FluentCRM makes order and custome
 | <code>&#123;&#123;cart_order.created_at&#125;&#125;</code> | Order Creation Date |
 | <code>&#123;&#123;cart_order.completed_at&#125;&#125;</code> | Order Completion Date |
 
-### Cart Customer SmartCodes
+### FluentCart Customer SmartCodes
+
+The **FluentCart Customer** group works in campaigns, email templates, sequences, automations, and emails you send from a contact's profile. FluentCRM finds the FluentCart customer whose email address matches the contact, so the codes don't need a FluentCart trigger.
+
+To insert one, open the email editor, click the **SmartCode** (`{}`) button in the toolbar, and choose **FluentCart Customer**.
+
+![Screenshot of the SmartCode panel in the email editor with the FluentCart Customer group selected](/integrations/fluentcart-integration-with-fluentcrm/smartcode-panel-fluentcart-customer.webp)
 
 | SmartCode | Description |
 | --- | --- |
+| <code>&#123;&#123;cart_customer.user_id&#125;&#125;</code> | User ID |
+| <code>&#123;&#123;cart_customer.contact_id&#125;&#125;</code> | Customer Contact ID |
 | <code>&#123;&#123;cart_customer.first_name&#125;&#125;</code> | Customer First Name |
 | <code>&#123;&#123;cart_customer.last_name&#125;&#125;</code> | Customer Last Name |
 | <code>&#123;&#123;cart_customer.email&#125;&#125;</code> | Customer Email |
@@ -116,10 +126,14 @@ When a FluentCart trigger fires an automation, FluentCRM makes order and custome
 | <code>&#123;&#123;cart_customer.last_purchase_date&#125;&#125;</code> | Last Purchase Date |
 | <code>&#123;&#123;cart_customer.country&#125;&#125;</code> | Customer Country |
 | <code>&#123;&#123;cart_customer.city&#125;&#125;</code> | Customer City |
+| <code>&#123;&#123;cart_customer.state&#125;&#125;</code> | Customer State |
+| <code>&#123;&#123;cart_customer.postcode&#125;&#125;</code> | Customer Postcode |
 | <code>&#123;&#123;cart_customer.notes&#125;&#125;</code> | Customer Notes |
 
+**Total Purchase Value** is the customer's lifetime value in FluentCart, and **Average Order Value** is worked out from it. Purchase dates use the date format set in FluentCRM.
+
 >[!Tip]
-> SmartCodes in the `cart_order` and `cart_customer` groups are only available in automations triggered by a FluentCart event. They resolve to empty strings in non-FluentCart contexts.
+> A contact who has never bought from your store has no FluentCart customer record, so these codes print nothing. Add a fallback to keep the sentence readable, for example <code>&#123;&#123;cart_customer.first_name|there&#125;&#125;</code>.
 
 ## **Contact Segmentation & Filtering with FluentCart Data**
 
