@@ -136,6 +136,25 @@ The final screen provides a full summary of your campaign. Review your Subject, 
 
 If anything needs to change you can go back and edit. If everything has been set up correctly you can start the campaign right away.
 
+#### Tracking
+
+The **Tracking** item shows how this campaign records **Opens** and **Clicks**. By default it follows your site-wide [Compliance Settings](/global-compliance-settings). To change it for this campaign only, click **Change**.
+
+![Screenshot of the Review step with the Change link on the Tracking item](/email-campaign/setting-up-campaign/review-step-tracking.webp)
+
+Pick a level for **Opens** and for **Clicks**, then click **Done**:
+
+* **Tracked:** Records opens or clicks against each contact, so they show in the contact's activity and you can segment or automate on them.
+* **Anonymous:** Counts opens or clicks as totals for the campaign without tying them to a contact. For clicks, the IP address saved with the activity is anonymized, and smart links keep working.
+* **Off:** Doesn't record opens or clicks for this campaign.
+
+![Screenshot of the Tracking options with Tracked, Anonymous, and Off for Opens and Clicks](/email-campaign/setting-up-campaign/review-step-tracking-options.webp)
+
+>[!Note]
+> A campaign can only be stricter than your site-wide setting, never looser. If your site uses anonymous tracking, for example, **Tracked** is unavailable here. FluentCRM fixes the choice when the campaign is sent or scheduled.
+
+Normally a click on a tracked link also counts as an open. If you set **Opens** to **Anonymous** or **Off** for a campaign, clicks no longer mark the email as opened, so your open rate reflects only the opens you chose to record.
+
 #### Send the Email Right Now
 
 Now when you are done with all the previous settings, you can either send the campaign immediately or schedule it discussed in the later section.
