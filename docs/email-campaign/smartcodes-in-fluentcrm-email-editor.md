@@ -98,7 +98,7 @@ To learn how to create custom fields, see [Custom Contact Fields](/global-custom
 
 When you connect a third-party plugin — such as an LMS, membership platform, or ecommerce tool — FluentCRM adds integration-specific tokens to the SmartCode panel. These let you reference course enrolments, membership levels, order data, and similar plugin-side values directly in your emails.
 
-For example, with TutorLMS connected you might see tokens for enrolled course names and course links.
+For example, with TutorLMS connected you might see tokens for enrolled course names and course links. With FluentCart active, the **FluentCart Customer** group adds the contact's store data, such as total purchase value, order count, and last purchase date. See [FluentCart SmartCodes](/fluentcart-integration-with-fluentcrm#fluentcart-smartcodes) for the full list.
 
 Available tokens depend on which integrations are active on your site. Head to **FluentCRM → Settings → Integrations** to connect plugins and unlock their SmartCodes.
 
