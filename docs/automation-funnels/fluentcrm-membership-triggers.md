@@ -6,9 +6,9 @@ order: 0
 ---
 
 # Membership Triggers
-FluentCRM provides triggers for **Membership Platforms** like **MemberPress**, **Paid** **Membership Pro**, **Restrict Content Pro**, and **Wishlist Member**, allowing you to start an automation funnel based on user behavior. This article will provide detailed information about all **Membership Triggers** of **FluentCRM Automation**.
+FluentCRM provides triggers for **Membership Platforms** like **MemberPress**, **Paid** **Membership Pro**, **Kadence Memberships** (formerly Restrict Content Pro), and **Wishlist Member**, allowing you to start an automation funnel based on user behavior. This article will provide detailed information about all **Membership Triggers** of **FluentCRM Automation**.
 
-> **Remember**, to use the **Trigger** you must install and activate all the **Membership Plugins** in your website. Plus, learn the detailed integration process of [MemberPress](/memberpress-integration-with-fluentcrm), [Paid Membership Pro](/paid-memberships-pro-integration-with-fluentcrm), and [Restrict Content Pro](/restrict-content-pro-integration-with-fluentcrm) with FluentCRM.
+> **Remember**, to use the **Trigger** you must install and activate all the **Membership Plugins** in your website. Plus, learn the detailed integration process of [MemberPress](/memberpress-integration-with-fluentcrm), [Paid Membership Pro](/paid-memberships-pro-integration-with-fluentcrm), and [Kadence Memberships](/restrict-content-pro-integration-with-fluentcrm) with FluentCRM.
 
 ## Membership Triggers of FluentCRM
 
