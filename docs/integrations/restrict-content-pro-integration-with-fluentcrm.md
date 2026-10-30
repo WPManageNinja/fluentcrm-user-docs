@@ -1,13 +1,16 @@
 ---
-title: "Restrict Content Pro Integration with FluentCRM"
+title: "Kadence Memberships Integration with FluentCRM"
 slug: "restrict-content-pro-integration-with-fluentcrm"
 category: "integrations"
 order: 0
 ---
 
-# Restrict Content Pro Integration with FluentCRM
+# Kadence Memberships Integration with FluentCRM
 
-Restrict Content Pro is a popular WordPress membership plugin that allows users to create unlimited subscriptions, manage website members, track registration members, and more. Integrate with FluentCRM helps to add membership levels, memberships canceled, and memberships or subscriptions expired. If you install Restrict Content Pro it automatically integrates with the FluentCRM plugin.
+Kadence Memberships, formerly Restrict Content Pro, is a popular WordPress membership plugin that allows users to create unlimited subscriptions, manage website members, track registration members, and more. Integrate with FluentCRM helps to add membership levels, memberships canceled, and memberships or subscriptions expired. If you install Kadence Memberships it automatically integrates with the FluentCRM plugin.
+
+>[!Note]
+> FluentCRM 3.3.0 renamed this integration from Restrict Content Pro to Kadence Memberships. Some screens, including the trigger list in FluentCRM Pro's automation editor, still show the old name **Restrict Content Pro**. Both names refer to the same integration.
 
 ## Automation Funnel Settings
 
@@ -55,4 +58,4 @@ Here open a popup, simply fill in all the required filed that you want and click
 
 ![membership is expired trigger](/integrations/restrict-content-pro-integration-with-fluentcrm/Membership-is-Expired-trigger-6.webp)
 
-So, this is the integration process of Restrict Content Pro with FluentCRM.
+So, this is the integration process of Kadence Memberships with FluentCRM.
