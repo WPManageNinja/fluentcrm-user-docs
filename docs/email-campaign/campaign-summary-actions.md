@@ -30,7 +30,7 @@ Clicking on a specific campaign opens a detailed report divided into visual summ
 
 ## Detailed Report Tabs
 
-The bottom section of the analytics page provides granular data across four primary tabs:
+The bottom section of the analytics page provides granular data across three tabs:
 
 ### 1. Campaign Details
 
@@ -44,30 +44,34 @@ This tab provides a summary of the campaign's configuration:
 
 ![Campaign Details](/email-campaign/campaign-summary-actions/email-capaign-2.webp)
 
-### 2. Emails (Recipients List)
+### 2. Emails & Actions
 
-View every individual recipient and their specific interactions:
+This tab lists every recipient of the campaign and lets you act on them in bulk. Since FluentCRM 3.3.0 it replaces the separate **Emails** and **Actions** tabs.
 
- * **Filter Options:** Refine the list to see only those who have **Clicked**, **Viewed**, or **remained Unopened**.
- * **Data Fields:** See the contact's Name, Email, number of Actions (clicks), and the delivery Status.
- * **Export:** Use the **Export** button to download the recipient data as a **CSV** file.
+ * **Filter Options:** Refine the list with **All**, **Clicked**, **View** (opened), or **Unopened**, or use the search icon to find a recipient.
+ * **Data Fields:** See each contact's name and email, their opens and clicks under **Actions**, the send **Date**, and the delivery **Status**.
+ * **Per-email buttons:** **Preview** shows the email the contact received, and **Resend** sends it to that contact again.
 
-![Emails](/email-campaign/campaign-summary-actions/emails-3.webp)
+![Screenshot of the Emails & Actions tab listing campaign recipients](/email-campaign/campaign-summary-actions/emails-and-actions-tab.webp)
 
-### 3. Actions
+#### Act on several recipients at once
 
-This feature allows for post-campaign automation based on how users interacted with the email:
+Tick the checkbox beside each recipient you want, or tick the checkbox in the header to select the whole page. When more recipients match than fit on one page, you can extend the selection to every matching recipient. A bar appears at the bottom of the screen with these actions:
 
- * **Action Type:** Choose to **Add Tags** or **Remove Tags** for specific contacts.
- * **Filtering:** **Apply** these tags to specific segments: subscribers who opened, subscribers who did not open, or subscribers who clicked selected links.
+ * **Tags:** Choose **Add** or **Remove**, pick the tags, and apply them. Tags only change for subscribed contacts.
+ * **Export:** Download the selected recipients as a **CSV** file.
+ * **Resend:** Send the campaign email again to the selected recipients. Hover over the button to confirm. Resend isn't available while the campaign is still sending.
 
-![Actions](/email-campaign/campaign-summary-actions/actions-4.webp)
+![Screenshot of three selected recipients with the Tags picker open above the bulk action bar](/email-campaign/campaign-summary-actions/emails-and-actions-bulk-tags.webp)
 
-### 4. Contact Selections
+>[!Tip]
+> Combine a filter with bulk actions to follow up on engagement. For example, filter by **Clicked**, select all, and add a "Clicked newsletter" tag, or filter by **Unopened** and export the list.
 
-Review the original logic used to target this campaign. This tab displays the specific Lists and Tags that were applied to filter the audience before the email was sent.
+### 3. Contact Selections
 
-![Content Selection](/email-campaign/campaign-summary-actions/actions-4.webp)
+Review the original logic used to target this campaign. This tab displays the Lists, Tags, or Advanced Filter conditions that selected the audience before the email was sent.
+
+![Screenshot of the Contact Selections tab showing the advanced filter used for the campaign](/email-campaign/campaign-summary-actions/contact-selections-tab.webp)
 
 ## UTM Parameters in Campaign Details *(new in v3)*
 
