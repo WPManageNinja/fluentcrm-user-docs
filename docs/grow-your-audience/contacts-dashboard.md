@@ -76,6 +76,16 @@ All the above 3 types of filters work as **AND** conditions in conjunction.
 
 ![contacts fluentcrm 2](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-2.webp)
 
+### Clear All Filters
+
+Once a search, status, list, tag, or advanced filter condition is active, a **Clear all filters** link appears beside **More actions** at the top of the page. Click it to remove every filter at once and return to the first page of contacts. Your sorting, page size, and column choices stay as they were.
+
+![Screenshot of the Contacts page with an active search and the Clear all filters link](/grow-your-audience/contacts-dashboard/contacts-clear-all-filters.webp)
+
+If your filters match no contacts, the empty list offers the same **Clear all filters** button, so you can start over without removing each filter one by one.
+
+![Screenshot of the empty Contacts list with a Clear all filters button](/grow-your-audience/contacts-dashboard/contacts-clear-filters-empty-state.webp)
+
 ### Pagination
 
 And contacts listed can be paginated per 10, 20,.. contacts per page from the bottom dropdown option as shown in the below screenshot.
