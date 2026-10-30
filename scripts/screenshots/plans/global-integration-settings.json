@@ -1,0 +1,21 @@
+{
+  "outDir": "docs/public/global-settings/global-integration-settings",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "steps": [
+    { "admin": "/settings/integrations" },
+    { "wait": 3000 },
+    {
+      "shot": {
+        "name": "crm_integrations",
+        "clip": "app",
+        "crop": { "top": 0, "height": 2200 },
+        "arrows": [
+          { "target": { "role": "button", "name": "^Manage$" }, "from": "right", "len": 140 }
+        ]
+      }
+    }
+  ]
+}

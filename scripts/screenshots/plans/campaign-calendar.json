@@ -1,0 +1,85 @@
+{
+  "_note": "Campaign titles on the dev site are test strings; window.__s() swaps them for sample titles in the page only. Nothing is saved.",
+  "outDir": "docs/public/advanced-reports/campaign-calendar",
+  "viewport": {
+    "width": 1600,
+    "height": 1500
+  },
+  "steps": [
+    {
+      "admin": "/reports?tab=calendar"
+    },
+    {
+      "wait": 5000
+    },
+    {
+      "eval": "window.__s=()=>{const m=[[/^179874 button colour test/,'Spring Sale Announcement'],[/^179874 export test - A.*/,'Product Update: September'],[/^179874 export test - B.*/,'Customer Feedback Survey'],[/^TEST 180204.*/,'Monthly Newsletter'],[/^test$/,'Welcome Email'],[/^claude campaign$/,'Holiday Gift Guide']];document.querySelectorAll('#fluentcrm_app, .el-drawer, .el-popper').forEach(root=>{const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode()){const t=n.nodeValue.trim();for(const [re,v] of m){if(re.test(t)){n.nodeValue=n.nodeValue.replace(t,v);break}}}})};window.__s()"
+    },
+    {
+      "shot": {
+        "name": "calendar-month-view",
+        "clip": "app",
+        "crop": {
+          "top": 0,
+          "height": 2340
+        }
+      }
+    },
+    {
+      "click": {
+        "text": "2 more"
+      }
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "eval": "window.__s()"
+    },
+    {
+      "shot": {
+        "name": "calendar-day-drawer",
+        "clip": {
+          "element": ".fcrm_calendar_drawer",
+          "pad": 0
+        },
+        "crop": {
+          "height": 1100
+        }
+      }
+    },
+    {
+      "click": ".fcrm_calendar_drawer .el-drawer__close-btn"
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 1900
+      }
+    },
+    {
+      "click": {
+        "text": "Year"
+      }
+    },
+    {
+      "wait": 4000
+    },
+    {
+      "eval": "window.__s()"
+    },
+    {
+      "shot": {
+        "name": "calendar-year-view",
+        "clip": "app",
+        "crop": {
+          "top": 0,
+          "height": 2990
+        }
+      }
+    }
+  ]
+}

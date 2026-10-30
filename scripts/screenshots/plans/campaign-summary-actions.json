@@ -1,0 +1,105 @@
+{
+  "outDir": "docs/public/email-campaign/campaign-summary-actions",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "steps": [
+    {
+      "openFrom": {
+        "admin": "/email/campaigns",
+        "click": {
+          "text": "FluentCRM V3 Email Editor Testing"
+        },
+        "wait": 5000
+      }
+    },
+    {
+      "click": {
+        "text": "Emails & Actions"
+      }
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "css": ".fcrm_topbar{position:static !important}"
+    },
+    {
+      "eval": "(()=>{const names=['Jane Cooper','Devon Lane','Priya Shah'];const mails=['jane.cooper@example.com','devon.lane@example.com','priya.shah@example.com'];document.querySelectorAll('.fluentcrm_campaign_emails .el-table__body tr').forEach((tr,i)=>{const w=document.createTreeWalker(tr,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode()){if(/@/.test(n.nodeValue))n.nodeValue=mails[i%3];else if(/Ashik Khan|fcrm integrate/.test(n.nodeValue))n.nodeValue=names[i%3];}});const t=document.querySelector('.fcrm_sms_campaign_view--tabs');window.scrollTo(0,t.getBoundingClientRect().top+window.scrollY-24);})()"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "shot": {
+        "name": "emails-and-actions-tab",
+        "clip": {
+          "element": ".fcrm_sms_campaign_view--tabs",
+          "pad": 0
+        }
+      }
+    },
+    {
+      "click": ".fluentcrm_campaign_emails .el-table__header .el-checkbox"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "selector": ".fcrm_bulk_action_bar button",
+        "hasText": "Tags"
+      }
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "shot": {
+        "name": "emails-and-actions-bulk-tags",
+        "clip": "viewport",
+        "arrows": [
+          {
+            "target": ".fcrm_bulk_action_bar",
+            "from": "right",
+            "len": 150
+          }
+        ],
+        "crop": {
+          "left": 470,
+          "width": 2580,
+          "top": 0,
+          "height": 2200
+        }
+      }
+    },
+    {
+      "click": ".fcrm_bulk_action_bar .fcrm_bulk_action_left > *:first-child"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "click": {
+        "selector": ".el-tabs__item",
+        "hasText": "Contact Selections"
+      }
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "document.querySelectorAll('.fcrm_sms_campaign_view--tabs input').forEach(e=>{if(/ashik/i.test(e.value))e.value='@example.com'})"
+    },
+    {
+      "shot": {
+        "name": "contact-selections-tab",
+        "clip": {
+          "element": ".fcrm_sms_campaign_view--tabs",
+          "pad": 0
+        }
+      }
+    }
+  ]
+}

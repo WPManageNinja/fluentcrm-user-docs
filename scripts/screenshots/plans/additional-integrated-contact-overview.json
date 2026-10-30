@@ -1,0 +1,31 @@
+{
+  "_note": "Needs a contact with FluentCart orders. fcrmv3 has none by default: copy a demo-seed customer in first, and delete the rows afterwards.",
+  "outDir": "docs/public/grow-your-audience/additional-integrated-contact-overview",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "steps": [
+    { "admin": "/subscribers/28115" },
+    { "wait": 2500 },
+    { "click": { "text": "Purchases" } },
+    { "wait": 9000 },
+    {
+      "shot": {
+        "name": "fluentcart-purchase-history-view",
+        "clip": { "x": 195, "y": 445, "width": 1020, "height": 475 },
+        "arrows": [
+          { "target": { "role": "button", "name": "^View$" }, "from": "left", "len": 110 }
+        ]
+      }
+    },
+    { "click": { "role": "button", "name": "^View$" } },
+    { "wait": 6000 },
+    {
+      "shot": {
+        "name": "fluentcart-order-preview",
+        "clip": { "element": ".el-drawer.open", "pad": 0 }
+      }
+    }
+  ]
+}

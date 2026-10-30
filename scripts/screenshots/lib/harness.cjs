@@ -142,10 +142,14 @@ class Harness {
     // "text=..." / "role=button[name=...]" are plain Playwright selectors.
     // {text: "Search Help"} matches exact visible text; {label: "Timezone"}
     // resolves the form row that owns that label.
+    // Add {frame: "iframe css"} to any object form to look inside an iframe (the email
+    // block editor renders its toolbar and SmartCode panel in one). Boxes stay page-relative.
     if (typeof sel === 'string') return this.page.locator(sel).first();
-    if (sel.text) return this.page.getByText(sel.text, { exact: true }).first();
-    if (sel.role) return this.page.getByRole(sel.role, { name: new RegExp(sel.name, 'i') }).first();
-    if (sel.hasText) return this.page.locator(sel.selector || '*', { hasText: sel.hasText }).first();
+    const root = sel.frame ? this.page.frameLocator(sel.frame) : this.page;
+    if (sel.frame && sel.selector && !sel.hasText) return root.locator(sel.selector).first();
+    if (sel.text) return root.getByText(sel.text, { exact: true }).first();
+    if (sel.role) return root.getByRole(sel.role, { name: new RegExp(sel.name, 'i') }).first();
+    if (sel.hasText) return root.locator(sel.selector || '*', { hasText: sel.hasText }).first();
     throw new Error('Unsupported selector: ' + JSON.stringify(sel));
   }
 

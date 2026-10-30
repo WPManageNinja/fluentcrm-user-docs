@@ -1,0 +1,70 @@
+{
+  "_note": "Searches for the dev site's zz181038-*@example.test sample contacts so a filter is active. Nothing is saved.",
+  "outDir": "docs/public/grow-your-audience/contacts-dashboard",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "steps": [
+    {
+      "admin": "/subscribers"
+    },
+    {
+      "wait": 4000
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder^=\"Search name\"]",
+        "value": "zz181038"
+      }
+    },
+    {
+      "press": "Enter"
+    },
+    {
+      "wait": 3500
+    },
+    {
+      "shot": {
+        "name": "contacts-clear-all-filters",
+        "clip": "app",
+        "crop": {
+          "top": 230,
+          "height": 720
+        },
+        "arrows": [
+          {
+            "target": {
+              "role": "button",
+              "name": "^Clear all filters$"
+            },
+            "from": "left",
+            "len": 150
+          }
+        ]
+      }
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder^=\"Search name\"]",
+        "value": "no-such-contact-example"
+      }
+    },
+    {
+      "press": "Enter"
+    },
+    {
+      "wait": 3500
+    },
+    {
+      "shot": {
+        "name": "contacts-clear-filters-empty-state",
+        "clip": "app",
+        "crop": {
+          "top": 230,
+          "height": 1100
+        }
+      }
+    }
+  ]
+}

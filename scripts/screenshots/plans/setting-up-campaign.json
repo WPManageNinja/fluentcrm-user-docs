@@ -1,0 +1,36 @@
+{
+  "_note": "Opens the draft 'Monthly newsletter' (id 83) at the Review step via the URL so no Next/Save is pressed. The tracking control is opened but no option is changed.",
+  "outDir": "docs/public/email-campaign/setting-up-campaign",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "steps": [
+    {
+      "openFrom": {
+        "admin": "/email/campaigns",
+        "click": { "text": "Monthly newsletter" },
+        "wait": 6000
+      }
+    },
+    { "eval": "location.hash='#/email/campaigns/83?step=3'" },
+    { "wait": 6000 },
+    {
+      "shot": {
+        "name": "review-step-tracking",
+        "clip": { "x": 180, "y": 170, "width": 500, "height": 520 },
+        "arrows": [
+          { "target": ".fcrm_campaign_review_item--tracking button", "from": "bottom", "len": 130 }
+        ]
+      }
+    },
+    { "click": ".fcrm_campaign_review_item--tracking button" },
+    { "wait": 1200 },
+    {
+      "shot": {
+        "name": "review-step-tracking-options",
+        "clip": { "element": ".fcrm_campaign_review_item--tracking", "pad": 20 }
+      }
+    }
+  ]
+}

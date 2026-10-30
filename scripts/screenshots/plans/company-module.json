@@ -1,0 +1,96 @@
+{
+  "_note": "The dev site's only company custom field is labelled 'test company custom'; the plan relabels it 'Region' in the page for the shot. Nothing is applied or saved.",
+  "outDir": "docs/public/grow-your-audience/company-module",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "steps": [
+    {
+      "admin": "/contact-groups/companies"
+    },
+    {
+      "wait": 7000
+    },
+    {
+      "click": ".fcrm_filter_toggle_btn"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "shot": {
+        "name": "company-filter-custom-field",
+        "clip": {
+          "x": 560,
+          "y": 200,
+          "width": 960,
+          "height": 260
+        },
+        "arrows": [
+          {
+            "target": {
+              "text": "Custom Field"
+            },
+            "from": "left",
+            "len": 140
+          }
+        ]
+      }
+    },
+    {
+      "click": {
+        "selector": ".fcrm_contacts_filter_popover button",
+        "hasText": "Custom Field"
+      }
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": ".fcrm_contacts_filter_popover .el-select"
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "click": {
+        "selector": ".el-select-dropdown__item",
+        "hasText": "test company custom"
+      }
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "fill": {
+        "selector": ".fcrm_contacts_filter_popover input >> nth=-1",
+        "value": "Europe"
+      }
+    },
+    {
+      "eval": "(()=>{const w=document.createTreeWalker(document.querySelector('.fcrm_contacts_filter_popover'),NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode()){if(/test company custom/.test(n.nodeValue))n.nodeValue='Region'}})()"
+    },
+    {
+      "shot": {
+        "name": "company-filter-custom-field-condition",
+        "clip": {
+          "x": 560,
+          "y": 200,
+          "width": 960,
+          "height": 340
+        },
+        "arrows": [
+          {
+            "target": {
+              "role": "button",
+              "name": "^Apply$"
+            },
+            "from": "left",
+            "len": 140
+          }
+        ]
+      }
+    }
+  ]
+}

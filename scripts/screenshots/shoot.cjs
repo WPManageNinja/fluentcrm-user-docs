@@ -17,6 +17,10 @@
 //       optional "waitUntil": "load" for pages that never go network-idle (the Elementor editor)
 //   {"viewport": {"width":1600,"height":1400}}         resize
 //   {"click": <sel>}                                   click; <sel> = "css" | {"text":"Save"} | {"role":"button","name":"^save$"} | {"selector":"css","hasText":"Customize"}
+//       any object <sel> also takes "frame": "iframe" to reach inside an iframe (email block editor toolbar/SmartCode panel)
+//   {"press": "Enter"}                                 press a key in the focused element (submit a search box)
+//   {"openFrom": {"admin": "/email/campaigns", "click": <sel>, "wait": 10000}}   reach a screen that never goes network-idle
+//       (the email editor) by loading a list route and clicking through to it
 //   {"fill": {"selector": <sel>, "value": "..."}}      type into an input
 //   {"fillByLabel": {"label":"Max Campaigns to list (max 200)","value":"25"}}   form input under a label (NOT saved)
 //   {"hideCss": "header.wp-block-template-part"}        display:none for anything noisy
@@ -84,6 +88,8 @@ async function main() {
         case 'css': console.log(tag, v.slice(0, 60)); await h.page.addStyleTag({ content: v }); await h.page.waitForTimeout(300); break;
         case 'eval': console.log(tag, v.slice(0, 60)); await h.page.evaluate(v); await h.page.waitForTimeout(600); break;
         case 'wait': console.log(tag, v); await h.page.waitForTimeout(v); break;
+        case 'press': console.log(tag, v); await h.page.keyboard.press(v); await h.page.waitForTimeout(500); break;
+        case 'openFrom': console.log(tag, v.admin); await h.gotoAdmin(v.admin); await h.click(v.click); await h.page.waitForTimeout(v.wait || 10000); break;
         case 'shot': {
           if (only.length && !only.includes(v.name)) { console.log(tag, v.name, '(skipped)'); break; }
           console.log(tag, v.name);

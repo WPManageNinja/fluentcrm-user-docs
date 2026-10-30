@@ -1,0 +1,41 @@
+{
+  "outDir": "docs/public/integrations/fluentcart-integration-with-fluentcrm",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "steps": [
+    {
+      "openFrom": {
+        "admin": "/email/campaigns",
+        "click": { "text": "Monthly newsletter" },
+        "wait": 10000
+      }
+    },
+    {
+      "click": { "frame": "iframe[src*=fluent_crm_block_editor]", "selector": ".fcrm-compose-smartcodes" }
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": { "frame": "iframe[src*=fluent_crm_block_editor]", "text": "FluentCart Customer" }
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "shot": {
+        "name": "smartcode-panel-fluentcart-customer",
+        "clip": { "x": 170, "y": 150, "width": 685, "height": 480 },
+        "arrows": [
+          {
+            "target": { "frame": "iframe[src*=fluent_crm_block_editor]", "text": "FluentCart Customer" },
+            "from": "left",
+            "len": 140
+          }
+        ]
+      }
+    }
+  ]
+}

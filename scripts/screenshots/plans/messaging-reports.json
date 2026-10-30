@@ -1,0 +1,54 @@
+{
+  "_note": "Uses the 90D preset because the dev site's message history ends in September 2026.",
+  "outDir": "docs/public/advanced-reports/messaging-reports",
+  "viewport": {
+    "width": 1600,
+    "height": 1300
+  },
+  "steps": [
+    {
+      "admin": "/reports?tab=messaging"
+    },
+    {
+      "wait": 5000
+    },
+    {
+      "click": {
+        "text": "90D"
+      }
+    },
+    {
+      "wait": 5000
+    },
+    {
+      "shot": {
+        "name": "messaging-report-overview",
+        "clip": "app",
+        "crop": {
+          "top": 0,
+          "height": 2200
+        }
+      }
+    },
+    {
+      "click": {
+        "selector": ".el-select",
+        "hasText": "Select"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "shot": {
+        "name": "messaging-report-filters",
+        "clip": {
+          "x": 560,
+          "y": 80,
+          "width": 1040,
+          "height": 300
+        }
+      }
+    }
+  ]
+}
