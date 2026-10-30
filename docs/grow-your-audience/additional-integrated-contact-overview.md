@@ -23,7 +23,7 @@ When a customer buys something from your WooCommerce store, the details appear h
 
 FluentCRM matches a contact to a FluentCart customer by email address. Open a contact and click the **Purchases** tab, and a contact who has bought from your FluentCart store shows their orders under **FluentCart Purchase History**.
 
-* **Order table:** Lists each order with its **Date**, **Status**, and **Total**. The order number (for example, #79) sits above the date. You can sort by **Date** or **Total**. Click the External Link icon to open the order in FluentCart.
+* **Order table:** Lists each order with its **Date**, **Status**, and **Total**. The order number (for example, #79) sits above the date. You can sort by **Date** or **Total**. Click **View** to preview the order without leaving the contact (see below).
 * **Order Summary:** Shows **Total Orders**, **Total Spent**, **First Order**, and **Last Order**.
 * **Purchased Products:** Lists each product the contact bought with its variation, price, and purchase date. The dates beside a product are links, and each opens that order in FluentCart.
 * **Commerce Info (Additional Information sidebar):** Shows the contact's **Lifetime Value**, **Paid Purchases**, **First Paid Order**, and **Last Paid Order**, plus their **Recent Purchases**.
@@ -32,7 +32,22 @@ Every date on this screen follows the **Date & Time Format** you chose in [Gener
 
 If the contact has no matching FluentCart customer, the tab shows a short note that there are no purchases to display.
 
-![Purchase History FluentCart](/grow-your-audience/additional-integrated-contact-overview/purchase-history-44.webp)
+![Screenshot of the FluentCart Purchase History table with a View button on each order](/grow-your-audience/additional-integrated-contact-overview/fluentcart-purchase-history-view.webp)
+
+### Preview a FluentCart order
+
+You don't need to open FluentCart to check what a contact bought. Click **View** on any order and a read-only preview opens beside the contact profile. It shows:
+
+* **Order date**, **Order status**, and **Payment status** at the top.
+* **Order items**, with each product's image, variation, unit price, quantity, and line total.
+* **Payment summary**, with the subtotal, shipping, tax, amount paid, and order total.
+
+To work on the order itself, click **View in FluentCart** at the bottom of the preview.
+
+![Screenshot of the order preview drawer showing order items and the payment summary](/grow-your-audience/additional-integrated-contact-overview/fluentcart-order-preview.webp)
+
+>[!Note]
+> The preview only opens for users who can view orders in FluentCart, and only for orders that belong to the contact you're viewing.
 
 ## Paymattic Purchase History
 
