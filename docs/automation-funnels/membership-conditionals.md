@@ -6,11 +6,11 @@ order: 0
 ---
 
 # Membership Conditionals
-FluentCRM provides several [**Conditionals**](/conditional-automation-actions) for **Membership Platforms** like **Paid** **Membership Pro**, **Wishlist Member**, and **Restrict Content Pro**, allowing you to create conditional checks and take alternative [Actions](/primary-automation-actions) based on those set conditions.
+FluentCRM provides several [**Conditionals**](/conditional-automation-actions) for **Membership Platforms** like **Paid** **Membership Pro**, **Wishlist Member**, and **Kadence Memberships** (formerly Restrict Content Pro), allowing you to create conditional checks and take alternative [Actions](/primary-automation-actions) based on those set conditions.
 
 This article will provide detailed information about all **Membership Conditional Actions** of **FluentCRM Automation**. 
 
-> **Remember**, to use these **Membership Conditionals** you must install and activate all the **LMS Plugins** in your website. Additionally, learn the detailed integration process of [Paid Membership Pro](/paid-memberships-pro-integration-with-fluentcrm) and [Restrict Content Pro](/restrict-content-pro-integration-with-fluentcrm) with FluentCRM.
+> **Remember**, to use these **Membership Conditionals** you must install and activate all the **LMS Plugins** in your website. Additionally, learn the detailed integration process of [Paid Membership Pro](/paid-memberships-pro-integration-with-fluentcrm) and [Kadence Memberships](/restrict-content-pro-integration-with-fluentcrm) with FluentCRM.
 
 ## All Membership Conditionals
 
