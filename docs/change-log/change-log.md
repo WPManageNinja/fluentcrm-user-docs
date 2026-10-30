@@ -9,6 +9,60 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.3.1
+
+_Released on October 29, 2026_
+
+::: code-group
+
+```markdown [🐞 Bug fixes]
+• Fixes a JavaScript error on the Contacts page
+```
+
+:::
+
+## FluentCRM v3.3.0
+
+_Released on October 29, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Adds a Campaign Calendar to Reports, with month, quarter, and year views of your campaigns (Pro)
+• Adds Messaging reports for SMS and WhatsApp volume and delivery (Pro)
+• Adds quick order previews for FluentCart orders in a contact's purchase history
+• Adds global FluentCart Customer smartcodes
+• Adds custom-field filters for companies
+```
+
+```markdown [🚀 Improvements]
+• Adds a clear-all-filters action to the contacts list
+• Speeds up large automation sends. Automation processing now runs back to back instead of waiting for the five-minute cron
+• Renames the Restrict Content Pro integration to Kadence Memberships (Pro)
+• Merges the campaign Emails and Actions tabs into one, with bulk actions for recipients
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes report charts so they include the selected end date
+• Fixes preference forms so they accept an empty last name
+• Fixes recurring campaigns so latest-post smartcodes keep the qualifying post (Pro)
+• Fixes admin screens so REST responses respect the user's language
+• Fixes subscription renewals restarting Subscription activated automations (Pro)
+• Fixes WooCommerce Subscriptions trial end and next payment dates (Pro)
+• Fixes same-day fixed-time sequence emails so they roll over correctly (Pro)
+• Fixes approved Twilio WhatsApp templates so they sync as approved (Pro)
+```
+
+```markdown [🔒 Security]
+• Hardens security across contacts, abandoned carts, links, stored data reads, and the email parser
+```
+
+```markdown [📋 Other]
+• Other improvements and bug fixes
+```
+
+:::
+
 ## FluentCRM v3.2.6
 
 _Released on October 12, 2026_
