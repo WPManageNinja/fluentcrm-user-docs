@@ -457,7 +457,7 @@ export default defineConfig({
               items: [
                 { text: 'MemberPress Integration', link: '/memberpress-integration-with-fluentcrm' },
                 { text: 'Paid Memberships Pro Integration', link: '/paid-memberships-pro-integration-with-fluentcrm' },
-                { text: 'Restrict Content Pro Integration', link: '/restrict-content-pro-integration-with-fluentcrm' },
+                { text: 'Kadence Memberships Integration', link: '/restrict-content-pro-integration-with-fluentcrm' },
               ],
             },
             {
@@ -494,6 +494,8 @@ export default defineConfig({
             { text: 'CRM Contact Report', link: '/crm-contact-report' },
             { text: 'Emails Report', link: '/emails-report' },
             { text: 'Abandoned Cart Report', link: '/abandoned-cart-report' },
+            { text: 'Campaign Calendar', link: '/campaign-calendar' },
+            { text: 'Messaging Reports', link: '/messaging-reports' },
             { text: 'WooCommerce Advanced Reports', link: '/woocommerce-advanced-reports' },
             { text: 'EDD Advanced Reports', link: '/edd-advanced-reports' },
             { text: 'LearnDash Advanced Reports', link: '/learndash-advanced-reports' },
