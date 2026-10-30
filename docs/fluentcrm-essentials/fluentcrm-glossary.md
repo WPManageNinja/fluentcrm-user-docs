@@ -175,7 +175,7 @@ FluentCRM connects natively with these platforms. Each integration adds contact 
 ### Membership
 - **MemberPress**: Triggers for membership signups, renewals, expirations. See [MemberPress Integration](/memberpress-integration-with-fluentcrm).
 - **Paid Memberships Pro**: Membership level triggers and contact sync. See [PMPro Integration](/paid-memberships-pro-integration-with-fluentcrm).
-- **Restrict Content Pro**: RCP membership triggers and contact sync. See [RCP Integration](/restrict-content-pro-integration-with-fluentcrm).
+- **Kadence Memberships** (formerly Restrict Content Pro, or RCP): membership triggers and contact sync. See [Kadence Memberships Integration](/restrict-content-pro-integration-with-fluentcrm).
 
 ### Community, Affiliate, Booking & Support
 - **BuddyBoss**: Community member triggers, group events, profile updates. See [BuddyBoss Integration](/buddyboss-integration-with-fluentcrm).
