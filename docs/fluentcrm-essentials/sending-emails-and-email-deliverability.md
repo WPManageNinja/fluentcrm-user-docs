@@ -80,6 +80,8 @@ Beyond standard campaigns, FluentCRM offers sophisticated timing controls within
 
 To keep everything running smoothly, FluentCRM relies on a **Cron system** that runs at intervals of **60 seconds**, **5 minutes**, and **60 minutes**. This ensures your scheduled tasks and automation triggers are processed precisely.
 
+When an automation has a large batch of contacts to work through, FluentCRM doesn't wait for the next five-minute cron run between batches. Each processing run starts the next one right away until the queue is empty, and the emails it creates go to the regular sending queue. The five-minute cron stays in place as a backup in case a run is interrupted.
+
 
 
 
