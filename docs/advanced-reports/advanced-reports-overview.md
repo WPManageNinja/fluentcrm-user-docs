@@ -24,6 +24,8 @@ These reports are available to all FluentCRM users and cover your core CRM and e
 | [CRM Contact Report](/crm-contact-report) | Contact database health — status breakdown, geographic distribution, growth over time, and top lists and tags |
 | [Emails Report](/emails-report) | Email marketing performance — sent, delivered, opened, clicked, and bounced metrics across all campaigns and automations |
 | [Abandoned Cart Report](/abandoned-cart-report) | Revenue lost, recovered, and in-progress from your abandoned cart recovery funnels |
+| [Campaign Calendar](/campaign-calendar) *(Pro)* | Every email, SMS, and WhatsApp campaign on a month, quarter, or year calendar |
+| [Messaging Reports](/messaging-reports) *(Pro)* | SMS and WhatsApp volume, delivery, failures, replies, and opt-outs over time |
 
 ### E-commerce Reports
 
