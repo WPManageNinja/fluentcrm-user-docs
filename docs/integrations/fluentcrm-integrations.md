@@ -43,7 +43,7 @@ Keep your membership contacts in sync and automate access-related communications
 |-------------|-------------|
 | [MemberPress](/memberpress-integration-with-fluentcrm) | Sync members, trigger automations on membership activations, cancellations, and renewals |
 | [Paid Memberships Pro](/paid-memberships-pro-integration-with-fluentcrm) | Automate contact tagging and sequences when members join or change levels |
-| [Restrict Content Pro](/restrict-content-pro-integration-with-fluentcrm) | Trigger automations based on subscription status changes in Restrict Content Pro |
+| [Kadence Memberships](/restrict-content-pro-integration-with-fluentcrm) | Trigger automations based on membership status changes in Kadence Memberships (formerly Restrict Content Pro) |
 
 ## Community & Growth
 
