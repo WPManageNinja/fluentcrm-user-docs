@@ -128,3 +128,19 @@ Once you are done, click the **Add** button and your custom field will be added.
 > You can add as many custom fields as you want according to your needs by following the same process.
 
 ![final popup page for adding custom field](/grow-your-audience/company-module/Final-popup-page-for-adding-custom-field.webp)
+
+## Filter Companies
+
+Once your companies carry custom field data, you can filter the **Companies** list by it. For example, you might show only companies in one region or with more than a set number of seats.
+
+1.  On the **Companies** page, click the **Filter** icon beside the search box. Choose **Primary Field** to filter by **Industry** or **Company Type**, or **Custom Field** to filter by any company custom field.
+
+    ![Screenshot of the Companies filter menu with Primary Field and Custom Field options](/grow-your-audience/company-module/company-filter-custom-field.webp)
+
+2.  Pick the field, choose a condition such as **Contains**, enter a value, and click **Apply**. The conditions and the value box change with the field type, so a date field gives you a date picker and a select field gives you its options. Checkbox selections apply as soon as you tick them.
+
+    ![Screenshot of a custom field filter set to Region contains Europe with the Apply button](/grow-your-audience/company-module/company-filter-custom-field-condition.webp)
+
+Each filter appears as a chip above the list, which you can click to edit or remove. When you add filters on more than one field, a company must match all of them. When you select several options for the same field, a company that matches any one of them is included.
+
+You can combine a primary filter with custom field filters, then select the matching companies and use a bulk action. If you choose to select every matching company, FluentCRM applies the action only to companies that match your filters.
