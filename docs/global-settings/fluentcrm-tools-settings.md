@@ -11,6 +11,7 @@ The **System Admin Tools** area in FluentCRM v3 brings together the maintenance 
 
 To open them, go to **FluentCRM → Settings → System Admin Tools** in your WordPress admin. From there, the left-hand sub-navigation exposes:
 
+- **Audit Log** – See which manager did what and when. It appears here once you turn it on under **FluentCRM → Addons**. See [Audit Log](/audit-log).
 - **Cron Job Monitor** – Inspect REST API status and scheduled tasks.
 - **System Logs** – Review internal processing logs with filtering and refresh controls.
 - **Data Cleanup** – Trim email logs, click logs, and open logs older than a specified number of days.

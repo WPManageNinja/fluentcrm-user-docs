@@ -46,7 +46,7 @@ Select this to display a confirmation message on a default FluentCRM page.
 
 ![crm double opt in after confirmation show message](/global-settings/global-double-opt-in-settings/crm_double_opt_in_after_confirmation_show_message.webp)
 
-\***Note:** If you're using Fluent Forms, leave the **Enable Double Opt-in Confirmation before the Form Data Processing** option( **Form -> Form Settings**) unchecked to send the above double opt-in email template to your contacts. If you enable both Fluent Forms and FluentCRM double opt-in, your system will send the Fluent Forms double opt-in email template to your contacts.
+\***Note:** If you're using Fluent Forms, leave the **Enable Double Opt-in Confirmation before the Form Data Processing** option( **Form -> Form Settings**) unchecked to send the above double opt-in email template to your contacts. If you enable both Fluent Forms and FluentCRM double opt-in, your system will send the Fluent Forms double opt-in email template to your contacts. When a contact confirms that email, FluentCRM marks them **Subscribed** right away and does not send its own confirmation email on top of it. Contacts who unsubscribed or bounced after confirming earlier are not resubscribed when you replay the form's FluentCRM feed.
 
 2. ### **Redirect to an URL**
 

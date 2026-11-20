@@ -52,6 +52,26 @@ Once the toggle is on, the **Status** panel shows three details you'll want to k
 
 A green **Connected** badge in the top-right of the page is your confirmation that the adapter is talking to FluentCRM correctly. If the count next to **Tools available** is `0`, the toggle in Step 2 likely isn't on yet.
 
+## Connect With One URL (FluentHub)
+
+With FluentHub active, the **MCP for AI Agents** page shows a **Connect with one URL** card at the top. It's the quickest route: you add one URL to your AI app and sign in with your WordPress account. There's no password to copy and no snippet to paste credentials into. If you use this card, you can skip Steps 4 and 5.
+
+1. Open **FluentCRM → Settings → AI Configuration → MCP for AI Agents**.
+2. In the **Connect with one URL** card, pick the tab for your AI app: **Claude**, **Claude Code**, **Codex**, **GitHub Copilot**, **Cursor**, or **Generic**.
+3. Click **Copy snippet** and add it to your AI app, following the instructions on the tab.
+4. When the app asks, sign in with your WordPress account.
+
+The same URL also gives the app your other Fluent plugins. The **Fluent plugins on this URL** list shows which ones are **On** or **Off**. An administrator can click **Turn on** beside a plugin that's off. To turn a plugin off again, use FluentHub.
+
+Who can connect:
+
+- **Site administrators** can use the URL for every Fluent plugin that has MCP switched on.
+- **Other users** can use it for FluentCRM if their role includes at least one FluentCRM permission that an MCP tool checks. They only see FluentCRM's tools, and each tool still checks its own permission.
+
+If the card says FluentHub's MCP server is off, an administrator can click **Turn on FluentHub sign-in**. Sign-in needs pretty permalinks and WordPress application passwords. Application passwords need HTTPS, and some security plugins switch them off, so the card tells you when either one blocks you.
+
+The application-password steps below still work, and they stay available behind the **Use an application password instead** link under the card. Use them when your AI app can't sign in through FluentHub.
+
 ## Step 4: Generate a WordPress Application Password
 
 AI clients sign in using a **WordPress Application Password**. This is a feature built directly into WordPress 5.6 and later, so you don't need any extra plugin to use it. Each application gets its own password, which means you can revoke a single AI client without affecting your main login or any of your other tools.
@@ -337,8 +357,8 @@ Tools for one-off email broadcasts.
 
 - **List campaigns** (`fluent-crm-list-campaigns`) — Browse all campaigns with their status and send dates.
 - **Get campaign** (`fluent-crm-get-campaign`) — View one campaign's content, schedule, and stats (sent, opened, clicked).
-- **Upsert campaign** (`fluent-crm-upsert-campaign`) — Draft a new campaign or update an existing draft.
-- **Change campaign status** (`fluent-crm-change-campaign-status`) — Schedule, send, pause, or archive a campaign.
+- **Upsert campaign** (`fluent-crm-upsert-campaign`) — Draft a new campaign or update an existing draft. If a campaign already has a designed HTML email, the agent can't overwrite it with plain text, so editing it keeps your design.
+- **Change campaign status** (`fluent-crm-change-campaign-status`) — Schedule, send, pause, or archive a campaign. To schedule, give a full date and time. A loose phrase like "Tuesday 10:00" is refused.
 - **Send test email** (`fluent-crm-send-test-email`) — Send a test version of a campaign to yourself or a teammate.
 - **Send email to contact** (`fluent-crm-send-email-to-contact`) — Send a one-off transactional email to a single contact.
 
@@ -354,7 +374,10 @@ Tools for your automation funnels and the people enrolled in them.
 - **List automations** (`fluent-crm-list-automations`) — Browse every automation funnel and its current status.
 - **Get automation** (`fluent-crm-get-automation`) — Inspect a specific automation's trigger, steps, and stats.
 - **List funnel subscribers** (`fluent-crm-list-funnel-subscribers`) — See who's currently enrolled in a specific automation.
-- **Update contact automation status** (`fluent-crm-update-contact-automation-status`) — Pause, resume, or remove a contact from an automation.
+- **Update funnel subscriber** (`fluent-crm-update-funnel-subscriber`) — Pause, resume, or remove a contact from an automation.
+
+>[!Note]
+> This tool was called `update-contact-automation-status` before FluentCRM 3.3.5. There is no alias for the old name, so update any saved prompt, script, or agent instruction that uses it.
 
 **Example prompts:**
 
@@ -398,4 +421,5 @@ Application Passwords are scoped to a single connection, so revoking one only di
 - **FluentCRM tools not appearing in the AI client.** Restart the client fully after running the connect command or saving the config file. Closing the window usually isn't enough — quit Claude Desktop from the menu bar or system tray and reopen it.
 - **Claude Desktop or Codex shows a "server failed to start" error.** Node.js is probably missing. Run `node -v` in your terminal; if you get "command not found", install the LTS release from [nodejs.org](https://nodejs.org) and restart the client.
 - **Claude Desktop loses all its MCP servers after an edit.** `claude_desktop_config.json` has a JSON syntax error, usually a missing or extra comma. Paste the file into your AI agent and ask it to fix the syntax.
+- **The AI app reports `invalid_param` or `unknown_param`.** The agent sent a value the tool doesn't accept, or a parameter the tool doesn't have. FluentCRM refuses both instead of guessing, and the error lists the allowed values. Ask the agent to retry with those.
 - **Connection works locally but not in production.** Confirm the **Endpoint URL** in Status uses the same scheme (`http` or `https`) and domain your AI client is configured with. WordPress Application Passwords also require a reachable REST API at `/wp-json/`.

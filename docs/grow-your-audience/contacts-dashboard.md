@@ -7,7 +7,7 @@ order: 0
 
 # Contacts Dashboard
 
-FluentCRM provides an excellent contacts dashboard that represents all the necessary summaries of the activities. Total Contacts Paginated, Filter by Tags & Lists & Status, Advanced Filter with numerous data, Searchbox, Import & Export of the contacts, Bulk Actions on Contact Selection, and many more on the front page or the Contacts Dashboard.
+FluentCRM provides an excellent contacts dashboard that represents all the necessary summaries of the activities. Total Contacts Paginated, Filter by Tags, Lists, Status & Segment, Advanced Filter with numerous data, Searchbox, Import & Export of the contacts, Bulk Actions on Contact Selection, and many more on the front page or the Contacts Dashboard.
 
 
 https://www.youtube.com/watch?v=tKrGDW6L62Y
@@ -30,9 +30,9 @@ This is a dropdown option where you will see all the Lists you have created and 
 
 This is another dropdown option where you will see all the Tags you have created and if you want you can filter by each or multiple Tags depending on your selection. More on this is discussed in the [Basic Filters & Pagination](#Basic-Filters-Pagination) below.
 
-### 3\. Filter By Statuses:
+### 3\. Filters Popover (Status, Segment, Added, Company, Purchase History):
 
-Similar to Lists & Tags if you want you can filter by each or multiple Contact Status depending on your selection. More on this is discussed in the [Basic Filters & Pagination](#Basic-Filters-Pagination) below.
+The funnel button next to the **Advanced Filter** switch opens a popover with the rest of the quick filters: contact status, dynamic segment, when the contact was added, company, and purchase history. A dot appears on the funnel while any of them is active. More on this is discussed in [Filters Popover](#Filters-Popover) below.
 
 ### 4\. Add Contact:
 
@@ -62,19 +62,32 @@ Contacts have numerous data fields and you can customize the view according to y
 
 ## Basic Filters & Pagination
 
-### Filter By Lists, Tags & Statuses
+### Filter By Lists & Tags
 
-Filter By Lists, Tags, Statuses & Number of contacts is the basic type of filtering.
+Filter By Lists, Tags & Number of contacts is the basic type of filtering.
 
 If you have multiple Lists, for example, a List named Students contains 60 contacts and another List named Teachers contains 10 contacts then you will be able to filter them out by this filter option. You can select only Students to see all 60 contacts. If you want to include Teachers too then you will be able to add teachers to your selection and you will see 70 contacts in total.
 
 The same goes for Tags as well.
 
-You can also filter by any or multiple contact statuses. To know more about status types and what are they please visit [FluentCRM Contact Status.](/fluentcrm-contacts-status)
-
-All the above 3 types of filters work as **AND** conditions in conjunction.
+All the above filters, including the ones in the [Filters Popover](#Filters-Popover), work as **AND** conditions in conjunction.
 
 ![contacts fluentcrm 2](/grow-your-audience/contacts-dashboard/Contacts-FluentCRM-2.webp)
+
+### Filters Popover
+
+Click the funnel button to the right of the **Advanced Filter** switch to open the popover. Everything you pick here narrows the contact list, the status counts, **Select all** bulk actions, and exports, so a bulk action or an export only touches the contacts you can see.
+
+- **Status:** Show contacts with one status. This filter is greyed out while the Advanced Filter is on. To know more about status types and what they are, please visit [FluentCRM Contact Status.](/fluentcrm-contacts-status)
+- **Segment:** Show only the contacts in one [Dynamic Segment](/segment-your-audience#dynamic-segments). You can pick one segment at a time. This filter appears only with FluentCRM Pro once you have at least one segment, and only for managers who can manage lists, tags, and segments. If you delete a segment you had selected, FluentCRM drops it from the filter the next time you open the page.
+- **Added:** Show contacts added **today**, in the **last 7 days**, or in the **last 30 days**, counted in your site's time.
+- **Company:** Show contacts that belong to one company. It appears only when the [Company module](/company-module) is on.
+- **Has purchase history:** Tick this box to show only contacts who have bought from your store. It appears only with FluentCRM Pro and a store plugin FluentCRM integrates with.
+
+A dot appears on the funnel while any popover filter is active. Click **Reset** inside the popover to clear only these filters. Your search, lists, and tags stay as they were. Switching to the [Advanced Filter](/advanced-filter) also resets the popover filters.
+
+>[!Note]
+> The **Segment** and **Has purchase history** filters require **FluentCRM Pro**. [See what's included →](/how-to-install-upgrade-and-activate-license)
 
 ### Clear All Filters
 
