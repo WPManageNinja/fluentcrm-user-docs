@@ -33,6 +33,9 @@ A popup will appear asking for an **Internal Campaign Title**. This name is for 
 
 Click **Create Campaign** to move to the editor.
 
+>[!Note]
+> If you switch editors later on an email that already has content, FluentCRM asks you to confirm first. Choose **Keep editing** to stay on the current editor, or **Switch editor** to continue. The same confirmation applies to campaigns, automation emails, templates, and sequences.
+
 ![crm campaign name](/email-campaign/setting-up-campaign/create-campaign-2.webp)
 
 ## 2. Compose Your Email

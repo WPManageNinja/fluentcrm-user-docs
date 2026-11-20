@@ -65,7 +65,7 @@ The **Conditional Section** allows you to show specific content only to selected
 
 Depending on your active plugins, you may see specialized blocks:
 
-* **Latest Posts Block:** Automatically displays recent website posts. You can customize the number of posts and the layout.
+* **Latest Posts Block:** Automatically displays recent website posts. You can customize the number of posts and the layout. Use **Skip posts**, beside **Show posts**, to leave out the first posts of the matching list, for example to drop an article you already featured, or to split a list across two blocks. **Skip posts** is available with FluentCRM Pro. It doesn't apply to random order or to showing all posts.
 
 ![Latest Post Blocks](/email-campaign/content-block/latest-post-block-7.webp)
 

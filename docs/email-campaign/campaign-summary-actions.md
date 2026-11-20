@@ -48,6 +48,7 @@ This tab provides a summary of the campaign's configuration:
 
 This tab lists every recipient of the campaign and lets you act on them in bulk. Since FluentCRM 3.3.0 it replaces the separate **Emails** and **Actions** tabs.
 
+ * **Tags:** A **Tags** column shows each contact's current tags: the first two in alphabetical order, with a **+N more** badge for the rest. Hover over a tag or the badge to see full names. The column reflects the contact's tags today, so a change made after the campaign went out appears the next time the table loads.
  * **Filter Options:** Refine the list with **All**, **Clicked**, **View** (opened), or **Unopened**, or use the search icon to find a recipient.
  * **Data Fields:** See each contact's name and email, their opens and clicks under **Actions**, the send **Date**, and the delivery **Status**.
  * **Per-email buttons:** **Preview** shows the email the contact received, and **Resend** sends it to that contact again.

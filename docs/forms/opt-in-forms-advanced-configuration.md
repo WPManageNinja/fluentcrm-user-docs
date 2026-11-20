@@ -29,7 +29,7 @@ Access the **Edit Form** interface to drag and drop new components, such as **Ad
 
 Navigate to the **Settings & Integrations** tab to configure deep-level form behavior.
 
-* **Double Opt-in Confirmation:** This ensures submissions are from legitimate users rather than bots. Fluent Forms can send a confirmation email; once the user confirms, the FluentCRM feed is processed.
+* **Double Opt-in Confirmation:** This ensures submissions are from legitimate users rather than bots. Fluent Forms can send a confirmation email; once the user confirms, the FluentCRM feed is processed and the contact is subscribed without a second confirmation email from FluentCRM.
 
 You can choose to **Disable Double Optin for Logged in users** or if the contact is already subscribed in FluentCRM.
 

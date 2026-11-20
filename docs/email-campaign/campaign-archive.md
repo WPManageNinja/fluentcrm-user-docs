@@ -31,6 +31,7 @@ The global settings decide which campaigns appear whenever a block or shortcode 
 - **Select Campaigns:** Pick specific campaigns to show. Leave it blank to show every campaign that passes the other filters.
 - **Filter by status:** Choose **All**, or one status such as **Archived**, **Draft**, or **Scheduled**. It starts on **Archived**, which is the status a campaign has once it has been sent.
 - **Max Campaigns to list (max 200):** Cap how many campaigns appear. It starts at 50, and 200 is the ceiling.
+- **Exclude labels:** Keep campaigns with certain [labels](/labels-for-email-campaigns) out of the public archive, such as event reminders. Search for a label and select as many as you need. A campaign with any selected label stays hidden, even if a block or shortcode picks it by ID. Its saved archive link shows the newsletter-not-found message too. Clear the selection to bring those campaigns back.
 
 If the feature is off, visitors to a page that holds the block see nothing where it sits, and the shortcode prints a notice that the archive is not enabled. Your saved block settings survive, so switching the feature back on restores the page as it was.
 
@@ -73,7 +74,7 @@ A number outside the range is adjusted to the nearest allowed value.
 
 ## Add the Archive With a Shortcode
 
-Use the shortcode when you're working in a page builder or the classic editor. On its own, it prints the list layout using your global settings:
+Use the shortcode when you're working in a page builder or the classic editor. The **Campaign Archive Settings** panel shows it with a copy button, so you can copy it in one click instead of selecting it by hand. On its own, it prints the list layout using your global settings:
 
 ```text
 [fluent_crm_campaign_archives]

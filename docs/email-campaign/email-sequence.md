@@ -80,16 +80,19 @@ From here you will be able to see the below data properties:
  * **Subjects:** The Email Subject for the Sequence Email.
  * **Schedule Delay:** The delay defined or scheduled for the sequence email.
  * **Recipients:** Total Number of recipients.
- * **Email Opened:** Percentage of the Email Opened against the total number of recipients.
- * **Link Clicked:** Percentage of the Link Clicked against the total number of recipients.
- * **Unsubscribed:** Value of the Unsubs from this Sequence Email.
+ * **Email Opened:** The open count, with the percentage of emails sent beside it.
+ * **Link Clicked:** The click count, with the percentage of emails sent beside it.
+ * **Unsubscribed:** The unsubscribe count, with the percentage of emails sent beside it.
+ * **Revenue:** The revenue from this email, shown when it's available.
+
+If you turned on anonymous tracking, opens and clicks show as event totals only, without a percentage.
 
 
 ![crm sequence 5emails](/email-campaign/email-sequence/email-sequence-9.webp)
 
 ## Advanced Sequence Settings
 
- * **Custom "Mail From" Settings:** Click the **Settings (Gear)Icon** on the dashboard to set a unique From Name, From Email, or Reply-To address specifically for this sequence.
+ * **Custom "Mail From" Settings:** Click the **Settings (Gear)Icon** on the dashboard to set a unique From Name, From Email, or Reply-To address specifically for this sequence. Every email in the sequence is sent with these sender settings.
 
 ![crm sequence custom mail from](/email-campaign/email-sequence/set-custom-setting-10.webp)
 
