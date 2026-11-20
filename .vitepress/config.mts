@@ -248,6 +248,7 @@ export default defineConfig({
                 { text: 'Incoming Webhooks', link: '/global-incoming-webhooks' },
                 { text: 'CRM Managers', link: '/global-managers-settings' },
                 { text: 'System Admin Tools', link: '/fluentcrm-tools-settings' },
+                { text: 'Audit Log', link: '/audit-log' },
               ],
             },
             {
