@@ -9,6 +9,50 @@ order: 0
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCRM.
 
+## FluentCRM v3.3.5
+
+_Released on November 20, 2026_
+
+::: code-group
+
+```markdown [✨ Newly Added]
+• Adds an Audit Log for manager actions, with filters, CSV export, and retention and IP settings. Turn it on in Addons
+• Adds filtering and exporting of All Contacts by dynamic segment (Pro)
+• Adds a Skip posts option to the Latest Posts block (Pro)
+• Adds label exclusion to the campaign archive (Pro)
+• Adds one-URL connection for AI apps through FluentHub, in Settings > AI Configuration > MCP for AI Agents
+```
+
+```markdown [🚀 Improvements]
+• Adds an All Contacts filter popover with Status, Segment, Added date, Company, and Purchase history
+• Shows current tags in campaign recipients
+• Shows full names in the automation picker
+• Adds a confirmation before switching email editors
+• Adds more integrations with logos, and a copy button for the campaign archive shortcode
+• Gives MCP tools clearer errors, keeps an email's design when editing it, and uses fewer tokens
+• Renames the MCP tool update-contact-automation-status to update-funnel-subscriber
+```
+
+```markdown [🐞 Bug fixes]
+• Fixes Fluent Forms double opt-in sending a second confirmation email
+• Fixes sequence reports so they show rates and revenue again (Pro)
+• Fixes sequence emails so they use the sequence sender settings (Pro)
+• Fixes email links, webhooks, and background requests so they keep HTTPS
+• Fixes CSV import descriptions, bulk delete selection in templates and activities, and automation saves
+• Fixes dynamic segment sorting and counts, recurring campaign day validation, and the Latest Posts preview
+• Fixes imported contacts and admin-started message threads so they use site time
+```
+
+```markdown [🔒 Security]
+• Hardens admin request routing, SmartCode output, and automation notes
+```
+
+```markdown [📋 Other]
+• Other improvements and bug fixes
+```
+
+:::
+
 ## FluentCRM v3.3.1
 
 _Released on October 29, 2026_
